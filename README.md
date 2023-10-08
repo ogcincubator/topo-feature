@@ -1,12 +1,18 @@
-# OGC Building Block template
+# Features with topology
 
-This template provides a working example of an OGC BuildingBlock.
+This repository defines an extension to GeoJSON or FG-JSON definining topological relationships between features based on identifiers.
 
-[Examples of using this with typical applications of OGC standards](https://github.com/ogcincubator/bblocks-examples)
+The set of components are listed [here](https://ogcincubator.github.io/topo-features/)
 
-Please replace the contents of this README with information about your Building Block(s).
+The implementation provides a JSON schema and a corresponding JSON-LD context that can turn topology references into object properties.
 
-# How to use this template
+Topological consistency functions can be described using SHACL rules - for example that a Polygon geometry must reference LineStrings, and Linestrings must reference Point objects. 
+
+This is extensible (unlike topoJSON) and can span features across any collection schemas used to group them.
+
+Using features rather than geometries as the topology reference allows arbitrary additional metadata to be provided about the nature of boundaries between features.
+
+NB. GeoJSON simple geometries and TopoJSON compact topologies can be derived from the model if required.
 
 [More information on design and usage](https://github.com/opengeospatial/bblock-template/blob/master/USAGE.md)
 
