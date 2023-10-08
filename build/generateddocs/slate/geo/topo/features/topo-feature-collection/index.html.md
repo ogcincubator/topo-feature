@@ -90,8 +90,8 @@ can be solids, swept volumes or any other concept.
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/features/topo-feature-collection/example_1_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -127,14 +127,14 @@ can be solids, swept volumes or any other concept.
       "properties": null
     }
   ],
-  "@context": "https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/features/topo-feature-collection/example_1_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -162,7 +162,7 @@ can be solids, swept volumes or any other concept.
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/features/topo-feature-collection/example_1_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_1_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -219,8 +219,8 @@ can be solids, swept volumes or any other concept.
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/features/topo-feature-collection/example_2_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_2_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -269,14 +269,14 @@ can be solids, swept volumes or any other concept.
       "properties": null
     }
   ],
-  "@context": "https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/features/topo-feature-collection/example_2_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_2_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -309,7 +309,7 @@ can be solids, swept volumes or any other concept.
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/features/topo-feature-collection/example_2_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_2_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -418,8 +418,8 @@ can be solids, swept volumes or any other concept.
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/features/topo-feature-collection/example_3_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_3_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -520,14 +520,14 @@ can be solids, swept volumes or any other concept.
       "properties": null
     }
   ],
-  "@context": "https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/features/topo-feature-collection/example_3_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_3_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -580,7 +580,7 @@ can be solids, swept volumes or any other concept.
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/features/topo-feature-collection/example_3_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_3_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -623,12 +623,12 @@ properties:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Fannotated%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Fannotated%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml" target="_blank">https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml</a>
-* JSON version: <a href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature-collection/schema.json" target="_blank">https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature-collection/schema.json</a>
+* YAML version: <a href="https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml" target="_blank">https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml</a>
+* JSON version: <a href="https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json" target="_blank">https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json</a>
 
 
 # JSON-LD Context
@@ -710,10 +710,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Fannotated%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Fannotated%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-feature-collection%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld" target="_blank">https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld</a>
+<a href="https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld" target="_blank">https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld</a>
 
 # Validation
 
@@ -721,8 +721,8 @@ You can find the full JSON-LD context here:
 
 The following SHACL shapes are used for validating this building block:
 
-* [https://raw.githubusercontent.com/ogcincubator/topo-feature/master/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://raw.githubusercontent.com/ogcincubator/topo-feature/master/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
-* [https://raw.githubusercontent.com/ogcincubator/topo-feature/master/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://raw.githubusercontent.com/ogcincubator/topo-feature/master/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
+* [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
+* [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
 
 # For developers
 

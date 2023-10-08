@@ -92,5 +92,5 @@
       "properties": null
     }
   ],
-  "@context": "https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
 }

@@ -66,8 +66,8 @@ See panel to right - note that a more user friendly "collapsable" version is in 
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/datatypes/topology/example_1_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Fdatatypes%2Ftopology%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Fdatatypes%2Ftopology%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -80,14 +80,14 @@ See panel to right - note that a more user friendly "collapsable" version is in 
     "P1",
     "P2"
   ],
-  "@context": "https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/datatypes/topology/context.jsonld"
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/datatypes/topology/example_1_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Fdatatypes%2Ftopology%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Fdatatypes%2Ftopology%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -105,7 +105,7 @@ See panel to right - note that a more user friendly "collapsable" version is in 
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/tests/geo/topo/datatypes/topology/example_1_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_1_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -138,12 +138,12 @@ x-jsonld-prefixes:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Fannotated%2Fgeo%2Ftopo%2Fdatatypes%2Ftopology%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Fannotated%2Fgeo%2Ftopo%2Fdatatypes%2Ftopology%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/datatypes/topology/schema.yaml" target="_blank">https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/datatypes/topology/schema.yaml</a>
-* JSON version: <a href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/datatypes/topology/schema.json" target="_blank">https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/datatypes/topology/schema.json</a>
+* YAML version: <a href="https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml" target="_blank">https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml</a>
+* JSON version: <a href="https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.json" target="_blank">https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.json</a>
 
 
 # JSON-LD Context
@@ -166,10 +166,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Ftopo-feature%2Fmaster%2Fbuild%2Fannotated%2Fgeo%2Ftopo%2Fdatatypes%2Ftopology%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Fannotated%2Fgeo%2Ftopo%2Fdatatypes%2Ftopology%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/datatypes/topology/context.jsonld" target="_blank">https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/datatypes/topology/context.jsonld</a>
+<a href="https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld" target="_blank">https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld</a>
 
 # For developers
 

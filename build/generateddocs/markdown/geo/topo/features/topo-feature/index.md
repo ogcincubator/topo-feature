@@ -55,7 +55,7 @@ can be solids, swept volumes or any other concept.
     ]
   },
   "properties": null,
-  "@context": "https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature/context.jsonld"
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld"
 }
 ```
 
@@ -106,7 +106,7 @@ can be solids, swept volumes or any other concept.
     ]
   },
   "properties": null,
-  "@context": "https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature/context.jsonld"
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld"
 }
 ```
 
@@ -151,8 +151,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml)
 
 
 # JSON-LD Context
@@ -225,7 +225,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld)
 
 
 # For developers
