@@ -1,0 +1,21 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Feature with defined topology for bounding elements
+$defs:
+  FeatureOptions:
+    anyOf:
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json
+    - $ref: https://geojson.org/schema/Feature.json
+allOf:
+- $ref: '#/$defs/FeatureOptions'
+- type: object
+  properties:
+    id:
+      type: string
+    topology:
+      $ref: ../../datatypes/topology/schema.json
+      x-jsonld-type: '@id'
+      x-jsonld-id: https://purl.org/geojson/vocab#topology
+  required:
+  - topology
+x-jsonld-prefixes:
+  geojson: https://purl.org/geojson/vocab#

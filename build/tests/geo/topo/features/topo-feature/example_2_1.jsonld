@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "id": "TriangleP1P2P3",
+  "geometry": null,
+  "topology": {
+    "type": "Polygon",
+    "references": [
+      "LineP1P2",
+      "LineP2P3",
+      "LineP3P1"
+    ]
+  },
+  "properties": null,
+  "@context": "https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature/context.jsonld"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "Feature",
+  "id": "LineP1P2",
+  "geometry": null,
+  "topology": {
+    "type": "LineString",
+    "references": [
+      "P1",
+      "P2"
+    ]
+  },
+  "properties": null,
+  "@context": "https://raw.githubusercontent.com/ogcincubator/topo-feature/master/build/annotated/geo/topo/features/topo-feature/context.jsonld"
+}
