@@ -1,0 +1,21 @@
+{
+  "name": "TopoFeatureCollection",
+  "abstract": "This building block defines a GeoJSON (or FG-JSON) Feature Collection for a set of features with geometries defined by topological relationships. From these it is possible to derive simplified geometries using coordinates for each feature.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-07-05T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2023-07-05",
+  "sources": [
+  ],
+  "shaclRules": [ "../topo-feature/tests/geometry-coordinates.shacl" , "tests/topo-refs-exist.shacl"],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+  ],
+  "tags": [
+    "topology", "feature"
+  ],
+  "group": "OGC"
+}

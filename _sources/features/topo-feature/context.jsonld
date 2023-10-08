@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "geojson": "https://purl.org/geojson/vocab#",
+    "topology": {
+        "@type": "@id",
+        "@id": "geojson:topology"
+     }
+  }
+}

@@ -1,0 +1,19 @@
+- title: Example of a LineString
+
+  snippets:
+    - language: json
+      ref: examples/linestring.json
+      base-uri: http://www.example.com/features/
+      shacl-closure:
+        - examples/points.ttl
+
+- title: Example of a Polygon
+
+  snippets:
+    - language: json
+      ref: examples/polygon.json
+      base-uri: http://www.example.com/features/
+      shacl-closure:
+        - examples/points.ttl
+        - examples/lines.ttl
+

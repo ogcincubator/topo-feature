@@ -1,0 +1,9 @@
+PREFIX geojson: <https://purl.org/geojson/vocab#>
+      SELECT $this (geojson:topology as ?path) ?value
+      WHERE {
+        $this geojson:references ?value .
+        ?refobject rdfs:label ?value .
+        ?refobject geojson:geometry ?g .
+        ?g geojson:type geojson:Point .
+
+      }

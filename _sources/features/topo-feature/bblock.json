@@ -1,0 +1,21 @@
+{
+  "name": "Feature with topology",
+  "abstract": "This building block defines a GeoJSON feature with topological relationships to point nodes, or other to TopoFeatures",
+  "status": "under-development",
+  "dateTimeAddition": "2023-07-05T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2023-07-05",
+  "sources": [
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+  ],
+  "shaclRules": [ "tests/geometry-coordinates.shacl" , "../topo-feature-collection/tests/topo-refs-exist.shacl"],
+  "tags": [
+    "topology", "feature"
+  ],
+  "group": "OGC"
+}

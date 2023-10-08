@@ -1,0 +1,35 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'Feature Collection with defined topology for bounding elements'
+$defs:
+  FeatureCollectionOptions:
+    anyOf:
+    - $ref: https://beta.schemas.opengis.net/json-fg/featurecollection.json
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json
+    - $ref: https://geojson.org/schema/FeatureCollection.json
+  FeatureOptions:
+    anyOf:
+      - $ref: https://beta.schemas.opengis.net/json-fg/feature.json
+      - $ref: https://geojson.org/schema/Feature.json
+  PointOptions:
+    anyOf:
+      - allOf:
+        - $ref: "#/$defs/FeatureOptions"
+        - properties:
+            geometry:
+              properties:
+                type:
+                  type: string
+                  enum:
+                    - Point
+
+allOf:
+- $ref: '#/$defs/FeatureCollectionOptions'
+properties:
+  features:
+    type: array
+    items:
+      anyOf:
+      - $ref: ../topo-feature/schema.yaml
+      - $ref: '#/$defs/PointOptions'
+
+    # x-bblocks-ref: bblocks://ogc.geo.json-fg.feature

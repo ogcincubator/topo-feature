@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Line Feature with geometry by reference",
+  "allOf": [
+    {
+      "$ref": "../topo-feature/schema.json"
+    },
+    {
+      "properties": {
+        "topology": {
+          "allOf": [
+            {
+              "$ref": "../../datatypes/topology/schema.json"
+            },
+            {
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "const": "LineString"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "topology"
+      ]
+    }
+  ]
+}
