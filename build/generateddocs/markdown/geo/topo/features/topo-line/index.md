@@ -5,7 +5,7 @@
 
 Demonstration of a schema using coordinates of points, without duplication. Reuses context but constrains to Line types
 
-[*Status*](http://www.opengis.net/def/status): Invalid
+[*Status*](http://www.opengis.net/def/status): Under development
 
 ## Description
 

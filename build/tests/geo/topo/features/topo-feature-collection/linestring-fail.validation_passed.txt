@@ -11,10 +11,10 @@ Validation passed
 
 === SHACL ===
 Using SHACL files for validation:
- - features/topo-feature-collection/tests/topo-refs-exist.shacl
- - features/topo-feature/tests/geometry-coordinates.shacl
  - features/topo-feature/tests/geometry-coordinates.shacl
  - features/topo-feature-collection/tests/topo-refs-exist.shacl
+ - features/topo-feature-collection/tests/topo-refs-exist.shacl
+ - features/topo-feature/tests/geometry-coordinates.shacl
 
 ** Validation error **
 Validation Report
@@ -96,15 +96,15 @@ Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SP
 	Message: Lines topologies must reference points within current graph closure.
 
 Focus nodes:
+ - Shape _:n0629aa78c19241209a3088772dd65c69b3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
  - Shape topo:testTopoReferencesExist: <file:///github/workspace/LineP1P2>/geojson:topology
- - Shape topo:testTopoLinesReferencePoints: <file:///github/workspace/LineP1P2>/geojson:topology
  - Shape topo:testTopoPolyReferencesLines: *none*
- - Shape _:n1870be07a9ff4e088f288a1b2ae75625b3: <file:///github/workspace/P1>/geojson:geometry,<file:///github/workspace/P3>/geojson:geometry
- - Shape _:nd61793e2abf942ba9e73633d62c87ef7b3: <file:///github/workspace/P1>/geojson:geometry,<file:///github/workspace/P3>/geojson:geometry
- - Shape _:nd61793e2abf942ba9e73633d62c87ef7b1: <file:///github/workspace/P1>/geojson:geometry,<file:///github/workspace/P3>/geojson:geometry
- - Shape _:n1870be07a9ff4e088f288a1b2ae75625b1: <file:///github/workspace/P1>/geojson:geometry,<file:///github/workspace/P3>/geojson:geometry
- - Shape _:nd61793e2abf942ba9e73633d62c87ef7b2 (path geojson:coordinates): *none*
- - Shape _:n1870be07a9ff4e088f288a1b2ae75625b2 (path geojson:coordinates): *none*
+ - Shape _:n89332ea7bd7340df960ec8593cbd93dfb1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+ - Shape topo:testTopoLinesReferencePoints: <file:///github/workspace/LineP1P2>/geojson:topology
+ - Shape _:n0629aa78c19241209a3088772dd65c69b1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+ - Shape _:n89332ea7bd7340df960ec8593cbd93dfb3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+ - Shape _:n89332ea7bd7340df960ec8593cbd93dfb2 (path geojson:coordinates): *none*
+ - Shape _:n0629aa78c19241209a3088772dd65c69b2 (path geojson:coordinates): *none*
 
 === End SHACL ===
 

@@ -19,10 +19,10 @@ Conforms: True
 Focus nodes:
  - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology
  - Shape topo:testTopoPolyReferencesLines: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology
- - Shape _:nbde8a191833440b683064ccc4660aca9b1: *none*
  - Shape topo:testTopoLinesReferencePoints: *none*
- - Shape _:nbde8a191833440b683064ccc4660aca9b3: *none*
- - Shape _:nbde8a191833440b683064ccc4660aca9b2 (path geojson:coordinates): *none*
+ - Shape _:n08367f25623a4ce28a69f8640509718eb3: *none*
+ - Shape _:n08367f25623a4ce28a69f8640509718eb1: *none*
+ - Shape _:n08367f25623a4ce28a69f8640509718eb2 (path geojson:coordinates): *none*
 
 === End SHACL ===
 

@@ -98,7 +98,7 @@
     {
       "name": "Line using Point References",
       "abstract": "Demonstration of a schema using coordinates of points, without duplication. Reuses context but constrains to Line types",
-      "status": "invalid",
+      "status": "under-development",
       "dateTimeAddition": "2023-04-05T00:00:00Z",
       "itemClass": "schema",
       "register": "icsm-csdm",
@@ -125,7 +125,7 @@
       },
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-line/",
-      "validationPassed": false,
+      "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-line/",
       "documentation": {
         "markdown": {
