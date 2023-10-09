@@ -2,7 +2,7 @@
 
 This repository defines an extension to GeoJSON or FG-JSON definining topological relationships between features based on identifiers.
 
-The set of components are listed [here](https://ogcincubator.github.io/topo-features/)
+The set of components are listed [here](https://ogcincubator.github.io/topo-feature/)
 
 The implementation provides a JSON schema and a corresponding JSON-LD context that can turn topology references into object properties.
 
