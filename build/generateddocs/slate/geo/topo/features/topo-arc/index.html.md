@@ -1,0 +1,253 @@
+---
+title: Arc Description using Point topology (Schema)
+
+language_tabs:
+  - json: JSON
+  - jsonld: JSON-LD
+  - turtle: RDF/Turtle
+
+toc_footers:
+  - Version 0.1
+  - <a href='#'>Arc Description using Point topology</a>
+  - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
+
+search: true
+
+code_clipboard: true
+
+meta:
+  - name: Arc Description using Point topology (Schema)
+---
+
+
+# Arc Description using Point topology `ogc.geo.topo.features.topo-arc`
+
+Defines options for describing Arcs using point features as canonical source of geometry coordinates
+
+<p class="status">
+    <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
+    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
+</p>
+
+<aside class="success">
+This building block is <strong><a href="https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-arc/" target="_blank">valid</a></strong>
+</aside>
+
+# Description
+
+## Topology defined Arc
+
+%definition% 
+
+A feature type using a topology property to reference points defining an Arc.
+
+![Example](https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png)
+# Examples
+
+## Example GeoJSON feature using topology
+
+Arc with Center example.
+
+
+
+```json
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:ArcFeature",
+  "geometry": null,
+  "topology": {
+    "type": "ArcWithCenter",
+    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "references": [
+      "P1",
+      "P2",
+      "PC"
+    ]
+  },
+  "properties": {
+    "arcLength": 25.615,
+    "radius": 105.438
+  }
+}
+```
+
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+
+
+
+
+```jsonld
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:ArcFeature",
+  "geometry": null,
+  "topology": {
+    "type": "ArcWithCenter",
+    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "references": [
+      "P1",
+      "P2",
+      "PC"
+    ]
+  },
+  "properties": {
+    "arcLength": 25.615,
+    "radius": 105.438
+  },
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+}
+```
+
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+
+
+
+
+```turtle
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/1853004> a geojson:Feature ;
+    geojson:topology [ a <http://www.example.com/features/ArcWithCenter> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .
+
+
+```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.ttl">Open in new window</a>
+</blockquote>
+
+
+
+# JSON Schema
+
+```yaml--schema
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Arc Feature with geometry by reference
+allOf:
+- $ref: ../topo-feature/schema.json
+- properties:
+    topology:
+      allOf:
+      - $ref: ../../datatypes/topology/schema.json
+      - properties:
+          type:
+            type: string
+            const: ArcWithCenter
+          references:
+            minItems: 3
+            maxItems: 3
+  required:
+  - topology
+
+```
+
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Fannotated%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+
+Links to the schema:
+
+* YAML version: <a href="https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.yaml" target="_blank">https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.yaml</a>
+* JSON version: <a href="https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.json" target="_blank">https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.json</a>
+
+
+# JSON-LD Context
+
+```json--ldContext
+{
+  "@context": {
+    "topology": {
+      "@context": {},
+      "@type": "@id",
+      "@id": "geojson:topology"
+    },
+    "type": "@type",
+    "references": {
+      "@id": "geojson:relatedFeatures",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "LineString": "geojson:LineString",
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "coordinates": {
+      "@container": "@list",
+      "@id": "geojson:coordinates"
+    },
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "id": "@id",
+    "links": {
+      "@context": {
+        "href": "oa:hasTarget",
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
+      },
+      "@id": "rdfs:seeAlso"
+    },
+    "geometry": "geojson:geometry",
+    "properties": "@nest",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "csdm": "https://linked.data.gov.au/def/csdm/",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "@version": 1.1
+  }
+}
+```
+
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Fannotated%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fcontext.jsonld">View on JSON-LD Playground</a>
+
+You can find the full JSON-LD context here:
+<a href="https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld" target="_blank">https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld</a>
+
+# Validation
+
+## SHACL Shapes
+
+The following SHACL shapes are used for validating this building block:
+
+* [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
+* [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
+
+# For developers
+
+The source code for this Building Block can be found in the following repository:
+
+* URL: <a href="https://github.com/ogcincubator/topo-feature" target="_blank">https://github.com/ogcincubator/topo-feature</a>
+* Path:
+<code><a href="https://github.com/ogcincubator/topo-feature/blob/HEAD/_sources/features/topo-arc" target="_blank">_sources/features/topo-arc</a></code>
+

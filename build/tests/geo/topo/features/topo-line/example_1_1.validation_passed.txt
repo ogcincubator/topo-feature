@@ -1,3 +1,5 @@
+Validation report for ogc.geo.topo.features.topo-line - Line using Point References
+Generated 2023-11-01T06:07:07.631921+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -11,18 +13,18 @@ Validation passed
 
 === SHACL ===
 Using SHACL files for validation:
- - features/topo-feature/tests/geometry-coordinates.shacl
- - features/topo-feature-collection/tests/topo-refs-exist.shacl
+ - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl
+ - _sources/features/topo-feature/tests/geometry-coordinates.shacl
 Validation Report
 Conforms: True
 
 Focus nodes:
- - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology
  - Shape topo:testTopoPolyReferencesLines: *none*
- - Shape _:ndbeef52a96d64db68c6d7b08630f9501b1: *none*
- - Shape _:ndbeef52a96d64db68c6d7b08630f9501b3: *none*
  - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology
- - Shape _:ndbeef52a96d64db68c6d7b08630f9501b2 (path geojson:coordinates): *none*
+ - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology
+ - Shape _:nbbc7afbbf5a24a929f92645bf018a464b1: *none*
+ - Shape _:nbbc7afbbf5a24a929f92645bf018a464b3: *none*
+ - Shape _:nbbc7afbbf5a24a929f92645bf018a464b2 (path geojson:coordinates): *none*
 
 === End SHACL ===
 

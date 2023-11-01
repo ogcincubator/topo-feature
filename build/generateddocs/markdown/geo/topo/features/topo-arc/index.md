@@ -1,61 +1,69 @@
 
-# Line using Point References (Schema)
+# Arc Description using Point topology (Schema)
 
-`ogc.geo.topo.features.topo-line` *v0.1*
+`ogc.geo.topo.features.topo-arc` *v0.1*
 
-Demonstration of a schema using coordinates of points, without duplication. Reuses context but constrains to Line types
+Defines options for describing Arcs using point features as canonical source of geometry coordinates
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
 ## Description
 
-## Topology defined Line
+## Topology defined Arc
 
 %definition% 
 
-A feature type using a topology property to reference an ordered list of points.
+A feature type using a topology property to reference points defining an Arc.
 
-The topology property has an ordered array, defining the direction of the line from the first to second and subsequent points.
-
-This is a generalisation of the TopoJSON concept using inline data, and hence not limited to linestrings.
-
-
+![Example](https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png)
 ## Examples
 
 ### Example GeoJSON feature using topology
-See panel to right - note that a more user friendly "collapsable" version is in development. 
+Arc with Center example.
 #### json
 ```json
 {
+  "id": "1853004",
   "type": "Feature",
-  "id": "LineP1P2",
+  "featureType": "my:ArcFeature",
   "geometry": null,
   "topology": {
-    "type": "LineString",
+    "type": "ArcWithCenter",
+    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
     "references": [
       "P1",
-      "P2"
+      "P2",
+      "PC"
     ]
   },
-  "properties": null
+  "properties": {
+    "arcLength": 25.615,
+    "radius": 105.438
+  }
 }
 ```
 
 #### jsonld
 ```jsonld
 {
+  "id": "1853004",
   "type": "Feature",
-  "id": "LineP1P2",
+  "featureType": "my:ArcFeature",
   "geometry": null,
   "topology": {
-    "type": "LineString",
+    "type": "ArcWithCenter",
+    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
     "references": [
       "P1",
-      "P2"
+      "P2",
+      "PC"
     ]
   },
-  "properties": null,
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld"
+  "properties": {
+    "arcLength": 25.615,
+    "radius": 105.438
+  },
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
 }
 ```
 
@@ -64,9 +72,9 @@ See panel to right - note that a more user friendly "collapsable" version is in 
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://www.example.com/features/LineP1P2> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+<http://www.example.com/features/1853004> a geojson:Feature ;
+    geojson:topology [ a <http://www.example.com/features/ArcWithCenter> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .
 
 
 ```
@@ -75,7 +83,7 @@ See panel to right - note that a more user friendly "collapsable" version is in 
 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
-description: Line Feature with geometry by reference
+description: Arc Feature with geometry by reference
 allOf:
 - $ref: ../topo-feature/schema.json
 - properties:
@@ -85,7 +93,10 @@ allOf:
       - properties:
           type:
             type: string
-            const: LineString
+            const: ArcWithCenter
+          references:
+            minItems: 3
+            maxItems: 3
   required:
   - topology
 
@@ -93,8 +104,8 @@ allOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.yaml)
 
 
 # JSON-LD Context
@@ -165,7 +176,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld)
 
 
 # For developers
@@ -173,5 +184,5 @@ You can find the full JSON-LD context here:
 The source code for this Building Block can be found in the following repository:
 
 * URL: [https://github.com/ogcincubator/topo-feature](https://github.com/ogcincubator/topo-feature)
-* Path: `_sources/features/topo-line`
+* Path: `_sources/features/topo-arc`
 

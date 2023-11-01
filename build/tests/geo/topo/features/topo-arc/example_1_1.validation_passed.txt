@@ -1,5 +1,5 @@
-Validation report for ogc.geo.topo.features.topo-feature - Feature with topology
-Generated 2023-11-01T06:07:05.898637+00:00
+Validation report for ogc.geo.topo.features.topo-arc - Arc Description using Point topology
+Generated 2023-11-01T06:07:06.948648+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -19,12 +19,12 @@ Validation Report
 Conforms: True
 
 Focus nodes:
- - Shape _:ndee21c8aef124534a342533511277496b1: *none*
  - Shape topo:testTopoPolyReferencesLines: *none*
- - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology
- - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology
- - Shape _:ndee21c8aef124534a342533511277496b3: *none*
- - Shape _:ndee21c8aef124534a342533511277496b2 (path geojson:coordinates): *none*
+ - Shape topo:testTopoLinesReferencePoints: *none*
+ - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology
+ - Shape _:n330944fc1e824625ade8fd233f7c276bb3: *none*
+ - Shape _:n330944fc1e824625ade8fd233f7c276bb1: *none*
+ - Shape _:n330944fc1e824625ade8fd233f7c276bb2 (path geojson:coordinates): *none*
 
 === End SHACL ===
 

@@ -535,26 +535,40 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "topology": {
+      "@context": {
+        "references": {
+          "@id": "geojson:relatedFeatures",
+          "@type": "@id",
+          "@container": "@list"
+        }
+      },
+      "@type": "@id",
+      "@id": "geojson:topology"
+    },
     "type": "@type",
-    "id": "@id",
     "links": {
-      "@id": "rdfs:seeAlso",
       "@context": {
         "href": "oa:hasTarget",
         "rel": {
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id",
           "@context": {
             "@base": "http://www.iana.org/assignments/relation/"
-          }
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
         },
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
         "length": "dct:extent"
-      }
+      },
+      "@id": "rdfs:seeAlso"
     },
-    "geometry": "geojson:geometry",
+    "features": {
+      "@context": {},
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
     "properties": "@nest",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
@@ -573,37 +587,13 @@ Links to the schema:
       "@container": "@list",
       "@id": "geojson:coordinates"
     },
-    "features": {
-      "@container": "@set",
-      "@id": "geojson:features",
-      "@context": {
-        "geometry": {
-          "@id": "geojson:geometry",
-          "@context": {}
-        },
-        "features": {
-          "@container": "@set",
-          "@id": "geojson:features"
-        }
-      }
-    },
-    "topology": {
-      "@type": "@id",
-      "@id": "geojson:topology",
-      "@context": {
-        "references": {
-          "@id": "geojson:relatedFeatures",
-          "@type": "@id",
-          "@container": "@list"
-        },
-        "LineString": "geojson:LineString"
-      }
-    },
+    "id": "@id",
+    "geometry": "geojson:geometry",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "oa": "http://www.w3.org/ns/oa#",
-    "dct": "http://purl.org/dc/terms/",
     "csdm": "https://linked.data.gov.au/def/csdm/",
+    "dct": "http://purl.org/dc/terms/",
+    "oa": "http://www.w3.org/ns/oa#",
     "@version": 1.1
   }
 }

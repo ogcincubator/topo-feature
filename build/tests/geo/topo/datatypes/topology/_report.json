@@ -1,0 +1,61 @@
+{
+  "title": "Validation report for ogc.geo.topo.datatypes.topology - Geometry using references",
+  "bblockName": "Geometry using references",
+  "bblockId": "ogc.geo.topo.datatypes.topology",
+  "generated": "2023-11-01T06:07:04.913526+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "https://ogcincubator.github.io/topo-feature/_sources/datatypes/topology/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "result": true,
+      "sections": {
+        "FILES": [
+          {
+            "isError": false,
+            "message": "Using example_1_1.json from examples"
+          },
+          {
+            "op": "jsonld-uplift",
+            "isError": false,
+            "message": "JSON-LD context is present - uplifting"
+          },
+          {
+            "op": "jsonld-create",
+            "filename": "example_1_1.jsonld",
+            "isError": false,
+            "message": "Output JSON-LD example_1_1.jsonld created"
+          },
+          {
+            "op": "ttl-create",
+            "empty": false,
+            "filename": "example_1_1.ttl",
+            "size": 6,
+            "isError": false,
+            "message": "Output Turtle example_1_1.ttl created"
+          }
+        ],
+        "JSON_SCHEMA": [
+          {
+            "op": "validation",
+            "result": true,
+            "isError": false,
+            "message": "Validation passed"
+          }
+        ]
+      }
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0
+  }
+}

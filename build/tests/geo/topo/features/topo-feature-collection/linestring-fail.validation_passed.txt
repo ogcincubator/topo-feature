@@ -1,5 +1,11 @@
+Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection
+Generated 2023-11-01T06:07:09.133561+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
 === Files ===
-Using linestring-fail.json
+Using linestring-fail.json from test resources
 JSON-LD context is present - uplifting
 Output JSON-LD linestring-fail.jsonld created
 Output Turtle linestring-fail.ttl created
@@ -11,10 +17,10 @@ Validation passed
 
 === SHACL ===
 Using SHACL files for validation:
- - features/topo-feature/tests/geometry-coordinates.shacl
- - features/topo-feature-collection/tests/topo-refs-exist.shacl
- - features/topo-feature-collection/tests/topo-refs-exist.shacl
- - features/topo-feature/tests/geometry-coordinates.shacl
+ - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl
+ - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl
+ - _sources/features/topo-feature/tests/geometry-coordinates.shacl
+ - _sources/features/topo-feature/tests/geometry-coordinates.shacl
 
 ** Validation error **
 Validation Report
@@ -22,42 +28,6 @@ Conforms: False
 Results (4):
 Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: topo:testTopoReferencesExist
-	Focus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]
-	Value Node: <file:///github/workspace/P2>
-	Result Path: geojson:relatedFeatures
-	Source Constraint: [ sh:message Literal("Referenced features must be present within current graph closure for  topological feature.") ; sh:select Literal("
-        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-        prefix geojson: <https://purl.org/geojson/vocab#>
-
-        SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)
-        WHERE {
-         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
-         FILTER NOT EXISTS { ?ref ?p ?o }
-        }
-") ]
-	Message: Referenced features must be present within current graph closure for  topological feature.
-Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: topo:testTopoReferencesExist
-	Focus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]
-	Value Node: <file:///github/workspace/P2>
-	Result Path: geojson:relatedFeatures
-	Source Constraint: [ sh:message Literal("Referenced features must be present within current graph closure for  topological feature.") ; sh:select Literal("
-        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-        prefix geojson: <https://purl.org/geojson/vocab#>
-
-        SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)
-        WHERE {
-         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
-         FILTER NOT EXISTS { ?ref ?p ?o }
-        }
-") ]
-	Message: Referenced features must be present within current graph closure for  topological feature.
-Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-	Severity: sh:Violation
 	Source Shape: topo:testTopoLinesReferencePoints
 	Focus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]
 	Value Node: <file:///github/workspace/P2>
@@ -94,22 +64,53 @@ Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SP
         }
 ") ]
 	Message: Lines topologies must reference points within current graph closure.
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: topo:testTopoReferencesExist
+	Focus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]
+	Value Node: <file:///github/workspace/P2>
+	Result Path: geojson:relatedFeatures
+	Source Constraint: [ sh:message Literal("Referenced features must be present within current graph closure for  topological feature.") ; sh:select Literal("
+        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+        prefix geojson: <https://purl.org/geojson/vocab#>
+
+        SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)
+        WHERE {
+         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+         FILTER NOT EXISTS { ?ref ?p ?o }
+        }
+") ]
+	Message: Referenced features must be present within current graph closure for  topological feature.
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: topo:testTopoReferencesExist
+	Focus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]
+	Value Node: <file:///github/workspace/P2>
+	Result Path: geojson:relatedFeatures
+	Source Constraint: [ sh:message Literal("Referenced features must be present within current graph closure for  topological feature.") ; sh:select Literal("
+        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+        prefix geojson: <https://purl.org/geojson/vocab#>
+
+        SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)
+        WHERE {
+         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+         FILTER NOT EXISTS { ?ref ?p ?o }
+        }
+") ]
+	Message: Referenced features must be present within current graph closure for  topological feature.
 
 Focus nodes:
- - Shape _:n0629aa78c19241209a3088772dd65c69b3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
- - Shape topo:testTopoReferencesExist: <file:///github/workspace/LineP1P2>/geojson:topology
+ - Shape _:n1eeef34aa3a7464398d757e6de184656b3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
  - Shape topo:testTopoPolyReferencesLines: *none*
- - Shape _:n89332ea7bd7340df960ec8593cbd93dfb1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
  - Shape topo:testTopoLinesReferencePoints: <file:///github/workspace/LineP1P2>/geojson:topology
- - Shape _:n0629aa78c19241209a3088772dd65c69b1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
- - Shape _:n89332ea7bd7340df960ec8593cbd93dfb3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
- - Shape _:n89332ea7bd7340df960ec8593cbd93dfb2 (path geojson:coordinates): *none*
- - Shape _:n0629aa78c19241209a3088772dd65c69b2 (path geojson:coordinates): *none*
+ - Shape topo:testTopoReferencesExist: <file:///github/workspace/LineP1P2>/geojson:topology
+ - Shape _:n0e0f446ebd694388912e85ccb41c0547b1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+ - Shape _:n1eeef34aa3a7464398d757e6de184656b1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+ - Shape _:n0e0f446ebd694388912e85ccb41c0547b3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+ - Shape _:n0e0f446ebd694388912e85ccb41c0547b2 (path geojson:coordinates): *none*
+ - Shape _:n1eeef34aa3a7464398d757e6de184656b2 (path geojson:coordinates): *none*
 
 === End SHACL ===
-
-=== General ===
-Test was expected to fail and it did.
-
-=== End General ===
 

@@ -1,0 +1,107 @@
+{
+  "title": "Validation report for ogc.geo.topo.features.topo-line - Line using Point References",
+  "bblockName": "Line using Point References",
+  "bblockId": "ogc.geo.topo.features.topo-line",
+  "generated": "2023-11-01T06:07:07.632030+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-line/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "result": true,
+      "sections": {
+        "FILES": [
+          {
+            "isError": false,
+            "message": "Using example_1_1.json from examples"
+          },
+          {
+            "op": "jsonld-uplift",
+            "isError": false,
+            "message": "JSON-LD context is present - uplifting"
+          },
+          {
+            "op": "jsonld-create",
+            "filename": "example_1_1.jsonld",
+            "isError": false,
+            "message": "Output JSON-LD example_1_1.jsonld created"
+          },
+          {
+            "op": "ttl-create",
+            "empty": false,
+            "filename": "example_1_1.ttl",
+            "size": 8,
+            "isError": false,
+            "message": "Output Turtle example_1_1.ttl created"
+          }
+        ],
+        "JSON_SCHEMA": [
+          {
+            "op": "validation",
+            "result": true,
+            "isError": false,
+            "message": "Validation passed"
+          }
+        ],
+        "SHACL": [
+          {
+            "op": "shacl-files",
+            "files": [
+              "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+              "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            ],
+            "isError": false,
+            "message": "Using SHACL files for validation:\n - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl\n - _sources/features/topo-feature/tests/geometry-coordinates.shacl"
+          },
+          {
+            "op": "shacl-report",
+            "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+            "isError": false,
+            "message": "Validation Report\nConforms: True\n"
+          },
+          {
+            "focusNodes": {
+              "topo:testTopoPolyReferencesLines": {
+                "nodes": []
+              },
+              "topo:testTopoLinesReferencePoints": {
+                "nodes": [
+                  "<http://www.example.com/features/LineP1P2>/geojson:topology"
+                ]
+              },
+              "topo:testTopoReferencesExist": {
+                "nodes": [
+                  "<http://www.example.com/features/LineP1P2>/geojson:topology"
+                ]
+              },
+              "_:nbbc7afbbf5a24a929f92645bf018a464b1": {
+                "nodes": []
+              },
+              "_:nbbc7afbbf5a24a929f92645bf018a464b3": {
+                "nodes": []
+              },
+              "_:nbbc7afbbf5a24a929f92645bf018a464b2": {
+                "nodes": [],
+                "path": "geojson:coordinates"
+              }
+            },
+            "isError": false,
+            "message": "Focus nodes:\n - Shape topo:testTopoPolyReferencesLines: *none*\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape _:nbbc7afbbf5a24a929f92645bf018a464b1: *none*\n - Shape _:nbbc7afbbf5a24a929f92645bf018a464b3: *none*\n - Shape _:nbbc7afbbf5a24a929f92645bf018a464b2 (path geojson:coordinates): *none*\n"
+          }
+        ]
+      }
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0
+  }
+}

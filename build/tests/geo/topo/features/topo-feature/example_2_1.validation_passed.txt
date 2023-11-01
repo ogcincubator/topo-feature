@@ -1,3 +1,5 @@
+Validation report for ogc.geo.topo.features.topo-feature - Feature with topology
+Generated 2023-11-01T06:07:06.019814+00:00
 === Files ===
 Using example_2_1.json from examples
 JSON-LD context is present - uplifting
@@ -11,18 +13,18 @@ Validation passed
 
 === SHACL ===
 Using SHACL files for validation:
- - features/topo-feature/tests/geometry-coordinates.shacl
- - features/topo-feature-collection/tests/topo-refs-exist.shacl
+ - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl
+ - _sources/features/topo-feature/tests/geometry-coordinates.shacl
 Validation Report
 Conforms: True
 
 Focus nodes:
- - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology
+ - Shape _:ndee21c8aef124534a342533511277496b1: *none*
  - Shape topo:testTopoPolyReferencesLines: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology
  - Shape topo:testTopoLinesReferencePoints: *none*
- - Shape _:n08367f25623a4ce28a69f8640509718eb3: *none*
- - Shape _:n08367f25623a4ce28a69f8640509718eb1: *none*
- - Shape _:n08367f25623a4ce28a69f8640509718eb2 (path geojson:coordinates): *none*
+ - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology
+ - Shape _:ndee21c8aef124534a342533511277496b3: *none*
+ - Shape _:ndee21c8aef124534a342533511277496b2 (path geojson:coordinates): *none*
 
 === End SHACL ===
 
