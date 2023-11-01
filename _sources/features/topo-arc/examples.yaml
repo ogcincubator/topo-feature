@@ -1,0 +1,11 @@
+- title: Example GeoJSON feature using topology
+  content: |-
+      Arc with Center example.
+
+  snippets:
+    - language: json
+      base-uri: http://www.example.com/features/
+      ref: example.json
+      # this is a "closure" of objects required to perform SHACL validation of logical constraints.
+      shacl-closure:
+        - ../topo-feature/examples/points.ttl
