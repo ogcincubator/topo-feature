@@ -1,5 +1,5 @@
 ---
-title: Arc Description using Point topology (Schema)
+title: Non-linear Arcs Descriptions using Point topology (Schema)
 
 language_tabs:
   - json: JSON
@@ -8,7 +8,7 @@ language_tabs:
 
 toc_footers:
   - Version 0.1
-  - <a href='#'>Arc Description using Point topology</a>
+  - <a href='#'>Non-linear Arcs Descriptions using Point topology</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -16,13 +16,13 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: Arc Description using Point topology (Schema)
+  - name: Non-linear Arcs Descriptions using Point topology (Schema)
 ---
 
 
-# Arc Description using Point topology `ogc.geo.topo.features.topo-arc`
+# Non-linear Arcs Descriptions using Point topology `ogc.geo.topo.features.topo-arc`
 
-Defines options for describing Arcs using point features as canonical source of geometry coordinates
+Defines options for describing Arcs, Circles, Splines using point features as canonical source of geometry coordinates
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
@@ -37,14 +37,12 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 
 ## Topology defined Arc
 
-%definition% 
-
 A feature type using a topology property to reference points defining an Arc.
 
 ![Example](https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png)
 # Examples
 
-## Example GeoJSON feature using topology
+## Example GeoJSON feature using Arc with Center topology
 
 Arc with Center example.
 
@@ -117,7 +115,8 @@ Arc with Center example.
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://www.example.com/features/1853004> a geojson:Feature ;
+<http://www.example.com/features/1853004> a geojson:Feature,
+        <my:ArcFeature> ;
     geojson:topology [ a <http://www.example.com/features/ArcWithCenter> ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .
 
@@ -127,6 +126,171 @@ Arc with Center example.
 <blockquote class="lang-specific turtle">
   <p class="example-links">
     <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.ttl">Open in new window</a>
+</blockquote>
+
+
+
+## Example GeoJSON feature using  Circle with Center topology
+
+Circle with Center example.
+
+
+
+```json
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:CircleFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CircleByCenter",
+    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "references": [
+      "PC"
+    ],
+    "radius": 10
+  },
+  "properties": {
+  }
+}
+```
+
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+
+
+
+
+```jsonld
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:CircleFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CircleByCenter",
+    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "references": [
+      "PC"
+    ],
+    "radius": 10
+  },
+  "properties": {},
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+}
+```
+
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+
+
+
+
+```turtle
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/1853004> a geojson:Feature,
+        <my:CircleFeature> ;
+    geojson:topology [ a <http://www.example.com/features/CircleByCenter> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/PC> ) ] .
+
+
+```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.ttl">Open in new window</a>
+</blockquote>
+
+
+
+## Example GeoJSON feature using Cubic Spline topology
+
+Cubic Spline example.
+
+
+
+```json
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:SplineFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CubicSpline",
+    "x-description": "References is an ordered list of features with point geometries",
+    "references": [
+      "P1",
+      "Px1",
+      "Px2",
+      "P2"
+    ]
+  },
+  "properties": null
+}
+```
+
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+
+
+
+
+```jsonld
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:SplineFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CubicSpline",
+    "x-description": "References is an ordered list of features with point geometries",
+    "references": [
+      "P1",
+      "Px1",
+      "Px2",
+      "P2"
+    ]
+  },
+  "properties": null,
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+}
+```
+
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+
+
+
+
+```turtle
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/1853004> a geojson:Feature,
+        <my:SplineFeature> ;
+    geojson:topology [ a <http://www.example.com/features/CubicSpline> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/Px1> <http://www.example.com/features/Px2> <http://www.example.com/features/P2> ) ] .
+
+
+```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -142,13 +306,29 @@ allOf:
     topology:
       allOf:
       - $ref: ../../datatypes/topology/schema.json
-      - properties:
-          type:
-            type: string
-            const: ArcWithCenter
-          references:
-            minItems: 3
-            maxItems: 3
+      - oneOf:
+        - properties:
+            type:
+              type: string
+              const: ArcWithCenter
+            references:
+              minItems: 3
+              maxItems: 3
+        - properties:
+            type:
+              type: string
+              const: CircleByCenter
+            references:
+              minItems: 1
+              maxItems: 1
+            radius:
+              type: number
+        - properties:
+            type:
+              type: string
+              const: CubicSpline
+            references:
+              minItems: 3
   required:
   - topology
 
@@ -200,6 +380,7 @@ Links to the schema:
       "@id": "geojson:features"
     },
     "id": "@id",
+    "featureType": "@type",
     "links": {
       "@context": {
         "href": "oa:hasTarget",
@@ -238,10 +419,11 @@ You can find the full JSON-LD context here:
 
 ## SHACL Shapes
 
-The following SHACL shapes are used for validating this building block:
+The following sets of SHACL shapes are used for validating this building block:
 
-* [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
-* [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
+* Feature with topology <small><code>ogc.geo.topo.features.topo-feature</code></small>
+  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
+  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
 
 # For developers
 

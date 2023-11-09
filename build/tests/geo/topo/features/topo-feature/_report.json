@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.features.topo-feature - Feature with topology",
   "bblockName": "Feature with topology",
   "bblockId": "ogc.geo.topo.features.topo-feature",
-  "generated": "2023-11-01T06:07:06.019926+00:00",
+  "generated": "2023-11-09T06:26:04.553419+00:00",
   "result": true,
   "items": [
     {
@@ -67,10 +67,7 @@
           },
           {
             "focusNodes": {
-              "_:ndee21c8aef124534a342533511277496b1": {
-                "nodes": []
-              },
-              "topo:testTopoPolyReferencesLines": {
+              "_:n2710f5cf6d434cfa9169927df5180f33b3": {
                 "nodes": []
               },
               "topo:testTopoLinesReferencePoints": {
@@ -78,21 +75,24 @@
                   "<http://www.example.com/features/LineP1P2>/geojson:topology"
                 ]
               },
+              "topo:testTopoPolyReferencesLines": {
+                "nodes": []
+              },
               "topo:testTopoReferencesExist": {
                 "nodes": [
                   "<http://www.example.com/features/LineP1P2>/geojson:topology"
                 ]
               },
-              "_:ndee21c8aef124534a342533511277496b3": {
+              "_:n2710f5cf6d434cfa9169927df5180f33b1": {
                 "nodes": []
               },
-              "_:ndee21c8aef124534a342533511277496b2": {
+              "_:n2710f5cf6d434cfa9169927df5180f33b2": {
                 "nodes": [],
                 "path": "geojson:coordinates"
               }
             },
             "isError": false,
-            "message": "Focus nodes:\n - Shape _:ndee21c8aef124534a342533511277496b1: *none*\n - Shape topo:testTopoPolyReferencesLines: *none*\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape _:ndee21c8aef124534a342533511277496b3: *none*\n - Shape _:ndee21c8aef124534a342533511277496b2 (path geojson:coordinates): *none*\n"
+            "message": "Focus nodes:\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b3: *none*\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoPolyReferencesLines: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b1: *none*\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b2 (path geojson:coordinates): *none*\n"
           }
         ]
       }
@@ -159,7 +159,10 @@
           },
           {
             "focusNodes": {
-              "_:ndee21c8aef124534a342533511277496b1": {
+              "_:n2710f5cf6d434cfa9169927df5180f33b3": {
+                "nodes": []
+              },
+              "topo:testTopoLinesReferencePoints": {
                 "nodes": []
               },
               "topo:testTopoPolyReferencesLines": {
@@ -167,24 +170,21 @@
                   "<http://www.example.com/features/TriangleP1P2P3>/geojson:topology"
                 ]
               },
-              "topo:testTopoLinesReferencePoints": {
-                "nodes": []
-              },
               "topo:testTopoReferencesExist": {
                 "nodes": [
                   "<http://www.example.com/features/TriangleP1P2P3>/geojson:topology"
                 ]
               },
-              "_:ndee21c8aef124534a342533511277496b3": {
+              "_:n2710f5cf6d434cfa9169927df5180f33b1": {
                 "nodes": []
               },
-              "_:ndee21c8aef124534a342533511277496b2": {
+              "_:n2710f5cf6d434cfa9169927df5180f33b2": {
                 "nodes": [],
                 "path": "geojson:coordinates"
               }
             },
             "isError": false,
-            "message": "Focus nodes:\n - Shape _:ndee21c8aef124534a342533511277496b1: *none*\n - Shape topo:testTopoPolyReferencesLines: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology\n - Shape _:ndee21c8aef124534a342533511277496b3: *none*\n - Shape _:ndee21c8aef124534a342533511277496b2 (path geojson:coordinates): *none*\n"
+            "message": "Focus nodes:\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b3: *none*\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoPolyReferencesLines: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b1: *none*\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b2 (path geojson:coordinates): *none*\n"
           }
         ]
       }

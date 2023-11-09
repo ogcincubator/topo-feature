@@ -493,6 +493,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
       </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:features"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@id"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@type"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"oa:hasTarget"</span><span class="p">,</span><span class="w">
@@ -528,11 +529,15 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 <p>You can find the full JSON-LD context here:
 <a href="https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld" target="_blank">https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld</a></p>
 <h1 id='validation'>Validation</h1><h2 id='shacl-shapes'>SHACL Shapes</h2>
-<p>The following SHACL shapes are used for validating this building block:</p>
+<p>The following sets of SHACL shapes are used for validating this building block:</p>
+
+<ul>
+<li>Feature with topology <small><code>ogc.geo.topo.features.topo-feature</code></small>
 
 <ul>
 <li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl</a></li>
 <li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl</a></li>
+</ul></li>
 </ul>
 <h1 id='for-developers'>For developers</h1>
 <p>The source code for this Building Block can be found in the following repository:</p>

@@ -194,6 +194,7 @@ Links to the schema:
     },
     "type": "@type",
     "id": "@id",
+    "featureType": "@type",
     "links": {
       "@context": {
         "href": "oa:hasTarget",

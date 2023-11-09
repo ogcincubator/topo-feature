@@ -22,7 +22,7 @@
         "geometry",
         "topology"
       ],
-      "shaclRules": [],
+      "shaclRules": {},
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml",
         "application/json": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.json"
@@ -60,13 +60,15 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.topo.datatypes.topology",
-        "ogc.geo.json-fg.feature"
+        "ogc.geo.json-fg.feature",
+        "ogc.geo.topo.datatypes.topology"
       ],
-      "shaclRules": [
-        "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-        "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
-      ],
+      "shaclRules": {
+        "ogc.geo.topo.features.topo-feature": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ]
+      },
       "tags": [
         "topology",
         "feature"
@@ -97,8 +99,8 @@
     },
     {
       "itemIdentifier": "ogc.geo.topo.features.topo-arc",
-      "name": "Arc Description using Point topology",
-      "abstract": "Defines options for describing Arcs using point features as canonical source of geometry coordinates",
+      "name": "Non-linear Arcs Descriptions using Point topology",
+      "abstract": "Defines options for describing Arcs, Circles, Splines using point features as canonical source of geometry coordinates",
       "status": "under-development",
       "dateTimeAddition": "2023-11-01T00:00:00Z",
       "itemClass": "schema",
@@ -113,10 +115,12 @@
         "geometry",
         "topology"
       ],
-      "shaclRules": [
-        "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-        "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
-      ],
+      "shaclRules": {
+        "ogc.geo.topo.features.topo-feature": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ]
+      },
       "dependsOn": [
         "ogc.geo.topo.features.topo-feature",
         "ogc.geo.topo.datatypes.topology"
@@ -163,10 +167,12 @@
         "geometry",
         "topology"
       ],
-      "shaclRules": [
-        "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-        "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
-      ],
+      "shaclRules": {
+        "ogc.geo.topo.features.topo-feature": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ]
+      },
       "dependsOn": [
         "ogc.geo.topo.features.topo-feature",
         "ogc.geo.topo.datatypes.topology"
@@ -205,12 +211,16 @@
       "version": "0.1",
       "dateOfLastChange": "2023-07-05",
       "sources": [],
-      "shaclRules": [
-        "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-        "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-        "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-        "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
-      ],
+      "shaclRules": {
+        "ogc.geo.topo.features.topo-feature-collection": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ]
+      },
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [

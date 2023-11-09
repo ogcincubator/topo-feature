@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.features.topo-line - Line using Point References",
   "bblockName": "Line using Point References",
   "bblockId": "ogc.geo.topo.features.topo-line",
-  "generated": "2023-11-01T06:07:07.632030+00:00",
+  "generated": "2023-11-09T06:26:06.035901+00:00",
   "result": true,
   "items": [
     {
@@ -67,7 +67,10 @@
           },
           {
             "focusNodes": {
-              "topo:testTopoPolyReferencesLines": {
+              "_:n879cf8d38cc140439701d77822914420b1": {
+                "nodes": []
+              },
+              "_:n879cf8d38cc140439701d77822914420b3": {
                 "nodes": []
               },
               "topo:testTopoLinesReferencePoints": {
@@ -75,24 +78,21 @@
                   "<http://www.example.com/features/LineP1P2>/geojson:topology"
                 ]
               },
+              "topo:testTopoPolyReferencesLines": {
+                "nodes": []
+              },
               "topo:testTopoReferencesExist": {
                 "nodes": [
                   "<http://www.example.com/features/LineP1P2>/geojson:topology"
                 ]
               },
-              "_:nbbc7afbbf5a24a929f92645bf018a464b1": {
-                "nodes": []
-              },
-              "_:nbbc7afbbf5a24a929f92645bf018a464b3": {
-                "nodes": []
-              },
-              "_:nbbc7afbbf5a24a929f92645bf018a464b2": {
+              "_:n879cf8d38cc140439701d77822914420b2": {
                 "nodes": [],
                 "path": "geojson:coordinates"
               }
             },
             "isError": false,
-            "message": "Focus nodes:\n - Shape topo:testTopoPolyReferencesLines: *none*\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape _:nbbc7afbbf5a24a929f92645bf018a464b1: *none*\n - Shape _:nbbc7afbbf5a24a929f92645bf018a464b3: *none*\n - Shape _:nbbc7afbbf5a24a929f92645bf018a464b2 (path geojson:coordinates): *none*\n"
+            "message": "Focus nodes:\n - Shape _:n879cf8d38cc140439701d77822914420b1: *none*\n - Shape _:n879cf8d38cc140439701d77822914420b3: *none*\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoPolyReferencesLines: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape _:n879cf8d38cc140439701d77822914420b2 (path geojson:coordinates): *none*\n"
           }
         ]
       }

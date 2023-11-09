@@ -1,0 +1,41 @@
+{
+  "x-defs": {
+    "ogc.geo.topo.datatypes.topology": {
+      "description": "feature with geometry by reference",
+      "properties": {
+        "type": {
+          "type": "string",
+          "x-jsonld-id": "@type"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "x-jsonld-id": "https://purl.org/geojson/vocab#relatedFeatures",
+          "x-jsonld-type": "@id",
+          "x-jsonld-container": "@list"
+        }
+      },
+      "required": [
+        "references",
+        "type"
+      ],
+      "x-jsonld-extra-terms": {
+        "LineString": "https://purl.org/geojson/vocab#LineString"
+      },
+      "x-jsonld-prefixes": {
+        "geojson": "https://purl.org/geojson/vocab#",
+        "csdm": "https://linked.data.gov.au/def/csdm/",
+        "dct": "http://purl.org/dc/terms/"
+      },
+      "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
+      "x-schema-source": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema-oas3.0.json"
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema-oas3.0.json#/x-defs/ogc.geo.topo.datatypes.topology"
+    }
+  ]
+}

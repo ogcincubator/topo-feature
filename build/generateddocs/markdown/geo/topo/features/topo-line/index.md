@@ -135,6 +135,7 @@ Links to the schema:
       "@id": "geojson:features"
     },
     "id": "@id",
+    "featureType": "@type",
     "links": {
       "@context": {
         "href": "oa:hasTarget",

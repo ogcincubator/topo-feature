@@ -1,2 +1,123 @@
 
-{"itemIdentifier": "ogc.geo.topo.features.topo-arc", "name": "Arc Description using Point topology", "abstract": "Defines options for describing Arcs using point features as canonical source of geometry coordinates", "status": "under-development", "dateTimeAddition": "2023-11-01T00:00:00Z", "itemClass": "schema", "register": "ogcincubator", "version": "0.1", "dateOfLastChange": "2023-05-24", "sources": [], "maturity": "development", "scope": "unstable", "tags": ["3D", "geometry", "topology"], "shaclRules": ["https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl", "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"], "dependsOn": ["ogc.geo.topo.features.topo-feature", "ogc.geo.topo.datatypes.topology"], "schema": {"application/yaml": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.yaml", "application/json": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.json"}, "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld", "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/", "validationPassed": true, "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-arc/", "description": "## Topology defined Arc\n\n%definition% \n\nA feature type using a topology property to reference points defining an Arc.\n\n![Example](@@assets@@/arc.png)", "examples": [{"title": "Example GeoJSON feature using topology", "content": "Arc with Center example.", "snippets": [{"language": "json", "base-uri": "http://www.example.com/features/", "ref": "example.json", "shacl-closure": ["../topo-feature/examples/points.ttl"], "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:ArcFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"ArcWithCenter\",\n    \"x-description\": \"References is an ordered list of features with point geometries Start,End,Center\",\n    \"references\": [\n      \"P1\",\n      \"P2\",\n      \"PC\"\n    ]\n  },\n  \"properties\": {\n    \"arcLength\": 25.615,\n    \"radius\": 105.438\n  }\n}", "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.json"}, {"language": "jsonld", "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:ArcFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"ArcWithCenter\",\n    \"x-description\": \"References is an ordered list of features with point geometries Start,End,Center\",\n    \"references\": [\n      \"P1\",\n      \"P2\",\n      \"PC\"\n    ]\n  },\n  \"properties\": {\n    \"arcLength\": 25.615,\n    \"radius\": 105.438\n  },\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\"\n}", "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.jsonld"}, {"language": "ttl", "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://www.example.com/features/1853004> a geojson:Feature ;\n    geojson:topology [ a <http://www.example.com/features/ArcWithCenter> ;\n            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .\n\n", "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.ttl"}]}], "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Arc Feature with geometry by reference\nallOf:\n- $ref: ../topo-feature/schema.json\n- properties:\n    topology:\n      allOf:\n      - $ref: ../../datatypes/topology/schema.json\n      - properties:\n          type:\n            type: string\n            const: ArcWithCenter\n          references:\n            minItems: 3\n            maxItems: 3\n  required:\n  - topology\n", "gitRepository": "https://github.com/ogcincubator/topo-feature", "gitPath": "_sources/features/topo-arc"}
+
+{
+  "itemIdentifier": "ogc.geo.topo.features.topo-arc",
+  "name": "Non-linear Arcs Descriptions using Point topology",
+  "abstract": "Defines options for describing Arcs, Circles, Splines using point features as canonical source of geometry coordinates",
+  "status": "under-development",
+  "dateTimeAddition": "2023-11-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogcincubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-05-24",
+  "sources": [],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "3D",
+    "geometry",
+    "topology"
+  ],
+  "shaclRules": {
+    "ogc.geo.topo.features.topo-feature": [
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+    ]
+  },
+  "dependsOn": [
+    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.topo.datatypes.topology"
+  ],
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.json"
+  },
+  "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-arc/",
+  "description": "## Topology defined Arc\n\nA feature type using a topology property to reference points defining an Arc.\n\n![Example](@@assets@@/arc.png)",
+  "examples": [
+    {
+      "title": "Example GeoJSON feature using Arc with Center topology",
+      "content": "Arc with Center example.",
+      "snippets": [
+        {
+          "language": "json",
+          "base-uri": "http://www.example.com/features/",
+          "ref": "examples/arc.json",
+          "shacl-closure": [
+            "../topo-feature/examples/points.ttl"
+          ],
+          "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:ArcFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"ArcWithCenter\",\n    \"x-description\": \"References is an ordered list of features with point geometries Start,End,Center\",\n    \"references\": [\n      \"P1\",\n      \"P2\",\n      \"PC\"\n    ]\n  },\n  \"properties\": {\n    \"arcLength\": 25.615,\n    \"radius\": 105.438\n  }\n}",
+          "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:ArcFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"ArcWithCenter\",\n    \"x-description\": \"References is an ordered list of features with point geometries Start,End,Center\",\n    \"references\": [\n      \"P1\",\n      \"P2\",\n      \"PC\"\n    ]\n  },\n  \"properties\": {\n    \"arcLength\": 25.615,\n    \"radius\": 105.438\n  },\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\"\n}",
+          "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://www.example.com/features/1853004> a geojson:Feature,\n        <my:ArcFeature> ;\n    geojson:topology [ a <http://www.example.com/features/ArcWithCenter> ;\n            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .\n\n",
+          "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Example GeoJSON feature using  Circle with Center topology",
+      "content": "Circle with Center example.",
+      "snippets": [
+        {
+          "language": "json",
+          "base-uri": "http://www.example.com/features/",
+          "ref": "examples/circle.json",
+          "shacl-closure": [
+            "../topo-feature/examples/points.ttl"
+          ],
+          "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:CircleFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"CircleByCenter\",\n    \"x-description\": \"References is an ordered list of features with point geometries Start,End,Center\",\n    \"references\": [\n      \"PC\"\n    ],\n    \"radius\": 10\n  },\n  \"properties\": {\n  }\n}",
+          "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:CircleFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"CircleByCenter\",\n    \"x-description\": \"References is an ordered list of features with point geometries Start,End,Center\",\n    \"references\": [\n      \"PC\"\n    ],\n    \"radius\": 10\n  },\n  \"properties\": {},\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\"\n}",
+          "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://www.example.com/features/1853004> a geojson:Feature,\n        <my:CircleFeature> ;\n    geojson:topology [ a <http://www.example.com/features/CircleByCenter> ;\n            geojson:relatedFeatures ( <http://www.example.com/features/PC> ) ] .\n\n",
+          "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Example GeoJSON feature using Cubic Spline topology",
+      "content": "Cubic Spline example.",
+      "snippets": [
+        {
+          "language": "json",
+          "base-uri": "http://www.example.com/features/",
+          "ref": "examples/spline.json",
+          "shacl-closure": [
+            "../topo-feature/examples/points.ttl"
+          ],
+          "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:SplineFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"CubicSpline\",\n    \"x-description\": \"References is an ordered list of features with point geometries\",\n    \"references\": [\n      \"P1\",\n      \"Px1\",\n      \"Px2\",\n      \"P2\"\n    ]\n  },\n  \"properties\": null\n}",
+          "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:SplineFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"CubicSpline\",\n    \"x-description\": \"References is an ordered list of features with point geometries\",\n    \"references\": [\n      \"P1\",\n      \"Px1\",\n      \"Px2\",\n      \"P2\"\n    ]\n  },\n  \"properties\": null,\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\"\n}",
+          "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://www.example.com/features/1853004> a geojson:Feature,\n        <my:SplineFeature> ;\n    geojson:topology [ a <http://www.example.com/features/CubicSpline> ;\n            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/Px1> <http://www.example.com/features/Px2> <http://www.example.com/features/P2> ) ] .\n\n",
+          "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Arc Feature with geometry by reference\nallOf:\n- $ref: ../topo-feature/schema.json\n- properties:\n    topology:\n      allOf:\n      - $ref: ../../datatypes/topology/schema.json\n      - oneOf:\n        - properties:\n            type:\n              type: string\n              const: ArcWithCenter\n            references:\n              minItems: 3\n              maxItems: 3\n        - properties:\n            type:\n              type: string\n              const: CircleByCenter\n            references:\n              minItems: 1\n              maxItems: 1\n            radius:\n              type: number\n        - properties:\n            type:\n              type: string\n              const: CubicSpline\n            references:\n              minItems: 3\n  required:\n  - topology\n",
+  "gitRepository": "https://github.com/ogcincubator/topo-feature",
+  "gitPath": "_sources/features/topo-arc"
+}

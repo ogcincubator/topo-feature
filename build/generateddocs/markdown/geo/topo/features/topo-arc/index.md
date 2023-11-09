@@ -1,9 +1,9 @@
 
-# Arc Description using Point topology (Schema)
+# Non-linear Arcs Descriptions using Point topology (Schema)
 
 `ogc.geo.topo.features.topo-arc` *v0.1*
 
-Defines options for describing Arcs using point features as canonical source of geometry coordinates
+Defines options for describing Arcs, Circles, Splines using point features as canonical source of geometry coordinates
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
@@ -11,14 +11,12 @@ Defines options for describing Arcs using point features as canonical source of 
 
 ## Topology defined Arc
 
-%definition% 
-
 A feature type using a topology property to reference points defining an Arc.
 
 ![Example](https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png)
 ## Examples
 
-### Example GeoJSON feature using topology
+### Example GeoJSON feature using Arc with Center topology
 Arc with Center example.
 #### json
 ```json
@@ -72,9 +70,125 @@ Arc with Center example.
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://www.example.com/features/1853004> a geojson:Feature ;
+<http://www.example.com/features/1853004> a geojson:Feature,
+        <my:ArcFeature> ;
     geojson:topology [ a <http://www.example.com/features/ArcWithCenter> ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .
+
+
+```
+
+
+### Example GeoJSON feature using  Circle with Center topology
+Circle with Center example.
+#### json
+```json
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:CircleFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CircleByCenter",
+    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "references": [
+      "PC"
+    ],
+    "radius": 10
+  },
+  "properties": {
+  }
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:CircleFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CircleByCenter",
+    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "references": [
+      "PC"
+    ],
+    "radius": 10
+  },
+  "properties": {},
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+}
+```
+
+#### ttl
+```ttl
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/1853004> a geojson:Feature,
+        <my:CircleFeature> ;
+    geojson:topology [ a <http://www.example.com/features/CircleByCenter> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/PC> ) ] .
+
+
+```
+
+
+### Example GeoJSON feature using Cubic Spline topology
+Cubic Spline example.
+#### json
+```json
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:SplineFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CubicSpline",
+    "x-description": "References is an ordered list of features with point geometries",
+    "references": [
+      "P1",
+      "Px1",
+      "Px2",
+      "P2"
+    ]
+  },
+  "properties": null
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:SplineFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CubicSpline",
+    "x-description": "References is an ordered list of features with point geometries",
+    "references": [
+      "P1",
+      "Px1",
+      "Px2",
+      "P2"
+    ]
+  },
+  "properties": null,
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+}
+```
+
+#### ttl
+```ttl
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/1853004> a geojson:Feature,
+        <my:SplineFeature> ;
+    geojson:topology [ a <http://www.example.com/features/CubicSpline> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/Px1> <http://www.example.com/features/Px2> <http://www.example.com/features/P2> ) ] .
 
 
 ```
@@ -90,13 +204,29 @@ allOf:
     topology:
       allOf:
       - $ref: ../../datatypes/topology/schema.json
-      - properties:
-          type:
-            type: string
-            const: ArcWithCenter
-          references:
-            minItems: 3
-            maxItems: 3
+      - oneOf:
+        - properties:
+            type:
+              type: string
+              const: ArcWithCenter
+            references:
+              minItems: 3
+              maxItems: 3
+        - properties:
+            type:
+              type: string
+              const: CircleByCenter
+            references:
+              minItems: 1
+              maxItems: 1
+            radius:
+              type: number
+        - properties:
+            type:
+              type: string
+              const: CubicSpline
+            references:
+              minItems: 3
   required:
   - topology
 
@@ -146,6 +276,7 @@ Links to the schema:
       "@id": "geojson:features"
     },
     "id": "@id",
+    "featureType": "@type",
     "links": {
       "@context": {
         "href": "oa:hasTarget",

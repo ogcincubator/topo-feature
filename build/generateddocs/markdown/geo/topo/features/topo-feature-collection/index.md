@@ -547,6 +547,7 @@ Links to the schema:
       "@id": "geojson:topology"
     },
     "type": "@type",
+    "featureType": "@type",
     "links": {
       "@context": {
         "href": "oa:hasTarget",
