@@ -1,0 +1,16 @@
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:CircleFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CircleByCenter",
+    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "references": [
+      "PC"
+    ],
+    "radius": 10
+  },
+  "properties": {
+  }
+}

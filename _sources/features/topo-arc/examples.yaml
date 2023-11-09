@@ -1,11 +1,35 @@
-- title: Example GeoJSON feature using topology
+- title: Example GeoJSON feature using Arc with Center topology
   content: |-
       Arc with Center example.
 
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
-      ref: example.json
+      ref: examples/arc.json
+      # this is a "closure" of objects required to perform SHACL validation of logical constraints.
+      shacl-closure:
+        - ../topo-feature/examples/points.ttl
+
+- title: Example GeoJSON feature using  Circle with Center topology
+  content: |-
+      Circle with Center example.
+
+  snippets:
+    - language: json
+      base-uri: http://www.example.com/features/
+      ref: examples/circle.json
+      # this is a "closure" of objects required to perform SHACL validation of logical constraints.
+      shacl-closure:
+        - ../topo-feature/examples/points.ttl
+
+- title: Example GeoJSON feature using Cubic Spline topology
+  content: |-
+    Cubic Spline example.
+
+  snippets:
+    - language: json
+      base-uri: http://www.example.com/features/
+      ref: examples/spline.json
       # this is a "closure" of objects required to perform SHACL validation of logical constraints.
       shacl-closure:
         - ../topo-feature/examples/points.ttl

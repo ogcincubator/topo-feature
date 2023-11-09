@@ -1,6 +1,6 @@
 {
-  "name": "Arc Description using Point topology",
-  "abstract": "Defines options for describing Arcs using point features as canonical source of geometry coordinates",
+  "name": "Non-linear Arcs Descriptions using Point topology",
+  "abstract": "Defines options for describing Arcs, Circles, Splines using point features as canonical source of geometry coordinates",
   "status": "under-development",
   "dateTimeAddition": "2023-11-01T00:00:00Z",
   "itemClass": "schema",
