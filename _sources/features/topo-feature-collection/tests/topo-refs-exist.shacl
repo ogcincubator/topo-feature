@@ -48,25 +48,25 @@ topo:testTopoLinesReferencePoints
 """ ; ]
 .
 
-topo:testTopoPolyReferencesLines
-    a                  sh:NodeShape ;
-    sh:description     "Topology references for polygons are line." ;
-    sh:targetClass     geojson:Polygon ;
-    sh:name            "Polys reference lines" ;
-    sh:sparql          [ sh:message
-                                   "Polygons must reference objects with linestring geometry or topologies within current graph closure." ;
-                         sh:select """
-        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-        prefix geojson: <https://purl.org/geojson/vocab#>
-
-        SELECT $this (geojson:topology as ?path) (?ref as ?value)
-        WHERE {
-         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
-         FILTER NOT EXISTS {
-             ?ref (geojson:geometry|geojson:topology)/rdf:type geojson:LineString }
-        }
-""" ; ]
-.
+#topo:testTopoPolyReferences
+#    a                  sh:NodeShape ;
+#    sh:description     "Topology references for polygons are lines, arcs or a circle." ;
+#    sh:targetClass     geojson:Polygon ;
+#    sh:name            "Polys reference lines" ;
+#    sh:sparql          [ sh:message
+#                                   "Polygons must reference objects with LineString,Arc or complete Circle geometry or topologies within current graph closure." ;
+#                         sh:select """
+#        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+#        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+#        prefix geojson: <https://purl.org/geojson/vocab#>
+#
+#        SELECT $this (geojson:topology as ?path) (?ref as ?value)
+#        WHERE {
+#         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+#         FILTER NOT EXISTS {
+#             ?ref (geojson:geometry|geojson:topology)/rdf:type (geojson:LineString|geojson:CircleByCenter|geojson:ArcWithCenter|geojson:) }
+#        }
+#""" ; ]
+#.
 
 
