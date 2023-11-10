@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.features.topo-feature - Feature with topology",
   "bblockName": "Feature with topology",
   "bblockId": "ogc.geo.topo.features.topo-feature",
-  "generated": "2023-11-09T06:26:04.553419+00:00",
+  "generated": "2023-11-10T00:44:17.231380+00:00",
   "result": true,
   "items": [
     {
@@ -53,11 +53,11 @@
           {
             "op": "shacl-files",
             "files": [
-              "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+              "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
             ],
             "isError": false,
-            "message": "Using SHACL files for validation:\n - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl\n - _sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "message": "Using SHACL files for validation:\n - _sources/features/topo-feature/tests/geometry-coordinates.shacl\n - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           },
           {
             "op": "shacl-report",
@@ -67,15 +67,10 @@
           },
           {
             "focusNodes": {
-              "_:n2710f5cf6d434cfa9169927df5180f33b3": {
+              "_:n06682bfb19c54a5da98768ecebbcc766b3": {
                 "nodes": []
               },
-              "topo:testTopoLinesReferencePoints": {
-                "nodes": [
-                  "<http://www.example.com/features/LineP1P2>/geojson:topology"
-                ]
-              },
-              "topo:testTopoPolyReferencesLines": {
+              "_:n06682bfb19c54a5da98768ecebbcc766b1": {
                 "nodes": []
               },
               "topo:testTopoReferencesExist": {
@@ -83,16 +78,18 @@
                   "<http://www.example.com/features/LineP1P2>/geojson:topology"
                 ]
               },
-              "_:n2710f5cf6d434cfa9169927df5180f33b1": {
-                "nodes": []
+              "topo:testTopoLinesReferencePoints": {
+                "nodes": [
+                  "<http://www.example.com/features/LineP1P2>/geojson:topology"
+                ]
               },
-              "_:n2710f5cf6d434cfa9169927df5180f33b2": {
+              "_:n06682bfb19c54a5da98768ecebbcc766b2": {
                 "nodes": [],
                 "path": "geojson:coordinates"
               }
             },
             "isError": false,
-            "message": "Focus nodes:\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b3: *none*\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoPolyReferencesLines: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b1: *none*\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b2 (path geojson:coordinates): *none*\n"
+            "message": "Focus nodes:\n - Shape _:n06682bfb19c54a5da98768ecebbcc766b3: *none*\n - Shape _:n06682bfb19c54a5da98768ecebbcc766b1: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape _:n06682bfb19c54a5da98768ecebbcc766b2 (path geojson:coordinates): *none*\n"
           }
         ]
       }
@@ -145,11 +142,11 @@
           {
             "op": "shacl-files",
             "files": [
-              "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+              "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
             ],
             "isError": false,
-            "message": "Using SHACL files for validation:\n - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl\n - _sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "message": "Using SHACL files for validation:\n - _sources/features/topo-feature/tests/geometry-coordinates.shacl\n - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           },
           {
             "op": "shacl-report",
@@ -159,32 +156,27 @@
           },
           {
             "focusNodes": {
-              "_:n2710f5cf6d434cfa9169927df5180f33b3": {
+              "_:n06682bfb19c54a5da98768ecebbcc766b3": {
                 "nodes": []
               },
-              "topo:testTopoLinesReferencePoints": {
+              "_:n06682bfb19c54a5da98768ecebbcc766b1": {
                 "nodes": []
-              },
-              "topo:testTopoPolyReferencesLines": {
-                "nodes": [
-                  "<http://www.example.com/features/TriangleP1P2P3>/geojson:topology"
-                ]
               },
               "topo:testTopoReferencesExist": {
                 "nodes": [
                   "<http://www.example.com/features/TriangleP1P2P3>/geojson:topology"
                 ]
               },
-              "_:n2710f5cf6d434cfa9169927df5180f33b1": {
+              "topo:testTopoLinesReferencePoints": {
                 "nodes": []
               },
-              "_:n2710f5cf6d434cfa9169927df5180f33b2": {
+              "_:n06682bfb19c54a5da98768ecebbcc766b2": {
                 "nodes": [],
                 "path": "geojson:coordinates"
               }
             },
             "isError": false,
-            "message": "Focus nodes:\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b3: *none*\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoPolyReferencesLines: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b1: *none*\n - Shape _:n2710f5cf6d434cfa9169927df5180f33b2 (path geojson:coordinates): *none*\n"
+            "message": "Focus nodes:\n - Shape _:n06682bfb19c54a5da98768ecebbcc766b3: *none*\n - Shape _:n06682bfb19c54a5da98768ecebbcc766b1: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape _:n06682bfb19c54a5da98768ecebbcc766b2 (path geojson:coordinates): *none*\n"
           }
         ]
       }
