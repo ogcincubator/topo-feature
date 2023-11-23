@@ -5,7 +5,31 @@
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
+      ref: examples/arc_by_center.json
+      # this is a "closure" of objects required to perform SHACL validation of logical constraints.
+      shacl-closure:
+        - ../topo-feature/examples/points.ttl
+
+- title: Example GeoJSON feature using Arc topology
+  content: |-
+      Arc with Center example.
+
+  snippets:
+    - language: json
+      base-uri: http://www.example.com/features/
       ref: examples/arc.json
+      # this is a "closure" of objects required to perform SHACL validation of logical constraints.
+      shacl-closure:
+        - ../topo-feature/examples/points.ttl
+
+- title: Example GeoJSON feature using Arc by chord topology
+  content: |-
+      Arc with Center example.
+
+  snippets:
+    - language: json
+      base-uri: http://www.example.com/features/
+      ref: examples/arc_chord.json
       # this is a "closure" of objects required to perform SHACL validation of logical constraints.
       shacl-closure:
         - ../topo-feature/examples/points.ttl
