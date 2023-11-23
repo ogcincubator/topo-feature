@@ -317,6 +317,85 @@ Cubic Spline example.
 
 ```
 
+
+### Example GeoJSON feature using Cubic Spline topology with start and end tangents
+Cubic Spline with Tangents example.
+#### json
+```json
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:SplineFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CubicSpline",
+    "x-description": "References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles",
+    "startTangentVector": {
+      "references": [
+        "PVS",
+        "P1"
+      ]
+    },
+    "endTangentVector": {
+      "references": [
+        "P2",
+        "PVE"
+      ]
+    },
+    "references": [
+      "P1",
+      "P2"
+    ]
+  },
+  "properties": null
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:SplineFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CubicSpline",
+    "x-description": "References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles",
+    "startTangentVector": {
+      "references": [
+        "PVS",
+        "P1"
+      ]
+    },
+    "endTangentVector": {
+      "references": [
+        "P2",
+        "PVE"
+      ]
+    },
+    "references": [
+      "P1",
+      "P2"
+    ]
+  },
+  "properties": null,
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+}
+```
+
+#### ttl
+```ttl
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/1853004> a geojson:Feature,
+        <my:SplineFeature> ;
+    geojson:topology [ a <http://www.example.com/features/CubicSpline> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+
+
+```
+
 ## Schema
 
 ```yaml
@@ -365,10 +444,14 @@ allOf:
               const: CubicSpline
             references:
               minItems: 3
+          not:
+            required:
+            - startTangentVector
+            - endTangentVector
         - properties:
             type:
               type: string
-              const: CubicSplineWithTangents
+              const: CubicSpline
             references:
               minItems: 2
             startTangentVector:
@@ -379,6 +462,9 @@ allOf:
               properties:
                 references:
                   minItems: 2
+          required:
+          - startTangentVector
+          - endTangentVector
   required:
   - topology
 

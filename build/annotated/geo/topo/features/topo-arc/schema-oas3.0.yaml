@@ -44,10 +44,14 @@ x-defs:
                   const: CubicSpline
                 references:
                   minItems: 3
+              not:
+                required:
+                - startTangentVector
+                - endTangentVector
             - properties:
                 type:
                   type: string
-                  const: CubicSplineWithTangents
+                  const: CubicSpline
                 references:
                   minItems: 2
                 startTangentVector:
@@ -58,6 +62,9 @@ x-defs:
                   properties:
                     references:
                       minItems: 2
+              required:
+              - startTangentVector
+              - endTangentVector
       required:
       - topology
     x-schema-version: https://json-schema.org/draft/2020-12/schema

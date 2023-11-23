@@ -469,6 +469,110 @@ Cubic Spline example.
 
 
 
+## Example GeoJSON feature using Cubic Spline topology with start and end tangents
+
+Cubic Spline with Tangents example.
+
+
+
+```json
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:SplineFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CubicSpline",
+    "x-description": "References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles",
+    "startTangentVector": {
+      "references": [
+        "PVS",
+        "P1"
+      ]
+    },
+    "endTangentVector": {
+      "references": [
+        "P2",
+        "PVE"
+      ]
+    },
+    "references": [
+      "P1",
+      "P2"
+    ]
+  },
+  "properties": null
+}
+```
+
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_6_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_6_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+
+
+
+
+```jsonld
+{
+  "id": "1853004",
+  "type": "Feature",
+  "featureType": "my:SplineFeature",
+  "geometry": null,
+  "topology": {
+    "type": "CubicSpline",
+    "x-description": "References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles",
+    "startTangentVector": {
+      "references": [
+        "PVS",
+        "P1"
+      ]
+    },
+    "endTangentVector": {
+      "references": [
+        "P2",
+        "PVE"
+      ]
+    },
+    "references": [
+      "P1",
+      "P2"
+    ]
+  },
+  "properties": null,
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+}
+```
+
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_6_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_6_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+
+
+
+
+```turtle
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/1853004> a geojson:Feature,
+        <my:SplineFeature> ;
+    geojson:topology [ a <http://www.example.com/features/CubicSpline> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+
+
+```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_6_1.ttl">Open in new window</a>
+</blockquote>
+
+
+
 # JSON Schema
 
 ```yaml--schema
@@ -517,10 +621,14 @@ allOf:
               const: CubicSpline
             references:
               minItems: 3
+          not:
+            required:
+            - startTangentVector
+            - endTangentVector
         - properties:
             type:
               type: string
-              const: CubicSplineWithTangents
+              const: CubicSpline
             references:
               minItems: 2
             startTangentVector:
@@ -531,6 +639,9 @@ allOf:
               properties:
                 references:
                   minItems: 2
+          required:
+          - startTangentVector
+          - endTangentVector
   required:
   - topology
 
@@ -624,8 +735,8 @@ You can find the full JSON-LD context here:
 The following sets of SHACL shapes are used for validating this building block:
 
 * Feature with topology <small><code>ogc.geo.topo.features.topo-feature</code></small>
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
   * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
+  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
 
 # For developers
 
