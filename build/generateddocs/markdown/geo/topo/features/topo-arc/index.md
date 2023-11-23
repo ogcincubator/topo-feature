@@ -79,6 +79,130 @@ Arc with Center example.
 ```
 
 
+### Example GeoJSON feature using Arc topology
+Arc with Center example.
+#### json
+```json
+{
+  "id": "arc1",
+  "type": "Feature",
+  "featureType": "my:ArcFeature",
+  "geometry": null,
+  "topology": {
+    "type": "Arc",
+    "x-description": "References is an ordered list of features with point geometries defining Arc",
+    "references": [
+      "P1",
+      "P3",
+      "P2"
+    ]
+  },
+  "properties": {
+    "arcLength": 25.615,
+    "radius": 105.438
+  }
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "id": "arc1",
+  "type": "Feature",
+  "featureType": "my:ArcFeature",
+  "geometry": null,
+  "topology": {
+    "type": "Arc",
+    "x-description": "References is an ordered list of features with point geometries defining Arc",
+    "references": [
+      "P1",
+      "P3",
+      "P2"
+    ]
+  },
+  "properties": {
+    "arcLength": 25.615,
+    "radius": 105.438
+  },
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+}
+```
+
+#### ttl
+```ttl
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/arc1> a geojson:Feature,
+        <my:ArcFeature> ;
+    geojson:topology [ a <http://www.example.com/features/Arc> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P3> <http://www.example.com/features/P2> ) ] .
+
+
+```
+
+
+### Example GeoJSON feature using Arc by chord topology
+Arc with Center example.
+#### json
+```json
+{
+  "id": "chord1",
+  "type": "Feature",
+  "featureType": "my:ArcChordFeature",
+  "geometry": null,
+  "topology": {
+    "type": "ArcByChord",
+    "x-description": "References is an ordered list of features with for an Arc Chord, radius and length determine geometry",
+    "references": [
+      "P1",
+      "P2"
+    ]
+  },
+  "properties": {
+    "arcLength": 25.615,
+    "radius": 105.438
+  }
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "id": "chord1",
+  "type": "Feature",
+  "featureType": "my:ArcChordFeature",
+  "geometry": null,
+  "topology": {
+    "type": "ArcByChord",
+    "x-description": "References is an ordered list of features with for an Arc Chord, radius and length determine geometry",
+    "references": [
+      "P1",
+      "P2"
+    ]
+  },
+  "properties": {
+    "arcLength": 25.615,
+    "radius": 105.438
+  },
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+}
+```
+
+#### ttl
+```ttl
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/chord1> a geojson:Feature,
+        <my:ArcChordFeature> ;
+    geojson:topology [ a <http://www.example.com/features/ArcByChord> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+
+
+```
+
+
 ### Example GeoJSON feature using  Circle with Center topology
 Circle with Center example.
 #### json
@@ -208,10 +332,24 @@ allOf:
         - properties:
             type:
               type: string
+              const: Arc
+            references:
+              minItems: 3
+              maxItems: 3
+        - properties:
+            type:
+              type: string
               const: ArcWithCenter
             references:
               minItems: 3
               maxItems: 3
+        - properties:
+            type:
+              type: string
+              const: ArcByChord
+            references:
+              minItems: 2
+              maxItems: 2
         - properties:
             type:
               type: string
@@ -227,6 +365,20 @@ allOf:
               const: CubicSpline
             references:
               minItems: 3
+        - properties:
+            type:
+              type: string
+              const: CubicSplineWithTangents
+            references:
+              minItems: 2
+            startTangentVector:
+              properties:
+                references:
+                  minItems: 2
+            endTangentVector:
+              properties:
+                references:
+                  minItems: 2
   required:
   - topology
 

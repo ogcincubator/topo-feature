@@ -331,6 +331,12 @@
                     <a href="#example-geojson-feature-using-arc-with-center-topology" class="toc-h2 toc-link" data-title="Example GeoJSON feature using Arc with Center topology">Example GeoJSON feature using Arc with Center topology</a>
                   </li>
                   <li>
+                    <a href="#example-geojson-feature-using-arc-topology" class="toc-h2 toc-link" data-title="Example GeoJSON feature using Arc topology">Example GeoJSON feature using Arc topology</a>
+                  </li>
+                  <li>
+                    <a href="#example-geojson-feature-using-arc-by-chord-topology" class="toc-h2 toc-link" data-title="Example GeoJSON feature using Arc by chord topology">Example GeoJSON feature using Arc by chord topology</a>
+                  </li>
+                  <li>
                     <a href="#example-geojson-feature-using-circle-with-center-topology" class="toc-h2 toc-link" data-title="Example GeoJSON feature using  Circle with Center topology">Example GeoJSON feature using  Circle with Center topology</a>
                   </li>
                   <li>
@@ -447,6 +453,138 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
   <p class="example-links">
     <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.ttl">Open in new window</a>
 </blockquote>
+<h2 id='example-geojson-feature-using-arc-topology'>Example GeoJSON feature using Arc topology</h2>
+<p>Arc with Center example.</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arc1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my:ArcFeature"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"topology"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Arc"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"x-description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"References is an ordered list of features with point geometries defining Arc"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"P1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"P3"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"P2"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"arcLength"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.615</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"radius"</span><span class="p">:</span><span class="w"> </span><span class="mf">105.438</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-jsonld"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arc1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my:ArcFeature"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"topology"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Arc"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"x-description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"References is an ordered list of features with point geometries defining Arc"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"P1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"P3"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"P2"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"arcLength"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.615</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"radius"</span><span class="p">:</span><span class="w"> </span><span class="mf">105.438</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+<div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="nn">geojson:</span><span class="w"> </span><span class="nl">&lt;https://purl.org/geojson/vocab#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+</span><span class="nl">&lt;http://www.example.com/features/arc1&gt;</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nn">geojson:</span><span class="n">Feature,
+</span><span class="w">        </span><span class="nl">&lt;my:ArcFeature&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">geojson:</span><span class="n">topology</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nl">&lt;http://www.example.com/features/Arc&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">geojson:</span><span class="n">relatedFeatures</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nl">&lt;http://www.example.com/features/P1&gt;</span><span class="w"> </span><span class="nl">&lt;http://www.example.com/features/P3&gt;</span><span class="w"> </span><span class="nl">&lt;http://www.example.com/features/P2&gt;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+
+</span></code></pre></div>
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.ttl">Open in new window</a>
+</blockquote>
+<h2 id='example-geojson-feature-using-arc-by-chord-topology'>Example GeoJSON feature using Arc by chord topology</h2>
+<p>Arc with Center example.</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"chord1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my:ArcChordFeature"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"topology"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ArcByChord"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"x-description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"References is an ordered list of features with for an Arc Chord, radius and length determine geometry"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"P1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"P2"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"arcLength"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.615</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"radius"</span><span class="p">:</span><span class="w"> </span><span class="mf">105.438</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-jsonld"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"chord1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my:ArcChordFeature"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"topology"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ArcByChord"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"x-description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"References is an ordered list of features with for an Arc Chord, radius and length determine geometry"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"P1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"P2"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"arcLength"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.615</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"radius"</span><span class="p">:</span><span class="w"> </span><span class="mf">105.438</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+<div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="nn">geojson:</span><span class="w"> </span><span class="nl">&lt;https://purl.org/geojson/vocab#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+</span><span class="nl">&lt;http://www.example.com/features/chord1&gt;</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nn">geojson:</span><span class="n">Feature,
+</span><span class="w">        </span><span class="nl">&lt;my:ArcChordFeature&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">geojson:</span><span class="n">topology</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nl">&lt;http://www.example.com/features/ArcByChord&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">geojson:</span><span class="n">relatedFeatures</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nl">&lt;http://www.example.com/features/P1&gt;</span><span class="w"> </span><span class="nl">&lt;http://www.example.com/features/P2&gt;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+
+</span></code></pre></div>
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.ttl">Open in new window</a>
+</blockquote>
 <h2 id='example-geojson-feature-using-circle-with-center-topology'>Example GeoJSON feature using  Circle with Center topology</h2>
 <p>Circle with Center example.</p>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -468,8 +606,8 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 </span></code></pre></div>
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_4_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_4_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-jsonld"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1853004"</span><span class="p">,</span><span class="w">
@@ -490,8 +628,8 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 </span></code></pre></div>
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_4_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_4_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 <div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="nn">geojson:</span><span class="w"> </span><span class="nl">&lt;https://purl.org/geojson/vocab#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
@@ -505,7 +643,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 </span></code></pre></div>
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_4_1.ttl">Open in new window</a>
 </blockquote>
 <h2 id='example-geojson-feature-using-cubic-spline-topology'>Example GeoJSON feature using Cubic Spline topology</h2>
 <p>Cubic Spline example.</p>
@@ -529,8 +667,8 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 </span></code></pre></div>
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_5_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_5_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-jsonld"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1853004"</span><span class="p">,</span><span class="w">
@@ -553,8 +691,8 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 </span></code></pre></div>
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_5_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Ftopo-feature%2Fbuild%2Ftests%2Fgeo%2Ftopo%2Ffeatures%2Ftopo-arc%2Fexample_5_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 <div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="nn">geojson:</span><span class="w"> </span><span class="nl">&lt;https://purl.org/geojson/vocab#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
@@ -568,7 +706,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 </span></code></pre></div>
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_5_1.ttl">Open in new window</a>
 </blockquote>
 <h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
 <span class="na">description</span><span class="pi">:</span> <span class="s">Arc Feature with geometry by reference</span>
@@ -582,10 +720,24 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
         <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
             <span class="na">type</span><span class="pi">:</span>
               <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+              <span class="na">const</span><span class="pi">:</span> <span class="s">Arc</span>
+            <span class="na">references</span><span class="pi">:</span>
+              <span class="na">minItems</span><span class="pi">:</span> <span class="m">3</span>
+              <span class="na">maxItems</span><span class="pi">:</span> <span class="m">3</span>
+        <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
+            <span class="na">type</span><span class="pi">:</span>
+              <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
               <span class="na">const</span><span class="pi">:</span> <span class="s">ArcWithCenter</span>
             <span class="na">references</span><span class="pi">:</span>
               <span class="na">minItems</span><span class="pi">:</span> <span class="m">3</span>
               <span class="na">maxItems</span><span class="pi">:</span> <span class="m">3</span>
+        <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
+            <span class="na">type</span><span class="pi">:</span>
+              <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+              <span class="na">const</span><span class="pi">:</span> <span class="s">ArcByChord</span>
+            <span class="na">references</span><span class="pi">:</span>
+              <span class="na">minItems</span><span class="pi">:</span> <span class="m">2</span>
+              <span class="na">maxItems</span><span class="pi">:</span> <span class="m">2</span>
         <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
             <span class="na">type</span><span class="pi">:</span>
               <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
@@ -601,6 +753,20 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
               <span class="na">const</span><span class="pi">:</span> <span class="s">CubicSpline</span>
             <span class="na">references</span><span class="pi">:</span>
               <span class="na">minItems</span><span class="pi">:</span> <span class="m">3</span>
+        <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
+            <span class="na">type</span><span class="pi">:</span>
+              <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+              <span class="na">const</span><span class="pi">:</span> <span class="s">CubicSplineWithTangents</span>
+            <span class="na">references</span><span class="pi">:</span>
+              <span class="na">minItems</span><span class="pi">:</span> <span class="m">2</span>
+            <span class="na">startTangentVector</span><span class="pi">:</span>
+              <span class="na">properties</span><span class="pi">:</span>
+                <span class="na">references</span><span class="pi">:</span>
+                  <span class="na">minItems</span><span class="pi">:</span> <span class="m">2</span>
+            <span class="na">endTangentVector</span><span class="pi">:</span>
+              <span class="na">properties</span><span class="pi">:</span>
+                <span class="na">references</span><span class="pi">:</span>
+                  <span class="na">minItems</span><span class="pi">:</span> <span class="m">2</span>
   <span class="na">required</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="s">topology</span>
 

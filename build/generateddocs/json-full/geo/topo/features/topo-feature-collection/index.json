@@ -24,8 +24,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.json-fg.featureCollection-lenient",
-    "ogc.geo.topo.features.topo-feature"
+    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.json-fg.featureCollection-lenient"
   ],
   "tags": [
     "topology",

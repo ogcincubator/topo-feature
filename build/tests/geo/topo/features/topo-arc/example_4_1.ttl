@@ -1,0 +1,8 @@
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/1853004> a geojson:Feature,
+        <my:CircleFeature> ;
+    geojson:topology [ a <http://www.example.com/features/CircleByCenter> ;
+            geojson:relatedFeatures ( <http://www.example.com/features/PC> ) ] .
+

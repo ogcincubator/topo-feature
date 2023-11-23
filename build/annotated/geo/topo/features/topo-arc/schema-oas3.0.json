@@ -19,11 +19,35 @@
                       "properties": {
                         "type": {
                           "type": "string",
+                          "const": "Arc"
+                        },
+                        "references": {
+                          "minItems": 3,
+                          "maxItems": 3
+                        }
+                      }
+                    },
+                    {
+                      "properties": {
+                        "type": {
+                          "type": "string",
                           "const": "ArcWithCenter"
                         },
                         "references": {
                           "minItems": 3,
                           "maxItems": 3
+                        }
+                      }
+                    },
+                    {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "const": "ArcByChord"
+                        },
+                        "references": {
+                          "minItems": 2,
+                          "maxItems": 2
                         }
                       }
                     },
@@ -50,6 +74,31 @@
                         },
                         "references": {
                           "minItems": 3
+                        }
+                      }
+                    },
+                    {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "const": "CubicSplineWithTangents"
+                        },
+                        "references": {
+                          "minItems": 2
+                        },
+                        "startTangentVector": {
+                          "properties": {
+                            "references": {
+                              "minItems": 2
+                            }
+                          }
+                        },
+                        "endTangentVector": {
+                          "properties": {
+                            "references": {
+                              "minItems": 2
+                            }
+                          }
                         }
                       }
                     }

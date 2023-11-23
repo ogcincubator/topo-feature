@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature - Feature with topology
-Generated 2023-11-10T00:44:17.131203+00:00
+Generated 2023-11-23T22:10:08.284299+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -19,11 +19,11 @@ Validation Report
 Conforms: True
 
 Focus nodes:
- - Shape _:n06682bfb19c54a5da98768ecebbcc766b3: *none*
- - Shape _:n06682bfb19c54a5da98768ecebbcc766b1: *none*
+ - Shape _:n6d0eb0c723234fdabef178df5b0b6c7ab1: *none*
+ - Shape _:n6d0eb0c723234fdabef178df5b0b6c7ab3: *none*
  - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology
  - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology
- - Shape _:n06682bfb19c54a5da98768ecebbcc766b2 (path geojson:coordinates): *none*
+ - Shape _:n6d0eb0c723234fdabef178df5b0b6c7ab2 (path geojson:coordinates): *none*
 
 === End SHACL ===
 

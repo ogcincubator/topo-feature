@@ -1,18 +1,19 @@
 {
-  "id": "1853004",
+  "id": "chord1",
   "type": "Feature",
-  "featureType": "my:SplineFeature",
+  "featureType": "my:ArcChordFeature",
   "geometry": null,
   "topology": {
-    "type": "CubicSpline",
-    "x-description": "References is an ordered list of features with point geometries",
+    "type": "ArcByChord",
+    "x-description": "References is an ordered list of features with for an Arc Chord, radius and length determine geometry",
     "references": [
       "P1",
-      "Px1",
-      "Px2",
       "P2"
     ]
   },
-  "properties": null,
+  "properties": {
+    "arcLength": 25.615,
+    "radius": 105.438
+  },
   "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
 }

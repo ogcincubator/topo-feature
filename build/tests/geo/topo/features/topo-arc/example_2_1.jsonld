@@ -1,16 +1,20 @@
 {
-  "id": "1853004",
+  "id": "arc1",
   "type": "Feature",
-  "featureType": "my:CircleFeature",
+  "featureType": "my:ArcFeature",
   "geometry": null,
   "topology": {
-    "type": "CircleByCenter",
-    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "type": "Arc",
+    "x-description": "References is an ordered list of features with point geometries defining Arc",
     "references": [
-      "PC"
-    ],
-    "radius": 10
+      "P1",
+      "P3",
+      "P2"
+    ]
   },
-  "properties": {},
+  "properties": {
+    "arcLength": 25.615,
+    "radius": 105.438
+  },
   "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
 }
