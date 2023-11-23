@@ -57,3 +57,15 @@
       # this is a "closure" of objects required to perform SHACL validation of logical constraints.
       shacl-closure:
         - ../topo-feature/examples/points.ttl
+
+- title: Example GeoJSON feature using Cubic Spline topology with start and end tangents
+  content: |-
+    Cubic Spline with Tangents example.
+
+  snippets:
+    - language: json
+      base-uri: http://www.example.com/features/
+      ref: examples/spline_with_tangents.json
+      # this is a "closure" of objects required to perform SHACL validation of logical constraints.
+      shacl-closure:
+        - ../topo-feature/examples/points.ttl

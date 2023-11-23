@@ -74,13 +74,19 @@
                     "references": {
                       "minItems": 3
                     }
+                  },
+                  "not": {
+                    "required": [
+                      "startTangentVector",
+                      "endTangentVector"
+                    ]
                   }
                 },
                 {
                   "properties": {
                     "type": {
                       "type": "string",
-                      "const": "CubicSplineWithTangents"
+                      "const": "CubicSpline"
                     },
                     "references": {
                       "minItems": 2
@@ -92,14 +98,18 @@
                         }
                       }
                     },
-                     "endTangentVector": {
+                    "endTangentVector": {
                       "properties": {
                         "references": {
                           "minItems": 2
                         }
                       }
                     }
-                  }
+                  },
+                  "required": [
+                    "startTangentVector",
+                    "endTangentVector"
+                  ]
                 }
               ]
             }
