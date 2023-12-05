@@ -22,6 +22,8 @@ topo:testTopoReferencesExist
         SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)
         WHERE {
          $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+         $this a ?geomtype .
+         FILTER ( ?geomtype != geojson:Polygon)
          FILTER NOT EXISTS { ?ref ?p ?o }
         }
 """ ; ]

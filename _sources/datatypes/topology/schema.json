@@ -1,17 +1,72 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "feature with geometry by reference",
-  "properties": {
-    "type": {
-      "type": "string"
+  "oneOf": [
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "not": {
+            "enum": [
+              "Polygon",
+              "MultiLineString",
+              "MultiPolygon"
+            ]
+          }
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
     },
-    "references": {
-      "type": "array",
-      "items": {
-        "type": "string"
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "not": {
+            "enum": [
+              "MultiPolygon"
+            ]
+          }
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Polygon",
+            "MultiLineString"
+          ]
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
       }
     }
-  },
+  ],
   "required": [
     "references",
     "type"
