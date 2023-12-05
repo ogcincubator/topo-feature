@@ -85,9 +85,8 @@ oneOf:
 - properties:
     type:
       type: string
-      not:
-        enum:
-        - MultiPolygon
+      enum:
+      - MultiPolygon
       x-jsonld-id: '@type'
     references:
       type: array
