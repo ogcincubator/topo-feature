@@ -161,16 +161,10 @@ Links to the schema:
       "@type": "@id",
       "@id": "geojson:topology"
     },
-    "type": "@type",
-    "references": {
-      "@id": "geojson:relatedFeatures",
-      "@type": "@id",
-      "@container": "@list"
-    },
-    "LineString": "geojson:LineString",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
+    "LineString": "geojson:LineString",
     "MultiLineString": "geojson:MultiLineString",
     "MultiPoint": "geojson:MultiPoint",
     "MultiPolygon": "geojson:MultiPolygon",
@@ -188,6 +182,8 @@ Links to the schema:
       "@container": "@set",
       "@id": "geojson:features"
     },
+    "properties": "@nest",
+    "type": "@type",
     "id": "@id",
     "featureType": "@type",
     "links": {
@@ -208,11 +204,15 @@ Links to the schema:
       "@id": "rdfs:seeAlso"
     },
     "geometry": "geojson:geometry",
-    "properties": "@nest",
+    "references": {
+      "@id": "geojson:relatedFeatures",
+      "@type": "@id",
+      "@container": "@list"
+    },
     "geojson": "https://purl.org/geojson/vocab#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "csdm": "https://linked.data.gov.au/def/csdm/",
     "dct": "http://purl.org/dc/terms/",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
     "@version": 1.1
   }

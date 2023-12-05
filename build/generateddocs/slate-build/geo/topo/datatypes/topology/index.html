@@ -370,6 +370,8 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 <p>Other features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.</p>
 
 <p>This is a generalisation of the TopoJSON concept using inline data, and not limited to linestrings.</p>
+
+<p>Note this requires JSON-LD V1.1 processing to handle nested arrays of references for Polygons etc.</p>
 <h1 id='examples'>Examples</h1><h2 id='example-topology-object'>Example Topology object</h2>
 <p>See panel to right - note that a more user friendly &quot;collapsable&quot; version is in development. </p>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -413,22 +415,65 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 </blockquote>
 <h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
 <span class="na">description</span><span class="pi">:</span> <span class="s">feature with geometry by reference</span>
-<span class="na">properties</span><span class="pi">:</span>
-  <span class="na">type</span><span class="pi">:</span>
-    <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
-    <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@type'</span>
-  <span class="na">references</span><span class="pi">:</span>
-    <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
-    <span class="na">items</span><span class="pi">:</span>
+<span class="na">oneOf</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span>
       <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
-    <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#relatedFeatures</span>
-    <span class="na">x-jsonld-type</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@id'</span>
-    <span class="na">x-jsonld-container</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@list'</span>
+      <span class="na">not</span><span class="pi">:</span>
+        <span class="na">enum</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">Polygon</span>
+        <span class="pi">-</span> <span class="s">MultiLineString</span>
+        <span class="pi">-</span> <span class="s">MultiPolygon</span>
+      <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@type'</span>
+    <span class="na">references</span><span class="pi">:</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+      <span class="na">items</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#relatedFeatures</span>
+      <span class="na">x-jsonld-type</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@id'</span>
+      <span class="na">x-jsonld-container</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@list'</span>
+<span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">not</span><span class="pi">:</span>
+        <span class="na">enum</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">MultiPolygon</span>
+      <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@type'</span>
+    <span class="na">references</span><span class="pi">:</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+      <span class="na">items</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+        <span class="na">items</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+          <span class="na">items</span><span class="pi">:</span>
+            <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#relatedFeatures</span>
+      <span class="na">x-jsonld-type</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@id'</span>
+      <span class="na">x-jsonld-container</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@list'</span>
+<span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">enum</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">Polygon</span>
+      <span class="pi">-</span> <span class="s">MultiLineString</span>
+      <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@type'</span>
+    <span class="na">references</span><span class="pi">:</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+      <span class="na">items</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+        <span class="na">items</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#relatedFeatures</span>
+      <span class="na">x-jsonld-type</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@id'</span>
+      <span class="na">x-jsonld-container</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@list'</span>
 <span class="na">required</span><span class="pi">:</span>
 <span class="pi">-</span> <span class="s">references</span>
 <span class="pi">-</span> <span class="s">type</span>
 <span class="na">x-jsonld-extra-terms</span><span class="pi">:</span>
   <span class="na">LineString</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#LineString</span>
+  <span class="na">MultiLineString</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#MultiLineString</span>
+  <span class="na">MultiPolygon</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#MultiPolygon</span>
+  <span class="na">Polygon</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#Polygon</span>
 <span class="na">x-jsonld-prefixes</span><span class="pi">:</span>
   <span class="na">geojson</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#</span>
   <span class="na">csdm</span><span class="pi">:</span> <span class="s">https://linked.data.gov.au/def/csdm/</span>
@@ -447,13 +492,16 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 </ul>
 <h1 id='json-ld-context'>JSON-LD Context</h1><div class="highlight"><pre class="highlight json tab-json--ldContext"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"LineString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:LineString"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"MultiLineString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:MultiLineString"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"MultiPolygon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:MultiPolygon"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"Polygon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:Polygon"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@type"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:relatedFeatures"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@id"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"@container"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@list"</span><span class="w">
     </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"LineString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:LineString"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"geojson"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://purl.org/geojson/vocab#"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"csdm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://linked.data.gov.au/def/csdm/"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"dct"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://purl.org/dc/terms/"</span><span class="p">,</span><span class="w">

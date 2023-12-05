@@ -441,9 +441,11 @@ can be solids, swept volumes or any other concept.</p>
   </span><span class="nl">"topology"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Polygon"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="s2">"LineP1P2"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"LineP2P3"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"LineP3P1"</span><span class="w">
+      </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"LineP1P2"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"LineP2P3"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"LineP3P1"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
@@ -461,9 +463,11 @@ can be solids, swept volumes or any other concept.</p>
   </span><span class="nl">"topology"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Polygon"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="s2">"LineP1P2"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"LineP2P3"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"LineP3P1"</span><span class="w">
+      </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"LineP1P2"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"LineP2P3"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"LineP3P1"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
@@ -480,7 +484,7 @@ can be solids, swept volumes or any other concept.</p>
 
 </span><span class="nl">&lt;http://www.example.com/features/TriangleP1P2P3&gt;</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nn">geojson:</span><span class="n">Feature</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">geojson:</span><span class="n">topology</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nn">geojson:</span><span class="n">Polygon</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">geojson:</span><span class="n">relatedFeatures</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nl">&lt;http://www.example.com/features/LineP1P2&gt;</span><span class="w"> </span><span class="nl">&lt;http://www.example.com/features/LineP2P3&gt;</span><span class="w"> </span><span class="nl">&lt;http://www.example.com/features/LineP3P1&gt;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
+            </span><span class="nn">geojson:</span><span class="n">relatedFeatures</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="s">"['LineP1P2', 'LineP2P3', 'LineP3P1']"</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
 
 
 </span></code></pre></div>
@@ -555,6 +559,7 @@ can be solids, swept volumes or any other concept.</p>
       </span><span class="nl">"@container"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@set"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:features"</span><span class="w">
     </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@nest"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@type"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@id"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@type"</span><span class="p">,</span><span class="w">
@@ -576,11 +581,10 @@ can be solids, swept volumes or any other concept.</p>
       </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rdfs:seeAlso"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:geometry"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@nest"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"geojson"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://purl.org/geojson/vocab#"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rdfs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/2000/01/rdf-schema#"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"csdm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://linked.data.gov.au/def/csdm/"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"dct"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://purl.org/dc/terms/"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"rdfs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/2000/01/rdf-schema#"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"oa"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/ns/oa#"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"@version"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w">
   </span><span class="p">}</span><span class="w">

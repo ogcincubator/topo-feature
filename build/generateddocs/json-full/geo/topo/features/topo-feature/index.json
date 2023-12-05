@@ -14,8 +14,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.topo.datatypes.topology",
-    "ogc.geo.json-fg.feature"
+    "ogc.geo.json-fg.feature",
+    "ogc.geo.topo.datatypes.topology"
   ],
   "shaclRules": {
     "ogc.geo.topo.features.topo-feature": [
@@ -74,17 +74,17 @@
             "examples/points.ttl",
             "examples/lines.ttl"
           ],
-          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"TriangleP1P2P3\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"Polygon\",\n    \"references\": [\n      \"LineP1P2\",\n      \"LineP2P3\",\n      \"LineP3P1\"\n    ]\n  },\n  \"properties\": null\n}",
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"TriangleP1P2P3\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"Polygon\",\n    \"references\": [\n      [\n        \"LineP1P2\",\n        \"LineP2P3\",\n        \"LineP3P1\"\n      ]\n    ]\n  },\n  \"properties\": null\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature/example_2_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"TriangleP1P2P3\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"Polygon\",\n    \"references\": [\n      \"LineP1P2\",\n      \"LineP2P3\",\n      \"LineP3P1\"\n    ]\n  },\n  \"properties\": null,\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld\"\n}",
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"TriangleP1P2P3\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"Polygon\",\n    \"references\": [\n      [\n        \"LineP1P2\",\n        \"LineP2P3\",\n        \"LineP3P1\"\n      ]\n    ]\n  },\n  \"properties\": null,\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld\"\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature/example_2_1.jsonld"
         },
         {
           "language": "ttl",
-          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://www.example.com/features/TriangleP1P2P3> a geojson:Feature ;\n    geojson:topology [ a geojson:Polygon ;\n            geojson:relatedFeatures ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ] .\n\n",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://www.example.com/features/TriangleP1P2P3> a geojson:Feature ;\n    geojson:topology [ a geojson:Polygon ;\n            geojson:relatedFeatures ( \"['LineP1P2', 'LineP2P3', 'LineP3P1']\" ) ] .\n\n",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature/example_2_1.ttl"
         }
       ]

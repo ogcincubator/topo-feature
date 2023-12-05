@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-arc - Non-linear Arcs Descriptions using Point topology
-Generated 2023-11-23T22:47:17.352525+00:00
+Generated 2023-12-05T04:45:53.410239+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -12,18 +12,21 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
-Using SHACL files for validation:
- - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl
- - _sources/features/topo-feature/tests/geometry-coordinates.shacl
-Validation Report
-Conforms: True
-
-Focus nodes:
+Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology
- - Shape _:nf57ce3359331481686d9b095db6e4ac7b3: *none*
- - Shape _:nf57ce3359331481686d9b095db6e4ac7b1: *none*
- - Shape _:nf57ce3359331481686d9b095db6e4ac7b2 (path geojson:coordinates): *none*
+
+Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n3e1064a8edd04aeebb5eb608a710bcd7b3: *none*
+ - Shape _:n3e1064a8edd04aeebb5eb608a710bcd7b1: *none*
 
 === End SHACL ===
 

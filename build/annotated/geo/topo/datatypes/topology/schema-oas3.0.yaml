@@ -1,22 +1,65 @@
 x-defs:
   ogc.geo.topo.datatypes.topology:
     description: feature with geometry by reference
-    properties:
-      type:
-        type: string
-        x-jsonld-id: '@type'
-      references:
-        type: array
-        items:
+    oneOf:
+    - properties:
+        type:
           type: string
-        x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
-        x-jsonld-type: '@id'
-        x-jsonld-container: '@list'
+          not:
+            enum:
+            - Polygon
+            - MultiLineString
+            - MultiPolygon
+          x-jsonld-id: '@type'
+        references:
+          type: array
+          items:
+            type: string
+          x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
+          x-jsonld-type: '@id'
+          x-jsonld-container: '@list'
+    - properties:
+        type:
+          type: string
+          not:
+            enum:
+            - MultiPolygon
+          x-jsonld-id: '@type'
+        references:
+          type: array
+          items:
+            type: array
+            items:
+              type: array
+              items:
+                type: string
+          x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
+          x-jsonld-type: '@id'
+          x-jsonld-container: '@list'
+    - properties:
+        type:
+          type: string
+          enum:
+          - Polygon
+          - MultiLineString
+          x-jsonld-id: '@type'
+        references:
+          type: array
+          items:
+            type: array
+            items:
+              type: string
+          x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
+          x-jsonld-type: '@id'
+          x-jsonld-container: '@list'
     required:
     - references
     - type
     x-jsonld-extra-terms:
       LineString: https://purl.org/geojson/vocab#LineString
+      MultiLineString: https://purl.org/geojson/vocab#MultiLineString
+      MultiPolygon: https://purl.org/geojson/vocab#MultiPolygon
+      Polygon: https://purl.org/geojson/vocab#Polygon
     x-jsonld-prefixes:
       geojson: https://purl.org/geojson/vocab#
       csdm: https://linked.data.gov.au/def/csdm/

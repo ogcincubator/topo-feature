@@ -535,17 +535,6 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "topology": {
-      "@context": {
-        "references": {
-          "@id": "geojson:relatedFeatures",
-          "@type": "@id",
-          "@container": "@list"
-        }
-      },
-      "@type": "@id",
-      "@id": "geojson:topology"
-    },
     "type": "@type",
     "featureType": "@type",
     "links": {
@@ -571,6 +560,17 @@ Links to the schema:
       "@id": "geojson:features"
     },
     "properties": "@nest",
+    "topology": {
+      "@context": {
+        "references": {
+          "@id": "geojson:relatedFeatures",
+          "@type": "@id",
+          "@container": "@list"
+        }
+      },
+      "@type": "@id",
+      "@id": "geojson:topology"
+    },
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",

@@ -19,6 +19,8 @@ Other features may be either features with topology properties or GeoJSON (or FG
 
 This is a generalisation of the TopoJSON concept using inline data, and not limited to linestrings.
 
+Note this requires JSON-LD V1.1 processing to handle nested arrays of references for Polygons etc.
+
 
 ## Examples
 
@@ -63,22 +65,65 @@ See panel to right - note that a more user friendly "collapsable" version is in 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
 description: feature with geometry by reference
-properties:
-  type:
-    type: string
-    x-jsonld-id: '@type'
-  references:
-    type: array
-    items:
+oneOf:
+- properties:
+    type:
       type: string
-    x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
-    x-jsonld-type: '@id'
-    x-jsonld-container: '@list'
+      not:
+        enum:
+        - Polygon
+        - MultiLineString
+        - MultiPolygon
+      x-jsonld-id: '@type'
+    references:
+      type: array
+      items:
+        type: string
+      x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
+      x-jsonld-type: '@id'
+      x-jsonld-container: '@list'
+- properties:
+    type:
+      type: string
+      not:
+        enum:
+        - MultiPolygon
+      x-jsonld-id: '@type'
+    references:
+      type: array
+      items:
+        type: array
+        items:
+          type: array
+          items:
+            type: string
+      x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
+      x-jsonld-type: '@id'
+      x-jsonld-container: '@list'
+- properties:
+    type:
+      type: string
+      enum:
+      - Polygon
+      - MultiLineString
+      x-jsonld-id: '@type'
+    references:
+      type: array
+      items:
+        type: array
+        items:
+          type: string
+      x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
+      x-jsonld-type: '@id'
+      x-jsonld-container: '@list'
 required:
 - references
 - type
 x-jsonld-extra-terms:
   LineString: https://purl.org/geojson/vocab#LineString
+  MultiLineString: https://purl.org/geojson/vocab#MultiLineString
+  MultiPolygon: https://purl.org/geojson/vocab#MultiPolygon
+  Polygon: https://purl.org/geojson/vocab#Polygon
 x-jsonld-prefixes:
   geojson: https://purl.org/geojson/vocab#
   csdm: https://linked.data.gov.au/def/csdm/
@@ -97,13 +142,16 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Polygon": "geojson:Polygon",
     "type": "@type",
     "references": {
       "@id": "geojson:relatedFeatures",
       "@type": "@id",
       "@container": "@list"
     },
-    "LineString": "geojson:LineString",
     "geojson": "https://purl.org/geojson/vocab#",
     "csdm": "https://linked.data.gov.au/def/csdm/",
     "dct": "http://purl.org/dc/terms/",

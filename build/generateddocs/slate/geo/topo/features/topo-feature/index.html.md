@@ -134,9 +134,11 @@ can be solids, swept volumes or any other concept.
   "topology": {
     "type": "Polygon",
     "references": [
-      "LineP1P2",
-      "LineP2P3",
-      "LineP3P1"
+      [
+        "LineP1P2",
+        "LineP2P3",
+        "LineP3P1"
+      ]
     ]
   },
   "properties": null
@@ -160,9 +162,11 @@ can be solids, swept volumes or any other concept.
   "topology": {
     "type": "Polygon",
     "references": [
-      "LineP1P2",
-      "LineP2P3",
-      "LineP3P1"
+      [
+        "LineP1P2",
+        "LineP2P3",
+        "LineP3P1"
+      ]
     ]
   },
   "properties": null,
@@ -185,7 +189,7 @@ can be solids, swept volumes or any other concept.
 
 <http://www.example.com/features/TriangleP1P2P3> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            geojson:relatedFeatures ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ] .
+            geojson:relatedFeatures ( "['LineP1P2', 'LineP2P3', 'LineP3P1']" ) ] .
 
 
 ```
@@ -269,6 +273,7 @@ Links to the schema:
       "@container": "@set",
       "@id": "geojson:features"
     },
+    "properties": "@nest",
     "type": "@type",
     "id": "@id",
     "featureType": "@type",
@@ -290,11 +295,10 @@ Links to the schema:
       "@id": "rdfs:seeAlso"
     },
     "geometry": "geojson:geometry",
-    "properties": "@nest",
     "geojson": "https://purl.org/geojson/vocab#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "csdm": "https://linked.data.gov.au/def/csdm/",
     "dct": "http://purl.org/dc/terms/",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
     "@version": 1.1
   }

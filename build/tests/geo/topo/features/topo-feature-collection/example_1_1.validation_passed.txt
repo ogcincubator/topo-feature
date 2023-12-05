@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection
-Generated 2023-11-23T22:47:19.633183+00:00
+Generated 2023-12-05T04:45:56.091170+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -12,23 +12,21 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
-Using SHACL files for validation:
- - _sources/features/topo-feature/tests/geometry-coordinates.shacl
- - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl
- - _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl
- - _sources/features/topo-feature/tests/geometry-coordinates.shacl
-Validation Report
-Conforms: True
-
-Focus nodes:
- - Shape _:na527ee01312e4e33acab2f171abd1465b3: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry
- - Shape _:ne373228d15344ce5a9cd7d3179dff458b3: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry
- - Shape _:ne373228d15344ce5a9cd7d3179dff458b1: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry
+Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape topo:testTopoLinesReferencePoints: *none*
- - Shape _:na527ee01312e4e33acab2f171abd1465b1: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry
  - Shape topo:testTopoReferencesExist: *none*
- - Shape _:ne373228d15344ce5a9cd7d3179dff458b2 (path geojson:coordinates): *none*
- - Shape _:na527ee01312e4e33acab2f171abd1465b2 (path geojson:coordinates): *none*
+
+Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n57991c39e28947d1a7e6091c515a53d6b1: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry
+ - Shape _:n57991c39e28947d1a7e6091c515a53d6b3: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry
 
 === End SHACL ===
 

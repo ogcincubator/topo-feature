@@ -5,9 +5,11 @@
   "topology": {
     "type": "Polygon",
     "references": [
-      "LineP1P2",
-      "LineP2P3",
-      "LineP3P1"
+      [
+        "LineP1P2",
+        "LineP2P3",
+        "LineP3P1"
+      ]
     ]
   },
   "properties": null,
