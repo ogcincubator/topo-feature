@@ -26,11 +26,9 @@
       "properties": {
         "type": {
           "type": "string",
-          "not": {
-            "enum": [
-              "MultiPolygon"
-            ]
-          }
+          "enum": [
+            "MultiPolygon"
+          ]
         },
         "references": {
           "type": "array",
