@@ -1,4 +1,10 @@
 {
+  "@context": [
+    "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
+    {
+      "@base": "http://www.example.com/features/"
+    }
+  ],
   "id": "chord1",
   "type": "Feature",
   "featureType": "my:ArcChordFeature",
@@ -9,11 +15,9 @@
     "references": [
       "P1",
       "P2"
-    ],
-    "radius": 105.438
+    ]
   },
   "properties": {
     "arcLength": 25.615
-  },
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+  }
 }

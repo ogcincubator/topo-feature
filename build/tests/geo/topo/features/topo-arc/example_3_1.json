@@ -9,10 +9,10 @@
     "references": [
       "P1",
       "P2"
-    ]
+    ],
+    "radius": 105.438
   },
   "properties": {
-    "arcLength": 25.615,
-    "radius": 105.438
+    "arcLength": 25.615
   }
 }

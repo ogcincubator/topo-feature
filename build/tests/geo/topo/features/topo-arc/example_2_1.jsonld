@@ -5,7 +5,7 @@
   "geometry": null,
   "topology": {
     "type": "Arc",
-    "x-description": "References is an ordered list of features with point geometries defining Arc",
+    "x-description": "References is an ordered list of 3 features with point geometries defining Arc",
     "references": [
       "P1",
       "P3",

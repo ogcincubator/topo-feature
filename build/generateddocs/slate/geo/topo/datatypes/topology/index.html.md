@@ -175,6 +175,15 @@ x-jsonld-extra-terms:
   MultiLineString: https://purl.org/geojson/vocab#MultiLineString
   MultiPolygon: https://purl.org/geojson/vocab#MultiPolygon
   Polygon: https://purl.org/geojson/vocab#Polygon
+  Arc: https://purl.org/geojson/vocab#Arc
+  ArcWithCenter: https://purl.org/geojson/vocab#ArcWithCenter
+  ArcByChord: https://purl.org/geojson/vocab#ArcByChord
+  CircleByCenter: https://purl.org/geojson/vocab#CircleByCenter
+  CubicSpline: https://purl.org/geojson/vocab#CubicSpline
+  radius: https://purl.org/geojson/vocab#radius
+  arcLength: https://purl.org/geojson/vocab#arcLength
+  startTangentVector: https://purl.org/geojson/vocab#startTangentVector
+  endTangentVector: https://purl.org/geojson/vocab#endTangentVector
 x-jsonld-prefixes:
   geojson: https://purl.org/geojson/vocab#
   csdm: https://linked.data.gov.au/def/csdm/
@@ -195,16 +204,25 @@ Links to the schema:
 ```json--ldContext
 {
   "@context": {
-    "LineString": "geojson:LineString",
-    "MultiLineString": "geojson:MultiLineString",
-    "MultiPolygon": "geojson:MultiPolygon",
-    "Polygon": "geojson:Polygon",
     "type": "@type",
     "references": {
       "@id": "geojson:relatedFeatures",
       "@type": "@id",
       "@container": "@list"
     },
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Polygon": "geojson:Polygon",
+    "Arc": "geojson:Arc",
+    "ArcWithCenter": "geojson:ArcWithCenter",
+    "ArcByChord": "geojson:ArcByChord",
+    "CircleByCenter": "geojson:CircleByCenter",
+    "CubicSpline": "geojson:CubicSpline",
+    "radius": "geojson:radius",
+    "arcLength": "geojson:arcLength",
+    "startTangentVector": "geojson:startTangentVector",
+    "endTangentVector": "geojson:endTangentVector",
     "geojson": "https://purl.org/geojson/vocab#",
     "csdm": "https://linked.data.gov.au/def/csdm/",
     "dct": "http://purl.org/dc/terms/",

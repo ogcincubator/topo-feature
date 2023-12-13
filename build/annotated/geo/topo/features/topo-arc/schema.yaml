@@ -28,6 +28,10 @@ allOf:
             references:
               minItems: 2
               maxItems: 2
+            radius:
+              type: number
+          required:
+          - radius
         - properties:
             type:
               type: string
@@ -37,6 +41,8 @@ allOf:
               maxItems: 1
             radius:
               type: number
+          required:
+          - radius
         - properties:
             type:
               type: string
@@ -64,5 +70,14 @@ allOf:
           required:
           - startTangentVector
           - endTangentVector
+    radius:
+      type: number
+      description: optional property of the feature defining radius according to coordinate
+        reference system of the referenced geometry. Note where necessary to define
+        geometry this is a mandatory sub-property of the topology property.
+    arcLength:
+      type: number
+      description: optional property of the feature defining arcLength according to
+        coordinate reference system of the referenced geometry.
   required:
   - topology

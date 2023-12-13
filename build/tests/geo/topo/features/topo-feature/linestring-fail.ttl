@@ -1,0 +1,7 @@
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<file:///github/workspace/LineP1P2> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            geojson:relatedFeatures ( <file:///github/workspace/P1> ) ] .
+

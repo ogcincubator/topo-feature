@@ -536,10 +536,38 @@ Links to the schema:
 {
   "@context": {
     "type": "@type",
-    "featureType": "@type",
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": {
+      "@context": {},
+      "@id": "geojson:geometry"
+    },
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features",
+      "@context": {
+        "featureType": "@type"
+      }
+    },
     "links": {
       "@context": {
-        "href": "oa:hasTarget",
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
         "rel": {
           "@context": {
             "@base": "http://www.iana.org/assignments/relation/"
@@ -554,12 +582,11 @@ Links to the schema:
       },
       "@id": "rdfs:seeAlso"
     },
-    "features": {
-      "@context": {},
-      "@container": "@set",
-      "@id": "geojson:features"
+    "featureType": "geojson:collectionFeatureType",
+    "coordinates": {
+      "@container": "@list",
+      "@id": "geojson:coordinates"
     },
-    "properties": "@nest",
     "topology": {
       "@context": {
         "references": {
@@ -571,30 +598,20 @@ Links to the schema:
       "@type": "@id",
       "@id": "geojson:topology"
     },
-    "Feature": "geojson:Feature",
-    "FeatureCollection": "geojson:FeatureCollection",
-    "GeometryCollection": "geojson:GeometryCollection",
-    "LineString": "geojson:LineString",
-    "MultiLineString": "geojson:MultiLineString",
-    "MultiPoint": "geojson:MultiPoint",
-    "MultiPolygon": "geojson:MultiPolygon",
-    "Point": "geojson:Point",
-    "Polygon": "geojson:Polygon",
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
-    "id": "@id",
-    "geometry": "geojson:geometry",
+    "Arc": "geojson:Arc",
+    "ArcWithCenter": "geojson:ArcWithCenter",
+    "ArcByChord": "geojson:ArcByChord",
+    "CircleByCenter": "geojson:CircleByCenter",
+    "CubicSpline": "geojson:CubicSpline",
+    "radius": "geojson:radius",
+    "arcLength": "geojson:arcLength",
+    "startTangentVector": "geojson:startTangentVector",
+    "endTangentVector": "geojson:endTangentVector",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
-    "dct": "http://purl.org/dc/terms/",
     "oa": "http://www.w3.org/ns/oa#",
+    "dct": "http://purl.org/dc/terms/",
+    "csdm": "https://linked.data.gov.au/def/csdm/",
     "@version": 1.1
   }
 }

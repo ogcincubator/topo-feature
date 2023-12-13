@@ -14,8 +14,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.topo.datatypes.topology",
-    "ogc.geo.json-fg.feature"
+    "ogc.geo.json-fg.feature",
+    "ogc.geo.topo.datatypes.topology"
   ],
   "shaclRules": {
     "ogc.geo.topo.features.topo-feature": [
@@ -23,6 +23,9 @@
       "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ]
   },
+  "shaclClosures": [
+    "examples/points.ttl"
+  ],
   "tags": [
     "topology",
     "feature"

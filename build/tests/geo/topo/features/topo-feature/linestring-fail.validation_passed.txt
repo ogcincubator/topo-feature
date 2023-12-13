@@ -1,5 +1,5 @@
-Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection
-Generated 2023-12-13T07:04:11.526439+00:00
+Validation report for ogc.geo.topo.features.topo-feature - Feature with topology
+Generated 2023-12-13T07:04:08.516481+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -25,8 +25,8 @@ Validation result for _sources/features/topo-feature-collection/tests/topo-refs-
   Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: topo:testTopoLinesReferencePoints
-  	Focus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]
-  	Value Node: <file:///github/workspace/P2>
+  	Focus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> ) ; rdf:type geojson:LineString ]
+  	Value Node: <file:///github/workspace/P1>
   	Result Path: geojson:topology
   	Source Constraint: [ sh:message Literal("Lines topologies must reference points within current graph closure.") ; sh:select Literal("
           prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -44,8 +44,8 @@ Validation result for _sources/features/topo-feature-collection/tests/topo-refs-
   Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: topo:testTopoReferencesExist
-  	Focus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]
-  	Value Node: <file:///github/workspace/P2>
+  	Focus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> ) ; rdf:type geojson:LineString ]
+  	Value Node: <file:///github/workspace/P1>
   	Result Path: geojson:relatedFeatures
   	Source Constraint: [ sh:message Literal("Referenced features must be present within current graph closure for  topological feature.") ; sh:select Literal("
           prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -71,8 +71,8 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n705e1d54953a4de89f89cf57979357deb1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
- - Shape _:n705e1d54953a4de89f89cf57979357deb3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+ - Shape _:n8a3229d8c2d14f0f88408eb6da5ebc1eb1: *none*
+ - Shape _:n8a3229d8c2d14f0f88408eb6da5ebc1eb3: *none*
 
 === End SHACL ===
 

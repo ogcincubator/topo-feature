@@ -6,6 +6,5 @@
         <my:ArcChordFeature> ;
     geojson:arcLength 2.5615e+01 ;
     geojson:topology [ a geojson:ArcByChord ;
-            geojson:radius 1.05438e+02 ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 

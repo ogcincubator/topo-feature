@@ -1,5 +1,5 @@
 ---
-title: Non-linear Arcs Descriptions using Point topology (Schema)
+title: Non-linear Arc and Spline Descriptions using Point topology (Schema)
 
 language_tabs:
   - json: JSON
@@ -8,7 +8,7 @@ language_tabs:
 
 toc_footers:
   - Version 0.1
-  - <a href='#'>Non-linear Arcs Descriptions using Point topology</a>
+  - <a href='#'>Non-linear Arc and Spline Descriptions using Point topology</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -16,11 +16,11 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: Non-linear Arcs Descriptions using Point topology (Schema)
+  - name: Non-linear Arc and Spline Descriptions using Point topology (Schema)
 ---
 
 
-# Non-linear Arcs Descriptions using Point topology `ogc.geo.topo.features.topo-arc`
+# Non-linear Arc and Spline Descriptions using Point topology `ogc.geo.topo.features.topo-arc`
 
 Defines options for describing Arcs, Circles, Splines using point features as canonical source of geometry coordinates
 
@@ -35,16 +35,31 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 
 # Description
 
-## Topology defined Arc
+## Topology defining Arcs, Circles, Splines
 
-A feature type using a topology property to reference points defining an Arc.
+A feature type using a topology property to reference points defining non-linear curves.
+
+Each geometry type has a specific number of references to "features" defining point geometries.
 
 ![Example](https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png)
+
+Where additional properties are required to define the geometry these are included as sub-properties of the topology property.
+
+Additional properties "radius" and "arcLength" are defined for optional use as feature properties.
+
+Note: the geojson: namespace is used for semantic annotations - this may be replaced with a more suitable namespace when a target ontology is available (such as the planned Geosparql version 1.3)
+
+
+
 # Examples
 
 ## Example GeoJSON feature using Arc with Center topology
 
 Arc with Center example.
+
+Topology defined by 2 end points and a centre that are references to features with point geometry.
+
+radius and arcLength are implicit but may be provided as optional properties of the feature.
 
 
 
@@ -114,10 +129,13 @@ Arc with Center example.
 ```turtle
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:ArcFeature> ;
-    geojson:topology [ a <http://www.example.com/features/ArcWithCenter> ;
+    geojson:arcLength 2.5615e+01 ;
+    geojson:radius 1.05438e+02 ;
+    geojson:topology [ a geojson:ArcWithCenter ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .
 
 
@@ -132,7 +150,11 @@ Arc with Center example.
 
 ## Example GeoJSON feature using Arc topology
 
-Arc with Center example.
+Arc example (3 points).
+
+Note that properties "radius" and "arcLength" are not required in the containing feature but defined for convenience.
+
+![Example](https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png)
 
 
 
@@ -144,7 +166,7 @@ Arc with Center example.
   "geometry": null,
   "topology": {
     "type": "Arc",
-    "x-description": "References is an ordered list of features with point geometries defining Arc",
+    "x-description": "References is an ordered list of 3 features with point geometries defining Arc",
     "references": [
       "P1",
       "P3",
@@ -175,7 +197,7 @@ Arc with Center example.
   "geometry": null,
   "topology": {
     "type": "Arc",
-    "x-description": "References is an ordered list of features with point geometries defining Arc",
+    "x-description": "References is an ordered list of 3 features with point geometries defining Arc",
     "references": [
       "P1",
       "P3",
@@ -202,10 +224,13 @@ Arc with Center example.
 ```turtle
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/arc1> a geojson:Feature,
         <my:ArcFeature> ;
-    geojson:topology [ a <http://www.example.com/features/Arc> ;
+    geojson:arcLength 2.5615e+01 ;
+    geojson:radius 1.05438e+02 ;
+    geojson:topology [ a geojson:Arc ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P3> <http://www.example.com/features/P2> ) ] .
 
 
@@ -220,7 +245,7 @@ Arc with Center example.
 
 ## Example GeoJSON feature using Arc by chord topology
 
-Arc with Center example.
+Arc by Chord example.
 
 
 
@@ -236,11 +261,11 @@ Arc with Center example.
     "references": [
       "P1",
       "P2"
-    ]
+    ],
+    "radius": 105.438
   },
   "properties": {
-    "arcLength": 25.615,
-    "radius": 105.438
+    "arcLength": 25.615
   }
 }
 ```
@@ -266,11 +291,11 @@ Arc with Center example.
     "references": [
       "P1",
       "P2"
-    ]
+    ],
+    "radius": 105.438
   },
   "properties": {
-    "arcLength": 25.615,
-    "radius": 105.438
+    "arcLength": 25.615
   },
   "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
 }
@@ -288,10 +313,13 @@ Arc with Center example.
 ```turtle
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/chord1> a geojson:Feature,
         <my:ArcChordFeature> ;
-    geojson:topology [ a <http://www.example.com/features/ArcByChord> ;
+    geojson:arcLength 2.5615e+01 ;
+    geojson:topology [ a geojson:ArcByChord ;
+            geojson:radius 1.05438e+02 ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 
@@ -318,14 +346,13 @@ Circle with Center example.
   "geometry": null,
   "topology": {
     "type": "CircleByCenter",
-    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "x-description": "Reference is the feature defining the centre point of a circle - it must have a Point geometry.",
     "references": [
       "PC"
     ],
     "radius": 10
   },
-  "properties": {
-  }
+  "properties": null
 }
 ```
 
@@ -346,13 +373,13 @@ Circle with Center example.
   "geometry": null,
   "topology": {
     "type": "CircleByCenter",
-    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "x-description": "Reference is the feature defining the centre point of a circle - it must have a Point geometry.",
     "references": [
       "PC"
     ],
     "radius": 10
   },
-  "properties": {},
+  "properties": null,
   "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
 }
 ```
@@ -369,10 +396,12 @@ Circle with Center example.
 ```turtle
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:CircleFeature> ;
-    geojson:topology [ a <http://www.example.com/features/CircleByCenter> ;
+    geojson:topology [ a geojson:CircleByCenter ;
+            geojson:radius 10 ;
             geojson:relatedFeatures ( <http://www.example.com/features/PC> ) ] .
 
 
@@ -456,7 +485,7 @@ Cubic Spline example.
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:SplineFeature> ;
-    geojson:topology [ a <http://www.example.com/features/CubicSpline> ;
+    geojson:topology [ a geojson:CubicSpline ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/Px1> <http://www.example.com/features/Px2> <http://www.example.com/features/P2> ) ] .
 
 
@@ -560,8 +589,10 @@ Cubic Spline with Tangents example.
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:SplineFeature> ;
-    geojson:topology [ a <http://www.example.com/features/CubicSpline> ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+    geojson:topology [ a geojson:CubicSpline ;
+            geojson:endTangentVector [ geojson:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/PVE> ) ] ;
+            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ;
+            geojson:startTangentVector [ geojson:relatedFeatures ( <http://www.example.com/features/PVS> <http://www.example.com/features/P1> ) ] ] .
 
 
 ```
@@ -606,6 +637,10 @@ allOf:
             references:
               minItems: 2
               maxItems: 2
+            radius:
+              type: number
+          required:
+          - radius
         - properties:
             type:
               type: string
@@ -615,6 +650,8 @@ allOf:
               maxItems: 1
             radius:
               type: number
+          required:
+          - radius
         - properties:
             type:
               type: string
@@ -642,6 +679,15 @@ allOf:
           required:
           - startTangentVector
           - endTangentVector
+    radius:
+      type: number
+      description: optional property of the feature defining radius according to coordinate
+        reference system of the referenced geometry. Note where necessary to define
+        geometry this is a mandatory sub-property of the topology property.
+    arcLength:
+      type: number
+      description: optional property of the feature defining arcLength according to
+        coordinate reference system of the referenced geometry.
   required:
   - topology
 
@@ -660,10 +706,16 @@ Links to the schema:
 ```json--ldContext
 {
   "@context": {
-    "topology": {
+    "type": "@type",
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": {
       "@context": {},
-      "@type": "@id",
-      "@id": "geojson:topology"
+      "@id": "geojson:geometry"
+    },
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
     },
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
@@ -674,25 +726,16 @@ Links to the schema:
     "MultiPolygon": "geojson:MultiPolygon",
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
     "features": {
       "@container": "@set",
       "@id": "geojson:features"
     },
-    "properties": "@nest",
-    "type": "@type",
-    "id": "@id",
-    "featureType": "@type",
     "links": {
       "@context": {
-        "href": "oa:hasTarget",
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
         "rel": {
           "@context": {
             "@base": "http://www.iana.org/assignments/relation/"
@@ -707,17 +750,35 @@ Links to the schema:
       },
       "@id": "rdfs:seeAlso"
     },
-    "geometry": "geojson:geometry",
+    "featureType": "@type",
+    "coordinates": {
+      "@container": "@list",
+      "@id": "geojson:coordinates"
+    },
+    "topology": {
+      "@context": {},
+      "@type": "@id",
+      "@id": "geojson:topology"
+    },
     "references": {
       "@id": "geojson:relatedFeatures",
       "@type": "@id",
       "@container": "@list"
     },
+    "Arc": "geojson:Arc",
+    "ArcWithCenter": "geojson:ArcWithCenter",
+    "ArcByChord": "geojson:ArcByChord",
+    "CircleByCenter": "geojson:CircleByCenter",
+    "CubicSpline": "geojson:CubicSpline",
+    "radius": "geojson:radius",
+    "arcLength": "geojson:arcLength",
+    "startTangentVector": "geojson:startTangentVector",
+    "endTangentVector": "geojson:endTangentVector",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
-    "dct": "http://purl.org/dc/terms/",
     "oa": "http://www.w3.org/ns/oa#",
+    "dct": "http://purl.org/dc/terms/",
+    "csdm": "https://linked.data.gov.au/def/csdm/",
     "@version": 1.1
   }
 }
@@ -734,6 +795,9 @@ You can find the full JSON-LD context here:
 
 The following sets of SHACL shapes are used for validating this building block:
 
+* Non-linear Arc and Spline Descriptions using Point topology <small><code>ogc.geo.topo.features.topo-arc</code></small>
+  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
+  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
 * Feature with topology <small><code>ogc.geo.topo.features.topo-feature</code></small>
   * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
   * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)

@@ -3,6 +3,8 @@
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:SplineFeature> ;
-    geojson:topology [ a <http://www.example.com/features/CubicSpline> ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+    geojson:topology [ a geojson:CubicSpline ;
+            geojson:endTangentVector [ geojson:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/PVE> ) ] ;
+            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ;
+            geojson:startTangentVector [ geojson:relatedFeatures ( <http://www.example.com/features/PVS> <http://www.example.com/features/P1> ) ] ] .
 

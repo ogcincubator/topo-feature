@@ -164,16 +164,16 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "topology": {
-      "@context": {
-        "references": {
-          "@id": "geojson:relatedFeatures",
-          "@type": "@id",
-          "@container": "@list"
-        }
-      },
-      "@type": "@id",
-      "@id": "geojson:topology"
+    "type": "@type",
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": {
+      "@context": {},
+      "@id": "geojson:geometry"
+    },
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
     },
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
@@ -184,25 +184,16 @@ Links to the schema:
     "MultiPolygon": "geojson:MultiPolygon",
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
     "features": {
       "@container": "@set",
       "@id": "geojson:features"
     },
-    "properties": "@nest",
-    "type": "@type",
-    "id": "@id",
-    "featureType": "@type",
     "links": {
       "@context": {
-        "href": "oa:hasTarget",
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
         "rel": {
           "@context": {
             "@base": "http://www.iana.org/assignments/relation/"
@@ -217,12 +208,36 @@ Links to the schema:
       },
       "@id": "rdfs:seeAlso"
     },
-    "geometry": "geojson:geometry",
+    "featureType": "@type",
+    "coordinates": {
+      "@container": "@list",
+      "@id": "geojson:coordinates"
+    },
+    "topology": {
+      "@context": {
+        "references": {
+          "@id": "geojson:relatedFeatures",
+          "@type": "@id",
+          "@container": "@list"
+        }
+      },
+      "@type": "@id",
+      "@id": "geojson:topology"
+    },
+    "Arc": "geojson:Arc",
+    "ArcWithCenter": "geojson:ArcWithCenter",
+    "ArcByChord": "geojson:ArcByChord",
+    "CircleByCenter": "geojson:CircleByCenter",
+    "CubicSpline": "geojson:CubicSpline",
+    "radius": "geojson:radius",
+    "arcLength": "geojson:arcLength",
+    "startTangentVector": "geojson:startTangentVector",
+    "endTangentVector": "geojson:endTangentVector",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
-    "dct": "http://purl.org/dc/terms/",
     "oa": "http://www.w3.org/ns/oa#",
+    "dct": "http://purl.org/dc/terms/",
+    "csdm": "https://linked.data.gov.au/def/csdm/",
     "@version": 1.1
   }
 }

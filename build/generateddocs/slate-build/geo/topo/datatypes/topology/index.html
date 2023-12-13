@@ -287,7 +287,7 @@
     </style>
     <link href="../../../../stylesheets/screen-39090b13.css" rel="stylesheet" media="screen" />
     <link href="../../../../stylesheets/print-966d6edc.css" rel="stylesheet" media="print" />
-      <script src="../../../../javascripts/all-84f5a356.js"></script>
+      <script src="../../../../javascripts/all-a25e0d73.js"></script>
 
     <script>
       $(function() { setupCodeCopy(); });
@@ -473,6 +473,15 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
   <span class="na">MultiLineString</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#MultiLineString</span>
   <span class="na">MultiPolygon</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#MultiPolygon</span>
   <span class="na">Polygon</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#Polygon</span>
+  <span class="na">Arc</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#Arc</span>
+  <span class="na">ArcWithCenter</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#ArcWithCenter</span>
+  <span class="na">ArcByChord</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#ArcByChord</span>
+  <span class="na">CircleByCenter</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#CircleByCenter</span>
+  <span class="na">CubicSpline</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#CubicSpline</span>
+  <span class="na">radius</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#radius</span>
+  <span class="na">arcLength</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#arcLength</span>
+  <span class="na">startTangentVector</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#startTangentVector</span>
+  <span class="na">endTangentVector</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#endTangentVector</span>
 <span class="na">x-jsonld-prefixes</span><span class="pi">:</span>
   <span class="na">geojson</span><span class="pi">:</span> <span class="s">https://purl.org/geojson/vocab#</span>
   <span class="na">csdm</span><span class="pi">:</span> <span class="s">https://linked.data.gov.au/def/csdm/</span>
@@ -491,16 +500,25 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 </ul>
 <h1 id='json-ld-context'>JSON-LD Context</h1><div class="highlight"><pre class="highlight json tab-json--ldContext"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"LineString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:LineString"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"MultiLineString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:MultiLineString"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"MultiPolygon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:MultiPolygon"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"Polygon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:Polygon"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@type"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:relatedFeatures"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@id"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"@container"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@list"</span><span class="w">
     </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"LineString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:LineString"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"MultiLineString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:MultiLineString"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"MultiPolygon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:MultiPolygon"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"Polygon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:Polygon"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"Arc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:Arc"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ArcWithCenter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:ArcWithCenter"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ArcByChord"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:ArcByChord"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"CircleByCenter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:CircleByCenter"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"CubicSpline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:CubicSpline"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"radius"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:radius"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"arcLength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:arcLength"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"startTangentVector"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:startTangentVector"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"endTangentVector"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geojson:endTangentVector"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"geojson"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://purl.org/geojson/vocab#"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"csdm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://linked.data.gov.au/def/csdm/"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"dct"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://purl.org/dc/terms/"</span><span class="p">,</span><span class="w">

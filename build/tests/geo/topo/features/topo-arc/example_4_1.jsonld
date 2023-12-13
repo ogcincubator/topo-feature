@@ -5,12 +5,12 @@
   "geometry": null,
   "topology": {
     "type": "CircleByCenter",
-    "x-description": "References is an ordered list of features with point geometries Start,End,Center",
+    "x-description": "Reference is the feature defining the centre point of a circle - it must have a Point geometry.",
     "references": [
       "PC"
     ],
     "radius": 10
   },
-  "properties": {},
+  "properties": null,
   "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
 }
