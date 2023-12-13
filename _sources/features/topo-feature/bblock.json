@@ -14,6 +14,9 @@
   "dependsOn": [
   ],
   "shaclRules": [ "tests/geometry-coordinates.shacl" , "../topo-feature-collection/tests/topo-refs-exist.shacl"],
+  "shaclClosures": [
+    "examples/points.ttl"
+  ],
   "tags": [
     "topology", "feature"
   ],

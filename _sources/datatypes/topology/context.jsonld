@@ -5,7 +5,6 @@
     "dct": "http://purl.org/dc/terms/",
     "geojson": "https://purl.org/geojson/vocab#",
     "type": "@type",
-
     "LineString": "geojson:LineString",
     "MultiLineString": "geojson:MultiLineString",
     "MultiPolygon": "geojson:MultiPolygon",
@@ -14,6 +13,15 @@
       "@id": "geojson:relatedFeatures",
       "@type": "@id",
       "@container": "@list"
-    }
+    },
+    "Arc": "geojson:Arc",
+    "ArcWithCenter": "geojson:ArcWithCenter",
+    "ArcByChord": "geojson:ArcByChord",
+    "CircleByCenter": "geojson:CircleByCenter",
+    "CubicSpline": "geojson:CubicSpline",
+    "radius": "geojson:radius",
+    "arcLength": "geojson:arcLength",
+    "startTangentVector": "geojson:startTangentVector",
+    "endTangentVector": "geojson:endTangentVector"
   }
 }

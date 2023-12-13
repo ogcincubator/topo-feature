@@ -1,6 +1,11 @@
 - title: Example GeoJSON feature using Arc with Center topology
   content: |-
-      Arc with Center example.
+    Arc with Center example.
+
+    Topology defined by 2 end points and a centre that are references to features with point geometry.
+
+    radius and arcLength are implicit but may be provided as optional properties of the feature.
+
 
   snippets:
     - language: json
@@ -12,7 +17,11 @@
 
 - title: Example GeoJSON feature using Arc topology
   content: |-
-      Arc with Center example.
+      Arc example (3 points).
+
+      Note that properties "radius" and "arcLength" are not required in the containing feature but defined for convenience.
+
+      ![Example](@@assets@@/arc.png)
 
   snippets:
     - language: json
@@ -24,7 +33,7 @@
 
 - title: Example GeoJSON feature using Arc by chord topology
   content: |-
-      Arc with Center example.
+      Arc by Chord example.
 
   snippets:
     - language: json
