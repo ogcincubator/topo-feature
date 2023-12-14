@@ -22,6 +22,13 @@ x-defs:
                 references:
                   minItems: 3
                   maxItems: 3
+                orientation:
+                  type: string
+                  enum:
+                  - cw
+                  - ccw
+              required:
+              - orientation
             - properties:
                 type:
                   type: string
@@ -31,8 +38,14 @@ x-defs:
                   maxItems: 2
                 radius:
                   type: number
+                orientation:
+                  type: string
+                  enum:
+                  - cw
+                  - ccw
               required:
               - radius
+              - orientation
             - properties:
                 type:
                   type: string

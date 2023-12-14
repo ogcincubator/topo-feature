@@ -10,7 +10,8 @@
       "P1",
       "P2",
       "PC"
-    ]
+    ],
+    "orientation": "cw"
   },
   "properties": {
     "arcLength": 25.615,

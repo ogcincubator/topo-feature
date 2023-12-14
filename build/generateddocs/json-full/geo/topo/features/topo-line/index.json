@@ -21,13 +21,13 @@
   ],
   "shaclRules": {
     "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ]
   },
   "dependsOn": [
-    "ogc.geo.topo.features.topo-feature",
-    "ogc.geo.topo.datatypes.topology"
+    "ogc.geo.topo.datatypes.topology",
+    "ogc.geo.topo.features.topo-feature"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml",

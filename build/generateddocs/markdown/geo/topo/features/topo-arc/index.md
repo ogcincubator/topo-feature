@@ -47,7 +47,8 @@ radius and arcLength are implicit but may be provided as optional properties of 
       "P1",
       "P2",
       "PC"
-    ]
+    ],
+    "orientation": "cw"
   },
   "properties": {
     "arcLength": 25.615,
@@ -70,7 +71,8 @@ radius and arcLength are implicit but may be provided as optional properties of 
       "P1",
       "P2",
       "PC"
-    ]
+    ],
+    "orientation": "cw"
   },
   "properties": {
     "arcLength": 25.615,
@@ -183,7 +185,8 @@ Arc by Chord example.
       "P1",
       "P2"
     ],
-    "radius": 105.438
+    "radius": 105.438,
+    "orientation": "cw"
   },
   "properties": {
     "arcLength": 25.615
@@ -205,7 +208,8 @@ Arc by Chord example.
       "P1",
       "P2"
     ],
-    "radius": 105.438
+    "radius": 105.438,
+    "orientation": "cw"
   },
   "properties": {
     "arcLength": 25.615
@@ -453,6 +457,13 @@ allOf:
             references:
               minItems: 3
               maxItems: 3
+            orientation:
+              type: string
+              enum:
+              - cw
+              - ccw
+          required:
+          - orientation
         - properties:
             type:
               type: string
@@ -462,8 +473,14 @@ allOf:
               maxItems: 2
             radius:
               type: number
+            orientation:
+              type: string
+              enum:
+              - cw
+              - ccw
           required:
           - radius
+          - orientation
         - properties:
             type:
               type: string

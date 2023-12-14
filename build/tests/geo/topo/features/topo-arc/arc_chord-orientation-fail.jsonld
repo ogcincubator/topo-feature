@@ -15,7 +15,9 @@
     "references": [
       "P1",
       "P2"
-    ]
+    ],
+    "orientation": "cw",
+    "radius": 2.5
   },
   "properties": {
     "arcLength": 25.615

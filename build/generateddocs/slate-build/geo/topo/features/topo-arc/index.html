@@ -415,7 +415,8 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
       </span><span class="s2">"P1"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"P2"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"PC"</span><span class="w">
-    </span><span class="p">]</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"orientation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cw"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"arcLength"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.615</span><span class="p">,</span><span class="w">
@@ -440,7 +441,8 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
       </span><span class="s2">"P1"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"P2"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"PC"</span><span class="w">
-    </span><span class="p">]</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"orientation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cw"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"arcLength"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.615</span><span class="p">,</span><span class="w">
@@ -559,7 +561,8 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
       </span><span class="s2">"P1"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"P2"</span><span class="w">
     </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"radius"</span><span class="p">:</span><span class="w"> </span><span class="mf">105.438</span><span class="w">
+    </span><span class="nl">"radius"</span><span class="p">:</span><span class="w"> </span><span class="mf">105.438</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"orientation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cw"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"arcLength"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.615</span><span class="w">
@@ -583,7 +586,8 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
       </span><span class="s2">"P1"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"P2"</span><span class="w">
     </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"radius"</span><span class="p">:</span><span class="w"> </span><span class="mf">105.438</span><span class="w">
+    </span><span class="nl">"radius"</span><span class="p">:</span><span class="w"> </span><span class="mf">105.438</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"orientation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cw"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"arcLength"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.615</span><span class="w">
@@ -845,6 +849,13 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
             <span class="na">references</span><span class="pi">:</span>
               <span class="na">minItems</span><span class="pi">:</span> <span class="m">3</span>
               <span class="na">maxItems</span><span class="pi">:</span> <span class="m">3</span>
+            <span class="na">orientation</span><span class="pi">:</span>
+              <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+              <span class="na">enum</span><span class="pi">:</span>
+              <span class="pi">-</span> <span class="s">cw</span>
+              <span class="pi">-</span> <span class="s">ccw</span>
+          <span class="na">required</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">orientation</span>
         <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
             <span class="na">type</span><span class="pi">:</span>
               <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
@@ -854,8 +865,14 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
               <span class="na">maxItems</span><span class="pi">:</span> <span class="m">2</span>
             <span class="na">radius</span><span class="pi">:</span>
               <span class="na">type</span><span class="pi">:</span> <span class="s">number</span>
+            <span class="na">orientation</span><span class="pi">:</span>
+              <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+              <span class="na">enum</span><span class="pi">:</span>
+              <span class="pi">-</span> <span class="s">cw</span>
+              <span class="pi">-</span> <span class="s">ccw</span>
           <span class="na">required</span><span class="pi">:</span>
           <span class="pi">-</span> <span class="s">radius</span>
+          <span class="pi">-</span> <span class="s">orientation</span>
         <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
             <span class="na">type</span><span class="pi">:</span>
               <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
@@ -1009,14 +1026,14 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 <li>Non-linear Arc and Spline Descriptions using Point topology <small><code>ogc.geo.topo.features.topo-arc</code></small>
 
 <ul>
-<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl</a></li>
 <li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl</a></li>
+<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl</a></li>
 </ul></li>
 <li>Feature with topology <small><code>ogc.geo.topo.features.topo-feature</code></small>
 
 <ul>
-<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl</a></li>
 <li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl</a></li>
+<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl</a></li>
 </ul></li>
 </ul>
 <h1 id='for-developers'>For developers</h1>

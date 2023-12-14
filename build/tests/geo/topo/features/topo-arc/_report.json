@@ -2,14 +2,14 @@
   "title": "Validation report for ogc.geo.topo.features.topo-arc - Non-linear Arc and Spline Descriptions using Point topology",
   "bblockName": "Non-linear Arc and Spline Descriptions using Point topology",
   "bblockId": "ogc.geo.topo.features.topo-arc",
-  "generated": "2023-12-13T07:04:10.280878+00:00",
+  "generated": "2023-12-14T21:27:45.453319+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "TEST_RESOURCE",
         "requireFail": true,
-        "filename": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/tests/circle-fail.json",
+        "filename": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/tests/arc_chord-orientation-fail.json",
         "language": "json"
       },
       "result": true,
@@ -20,8 +20,8 @@
           "entries": [
             {
               "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
+              "isError": true,
+              "message": "Test was expected to fail but it did not."
             }
           ]
         },
@@ -31,7 +31,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using circle-fail.json from test resources"
+              "message": "Using arc_chord-orientation-fail.json from test resources"
             },
             {
               "op": "jsonld-uplift",
@@ -40,17 +40,17 @@
             },
             {
               "op": "jsonld-create",
-              "filename": "circle-fail.jsonld",
+              "filename": "arc_chord-orientation-fail.jsonld",
               "isError": false,
-              "message": "Output JSON-LD circle-fail.jsonld created"
+              "message": "Output JSON-LD arc_chord-orientation-fail.jsonld created"
             },
             {
               "op": "ttl-create",
               "empty": false,
-              "filename": "circle-fail.ttl",
-              "size": 7,
+              "filename": "arc_chord-orientation-fail.ttl",
+              "size": 11,
               "isError": false,
-              "message": "Output Turtle circle-fail.ttl created"
+              "message": "Output Turtle arc_chord-orientation-fail.ttl created"
             }
           ]
         },
@@ -60,11 +60,9 @@
           "entries": [
             {
               "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "{'type': 'CircleByCenter', 'x-description': 'Reference is the feature defining the centre point of a circle - it must have a Point geometry.', 'references': ['PC']} is not valid under any of the given schemas",
-              "isError": true,
-              "message": "ValidationError: {'type': 'CircleByCenter', 'x-description': 'Reference is the feature defining the centre point of a circle - it must have a Point geometry.', 'references': ['PC']} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:\n    {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'Arc', 'type': 'string'}}},\n               {'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'ArcWithCenter',\n                                        'type': 'string'}}},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 2, 'minItems': 2},\n                               'type': {'const': 'ArcByChord',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 1, 'minItems': 1},\n                               'type': {'const': 'CircleByCenter',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'not': {'required': ['startTangentVector',\n                                     'endTangentVector']},\n                'properties': {'references': {'minItems': 3},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}}},\n               {'properties': {'endTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'references': {'minItems': 2},\n                               'startTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}},\n                'required': ['startTangentVector', 'endTangentVector']}]}\n\nOn instance['topology']:\n    {'references': ['PC'],\n     'type': 'CircleByCenter',\n     'x-description': 'Reference is the feature defining the centre point '\n                      'of a circle - it must have a Point geometry.'}"
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
             }
           ]
         },
@@ -82,28 +80,6 @@
           "name": "SHACL",
           "title": "SHACL",
           "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/1853004>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
-            },
             {
               "op": "shacl-report",
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
@@ -114,102 +90,16 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n0657576b56cb4ba89cfc784a376930d2b1": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b1": {
                   "nodes": []
                 },
-                "_:n0657576b56cb4ba89cfc784a376930d2b3": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b3": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b1: *none*\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b3: *none*\n"
-            }
-          ]
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/tests/arc_chord-fail.json",
-        "language": "json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using arc_chord-fail.json from test resources"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b1: *none*\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b3: *none*\n"
             },
-            {
-              "op": "jsonld-uplift",
-              "isError": false,
-              "message": "JSON-LD context is present - uplifting"
-            },
-            {
-              "op": "jsonld-create",
-              "filename": "arc_chord-fail.jsonld",
-              "isError": false,
-              "message": "Output JSON-LD arc_chord-fail.jsonld created"
-            },
-            {
-              "op": "ttl-create",
-              "empty": false,
-              "filename": "arc_chord-fail.ttl",
-              "size": 10,
-              "isError": false,
-              "message": "Output Turtle arc_chord-fail.ttl created"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "{'type': 'ArcByChord', 'x-description': 'References is an ordered list of features with for an Arc Chord, radius and length determine geometry', 'references': ['P1', 'P2']} is not valid under any of the given schemas",
-              "isError": true,
-              "message": "ValidationError: {'type': 'ArcByChord', 'x-description': 'References is an ordered list of features with for an Arc Chord, radius and length determine geometry', 'references': ['P1', 'P2']} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:\n    {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'Arc', 'type': 'string'}}},\n               {'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'ArcWithCenter',\n                                        'type': 'string'}}},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 2, 'minItems': 2},\n                               'type': {'const': 'ArcByChord',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 1, 'minItems': 1},\n                               'type': {'const': 'CircleByCenter',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'not': {'required': ['startTangentVector',\n                                     'endTangentVector']},\n                'properties': {'references': {'minItems': 3},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}}},\n               {'properties': {'endTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'references': {'minItems': 2},\n                               'startTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}},\n                'required': ['startTangentVector', 'endTangentVector']}]}\n\nOn instance['topology']:\n    {'references': ['P1', 'P2'],\n     'type': 'ArcByChord',\n     'x-description': 'References is an ordered list of features with for '\n                      'an Arc Chord, radius and length determine geometry'}"
-            }
-          ]
-        },
-        {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": [
             {
               "op": "shacl-report",
               "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
@@ -231,26 +121,6 @@
               },
               "isError": false,
               "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "focusNodes": {
-                "_:n0657576b56cb4ba89cfc784a376930d2b1": {
-                  "nodes": []
-                },
-                "_:n0657576b56cb4ba89cfc784a376930d2b3": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b1: *none*\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b3: *none*\n"
             }
           ]
         },
@@ -320,7 +190,7 @@
               "exception": "ValidationError",
               "errorMessage": "{'type': 'CubicSpline', 'x-description': 'References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles', 'references': ['P1', 'P2']} is not valid under any of the given schemas",
               "isError": true,
-              "message": "ValidationError: {'type': 'CubicSpline', 'x-description': 'References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles', 'references': ['P1', 'P2']} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:\n    {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'Arc', 'type': 'string'}}},\n               {'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'ArcWithCenter',\n                                        'type': 'string'}}},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 2, 'minItems': 2},\n                               'type': {'const': 'ArcByChord',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 1, 'minItems': 1},\n                               'type': {'const': 'CircleByCenter',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'not': {'required': ['startTangentVector',\n                                     'endTangentVector']},\n                'properties': {'references': {'minItems': 3},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}}},\n               {'properties': {'endTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'references': {'minItems': 2},\n                               'startTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}},\n                'required': ['startTangentVector', 'endTangentVector']}]}\n\nOn instance['topology']:\n    {'references': ['P1', 'P2'],\n     'type': 'CubicSpline',\n     'x-description': 'References is an ordered list of features with '\n                      'point geometries, with tangent vectors defining '\n                      'entry and exit angles'}"
+              "message": "ValidationError: {'type': 'CubicSpline', 'x-description': 'References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles', 'references': ['P1', 'P2']} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:\n    {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'Arc', 'type': 'string'}}},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'ArcWithCenter',\n                                        'type': 'string'}},\n                'required': ['orientation']},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'radius': {'type': 'number'},\n                               'references': {'maxItems': 2, 'minItems': 2},\n                               'type': {'const': 'ArcByChord',\n                                        'type': 'string'}},\n                'required': ['radius', 'orientation']},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 1, 'minItems': 1},\n                               'type': {'const': 'CircleByCenter',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'not': {'required': ['startTangentVector',\n                                     'endTangentVector']},\n                'properties': {'references': {'minItems': 3},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}}},\n               {'properties': {'endTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'references': {'minItems': 2},\n                               'startTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}},\n                'required': ['startTangentVector', 'endTangentVector']}]}\n\nOn instance['topology']:\n    {'references': ['P1', 'P2'],\n     'type': 'CubicSpline',\n     'x-description': 'References is an ordered list of features with '\n                      'point geometries, with tangent vectors defining '\n                      'entry and exit angles'}"
             }
           ]
         },
@@ -338,6 +208,26 @@
           "name": "SHACL",
           "title": "SHACL",
           "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "focusNodes": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b1": {
+                  "nodes": []
+                },
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b3": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b1: *none*\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b3: *none*\n"
+            },
             {
               "op": "shacl-report",
               "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
@@ -359,7 +249,93 @@
               },
               "isError": false,
               "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
+            }
+          ]
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/tests/circle-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using circle-fail.json from test resources"
             },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "circle-fail.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD circle-fail.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "circle-fail.ttl",
+              "size": 7,
+              "isError": false,
+              "message": "Output Turtle circle-fail.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "{'type': 'CircleByCenter', 'x-description': 'Reference is the feature defining the centre point of a circle - it must have a Point geometry.', 'references': ['PC']} is not valid under any of the given schemas",
+              "isError": true,
+              "message": "ValidationError: {'type': 'CircleByCenter', 'x-description': 'Reference is the feature defining the centre point of a circle - it must have a Point geometry.', 'references': ['PC']} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:\n    {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'Arc', 'type': 'string'}}},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'ArcWithCenter',\n                                        'type': 'string'}},\n                'required': ['orientation']},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'radius': {'type': 'number'},\n                               'references': {'maxItems': 2, 'minItems': 2},\n                               'type': {'const': 'ArcByChord',\n                                        'type': 'string'}},\n                'required': ['radius', 'orientation']},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 1, 'minItems': 1},\n                               'type': {'const': 'CircleByCenter',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'not': {'required': ['startTangentVector',\n                                     'endTangentVector']},\n                'properties': {'references': {'minItems': 3},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}}},\n               {'properties': {'endTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'references': {'minItems': 2},\n                               'startTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}},\n                'required': ['startTangentVector', 'endTangentVector']}]}\n\nOn instance['topology']:\n    {'references': ['PC'],\n     'type': 'CircleByCenter',\n     'x-description': 'Reference is the feature defining the centre point '\n                      'of a circle - it must have a Point geometry.'}"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
             {
               "op": "shacl-report",
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
@@ -370,15 +346,165 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n0657576b56cb4ba89cfc784a376930d2b1": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b1": {
                   "nodes": []
                 },
-                "_:n0657576b56cb4ba89cfc784a376930d2b3": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b3": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b1: *none*\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b3: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b1: *none*\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b3: *none*\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+              "focusNodes": {
+                "topo:testTopoLinesReferencePoints": {
+                  "nodes": []
+                },
+                "topo:testTopoReferencesExist": {
+                  "nodes": [
+                    "<http://www.example.com/features/1853004>/geojson:topology"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
+            }
+          ]
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/tests/arc_chord-radius-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using arc_chord-radius-fail.json from test resources"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "arc_chord-radius-fail.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD arc_chord-radius-fail.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "arc_chord-radius-fail.ttl",
+              "size": 10,
+              "isError": false,
+              "message": "Output Turtle arc_chord-radius-fail.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "{'type': 'ArcByChord', 'x-description': 'References is an ordered list of features with for an Arc Chord, radius and length determine geometry', 'references': ['P1', 'P2'], 'orientation': 'widdershins'} is not valid under any of the given schemas",
+              "isError": true,
+              "message": "ValidationError: {'type': 'ArcByChord', 'x-description': 'References is an ordered list of features with for an Arc Chord, radius and length determine geometry', 'references': ['P1', 'P2'], 'orientation': 'widdershins'} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:\n    {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'Arc', 'type': 'string'}}},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'ArcWithCenter',\n                                        'type': 'string'}},\n                'required': ['orientation']},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'radius': {'type': 'number'},\n                               'references': {'maxItems': 2, 'minItems': 2},\n                               'type': {'const': 'ArcByChord',\n                                        'type': 'string'}},\n                'required': ['radius', 'orientation']},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 1, 'minItems': 1},\n                               'type': {'const': 'CircleByCenter',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'not': {'required': ['startTangentVector',\n                                     'endTangentVector']},\n                'properties': {'references': {'minItems': 3},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}}},\n               {'properties': {'endTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'references': {'minItems': 2},\n                               'startTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}},\n                'required': ['startTangentVector', 'endTangentVector']}]}\n\nOn instance['topology']:\n    {'orientation': 'widdershins',\n     'references': ['P1', 'P2'],\n     'type': 'ArcByChord',\n     'x-description': 'References is an ordered list of features with for '\n                      'an Arc Chord, radius and length determine geometry'}"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "focusNodes": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b1": {
+                  "nodes": []
+                },
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b3": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b1: *none*\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b3: *none*\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+              "focusNodes": {
+                "topo:testTopoLinesReferencePoints": {
+                  "nodes": []
+                },
+                "topo:testTopoReferencesExist": {
+                  "nodes": [
+                    "<http://www.example.com/features/chord1>/geojson:topology"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n"
             }
           ]
         },
@@ -462,6 +588,26 @@
           "entries": [
             {
               "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "focusNodes": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b1": {
+                  "nodes": []
+                },
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b3": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b1: *none*\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b3: *none*\n"
+            },
+            {
+              "op": "shacl-report",
               "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
@@ -481,26 +627,6 @@
               },
               "isError": false,
               "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "focusNodes": {
-                "_:n0657576b56cb4ba89cfc784a376930d2b1": {
-                  "nodes": []
-                },
-                "_:n0657576b56cb4ba89cfc784a376930d2b3": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b1: *none*\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b3: *none*\n"
             }
           ]
         },
@@ -584,6 +710,26 @@
           "entries": [
             {
               "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "focusNodes": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b1": {
+                  "nodes": []
+                },
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b3": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b1: *none*\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b3: *none*\n"
+            },
+            {
+              "op": "shacl-report",
               "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
@@ -603,26 +749,6 @@
               },
               "isError": false,
               "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/arc1>/geojson:topology\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "focusNodes": {
-                "_:n0657576b56cb4ba89cfc784a376930d2b1": {
-                  "nodes": []
-                },
-                "_:n0657576b56cb4ba89cfc784a376930d2b3": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b1: *none*\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b3: *none*\n"
             }
           ]
         },
@@ -706,6 +832,26 @@
           "entries": [
             {
               "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "focusNodes": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b1": {
+                  "nodes": []
+                },
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b3": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b1: *none*\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b3: *none*\n"
+            },
+            {
+              "op": "shacl-report",
               "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
@@ -725,26 +871,6 @@
               },
               "isError": false,
               "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "focusNodes": {
-                "_:n0657576b56cb4ba89cfc784a376930d2b1": {
-                  "nodes": []
-                },
-                "_:n0657576b56cb4ba89cfc784a376930d2b3": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b1: *none*\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b3: *none*\n"
             }
           ]
         },
@@ -828,6 +954,26 @@
           "entries": [
             {
               "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "focusNodes": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b1": {
+                  "nodes": []
+                },
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b3": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b1: *none*\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b3: *none*\n"
+            },
+            {
+              "op": "shacl-report",
               "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
@@ -847,26 +993,6 @@
               },
               "isError": false,
               "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "focusNodes": {
-                "_:n0657576b56cb4ba89cfc784a376930d2b1": {
-                  "nodes": []
-                },
-                "_:n0657576b56cb4ba89cfc784a376930d2b3": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b1: *none*\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b3: *none*\n"
             }
           ]
         },
@@ -950,6 +1076,26 @@
           "entries": [
             {
               "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "focusNodes": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b1": {
+                  "nodes": []
+                },
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b3": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b1: *none*\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b3: *none*\n"
+            },
+            {
+              "op": "shacl-report",
               "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
@@ -969,26 +1115,6 @@
               },
               "isError": false,
               "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "focusNodes": {
-                "_:n0657576b56cb4ba89cfc784a376930d2b1": {
-                  "nodes": []
-                },
-                "_:n0657576b56cb4ba89cfc784a376930d2b3": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b1: *none*\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b3: *none*\n"
             }
           ]
         },
@@ -1072,6 +1198,26 @@
           "entries": [
             {
               "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "focusNodes": {
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b1": {
+                  "nodes": []
+                },
+                "_:n01d8a519fdc3481c840c5f6b8024b2c6b3": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b1: *none*\n - Shape _:n01d8a519fdc3481c840c5f6b8024b2c6b3: *none*\n"
+            },
+            {
+              "op": "shacl-report",
               "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
@@ -1091,26 +1237,6 @@
               },
               "isError": false,
               "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "focusNodes": {
-                "_:n0657576b56cb4ba89cfc784a376930d2b1": {
-                  "nodes": []
-                },
-                "_:n0657576b56cb4ba89cfc784a376930d2b3": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b1: *none*\n - Shape _:n0657576b56cb4ba89cfc784a376930d2b3: *none*\n"
             }
           ]
         },
@@ -1124,8 +1250,8 @@
   ],
   "globalErrors": {},
   "counts": {
-    "total": 9,
-    "passed": 9,
+    "total": 10,
+    "passed": 10,
     "failed": 0
   }
 }

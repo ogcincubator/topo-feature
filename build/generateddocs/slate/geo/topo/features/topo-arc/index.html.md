@@ -76,7 +76,8 @@ radius and arcLength are implicit but may be provided as optional properties of 
       "P1",
       "P2",
       "PC"
-    ]
+    ],
+    "orientation": "cw"
   },
   "properties": {
     "arcLength": 25.615,
@@ -107,7 +108,8 @@ radius and arcLength are implicit but may be provided as optional properties of 
       "P1",
       "P2",
       "PC"
-    ]
+    ],
+    "orientation": "cw"
   },
   "properties": {
     "arcLength": 25.615,
@@ -262,7 +264,8 @@ Arc by Chord example.
       "P1",
       "P2"
     ],
-    "radius": 105.438
+    "radius": 105.438,
+    "orientation": "cw"
   },
   "properties": {
     "arcLength": 25.615
@@ -292,7 +295,8 @@ Arc by Chord example.
       "P1",
       "P2"
     ],
-    "radius": 105.438
+    "radius": 105.438,
+    "orientation": "cw"
   },
   "properties": {
     "arcLength": 25.615
@@ -630,6 +634,13 @@ allOf:
             references:
               minItems: 3
               maxItems: 3
+            orientation:
+              type: string
+              enum:
+              - cw
+              - ccw
+          required:
+          - orientation
         - properties:
             type:
               type: string
@@ -639,8 +650,14 @@ allOf:
               maxItems: 2
             radius:
               type: number
+            orientation:
+              type: string
+              enum:
+              - cw
+              - ccw
           required:
           - radius
+          - orientation
         - properties:
             type:
               type: string
@@ -796,11 +813,11 @@ You can find the full JSON-LD context here:
 The following sets of SHACL shapes are used for validating this building block:
 
 * Non-linear Arc and Spline Descriptions using Point topology <small><code>ogc.geo.topo.features.topo-arc</code></small>
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
   * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
+  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
 * Feature with topology <small><code>ogc.geo.topo.features.topo-feature</code></small>
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
   * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
+  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
 
 # For developers
 

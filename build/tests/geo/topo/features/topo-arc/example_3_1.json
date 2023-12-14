@@ -10,7 +10,8 @@
       "P1",
       "P2"
     ],
-    "radius": 105.438
+    "radius": 105.438,
+    "orientation": "cw"
   },
   "properties": {
     "arcLength": 25.615
