@@ -52,8 +52,6 @@ Note this requires JSON-LD V1.1 processing to handle nested arrays of references
 
 ## Example Topology object
 
-See panel to right - note that a more user friendly "collapsable" version is in development. 
-
 
 
 ```json
@@ -110,6 +108,8 @@ See panel to right - note that a more user friendly "collapsable" version is in 
     <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_1_1.ttl">Open in new window</a>
 </blockquote>
 
+
+See panel to right - note that a more user friendly "collapsable" version is in development. 
 
 
 # JSON Schema

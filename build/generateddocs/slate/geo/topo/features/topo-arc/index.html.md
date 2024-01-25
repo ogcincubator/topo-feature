@@ -29,8 +29,8 @@ Defines options for describing Arcs, Circles, Splines using point features as ca
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-arc/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-arc/" target="_blank">failed</a></strong>
 </aside>
 
 # Description
@@ -54,12 +54,6 @@ Note: the geojson: namespace is used for semantic annotations - this may be repl
 # Examples
 
 ## Example GeoJSON feature using Arc with Center topology
-
-Arc with Center example.
-
-Topology defined by 2 end points and a centre that are references to features with point geometry.
-
-radius and arcLength are implicit but may be provided as optional properties of the feature.
 
 
 
@@ -149,14 +143,14 @@ radius and arcLength are implicit but may be provided as optional properties of 
 </blockquote>
 
 
+Arc with Center example.
+
+Topology defined by 2 end points and a centre that are references to features with point geometry.
+
+radius and arcLength are implicit but may be provided as optional properties of the feature.
+
 
 ## Example GeoJSON feature using Arc topology
-
-Arc example (3 points).
-
-Note that properties "radius" and "arcLength" are not required in the containing feature but defined for convenience.
-
-![Example](https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png)
 
 
 
@@ -244,10 +238,14 @@ Note that properties "radius" and "arcLength" are not required in the containing
 </blockquote>
 
 
+Arc example (3 points).
+
+Note that properties "radius" and "arcLength" are not required in the containing feature but defined for convenience.
+
+![Example](https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png)
+
 
 ## Example GeoJSON feature using Arc by chord topology
-
-Arc by Chord example.
 
 
 
@@ -335,10 +333,10 @@ Arc by Chord example.
 </blockquote>
 
 
+Arc by Chord example.
+
 
 ## Example GeoJSON feature using  Circle with Center topology
-
-Circle with Center example.
 
 
 
@@ -417,10 +415,10 @@ Circle with Center example.
 </blockquote>
 
 
+Circle with Center example.
+
 
 ## Example GeoJSON feature using Cubic Spline topology
-
-Cubic Spline example.
 
 
 
@@ -501,10 +499,10 @@ Cubic Spline example.
 </blockquote>
 
 
+Cubic Spline example.
+
 
 ## Example GeoJSON feature using Cubic Spline topology with start and end tangents
-
-Cubic Spline with Tangents example.
 
 
 
@@ -606,6 +604,8 @@ Cubic Spline with Tangents example.
     <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_6_1.ttl">Open in new window</a>
 </blockquote>
 
+
+Cubic Spline with Tangents example.
 
 
 # JSON Schema
@@ -813,11 +813,11 @@ You can find the full JSON-LD context here:
 The following sets of SHACL shapes are used for validating this building block:
 
 * Non-linear Arc and Spline Descriptions using Point topology <small><code>ogc.geo.topo.features.topo-arc</code></small>
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
   * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
+  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
 * Feature with topology <small><code>ogc.geo.topo.features.topo-feature</code></small>
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
   * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
+  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
 
 # For developers
 

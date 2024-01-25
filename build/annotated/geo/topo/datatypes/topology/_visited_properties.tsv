@@ -1,0 +1,3 @@
+path	@id
+/type	@type
+/references	https://purl.org/geojson/vocab#relatedFeatures

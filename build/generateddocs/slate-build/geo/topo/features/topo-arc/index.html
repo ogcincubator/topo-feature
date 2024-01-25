@@ -382,8 +382,8 @@
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-arc/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-arc/" target="_blank">failed</a></strong>
 </aside>
 <h1 id='description'>Description</h1><h2 id='topology-defining-arcs-circles-splines'>Topology defining Arcs, Circles, Splines</h2>
 <p>A feature type using a topology property to reference points defining non-linear curves.</p>
@@ -397,13 +397,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 <p>Additional properties &quot;radius&quot; and &quot;arcLength&quot; are defined for optional use as feature properties.</p>
 
 <p>Note: the geojson: namespace is used for semantic annotations - this may be replaced with a more suitable namespace when a target ontology is available (such as the planned Geosparql version 1.3)</p>
-<h1 id='examples'>Examples</h1><h2 id='example-geojson-feature-using-arc-with-center-topology'>Example GeoJSON feature using Arc with Center topology</h2>
-<p>Arc with Center example.</p>
-
-<p>Topology defined by 2 end points and a centre that are references to features with point geometry.</p>
-
-<p>radius and arcLength are implicit but may be provided as optional properties of the feature.</p>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+<h1 id='examples'>Examples</h1><h2 id='example-geojson-feature-using-arc-with-center-topology'>Example GeoJSON feature using Arc with Center topology</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1853004"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my:ArcFeature"</span><span class="p">,</span><span class="w">
@@ -473,13 +467,13 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
   <p class="example-links">
     <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.ttl">Open in new window</a>
 </blockquote>
-<h2 id='example-geojson-feature-using-arc-topology'>Example GeoJSON feature using Arc topology</h2>
-<p>Arc example (3 points).</p>
 
-<p>Note that properties &quot;radius&quot; and &quot;arcLength&quot; are not required in the containing feature but defined for convenience.</p>
+<p>Arc with Center example.</p>
 
-<p><img src="https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png" alt="Example" /></p>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+<p>Topology defined by 2 end points and a centre that are references to features with point geometry.</p>
+
+<p>radius and arcLength are implicit but may be provided as optional properties of the feature.</p>
+<h2 id='example-geojson-feature-using-arc-topology'>Example GeoJSON feature using Arc topology</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arc1"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my:ArcFeature"</span><span class="p">,</span><span class="w">
@@ -547,9 +541,13 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
   <p class="example-links">
     <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.ttl">Open in new window</a>
 </blockquote>
-<h2 id='example-geojson-feature-using-arc-by-chord-topology'>Example GeoJSON feature using Arc by chord topology</h2>
-<p>Arc by Chord example.</p>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+
+<p>Arc example (3 points).</p>
+
+<p>Note that properties &quot;radius&quot; and &quot;arcLength&quot; are not required in the containing feature but defined for convenience.</p>
+
+<p><img src="https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png" alt="Example" /></p>
+<h2 id='example-geojson-feature-using-arc-by-chord-topology'>Example GeoJSON feature using Arc by chord topology</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"chord1"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my:ArcChordFeature"</span><span class="p">,</span><span class="w">
@@ -617,9 +615,9 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
   <p class="example-links">
     <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.ttl">Open in new window</a>
 </blockquote>
-<h2 id='example-geojson-feature-using-circle-with-center-topology'>Example GeoJSON feature using  Circle with Center topology</h2>
-<p>Circle with Center example.</p>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+
+<p>Arc by Chord example.</p>
+<h2 id='example-geojson-feature-using-circle-with-center-topology'>Example GeoJSON feature using  Circle with Center topology</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1853004"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my:CircleFeature"</span><span class="p">,</span><span class="w">
@@ -678,9 +676,9 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
   <p class="example-links">
     <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_4_1.ttl">Open in new window</a>
 </blockquote>
-<h2 id='example-geojson-feature-using-cubic-spline-topology'>Example GeoJSON feature using Cubic Spline topology</h2>
-<p>Cubic Spline example.</p>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+
+<p>Circle with Center example.</p>
+<h2 id='example-geojson-feature-using-cubic-spline-topology'>Example GeoJSON feature using Cubic Spline topology</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1853004"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my:SplineFeature"</span><span class="p">,</span><span class="w">
@@ -741,9 +739,9 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
   <p class="example-links">
     <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_5_1.ttl">Open in new window</a>
 </blockquote>
-<h2 id='example-geojson-feature-using-cubic-spline-topology-with-start-and-end-tangents'>Example GeoJSON feature using Cubic Spline topology with start and end tangents</h2>
-<p>Cubic Spline with Tangents example.</p>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+
+<p>Cubic Spline example.</p>
+<h2 id='example-geojson-feature-using-cubic-spline-topology-with-start-and-end-tangents'>Example GeoJSON feature using Cubic Spline topology with start and end tangents</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1853004"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my:SplineFeature"</span><span class="p">,</span><span class="w">
@@ -826,6 +824,8 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
   <p class="example-links">
     <a target="_blank" href="https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_6_1.ttl">Open in new window</a>
 </blockquote>
+
+<p>Cubic Spline with Tangents example.</p>
 <h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
 <span class="na">description</span><span class="pi">:</span> <span class="s">Arc Feature with geometry by reference</span>
 <span class="na">allOf</span><span class="pi">:</span>
@@ -1026,14 +1026,14 @@ This building block is <strong><a href="https://github.com/ogcincubator/topo-fea
 <li>Non-linear Arc and Spline Descriptions using Point topology <small><code>ogc.geo.topo.features.topo-arc</code></small>
 
 <ul>
-<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl</a></li>
 <li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl</a></li>
+<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl</a></li>
 </ul></li>
 <li>Feature with topology <small><code>ogc.geo.topo.features.topo-feature</code></small>
 
 <ul>
-<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl</a></li>
 <li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl</a></li>
+<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl</a></li>
 </ul></li>
 </ul>
 <h1 id='for-developers'>For developers</h1>

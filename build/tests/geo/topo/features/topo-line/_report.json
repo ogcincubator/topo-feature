@@ -2,14 +2,14 @@
   "title": "Validation report for ogc.geo.topo.features.topo-line - Line using Point References",
   "bblockName": "Line using Point References",
   "bblockId": "ogc.geo.topo.features.topo-line",
-  "generated": "2023-12-14T21:27:46.392227+00:00",
+  "generated": "2024-01-25T21:20:40.499212+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-line/example_1_1.json",
+        "filename": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-line/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"
@@ -86,15 +86,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n733c591f59d84ca8ac41dddc60c359ffb1": {
+                "_:n824755ec0b90456dad4fc62906351e05b3": {
                   "nodes": []
                 },
-                "_:n733c591f59d84ca8ac41dddc60c359ffb3": {
+                "_:n824755ec0b90456dad4fc62906351e05b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n733c591f59d84ca8ac41dddc60c359ffb1: *none*\n - Shape _:n733c591f59d84ca8ac41dddc60c359ffb3: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n824755ec0b90456dad4fc62906351e05b3: *none*\n - Shape _:n824755ec0b90456dad4fc62906351e05b1: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -106,19 +106,19 @@
             {
               "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
               "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
+                "topo:testTopoReferencesExist": {
                   "nodes": [
                     "<http://www.example.com/features/LineP1P2>/geojson:topology"
                   ]
                 },
-                "topo:testTopoReferencesExist": {
+                "topo:testTopoLinesReferencePoints": {
                   "nodes": [
                     "<http://www.example.com/features/LineP1P2>/geojson:topology"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n"
             }
           ]
         },

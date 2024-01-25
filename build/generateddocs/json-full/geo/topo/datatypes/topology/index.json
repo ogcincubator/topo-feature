@@ -20,11 +20,12 @@
     "topology"
   ],
   "shaclRules": {},
+  "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml",
     "application/json": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.json"
   },
-  "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
+  "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/datatypes/topology/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/datatypes/topology/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/datatypes/topology/",
