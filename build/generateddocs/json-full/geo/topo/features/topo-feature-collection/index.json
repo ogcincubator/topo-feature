@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2024-01-25",
+  "dateOfLastChange": "2024-02-05",
   "sources": [],
   "shaclRules": {
     "ogc.geo.topo.features.topo-feature-collection": [
@@ -24,8 +24,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.json-fg.featureCollection-lenient",
-    "ogc.geo.topo.features.topo-feature"
+    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.json-fg.featureCollection-lenient"
   ],
   "tags": [
     "topology",

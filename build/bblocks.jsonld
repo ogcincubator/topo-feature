@@ -98,7 +98,10 @@
       }
     }
   ],
-  "modified": "2024-02-05T11:36:10.700272",
+  "name": "Topo-Feature",
+  "abstract": "Generalised Topology Between Identified Objects (Features)",
+  "description": "Defines Feature (object) topology using a _topology_ property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.\n\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \n\nNote: This is a generalisation of the TopoJSON concept using inline data, (nested sets of coordinates) but not limited to self-contained geometries (i.e. it allows for general topology to be described between independent features (objects) with any geometry dimensions)\n\nTopo-Feature doesnt use TopoJSON's coordinate compaction and transformation, however it does allow for explicit CRS, and coordinate compaction transformations could be defined as derived CRS if required.)\n",
+  "modified": "2024-02-05T21:10:34.182392",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"d3ca95c6a06a13ca49593aac13774e5db6835687",
@@ -108,7 +111,6 @@
   },
   "gitRepository": "https://github.com/ogcincubator/topo-feature",
   "gitHubRepository": "https://github.com/ogcincubator/topo-feature/blob/master/",
-  "name": "workspace",
   "baseURL": "https://ogcincubator.github.io/topo-feature/",
   "viewerURL": "https://ogcincubator.github.io/topo-feature/",
   "validationReport": "https://ogcincubator.github.io/topo-feature/build/tests/report.html",
@@ -119,7 +121,7 @@
     "skos:ConceptScheme",
     "dcat:Catalog"
   ],
-  "skos:prefLabel": "workspace",
+  "skos:prefLabel": "Topo-Feature",
   "hasConcepts": [
     {
       "itemIdentifier": "ogc.geo.topo.datatypes.topology",
@@ -130,7 +132,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2024-01-25",
+      "dateOfLastChange": "2024-02-05",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "maturity": "development",
@@ -184,13 +186,13 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-01-25",
+      "dateOfLastChange": "2024-02-05",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.topo.datatypes.topology",
-        "ogc.geo.json-fg.feature"
+        "ogc.geo.json-fg.feature",
+        "ogc.geo.topo.datatypes.topology"
       ],
       "shaclRules": {
         "ogc.geo.topo.features.topo-feature": [
@@ -249,7 +251,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2024-01-25",
+      "dateOfLastChange": "2024-02-05",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -318,7 +320,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2024-01-25",
+      "dateOfLastChange": "2024-02-05",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "maturity": "development",
@@ -381,7 +383,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-01-25",
+      "dateOfLastChange": "2024-02-05",
       "sources": [],
       "shaclRules": {
         "ogc.geo.topo.features.topo-feature-collection": [
@@ -396,8 +398,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.json-fg.featureCollection-lenient",
-        "ogc.geo.topo.features.topo-feature"
+        "ogc.geo.topo.features.topo-feature",
+        "ogc.geo.json-fg.featureCollection-lenient"
       ],
       "tags": [
         "topology",

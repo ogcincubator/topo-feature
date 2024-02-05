@@ -374,14 +374,12 @@
 This building block is <strong><a href="https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature/" target="_blank">valid</a></strong>
 </aside>
 <h1 id='description'>Description</h1><h2 id='feature-with-explicit-topology'>Feature with explicit Topology</h2>
-<p>%definition% </p>
-
 <p>A feature type using a topology property to reference an ordered list of references to other features. </p>
 
 <p>Other features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.</p>
 
-<p>This is a generalisation of the TopoJSON concept using inline data, but not limited to the LineStrings. Topological defined objects 
-can be solids, swept volumes or any other concept.</p>
+<p>This is a generalisation of the TopoJSON concept using inline data, (nested sets of coordinates) but not limited to the LineStrings. Topological defined objects 
+can be solids, swept volumes or any other concept. (It doesnt use TopoJSON coordinate compaction and transformation, however it does allow for explicit CRS, and coordinate compaction transformations could be defined as derived CRS if required.)</p>
 <h1 id='examples'>Examples</h1><h2 id='example-of-a-linestring'>Example of a LineString</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LineP1P2"</span><span class="p">,</span><span class="w">
