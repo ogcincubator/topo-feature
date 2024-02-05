@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature - Feature with topology
-Generated 2024-01-25T21:20:37.344591+00:00
+Generated 2024-02-05T11:36:18.276497+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,8 +17,8 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nf0083b46e0354a55bc12f4518d98194cb3: *none*
- - Shape _:nf0083b46e0354a55bc12f4518d98194cb1: *none*
+ - Shape _:n506ed5e046c54ba0af0faabc2264567cb3: *none*
+ - Shape _:n506ed5e046c54ba0af0faabc2264567cb1: *none*
 
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report

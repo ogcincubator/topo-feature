@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2023-05-24",
+  "dateOfLastChange": "2024-01-25",
   "link": "https://github.com/icsm-au/3d-csdm-schema",
   "sources": [],
   "maturity": "development",
@@ -26,6 +26,7 @@
     "application/json": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.json"
   },
   "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/datatypes/topology/context.jsonld",
+  "sourceSchema": "https://ogcincubator.github.io/topo-feature/_sources/datatypes/topology/schema.json",
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/datatypes/topology/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/datatypes/topology/",

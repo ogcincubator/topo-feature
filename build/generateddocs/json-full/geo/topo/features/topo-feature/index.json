@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2023-07-05",
+  "dateOfLastChange": "2024-01-25",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -19,8 +19,8 @@
   ],
   "shaclRules": {
     "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ]
   },
   "shaclClosures": [
@@ -37,6 +37,7 @@
     "application/json": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.json"
   },
   "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/context.jsonld",
+  "sourceSchema": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/schema.yaml",
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature/",
