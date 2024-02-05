@@ -1,1 +1,16 @@
 identifier-prefix: ogc.geo.topo.
+
+name: Topo-Feature
+abstract: Generalised Topology Between Identified Objects (Features)
+description: |
+  Defines Feature (object) topology using a _topology_ property to reference an ordered list of references to other features. 
+
+  Other features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.
+
+  Topo-Feature defined objects can be solids, swept volumes or any other concept. 
+  
+  Note: This is a generalisation of the TopoJSON concept using inline data, (nested sets of coordinates) but not limited to self-contained geometries (i.e. it allows for general topology to be described between independent features (objects) with any geometry dimensions)
+  
+  Topo-Feature doesnt use TopoJSON's coordinate compaction and transformation, however it does allow for explicit CRS, and coordinate compaction transformations could be defined as derived CRS if required.)
+
+
