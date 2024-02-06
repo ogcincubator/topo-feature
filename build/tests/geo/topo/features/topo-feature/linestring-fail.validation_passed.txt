@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature - Feature with topology
-Generated 2024-02-06T04:47:34.728107+00:00
+Generated 2024-02-06T04:59:31.270610+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -16,14 +16,6 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
-Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nef112c26346e4d13ac2a32fccf8a16b2b3: *none*
- - Shape _:nef112c26346e4d13ac2a32fccf8a16b2b1: *none*
-
 
 ** Validation error **
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
@@ -73,6 +65,14 @@ Validation result for _sources/features/topo-feature-collection/tests/topo-refs-
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape topo:testTopoReferencesExist: <file:///github/workspace/LineP1P2>/geojson:topology
  - Shape topo:testTopoLinesReferencePoints: <file:///github/workspace/LineP1P2>/geojson:topology
+
+Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n5dcd3ed572c94c91aeae0454d95eda48b3: *none*
+ - Shape _:n5dcd3ed572c94c91aeae0454d95eda48b1: *none*
 
 === End SHACL ===
 
