@@ -1,9 +1,11 @@
-- title: Example GeoJSON feature using Arc with Center topology
+- title: Example GeoJSON feature using ArcWithCenter topology
   content: |-
     Arc with Center example.
 
     Topology defined by 2 end points and a centre that are references to features with point geometry.
 
+    ![Example](assets/arc-with-center.png)
+    
     radius and arcLength are implicit but may be provided as optional properties of the feature.
 
 
@@ -21,7 +23,7 @@
 
       Note that properties "radius" and "arcLength" are not required in the containing feature but defined for convenience.
 
-      ![Example](@@assets@@/arc.png)
+      ![Example](assets/arc.png)
 
   snippets:
     - language: json
@@ -31,9 +33,11 @@
       shacl-closure:
         - ../topo-feature/examples/points.ttl
 
-- title: Example GeoJSON feature using Arc by chord topology
+- title: Example GeoJSON feature using ArcByChord topology
   content: |-
       Arc by Chord example.
+
+      ![Example](assets/arc-by-chord.png)
 
   snippets:
     - language: json
@@ -43,10 +47,12 @@
       shacl-closure:
         - ../topo-feature/examples/points.ttl
 
-- title: Example GeoJSON feature using  Circle with Center topology
+- title: Example GeoJSON feature using  CircleWithCenter topology
   content: |-
       Circle with Center example.
-
+    
+      ![Example](assets/circle-with-center.png)
+-
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
@@ -59,6 +65,8 @@
   content: |-
     Cubic Spline example.
 
+    ![Example](assets/spline.png)
+-
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
