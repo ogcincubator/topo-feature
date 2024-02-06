@@ -15,14 +15,14 @@
     dct:created "2023-11-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/slate-build/geo/topo/features/topo-arc/" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/bblock/ogc.geo.topo.features.topo-arc" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-arc/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-arc/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-arc/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/bblock/ogc.geo.topo.features.topo-arc" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-02-05"^^xsd:date ;
+    dct:modified "2024-02-06"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/topo-feature/> ;
     dcat:keyword "2D",
         "geometry",
@@ -53,7 +53,7 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature-collection/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-02-05"^^xsd:date ;
+    dct:modified "2024-02-06"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/topo-feature/> ;
     dcat:keyword "feature",
         "topology" ;
@@ -74,16 +74,16 @@
     rdfs:label "Line using Point References" ;
     dct:abstract "Demonstration of a schema using coordinates of points, without duplication. Reuses context but constrains to Line types" ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/bblock/ogc.geo.topo.features.topo-line" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-line/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-line/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/slate-build/geo/topo/features/topo-line/" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/bblock/ogc.geo.topo.features.topo-line" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/slate-build/geo/topo/features/topo-line/" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-line/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-02-05"^^xsd:date ;
+    dct:modified "2024-02-06"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/topo-feature/> ;
     dcat:keyword "3D",
         "geometry",
@@ -105,16 +105,16 @@
     rdfs:label "Geometry using references" ;
     dct:abstract "Demonstration of a schema using coordinates of points, withpout duplication" ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/datatypes/topology/index.json" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/slate-build/geo/topo/datatypes/topology/" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/bblock/ogc.geo.topo.datatypes.topology" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/datatypes/topology/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/datatypes/topology/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/datatypes/topology/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-02-05"^^xsd:date ;
+    dct:modified "2024-02-06"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/topo-feature/> ;
     dcat:keyword "3D",
         "geometry",
@@ -134,14 +134,14 @@
     dct:created "2023-07-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/bblock/ogc.geo.topo.features.topo-feature" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature/index.md" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/slate-build/geo/topo/features/topo-feature/" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-02-05"^^xsd:date ;
+    dct:modified "2024-02-06"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/topo-feature/> ;
     dcat:keyword "feature",
         "topology" ;
@@ -175,15 +175,15 @@ Topo-Feature doesnt use TopoJSON's coordinate compaction and transformation, how
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-02-05T21:10:52.863441"^^xsd:dateTime ;
-    prov:startedAtTime "2024-02-05T21:10:52.793857"^^xsd:dateTime ;
+    prov:endedAtTime "2024-02-06T04:36:07.817581"^^xsd:dateTime ;
+    prov:startedAtTime "2024-02-06T04:36:07.747889"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:fafc8b2432fb7599ad0b2f84525bb797972917ea" ;
-            rdfs:seeAlso <https://ogcincubator.github.io/topo-feature/build/register.json> ] ;
+            dct:hasVersion "git:1e47e66a49bba0ff9ce9324060340117fd6792b3" ;
+            rdfs:seeAlso <https://ogcincubator.github.io/topo-feature/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-line - Line using Point References
-Generated 2024-02-05T21:10:51.040785+00:00
+Generated 2024-02-06T04:36:05.790560+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -25,8 +25,8 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nf77cdfbf2cf0449480c9772b70fd2369b1: *none*
- - Shape _:nf77cdfbf2cf0449480c9772b70fd2369b3: *none*
+ - Shape _:nba5854c8d5e344fd9d2226adb12b287ab1: *none*
+ - Shape _:nba5854c8d5e344fd9d2226adb12b287ab3: *none*
 
 === End SHACL ===
 

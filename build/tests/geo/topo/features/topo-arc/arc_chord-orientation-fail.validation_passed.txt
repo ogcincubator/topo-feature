@@ -1,20 +1,20 @@
 Validation report for ogc.geo.topo.features.topo-arc - Non-linear Arc and Spline Descriptions using Point topology
-Generated 2024-02-06T04:36:03.159187+00:00
+Generated 2024-02-06T04:36:03.097433+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
 
 === Files ===
-Using arc_chord-radius-fail.json from test resources
+Using arc_chord-orientation-fail.json from test resources
 JSON-LD context is present - uplifting
-Output JSON-LD arc_chord-radius-fail.jsonld created
-Output Turtle arc_chord-radius-fail.ttl created
+Output JSON-LD arc_chord-orientation-fail.jsonld created
+Output Turtle arc_chord-orientation-fail.ttl created
 === End Files ===
 
 === JSON Schema ===
 
 ** Validation error **
-ValidationError: {'type': 'ArcByChord', 'x-description': 'References is an ordered list of features with for an Arc Chord, radius and length determine geometry', 'references': ['P1', 'P2'], 'orientation': 'widdershins'} is not valid under any of the given schemas
+ValidationError: {'type': 'ArcByChord', 'x-description': 'orientation does not match keyword.', 'references': ['P1', 'P2'], 'orientation': '+', 'radius': 2.5} is not valid under any of the given schemas
 
 Failed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:
     {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},
@@ -50,11 +50,11 @@ Failed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf
                 'required': ['startTangentVector', 'endTangentVector']}]}
 
 On instance['topology']:
-    {'orientation': 'widdershins',
+    {'orientation': '+',
+     'radius': 2.5,
      'references': ['P1', 'P2'],
      'type': 'ArcByChord',
-     'x-description': 'References is an ordered list of features with for '
-                      'an Arc Chord, radius and length determine geometry'}
+     'x-description': 'orientation does not match keyword.'}
 === End JSON Schema ===
 
 === SHACL ===

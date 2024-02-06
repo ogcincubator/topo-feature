@@ -11,7 +11,7 @@
       "P2",
       "PC"
     ],
-    "orientation": "cw"
+    "orientation": "ccw"
   },
   "properties": {
     "arcLength": 25.615,

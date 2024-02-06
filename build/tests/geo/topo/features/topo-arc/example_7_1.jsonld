@@ -1,15 +1,17 @@
 {
   "id": "1853004",
   "type": "Feature",
-  "featureType": "my:CircleFeature",
+  "featureType": "my:SplineFeature",
   "geometry": null,
   "topology": {
-    "type": "CircleByCenter",
-    "x-description": "Reference is the feature defining the centre point of a circle - it must have a Point geometry.",
+    "type": "CubicSpline",
+    "x-description": "References is an ordered list of features with point geometries",
     "references": [
-      "PC"
-    ],
-    "radius": 10
+      "P1",
+      "Px1",
+      "Px2",
+      "P2"
+    ]
   },
   "properties": null,
   "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"

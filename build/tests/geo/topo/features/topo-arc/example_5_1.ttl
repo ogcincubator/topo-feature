@@ -1,8 +1,10 @@
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/1853004> a geojson:Feature,
-        <my:SplineFeature> ;
-    geojson:topology [ a geojson:CubicSpline ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/Px1> <http://www.example.com/features/Px2> <http://www.example.com/features/P2> ) ] .
+        <my:CircleFeature> ;
+    geojson:topology [ a geojson:CircleByCenter ;
+            geojson:radius 10 ;
+            geojson:relatedFeatures ( <http://www.example.com/features/PC> ) ] .
 

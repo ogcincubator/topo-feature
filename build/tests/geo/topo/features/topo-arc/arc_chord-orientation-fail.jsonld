@@ -11,12 +11,12 @@
   "geometry": null,
   "topology": {
     "type": "ArcByChord",
-    "x-description": "References is an ordered list of features with for an Arc Chord, radius and length determine geometry",
+    "x-description": "orientation does not match keyword.",
     "references": [
       "P1",
       "P2"
     ],
-    "orientation": "cw",
+    "orientation": "+",
     "radius": 2.5
   },
   "properties": {

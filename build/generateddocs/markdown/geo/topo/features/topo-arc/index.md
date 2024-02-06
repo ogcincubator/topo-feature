@@ -27,10 +27,12 @@ Note: the geojson: namespace is used for semantic annotations - this may be repl
 
 ## Examples
 
-### Example GeoJSON feature using Arc with Center topology
+### Example GeoJSON feature using ArcWithCenter topology
 Arc with Center example.
 
 Topology defined by 2 end points and a centre that are references to features with point geometry.
+
+![Example](assets/arc-with-center.png)
 
 radius and arcLength are implicit but may be provided as optional properties of the feature.
 #### json
@@ -48,7 +50,7 @@ radius and arcLength are implicit but may be provided as optional properties of 
       "P2",
       "PC"
     ],
-    "orientation": "cw"
+    "orientation": "ccw"
   },
   "properties": {
     "arcLength": 25.615,
@@ -72,7 +74,7 @@ radius and arcLength are implicit but may be provided as optional properties of 
       "P2",
       "PC"
     ],
-    "orientation": "cw"
+    "orientation": "ccw"
   },
   "properties": {
     "arcLength": 25.615,
@@ -104,7 +106,7 @@ Arc example (3 points).
 
 Note that properties "radius" and "arcLength" are not required in the containing feature but defined for convenience.
 
-![Example](https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/assets/arc.png)
+![Example](assets/arc.png)
 #### json
 ```json
 {
@@ -169,8 +171,10 @@ Note that properties "radius" and "arcLength" are not required in the containing
 ```
 
 
-### Example GeoJSON feature using Arc by chord topology
+### Example GeoJSON feature using ArcByChord topology
 Arc by Chord example.
+
+![Example](assets/arc-by-chord.png)
 #### json
 ```json
 {
@@ -235,8 +239,12 @@ Arc by Chord example.
 ```
 
 
-### Example GeoJSON feature using  Circle with Center topology
+### Example GeoJSON feature using  CircleWithCenter topology
 Circle with Center example.
+
+![Example](assets/circle-with-center.png)
+
+### Example 5
 #### json
 ```json
 {
@@ -294,6 +302,10 @@ Circle with Center example.
 
 ### Example GeoJSON feature using Cubic Spline topology
 Cubic Spline example.
+
+![Example](assets/spline.png)
+
+### Example 7
 #### json
 ```json
 {
