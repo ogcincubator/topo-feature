@@ -147,7 +147,7 @@ Arc with Center example.
 
 Topology defined by 2 end points and a centre that are references to features with point geometry.
 
-![Example](assets/arc-with-center.png)
+![Example](assets/arc-by-center.png)
 
 radius and arcLength are implicit but may be provided as optional properties of the feature.
 

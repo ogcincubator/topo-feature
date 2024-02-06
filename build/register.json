@@ -1,8 +1,8 @@
 {
   "name": "Topo-Feature",
-  "abstract": "Generalised Topology Between Identified Objects (Features)",
-  "description": "Defines Feature (object) topology using a _topology_ property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.\n\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \n\nNote: This is a generalisation of the TopoJSON concept using inline data, (nested sets of coordinates) but not limited to self-contained geometries (i.e. it allows for general topology to be described between independent features (objects) with any geometry dimensions)\n\nTopo-Feature doesnt use TopoJSON's coordinate compaction and transformation, however it does allow for explicit CRS, and coordinate compaction transformations could be defined as derived CRS if required.)\n",
-  "modified": "2024-02-06T04:35:53.688067",
+  "abstract": "Features with geometry defined via  generalised topology between identified objects (Features).",
+  "description": "Defines Feature (object) topology using a _topology_ property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.\n\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \n\nTopo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. \n\nTopo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.\n\nNote: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features.. \n\n_Topo-Feature allows for explicit CRS. If desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._\n",
+  "modified": "2024-02-06T04:47:29.974975",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"d3ca95c6a06a13ca49593aac13774e5db6835687",
@@ -82,8 +82,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.topo.datatypes.topology",
-        "ogc.geo.json-fg.feature"
+        "ogc.geo.json-fg.feature",
+        "ogc.geo.topo.datatypes.topology"
       ],
       "shaclRules": {
         "ogc.geo.topo.features.topo-feature": [
@@ -274,8 +274,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.topo.features.topo-feature",
-        "ogc.geo.json-fg.featureCollection-lenient"
+        "ogc.geo.json-fg.featureCollection-lenient",
+        "ogc.geo.topo.features.topo-feature"
       ],
       "tags": [
         "topology",

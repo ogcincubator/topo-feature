@@ -49,7 +49,7 @@
   "examples": [
     {
       "title": "Example GeoJSON feature using ArcWithCenter topology",
-      "content": "Arc with Center example.\n\nTopology defined by 2 end points and a centre that are references to features with point geometry.\n\n![Example](assets/arc-with-center.png)\n\nradius and arcLength are implicit but may be provided as optional properties of the feature.",
+      "content": "Arc with Center example.\n\nTopology defined by 2 end points and a centre that are references to features with point geometry.\n\n![Example](assets/arc-by-center.png)\n\nradius and arcLength are implicit but may be provided as optional properties of the feature.",
       "snippets": [
         {
           "language": "json",

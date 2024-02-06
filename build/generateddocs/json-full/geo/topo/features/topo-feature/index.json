@@ -14,8 +14,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.topo.datatypes.topology",
-    "ogc.geo.json-fg.feature"
+    "ogc.geo.json-fg.feature",
+    "ogc.geo.topo.datatypes.topology"
   ],
   "shaclRules": {
     "ogc.geo.topo.features.topo-feature": [
