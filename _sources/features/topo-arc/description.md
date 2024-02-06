@@ -4,7 +4,7 @@ A feature type using a topology property to reference points defining non-linear
 
 Each geometry type has a specific number of references to "features" defining point geometries.
 
-![Example](@@assets@@/arc.png)
+![Example](assets/arc.png)
 
 Where additional properties are required to define the geometry these are included as sub-properties of the topology property.
 
