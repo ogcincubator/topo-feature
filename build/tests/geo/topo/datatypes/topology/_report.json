@@ -2,14 +2,15 @@
   "title": "Validation report for ogc.geo.topo.datatypes.topology - Geometry using references",
   "bblockName": "Geometry using references",
   "bblockId": "ogc.geo.topo.datatypes.topology",
-  "generated": "2024-02-06T05:01:52.180109+00:00",
+  "generated": "2024-07-22T08:17:58.010962+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_1_1.json",
+        "filename": "build/tests/geo/topo/datatypes/topology/example_1_1.json",
+        "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"

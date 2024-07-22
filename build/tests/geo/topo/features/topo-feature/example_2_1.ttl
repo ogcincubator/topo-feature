@@ -3,5 +3,5 @@
 
 <http://www.example.com/features/TriangleP1P2P3> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            geojson:relatedFeatures ( "['LineP1P2', 'LineP2P3', 'LineP3P1']" ) ] .
+            geojson:relatedFeatures ( ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ) ] .
 

@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-line - Line using Point References
-Generated 2024-02-06T05:01:54.910491+00:00
+Generated 2024-07-22T08:18:00.445571+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -10,23 +10,4 @@ Output Turtle example_1_1.ttl created
 === JSON Schema ===
 Validation passed
 === End JSON Schema ===
-
-=== SHACL ===
-Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology
- - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology
-
-Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n296eeb70a4844e4fb6b009f4c3c37957b1: *none*
- - Shape _:n296eeb70a4844e4fb6b009f4c3c37957b3: *none*
-
-=== End SHACL ===
 

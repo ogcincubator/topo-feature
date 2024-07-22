@@ -1,0 +1,9 @@
+path
+/topology/orientation
+/topology/radius
+/topology/startTangentVector
+/topology/startTangentVector/references
+/topology/endTangentVector
+/topology/endTangentVector/references
+/radius
+/arcLength

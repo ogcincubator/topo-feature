@@ -4,12 +4,12 @@ $defs:
   FeatureCollectionOptions:
     anyOf:
     - $ref: https://beta.schemas.opengis.net/json-fg/featurecollection.json
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml
     - $ref: https://geojson.org/schema/FeatureCollection.json
   FeatureOptions:
     anyOf:
     - $ref: https://beta.schemas.opengis.net/json-fg/feature.json
-    - $ref: https://geojson.org/schema/Feature.json
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
   PointOptions:
     anyOf:
     - allOf:
@@ -28,5 +28,5 @@ properties:
     type: array
     items:
       anyOf:
-      - $ref: ../topo-feature/schema.yaml
+      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
       - $ref: '#/$defs/PointOptions'

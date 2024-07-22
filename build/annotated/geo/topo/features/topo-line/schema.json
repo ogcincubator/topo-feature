@@ -3,14 +3,14 @@
   "description": "Line Feature with geometry by reference",
   "allOf": [
     {
-      "$ref": "../topo-feature/schema.json"
+      "$ref": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.json"
     },
     {
       "properties": {
         "topology": {
           "allOf": [
             {
-              "$ref": "../../datatypes/topology/schema.json"
+              "$ref": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.json"
             },
             {
               "properties": {

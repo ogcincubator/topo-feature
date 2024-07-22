@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection
-Generated 2024-02-06T05:01:55.744246+00:00
+Generated 2024-07-22T08:18:02.769819+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -21,8 +21,8 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n18b5066048fd451cb7dafcb84b7fd92bb3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
- - Shape _:n18b5066048fd451cb7dafcb84b7fd92bb1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+ - Shape _:n2b303a9278f940eeb6c7f51ad4e41cdcb3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+ - Shape _:n2b303a9278f940eeb6c7f51ad4e41cdcb1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
 
 
 ** Validation error **

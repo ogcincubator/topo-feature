@@ -187,7 +187,7 @@ can be solids, swept volumes or any other concept. (It doesnt use TopoJSON coord
 
 <http://www.example.com/features/TriangleP1P2P3> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            geojson:relatedFeatures ( "['LineP1P2', 'LineP2P3', 'LineP3P1']" ) ] .
+            geojson:relatedFeatures ( ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ) ] .
 
 
 ```
@@ -207,8 +207,8 @@ description: Feature with defined topology for bounding elements
 $defs:
   FeatureOptions:
     anyOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json
-    - $ref: https://geojson.org/schema/Feature.json
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
 allOf:
 - $ref: '#/$defs/FeatureOptions'
 - type: object
@@ -216,7 +216,7 @@ allOf:
     id:
       type: string
     topology:
-      $ref: ../../datatypes/topology/schema.json
+      $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
       x-jsonld-type: '@id'
       x-jsonld-id: https://purl.org/geojson/vocab#topology
   required:
@@ -284,9 +284,48 @@ Links to the schema:
       "@id": "rdfs:seeAlso"
     },
     "featureType": "@type",
+    "time": {
+      "@context": {
+        "date": {
+          "@id": "owlTime:hasTime",
+          "@type": "xsd:date"
+        },
+        "timestamp": {
+          "@id": "owlTime:hasTime",
+          "@type": "xsd:dateTime"
+        },
+        "interval": {
+          "@id": "owlTime:hasTime",
+          "@container": "@list"
+        }
+      },
+      "@id": "dct:time"
+    },
+    "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
+    "place": "dct:spatial",
+    "Polyhedron": "geojson:Polyhedron",
+    "MultiPolyhedron": "geojson:MultiPolyhedron",
+    "Prism": {
+      "@id": "geojson:Prism",
+      "@context": {
+        "base": "geojson:prismBase",
+        "lower": "geojson:prismLower",
+        "upper": "geojson:prismUpper"
+      }
+    },
+    "MultiPrism": {
+      "@id": "geojson:MultiPrism",
+      "@context": {
+        "prisms": "geojson:prisms"
+      }
+    },
     "coordinates": {
       "@container": "@list",
       "@id": "geojson:coordinates"
+    },
+    "geometries": {
+      "@id": "geojson:geometry",
+      "@container": "@list"
     },
     "topology": {
       "@context": {
@@ -312,6 +351,8 @@ Links to the schema:
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
+    "owlTime": "http://www.w3.org/2006/time#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "csdm": "https://linked.data.gov.au/def/csdm/",
     "@version": 1.1
   }

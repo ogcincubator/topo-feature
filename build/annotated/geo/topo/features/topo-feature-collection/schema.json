@@ -21,7 +21,7 @@
           "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
         },
         {
-          "$ref": "https://geojson.org/schema/Feature.json"
+          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json"
         }
       ]
     },
@@ -62,7 +62,7 @@
       "items": {
         "anyOf": [
           {
-            "$ref": "../topo-feature/schema.json"
+            "$ref": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.json"
           },
           {
             "$ref": "#/$defs/PointOptions"

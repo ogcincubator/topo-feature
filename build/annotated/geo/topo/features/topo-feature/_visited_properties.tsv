@@ -20,33 +20,227 @@ path	@id
 /links/title	http://www.w3.org/2000/01/rdf-schema#label
 /links/length	http://purl.org/dc/terms/extent
 /featureType	@type
-/time	
-/time/date	
-/time/timestamp	
-/time/interval	
-/coordRefSys	
+/time	http://purl.org/dc/terms/time
+/time/date	http://www.w3.org/2006/time#hasTime
+/time/timestamp	http://www.w3.org/2006/time#hasTime
+/time/interval	http://www.w3.org/2006/time#hasTime
+/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
 /coordRefSys/type	
 /coordRefSys/href	
 /coordRefSys/epoch	
-/place	
+/coordRefSys/single-refsys/type	
+/coordRefSys/single-refsys/href	
+/coordRefSys/single-refsys/epoch	
+/coordRefSys/refsys-byref/type	
+/coordRefSys/refsys-byref/href	
+/coordRefSys/refsys-byref/epoch	
+/coordRefSys/refsys-custom/type	
+/place	http://purl.org/dc/terms/spatial
 /place/type	
+/place/coordRefSys	
+/place/coordRefSys/type	
+/place/coordRefSys/href	
+/place/coordRefSys/epoch	
+/place/coordRefSys/single-refsys/type	
+/place/coordRefSys/single-refsys/href	
+/place/coordRefSys/single-refsys/epoch	
+/place/coordRefSys/refsys-byref/type	
+/place/coordRefSys/refsys-byref/href	
+/place/coordRefSys/refsys-byref/epoch	
+/place/coordRefSys/refsys-custom/type	
 /place/coordinates	
 /place/bbox	
 /place/base	
 /place/base/type	
+/place/base/coordRefSys	
+/place/base/coordRefSys/type	
+/place/base/coordRefSys/href	
+/place/base/coordRefSys/epoch	
+/place/base/coordRefSys/single-refsys/type	
+/place/base/coordRefSys/single-refsys/href	
+/place/base/coordRefSys/single-refsys/epoch	
+/place/base/coordRefSys/refsys-byref/type	
+/place/base/coordRefSys/refsys-byref/href	
+/place/base/coordRefSys/refsys-byref/epoch	
+/place/base/coordRefSys/refsys-custom/type	
 /place/base/coordinates	
 /place/base/bbox	
 /place/lower	
 /place/upper	
 /place/prisms	
 /place/prisms/type	
+/place/prisms/coordRefSys	
+/place/prisms/coordRefSys/type	
+/place/prisms/coordRefSys/href	
+/place/prisms/coordRefSys/epoch	
+/place/prisms/coordRefSys/single-refsys/type	
+/place/prisms/coordRefSys/single-refsys/href	
+/place/prisms/coordRefSys/single-refsys/epoch	
+/place/prisms/coordRefSys/refsys-byref/type	
+/place/prisms/coordRefSys/refsys-byref/href	
+/place/prisms/coordRefSys/refsys-byref/epoch	
+/place/prisms/coordRefSys/refsys-custom/type	
 /place/prisms/base	
 /place/prisms/base/type	
+/place/prisms/base/coordRefSys	
+/place/prisms/base/coordRefSys/type	
+/place/prisms/base/coordRefSys/href	
+/place/prisms/base/coordRefSys/epoch	
+/place/prisms/base/coordRefSys/single-refsys/type	
+/place/prisms/base/coordRefSys/single-refsys/href	
+/place/prisms/base/coordRefSys/single-refsys/epoch	
+/place/prisms/base/coordRefSys/refsys-byref/type	
+/place/prisms/base/coordRefSys/refsys-byref/href	
+/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/place/prisms/base/coordRefSys/refsys-custom/type	
 /place/prisms/base/coordinates	
 /place/prisms/base/bbox	
 /place/prisms/lower	
 /place/prisms/upper	
 /place/prisms/bbox	
+/geometry/coordRefSys	
+/geometry/coordRefSys/type	
+/geometry/coordRefSys/href	
+/geometry/coordRefSys/epoch	
+/geometry/coordRefSys/single-refsys/type	
+/geometry/coordRefSys/single-refsys/href	
+/geometry/coordRefSys/single-refsys/epoch	
+/geometry/coordRefSys/refsys-byref/type	
+/geometry/coordRefSys/refsys-byref/href	
+/geometry/coordRefSys/refsys-byref/epoch	
+/geometry/coordRefSys/refsys-custom/type	
+/geometry/geometries/coordRefSys	
+/geometry/geometries/coordRefSys/type	
+/geometry/geometries/coordRefSys/href	
+/geometry/geometries/coordRefSys/epoch	
+/geometry/geometries/coordRefSys/single-refsys/type	
+/geometry/geometries/coordRefSys/single-refsys/href	
+/geometry/geometries/coordRefSys/single-refsys/epoch	
+/geometry/geometries/coordRefSys/refsys-byref/type	
+/geometry/geometries/coordRefSys/refsys-byref/href	
+/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/geometry/geometries/coordRefSys/refsys-custom/type	
 /topology	https://purl.org/geojson/vocab#topology
 /topology/type	@type
 /topology/references	https://purl.org/geojson/vocab#relatedFeatures
+/FeatureOptions/type	@type
+/FeatureOptions/id	@id
+/FeatureOptions/properties	@nest
+/FeatureOptions/geometry	https://purl.org/geojson/vocab#geometry
+/FeatureOptions/geometry/type	@type
+/FeatureOptions/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
+/FeatureOptions/geometry/bbox	https://purl.org/geojson/vocab#bbox
+/FeatureOptions/geometry/geometries	
+/FeatureOptions/geometry/geometries/type	@type
+/FeatureOptions/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
+/FeatureOptions/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
+/FeatureOptions/bbox	https://purl.org/geojson/vocab#bbox
+/FeatureOptions/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/FeatureOptions/links/href	http://www.w3.org/ns/oa#hasTarget
+/FeatureOptions/links/rel	http://www.iana.org/assignments/relation
+/FeatureOptions/links/anchor	
+/FeatureOptions/links/type	http://purl.org/dc/terms/type
+/FeatureOptions/links/hreflang	http://purl.org/dc/terms/language
+/FeatureOptions/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/FeatureOptions/links/length	http://purl.org/dc/terms/extent
+/FeatureOptions/featureType	@type
+/FeatureOptions/time	http://purl.org/dc/terms/time
+/FeatureOptions/time/date	http://www.w3.org/2006/time#hasTime
+/FeatureOptions/time/timestamp	http://www.w3.org/2006/time#hasTime
+/FeatureOptions/time/interval	http://www.w3.org/2006/time#hasTime
+/FeatureOptions/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/FeatureOptions/coordRefSys/type	
+/FeatureOptions/coordRefSys/href	
+/FeatureOptions/coordRefSys/epoch	
+/FeatureOptions/coordRefSys/single-refsys/type	
+/FeatureOptions/coordRefSys/single-refsys/href	
+/FeatureOptions/coordRefSys/single-refsys/epoch	
+/FeatureOptions/coordRefSys/refsys-byref/type	
+/FeatureOptions/coordRefSys/refsys-byref/href	
+/FeatureOptions/coordRefSys/refsys-byref/epoch	
+/FeatureOptions/coordRefSys/refsys-custom/type	
+/FeatureOptions/place	http://purl.org/dc/terms/spatial
+/FeatureOptions/place/type	
+/FeatureOptions/place/coordRefSys	
+/FeatureOptions/place/coordRefSys/type	
+/FeatureOptions/place/coordRefSys/href	
+/FeatureOptions/place/coordRefSys/epoch	
+/FeatureOptions/place/coordRefSys/single-refsys/type	
+/FeatureOptions/place/coordRefSys/single-refsys/href	
+/FeatureOptions/place/coordRefSys/single-refsys/epoch	
+/FeatureOptions/place/coordRefSys/refsys-byref/type	
+/FeatureOptions/place/coordRefSys/refsys-byref/href	
+/FeatureOptions/place/coordRefSys/refsys-byref/epoch	
+/FeatureOptions/place/coordRefSys/refsys-custom/type	
+/FeatureOptions/place/coordinates	
+/FeatureOptions/place/bbox	
+/FeatureOptions/place/base	
+/FeatureOptions/place/base/type	
+/FeatureOptions/place/base/coordRefSys	
+/FeatureOptions/place/base/coordRefSys/type	
+/FeatureOptions/place/base/coordRefSys/href	
+/FeatureOptions/place/base/coordRefSys/epoch	
+/FeatureOptions/place/base/coordRefSys/single-refsys/type	
+/FeatureOptions/place/base/coordRefSys/single-refsys/href	
+/FeatureOptions/place/base/coordRefSys/single-refsys/epoch	
+/FeatureOptions/place/base/coordRefSys/refsys-byref/type	
+/FeatureOptions/place/base/coordRefSys/refsys-byref/href	
+/FeatureOptions/place/base/coordRefSys/refsys-byref/epoch	
+/FeatureOptions/place/base/coordRefSys/refsys-custom/type	
+/FeatureOptions/place/base/coordinates	
+/FeatureOptions/place/base/bbox	
+/FeatureOptions/place/lower	
+/FeatureOptions/place/upper	
+/FeatureOptions/place/prisms	
+/FeatureOptions/place/prisms/type	
+/FeatureOptions/place/prisms/coordRefSys	
+/FeatureOptions/place/prisms/coordRefSys/type	
+/FeatureOptions/place/prisms/coordRefSys/href	
+/FeatureOptions/place/prisms/coordRefSys/epoch	
+/FeatureOptions/place/prisms/coordRefSys/single-refsys/type	
+/FeatureOptions/place/prisms/coordRefSys/single-refsys/href	
+/FeatureOptions/place/prisms/coordRefSys/single-refsys/epoch	
+/FeatureOptions/place/prisms/coordRefSys/refsys-byref/type	
+/FeatureOptions/place/prisms/coordRefSys/refsys-byref/href	
+/FeatureOptions/place/prisms/coordRefSys/refsys-byref/epoch	
+/FeatureOptions/place/prisms/coordRefSys/refsys-custom/type	
+/FeatureOptions/place/prisms/base	
+/FeatureOptions/place/prisms/base/type	
+/FeatureOptions/place/prisms/base/coordRefSys	
+/FeatureOptions/place/prisms/base/coordRefSys/type	
+/FeatureOptions/place/prisms/base/coordRefSys/href	
+/FeatureOptions/place/prisms/base/coordRefSys/epoch	
+/FeatureOptions/place/prisms/base/coordRefSys/single-refsys/type	
+/FeatureOptions/place/prisms/base/coordRefSys/single-refsys/href	
+/FeatureOptions/place/prisms/base/coordRefSys/single-refsys/epoch	
+/FeatureOptions/place/prisms/base/coordRefSys/refsys-byref/type	
+/FeatureOptions/place/prisms/base/coordRefSys/refsys-byref/href	
+/FeatureOptions/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/FeatureOptions/place/prisms/base/coordRefSys/refsys-custom/type	
+/FeatureOptions/place/prisms/base/coordinates	
+/FeatureOptions/place/prisms/base/bbox	
+/FeatureOptions/place/prisms/lower	
+/FeatureOptions/place/prisms/upper	
+/FeatureOptions/place/prisms/bbox	
+/FeatureOptions/geometry/coordRefSys	
+/FeatureOptions/geometry/coordRefSys/type	
+/FeatureOptions/geometry/coordRefSys/href	
+/FeatureOptions/geometry/coordRefSys/epoch	
+/FeatureOptions/geometry/coordRefSys/single-refsys/type	
+/FeatureOptions/geometry/coordRefSys/single-refsys/href	
+/FeatureOptions/geometry/coordRefSys/single-refsys/epoch	
+/FeatureOptions/geometry/coordRefSys/refsys-byref/type	
+/FeatureOptions/geometry/coordRefSys/refsys-byref/href	
+/FeatureOptions/geometry/coordRefSys/refsys-byref/epoch	
+/FeatureOptions/geometry/coordRefSys/refsys-custom/type	
+/FeatureOptions/geometry/geometries/coordRefSys	
+/FeatureOptions/geometry/geometries/coordRefSys/type	
+/FeatureOptions/geometry/geometries/coordRefSys/href	
+/FeatureOptions/geometry/geometries/coordRefSys/epoch	
+/FeatureOptions/geometry/geometries/coordRefSys/single-refsys/type	
+/FeatureOptions/geometry/geometries/coordRefSys/single-refsys/href	
+/FeatureOptions/geometry/geometries/coordRefSys/single-refsys/epoch	
+/FeatureOptions/geometry/geometries/coordRefSys/refsys-byref/type	
+/FeatureOptions/geometry/geometries/coordRefSys/refsys-byref/href	
+/FeatureOptions/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/FeatureOptions/geometry/geometries/coordRefSys/refsys-custom/type	

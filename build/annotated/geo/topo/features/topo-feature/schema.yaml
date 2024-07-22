@@ -3,8 +3,8 @@ description: Feature with defined topology for bounding elements
 $defs:
   FeatureOptions:
     anyOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json
-    - $ref: https://geojson.org/schema/Feature.json
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
 allOf:
 - $ref: '#/$defs/FeatureOptions'
 - type: object
@@ -12,7 +12,7 @@ allOf:
     id:
       type: string
     topology:
-      $ref: ../../datatypes/topology/schema.json
+      $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
       x-jsonld-type: '@id'
       x-jsonld-id: https://purl.org/geojson/vocab#topology
   required:
