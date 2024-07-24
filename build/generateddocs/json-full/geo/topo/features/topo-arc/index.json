@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogcincubator",
   "version": "0.1",
-  "dateOfLastChange": "2023-05-24",
+  "dateOfLastChange": "2024-07-24",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -20,8 +20,8 @@
   ],
   "shaclRules": {
     "ogc.geo.topo.features.topo-arc": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ]
   },
   "shaclClosures": [
