@@ -1,12 +1,12 @@
 # Features with topology
 
-This repository defines an extension to GeoJSON or FG-JSON definining topological relationships between features based on identifiers.
+This repository defines an extension to GeoJSON or FG-JSON defining topological relationships between features based on identifiers.
 
 The set of components are listed [here](https://ogcincubator.github.io/topo-feature/)
 
 The implementation provides a JSON schema and a corresponding JSON-LD context that can turn topology references into object properties.
 
-Topological consistency functions can be described using SHACL rules - for example that a Polygon geometry must reference LineStrings, and Linestrings must reference Point objects. 
+Topological consistency functions can be described using SHACL rules - for example that a Polygon geometry must reference LineStrings, and LineStrings must reference Point objects. 
 
 This is extensible (unlike topoJSON) and can span features across any collection schemas used to group them.
 
@@ -14,6 +14,6 @@ Using features rather than geometries as the topology reference allows arbitrary
 
 NB. GeoJSON simple geometries and TopoJSON compact topologies can be derived from the model if required.
 
-[More information on design and usage](https://github.com/opengeospatial/bblock-template/blob/master/USAGE.md)
+[More information on design and usage](https://ogcincubator.github.io/bblocks-docs/)
 
 

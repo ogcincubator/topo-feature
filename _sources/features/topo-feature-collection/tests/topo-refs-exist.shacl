@@ -40,12 +40,14 @@ topo:testTopoLinesReferencePoints
         prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
         prefix geojson: <https://purl.org/geojson/vocab#>
+        prefix dct:     <http://purl.org/dc/terms/>
+        PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
         SELECT $this (geojson:topology as ?path) (?ref as ?value)
         WHERE {
          $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
          FILTER NOT EXISTS {
-             ?ref geojson:geometry/rdf:type geojson:Point }
+             ?ref (geojson:geometry|geosparql:hasGeometry|dct:spatial)/rdf:type geojson:Point }
         }
 """ ; ]
 .
