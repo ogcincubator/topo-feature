@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-arc - Non-linear Arc and Spline Descriptions using Point topology
-Generated 2024-07-24T03:44:41.964738+00:00
+Generated 2024-07-24T05:34:15.737635+00:00
 === Files ===
 Using example_3_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,16 +17,16 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n863e7a64a75641809d28b2dc5f5cce34b1: *none*
- - Shape _:n863e7a64a75641809d28b2dc5f5cce34b3: *none*
+ - Shape _:n2870ab807b944a89b27d70a78344b840b3: *none*
+ - Shape _:n2870ab807b944a89b27d70a78344b840b1: *none*
 
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
 
 === End SHACL ===
 
