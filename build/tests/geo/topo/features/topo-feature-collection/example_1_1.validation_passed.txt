@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection
-Generated 2024-07-24T05:34:18.760684+00:00
+Generated 2024-10-17T08:18:52.895914+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,16 +17,16 @@ Validation result for _sources/features/topo-feature-collection/tests/topo-refs-
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoReferencesExist: *none*
  - Shape topo:testTopoLinesReferencePoints: *none*
+ - Shape topo:testTopoReferencesExist: *none*
 
 Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:ndf5f8daeae07443686ff3dcca055d938b3: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry
- - Shape _:ndf5f8daeae07443686ff3dcca055d938b1: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry
+ - Shape _:nc06b31df41d549a4bc49f4af2b4d1f16b1: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry
+ - Shape _:nc06b31df41d549a4bc49f4af2b4d1f16b3: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry
 
 === End SHACL ===
 

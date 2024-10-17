@@ -63,6 +63,7 @@ can be solids, swept volumes or any other concept.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
   "type": "FeatureCollection",
   "id": "pointsonly",
   "features": [
@@ -90,8 +91,7 @@ can be solids, swept volumes or any other concept.
       },
       "properties": null
     }
-  ],
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
+  ]
 }
 ```
 
@@ -168,6 +168,7 @@ can be solids, swept volumes or any other concept.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
   "type": "FeatureCollection",
   "id": "line",
   "features": [
@@ -208,8 +209,7 @@ can be solids, swept volumes or any other concept.
       },
       "properties": null
     }
-  ],
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
+  ]
 }
 ```
 
@@ -343,6 +343,7 @@ can be solids, swept volumes or any other concept.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
   "type": "FeatureCollection",
   "id": "TopoCollectionExample",
   "features": [
@@ -435,8 +436,7 @@ can be solids, swept volumes or any other concept.
       },
       "properties": null
     }
-  ],
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
+  ]
 }
 ```
 
@@ -538,10 +538,7 @@ Links to the schema:
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
-    "geometry": {
-      "@context": {},
-      "@id": "geojson:geometry"
-    },
+    "geometry": "geojson:geometry",
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"

@@ -1,8 +1,8 @@
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
   "type": "LineString",
   "references": [
     "P1",
     "P2"
-  ],
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld"
+  ]
 }

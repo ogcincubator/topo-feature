@@ -42,6 +42,7 @@ can be solids, swept volumes or any other concept. (It doesnt use TopoJSON coord
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld",
   "type": "Feature",
   "id": "LineP1P2",
   "geometry": null,
@@ -52,8 +53,7 @@ can be solids, swept volumes or any other concept. (It doesnt use TopoJSON coord
       "P2"
     ]
   },
-  "properties": null,
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld"
+  "properties": null
 }
 ```
 
@@ -94,6 +94,7 @@ can be solids, swept volumes or any other concept. (It doesnt use TopoJSON coord
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld",
   "type": "Feature",
   "id": "TriangleP1P2P3",
   "geometry": null,
@@ -107,8 +108,7 @@ can be solids, swept volumes or any other concept. (It doesnt use TopoJSON coord
       ]
     ]
   },
-  "properties": null,
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld"
+  "properties": null
 }
 ```
 
@@ -165,10 +165,7 @@ Links to the schema:
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
-    "geometry": {
-      "@context": {},
-      "@id": "geojson:geometry"
-    },
+    "geometry": "geojson:geometry",
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"

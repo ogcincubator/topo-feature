@@ -1,4 +1,5 @@
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
   "type": "FeatureCollection",
   "id": "TopoCollectionExample",
   "features": [
@@ -91,6 +92,5 @@
       },
       "properties": null
     }
-  ],
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld"
+  ]
 }

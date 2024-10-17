@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2024-07-24",
+  "dateOfLastChange": "2024-10-17",
   "link": "https://github.com/icsm-au/3d-csdm-schema",
   "sources": [],
   "maturity": "development",
@@ -51,7 +51,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"LineP1P2\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"LineString\",\n    \"references\": [\n      \"P1\",\n      \"P2\"\n    ]\n  },\n  \"properties\": null,\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"LineP1P2\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"LineString\",\n    \"references\": [\n      \"P1\",\n      \"P2\"\n    ]\n  },\n  \"properties\": null\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-line/example_1_1.jsonld"
         },
         {

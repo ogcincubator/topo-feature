@@ -62,6 +62,7 @@ radius and arcLength are implicit but may be provided as optional properties of 
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "1853004",
   "type": "Feature",
   "featureType": "my:ArcFeature",
@@ -79,8 +80,7 @@ radius and arcLength are implicit but may be provided as optional properties of 
   "properties": {
     "arcLength": 25.615,
     "radius": 105.438
-  },
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+  }
 }
 ```
 
@@ -133,6 +133,7 @@ Note that properties "radius" and "arcLength" are not required in the containing
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "arc1",
   "type": "Feature",
   "featureType": "my:ArcFeature",
@@ -149,8 +150,7 @@ Note that properties "radius" and "arcLength" are not required in the containing
   "properties": {
     "arcLength": 25.615,
     "radius": 105.438
-  },
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+  }
 }
 ```
 
@@ -201,6 +201,7 @@ Arc by Chord example.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "chord1",
   "type": "Feature",
   "featureType": "my:ArcChordFeature",
@@ -217,8 +218,7 @@ Arc by Chord example.
   },
   "properties": {
     "arcLength": 25.615
-  },
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+  }
 }
 ```
 
@@ -267,6 +267,7 @@ Circle with Center example.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "1853004",
   "type": "Feature",
   "featureType": "my:CircleFeature",
@@ -279,8 +280,7 @@ Circle with Center example.
     ],
     "radius": 10
   },
-  "properties": null,
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+  "properties": null
 }
 ```
 
@@ -330,6 +330,7 @@ Cubic Spline example.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "1853004",
   "type": "Feature",
   "featureType": "my:SplineFeature",
@@ -344,8 +345,7 @@ Cubic Spline example.
       "P2"
     ]
   },
-  "properties": null,
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+  "properties": null
 }
 ```
 
@@ -399,6 +399,7 @@ Cubic Spline with Tangents example.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "1853004",
   "type": "Feature",
   "featureType": "my:SplineFeature",
@@ -423,8 +424,7 @@ Cubic Spline with Tangents example.
       "P2"
     ]
   },
-  "properties": null,
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+  "properties": null
 }
 ```
 
@@ -559,10 +559,7 @@ Links to the schema:
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
-    "geometry": {
-      "@context": {},
-      "@id": "geojson:geometry"
-    },
+    "geometry": "geojson:geometry",
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"
@@ -645,7 +642,6 @@ Links to the schema:
       "@container": "@list"
     },
     "topology": {
-      "@context": {},
       "@type": "@id",
       "@id": "geojson:topology"
     },

@@ -9,24 +9,24 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2024-07-24",
+  "dateOfLastChange": "2024-10-17",
   "sources": [],
   "shaclRules": {
     "ogc.geo.topo.features.topo-feature-collection": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ],
     "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ]
   },
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.json-fg.featureCollection-lenient",
     "ogc.geo.common.data_types.geojson",
-    "ogc.geo.topo.features.topo-feature"
+    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.json-fg.featureCollection-lenient"
   ],
   "tags": [
     "topology",
@@ -57,7 +57,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"type\": \"FeatureCollection\",\n  \"id\": \"pointsonly\",\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P1\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          10,\n          10\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P2\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          20,\n          20\n        ]\n      },\n      \"properties\": null\n    }\n  ],\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld\",\n  \"type\": \"FeatureCollection\",\n  \"id\": \"pointsonly\",\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P1\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          10,\n          10\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P2\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          20,\n          20\n        ]\n      },\n      \"properties\": null\n    }\n  ]\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_1_1.jsonld"
         },
         {
@@ -79,7 +79,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"type\": \"FeatureCollection\",\n  \"id\": \"line\",\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"LineP1P2\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"LineString\",\n        \"references\": [\n          \"P1\",\n          \"P2\"\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P1\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          10,\n          10\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P2\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          20,\n          20\n        ]\n      },\n      \"properties\": null\n    }\n  ],\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld\",\n  \"type\": \"FeatureCollection\",\n  \"id\": \"line\",\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"LineP1P2\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"LineString\",\n        \"references\": [\n          \"P1\",\n          \"P2\"\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P1\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          10,\n          10\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P2\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          20,\n          20\n        ]\n      },\n      \"properties\": null\n    }\n  ]\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_2_1.jsonld"
         },
         {
@@ -101,7 +101,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"type\": \"FeatureCollection\",\n  \"id\": \"TopoCollectionExample\",\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P1\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          10,\n          10\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P2\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          20,\n          20\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P3\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          10,\n          20\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"LineP1P2\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"LineString\",\n        \"references\": [\n          \"P1\",\n          \"P2\"\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"LineP2P3\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"LineString\",\n        \"references\": [\n          \"P2\",\n          \"P3\"\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"LineP3P1\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"LineString\",\n        \"references\": [\n          \"P3\",\n          \"P1\"\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"TriangleP1P2P3\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"Polygon\",\n        \"references\": [\n          \"LineP1P2\",\n          \"LineP2P3\",\n          \"LineP3P1\"\n        ]\n      },\n      \"properties\": null\n    }\n  ],\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld\",\n  \"type\": \"FeatureCollection\",\n  \"id\": \"TopoCollectionExample\",\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P1\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          10,\n          10\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P2\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          20,\n          20\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"P3\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          10,\n          20\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"LineP1P2\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"LineString\",\n        \"references\": [\n          \"P1\",\n          \"P2\"\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"LineP2P3\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"LineString\",\n        \"references\": [\n          \"P2\",\n          \"P3\"\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"LineP3P1\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"LineString\",\n        \"references\": [\n          \"P3\",\n          \"P1\"\n        ]\n      },\n      \"properties\": null\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"TriangleP1P2P3\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"Polygon\",\n        \"references\": [\n          \"LineP1P2\",\n          \"LineP2P3\",\n          \"LineP3P1\"\n        ]\n      },\n      \"properties\": null\n    }\n  ]\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_3_1.jsonld"
         },
         {

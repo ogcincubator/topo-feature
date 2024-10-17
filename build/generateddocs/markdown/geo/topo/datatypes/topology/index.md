@@ -40,12 +40,12 @@ See panel to right - note that a more user friendly "collapsable" version is in 
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
   "type": "LineString",
   "references": [
     "P1",
     "P2"
-  ],
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld"
+  ]
 }
 ```
 
@@ -65,6 +65,13 @@ See panel to right - note that a more user friendly "collapsable" version is in 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
 description: feature with geometry by reference
+$defs:
+  refOrNest:
+    oneOf:
+    - type: array
+      items:
+        $ref: '#/$defs/refOrNest'
+    - type: string
 oneOf:
 - properties:
     type:
@@ -78,7 +85,7 @@ oneOf:
     references:
       type: array
       items:
-        type: string
+        $ref: '#/$defs/refOrNest'
       x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
       x-jsonld-type: '@id'
       x-jsonld-container: '@list'
@@ -95,7 +102,7 @@ oneOf:
         items:
           type: array
           items:
-            type: string
+            $ref: '#/$defs/refOrNest'
       x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
       x-jsonld-type: '@id'
       x-jsonld-container: '@list'
@@ -111,7 +118,7 @@ oneOf:
       items:
         type: array
         items:
-          type: string
+          $ref: '#/$defs/refOrNest'
       x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
       x-jsonld-type: '@id'
       x-jsonld-container: '@list'

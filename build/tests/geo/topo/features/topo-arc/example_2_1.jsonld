@@ -1,4 +1,5 @@
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "arc1",
   "type": "Feature",
   "featureType": "my:ArcFeature",
@@ -15,6 +16,5 @@
   "properties": {
     "arcLength": 25.615,
     "radius": 105.438
-  },
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld"
+  }
 }

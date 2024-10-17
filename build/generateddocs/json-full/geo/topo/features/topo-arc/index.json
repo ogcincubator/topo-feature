@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogcincubator",
   "version": "0.1",
-  "dateOfLastChange": "2024-07-24",
+  "dateOfLastChange": "2024-10-17",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -20,8 +20,8 @@
   ],
   "shaclRules": {
     "ogc.geo.topo.features.topo-arc": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ]
   },
   "shaclClosures": [
@@ -58,7 +58,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:ArcFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"ArcWithCenter\",\n    \"x-description\": \"References is an ordered list of features with point geometries Start,End,Center\",\n    \"references\": [\n      \"P1\",\n      \"P2\",\n      \"PC\"\n    ],\n    \"orientation\": \"ccw\"\n  },\n  \"properties\": {\n    \"arcLength\": 25.615,\n    \"radius\": 105.438\n  },\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\",\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:ArcFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"ArcWithCenter\",\n    \"x-description\": \"References is an ordered list of features with point geometries Start,End,Center\",\n    \"references\": [\n      \"P1\",\n      \"P2\",\n      \"PC\"\n    ],\n    \"orientation\": \"ccw\"\n  },\n  \"properties\": {\n    \"arcLength\": 25.615,\n    \"radius\": 105.438\n  }\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_1_1.jsonld"
         },
         {
@@ -84,7 +84,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"arc1\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:ArcFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"Arc\",\n    \"x-description\": \"References is an ordered list of 3 features with point geometries defining Arc\",\n    \"references\": [\n      \"P1\",\n      \"P3\",\n      \"P2\"\n    ]\n  },\n  \"properties\": {\n    \"arcLength\": 25.615,\n    \"radius\": 105.438\n  },\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\",\n  \"id\": \"arc1\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:ArcFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"Arc\",\n    \"x-description\": \"References is an ordered list of 3 features with point geometries defining Arc\",\n    \"references\": [\n      \"P1\",\n      \"P3\",\n      \"P2\"\n    ]\n  },\n  \"properties\": {\n    \"arcLength\": 25.615,\n    \"radius\": 105.438\n  }\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_2_1.jsonld"
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"chord1\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:ArcChordFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"ArcByChord\",\n    \"x-description\": \"References is an ordered list of features with for an Arc Chord, radius and length determine geometry\",\n    \"references\": [\n      \"P1\",\n      \"P2\"\n    ],\n    \"radius\": 105.438,\n    \"orientation\": \"cw\"\n  },\n  \"properties\": {\n    \"arcLength\": 25.615\n  },\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\",\n  \"id\": \"chord1\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:ArcChordFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"ArcByChord\",\n    \"x-description\": \"References is an ordered list of features with for an Arc Chord, radius and length determine geometry\",\n    \"references\": [\n      \"P1\",\n      \"P2\"\n    ],\n    \"radius\": 105.438,\n    \"orientation\": \"cw\"\n  },\n  \"properties\": {\n    \"arcLength\": 25.615\n  }\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_3_1.jsonld"
         },
         {
@@ -138,7 +138,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:CircleFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"CircleByCenter\",\n    \"x-description\": \"Reference is the feature defining the centre point of a circle - it must have a Point geometry.\",\n    \"references\": [\n      \"PC\"\n    ],\n    \"radius\": 10\n  },\n  \"properties\": null,\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\",\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:CircleFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"CircleByCenter\",\n    \"x-description\": \"Reference is the feature defining the centre point of a circle - it must have a Point geometry.\",\n    \"references\": [\n      \"PC\"\n    ],\n    \"radius\": 10\n  },\n  \"properties\": null\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_5_1.jsonld"
         },
         {
@@ -166,7 +166,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:SplineFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"CubicSpline\",\n    \"x-description\": \"References is an ordered list of features with point geometries\",\n    \"references\": [\n      \"P1\",\n      \"Px1\",\n      \"Px2\",\n      \"P2\"\n    ]\n  },\n  \"properties\": null,\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\",\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:SplineFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"CubicSpline\",\n    \"x-description\": \"References is an ordered list of features with point geometries\",\n    \"references\": [\n      \"P1\",\n      \"Px1\",\n      \"Px2\",\n      \"P2\"\n    ]\n  },\n  \"properties\": null\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_7_1.jsonld"
         },
         {
@@ -192,7 +192,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:SplineFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"CubicSpline\",\n    \"x-description\": \"References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles\",\n    \"startTangentVector\": {\n      \"references\": [\n        \"PVS\",\n        \"P1\"\n      ]\n    },\n    \"endTangentVector\": {\n      \"references\": [\n        \"P2\",\n        \"PVE\"\n      ]\n    },\n    \"references\": [\n      \"P1\",\n      \"P2\"\n    ]\n  },\n  \"properties\": null,\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld\",\n  \"id\": \"1853004\",\n  \"type\": \"Feature\",\n  \"featureType\": \"my:SplineFeature\",\n  \"geometry\": null,\n  \"topology\": {\n    \"type\": \"CubicSpline\",\n    \"x-description\": \"References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles\",\n    \"startTangentVector\": {\n      \"references\": [\n        \"PVS\",\n        \"P1\"\n      ]\n    },\n    \"endTangentVector\": {\n      \"references\": [\n        \"P2\",\n        \"PVE\"\n      ]\n    },\n    \"references\": [\n      \"P1\",\n      \"P2\"\n    ]\n  },\n  \"properties\": null\n}",
           "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/example_8_1.jsonld"
         },
         {

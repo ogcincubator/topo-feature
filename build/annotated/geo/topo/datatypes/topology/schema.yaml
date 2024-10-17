@@ -1,5 +1,12 @@
 $schema: https://json-schema.org/draft/2020-12/schema
 description: feature with geometry by reference
+$defs:
+  refOrNest:
+    oneOf:
+    - type: array
+      items:
+        $ref: '#/$defs/refOrNest'
+    - type: string
 oneOf:
 - properties:
     type:
@@ -13,7 +20,7 @@ oneOf:
     references:
       type: array
       items:
-        type: string
+        $ref: '#/$defs/refOrNest'
       x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
       x-jsonld-type: '@id'
       x-jsonld-container: '@list'
@@ -30,7 +37,7 @@ oneOf:
         items:
           type: array
           items:
-            type: string
+            $ref: '#/$defs/refOrNest'
       x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
       x-jsonld-type: '@id'
       x-jsonld-container: '@list'
@@ -46,7 +53,7 @@ oneOf:
       items:
         type: array
         items:
-          type: string
+          $ref: '#/$defs/refOrNest'
       x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
       x-jsonld-type: '@id'
       x-jsonld-container: '@list'

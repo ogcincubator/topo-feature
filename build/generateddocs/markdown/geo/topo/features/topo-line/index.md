@@ -44,6 +44,7 @@ See panel to right - note that a more user friendly "collapsable" version is in 
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
   "type": "Feature",
   "id": "LineP1P2",
   "geometry": null,
@@ -54,8 +55,7 @@ See panel to right - note that a more user friendly "collapsable" version is in 
       "P2"
     ]
   },
-  "properties": null,
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld"
+  "properties": null
 }
 ```
 
@@ -105,10 +105,7 @@ Links to the schema:
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
-    "geometry": {
-      "@context": {},
-      "@id": "geojson:geometry"
-    },
+    "geometry": "geojson:geometry",
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"
@@ -191,7 +188,6 @@ Links to the schema:
       "@container": "@list"
     },
     "topology": {
-      "@context": {},
       "@type": "@id",
       "@id": "geojson:topology"
     },

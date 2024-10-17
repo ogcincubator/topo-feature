@@ -1,6 +1,21 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "feature with geometry by reference",
+  "$defs": {
+    "refOrNest": {
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/refOrNest"
+          }
+        },
+        {
+          "type": "string"
+        }
+      ]
+    }
+  },
   "oneOf": [
     {
       "properties": {
@@ -18,7 +33,7 @@
         "references": {
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/$defs/refOrNest"
           },
           "x-jsonld-id": "https://purl.org/geojson/vocab#relatedFeatures",
           "x-jsonld-type": "@id",
@@ -42,7 +57,7 @@
             "items": {
               "type": "array",
               "items": {
-                "type": "string"
+                "$ref": "#/$defs/refOrNest"
               }
             }
           },
@@ -67,7 +82,7 @@
           "items": {
             "type": "array",
             "items": {
-              "type": "string"
+              "$ref": "#/$defs/refOrNest"
             }
           },
           "x-jsonld-id": "https://purl.org/geojson/vocab#relatedFeatures",

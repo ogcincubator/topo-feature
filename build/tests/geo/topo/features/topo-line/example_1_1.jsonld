@@ -1,4 +1,5 @@
 {
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
   "type": "Feature",
   "id": "LineP1P2",
   "geometry": null,
@@ -9,6 +10,5 @@
       "P2"
     ]
   },
-  "properties": null,
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld"
+  "properties": null
 }
