@@ -1,0 +1,10 @@
+examples:
+  - title: CityJSON Cube
+    snippets:
+      - language: json
+        ref: examples/cube.city.json
+
+  - title: CityJSON Two Buildings
+    snippets:
+      - language: json
+        ref: examples/twobuildings.city.json

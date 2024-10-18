@@ -1,0 +1,5 @@
+transforms:
+  - id: topo-feature
+    description: Transforms CityJSON geometries and vertices to GeoJSON / TopoFeature features.
+    type: jq
+    ref: transforms/topo-feature.jq
