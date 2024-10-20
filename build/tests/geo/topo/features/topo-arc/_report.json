@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.features.topo-arc - Non-linear Arc and Spline Descriptions using Point topology",
   "bblockName": "Non-linear Arc and Spline Descriptions using Point topology",
   "bblockId": "ogc.geo.topo.features.topo-arc",
-  "generated": "2024-10-18T10:09:57.003328+00:00",
+  "generated": "2024-10-20T11:27:05.311840+00:00",
   "result": true,
   "items": [
     {
@@ -83,15 +83,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n00175a4e30db40fc8daa3230a3a2434db3": {
+                "_:ned113fef218a4f1296c73b6704c148f6b3": {
                   "nodes": []
                 },
-                "_:n00175a4e30db40fc8daa3230a3a2434db1": {
+                "_:ned113fef218a4f1296c73b6704c148f6b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db3: *none*\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db1: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ned113fef218a4f1296c73b6704c148f6b3: *none*\n - Shape _:ned113fef218a4f1296c73b6704c148f6b1: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -197,15 +197,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n00175a4e30db40fc8daa3230a3a2434db3": {
+                "_:ned113fef218a4f1296c73b6704c148f6b3": {
                   "nodes": []
                 },
-                "_:n00175a4e30db40fc8daa3230a3a2434db1": {
+                "_:ned113fef218a4f1296c73b6704c148f6b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db3: *none*\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db1: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ned113fef218a4f1296c73b6704c148f6b3: *none*\n - Shape _:ned113fef218a4f1296c73b6704c148f6b1: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -311,15 +311,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n00175a4e30db40fc8daa3230a3a2434db3": {
+                "_:ned113fef218a4f1296c73b6704c148f6b3": {
                   "nodes": []
                 },
-                "_:n00175a4e30db40fc8daa3230a3a2434db1": {
+                "_:ned113fef218a4f1296c73b6704c148f6b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db3: *none*\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db1: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ned113fef218a4f1296c73b6704c148f6b3: *none*\n - Shape _:ned113fef218a4f1296c73b6704c148f6b1: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -425,15 +425,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n00175a4e30db40fc8daa3230a3a2434db3": {
+                "_:ned113fef218a4f1296c73b6704c148f6b3": {
                   "nodes": []
                 },
-                "_:n00175a4e30db40fc8daa3230a3a2434db1": {
+                "_:ned113fef218a4f1296c73b6704c148f6b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db3: *none*\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db1: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ned113fef218a4f1296c73b6704c148f6b3: *none*\n - Shape _:ned113fef218a4f1296c73b6704c148f6b1: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -528,15 +528,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n00175a4e30db40fc8daa3230a3a2434db3": {
+                "_:ned113fef218a4f1296c73b6704c148f6b3": {
                   "nodes": []
                 },
-                "_:n00175a4e30db40fc8daa3230a3a2434db1": {
+                "_:ned113fef218a4f1296c73b6704c148f6b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db3: *none*\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db1: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ned113fef218a4f1296c73b6704c148f6b3: *none*\n - Shape _:ned113fef218a4f1296c73b6704c148f6b1: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -631,15 +631,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n00175a4e30db40fc8daa3230a3a2434db3": {
+                "_:ned113fef218a4f1296c73b6704c148f6b3": {
                   "nodes": []
                 },
-                "_:n00175a4e30db40fc8daa3230a3a2434db1": {
+                "_:ned113fef218a4f1296c73b6704c148f6b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db3: *none*\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db1: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ned113fef218a4f1296c73b6704c148f6b3: *none*\n - Shape _:ned113fef218a4f1296c73b6704c148f6b1: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -734,15 +734,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n00175a4e30db40fc8daa3230a3a2434db3": {
+                "_:ned113fef218a4f1296c73b6704c148f6b3": {
                   "nodes": []
                 },
-                "_:n00175a4e30db40fc8daa3230a3a2434db1": {
+                "_:ned113fef218a4f1296c73b6704c148f6b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db3: *none*\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db1: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ned113fef218a4f1296c73b6704c148f6b3: *none*\n - Shape _:ned113fef218a4f1296c73b6704c148f6b1: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -837,15 +837,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n00175a4e30db40fc8daa3230a3a2434db3": {
+                "_:ned113fef218a4f1296c73b6704c148f6b3": {
                   "nodes": []
                 },
-                "_:n00175a4e30db40fc8daa3230a3a2434db1": {
+                "_:ned113fef218a4f1296c73b6704c148f6b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db3: *none*\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db1: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ned113fef218a4f1296c73b6704c148f6b3: *none*\n - Shape _:ned113fef218a4f1296c73b6704c148f6b1: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -940,15 +940,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n00175a4e30db40fc8daa3230a3a2434db3": {
+                "_:ned113fef218a4f1296c73b6704c148f6b3": {
                   "nodes": []
                 },
-                "_:n00175a4e30db40fc8daa3230a3a2434db1": {
+                "_:ned113fef218a4f1296c73b6704c148f6b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db3: *none*\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db1: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ned113fef218a4f1296c73b6704c148f6b3: *none*\n - Shape _:ned113fef218a4f1296c73b6704c148f6b1: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -1043,15 +1043,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n00175a4e30db40fc8daa3230a3a2434db3": {
+                "_:ned113fef218a4f1296c73b6704c148f6b3": {
                   "nodes": []
                 },
-                "_:n00175a4e30db40fc8daa3230a3a2434db1": {
+                "_:ned113fef218a4f1296c73b6704c148f6b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db3: *none*\n - Shape _:n00175a4e30db40fc8daa3230a3a2434db1: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ned113fef218a4f1296c73b6704c148f6b3: *none*\n - Shape _:ned113fef218a4f1296c73b6704c148f6b1: *none*\n"
             },
             {
               "op": "shacl-report",

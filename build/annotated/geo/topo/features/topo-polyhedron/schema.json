@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "Arc Feature with geometry by reference",
+  "description": "Feature with Polyhedral geometry by reference",
   "$defs": {
     "PolyhedralFeature": {
       "allOf": [
