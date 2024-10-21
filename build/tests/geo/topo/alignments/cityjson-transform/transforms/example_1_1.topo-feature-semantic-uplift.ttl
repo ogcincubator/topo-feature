@@ -97,19 +97,65 @@ c:city-objects-id-1_geom_0_1_6_1 a geojson:Feature ;
     geojson:topology [ a geojson:LineString ;
             geojson:relatedFeatures ( c:vertices-7 c:vertices-6 c:vertices-5 c:vertices-4 ) ] .
 
-c:vertices-0 a <https://example.com/Feature> .
+c:vertices-0 a <https://example.com/Feature> ;
+    city:hasGeometry [ a geojson:Point ;
+            geojson:coordinates 0,
+                1000 ] ;
+    city:x 0.0 ;
+    city:y 0.0 ;
+    city:z 1000.0 .
 
-c:vertices-1 a <https://example.com/Feature> .
+c:vertices-1 a <https://example.com/Feature> ;
+    city:hasGeometry [ a geojson:Point ;
+            geojson:coordinates 0,
+                1000 ] ;
+    city:x 1000.0 ;
+    city:y 0.0 ;
+    city:z 1000.0 .
 
-c:vertices-2 a <https://example.com/Feature> .
+c:vertices-2 a <https://example.com/Feature> ;
+    city:hasGeometry [ a geojson:Point ;
+            geojson:coordinates 1000 ] ;
+    city:x 1000.0 ;
+    city:y 1000.0 ;
+    city:z 1000.0 .
 
-c:vertices-3 a <https://example.com/Feature> .
+c:vertices-3 a <https://example.com/Feature> ;
+    city:hasGeometry [ a geojson:Point ;
+            geojson:coordinates 0,
+                1000 ] ;
+    city:x 0.0 ;
+    city:y 1000.0 ;
+    city:z 1000.0 .
 
-c:vertices-4 a <https://example.com/Feature> .
+c:vertices-4 a <https://example.com/Feature> ;
+    city:hasGeometry [ a geojson:Point ;
+            geojson:coordinates 0 ] ;
+    city:x 0.0 ;
+    city:y 0.0 ;
+    city:z 0.0 .
 
-c:vertices-5 a <https://example.com/Feature> .
+c:vertices-5 a <https://example.com/Feature> ;
+    city:hasGeometry [ a geojson:Point ;
+            geojson:coordinates 0,
+                1000 ] ;
+    city:x 1000.0 ;
+    city:y 0.0 ;
+    city:z 0.0 .
 
-c:vertices-6 a <https://example.com/Feature> .
+c:vertices-6 a <https://example.com/Feature> ;
+    city:hasGeometry [ a geojson:Point ;
+            geojson:coordinates 0,
+                1000 ] ;
+    city:x 1000.0 ;
+    city:y 1000.0 ;
+    city:z 0.0 .
 
-c:vertices-7 a <https://example.com/Feature> .
+c:vertices-7 a <https://example.com/Feature> ;
+    city:hasGeometry [ a geojson:Point ;
+            geojson:coordinates 0,
+                1000 ] ;
+    city:x 0.0 ;
+    city:y 1000.0 ;
+    city:z 0.0 .
 
