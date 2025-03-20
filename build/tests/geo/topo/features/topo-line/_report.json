@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.features.topo-line - Line using Point References",
   "bblockName": "Line using Point References",
   "bblockId": "ogc.geo.topo.features.topo-line",
-  "generated": "2024-10-21T17:26:46.540231+00:00",
+  "generated": "2025-03-20T12:03:03.294046+00:00",
   "result": true,
   "items": [
     {
@@ -13,7 +13,7 @@
         "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-line/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
-        "language": "json"
+        "language": "application/json"
       },
       "result": true,
       "sections": [

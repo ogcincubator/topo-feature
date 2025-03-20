@@ -31,6 +31,7 @@
   "sourceSchema": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-line/schema.json",
   "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-line/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-line/",
+  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-line/",
   "description": "## Topology defined Line\n\n%definition% \n\nA feature type using a topology property to reference an ordered list of points.\n\nThe topology property has an ordered array, defining the direction of the line from the first to second and subsequent points.\n\nThis is a generalisation of the TopoJSON concept using inline data, and hence not limited to linestrings.\n\n",

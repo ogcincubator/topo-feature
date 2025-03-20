@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection
-Generated 2024-10-21T17:26:49.584990+00:00
+Generated 2025-03-20T12:03:04.706894+00:00
 === Files ===
 Using example_3_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,16 +17,16 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:ne1dd8d09822741cd9a350a2d304ffe77b1: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P3>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry
- - Shape _:ne1dd8d09822741cd9a350a2d304ffe77b3: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P3>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry
+ - Shape _:n9520f45b5abc456aa706a72fdc6d748db1: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P3>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry
+ - Shape _:n9520f45b5abc456aa706a72fdc6d748db3: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P3>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry
 
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP2P3>/geojson:topology,<http://www.example.com/features/LineP1P2>/geojson:topology,<http://www.example.com/features/LineP3P1>/geojson:topology
- - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP2P3>/geojson:topology,<http://www.example.com/features/TriangleP1P2P3>/geojson:topology,<http://www.example.com/features/LineP1P2>/geojson:topology,<http://www.example.com/features/LineP3P1>/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology,<http://www.example.com/features/LineP2P3>/geojson:topology,<http://www.example.com/features/LineP3P1>/geojson:topology
+ - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology,<http://www.example.com/features/LineP2P3>/geojson:topology,<http://www.example.com/features/TriangleP1P2P3>/geojson:topology,<http://www.example.com/features/LineP3P1>/geojson:topology
 
 === End SHACL ===
 

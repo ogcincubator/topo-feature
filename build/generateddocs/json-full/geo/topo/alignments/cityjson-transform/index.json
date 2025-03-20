@@ -18,6 +18,7 @@
   ],
   "shaclRules": {},
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/alignments/cityjson-transform/",
+  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/alignments/cityjson-transform/",
   "transforms": [

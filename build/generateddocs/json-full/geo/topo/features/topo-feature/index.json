@@ -14,14 +14,14 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.common.data_types.geojson",
     "ogc.geo.json-fg.feature",
+    "ogc.geo.common.data_types.geojson",
     "ogc.geo.topo.datatypes.topology"
   ],
   "shaclRules": {
     "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ]
   },
   "shaclClosures": [
@@ -40,6 +40,7 @@
   "sourceSchema": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/",
+  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature/",
   "description": "## Feature with explicit Topology\n\nA feature type using a topology property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.\n\nThis is a generalisation of the TopoJSON concept using inline data, (nested sets of coordinates) but not limited to the LineStrings. Topological defined objects \ncan be solids, swept volumes or any other concept. (It doesnt use TopoJSON coordinate compaction and transformation, however it does allow for explicit CRS, and coordinate compaction transformations could be defined as derived CRS if required.)\n\n",

@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.alignments.cityjson-transform - CityJSON to TopoFeature transform",
   "bblockName": "CityJSON to TopoFeature transform",
   "bblockId": "ogc.geo.topo.alignments.cityjson-transform",
-  "generated": "2024-10-21T17:26:42.036158+00:00",
+  "generated": "2025-03-20T12:03:00.557599+00:00",
   "result": true,
   "items": [
     {
@@ -13,7 +13,7 @@
         "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/alignments/cityjson-transform/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
-        "language": "json"
+        "language": "application/json"
       },
       "result": true,
       "sections": [
@@ -37,7 +37,7 @@
         "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/alignments/cityjson-transform/example_2_1.json",
         "exampleIndex": 2,
         "snippetIndex": 1,
-        "language": "json"
+        "language": "application/json"
       },
       "result": true,
       "sections": [

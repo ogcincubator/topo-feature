@@ -28,6 +28,7 @@
   "sourceSchema": "https://ogcincubator.github.io/topo-feature/_sources/datatypes/topology/schema.json",
   "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/datatypes/topology/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/datatypes/topology/",
+  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/datatypes/topology/",
   "description": "## Topology\n\n%definition% \n\nA datatype containing ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.\n\nThis is a generalisation of the TopoJSON concept using inline data, and not limited to linestrings.\n\nNote this requires JSON-LD V1.1 processing to handle nested arrays of references for Polygons etc.\n\n",
