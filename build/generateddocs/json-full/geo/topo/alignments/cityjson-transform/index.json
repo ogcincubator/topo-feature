@@ -9,14 +9,14 @@
   "itemClass": "schema",
   "register": "ogc",
   "version": "0.1",
-  "dateOfLastChange": "2024-10-21",
+  "dateOfLastChange": "2025-10-10",
   "tags": [
     "3D",
     "geometry",
     "topology",
     "cityjson"
   ],
-  "shaclRules": {},
+  "shaclShapes": {},
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/alignments/cityjson-transform/",
   "rdfData": [],
   "validationPassed": true,

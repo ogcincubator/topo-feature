@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.geo.topo.features.topo-arc - Non-linear Arc and Spline Descriptions using Point topology",
   "bblockName": "Non-linear Arc and Spline Descriptions using Point topology",
   "bblockId": "ogc.geo.topo.features.topo-arc",
-  "generated": "2025-03-20T12:03:03.012274+00:00",
-  "result": true,
+  "generated": "2025-10-10T08:55:08.993684+00:00",
+  "result": false,
   "items": [
     {
       "source": {
@@ -63,9 +63,9 @@
               "op": "validation",
               "result": false,
               "exception": "ValidationError",
-              "errorMessage": "{'type': 'ArcByChord', 'x-description': 'orientation does not match keyword.', 'references': ['P1', 'P2'], 'orientation': '+', 'radius': 2.5} is not valid under any of the given schemas",
+              "errorMessage": "'time' is a required property",
               "isError": true,
-              "message": "ValidationError: {'type': 'ArcByChord', 'x-description': 'orientation does not match keyword.', 'references': ['P1', 'P2'], 'orientation': '+', 'radius': 2.5} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:\n    {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'Arc', 'type': 'string'}}},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'ArcWithCenter',\n                                        'type': 'string'}},\n                'required': ['orientation']},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'radius': {'type': 'number'},\n                               'references': {'maxItems': 2, 'minItems': 2},\n                               'type': {'const': 'ArcByChord',\n                                        'type': 'string'}},\n                'required': ['radius', 'orientation']},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 1, 'minItems': 1},\n                               'type': {'const': 'CircleByCenter',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'not': {'required': ['startTangentVector',\n                                     'endTangentVector']},\n                'properties': {'references': {'minItems': 3},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}}},\n               {'properties': {'endTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'references': {'minItems': 2},\n                               'startTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}},\n                'required': ['startTangentVector', 'endTangentVector']}]}\n\nOn instance['topology']:\n    {'orientation': '+',\n     'radius': 2.5,\n     'references': ['P1', 'P2'],\n     'type': 'ArcByChord',\n     'x-description': 'orientation does not match keyword.'}"
+              "message": "ValidationError: 'time' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2019-09/schema',\n     'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n               {'properties': {'coordRefSys': {'$ref': 'https://beta.schemas.opengis.net/json-fg/coordrefsys.json',\n                                               'x-jsonld-id': 'http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS'},\n                               'featureType': {'$ref': 'https://beta.schemas.opengis.net/json-fg/featuretype.json',\n                                               'x-jsonld-id': '@type'},\n                               'geometry': {'$ref': 'https://beta.schemas.opengis.net/json-fg/geometry.json',\n                                            'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'},\n                               'id': {'oneOf': [{'type': 'number'},\n                                                {'type': 'string'}],\n                                      'x-jsonld-id': '@id'},\n                               'links': {'items': {'allOf': [{'$ref': 'https://beta.schemas.opengis.net/json-fg/link.json'},\n                                                             {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'}]},\n                                         'type': 'array',\n                                         'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#seeAlso'},\n                               'place': {'$ref': 'https://beta.schemas.opengis.net/json-fg/place.json',\n                                         'x-jsonld-id': 'http://purl.org/dc/terms/spatial'},\n                               'properties': {'oneOf': [{'type': 'null'},\n                                                        {'type': 'object'}],\n                                              'x-jsonld-id': '@nest'},\n                               'time': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml',\n                                        'x-jsonld-id': 'http://purl.org/dc/terms/time'},\n                               'type': {'enum': ['Feature'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'description': 'This JSON Schema is part of JSON-FG version 0.1.1',\n     'required': ['type', 'time', 'place', 'geometry', 'properties'],\n     'title': 'a JSON-FG Feature',\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Feature': 'https://purl.org/geojson/vocab#Feature',\n                              'FeatureCollection': 'https://purl.org/geojson/vocab#FeatureCollection',\n                              'GeometryCollection': 'https://purl.org/geojson/vocab#GeometryCollection',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPoint': 'https://purl.org/geojson/vocab#MultiPoint',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'MultiPolyhedron': 'https://purl.org/geojson/vocab#MultiPolyhedron',\n                              'MultiPrism': {'x-jsonld-context': {'prisms': 'https://purl.org/geojson/vocab#prisms'},\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#MultiPrism'},\n                              'Point': 'https://purl.org/geojson/vocab#Point',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'Polyhedron': 'https://purl.org/geojson/vocab#Polyhedron',\n                              'Prism': {'x-jsonld-context': {'base': 'https://purl.org/geojson/vocab#prismBase',\n                                                             'lower': 'https://purl.org/geojson/vocab#prismLower',\n                                                             'upper': 'https://purl.org/geojson/vocab#prismUpper'},\n                                        'x-jsonld-id': 'https://purl.org/geojson/vocab#Prism'},\n                              'bbox': {'x-jsonld-container': '@list',\n                                       'x-jsonld-id': 'https://purl.org/geojson/vocab#bbox'},\n                              'coordinates': {'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#coordinates'},\n                              'features': {'x-jsonld-container': '@set',\n                                           'x-jsonld-id': 'https://purl.org/geojson/vocab#features'},\n                              'geometries': {'x-jsonld-container': '@list',\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'}},\n     'x-jsonld-prefixes': {'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#',\n                           'owlTime': 'http://www.w3.org/2006/time#',\n                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'}}\n\nOn instance:\n    {'@context': {'@base': 'http://www.example.com/features/'},\n     'featureType': 'my:ArcChordFeature',\n     'geometry': None,\n     'id': 'chord1',\n     'properties': {'arcLength': 25.615},\n     'topology': {'orientation': '+',\n                  'radius': 2.5,\n                  'references': ['P1', 'P2'],\n                  'type': 'ArcByChord',\n                  'x-description': 'orientation does not match keyword.'},\n     'type': 'Feature'}"
             }
           ]
         },
@@ -83,37 +83,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:ne53167851f3d43d8ad53fd28ed80a650b1": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b3": {
                   "nodes": []
                 },
-                "_:ne53167851f3d43d8ad53fd28ed80a650b3": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b1: *none*\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b3: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/chord1>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b3: *none*\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b1: *none*\n"
             }
           ]
         }
@@ -177,9 +155,9 @@
               "op": "validation",
               "result": false,
               "exception": "ValidationError",
-              "errorMessage": "{'type': 'ArcByChord', 'x-description': 'References is an ordered list of features with for an Arc Chord, radius and length determine geometry', 'references': ['P1', 'P2'], 'orientation': 'widdershins'} is not valid under any of the given schemas",
+              "errorMessage": "'time' is a required property",
               "isError": true,
-              "message": "ValidationError: {'type': 'ArcByChord', 'x-description': 'References is an ordered list of features with for an Arc Chord, radius and length determine geometry', 'references': ['P1', 'P2'], 'orientation': 'widdershins'} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:\n    {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'Arc', 'type': 'string'}}},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'ArcWithCenter',\n                                        'type': 'string'}},\n                'required': ['orientation']},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'radius': {'type': 'number'},\n                               'references': {'maxItems': 2, 'minItems': 2},\n                               'type': {'const': 'ArcByChord',\n                                        'type': 'string'}},\n                'required': ['radius', 'orientation']},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 1, 'minItems': 1},\n                               'type': {'const': 'CircleByCenter',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'not': {'required': ['startTangentVector',\n                                     'endTangentVector']},\n                'properties': {'references': {'minItems': 3},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}}},\n               {'properties': {'endTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'references': {'minItems': 2},\n                               'startTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}},\n                'required': ['startTangentVector', 'endTangentVector']}]}\n\nOn instance['topology']:\n    {'orientation': 'widdershins',\n     'references': ['P1', 'P2'],\n     'type': 'ArcByChord',\n     'x-description': 'References is an ordered list of features with for '\n                      'an Arc Chord, radius and length determine geometry'}"
+              "message": "ValidationError: 'time' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2019-09/schema',\n     'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n               {'properties': {'coordRefSys': {'$ref': 'https://beta.schemas.opengis.net/json-fg/coordrefsys.json',\n                                               'x-jsonld-id': 'http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS'},\n                               'featureType': {'$ref': 'https://beta.schemas.opengis.net/json-fg/featuretype.json',\n                                               'x-jsonld-id': '@type'},\n                               'geometry': {'$ref': 'https://beta.schemas.opengis.net/json-fg/geometry.json',\n                                            'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'},\n                               'id': {'oneOf': [{'type': 'number'},\n                                                {'type': 'string'}],\n                                      'x-jsonld-id': '@id'},\n                               'links': {'items': {'allOf': [{'$ref': 'https://beta.schemas.opengis.net/json-fg/link.json'},\n                                                             {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'}]},\n                                         'type': 'array',\n                                         'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#seeAlso'},\n                               'place': {'$ref': 'https://beta.schemas.opengis.net/json-fg/place.json',\n                                         'x-jsonld-id': 'http://purl.org/dc/terms/spatial'},\n                               'properties': {'oneOf': [{'type': 'null'},\n                                                        {'type': 'object'}],\n                                              'x-jsonld-id': '@nest'},\n                               'time': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml',\n                                        'x-jsonld-id': 'http://purl.org/dc/terms/time'},\n                               'type': {'enum': ['Feature'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'description': 'This JSON Schema is part of JSON-FG version 0.1.1',\n     'required': ['type', 'time', 'place', 'geometry', 'properties'],\n     'title': 'a JSON-FG Feature',\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Feature': 'https://purl.org/geojson/vocab#Feature',\n                              'FeatureCollection': 'https://purl.org/geojson/vocab#FeatureCollection',\n                              'GeometryCollection': 'https://purl.org/geojson/vocab#GeometryCollection',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPoint': 'https://purl.org/geojson/vocab#MultiPoint',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'MultiPolyhedron': 'https://purl.org/geojson/vocab#MultiPolyhedron',\n                              'MultiPrism': {'x-jsonld-context': {'prisms': 'https://purl.org/geojson/vocab#prisms'},\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#MultiPrism'},\n                              'Point': 'https://purl.org/geojson/vocab#Point',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'Polyhedron': 'https://purl.org/geojson/vocab#Polyhedron',\n                              'Prism': {'x-jsonld-context': {'base': 'https://purl.org/geojson/vocab#prismBase',\n                                                             'lower': 'https://purl.org/geojson/vocab#prismLower',\n                                                             'upper': 'https://purl.org/geojson/vocab#prismUpper'},\n                                        'x-jsonld-id': 'https://purl.org/geojson/vocab#Prism'},\n                              'bbox': {'x-jsonld-container': '@list',\n                                       'x-jsonld-id': 'https://purl.org/geojson/vocab#bbox'},\n                              'coordinates': {'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#coordinates'},\n                              'features': {'x-jsonld-container': '@set',\n                                           'x-jsonld-id': 'https://purl.org/geojson/vocab#features'},\n                              'geometries': {'x-jsonld-container': '@list',\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'}},\n     'x-jsonld-prefixes': {'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#',\n                           'owlTime': 'http://www.w3.org/2006/time#',\n                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'}}\n\nOn instance:\n    {'@context': {'@base': 'http://www.example.com/features/'},\n     'featureType': 'my:ArcChordFeature',\n     'geometry': None,\n     'id': 'chord1',\n     'properties': {'arcLength': 25.615},\n     'topology': {'orientation': 'widdershins',\n                  'references': ['P1', 'P2'],\n                  'type': 'ArcByChord',\n                  'x-description': 'References is an ordered list of '\n                                   'features with for an Arc Chord, radius '\n                                   'and length determine geometry'},\n     'type': 'Feature'}"
             }
           ]
         },
@@ -197,37 +175,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:ne53167851f3d43d8ad53fd28ed80a650b1": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b3": {
                   "nodes": []
                 },
-                "_:ne53167851f3d43d8ad53fd28ed80a650b3": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b1: *none*\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b3: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/chord1>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b3: *none*\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b1: *none*\n"
             }
           ]
         }
@@ -291,9 +247,9 @@
               "op": "validation",
               "result": false,
               "exception": "ValidationError",
-              "errorMessage": "{'type': 'CircleByCenter', 'x-description': 'Reference is the feature defining the centre point of a circle - it must have a Point geometry.', 'references': ['PC']} is not valid under any of the given schemas",
+              "errorMessage": "'time' is a required property",
               "isError": true,
-              "message": "ValidationError: {'type': 'CircleByCenter', 'x-description': 'Reference is the feature defining the centre point of a circle - it must have a Point geometry.', 'references': ['PC']} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:\n    {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'Arc', 'type': 'string'}}},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'ArcWithCenter',\n                                        'type': 'string'}},\n                'required': ['orientation']},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'radius': {'type': 'number'},\n                               'references': {'maxItems': 2, 'minItems': 2},\n                               'type': {'const': 'ArcByChord',\n                                        'type': 'string'}},\n                'required': ['radius', 'orientation']},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 1, 'minItems': 1},\n                               'type': {'const': 'CircleByCenter',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'not': {'required': ['startTangentVector',\n                                     'endTangentVector']},\n                'properties': {'references': {'minItems': 3},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}}},\n               {'properties': {'endTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'references': {'minItems': 2},\n                               'startTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}},\n                'required': ['startTangentVector', 'endTangentVector']}]}\n\nOn instance['topology']:\n    {'references': ['PC'],\n     'type': 'CircleByCenter',\n     'x-description': 'Reference is the feature defining the centre point '\n                      'of a circle - it must have a Point geometry.'}"
+              "message": "ValidationError: 'time' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2019-09/schema',\n     'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n               {'properties': {'coordRefSys': {'$ref': 'https://beta.schemas.opengis.net/json-fg/coordrefsys.json',\n                                               'x-jsonld-id': 'http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS'},\n                               'featureType': {'$ref': 'https://beta.schemas.opengis.net/json-fg/featuretype.json',\n                                               'x-jsonld-id': '@type'},\n                               'geometry': {'$ref': 'https://beta.schemas.opengis.net/json-fg/geometry.json',\n                                            'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'},\n                               'id': {'oneOf': [{'type': 'number'},\n                                                {'type': 'string'}],\n                                      'x-jsonld-id': '@id'},\n                               'links': {'items': {'allOf': [{'$ref': 'https://beta.schemas.opengis.net/json-fg/link.json'},\n                                                             {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'}]},\n                                         'type': 'array',\n                                         'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#seeAlso'},\n                               'place': {'$ref': 'https://beta.schemas.opengis.net/json-fg/place.json',\n                                         'x-jsonld-id': 'http://purl.org/dc/terms/spatial'},\n                               'properties': {'oneOf': [{'type': 'null'},\n                                                        {'type': 'object'}],\n                                              'x-jsonld-id': '@nest'},\n                               'time': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml',\n                                        'x-jsonld-id': 'http://purl.org/dc/terms/time'},\n                               'type': {'enum': ['Feature'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'description': 'This JSON Schema is part of JSON-FG version 0.1.1',\n     'required': ['type', 'time', 'place', 'geometry', 'properties'],\n     'title': 'a JSON-FG Feature',\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Feature': 'https://purl.org/geojson/vocab#Feature',\n                              'FeatureCollection': 'https://purl.org/geojson/vocab#FeatureCollection',\n                              'GeometryCollection': 'https://purl.org/geojson/vocab#GeometryCollection',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPoint': 'https://purl.org/geojson/vocab#MultiPoint',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'MultiPolyhedron': 'https://purl.org/geojson/vocab#MultiPolyhedron',\n                              'MultiPrism': {'x-jsonld-context': {'prisms': 'https://purl.org/geojson/vocab#prisms'},\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#MultiPrism'},\n                              'Point': 'https://purl.org/geojson/vocab#Point',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'Polyhedron': 'https://purl.org/geojson/vocab#Polyhedron',\n                              'Prism': {'x-jsonld-context': {'base': 'https://purl.org/geojson/vocab#prismBase',\n                                                             'lower': 'https://purl.org/geojson/vocab#prismLower',\n                                                             'upper': 'https://purl.org/geojson/vocab#prismUpper'},\n                                        'x-jsonld-id': 'https://purl.org/geojson/vocab#Prism'},\n                              'bbox': {'x-jsonld-container': '@list',\n                                       'x-jsonld-id': 'https://purl.org/geojson/vocab#bbox'},\n                              'coordinates': {'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#coordinates'},\n                              'features': {'x-jsonld-container': '@set',\n                                           'x-jsonld-id': 'https://purl.org/geojson/vocab#features'},\n                              'geometries': {'x-jsonld-container': '@list',\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'}},\n     'x-jsonld-prefixes': {'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#',\n                           'owlTime': 'http://www.w3.org/2006/time#',\n                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'}}\n\nOn instance:\n    {'@context': {'@base': 'http://www.example.com/features/'},\n     'featureType': 'my:CircleFeature',\n     'geometry': None,\n     'id': '1853004',\n     'properties': None,\n     'topology': {'references': ['PC'],\n                  'type': 'CircleByCenter',\n                  'x-description': 'Reference is the feature defining the '\n                                   'centre point of a circle - it must '\n                                   'have a Point geometry.'},\n     'type': 'Feature'}"
             }
           ]
         },
@@ -311,37 +267,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:ne53167851f3d43d8ad53fd28ed80a650b1": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b3": {
                   "nodes": []
                 },
-                "_:ne53167851f3d43d8ad53fd28ed80a650b3": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b1: *none*\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b3: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/1853004>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b3: *none*\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b1: *none*\n"
             }
           ]
         }
@@ -405,9 +339,9 @@
               "op": "validation",
               "result": false,
               "exception": "ValidationError",
-              "errorMessage": "{'type': 'CubicSpline', 'x-description': 'References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles', 'references': ['P1', 'P2']} is not valid under any of the given schemas",
+              "errorMessage": "'time' is a required property",
               "isError": true,
-              "message": "ValidationError: {'type': 'CubicSpline', 'x-description': 'References is an ordered list of features with point geometries, with tangent vectors defining entry and exit angles', 'references': ['P1', 'P2']} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:\n    {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'Arc', 'type': 'string'}}},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'references': {'maxItems': 3, 'minItems': 3},\n                               'type': {'const': 'ArcWithCenter',\n                                        'type': 'string'}},\n                'required': ['orientation']},\n               {'properties': {'orientation': {'enum': ['cw', 'ccw'],\n                                               'type': 'string'},\n                               'radius': {'type': 'number'},\n                               'references': {'maxItems': 2, 'minItems': 2},\n                               'type': {'const': 'ArcByChord',\n                                        'type': 'string'}},\n                'required': ['radius', 'orientation']},\n               {'properties': {'radius': {'type': 'number'},\n                               'references': {'maxItems': 1, 'minItems': 1},\n                               'type': {'const': 'CircleByCenter',\n                                        'type': 'string'}},\n                'required': ['radius']},\n               {'not': {'required': ['startTangentVector',\n                                     'endTangentVector']},\n                'properties': {'references': {'minItems': 3},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}}},\n               {'properties': {'endTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'references': {'minItems': 2},\n                               'startTangentVector': {'properties': {'references': {'minItems': 2}}},\n                               'type': {'const': 'CubicSpline',\n                                        'type': 'string'}},\n                'required': ['startTangentVector', 'endTangentVector']}]}\n\nOn instance['topology']:\n    {'references': ['P1', 'P2'],\n     'type': 'CubicSpline',\n     'x-description': 'References is an ordered list of features with '\n                      'point geometries, with tangent vectors defining '\n                      'entry and exit angles'}"
+              "message": "ValidationError: 'time' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2019-09/schema',\n     'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n               {'properties': {'coordRefSys': {'$ref': 'https://beta.schemas.opengis.net/json-fg/coordrefsys.json',\n                                               'x-jsonld-id': 'http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS'},\n                               'featureType': {'$ref': 'https://beta.schemas.opengis.net/json-fg/featuretype.json',\n                                               'x-jsonld-id': '@type'},\n                               'geometry': {'$ref': 'https://beta.schemas.opengis.net/json-fg/geometry.json',\n                                            'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'},\n                               'id': {'oneOf': [{'type': 'number'},\n                                                {'type': 'string'}],\n                                      'x-jsonld-id': '@id'},\n                               'links': {'items': {'allOf': [{'$ref': 'https://beta.schemas.opengis.net/json-fg/link.json'},\n                                                             {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'}]},\n                                         'type': 'array',\n                                         'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#seeAlso'},\n                               'place': {'$ref': 'https://beta.schemas.opengis.net/json-fg/place.json',\n                                         'x-jsonld-id': 'http://purl.org/dc/terms/spatial'},\n                               'properties': {'oneOf': [{'type': 'null'},\n                                                        {'type': 'object'}],\n                                              'x-jsonld-id': '@nest'},\n                               'time': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml',\n                                        'x-jsonld-id': 'http://purl.org/dc/terms/time'},\n                               'type': {'enum': ['Feature'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'description': 'This JSON Schema is part of JSON-FG version 0.1.1',\n     'required': ['type', 'time', 'place', 'geometry', 'properties'],\n     'title': 'a JSON-FG Feature',\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Feature': 'https://purl.org/geojson/vocab#Feature',\n                              'FeatureCollection': 'https://purl.org/geojson/vocab#FeatureCollection',\n                              'GeometryCollection': 'https://purl.org/geojson/vocab#GeometryCollection',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPoint': 'https://purl.org/geojson/vocab#MultiPoint',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'MultiPolyhedron': 'https://purl.org/geojson/vocab#MultiPolyhedron',\n                              'MultiPrism': {'x-jsonld-context': {'prisms': 'https://purl.org/geojson/vocab#prisms'},\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#MultiPrism'},\n                              'Point': 'https://purl.org/geojson/vocab#Point',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'Polyhedron': 'https://purl.org/geojson/vocab#Polyhedron',\n                              'Prism': {'x-jsonld-context': {'base': 'https://purl.org/geojson/vocab#prismBase',\n                                                             'lower': 'https://purl.org/geojson/vocab#prismLower',\n                                                             'upper': 'https://purl.org/geojson/vocab#prismUpper'},\n                                        'x-jsonld-id': 'https://purl.org/geojson/vocab#Prism'},\n                              'bbox': {'x-jsonld-container': '@list',\n                                       'x-jsonld-id': 'https://purl.org/geojson/vocab#bbox'},\n                              'coordinates': {'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#coordinates'},\n                              'features': {'x-jsonld-container': '@set',\n                                           'x-jsonld-id': 'https://purl.org/geojson/vocab#features'},\n                              'geometries': {'x-jsonld-container': '@list',\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'}},\n     'x-jsonld-prefixes': {'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#',\n                           'owlTime': 'http://www.w3.org/2006/time#',\n                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'}}\n\nOn instance:\n    {'@context': {'@base': 'http://www.example.com/features/'},\n     'featureType': 'my:SplineFeature',\n     'geometry': None,\n     'id': '1853004',\n     'properties': None,\n     'topology': {'references': ['P1', 'P2'],\n                  'type': 'CubicSpline',\n                  'x-description': 'References is an ordered list of '\n                                   'features with point geometries, with '\n                                   'tangent vectors defining entry and '\n                                   'exit angles'},\n     'type': 'Feature'}"
             }
           ]
         },
@@ -425,37 +359,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:ne53167851f3d43d8ad53fd28ed80a650b1": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b3": {
                   "nodes": []
                 },
-                "_:ne53167851f3d43d8ad53fd28ed80a650b3": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b1: *none*\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b3: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/1853004>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b3: *none*\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b1: *none*\n"
             }
           ]
         }
@@ -471,7 +383,7 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -508,9 +420,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'time' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'time' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2019-09/schema',\n     'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n               {'properties': {'coordRefSys': {'$ref': 'https://beta.schemas.opengis.net/json-fg/coordrefsys.json',\n                                               'x-jsonld-id': 'http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS'},\n                               'featureType': {'$ref': 'https://beta.schemas.opengis.net/json-fg/featuretype.json',\n                                               'x-jsonld-id': '@type'},\n                               'geometry': {'$ref': 'https://beta.schemas.opengis.net/json-fg/geometry.json',\n                                            'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'},\n                               'id': {'oneOf': [{'type': 'number'},\n                                                {'type': 'string'}],\n                                      'x-jsonld-id': '@id'},\n                               'links': {'items': {'allOf': [{'$ref': 'https://beta.schemas.opengis.net/json-fg/link.json'},\n                                                             {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'}]},\n                                         'type': 'array',\n                                         'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#seeAlso'},\n                               'place': {'$ref': 'https://beta.schemas.opengis.net/json-fg/place.json',\n                                         'x-jsonld-id': 'http://purl.org/dc/terms/spatial'},\n                               'properties': {'oneOf': [{'type': 'null'},\n                                                        {'type': 'object'}],\n                                              'x-jsonld-id': '@nest'},\n                               'time': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml',\n                                        'x-jsonld-id': 'http://purl.org/dc/terms/time'},\n                               'type': {'enum': ['Feature'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'description': 'This JSON Schema is part of JSON-FG version 0.1.1',\n     'required': ['type', 'time', 'place', 'geometry', 'properties'],\n     'title': 'a JSON-FG Feature',\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Feature': 'https://purl.org/geojson/vocab#Feature',\n                              'FeatureCollection': 'https://purl.org/geojson/vocab#FeatureCollection',\n                              'GeometryCollection': 'https://purl.org/geojson/vocab#GeometryCollection',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPoint': 'https://purl.org/geojson/vocab#MultiPoint',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'MultiPolyhedron': 'https://purl.org/geojson/vocab#MultiPolyhedron',\n                              'MultiPrism': {'x-jsonld-context': {'prisms': 'https://purl.org/geojson/vocab#prisms'},\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#MultiPrism'},\n                              'Point': 'https://purl.org/geojson/vocab#Point',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'Polyhedron': 'https://purl.org/geojson/vocab#Polyhedron',\n                              'Prism': {'x-jsonld-context': {'base': 'https://purl.org/geojson/vocab#prismBase',\n                                                             'lower': 'https://purl.org/geojson/vocab#prismLower',\n                                                             'upper': 'https://purl.org/geojson/vocab#prismUpper'},\n                                        'x-jsonld-id': 'https://purl.org/geojson/vocab#Prism'},\n                              'bbox': {'x-jsonld-container': '@list',\n                                       'x-jsonld-id': 'https://purl.org/geojson/vocab#bbox'},\n                              'coordinates': {'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#coordinates'},\n                              'features': {'x-jsonld-container': '@set',\n                                           'x-jsonld-id': 'https://purl.org/geojson/vocab#features'},\n                              'geometries': {'x-jsonld-container': '@list',\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'}},\n     'x-jsonld-prefixes': {'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#',\n                           'owlTime': 'http://www.w3.org/2006/time#',\n                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'}}\n\nOn instance:\n    {'featureType': 'my:ArcFeature',\n     'geometry': None,\n     'id': '1853004',\n     'properties': {'arcLength': 25.615, 'radius': 105.438},\n     'topology': {'orientation': 'ccw',\n                  'references': ['P1', 'P2', 'PC'],\n                  'type': 'ArcWithCenter',\n                  'x-description': 'References is an ordered list of '\n                                   'features with point geometries '\n                                   'Start,End,Center'},\n     'type': 'Feature'}"
             }
           ]
         },
@@ -528,37 +442,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:ne53167851f3d43d8ad53fd28ed80a650b1": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b3": {
                   "nodes": []
                 },
-                "_:ne53167851f3d43d8ad53fd28ed80a650b3": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b1: *none*\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b3: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/1853004>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b3: *none*\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b1: *none*\n"
             }
           ]
         }
@@ -574,7 +466,7 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -611,9 +503,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'time' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'time' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2019-09/schema',\n     'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n               {'properties': {'coordRefSys': {'$ref': 'https://beta.schemas.opengis.net/json-fg/coordrefsys.json',\n                                               'x-jsonld-id': 'http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS'},\n                               'featureType': {'$ref': 'https://beta.schemas.opengis.net/json-fg/featuretype.json',\n                                               'x-jsonld-id': '@type'},\n                               'geometry': {'$ref': 'https://beta.schemas.opengis.net/json-fg/geometry.json',\n                                            'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'},\n                               'id': {'oneOf': [{'type': 'number'},\n                                                {'type': 'string'}],\n                                      'x-jsonld-id': '@id'},\n                               'links': {'items': {'allOf': [{'$ref': 'https://beta.schemas.opengis.net/json-fg/link.json'},\n                                                             {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'}]},\n                                         'type': 'array',\n                                         'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#seeAlso'},\n                               'place': {'$ref': 'https://beta.schemas.opengis.net/json-fg/place.json',\n                                         'x-jsonld-id': 'http://purl.org/dc/terms/spatial'},\n                               'properties': {'oneOf': [{'type': 'null'},\n                                                        {'type': 'object'}],\n                                              'x-jsonld-id': '@nest'},\n                               'time': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml',\n                                        'x-jsonld-id': 'http://purl.org/dc/terms/time'},\n                               'type': {'enum': ['Feature'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'description': 'This JSON Schema is part of JSON-FG version 0.1.1',\n     'required': ['type', 'time', 'place', 'geometry', 'properties'],\n     'title': 'a JSON-FG Feature',\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Feature': 'https://purl.org/geojson/vocab#Feature',\n                              'FeatureCollection': 'https://purl.org/geojson/vocab#FeatureCollection',\n                              'GeometryCollection': 'https://purl.org/geojson/vocab#GeometryCollection',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPoint': 'https://purl.org/geojson/vocab#MultiPoint',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'MultiPolyhedron': 'https://purl.org/geojson/vocab#MultiPolyhedron',\n                              'MultiPrism': {'x-jsonld-context': {'prisms': 'https://purl.org/geojson/vocab#prisms'},\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#MultiPrism'},\n                              'Point': 'https://purl.org/geojson/vocab#Point',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'Polyhedron': 'https://purl.org/geojson/vocab#Polyhedron',\n                              'Prism': {'x-jsonld-context': {'base': 'https://purl.org/geojson/vocab#prismBase',\n                                                             'lower': 'https://purl.org/geojson/vocab#prismLower',\n                                                             'upper': 'https://purl.org/geojson/vocab#prismUpper'},\n                                        'x-jsonld-id': 'https://purl.org/geojson/vocab#Prism'},\n                              'bbox': {'x-jsonld-container': '@list',\n                                       'x-jsonld-id': 'https://purl.org/geojson/vocab#bbox'},\n                              'coordinates': {'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#coordinates'},\n                              'features': {'x-jsonld-container': '@set',\n                                           'x-jsonld-id': 'https://purl.org/geojson/vocab#features'},\n                              'geometries': {'x-jsonld-container': '@list',\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'}},\n     'x-jsonld-prefixes': {'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#',\n                           'owlTime': 'http://www.w3.org/2006/time#',\n                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'}}\n\nOn instance:\n    {'featureType': 'my:ArcFeature',\n     'geometry': None,\n     'id': 'arc1',\n     'properties': {'arcLength': 25.615, 'radius': 105.438},\n     'topology': {'references': ['P1', 'P3', 'P2'],\n                  'type': 'Arc',\n                  'x-description': 'References is an ordered list of 3 '\n                                   'features with point geometries '\n                                   'defining Arc'},\n     'type': 'Feature'}"
             }
           ]
         },
@@ -631,37 +525,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:ne53167851f3d43d8ad53fd28ed80a650b1": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b3": {
                   "nodes": []
                 },
-                "_:ne53167851f3d43d8ad53fd28ed80a650b3": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b1: *none*\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b3: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/arc1>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/arc1>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b3: *none*\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b1: *none*\n"
             }
           ]
         }
@@ -677,7 +549,7 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -714,9 +586,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'time' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'time' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2019-09/schema',\n     'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n               {'properties': {'coordRefSys': {'$ref': 'https://beta.schemas.opengis.net/json-fg/coordrefsys.json',\n                                               'x-jsonld-id': 'http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS'},\n                               'featureType': {'$ref': 'https://beta.schemas.opengis.net/json-fg/featuretype.json',\n                                               'x-jsonld-id': '@type'},\n                               'geometry': {'$ref': 'https://beta.schemas.opengis.net/json-fg/geometry.json',\n                                            'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'},\n                               'id': {'oneOf': [{'type': 'number'},\n                                                {'type': 'string'}],\n                                      'x-jsonld-id': '@id'},\n                               'links': {'items': {'allOf': [{'$ref': 'https://beta.schemas.opengis.net/json-fg/link.json'},\n                                                             {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'}]},\n                                         'type': 'array',\n                                         'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#seeAlso'},\n                               'place': {'$ref': 'https://beta.schemas.opengis.net/json-fg/place.json',\n                                         'x-jsonld-id': 'http://purl.org/dc/terms/spatial'},\n                               'properties': {'oneOf': [{'type': 'null'},\n                                                        {'type': 'object'}],\n                                              'x-jsonld-id': '@nest'},\n                               'time': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml',\n                                        'x-jsonld-id': 'http://purl.org/dc/terms/time'},\n                               'type': {'enum': ['Feature'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'description': 'This JSON Schema is part of JSON-FG version 0.1.1',\n     'required': ['type', 'time', 'place', 'geometry', 'properties'],\n     'title': 'a JSON-FG Feature',\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Feature': 'https://purl.org/geojson/vocab#Feature',\n                              'FeatureCollection': 'https://purl.org/geojson/vocab#FeatureCollection',\n                              'GeometryCollection': 'https://purl.org/geojson/vocab#GeometryCollection',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPoint': 'https://purl.org/geojson/vocab#MultiPoint',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'MultiPolyhedron': 'https://purl.org/geojson/vocab#MultiPolyhedron',\n                              'MultiPrism': {'x-jsonld-context': {'prisms': 'https://purl.org/geojson/vocab#prisms'},\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#MultiPrism'},\n                              'Point': 'https://purl.org/geojson/vocab#Point',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'Polyhedron': 'https://purl.org/geojson/vocab#Polyhedron',\n                              'Prism': {'x-jsonld-context': {'base': 'https://purl.org/geojson/vocab#prismBase',\n                                                             'lower': 'https://purl.org/geojson/vocab#prismLower',\n                                                             'upper': 'https://purl.org/geojson/vocab#prismUpper'},\n                                        'x-jsonld-id': 'https://purl.org/geojson/vocab#Prism'},\n                              'bbox': {'x-jsonld-container': '@list',\n                                       'x-jsonld-id': 'https://purl.org/geojson/vocab#bbox'},\n                              'coordinates': {'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#coordinates'},\n                              'features': {'x-jsonld-container': '@set',\n                                           'x-jsonld-id': 'https://purl.org/geojson/vocab#features'},\n                              'geometries': {'x-jsonld-container': '@list',\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'}},\n     'x-jsonld-prefixes': {'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#',\n                           'owlTime': 'http://www.w3.org/2006/time#',\n                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'}}\n\nOn instance:\n    {'featureType': 'my:ArcChordFeature',\n     'geometry': None,\n     'id': 'chord1',\n     'properties': {'arcLength': 25.615},\n     'topology': {'orientation': 'cw',\n                  'radius': 105.438,\n                  'references': ['P1', 'P2'],\n                  'type': 'ArcByChord',\n                  'x-description': 'References is an ordered list of '\n                                   'features with for an Arc Chord, radius '\n                                   'and length determine geometry'},\n     'type': 'Feature'}"
             }
           ]
         },
@@ -734,37 +608,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:ne53167851f3d43d8ad53fd28ed80a650b1": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b3": {
                   "nodes": []
                 },
-                "_:ne53167851f3d43d8ad53fd28ed80a650b3": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b1: *none*\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b3: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/chord1>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b3: *none*\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b1: *none*\n"
             }
           ]
         }
@@ -780,7 +632,7 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -817,9 +669,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'time' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'time' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2019-09/schema',\n     'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n               {'properties': {'coordRefSys': {'$ref': 'https://beta.schemas.opengis.net/json-fg/coordrefsys.json',\n                                               'x-jsonld-id': 'http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS'},\n                               'featureType': {'$ref': 'https://beta.schemas.opengis.net/json-fg/featuretype.json',\n                                               'x-jsonld-id': '@type'},\n                               'geometry': {'$ref': 'https://beta.schemas.opengis.net/json-fg/geometry.json',\n                                            'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'},\n                               'id': {'oneOf': [{'type': 'number'},\n                                                {'type': 'string'}],\n                                      'x-jsonld-id': '@id'},\n                               'links': {'items': {'allOf': [{'$ref': 'https://beta.schemas.opengis.net/json-fg/link.json'},\n                                                             {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'}]},\n                                         'type': 'array',\n                                         'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#seeAlso'},\n                               'place': {'$ref': 'https://beta.schemas.opengis.net/json-fg/place.json',\n                                         'x-jsonld-id': 'http://purl.org/dc/terms/spatial'},\n                               'properties': {'oneOf': [{'type': 'null'},\n                                                        {'type': 'object'}],\n                                              'x-jsonld-id': '@nest'},\n                               'time': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml',\n                                        'x-jsonld-id': 'http://purl.org/dc/terms/time'},\n                               'type': {'enum': ['Feature'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'description': 'This JSON Schema is part of JSON-FG version 0.1.1',\n     'required': ['type', 'time', 'place', 'geometry', 'properties'],\n     'title': 'a JSON-FG Feature',\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Feature': 'https://purl.org/geojson/vocab#Feature',\n                              'FeatureCollection': 'https://purl.org/geojson/vocab#FeatureCollection',\n                              'GeometryCollection': 'https://purl.org/geojson/vocab#GeometryCollection',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPoint': 'https://purl.org/geojson/vocab#MultiPoint',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'MultiPolyhedron': 'https://purl.org/geojson/vocab#MultiPolyhedron',\n                              'MultiPrism': {'x-jsonld-context': {'prisms': 'https://purl.org/geojson/vocab#prisms'},\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#MultiPrism'},\n                              'Point': 'https://purl.org/geojson/vocab#Point',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'Polyhedron': 'https://purl.org/geojson/vocab#Polyhedron',\n                              'Prism': {'x-jsonld-context': {'base': 'https://purl.org/geojson/vocab#prismBase',\n                                                             'lower': 'https://purl.org/geojson/vocab#prismLower',\n                                                             'upper': 'https://purl.org/geojson/vocab#prismUpper'},\n                                        'x-jsonld-id': 'https://purl.org/geojson/vocab#Prism'},\n                              'bbox': {'x-jsonld-container': '@list',\n                                       'x-jsonld-id': 'https://purl.org/geojson/vocab#bbox'},\n                              'coordinates': {'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#coordinates'},\n                              'features': {'x-jsonld-container': '@set',\n                                           'x-jsonld-id': 'https://purl.org/geojson/vocab#features'},\n                              'geometries': {'x-jsonld-container': '@list',\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'}},\n     'x-jsonld-prefixes': {'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#',\n                           'owlTime': 'http://www.w3.org/2006/time#',\n                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'}}\n\nOn instance:\n    {'featureType': 'my:CircleFeature',\n     'geometry': None,\n     'id': '1853004',\n     'properties': None,\n     'topology': {'radius': 10,\n                  'references': ['PC'],\n                  'type': 'CircleByCenter',\n                  'x-description': 'Reference is the feature defining the '\n                                   'centre point of a circle - it must '\n                                   'have a Point geometry.'},\n     'type': 'Feature'}"
             }
           ]
         },
@@ -837,37 +691,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:ne53167851f3d43d8ad53fd28ed80a650b1": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b3": {
                   "nodes": []
                 },
-                "_:ne53167851f3d43d8ad53fd28ed80a650b3": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b1: *none*\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b3: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/1853004>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b3: *none*\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b1: *none*\n"
             }
           ]
         }
@@ -883,7 +715,7 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -920,9 +752,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'time' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'time' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2019-09/schema',\n     'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n               {'properties': {'coordRefSys': {'$ref': 'https://beta.schemas.opengis.net/json-fg/coordrefsys.json',\n                                               'x-jsonld-id': 'http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS'},\n                               'featureType': {'$ref': 'https://beta.schemas.opengis.net/json-fg/featuretype.json',\n                                               'x-jsonld-id': '@type'},\n                               'geometry': {'$ref': 'https://beta.schemas.opengis.net/json-fg/geometry.json',\n                                            'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'},\n                               'id': {'oneOf': [{'type': 'number'},\n                                                {'type': 'string'}],\n                                      'x-jsonld-id': '@id'},\n                               'links': {'items': {'allOf': [{'$ref': 'https://beta.schemas.opengis.net/json-fg/link.json'},\n                                                             {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'}]},\n                                         'type': 'array',\n                                         'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#seeAlso'},\n                               'place': {'$ref': 'https://beta.schemas.opengis.net/json-fg/place.json',\n                                         'x-jsonld-id': 'http://purl.org/dc/terms/spatial'},\n                               'properties': {'oneOf': [{'type': 'null'},\n                                                        {'type': 'object'}],\n                                              'x-jsonld-id': '@nest'},\n                               'time': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml',\n                                        'x-jsonld-id': 'http://purl.org/dc/terms/time'},\n                               'type': {'enum': ['Feature'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'description': 'This JSON Schema is part of JSON-FG version 0.1.1',\n     'required': ['type', 'time', 'place', 'geometry', 'properties'],\n     'title': 'a JSON-FG Feature',\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Feature': 'https://purl.org/geojson/vocab#Feature',\n                              'FeatureCollection': 'https://purl.org/geojson/vocab#FeatureCollection',\n                              'GeometryCollection': 'https://purl.org/geojson/vocab#GeometryCollection',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPoint': 'https://purl.org/geojson/vocab#MultiPoint',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'MultiPolyhedron': 'https://purl.org/geojson/vocab#MultiPolyhedron',\n                              'MultiPrism': {'x-jsonld-context': {'prisms': 'https://purl.org/geojson/vocab#prisms'},\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#MultiPrism'},\n                              'Point': 'https://purl.org/geojson/vocab#Point',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'Polyhedron': 'https://purl.org/geojson/vocab#Polyhedron',\n                              'Prism': {'x-jsonld-context': {'base': 'https://purl.org/geojson/vocab#prismBase',\n                                                             'lower': 'https://purl.org/geojson/vocab#prismLower',\n                                                             'upper': 'https://purl.org/geojson/vocab#prismUpper'},\n                                        'x-jsonld-id': 'https://purl.org/geojson/vocab#Prism'},\n                              'bbox': {'x-jsonld-container': '@list',\n                                       'x-jsonld-id': 'https://purl.org/geojson/vocab#bbox'},\n                              'coordinates': {'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#coordinates'},\n                              'features': {'x-jsonld-container': '@set',\n                                           'x-jsonld-id': 'https://purl.org/geojson/vocab#features'},\n                              'geometries': {'x-jsonld-container': '@list',\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'}},\n     'x-jsonld-prefixes': {'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#',\n                           'owlTime': 'http://www.w3.org/2006/time#',\n                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'}}\n\nOn instance:\n    {'featureType': 'my:SplineFeature',\n     'geometry': None,\n     'id': '1853004',\n     'properties': None,\n     'topology': {'references': ['P1', 'Px1', 'Px2', 'P2'],\n                  'type': 'CubicSpline',\n                  'x-description': 'References is an ordered list of '\n                                   'features with point geometries'},\n     'type': 'Feature'}"
             }
           ]
         },
@@ -940,37 +774,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:ne53167851f3d43d8ad53fd28ed80a650b1": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b3": {
                   "nodes": []
                 },
-                "_:ne53167851f3d43d8ad53fd28ed80a650b3": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b1: *none*\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b3: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/1853004>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b3: *none*\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b1: *none*\n"
             }
           ]
         }
@@ -986,7 +798,7 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -1023,9 +835,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'time' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'time' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2019-09/schema',\n     'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n               {'properties': {'coordRefSys': {'$ref': 'https://beta.schemas.opengis.net/json-fg/coordrefsys.json',\n                                               'x-jsonld-id': 'http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS'},\n                               'featureType': {'$ref': 'https://beta.schemas.opengis.net/json-fg/featuretype.json',\n                                               'x-jsonld-id': '@type'},\n                               'geometry': {'$ref': 'https://beta.schemas.opengis.net/json-fg/geometry.json',\n                                            'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'},\n                               'id': {'oneOf': [{'type': 'number'},\n                                                {'type': 'string'}],\n                                      'x-jsonld-id': '@id'},\n                               'links': {'items': {'allOf': [{'$ref': 'https://beta.schemas.opengis.net/json-fg/link.json'},\n                                                             {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml'}]},\n                                         'type': 'array',\n                                         'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#seeAlso'},\n                               'place': {'$ref': 'https://beta.schemas.opengis.net/json-fg/place.json',\n                                         'x-jsonld-id': 'http://purl.org/dc/terms/spatial'},\n                               'properties': {'oneOf': [{'type': 'null'},\n                                                        {'type': 'object'}],\n                                              'x-jsonld-id': '@nest'},\n                               'time': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml',\n                                        'x-jsonld-id': 'http://purl.org/dc/terms/time'},\n                               'type': {'enum': ['Feature'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'description': 'This JSON Schema is part of JSON-FG version 0.1.1',\n     'required': ['type', 'time', 'place', 'geometry', 'properties'],\n     'title': 'a JSON-FG Feature',\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Feature': 'https://purl.org/geojson/vocab#Feature',\n                              'FeatureCollection': 'https://purl.org/geojson/vocab#FeatureCollection',\n                              'GeometryCollection': 'https://purl.org/geojson/vocab#GeometryCollection',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPoint': 'https://purl.org/geojson/vocab#MultiPoint',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'MultiPolyhedron': 'https://purl.org/geojson/vocab#MultiPolyhedron',\n                              'MultiPrism': {'x-jsonld-context': {'prisms': 'https://purl.org/geojson/vocab#prisms'},\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#MultiPrism'},\n                              'Point': 'https://purl.org/geojson/vocab#Point',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'Polyhedron': 'https://purl.org/geojson/vocab#Polyhedron',\n                              'Prism': {'x-jsonld-context': {'base': 'https://purl.org/geojson/vocab#prismBase',\n                                                             'lower': 'https://purl.org/geojson/vocab#prismLower',\n                                                             'upper': 'https://purl.org/geojson/vocab#prismUpper'},\n                                        'x-jsonld-id': 'https://purl.org/geojson/vocab#Prism'},\n                              'bbox': {'x-jsonld-container': '@list',\n                                       'x-jsonld-id': 'https://purl.org/geojson/vocab#bbox'},\n                              'coordinates': {'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#coordinates'},\n                              'features': {'x-jsonld-container': '@set',\n                                           'x-jsonld-id': 'https://purl.org/geojson/vocab#features'},\n                              'geometries': {'x-jsonld-container': '@list',\n                                             'x-jsonld-id': 'https://purl.org/geojson/vocab#geometry'}},\n     'x-jsonld-prefixes': {'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#',\n                           'owlTime': 'http://www.w3.org/2006/time#',\n                           'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'}}\n\nOn instance:\n    {'featureType': 'my:SplineFeature',\n     'geometry': None,\n     'id': '1853004',\n     'properties': None,\n     'topology': {'endTangentVector': {'references': ['P2', 'PVE']},\n                  'references': ['P1', 'P2'],\n                  'startTangentVector': {'references': ['PVS', 'P1']},\n                  'type': 'CubicSpline',\n                  'x-description': 'References is an ordered list of '\n                                   'features with point geometries, with '\n                                   'tangent vectors defining entry and '\n                                   'exit angles'},\n     'type': 'Feature'}"
             }
           ]
         },
@@ -1043,37 +857,15 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:ne53167851f3d43d8ad53fd28ed80a650b1": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b3": {
                   "nodes": []
                 },
-                "_:ne53167851f3d43d8ad53fd28ed80a650b3": {
+                "_:n256e5501096c4e85ac27d2a7836c9163b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b1: *none*\n - Shape _:ne53167851f3d43d8ad53fd28ed80a650b3: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/1853004>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b3: *none*\n - Shape _:n256e5501096c4e85ac27d2a7836c9163b1: *none*\n"
             }
           ]
         }
@@ -1083,7 +875,7 @@
   "globalErrors": {},
   "counts": {
     "total": 10,
-    "passed": 10,
-    "failed": 0
+    "passed": 4,
+    "failed": 6
   }
 }

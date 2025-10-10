@@ -1,0 +1,30 @@
+Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection
+Generated 2025-10-10T08:55:11.876426+00:00
+=== General ===
+
+** Validation error **
+Test was expected to fail but it did not.
+=== End General ===
+
+=== Files ===
+Using linestring-fail.json from test resources
+JSON-LD context is present - uplifting
+Output JSON-LD linestring-fail.jsonld created
+Output Turtle linestring-fail.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+
+=== SHACL ===
+Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nd28fb78762d24705a387616d192c2845b1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+ - Shape _:nd28fb78762d24705a387616d192c2845b3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry
+
+=== End SHACL ===
+
