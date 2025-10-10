@@ -29,7 +29,7 @@ properties:
     type: array
     items:
       anyOf:
-      - $ref: ../topo-feature/schema.yaml
+      - $ref: ../topo-feature/schema.json
       - $ref: '#/$defs/PointOptions'
 
     # x-bblocks-ref: bblocks://ogc.geo.json-fg.feature
