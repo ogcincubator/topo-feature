@@ -1,5 +1,6 @@
 {
   "name": "Geometry using references",
+  "highlighted": true,
   "abstract": "Demonstration of a schema using coordinates of points, withpout duplication",
   "status": "under-development",
   "dateTimeAddition": "2023-04-05T00:00:00Z",
@@ -11,5 +12,9 @@
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
-  "tags": ["3D", "geometry", "topology"]
+  "tags": [
+    "3D",
+    "geometry",
+    "topology"
+  ]
 }

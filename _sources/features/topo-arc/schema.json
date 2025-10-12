@@ -3,14 +3,14 @@
   "description": "Arc Feature with geometry by reference",
   "allOf": [
     {
-      "$ref": "../topo-feature/schema.json"
+      "$ref": "bblocks://ogc.geo.topo.features.topo-feature"
     },
     {
       "properties": {
         "topology": {
           "allOf": [
             {
-              "$ref": "../../datatypes/topology/schema.json"
+              "$ref": "bblocks://ogc.geo.topo.datatypes.topology"
             },
             {
               "oneOf": [
