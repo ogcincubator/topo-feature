@@ -6,24 +6,27 @@
       "$anchor": "FeatureCollectionOptions",
       "anyOf": [
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.json"
+          "$ref": "bblocks://ogc.geo.json-fg.featureCollection"
         },
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json"
+          "$ref": "bblocks://ogc.geo.json-fg.featureCollection-lenient"
         },
         {
-          "$ref": "https://geojson.org/schema/FeatureCollection.json"
+          "$ref": "bblocks://ogc.geo.features.featureCollection"
         }
       ]
     },
     "FeatureOptions": {
       "$anchor": "FeatureOptions",
       "anyOf": [
-        {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json"
+         {
+          "$ref": "bblocks://ogc.geo.json-fg.feature"
         },
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json"
+          "$ref": "bblocks://ogc.geo.json-fg.feature-lenient"
+        },
+        {
+          "$ref": "bblocks://ogc.geo.features.feature"
         }
       ]
     },
@@ -65,7 +68,7 @@
       "items": {
         "anyOf": [
           {
-            "$ref": "http://localhost:9090/register/build-local/annotated/geo/topo/features/topo-feature/schema.json"
+            "$ref": "bblocks://ogc.geo.topo.features.topo-feature"
           },
           {
             "$ref": "#/$defs/PointOptions"
