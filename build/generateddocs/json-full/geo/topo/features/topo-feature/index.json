@@ -3,19 +3,20 @@
 {
   "itemIdentifier": "ogc.geo.topo.features.topo-feature",
   "name": "Feature with topology",
+  "highlighted": true,
   "abstract": "This building block defines a GeoJSON feature with topological relationships to point nodes, or other to TopoFeatures",
   "status": "under-development",
   "dateTimeAddition": "2023-07-05T00:00:00Z",
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-10-10",
+  "dateOfLastChange": "2025-10-12",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
     "ogc.geo.topo.datatypes.topology",
-    "ogc.geo.json-fg.feature"
+    "ogc.geo.topo.features.topo-feature-collection"
   ],
   "shaclClosures": [
     "examples/points.ttl"
@@ -27,8 +28,12 @@
   "group": "OGC",
   "shaclShapes": {
     "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+    ],
+    "ogc.geo.topo.features.topo-feature-collection": [
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ]
   },
   "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld",
@@ -40,7 +45,7 @@
   "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/",
   "rdfData": [],
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature/",
   "description": "## Feature with explicit Topology\n\nA feature type using a topology property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.\n\nThis is a generalisation of the TopoJSON concept using inline data, (nested sets of coordinates) but not limited to the LineStrings. Topological defined objects \ncan be solids, swept volumes or any other concept. (It doesnt use TopoJSON coordinate compaction and transformation, however it does allow for explicit CRS, and coordinate compaction transformations could be defined as derived CRS if required.)\n\n",
   "examples": [
@@ -96,7 +101,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Feature with defined topology for bounding elements\nallOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml\n- type: object\n  properties:\n    id:\n      type: string\n    topology:\n      $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml\n      x-jsonld-type: '@id'\n      x-jsonld-id: https://purl.org/geojson/vocab#topology\n  required:\n  - topology\nx-jsonld-prefixes:\n  geojson: https://purl.org/geojson/vocab#\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Feature with defined topology for bounding elements\nallOf:\n- $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureOptions\n- type: object\n  properties:\n    id:\n      type: string\n    topology:\n      $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml\n      x-jsonld-type: '@id'\n      x-jsonld-id: https://purl.org/geojson/vocab#topology\n  required:\n  - topology\nx-jsonld-prefixes:\n  geojson: https://purl.org/geojson/vocab#\n",
   "gitRepository": "https://github.com/ogcincubator/topo-feature",
   "gitPath": "_sources/features/topo-feature"
 }

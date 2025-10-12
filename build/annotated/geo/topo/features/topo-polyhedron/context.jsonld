@@ -11,23 +11,7 @@
     "Polygon": "geojson:Polygon",
     "features": {
       "@container": "@set",
-      "@id": "geojson:features",
-      "@context": {
-        "Prism": {
-          "@id": "geojson:Prism",
-          "@context": {
-            "base": "geojson:prismBase",
-            "lower": "geojson:prismLower",
-            "upper": "geojson:prismUpper"
-          }
-        },
-        "MultiPrism": {
-          "@id": "geojson:MultiPrism",
-          "@context": {
-            "prisms": "geojson:prisms"
-          }
-        }
-      }
+      "@id": "geojson:features"
     },
     "type": "@type",
     "id": "@id",

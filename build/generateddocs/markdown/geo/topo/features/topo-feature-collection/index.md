@@ -493,15 +493,19 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: Feature Collection with defined topology for bounding elements
 $defs:
   FeatureCollectionOptions:
+    $anchor: FeatureCollectionOptions
     anyOf:
-    - $ref: https://beta.schemas.opengis.net/json-fg/featurecollection.json
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.yaml
     - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml
-    - $ref: https://geojson.org/schema/FeatureCollection.json
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
   FeatureOptions:
+    $anchor: FeatureOptions
     anyOf:
-    - $ref: https://beta.schemas.opengis.net/json-fg/feature.json
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
   PointOptions:
+    $anchor: PointOptions
     anyOf:
     - allOf:
       - $ref: '#/$defs/FeatureOptions'
@@ -535,8 +539,6 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "type": "@type",
-    "featureType": "@type",
     "links": {
       "@context": {
         "href": {
@@ -557,10 +559,6 @@ Links to the schema:
       },
       "@id": "rdfs:seeAlso"
     },
-    "features": {
-      "@container": "@set",
-      "@id": "geojson:features"
-    },
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -570,6 +568,11 @@ Links to the schema:
     "MultiPolygon": "geojson:MultiPolygon",
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "type": "@type",
     "id": "@id",
     "properties": "@nest",
     "geometry": "geojson:geometry",
@@ -577,6 +580,7 @@ Links to the schema:
       "@container": "@list",
       "@id": "geojson:bbox"
     },
+    "featureType": "@type",
     "time": {
       "@context": {
         "date": {
@@ -640,10 +644,10 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
-    "geojson": "https://purl.org/geojson/vocab#",
-    "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
+    "geojson": "https://purl.org/geojson/vocab#",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "csdm": "https://linked.data.gov.au/def/csdm/",

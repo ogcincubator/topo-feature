@@ -1,7 +1,5 @@
 {
   "@context": {
-    "type": "@type",
-    "featureType": "@type",
     "links": {
       "@context": {
         "href": {
@@ -22,10 +20,6 @@
       },
       "@id": "rdfs:seeAlso"
     },
-    "features": {
-      "@container": "@set",
-      "@id": "geojson:features"
-    },
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -35,6 +29,11 @@
     "MultiPolygon": "geojson:MultiPolygon",
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "type": "@type",
     "id": "@id",
     "properties": "@nest",
     "geometry": "geojson:geometry",
@@ -42,6 +41,7 @@
       "@container": "@list",
       "@id": "geojson:bbox"
     },
+    "featureType": "@type",
     "time": {
       "@context": {
         "date": {
@@ -105,10 +105,10 @@
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
-    "geojson": "https://purl.org/geojson/vocab#",
-    "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
+    "geojson": "https://purl.org/geojson/vocab#",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "csdm": "https://linked.data.gov.au/def/csdm/",

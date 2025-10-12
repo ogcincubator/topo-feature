@@ -130,7 +130,7 @@ can be solids, swept volumes or any other concept. (It doesnt use TopoJSON coord
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Feature with defined topology for bounding elements
 allOf:
-- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml
+- $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureOptions
 - type: object
   properties:
     id:

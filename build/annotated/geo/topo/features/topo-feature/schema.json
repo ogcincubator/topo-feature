@@ -3,7 +3,7 @@
   "description": "Feature with defined topology for bounding elements",
   "allOf": [
     {
-      "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json"
+      "$ref": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json#FeatureOptions"
     },
     {
       "type": "object",

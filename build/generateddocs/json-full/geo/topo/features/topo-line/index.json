@@ -3,15 +3,19 @@
 {
   "itemIdentifier": "ogc.geo.topo.features.topo-line",
   "name": "Line using Point References",
+  "highlighted": true,
   "abstract": "Demonstration of a schema using coordinates of points, without duplication. Reuses context but constrains to Line types",
   "status": "under-development",
   "dateTimeAddition": "2023-04-05T00:00:00Z",
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2025-10-10",
+  "dateOfLastChange": "2025-10-12",
   "link": "https://github.com/icsm-au/3d-csdm-schema",
   "sources": [],
+  "shaclClosures": [
+    "../topo-feature/examples/points.ttl"
+  ],
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -21,13 +25,17 @@
   ],
   "shaclShapes": {
     "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+    ],
+    "ogc.geo.topo.features.topo-feature-collection": [
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ]
   },
   "dependsOn": [
-    "ogc.geo.topo.datatypes.topology",
-    "ogc.geo.topo.features.topo-feature"
+    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.topo.datatypes.topology"
   ],
   "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
   "schema": {
@@ -38,7 +46,7 @@
   "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-line/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-line/",
   "rdfData": [],
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-line/",
   "description": "## Topology defined Line\n\n%definition% \n\nA feature type using a topology property to reference an ordered list of points.\n\nThe topology property has an ordered array, defining the direction of the line from the first to second and subsequent points.\n\nThis is a generalisation of the TopoJSON concept using inline data, and hence not limited to linestrings.\n\n",
   "examples": [

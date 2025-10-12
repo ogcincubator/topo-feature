@@ -3,20 +3,25 @@
 {
   "itemIdentifier": "ogc.geo.topo.features.topo-feature-collection",
   "name": "TopoFeatureCollection",
+  "highlighted": true,
   "abstract": "This building block defines a GeoJSON (or FG-JSON) Feature Collection for a set of features with geometries defined by topological relationships. From these it is possible to derive simplified geometries using coordinates for each feature.",
   "status": "under-development",
   "dateTimeAddition": "2023-07-05T00:00:00Z",
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-10-10",
+  "dateOfLastChange": "2025-10-12",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.common.data_types.geojson",
+    "ogc.geo.features.feature",
     "ogc.geo.json-fg.featureCollection-lenient",
-    "ogc.geo.topo.features.topo-feature"
+    "ogc.geo.json-fg.feature-lenient",
+    "ogc.geo.json-fg.feature",
+    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.features.featureCollection",
+    "ogc.geo.json-fg.featureCollection"
   ],
   "tags": [
     "topology",
@@ -25,12 +30,12 @@
   "group": "OGC",
   "shaclShapes": {
     "ogc.geo.topo.features.topo-feature-collection": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ],
     "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ]
   },
   "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
@@ -38,11 +43,11 @@
     "application/yaml": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml",
     "application/json": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/schema.yaml",
+  "sourceSchema": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/schema.json",
   "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/",
   "rdfData": [],
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature-collection/",
   "description": "## Feature Collection with Explicit Topology \n\n%definition% \n\nA Feature Collection where the set of TopoFeatures contained describe the full geometry of higher-dimension features by topology relationships, ultimately grounded in Point features with explicit coordinates.\n\nTopoFeature is feature type using a topology property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.\n\nThis is a generalisation of the TopoJSON concept using inline data, but not limited to the LineStrings. Topological defined objects \ncan be solids, swept volumes or any other concept.\n\n",
   "examples": [
@@ -113,7 +118,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Feature Collection with defined topology for bounding elements\n$defs:\n  FeatureCollectionOptions:\n    anyOf:\n    - $ref: https://beta.schemas.opengis.net/json-fg/featurecollection.json\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml\n    - $ref: https://geojson.org/schema/FeatureCollection.json\n  FeatureOptions:\n    anyOf:\n    - $ref: https://beta.schemas.opengis.net/json-fg/feature.json\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml\n  PointOptions:\n    anyOf:\n    - allOf:\n      - $ref: '#/$defs/FeatureOptions'\n      - properties:\n          geometry:\n            properties:\n              type:\n                type: string\n                enum:\n                - Point\nallOf:\n- $ref: '#/$defs/FeatureCollectionOptions'\nproperties:\n  features:\n    type: array\n    items:\n      anyOf:\n      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml\n      - $ref: '#/$defs/PointOptions'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Feature Collection with defined topology for bounding elements\n$defs:\n  FeatureCollectionOptions:\n    $anchor: FeatureCollectionOptions\n    anyOf:\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.yaml\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml\n  FeatureOptions:\n    $anchor: FeatureOptions\n    anyOf:\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n  PointOptions:\n    $anchor: PointOptions\n    anyOf:\n    - allOf:\n      - $ref: '#/$defs/FeatureOptions'\n      - properties:\n          geometry:\n            properties:\n              type:\n                type: string\n                enum:\n                - Point\nallOf:\n- $ref: '#/$defs/FeatureCollectionOptions'\nproperties:\n  features:\n    type: array\n    items:\n      anyOf:\n      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml\n      - $ref: '#/$defs/PointOptions'\n",
   "gitRepository": "https://github.com/ogcincubator/topo-feature",
   "gitPath": "_sources/features/topo-feature-collection"
 }

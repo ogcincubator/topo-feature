@@ -3,13 +3,14 @@
 {
   "itemIdentifier": "ogc.geo.topo.alignments.cityjson-transform",
   "name": "CityJSON to TopoFeature transform",
+  "highlighted": true,
   "abstract": "Demonstration of a transform from CityJSON to TopoFeature",
   "status": "under-development",
   "dateTimeAddition": "2024-10-18T08:31:00Z",
   "itemClass": "schema",
   "register": "ogc",
   "version": "0.1",
-  "dateOfLastChange": "2025-10-10",
+  "dateOfLastChange": "2025-10-12",
   "tags": [
     "3D",
     "geometry",

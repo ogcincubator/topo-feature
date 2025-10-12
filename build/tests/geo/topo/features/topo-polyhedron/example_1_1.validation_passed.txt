@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-polyhedron - 3D (Polyhedron) using nested Polygons and Point topology
-Generated 2025-10-10T08:55:16.497746+00:00
+Generated 2025-10-12T09:05:17.960795+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,8 +17,8 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n28e0a04adf014411adf95d73eef1464cb1: <http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry
- - Shape _:n28e0a04adf014411adf95d73eef1464cb3: <http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry
+ - Shape _:n41ebf70cffa44ac28a65e34c58d0638db1: <http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry
+ - Shape _:n41ebf70cffa44ac28a65e34c58d0638db3: <http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry
 
 === End SHACL ===
 

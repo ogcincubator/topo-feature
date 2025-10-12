@@ -112,12 +112,12 @@
   "name": "Building Blocks - Topo-Feature",
   "abstract": "Features with geometry defined via  generalised topology between identified objects (Features).",
   "description": "Defines Feature (object) topology using a _topology_ property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.\n\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \n\nTopo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. \n\nTopo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.\n\nNote: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features.. \n\n_Topo-Feature allows for explicit CRS. If desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._\n",
-  "modified": "2025-10-10T08:54:59.899104",
+  "modified": "2025-10-12T09:05:01.249263",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"cbdf0741daa8bb5e8edcce157ff8f4bb6d0d71fa",
-      "shortCommitId": "\"cbdf07",
-      "date": "2025-09-30T10:25:21+00:00\""
+      "commitId": "\"bfb0f4bbc2c7fdd539fcd44d5f8e97a73288d480",
+      "shortCommitId": "\"bfb0f4",
+      "date": "2025-10-10T09:09:23+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/topo-feature",
@@ -138,13 +138,14 @@
     {
       "itemIdentifier": "ogc.geo.topo.alignments.cityjson-transform",
       "name": "CityJSON to TopoFeature transform",
+      "highlighted": true,
       "abstract": "Demonstration of a transform from CityJSON to TopoFeature",
       "status": "under-development",
       "dateTimeAddition": "2024-10-18T08:31:00Z",
       "itemClass": "schema",
       "register": "ogc",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-10",
+      "dateOfLastChange": "2025-10-12",
       "tags": [
         "3D",
         "geometry",
@@ -263,13 +264,14 @@
     {
       "itemIdentifier": "ogc.geo.topo.datatypes.topology",
       "name": "Geometry using references",
+      "highlighted": true,
       "abstract": "Demonstration of a schema using coordinates of points, withpout duplication",
       "status": "under-development",
       "dateTimeAddition": "2023-04-05T00:00:00Z",
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-10",
+      "dateOfLastChange": "2025-10-12",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "maturity": "development",
@@ -312,21 +314,91 @@
       ]
     },
     {
+      "itemIdentifier": "ogc.geo.topo.features.topo-feature-collection",
+      "name": "TopoFeatureCollection",
+      "highlighted": true,
+      "abstract": "This building block defines a GeoJSON (or FG-JSON) Feature Collection for a set of features with geometries defined by topological relationships. From these it is possible to derive simplified geometries using coordinates for each feature.",
+      "status": "under-development",
+      "dateTimeAddition": "2023-07-05T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2025-10-12",
+      "sources": [],
+      "maturity": "development",
+      "scope": "unstable",
+      "dependsOn": [
+        "ogc.geo.features.feature",
+        "ogc.geo.json-fg.featureCollection-lenient",
+        "ogc.geo.json-fg.feature-lenient",
+        "ogc.geo.json-fg.feature",
+        "ogc.geo.topo.features.topo-feature",
+        "ogc.geo.features.featureCollection",
+        "ogc.geo.json-fg.featureCollection"
+      ],
+      "tags": [
+        "topology",
+        "feature"
+      ],
+      "group": "OGC",
+      "shaclShapes": {
+        "ogc.geo.topo.features.topo-feature-collection": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ]
+      },
+      "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/schema.json",
+      "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature-collection/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature-collection/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature-collection/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/topo-feature/bblock/ogc.geo.topo.features.topo-feature-collection"
+        }
+      },
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
       "itemIdentifier": "ogc.geo.topo.features.topo-feature",
       "name": "Feature with topology",
+      "highlighted": true,
       "abstract": "This building block defines a GeoJSON feature with topological relationships to point nodes, or other to TopoFeatures",
       "status": "under-development",
       "dateTimeAddition": "2023-07-05T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-10",
+      "dateOfLastChange": "2025-10-12",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
         "ogc.geo.topo.datatypes.topology",
-        "ogc.geo.json-fg.feature"
+        "ogc.geo.topo.features.topo-feature-collection"
       ],
       "shaclClosures": [
         "examples/points.ttl"
@@ -338,8 +410,12 @@
       "group": "OGC",
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature-collection": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld",
@@ -351,7 +427,7 @@
       "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/",
       "rdfData": [],
-      "validationPassed": false,
+      "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature/",
       "documentation": {
         "markdown": {
@@ -376,13 +452,14 @@
     {
       "itemIdentifier": "ogc.geo.topo.features.topo-arc",
       "name": "Non-linear Arc and Spline Descriptions using Point topology",
+      "highlighted": true,
       "abstract": "Defines options for describing Arcs, Circles, Splines using point features as canonical source of geometry coordinates",
       "status": "under-development",
       "dateTimeAddition": "2023-11-01T00:00:00Z",
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-10",
+      "dateOfLastChange": "2025-10-12",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -396,17 +473,21 @@
       ],
       "shaclShapes": {
         "ogc.geo.topo.features.topo-arc": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature-collection": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "dependsOn": [
-        "ogc.geo.topo.datatypes.topology",
-        "ogc.geo.topo.features.topo-feature"
+        "ogc.geo.topo.features.topo-feature",
+        "ogc.geo.topo.datatypes.topology"
       ],
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
       "schema": {
@@ -417,7 +498,7 @@
       "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-arc/",
       "rdfData": [],
-      "validationPassed": false,
+      "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-arc/",
       "documentation": {
         "markdown": {
@@ -442,15 +523,19 @@
     {
       "itemIdentifier": "ogc.geo.topo.features.topo-line",
       "name": "Line using Point References",
+      "highlighted": true,
       "abstract": "Demonstration of a schema using coordinates of points, without duplication. Reuses context but constrains to Line types",
       "status": "under-development",
       "dateTimeAddition": "2023-04-05T00:00:00Z",
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-10",
+      "dateOfLastChange": "2025-10-12",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
+      "shaclClosures": [
+        "../topo-feature/examples/points.ttl"
+      ],
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -460,13 +545,17 @@
       ],
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature-collection": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "dependsOn": [
-        "ogc.geo.topo.datatypes.topology",
-        "ogc.geo.topo.features.topo-feature"
+        "ogc.geo.topo.features.topo-feature",
+        "ogc.geo.topo.datatypes.topology"
       ],
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
       "schema": {
@@ -477,7 +566,7 @@
       "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-line/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-line/",
       "rdfData": [],
-      "validationPassed": false,
+      "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-line/",
       "documentation": {
         "markdown": {
@@ -500,79 +589,16 @@
       ]
     },
     {
-      "itemIdentifier": "ogc.geo.topo.features.topo-feature-collection",
-      "name": "TopoFeatureCollection",
-      "abstract": "This building block defines a GeoJSON (or FG-JSON) Feature Collection for a set of features with geometries defined by topological relationships. From these it is possible to derive simplified geometries using coordinates for each feature.",
-      "status": "under-development",
-      "dateTimeAddition": "2023-07-05T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-register",
-      "version": "0.1",
-      "dateOfLastChange": "2025-10-10",
-      "sources": [],
-      "maturity": "development",
-      "scope": "unstable",
-      "dependsOn": [
-        "ogc.geo.common.data_types.geojson",
-        "ogc.geo.json-fg.featureCollection-lenient",
-        "ogc.geo.topo.features.topo-feature"
-      ],
-      "tags": [
-        "topology",
-        "feature"
-      ],
-      "group": "OGC",
-      "shaclShapes": {
-        "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
-        ],
-        "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
-        ]
-      },
-      "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/",
-      "rdfData": [],
-      "validationPassed": false,
-      "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature-collection/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature-collection/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature-collection/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/topo-feature/bblock/ogc.geo.topo.features.topo-feature-collection"
-        }
-      },
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ]
-    },
-    {
       "itemIdentifier": "ogc.geo.topo.features.topo-polyhedron",
       "name": "3D (Polyhedron) using nested Polygons and Point topology",
+      "highlighted": true,
       "abstract": "Defines options for describing 3D polyhedrons using features with Point geometry coordinates",
       "status": "under-development",
       "dateTimeAddition": "2023-11-01T00:00:00Z",
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-10",
+      "dateOfLastChange": "2025-10-12",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -585,17 +611,17 @@
       "shaclClosures": [],
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "dependsOn": [
-        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.features.topo-feature",
+        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.features.topo-feature-collection"
       ],
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-polyhedron/context.jsonld",
