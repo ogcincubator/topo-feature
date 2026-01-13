@@ -539,6 +539,15 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "type": "@type",
+    "features": {
+      "@id": "geojson:features",
+      "@container": "@set"
+    },
+    "bbox": {
+      "@id": "geojson:bbox",
+      "@container": "@list"
+    },
     "links": {
       "@context": {
         "href": {
@@ -559,6 +568,9 @@ Links to the schema:
       },
       "@id": "rdfs:seeAlso"
     },
+    "properties": "@nest",
+    "featureType": "@type",
+    "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -568,19 +580,8 @@ Links to the schema:
     "MultiPolygon": "geojson:MultiPolygon",
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
-    "features": {
-      "@container": "@set",
-      "@id": "geojson:features"
-    },
-    "type": "@type",
     "id": "@id",
-    "properties": "@nest",
     "geometry": "geojson:geometry",
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
-    "featureType": "@type",
     "time": {
       "@context": {
         "date": {
@@ -598,7 +599,6 @@ Links to the schema:
       },
       "@id": "dct:time"
     },
-    "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
     "place": "dct:spatial",
     "Polyhedron": "geojson:Polyhedron",
     "MultiPolyhedron": "geojson:MultiPolyhedron",

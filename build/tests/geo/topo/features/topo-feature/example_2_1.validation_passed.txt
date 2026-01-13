@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature - Feature with topology
-Generated 2025-10-12T09:05:10.329603+00:00
+Generated 2026-01-13T22:40:39.752125+00:00
 === Files ===
 Using example_2_1.json from examples
 JSON-LD context is present - uplifting
@@ -12,13 +12,26 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
+Using building block SHACL closures:
+ - examples/points.ttl
+Using snippet SHACL closures:
+ - examples/points.ttl
+ - examples/lines.ttl
 Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:ndd48b981b55e4f7b979feb1b8309a1dbb3: *none*
- - Shape _:ndd48b981b55e4f7b979feb1b8309a1dbb1: *none*
+ - Shape _:n3dc7a479d3044e5eb15695d5d7417b0eb3: *none*
+ - Shape _:n3dc7a479d3044e5eb15695d5d7417b0eb1: *none*
+
+Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
 
 === End SHACL ===
 

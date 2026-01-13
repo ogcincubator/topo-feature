@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.features.topo-polyhedron - 3D (Polyhedron) using nested Polygons and Point topology",
   "bblockName": "3D (Polyhedron) using nested Polygons and Point topology",
   "bblockId": "ogc.geo.topo.features.topo-polyhedron",
-  "generated": "2025-10-12T09:05:17.960862+00:00",
+  "generated": "2026-01-13T22:40:47.264311+00:00",
   "result": true,
   "items": [
     {
@@ -72,34 +72,56 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n41ebf70cffa44ac28a65e34c58d0638db1": {
+                "_:ncd88cafd0fe44d38b596d5292edfc55db3": {
                   "nodes": [
+                    "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
                     "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
+                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
                     "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
                     "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry"
+                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry"
                   ]
                 },
-                "_:n41ebf70cffa44ac28a65e34c58d0638db3": {
+                "_:ncd88cafd0fe44d38b596d5292edfc55db1": {
                   "nodes": [
+                    "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
                     "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
                     "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
                     "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
-                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry"
+                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n41ebf70cffa44ac28a65e34c58d0638db1: <http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry\n - Shape _:n41ebf70cffa44ac28a65e34c58d0638db3: <http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ncd88cafd0fe44d38b596d5292edfc55db3: <http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry\n - Shape _:ncd88cafd0fe44d38b596d5292edfc55db1: <http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+              "focusNodes": {
+                "topo:testTopoReferencesExist": {
+                  "nodes": [
+                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology"
+                  ]
+                },
+                "topo:testTopoLinesReferencePoints": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
             }
           ]
         }

@@ -11,7 +11,10 @@
     "Polygon": "geojson:Polygon",
     "features": {
       "@container": "@set",
-      "@id": "geojson:features"
+      "@id": "geojson:features",
+      "@context": {
+        "featureType": "@type"
+      }
     },
     "type": "@type",
     "id": "@id",
@@ -41,7 +44,7 @@
       },
       "@id": "rdfs:seeAlso"
     },
-    "featureType": "@type",
+    "featureType": "geojson:collectionFeatureType",
     "time": {
       "@context": {
         "date": {
@@ -86,13 +89,15 @@
       "@container": "@list"
     },
     "topology": {
+      "@context": {
+        "references": {
+          "@id": "geojson:relatedFeatures",
+          "@type": "@id",
+          "@container": "@list"
+        }
+      },
       "@type": "@id",
       "@id": "geojson:topology"
-    },
-    "references": {
-      "@id": "geojson:relatedFeatures",
-      "@type": "@id",
-      "@container": "@list"
     },
     "Arc": "geojson:Arc",
     "ArcWithCenter": "geojson:ArcWithCenter",

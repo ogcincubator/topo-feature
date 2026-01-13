@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection
-Generated 2025-10-12T09:05:08.677690+00:00
+Generated 2026-01-13T22:40:37.785364+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -12,6 +12,14 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
+Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n74cf8c777b9b410593ec31fe6377e5e2b1: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry
+ - Shape _:n74cf8c777b9b410593ec31fe6377e5e2b3: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry
+
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
