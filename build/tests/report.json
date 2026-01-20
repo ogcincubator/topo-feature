@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.geo.topo.alignments.cityjson-transform - CityJSON to TopoFeature transform",
       "bblockName": "CityJSON to TopoFeature transform",
       "bblockId": "ogc.geo.topo.alignments.cityjson-transform",
-      "generated": "2026-01-13T22:40:34.663711+00:00",
+      "generated": "2026-01-20T04:30:34.380289+00:00",
       "result": true,
       "items": [
         {
@@ -31,7 +31,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_1_1.json from examples"
+                  "message": "Using examples/cube.city.json from examples"
                 }
               ]
             }
@@ -55,7 +55,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_2_1.json from examples"
+                  "message": "Using examples/twobuildings.city.json from examples"
                 }
               ]
             }
@@ -73,7 +73,7 @@
       "title": "Validation report for ogc.geo.topo.datatypes.topology - Geometry using references",
       "bblockName": "Geometry using references",
       "bblockId": "ogc.geo.topo.datatypes.topology",
-      "generated": "2026-01-13T22:40:35.838385+00:00",
+      "generated": "2026-01-20T04:30:35.519536+00:00",
       "result": true,
       "items": [
         {
@@ -94,7 +94,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_1_1.json from examples"
+                  "message": "Using example.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -139,482 +139,11 @@
         "failed": 0
       }
     },
-    "ogc.geo.topo.features.topo-feature-collection": {
-      "title": "Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection",
-      "bblockName": "TopoFeatureCollection",
-      "bblockId": "ogc.geo.topo.features.topo-feature-collection",
-      "generated": "2026-01-13T22:40:38.027026+00:00",
-      "result": true,
-      "items": [
-        {
-          "source": {
-            "type": "TEST_RESOURCE",
-            "requireFail": true,
-            "filename": "_sources/features/topo-feature-collection/tests/linestring-fail.json",
-            "url": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/linestring-fail.json",
-            "language": "json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "GENERAL",
-              "title": "General",
-              "entries": [
-                {
-                  "op": "require-fail",
-                  "isError": false,
-                  "message": "Test was expected to fail and it did."
-                }
-              ]
-            },
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using linestring-fail.json from test resources"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "linestring-fail.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD linestring-fail.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "linestring-fail.ttl",
-                  "size": 28,
-                  "isError": false,
-                  "message": "Output Turtle linestring-fail.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            },
-            {
-              "name": "SHACL",
-              "title": "SHACL",
-              "entries": [
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-                  "focusNodes": {
-                    "_:n74cf8c777b9b410593ec31fe6377e5e2b1": {
-                      "nodes": [
-                        "<file:///github/workspace/P3>/geojson:geometry",
-                        "<file:///github/workspace/P1>/geojson:geometry"
-                      ]
-                    },
-                    "_:n74cf8c777b9b410593ec31fe6377e5e2b3": {
-                      "nodes": [
-                        "<file:///github/workspace/P3>/geojson:geometry",
-                        "<file:///github/workspace/P1>/geojson:geometry"
-                      ]
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n74cf8c777b9b410593ec31fe6377e5e2b1: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry\n - Shape _:n74cf8c777b9b410593ec31fe6377e5e2b3: <file:///github/workspace/P3>/geojson:geometry,<file:///github/workspace/P1>/geojson:geometry\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix topo: <https://www.ogc.org/rules/topo/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode _:N9f63805256cb43ecaa2df3fb68c3916d ;\n            sh:resultMessage \"Referenced features must be present within current graph closure for  topological feature.\" ;\n            sh:resultPath geojson:relatedFeatures ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraint [ sh:message \"Referenced features must be present within current graph closure for  topological feature.\" ;\n                    sh:select \"\"\"\n        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n        prefix geojson: <https://purl.org/geojson/vocab#>\n\n        SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)\n        WHERE {\n         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .\n         $this a ?geomtype .\n         FILTER ( ?geomtype != geojson:Polygon)\n         FILTER NOT EXISTS { ?ref ?p ?o }\n        }\n\"\"\" ] ;\n            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;\n            sh:sourceShape topo:testTopoReferencesExist ;\n            sh:value <file:///github/workspace/P2> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode _:N9f63805256cb43ecaa2df3fb68c3916d ;\n            sh:resultMessage \"Lines topologies must reference points within current graph closure.\" ;\n            sh:resultPath geojson:topology ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraint [ sh:message \"Lines topologies must reference points within current graph closure.\" ;\n                    sh:select \"\"\"\n        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n        prefix geojson: <https://purl.org/geojson/vocab#>\n        prefix dct:     <http://purl.org/dc/terms/>\n        PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>\n\n        SELECT $this (geojson:topology as ?path) (?ref as ?value)\n        WHERE {\n         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .\n         FILTER NOT EXISTS {\n             ?ref (geojson:geometry|geosparql:hasGeometry|dct:spatial)/rdf:type geojson:Point }\n        }\n\"\"\" ] ;\n            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;\n            sh:sourceShape topo:testTopoLinesReferencePoints ;\n            sh:value <file:///github/workspace/P2> ] .\n\n_:N1746e631de8441cc8b0507eeedb002bf rdf:first <file:///github/workspace/P2> ;\n    rdf:rest () .\n\n_:N3a5db07733604eab937a787b1b3d27cd rdf:first <file:///github/workspace/P1> ;\n    rdf:rest _:N1746e631de8441cc8b0507eeedb002bf .\n\n_:N9f63805256cb43ecaa2df3fb68c3916d a geojson:LineString ;\n    geojson:relatedFeatures _:N3a5db07733604eab937a787b1b3d27cd .\n\n",
-                  "isError": true,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: False\n  Results (2):\n  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: topo:testTopoReferencesExist\n  \tFocus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]\n  \tValue Node: <file:///github/workspace/P2>\n  \tResult Path: geojson:relatedFeatures\n  \tSource Constraint: [ sh:message Literal(\"Referenced features must be present within current graph closure for  topological feature.\") ; sh:select Literal(\"\n          prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n          PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n          prefix geojson: <https://purl.org/geojson/vocab#>\n  \n          SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)\n          WHERE {\n           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .\n           $this a ?geomtype .\n           FILTER ( ?geomtype != geojson:Polygon)\n           FILTER NOT EXISTS { ?ref ?p ?o }\n          }\n  \") ]\n  \tMessage: Referenced features must be present within current graph closure for  topological feature.\n  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: topo:testTopoLinesReferencePoints\n  \tFocus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]\n  \tValue Node: <file:///github/workspace/P2>\n  \tResult Path: geojson:topology\n  \tSource Constraint: [ sh:message Literal(\"Lines topologies must reference points within current graph closure.\") ; sh:select Literal(\"\n          prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n          PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n          prefix geojson: <https://purl.org/geojson/vocab#>\n          prefix dct:     <http://purl.org/dc/terms/>\n          PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>\n  \n          SELECT $this (geojson:topology as ?path) (?ref as ?value)\n          WHERE {\n           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .\n           FILTER NOT EXISTS {\n               ?ref (geojson:geometry|geosparql:hasGeometry|dct:spatial)/rdf:type geojson:Point }\n          }\n  \") ]\n  \tMessage: Lines topologies must reference points within current graph closure.\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<file:///github/workspace/LineP1P2>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": [
-                        "<file:///github/workspace/LineP1P2>/geojson:topology"
-                      ]
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <file:///github/workspace/LineP1P2>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: <file:///github/workspace/LineP1P2>/geojson:topology\n"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/geo/topo/features/topo-feature-collection/example_1_1.json",
-            "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_1.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 19,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            },
-            {
-              "name": "SHACL",
-              "title": "SHACL",
-              "entries": [
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-                  "focusNodes": {
-                    "_:n74cf8c777b9b410593ec31fe6377e5e2b1": {
-                      "nodes": [
-                        "<http://www.example.com/features/P1>/geojson:geometry",
-                        "<http://www.example.com/features/P2>/geojson:geometry"
-                      ]
-                    },
-                    "_:n74cf8c777b9b410593ec31fe6377e5e2b3": {
-                      "nodes": [
-                        "<http://www.example.com/features/P1>/geojson:geometry",
-                        "<http://www.example.com/features/P2>/geojson:geometry"
-                      ]
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n74cf8c777b9b410593ec31fe6377e5e2b1: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry\n - Shape _:n74cf8c777b9b410593ec31fe6377e5e2b3: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": []
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: *none*\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/geo/topo/features/topo-feature-collection/example_2_1.json",
-            "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_2_1.json",
-            "exampleIndex": 2,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_2_1.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_2_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_2_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_2_1.ttl",
-                  "size": 28,
-                  "isError": false,
-                  "message": "Output Turtle example_2_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            },
-            {
-              "name": "SHACL",
-              "title": "SHACL",
-              "entries": [
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-                  "focusNodes": {
-                    "_:n74cf8c777b9b410593ec31fe6377e5e2b1": {
-                      "nodes": [
-                        "<http://www.example.com/features/P2>/geojson:geometry",
-                        "<http://www.example.com/features/P1>/geojson:geometry"
-                      ]
-                    },
-                    "_:n74cf8c777b9b410593ec31fe6377e5e2b3": {
-                      "nodes": [
-                        "<http://www.example.com/features/P2>/geojson:geometry",
-                        "<http://www.example.com/features/P1>/geojson:geometry"
-                      ]
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n74cf8c777b9b410593ec31fe6377e5e2b1: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry\n - Shape _:n74cf8c777b9b410593ec31fe6377e5e2b3: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/LineP1P2>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": [
-                        "<http://www.example.com/features/LineP1P2>/geojson:topology"
-                      ]
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/geo/topo/features/topo-feature-collection/example_3_1.json",
-            "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_3_1.json",
-            "exampleIndex": 3,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_3_1.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_3_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_3_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_3_1.ttl",
-                  "size": 66,
-                  "isError": false,
-                  "message": "Output Turtle example_3_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            },
-            {
-              "name": "SHACL",
-              "title": "SHACL",
-              "entries": [
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-                  "focusNodes": {
-                    "_:n74cf8c777b9b410593ec31fe6377e5e2b1": {
-                      "nodes": [
-                        "<http://www.example.com/features/P3>/geojson:geometry",
-                        "<http://www.example.com/features/P1>/geojson:geometry",
-                        "<http://www.example.com/features/P2>/geojson:geometry"
-                      ]
-                    },
-                    "_:n74cf8c777b9b410593ec31fe6377e5e2b3": {
-                      "nodes": [
-                        "<http://www.example.com/features/P3>/geojson:geometry",
-                        "<http://www.example.com/features/P1>/geojson:geometry",
-                        "<http://www.example.com/features/P2>/geojson:geometry"
-                      ]
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n74cf8c777b9b410593ec31fe6377e5e2b1: <http://www.example.com/features/P3>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry\n - Shape _:n74cf8c777b9b410593ec31fe6377e5e2b3: <http://www.example.com/features/P3>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/LineP1P2>/geojson:topology",
-                        "<http://www.example.com/features/LineP2P3>/geojson:topology",
-                        "<http://www.example.com/features/LineP3P1>/geojson:topology",
-                        "<http://www.example.com/features/TriangleP1P2P3>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": [
-                        "<http://www.example.com/features/LineP1P2>/geojson:topology",
-                        "<http://www.example.com/features/LineP2P3>/geojson:topology",
-                        "<http://www.example.com/features/LineP3P1>/geojson:topology"
-                      ]
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology,<http://www.example.com/features/LineP2P3>/geojson:topology,<http://www.example.com/features/LineP3P1>/geojson:topology,<http://www.example.com/features/TriangleP1P2P3>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology,<http://www.example.com/features/LineP2P3>/geojson:topology,<http://www.example.com/features/LineP3P1>/geojson:topology\n"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 4,
-        "passed": 4,
-        "failed": 0
-      }
-    },
     "ogc.geo.topo.features.topo-feature": {
       "title": "Validation report for ogc.geo.topo.features.topo-feature - Feature with topology",
       "bblockName": "Feature with topology",
       "bblockId": "ogc.geo.topo.features.topo-feature",
-      "generated": "2026-01-13T22:40:39.752221+00:00",
+      "generated": "2026-01-20T04:30:37.441357+00:00",
       "result": true,
       "items": [
         {
@@ -635,7 +164,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_1_1.json from examples"
+                  "message": "Using examples/linestring.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -692,15 +221,15 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n3dc7a479d3044e5eb15695d5d7417b0eb3": {
+                    "_:nda248c63b4924936a266414be1aa208fb1": {
                       "nodes": []
                     },
-                    "_:n3dc7a479d3044e5eb15695d5d7417b0eb1": {
+                    "_:nda248c63b4924936a266414be1aa208fb3": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n3dc7a479d3044e5eb15695d5d7417b0eb3: *none*\n - Shape _:n3dc7a479d3044e5eb15695d5d7417b0eb1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nda248c63b4924936a266414be1aa208fb1: *none*\n - Shape _:nda248c63b4924936a266414be1aa208fb3: *none*\n"
                 },
                 {
                   "op": "shacl-report",
@@ -712,19 +241,19 @@
                 {
                   "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
                   "focusNodes": {
-                    "topo:testTopoReferencesExist": {
+                    "topo:testTopoLinesReferencePoints": {
                       "nodes": [
                         "<http://www.example.com/features/LineP1P2>/geojson:topology"
                       ]
                     },
-                    "topo:testTopoLinesReferencePoints": {
+                    "topo:testTopoReferencesExist": {
                       "nodes": [
                         "<http://www.example.com/features/LineP1P2>/geojson:topology"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n"
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n"
                 }
               ]
             }
@@ -748,7 +277,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_2_1.json from examples"
+                  "message": "Using examples/polygon.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -805,15 +334,15 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n3dc7a479d3044e5eb15695d5d7417b0eb3": {
+                    "_:nda248c63b4924936a266414be1aa208fb1": {
                       "nodes": []
                     },
-                    "_:n3dc7a479d3044e5eb15695d5d7417b0eb1": {
+                    "_:nda248c63b4924936a266414be1aa208fb3": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n3dc7a479d3044e5eb15695d5d7417b0eb3: *none*\n - Shape _:n3dc7a479d3044e5eb15695d5d7417b0eb1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nda248c63b4924936a266414be1aa208fb1: *none*\n - Shape _:nda248c63b4924936a266414be1aa208fb3: *none*\n"
                 },
                 {
                   "op": "shacl-report",
@@ -825,17 +354,17 @@
                 {
                   "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
                   "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
                     "topo:testTopoReferencesExist": {
                       "nodes": [
                         "<http://www.example.com/features/TriangleP1P2P3>/geojson:topology"
                       ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology\n"
                 }
               ]
             }
@@ -853,7 +382,7 @@
       "title": "Validation report for ogc.geo.topo.features.topo-arc - Non-linear Arc and Spline Descriptions using Point topology",
       "bblockName": "Non-linear Arc and Spline Descriptions using Point topology",
       "bblockId": "ogc.geo.topo.features.topo-arc",
-      "generated": "2026-01-13T22:40:42.373443+00:00",
+      "generated": "2026-01-20T04:30:40.668191+00:00",
       "result": true,
       "items": [
         {
@@ -930,28 +459,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/chord1>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -960,15 +467,37 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n7a52c06a6161416286eecec722b9bbc0b3": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab3": {
                       "nodes": []
                     },
-                    "_:n7a52c06a6161416286eecec722b9bbc0b1": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/chord1>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n"
                 }
               ]
             }
@@ -1048,28 +577,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/chord1>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -1078,15 +585,37 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n7a52c06a6161416286eecec722b9bbc0b3": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab3": {
                       "nodes": []
                     },
-                    "_:n7a52c06a6161416286eecec722b9bbc0b1": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/chord1>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n"
                 }
               ]
             }
@@ -1166,28 +695,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/1853004>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -1196,15 +703,37 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n7a52c06a6161416286eecec722b9bbc0b3": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab3": {
                       "nodes": []
                     },
-                    "_:n7a52c06a6161416286eecec722b9bbc0b1": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/1853004>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
                 }
               ]
             }
@@ -1284,28 +813,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/1853004>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -1314,15 +821,37 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n7a52c06a6161416286eecec722b9bbc0b3": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab3": {
                       "nodes": []
                     },
-                    "_:n7a52c06a6161416286eecec722b9bbc0b1": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/1853004>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
                 }
               ]
             }
@@ -1346,7 +875,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_1_1.json from examples"
+                  "message": "Using examples/arc_by_center.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -1395,28 +924,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/1853004>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -1425,15 +932,37 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n7a52c06a6161416286eecec722b9bbc0b3": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab3": {
                       "nodes": []
                     },
-                    "_:n7a52c06a6161416286eecec722b9bbc0b1": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/1853004>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
                 }
               ]
             }
@@ -1457,7 +986,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_2_1.json from examples"
+                  "message": "Using examples/arc.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -1506,28 +1035,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/arc1>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/arc1>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -1536,15 +1043,37 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n7a52c06a6161416286eecec722b9bbc0b3": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab3": {
                       "nodes": []
                     },
-                    "_:n7a52c06a6161416286eecec722b9bbc0b1": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/arc1>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/arc1>/geojson:topology\n"
                 }
               ]
             }
@@ -1568,7 +1097,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_3_1.json from examples"
+                  "message": "Using examples/arc_chord.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -1617,28 +1146,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/chord1>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -1647,15 +1154,37 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n7a52c06a6161416286eecec722b9bbc0b3": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab3": {
                       "nodes": []
                     },
-                    "_:n7a52c06a6161416286eecec722b9bbc0b1": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/chord1>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology\n"
                 }
               ]
             }
@@ -1679,7 +1208,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_5_1.json from examples"
+                  "message": "Using examples/circle.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -1728,28 +1257,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/1853004>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -1758,15 +1265,37 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n7a52c06a6161416286eecec722b9bbc0b3": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab3": {
                       "nodes": []
                     },
-                    "_:n7a52c06a6161416286eecec722b9bbc0b1": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/1853004>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
                 }
               ]
             }
@@ -1790,7 +1319,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_7_1.json from examples"
+                  "message": "Using examples/spline.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -1839,28 +1368,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/1853004>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -1869,15 +1376,37 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n7a52c06a6161416286eecec722b9bbc0b3": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab3": {
                       "nodes": []
                     },
-                    "_:n7a52c06a6161416286eecec722b9bbc0b1": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/1853004>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
                 }
               ]
             }
@@ -1901,7 +1430,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_8_1.json from examples"
+                  "message": "Using examples/spline_with_tangents.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -1950,28 +1479,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-                  "focusNodes": {
-                    "topo:testTopoReferencesExist": {
-                      "nodes": [
-                        "<http://www.example.com/features/1853004>/geojson:topology"
-                      ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -1980,15 +1487,37 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n7a52c06a6161416286eecec722b9bbc0b3": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab3": {
                       "nodes": []
                     },
-                    "_:n7a52c06a6161416286eecec722b9bbc0b1": {
+                    "_:n9ce3b95bdb334e1fa2231b8b435c811ab1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*\n - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*\n - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/1853004>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology\n"
                 }
               ]
             }
@@ -2006,7 +1535,7 @@
       "title": "Validation report for ogc.geo.topo.features.topo-line - Line using Point References",
       "bblockName": "Line using Point References",
       "bblockId": "ogc.geo.topo.features.topo-line",
-      "generated": "2026-01-13T22:40:43.880502+00:00",
+      "generated": "2026-01-20T04:30:42.328025+00:00",
       "result": true,
       "items": [
         {
@@ -2027,7 +1556,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_1_1.json from examples"
+                  "message": "Using example.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -2084,15 +1613,15 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:n18c66675aa504fd9ba3dc193c78a67d8b3": {
+                    "_:nb4d0df3b54e741f59a7aedfe7a11a5b3b1": {
                       "nodes": []
                     },
-                    "_:n18c66675aa504fd9ba3dc193c78a67d8b1": {
+                    "_:nb4d0df3b54e741f59a7aedfe7a11a5b3b3": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n18c66675aa504fd9ba3dc193c78a67d8b3: *none*\n - Shape _:n18c66675aa504fd9ba3dc193c78a67d8b1: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nb4d0df3b54e741f59a7aedfe7a11a5b3b1: *none*\n - Shape _:nb4d0df3b54e741f59a7aedfe7a11a5b3b3: *none*\n"
                 },
                 {
                   "op": "shacl-report",
@@ -2104,19 +1633,19 @@
                 {
                   "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
                   "focusNodes": {
-                    "topo:testTopoReferencesExist": {
+                    "topo:testTopoLinesReferencePoints": {
                       "nodes": [
                         "<http://www.example.com/features/LineP1P2>/geojson:topology"
                       ]
                     },
-                    "topo:testTopoLinesReferencePoints": {
+                    "topo:testTopoReferencesExist": {
                       "nodes": [
                         "<http://www.example.com/features/LineP1P2>/geojson:topology"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n"
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n"
                 }
               ]
             }
@@ -2130,11 +1659,482 @@
         "failed": 0
       }
     },
+    "ogc.geo.topo.features.topo-feature-collection": {
+      "title": "Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection",
+      "bblockName": "TopoFeatureCollection",
+      "bblockId": "ogc.geo.topo.features.topo-feature-collection",
+      "generated": "2026-01-20T04:30:44.255592+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": true,
+            "filename": "_sources/features/topo-feature-collection/tests/linestring-fail.json",
+            "url": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/linestring-fail.json",
+            "language": "json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "GENERAL",
+              "title": "General",
+              "entries": [
+                {
+                  "op": "require-fail",
+                  "isError": false,
+                  "message": "Test was expected to fail and it did."
+                }
+              ]
+            },
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using linestring-fail.json from test resources"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "linestring-fail.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD linestring-fail.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "linestring-fail.ttl",
+                  "size": 28,
+                  "isError": false,
+                  "message": "Output Turtle linestring-fail.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "focusNodes": {
+                    "_:n37230153cc6549b490e67e5fbdb29a9fb1": {
+                      "nodes": [
+                        "<file:///github/workspace/P1>/geojson:geometry",
+                        "<file:///github/workspace/P3>/geojson:geometry"
+                      ]
+                    },
+                    "_:n37230153cc6549b490e67e5fbdb29a9fb3": {
+                      "nodes": [
+                        "<file:///github/workspace/P1>/geojson:geometry",
+                        "<file:///github/workspace/P3>/geojson:geometry"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n37230153cc6549b490e67e5fbdb29a9fb1: <file:///github/workspace/P1>/geojson:geometry,<file:///github/workspace/P3>/geojson:geometry\n - Shape _:n37230153cc6549b490e67e5fbdb29a9fb3: <file:///github/workspace/P1>/geojson:geometry,<file:///github/workspace/P3>/geojson:geometry\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix topo: <https://www.ogc.org/rules/topo/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode _:N98349441f345468c92c9c9285ea35be2 ;\n            sh:resultMessage \"Lines topologies must reference points within current graph closure.\" ;\n            sh:resultPath geojson:topology ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraint [ sh:message \"Lines topologies must reference points within current graph closure.\" ;\n                    sh:select \"\"\"\n        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n        prefix geojson: <https://purl.org/geojson/vocab#>\n        prefix dct:     <http://purl.org/dc/terms/>\n        PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>\n\n        SELECT $this (geojson:topology as ?path) (?ref as ?value)\n        WHERE {\n         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .\n         FILTER NOT EXISTS {\n             ?ref (geojson:geometry|geosparql:hasGeometry|dct:spatial)/rdf:type geojson:Point }\n        }\n\"\"\" ] ;\n            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;\n            sh:sourceShape topo:testTopoLinesReferencePoints ;\n            sh:value <file:///github/workspace/P2> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode _:N98349441f345468c92c9c9285ea35be2 ;\n            sh:resultMessage \"Referenced features must be present within current graph closure for  topological feature.\" ;\n            sh:resultPath geojson:relatedFeatures ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraint [ sh:message \"Referenced features must be present within current graph closure for  topological feature.\" ;\n                    sh:select \"\"\"\n        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n        prefix geojson: <https://purl.org/geojson/vocab#>\n\n        SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)\n        WHERE {\n         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .\n         $this a ?geomtype .\n         FILTER ( ?geomtype != geojson:Polygon)\n         FILTER NOT EXISTS { ?ref ?p ?o }\n        }\n\"\"\" ] ;\n            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;\n            sh:sourceShape topo:testTopoReferencesExist ;\n            sh:value <file:///github/workspace/P2> ] .\n\n_:N27f4be0a62104d5f9292d708c0150916 rdf:first <file:///github/workspace/P2> ;\n    rdf:rest () .\n\n_:Na21d97207d0e423e98b04cfff97731b7 rdf:first <file:///github/workspace/P1> ;\n    rdf:rest _:N27f4be0a62104d5f9292d708c0150916 .\n\n_:N98349441f345468c92c9c9285ea35be2 a geojson:LineString ;\n    geojson:relatedFeatures _:Na21d97207d0e423e98b04cfff97731b7 .\n\n",
+                  "isError": true,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: False\n  Results (2):\n  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: topo:testTopoLinesReferencePoints\n  \tFocus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]\n  \tValue Node: <file:///github/workspace/P2>\n  \tResult Path: geojson:topology\n  \tSource Constraint: [ sh:message Literal(\"Lines topologies must reference points within current graph closure.\") ; sh:select Literal(\"\n          prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n          PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n          prefix geojson: <https://purl.org/geojson/vocab#>\n          prefix dct:     <http://purl.org/dc/terms/>\n          PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>\n  \n          SELECT $this (geojson:topology as ?path) (?ref as ?value)\n          WHERE {\n           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .\n           FILTER NOT EXISTS {\n               ?ref (geojson:geometry|geosparql:hasGeometry|dct:spatial)/rdf:type geojson:Point }\n          }\n  \") ]\n  \tMessage: Lines topologies must reference points within current graph closure.\n  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: topo:testTopoReferencesExist\n  \tFocus Node: [ geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ; rdf:type geojson:LineString ]\n  \tValue Node: <file:///github/workspace/P2>\n  \tResult Path: geojson:relatedFeatures\n  \tSource Constraint: [ sh:message Literal(\"Referenced features must be present within current graph closure for  topological feature.\") ; sh:select Literal(\"\n          prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n          PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n          prefix geojson: <https://purl.org/geojson/vocab#>\n  \n          SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)\n          WHERE {\n           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .\n           $this a ?geomtype .\n           FILTER ( ?geomtype != geojson:Polygon)\n           FILTER NOT EXISTS { ?ref ?p ?o }\n          }\n  \") ]\n  \tMessage: Referenced features must be present within current graph closure for  topological feature.\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": [
+                        "<file:///github/workspace/LineP1P2>/geojson:topology"
+                      ]
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<file:///github/workspace/LineP1P2>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: <file:///github/workspace/LineP1P2>/geojson:topology\n - Shape topo:testTopoReferencesExist: <file:///github/workspace/LineP1P2>/geojson:topology\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geo/topo/features/topo-feature-collection/example_1_1.json",
+            "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/example-points.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 19,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "focusNodes": {
+                    "_:n37230153cc6549b490e67e5fbdb29a9fb1": {
+                      "nodes": [
+                        "<http://www.example.com/features/P1>/geojson:geometry",
+                        "<http://www.example.com/features/P2>/geojson:geometry"
+                      ]
+                    },
+                    "_:n37230153cc6549b490e67e5fbdb29a9fb3": {
+                      "nodes": [
+                        "<http://www.example.com/features/P1>/geojson:geometry",
+                        "<http://www.example.com/features/P2>/geojson:geometry"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n37230153cc6549b490e67e5fbdb29a9fb1: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry\n - Shape _:n37230153cc6549b490e67e5fbdb29a9fb3: <http://www.example.com/features/P1>/geojson:geometry,<http://www.example.com/features/P2>/geojson:geometry\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: *none*\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geo/topo/features/topo-feature-collection/example_2_1.json",
+            "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/linestring.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 28,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "focusNodes": {
+                    "_:n37230153cc6549b490e67e5fbdb29a9fb1": {
+                      "nodes": [
+                        "<http://www.example.com/features/P2>/geojson:geometry",
+                        "<http://www.example.com/features/P1>/geojson:geometry"
+                      ]
+                    },
+                    "_:n37230153cc6549b490e67e5fbdb29a9fb3": {
+                      "nodes": [
+                        "<http://www.example.com/features/P2>/geojson:geometry",
+                        "<http://www.example.com/features/P1>/geojson:geometry"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n37230153cc6549b490e67e5fbdb29a9fb1: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry\n - Shape _:n37230153cc6549b490e67e5fbdb29a9fb3: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": [
+                        "<http://www.example.com/features/LineP1P2>/geojson:topology"
+                      ]
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/LineP1P2>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/LineP1P2>/geojson:topology\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geo/topo/features/topo-feature-collection/example_3_1.json",
+            "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-feature-collection/example_3_1.json",
+            "exampleIndex": 3,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_3_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_3_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_3_1.ttl",
+                  "size": 66,
+                  "isError": false,
+                  "message": "Output Turtle example_3_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "focusNodes": {
+                    "_:n37230153cc6549b490e67e5fbdb29a9fb1": {
+                      "nodes": [
+                        "<http://www.example.com/features/P2>/geojson:geometry",
+                        "<http://www.example.com/features/P3>/geojson:geometry",
+                        "<http://www.example.com/features/P1>/geojson:geometry"
+                      ]
+                    },
+                    "_:n37230153cc6549b490e67e5fbdb29a9fb3": {
+                      "nodes": [
+                        "<http://www.example.com/features/P2>/geojson:geometry",
+                        "<http://www.example.com/features/P3>/geojson:geometry",
+                        "<http://www.example.com/features/P1>/geojson:geometry"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n37230153cc6549b490e67e5fbdb29a9fb1: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P3>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry\n - Shape _:n37230153cc6549b490e67e5fbdb29a9fb3: <http://www.example.com/features/P2>/geojson:geometry,<http://www.example.com/features/P3>/geojson:geometry,<http://www.example.com/features/P1>/geojson:geometry\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": [
+                        "<http://www.example.com/features/LineP3P1>/geojson:topology",
+                        "<http://www.example.com/features/LineP2P3>/geojson:topology",
+                        "<http://www.example.com/features/LineP1P2>/geojson:topology"
+                      ]
+                    },
+                    "topo:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/TriangleP1P2P3>/geojson:topology",
+                        "<http://www.example.com/features/LineP3P1>/geojson:topology",
+                        "<http://www.example.com/features/LineP2P3>/geojson:topology",
+                        "<http://www.example.com/features/LineP1P2>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: <http://www.example.com/features/LineP3P1>/geojson:topology,<http://www.example.com/features/LineP2P3>/geojson:topology,<http://www.example.com/features/LineP1P2>/geojson:topology\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/TriangleP1P2P3>/geojson:topology,<http://www.example.com/features/LineP3P1>/geojson:topology,<http://www.example.com/features/LineP2P3>/geojson:topology,<http://www.example.com/features/LineP1P2>/geojson:topology\n"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0
+      }
+    },
     "ogc.geo.topo.features.topo-polyhedron": {
       "title": "Validation report for ogc.geo.topo.features.topo-polyhedron - 3D (Polyhedron) using nested Polygons and Point topology",
       "bblockName": "3D (Polyhedron) using nested Polygons and Point topology",
       "bblockId": "ogc.geo.topo.features.topo-polyhedron",
-      "generated": "2026-01-13T22:40:47.264311+00:00",
+      "generated": "2026-01-20T04:30:49.177035+00:00",
       "result": true,
       "items": [
         {
@@ -2155,7 +2155,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example_1_1.json from examples"
+                  "message": "Using examples/building_topo.json from examples"
                 },
                 {
                   "op": "jsonld-uplift",
@@ -2204,34 +2204,34 @@
                 {
                   "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:ncd88cafd0fe44d38b596d5292edfc55db3": {
+                    "_:n4ec5adb8628a4bd9b0ddecacfdc36545b1": {
                       "nodes": [
-                        "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
-                        "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
+                        "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
                         "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                        "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
-                        "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
                         "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
-                        "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
                         "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
-                        "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry"
+                        "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
+                        "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
+                        "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
+                        "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry"
                       ]
                     },
-                    "_:ncd88cafd0fe44d38b596d5292edfc55db1": {
+                    "_:n4ec5adb8628a4bd9b0ddecacfdc36545b3": {
                       "nodes": [
-                        "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
-                        "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
+                        "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
                         "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                        "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
                         "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
-                        "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
                         "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
-                        "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry"
+                        "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
+                        "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
+                        "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
+                        "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
+                        "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ncd88cafd0fe44d38b596d5292edfc55db3: <http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry\n - Shape _:ncd88cafd0fe44d38b596d5292edfc55db1: <http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry\n"
+                  "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n4ec5adb8628a4bd9b0ddecacfdc36545b1: <http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry\n - Shape _:n4ec5adb8628a4bd9b0ddecacfdc36545b3: <http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry\n"
                 },
                 {
                   "op": "shacl-report",
@@ -2243,17 +2243,17 @@
                 {
                   "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
                   "focusNodes": {
+                    "topo:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
                     "topo:testTopoReferencesExist": {
                       "nodes": [
                         "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology"
                       ]
-                    },
-                    "topo:testTopoLinesReferencePoints": {
-                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
+                  "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology\n"
                 }
               ]
             }

@@ -1,7 +1,7 @@
 Validation report for ogc.geo.topo.features.topo-arc - Non-linear Arc and Spline Descriptions using Point topology
-Generated 2026-01-13T22:40:41.791753+00:00
+Generated 2026-01-20T04:30:40.090187+00:00
 === Files ===
-Using example_1_1.json from examples
+Using examples/arc_by_center.json from examples
 JSON-LD context is present - uplifting
 Output JSON-LD example_1_1.jsonld created
 Output Turtle example_1_1.ttl created
@@ -16,21 +16,21 @@ Using building block SHACL closures:
  - ../topo-feature/examples/points.ttl
 Using snippet SHACL closures:
  - ../topo-feature/examples/points.ttl
-Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology
- - Shape topo:testTopoLinesReferencePoints: *none*
-
 Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n7a52c06a6161416286eecec722b9bbc0b3: *none*
- - Shape _:n7a52c06a6161416286eecec722b9bbc0b1: *none*
+ - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
+ - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
+
+Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape topo:testTopoLinesReferencePoints: *none*
+ - Shape topo:testTopoReferencesExist: <http://www.example.com/features/1853004>/geojson:topology
 
 === End SHACL ===
 

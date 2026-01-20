@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.datatypes.topology - Geometry using references",
   "bblockName": "Geometry using references",
   "bblockId": "ogc.geo.topo.datatypes.topology",
-  "generated": "2026-01-13T22:40:35.838385+00:00",
+  "generated": "2026-01-20T04:30:35.519536+00:00",
   "result": true,
   "items": [
     {
@@ -23,7 +23,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_1_1.json from examples"
+              "message": "Using example.json from examples"
             },
             {
               "op": "jsonld-uplift",
