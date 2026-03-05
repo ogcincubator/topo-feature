@@ -46,12 +46,25 @@
                     border-width: var(--bs-accordion-border-width);
                 }
             }
+            .anchor {
+                color: black;
+                opacity: 0;
+                text-decoration: none;
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+            }
+            .anchor-container:hover .anchor {
+                opacity: 60%;
+            }
+            .anchor-container:hover .anchor:hover {
+                opacity: 100%;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-01-20T04:30:49.193895+00:00</small>
+            <small class="datetime">Generated at 2026-03-05T23:21:13.503757+00:00</small>
                 <p class="summary fw-semibold text-success">
                     Number of passing building blocks: 7 / 7 (100%)
                 </p>
@@ -61,13 +74,14 @@
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geo.topo.alignments.cityjson-transform" id="bblock-ogc.geo.topo.alignments.cityjson-transform">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geo\.topo\.alignments\.cityjson-transform">
                                     <div class="flex-fill">
                                         CityJSON to TopoFeature transform
                                         <small class="ms-2 bblock-id">ogc.geo.topo.alignments.cityjson-transform</small>
+                                        <a class="anchor" href="#bblock-ogc.geo.topo.alignments.cityjson-transform">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -81,9 +95,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 2 / 2
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.alignments.cityjson-transform-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-1"
                                                             aria-expanded="false" aria-controls="uid-1"
@@ -93,6 +107,7 @@
                                                     </button>
                                                     <a href="geo/topo/alignments/cityjson-transform/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.alignments.cityjson-transform-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -105,9 +120,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.alignments.cityjson-transform-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-2"
                                                             aria-expanded="false" aria-controls="uid-2"
@@ -117,6 +132,7 @@
                                                     </button>
                                                     <a href="geo/topo/alignments/cityjson-transform/example_2_1.json" target="_blank">example_2_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.alignments.cityjson-transform-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -133,13 +149,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geo.topo.datatypes.topology" id="bblock-ogc.geo.topo.datatypes.topology">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geo\.topo\.datatypes\.topology">
                                     <div class="flex-fill">
                                         Geometry using references
                                         <small class="ms-2 bblock-id">ogc.geo.topo.datatypes.topology</small>
+                                        <a class="anchor" href="#bblock-ogc.geo.topo.datatypes.topology">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -153,9 +170,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.datatypes.topology-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-3"
                                                             aria-expanded="false" aria-controls="uid-3"
@@ -165,6 +182,7 @@
                                                     </button>
                                                     <a href="geo/topo/datatypes/topology/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.datatypes.topology-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -185,14 +203,273 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geo.topo.features.topo-feature-collection" id="bblock-ogc.geo.topo.features.topo-feature-collection">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geo\.topo\.features\.topo-feature-collection">
+                                    <div class="flex-fill">
+                                        TopoFeatureCollection
+                                        <small class="ms-2 bblock-id">ogc.geo.topo.features.topo-feature-collection</small>
+                                        <a class="anchor" href="#bblock-ogc.geo.topo.features.topo-feature-collection">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geo.topo.features.topo-feature-collection">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 4 / 4
+                                        </p>
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geo.topo.features.topo-feature-collection-1">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
+                                                            aria-expanded="false" aria-controls="uid-4"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/features/topo-feature-collection/tests/linestring-fail.json" target="_blank">linestring-fail.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-feature-collection-1">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using linestring-fail.json from test resources</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD linestring-fail.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle linestring-fail.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n1d79a36b589b4d4bbe7c6408e8d0071ab1: &lt;file:///github/workspace/P3&gt;/geojson:geometry,&lt;file:///github/workspace/P1&gt;/geojson:geometry
+ - Shape _:n1d79a36b589b4d4bbe7c6408e8d0071ab3: &lt;file:///github/workspace/P3&gt;/geojson:geometry,&lt;file:///github/workspace/P1&gt;/geojson:geometry
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: False
+  Results (2):
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoReferencesExist
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/P1&gt; &lt;file:///github/workspace/P2&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/P2&gt;
+  	Result Path: geojson:relatedFeatures
+  	Source Constraint: [ sh:message Literal(&quot;Referenced features must be present within current graph closure for  topological feature.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           $this a ?geomtype .
+           FILTER ( ?geomtype != geojson:Polygon)
+           FILTER NOT EXISTS { ?ref ?p ?o }
+          }
+  &quot;) ]
+  	Message: Referenced features must be present within current graph closure for  topological feature.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/P1&gt; &lt;file:///github/workspace/P2&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/P2&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+          prefix dct:     &lt;http://purl.org/dc/terms/&gt;
+          PREFIX geosparql: &lt;http://www.opengis.net/ont/geosparql#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref (geojson:geometry|geosparql:hasGeometry|dct:spatial)/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape topo:testTopoReferencesExist: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-feature-collection-2">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
+                                                            aria-expanded="false" aria-controls="uid-5"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geo/topo/features/topo-feature-collection/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-feature-collection-2">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/example-points.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n1d79a36b589b4d4bbe7c6408e8d0071ab1: &lt;http://www.example.com/features/P2&gt;/geojson:geometry,&lt;http://www.example.com/features/P1&gt;/geojson:geometry
+ - Shape _:n1d79a36b589b4d4bbe7c6408e8d0071ab3: &lt;http://www.example.com/features/P2&gt;/geojson:geometry,&lt;http://www.example.com/features/P1&gt;/geojson:geometry
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape topo:testTopoReferencesExist: *none*
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-feature-collection-3">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-6"
+                                                            aria-expanded="false" aria-controls="uid-6"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geo/topo/features/topo-feature-collection/example_2_1.json" target="_blank">example_2_1.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-feature-collection-3">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/linestring.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_2_1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n1d79a36b589b4d4bbe7c6408e8d0071ab1: &lt;http://www.example.com/features/P2&gt;/geojson:geometry,&lt;http://www.example.com/features/P1&gt;/geojson:geometry
+ - Shape _:n1d79a36b589b4d4bbe7c6408e8d0071ab3: &lt;http://www.example.com/features/P2&gt;/geojson:geometry,&lt;http://www.example.com/features/P1&gt;/geojson:geometry
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: &lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-feature-collection-4">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-7"
+                                                            aria-expanded="false" aria-controls="uid-7"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geo/topo/features/topo-feature-collection/example_3_1.json" target="_blank">example_3_1.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-feature-collection-4">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-7">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_3_1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n1d79a36b589b4d4bbe7c6408e8d0071ab1: &lt;http://www.example.com/features/P2&gt;/geojson:geometry,&lt;http://www.example.com/features/P1&gt;/geojson:geometry,&lt;http://www.example.com/features/P3&gt;/geojson:geometry
+ - Shape _:n1d79a36b589b4d4bbe7c6408e8d0071ab3: &lt;http://www.example.com/features/P2&gt;/geojson:geometry,&lt;http://www.example.com/features/P1&gt;/geojson:geometry,&lt;http://www.example.com/features/P3&gt;/geojson:geometry
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/LineP3P1&gt;/geojson:topology,&lt;http://www.example.com/features/LineP2P3&gt;/geojson:topology,&lt;http://www.example.com/features/TriangleP1P2P3&gt;/geojson:topology,&lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: &lt;http://www.example.com/features/LineP3P1&gt;/geojson:topology,&lt;http://www.example.com/features/LineP2P3&gt;/geojson:topology,&lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geo.topo.features.topo-feature" id="bblock-ogc.geo.topo.features.topo-feature">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geo\.topo\.features\.topo-feature">
                                     <div class="flex-fill">
                                         Feature with topology
                                         <small class="ms-2 bblock-id">ogc.geo.topo.features.topo-feature</small>
+                                        <a class="anchor" href="#bblock-ogc.geo.topo.features.topo-feature">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -206,23 +483,24 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 2 / 2
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-feature-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
-                                                            aria-expanded="false" aria-controls="uid-4"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-8"
+                                                            aria-expanded="false" aria-controls="uid-8"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geo/topo/features/topo-feature/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-feature-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-8">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using examples/linestring.json from examples</div>
@@ -241,38 +519,39 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nda248c63b4924936a266414be1aa208fb1: *none*
- - Shape _:nda248c63b4924936a266414be1aa208fb3: *none*
+ - Shape _:nd612a1ad8af74c7fb407e930deb89ce8b1: *none*
+ - Shape _:nd612a1ad8af74c7fb407e930deb89ce8b3: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: &lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: &lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-feature-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
-                                                            aria-expanded="false" aria-controls="uid-5"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-9"
+                                                            aria-expanded="false" aria-controls="uid-9"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geo/topo/features/topo-feature/example_2_1.json" target="_blank">example_2_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-feature-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-9">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using examples/polygon.json from examples</div>
@@ -292,16 +571,16 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nda248c63b4924936a266414be1aa208fb1: *none*
- - Shape _:nda248c63b4924936a266414be1aa208fb3: *none*
+ - Shape _:nd612a1ad8af74c7fb407e930deb89ce8b1: *none*
+ - Shape _:nd612a1ad8af74c7fb407e930deb89ce8b3: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/TriangleP1P2P3&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -311,13 +590,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geo.topo.features.topo-arc" id="bblock-ogc.geo.topo.features.topo-arc">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geo\.topo\.features\.topo-arc">
                                     <div class="flex-fill">
                                         Non-linear Arc and Spline Descriptions using Point topology
                                         <small class="ms-2 bblock-id">ogc.geo.topo.features.topo-arc</small>
+                                        <a class="anchor" href="#bblock-ogc.geo.topo.features.topo-arc">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -331,12 +611,12 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 10 / 10
                                         </p>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geo.topo.features.topo-arc-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-6"
-                                                            aria-expanded="false" aria-controls="uid-6"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-10"
+                                                            aria-expanded="false" aria-controls="uid-10"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -344,11 +624,12 @@
                                                     <a href="../../_sources/features/topo-arc/tests/arc_chord-orientation-fail.json" target="_blank">arc_chord-orientation-fail.json</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-arc-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-10">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
@@ -402,32 +683,32 @@ On instance[&#x27;topology&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Using building block SHACL closures:
  - ../topo-feature/examples/points.ttl</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/chord1&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b1: *none*
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b3: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geo.topo.features.topo-arc-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-7"
-                                                            aria-expanded="false" aria-controls="uid-7"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-11"
+                                                            aria-expanded="false" aria-controls="uid-11"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -435,11 +716,12 @@ On instance[&#x27;topology&#x27;]:
                                                     <a href="../../_sources/features/topo-arc/tests/arc_chord-radius-fail.json" target="_blank">arc_chord-radius-fail.json</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-arc-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-7">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-11">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
@@ -493,32 +775,32 @@ On instance[&#x27;topology&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Using building block SHACL closures:
  - ../topo-feature/examples/points.ttl</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/chord1&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b1: *none*
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b3: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geo.topo.features.topo-arc-3">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-8"
-                                                            aria-expanded="false" aria-controls="uid-8"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-12"
+                                                            aria-expanded="false" aria-controls="uid-12"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -526,11 +808,12 @@ On instance[&#x27;topology&#x27;]:
                                                     <a href="../../_sources/features/topo-arc/tests/circle-fail.json" target="_blank">circle-fail.json</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-arc-3">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-8">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-12">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
@@ -583,32 +866,32 @@ On instance[&#x27;topology&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Using building block SHACL closures:
  - ../topo-feature/examples/points.ttl</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/1853004&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b1: *none*
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b3: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geo.topo.features.topo-arc-4">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-9"
-                                                            aria-expanded="false" aria-controls="uid-9"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-13"
+                                                            aria-expanded="false" aria-controls="uid-13"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -616,11 +899,12 @@ On instance[&#x27;topology&#x27;]:
                                                     <a href="../../_sources/features/topo-arc/tests/spline_with_tangents-fail.json" target="_blank">spline_with_tangents-fail.json</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-arc-4">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-9">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-13">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
@@ -674,43 +958,44 @@ On instance[&#x27;topology&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Using building block SHACL closures:
  - ../topo-feature/examples/points.ttl</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/1853004&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b1: *none*
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b3: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-arc-5">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-10"
-                                                            aria-expanded="false" aria-controls="uid-10"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-14"
+                                                            aria-expanded="false" aria-controls="uid-14"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geo/topo/features/topo-arc/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-arc-5">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-10">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-14">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using examples/arc_by_center.json from examples</div>
@@ -724,43 +1009,44 @@ On instance[&#x27;topology&#x27;]:
  - ../topo-feature/examples/points.ttl</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Using snippet SHACL closures:
  - ../topo-feature/examples/points.ttl</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/1853004&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b1: *none*
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b3: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-arc-6">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-11"
-                                                            aria-expanded="false" aria-controls="uid-11"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-15"
+                                                            aria-expanded="false" aria-controls="uid-15"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geo/topo/features/topo-arc/example_2_1.json" target="_blank">example_2_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-arc-6">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-11">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-15">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using examples/arc.json from examples</div>
@@ -774,43 +1060,44 @@ On instance[&#x27;topology&#x27;]:
  - ../topo-feature/examples/points.ttl</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Using snippet SHACL closures:
  - ../topo-feature/examples/points.ttl</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/arc1&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b1: *none*
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b3: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-arc-7">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-12"
-                                                            aria-expanded="false" aria-controls="uid-12"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-16"
+                                                            aria-expanded="false" aria-controls="uid-16"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geo/topo/features/topo-arc/example_3_1.json" target="_blank">example_3_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-arc-7">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-12">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-16">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using examples/arc_chord.json from examples</div>
@@ -824,43 +1111,44 @@ On instance[&#x27;topology&#x27;]:
  - ../topo-feature/examples/points.ttl</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Using snippet SHACL closures:
  - ../topo-feature/examples/points.ttl</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/chord1&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b1: *none*
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b3: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-arc-8">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-13"
-                                                            aria-expanded="false" aria-controls="uid-13"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-17"
+                                                            aria-expanded="false" aria-controls="uid-17"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geo/topo/features/topo-arc/example_5_1.json" target="_blank">example_5_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-arc-8">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-13">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-17">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using examples/circle.json from examples</div>
@@ -874,43 +1162,44 @@ On instance[&#x27;topology&#x27;]:
  - ../topo-feature/examples/points.ttl</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Using snippet SHACL closures:
  - ../topo-feature/examples/points.ttl</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/1853004&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b1: *none*
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b3: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-arc-9">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-14"
-                                                            aria-expanded="false" aria-controls="uid-14"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-18"
+                                                            aria-expanded="false" aria-controls="uid-18"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geo/topo/features/topo-arc/example_7_1.json" target="_blank">example_7_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-arc-9">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-14">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-18">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using examples/spline.json from examples</div>
@@ -924,43 +1213,44 @@ On instance[&#x27;topology&#x27;]:
  - ../topo-feature/examples/points.ttl</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Using snippet SHACL closures:
  - ../topo-feature/examples/points.ttl</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/1853004&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b1: *none*
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b3: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-arc-10">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-15"
-                                                            aria-expanded="false" aria-controls="uid-15"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-19"
+                                                            aria-expanded="false" aria-controls="uid-19"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geo/topo/features/topo-arc/example_8_1.json" target="_blank">example_8_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-arc-10">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-15">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-19">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using examples/spline_with_tangents.json from examples</div>
@@ -974,21 +1264,21 @@ On instance[&#x27;topology&#x27;]:
  - ../topo-feature/examples/points.ttl</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Using snippet SHACL closures:
  - ../topo-feature/examples/points.ttl</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab3: *none*
- - Shape _:n9ce3b95bdb334e1fa2231b8b435c811ab1: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/1853004&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b1: *none*
+ - Shape _:nfdc6896febac4ee6b8804347d7213ed7b3: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -998,13 +1288,14 @@ On instance[&#x27;topology&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geo.topo.features.topo-line" id="bblock-ogc.geo.topo.features.topo-line">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geo\.topo\.features\.topo-line">
                                     <div class="flex-fill">
                                         Line using Point References
                                         <small class="ms-2 bblock-id">ogc.geo.topo.features.topo-line</small>
+                                        <a class="anchor" href="#bblock-ogc.geo.topo.features.topo-line">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -1016,28 +1307,29 @@ On instance[&#x27;topology&#x27;]:
                             <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geo.topo.features.topo-line">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-success">
-                                            Test passed: 1 / 1
+                                            Test passed: 2 / 2
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-line-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-16"
-                                                            aria-expanded="false" aria-controls="uid-16"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-20"
+                                                            aria-expanded="false" aria-controls="uid-20"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geo/topo/features/topo-line/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-line-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-16">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-20">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/linestring.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
@@ -1053,269 +1345,67 @@ On instance[&#x27;topology&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nb4d0df3b54e741f59a7aedfe7a11a5b3b1: *none*
- - Shape _:nb4d0df3b54e741f59a7aedfe7a11a5b3b3: *none*
+ - Shape _:nfe4e61ecac8a4f2b8adabc6bd832a37cb1: *none*
+ - Shape _:nfe4e61ecac8a4f2b8adabc6bd832a37cb3: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: &lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: &lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geo.topo.features.topo-feature-collection" id="bblock-ogc.geo.topo.features.topo-feature-collection">
-                            <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.geo\.topo\.features\.topo-feature-collection">
-                                    <div class="flex-fill">
-                                        TopoFeatureCollection
-                                        <small class="ms-2 bblock-id">ogc.geo.topo.features.topo-feature-collection</small>
-                                    </div>
-
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
-                                    </span>
-                                </button>
-                            </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geo.topo.features.topo-feature-collection">
-                                <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 4 / 4
-                                        </p>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-line-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-17"
-                                                            aria-expanded="false" aria-controls="uid-17"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-21"
+                                                            aria-expanded="false" aria-controls="uid-21"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="../../_sources/features/topo-feature-collection/tests/linestring-fail.json" target="_blank">linestring-fail.json</a>
-                                                    <span class="badge bg-secondary test_resource">Test resource</span>
-                                                        <span class="badge text-bg-info">Requires fail</span>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-17">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">General</div>
-                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using linestring-fail.json from test resources</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD linestring-fail.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle linestring-fail.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n37230153cc6549b490e67e5fbdb29a9fb1: &lt;file:///github/workspace/P1&gt;/geojson:geometry,&lt;file:///github/workspace/P3&gt;/geojson:geometry
- - Shape _:n37230153cc6549b490e67e5fbdb29a9fb3: &lt;file:///github/workspace/P1&gt;/geojson:geometry,&lt;file:///github/workspace/P3&gt;/geojson:geometry
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
-  Validation Report
-  Conforms: False
-  Results (2):
-  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: topo:testTopoLinesReferencePoints
-  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/P1&gt; &lt;file:///github/workspace/P2&gt; ) ; rdf:type geojson:LineString ]
-  	Value Node: &lt;file:///github/workspace/P2&gt;
-  	Result Path: geojson:topology
-  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
-          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
-          prefix dct:     &lt;http://purl.org/dc/terms/&gt;
-          PREFIX geosparql: &lt;http://www.opengis.net/ont/geosparql#&gt;
-  
-          SELECT $this (geojson:topology as ?path) (?ref as ?value)
-          WHERE {
-           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
-           FILTER NOT EXISTS {
-               ?ref (geojson:geometry|geosparql:hasGeometry|dct:spatial)/rdf:type geojson:Point }
-          }
-  &quot;) ]
-  	Message: Lines topologies must reference points within current graph closure.
-  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: topo:testTopoReferencesExist
-  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/P1&gt; &lt;file:///github/workspace/P2&gt; ) ; rdf:type geojson:LineString ]
-  	Value Node: &lt;file:///github/workspace/P2&gt;
-  	Result Path: geojson:relatedFeatures
-  	Source Constraint: [ sh:message Literal(&quot;Referenced features must be present within current graph closure for  topological feature.&quot;) ; sh:select Literal(&quot;
-          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
-  
-          SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)
-          WHERE {
-           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
-           $this a ?geomtype .
-           FILTER ( ?geomtype != geojson:Polygon)
-           FILTER NOT EXISTS { ?ref ?p ?o }
-          }
-  &quot;) ]
-  	Message: Referenced features must be present within current graph closure for  topological feature.
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
- - Shape topo:testTopoReferencesExist: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card mb-2 validation-item ">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-18"
-                                                            aria-expanded="false" aria-controls="uid-18"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="geo/topo/features/topo-feature-collection/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <a href="geo/topo/features/topo-line/example_2_1.json" target="_blank">example_2_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-line-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-18">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-21">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using examples/example-points.json from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n37230153cc6549b490e67e5fbdb29a9fb1: &lt;http://www.example.com/features/P1&gt;/geojson:geometry,&lt;http://www.example.com/features/P2&gt;/geojson:geometry
- - Shape _:n37230153cc6549b490e67e5fbdb29a9fb3: &lt;http://www.example.com/features/P1&gt;/geojson:geometry,&lt;http://www.example.com/features/P2&gt;/geojson:geometry
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
- - Shape topo:testTopoReferencesExist: *none*
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card mb-2 validation-item ">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-19"
-                                                            aria-expanded="false" aria-controls="uid-19"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="geo/topo/features/topo-feature-collection/example_2_1.json" target="_blank">example_2_1.json</a>
-                                                    <span class="badge bg-secondary example">Example</span>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-19">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using examples/linestring.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/multilinestring.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_2_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Using building block SHACL closures:
+ - ../topo-feature/examples/points.ttl</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Using snippet SHACL closures:
+ - ../topo-feature/examples/points.ttl</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n37230153cc6549b490e67e5fbdb29a9fb1: &lt;http://www.example.com/features/P2&gt;/geojson:geometry,&lt;http://www.example.com/features/P1&gt;/geojson:geometry
- - Shape _:n37230153cc6549b490e67e5fbdb29a9fb3: &lt;http://www.example.com/features/P2&gt;/geojson:geometry,&lt;http://www.example.com/features/P1&gt;/geojson:geometry
+ - Shape _:nfe4e61ecac8a4f2b8adabc6bd832a37cb1: *none*
+ - Shape _:nfe4e61ecac8a4f2b8adabc6bd832a37cb3: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: &lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
- - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card mb-2 validation-item ">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-20"
-                                                            aria-expanded="false" aria-controls="uid-20"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="geo/topo/features/topo-feature-collection/example_3_1.json" target="_blank">example_3_1.json</a>
-                                                    <span class="badge bg-secondary example">Example</span>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-20">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example.json from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_3_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n37230153cc6549b490e67e5fbdb29a9fb1: &lt;http://www.example.com/features/P2&gt;/geojson:geometry,&lt;http://www.example.com/features/P3&gt;/geojson:geometry,&lt;http://www.example.com/features/P1&gt;/geojson:geometry
- - Shape _:n37230153cc6549b490e67e5fbdb29a9fb3: &lt;http://www.example.com/features/P2&gt;/geojson:geometry,&lt;http://www.example.com/features/P3&gt;/geojson:geometry,&lt;http://www.example.com/features/P1&gt;/geojson:geometry
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: &lt;http://www.example.com/features/LineP3P1&gt;/geojson:topology,&lt;http://www.example.com/features/LineP2P3&gt;/geojson:topology,&lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
- - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/TriangleP1P2P3&gt;/geojson:topology,&lt;http://www.example.com/features/LineP3P1&gt;/geojson:topology,&lt;http://www.example.com/features/LineP2P3&gt;/geojson:topology,&lt;http://www.example.com/features/LineP1P2&gt;/geojson:topology
+ - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/MultiLineP1P2P3&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1325,13 +1415,14 @@ On instance[&#x27;topology&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geo.topo.features.topo-polyhedron" id="bblock-ogc.geo.topo.features.topo-polyhedron">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geo\.topo\.features\.topo-polyhedron">
                                     <div class="flex-fill">
                                         3D (Polyhedron) using nested Polygons and Point topology
                                         <small class="ms-2 bblock-id">ogc.geo.topo.features.topo-polyhedron</small>
+                                        <a class="anchor" href="#bblock-ogc.geo.topo.features.topo-polyhedron">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -1345,23 +1436,24 @@ On instance[&#x27;topology&#x27;]:
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geo.topo.features.topo-polyhedron-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-21"
-                                                            aria-expanded="false" aria-controls="uid-21"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-22"
+                                                            aria-expanded="false" aria-controls="uid-22"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geo/topo/features/topo-polyhedron/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geo.topo.features.topo-polyhedron-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-21">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-22">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using examples/building_topo.json from examples</div>
@@ -1376,16 +1468,16 @@ On instance[&#x27;topology&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n4ec5adb8628a4bd9b0ddecacfdc36545b1: &lt;http://www.example.com/features/P479829.666_5705858.785_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479824.155_5705853.684_110&gt;/geojson:geometry,&lt;http://www.example.com/features/P479816.67_5705861.672_110&gt;/geojson:geometry,&lt;http://www.example.com/features/P479822.187_5705866.783_120&gt;/geojson:geometry,&lt;http://www.example.com/features/P479824.155_5705853.684_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479829.666_5705858.785_120&gt;/geojson:geometry,&lt;http://www.example.com/features/P479816.67_5705861.672_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479822.187_5705866.783_100&gt;/geojson:geometry
- - Shape _:n4ec5adb8628a4bd9b0ddecacfdc36545b3: &lt;http://www.example.com/features/P479829.666_5705858.785_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479824.155_5705853.684_110&gt;/geojson:geometry,&lt;http://www.example.com/features/P479816.67_5705861.672_110&gt;/geojson:geometry,&lt;http://www.example.com/features/P479822.187_5705866.783_120&gt;/geojson:geometry,&lt;http://www.example.com/features/P479824.155_5705853.684_100&gt;/geojson:geometry,&lt;http://www.example.com/features/DENW19AL0000giv5BL&gt;/geojson:geometry,&lt;http://www.example.com/features/P479829.666_5705858.785_120&gt;/geojson:geometry,&lt;http://www.example.com/features/P479816.67_5705861.672_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479822.187_5705866.783_100&gt;/geojson:geometry
+ - Shape _:n03b93a026441452e9f3549dffa0d3bf2b3: &lt;http://www.example.com/features/P479816.67_5705861.672_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479816.67_5705861.672_110&gt;/geojson:geometry,&lt;http://www.example.com/features/DENW19AL0000giv5BL&gt;/geojson:geometry,&lt;http://www.example.com/features/P479824.155_5705853.684_110&gt;/geojson:geometry,&lt;http://www.example.com/features/P479829.666_5705858.785_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479824.155_5705853.684_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479822.187_5705866.783_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479822.187_5705866.783_120&gt;/geojson:geometry,&lt;http://www.example.com/features/P479829.666_5705858.785_120&gt;/geojson:geometry
+ - Shape _:n03b93a026441452e9f3549dffa0d3bf2b1: &lt;http://www.example.com/features/P479816.67_5705861.672_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479816.67_5705861.672_110&gt;/geojson:geometry,&lt;http://www.example.com/features/P479824.155_5705853.684_110&gt;/geojson:geometry,&lt;http://www.example.com/features/P479829.666_5705858.785_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479824.155_5705853.684_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479822.187_5705866.783_100&gt;/geojson:geometry,&lt;http://www.example.com/features/P479822.187_5705866.783_120&gt;/geojson:geometry,&lt;http://www.example.com/features/P479829.666_5705858.785_120&gt;/geojson:geometry
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: &lt;http://www.example.com/features/DENW19AL0000giv5BL&gt;/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1408,13 +1500,20 @@ On instance[&#x27;topology&#x27;]:
                         accordionEntries.forEach(e => e.classList.remove('show'));
                     }
                 });
-                if (location.hash.startsWith('#bblock-')) {
+                if (/^#(bblock|item)-/.test(location.hash)) {
                     const highlight = document.querySelector(location.hash.replaceAll('.', '\\.'));
                     if (highlight) {
-                        highlight.querySelector('.accordion-collapse').classList.add('show');
+                        highlight.closest('.accordion-collapse').classList.add('show');
                         highlight.classList.add('highlighted');
                     }
                 }
+                document.addEventListener('click', ev => {
+                    if (!ev.target.classList.contains('anchor') || !ev.target.href) {
+                      return;
+                    }
+                    ev.stopPropagation();
+                    navigator?.clipboard?.writeText(ev.target.href);
+                });
             });
         </script>
     </body>

@@ -9,6 +9,8 @@ allOf:
       - properties:
           type:
             type: string
-            const: LineString
+            enum:
+            - LineString
+            - MultiLineString
   required:
   - topology

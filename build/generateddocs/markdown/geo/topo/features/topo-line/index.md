@@ -22,8 +22,7 @@ This is a generalisation of the TopoJSON concept using inline data, and hence no
 
 ## Examples
 
-### Example GeoJSON feature using topology
-See panel to right - note that a more user friendly "collapsable" version is in development. 
+### LineString
 #### json
 ```json
 {
@@ -71,6 +70,67 @@ See panel to right - note that a more user friendly "collapsable" version is in 
 
 ```
 
+
+### MultiLineString
+#### json
+```json
+{
+  "type": "Feature",
+  "id": "MultiLineP1P2P3",
+  "geometry": null,
+  "topology": {
+    "type": "MultiLineString",
+    "references": [
+      [
+        "P1",
+        "P2"
+      ],
+      [
+        "P2",
+        "P3"
+      ]
+    ]
+  },
+  "properties": null
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
+  "type": "Feature",
+  "id": "MultiLineP1P2P3",
+  "geometry": null,
+  "topology": {
+    "type": "MultiLineString",
+    "references": [
+      [
+        "P1",
+        "P2"
+      ],
+      [
+        "P2",
+        "P3"
+      ]
+    ]
+  },
+  "properties": null
+}
+```
+
+#### ttl
+```ttl
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.example.com/features/MultiLineP1P2P3> a geojson:Feature ;
+    geojson:topology [ a geojson:MultiLineString ;
+            geojson:relatedFeatures ( ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ( <http://www.example.com/features/P2> <http://www.example.com/features/P3> ) ) ] .
+
+
+```
+
 ## Schema
 
 ```yaml
@@ -85,7 +145,9 @@ allOf:
       - properties:
           type:
             type: string
-            const: LineString
+            enum:
+            - LineString
+            - MultiLineString
   required:
   - topology
 
