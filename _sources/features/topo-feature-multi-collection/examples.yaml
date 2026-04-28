@@ -1,23 +1,22 @@
 - title: Cube example
   content: |
     Self-contained collection of topology objects defining a Cube
-    ![Cube Example](https://github.com/surroundaustralia/topo-feature/blob/master/_sources/features/topo-feature-multi-collection/assets/cube.png)
+    ![Cube Example](assets/cube.png)
 
   base-output-filename: cube
   snippets:
     - language: json
       ref: examples/cube.json
-      base-output-filename: cube
+
 
 - title: Tetrahedron example
   content: |
     Self-contained collection of topology objects defining a Tetrahedron
-    ![Cube Example](https://github.com/surroundaustralia/topo-feature/blob/master/_sources/features/topo-feature-multi-collection/assets/tetrahedron.png)
+    ![Tetrahedron Example]assets/tetrahedron.png)
 
   base-output-filename: tetrahedron
   snippets:
     - language: json
-      base-output-filename: tetrahedron
       ref: examples/tetrahedron.json
 
 
@@ -26,6 +25,7 @@
     A minimal example showing 5 Point features used as topology nodes.
     Points have explicit 3D coordinates and serve as the base geometry for all higher-order topology.
     All other feature types reference these points (directly or transitively) to resolve coordinates.
+  base-output-filename: points
   snippets:
     - language: json
       ref: examples/points-example.json
@@ -35,10 +35,11 @@
     Edge features using the 'references' model of topology — each edge has type 'LineString'
     and references two Point feature IDs in its topology.references array.
     geometry is null; actual coordinates are resolved from the referenced points.
+  base-output-filename: edges
   snippets:
     - language: json
       ref: examples/edges-example.json
-      base-output-filename: edges
+
 
 - title: Faces collection (faces referencing edges via Ring directed_references)
   content: |
@@ -50,7 +51,7 @@
   snippets:
     - language: json
       ref: examples/faces-example.json
-      base-output-filename: faces
+  base-output-filename: faces
 
 - title: Solid (Polyhedron) referencing faces via Shell directed_references
   content: |
@@ -60,7 +61,7 @@
   snippets:
     - language: json
       ref: examples/solids-example.json
-      base-output-filename: solids
+  base-output-filename: solids
 
 - title: Complete 2D Sections Topology (all feature types)
   content: |
@@ -74,4 +75,4 @@
   snippets:
     - language: json
       ref: examples/2d-sections-complete.json
-      base-output-filename: 2d-sections
+  base-output-filename: 2d-sections
