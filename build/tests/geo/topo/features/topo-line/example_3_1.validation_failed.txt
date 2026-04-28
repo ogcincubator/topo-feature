@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-line - Line using Point References
-Generated 2026-04-26T00:19:54.542346+00:00
+Generated 2026-04-28T06:14:33.431518+00:00
 === Files ===
 Using examples/edge-from-2d-sections.json from examples
 JSON-LD context is present - uplifting
@@ -13,13 +13,13 @@ Using the following JSON Schema: #testCollection
 ** Validation error **
 ValidationError: {'id': 'uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38', 'type': 'Feature', 'geometry': {'type': 'Point', 'coordinates': [18.0, 10.0, 3.0]}, 'properties': None} is not valid under any of the given schemas
 
-Failed validating 'anyOf' in schema['properties']['points']['items']['allOf'][0]:
+Failed validating 'anyOf' in schema[1]['allOf'][0]:
     {'$anchor': 'FeatureCollectionOptions',
      'anyOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.yaml'},
                {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml'},
                {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml'}]}
 
-On instance['points'][0]:
+On instance:
     {'geometry': {'coordinates': [18.0, 10.0, 3.0], 'type': 'Point'},
      'id': 'uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38',
      'properties': None,
@@ -32,39 +32,39 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n4f79e0415256471ca3ee07c2114d8935b1: *none*
- - Shape _:n4f79e0415256471ca3ee07c2114d8935b3: *none*
+ - Shape _:n4f7b3d5c78ae4650bb4bb0d0d316a1d5b1: *none*
+ - Shape _:n4f7b3d5c78ae4650bb4bb0d0d316a1d5b3: *none*
 
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoReferencesExist: *none*
  - Shape topo:testTopoLinesReferencePoints: *none*
+ - Shape topo:testTopoReferencesExist: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureCollectionShape: *none*
+ - Shape geojson:FeatureShape: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: *none*
 
 === End SHACL ===
 

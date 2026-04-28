@@ -374,7 +374,7 @@ description: Line Feature with geometry by reference
 $defs:
   testCollection:
     $anchor: testCollection
-    description: A convienence ref to a complete, testable collection objects and
+    description: A convienence ref to a complete, testable collection of objects and
       references
     $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
 allOf:

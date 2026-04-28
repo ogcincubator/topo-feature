@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2026-04-26",
+  "dateOfLastChange": "2026-04-28",
   "link": "https://github.com/icsm-au/3d-csdm-schema",
   "sources": [],
   "shaclClosures": [],
@@ -23,12 +23,12 @@
   ],
   "shaclShapes": {
     "ogc.geo.topo.features.topo-feature": [
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ],
     "ogc.geo.topo.features.topo-feature-collection": [
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ],
     "ogc.geo.features.featureCollection": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
@@ -38,8 +38,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.geo.topo.features.topo-feature-multi-collection",
     "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.topo.features.topo-feature-multi-collection",
     "ogc.geo.topo.datatypes.topology"
   ],
   "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
@@ -129,7 +129,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Line Feature with geometry by reference\n$defs:\n  testCollection:\n    $anchor: testCollection\n    description: A convienence ref to a complete, testable collection objects and\n      references\n    $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml\nallOf:\n- $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml\n- properties:\n    topology:\n      allOf:\n      - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml\n      - properties:\n          type:\n            type: string\n            enum:\n            - LineString\n            - MultiLineString\n  required:\n  - topology\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Line Feature with geometry by reference\n$defs:\n  testCollection:\n    $anchor: testCollection\n    description: A convienence ref to a complete, testable collection of objects and\n      references\n    $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml\nallOf:\n- $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml\n- properties:\n    topology:\n      allOf:\n      - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml\n      - properties:\n          type:\n            type: string\n            enum:\n            - LineString\n            - MultiLineString\n  required:\n  - topology\n",
   "gitRepository": "https://github.com/surroundaustralia/topo-feature",
   "gitPath": "_sources/features/topo-line"
 }

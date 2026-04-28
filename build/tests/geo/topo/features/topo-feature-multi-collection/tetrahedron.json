@@ -161,7 +161,7 @@
       ]
     }
   ],
-  "vectorObservations": [
+  "edges": [
     {
       "id": "uuid:cd886c39-cc01-4b51-b859-b3a6303ce020",
       "type": "FeatureCollection",
@@ -172,12 +172,10 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "Edge",
-            "vertices": [
-              [
-                "uuid:e89491fc-d6e7-479a-9e4b-3159a62ef302",
-                "uuid:94b1472b-5c9c-4e21-a62f-98d47fb891fe"
-              ]
+            "type": "LineString",
+            "references": [
+              "uuid:e89491fc-d6e7-479a-9e4b-3159a62ef302",
+              "uuid:94b1472b-5c9c-4e21-a62f-98d47fb891fe"
             ]
           },
           "properties": {
@@ -191,12 +189,10 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "Edge",
-            "vertices": [
-              [
-                "uuid:94b1472b-5c9c-4e21-a62f-98d47fb891fe",
-                "uuid:8e33e70b-b67f-4373-8151-69c2d6e44912"
-              ]
+            "type": "LineString",
+            "references": [
+              "uuid:94b1472b-5c9c-4e21-a62f-98d47fb891fe",
+              "uuid:8e33e70b-b67f-4373-8151-69c2d6e44912"
             ]
           },
           "properties": {
@@ -210,12 +206,10 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "Edge",
-            "vertices": [
-              [
-                "uuid:8e33e70b-b67f-4373-8151-69c2d6e44912",
-                "uuid:e89491fc-d6e7-479a-9e4b-3159a62ef302"
-              ]
+            "type": "LineString",
+            "references": [
+              "uuid:8e33e70b-b67f-4373-8151-69c2d6e44912",
+              "uuid:e89491fc-d6e7-479a-9e4b-3159a62ef302"
             ]
           },
           "properties": {
@@ -229,12 +223,10 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "Edge",
-            "vertices": [
-              [
-                "uuid:e89491fc-d6e7-479a-9e4b-3159a62ef302",
-                "uuid:4e251dd0-97a0-42cf-b1b4-9a31e69f042c"
-              ]
+            "type": "LineString",
+            "references": [
+              "uuid:e89491fc-d6e7-479a-9e4b-3159a62ef302",
+              "uuid:4e251dd0-97a0-42cf-b1b4-9a31e69f042c"
             ]
           },
           "properties": {
@@ -248,12 +240,10 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "Edge",
-            "vertices": [
-              [
-                "uuid:4e251dd0-97a0-42cf-b1b4-9a31e69f042c",
-                "uuid:94b1472b-5c9c-4e21-a62f-98d47fb891fe"
-              ]
+            "type": "LineString",
+            "references": [
+              "uuid:4e251dd0-97a0-42cf-b1b4-9a31e69f042c",
+              "uuid:94b1472b-5c9c-4e21-a62f-98d47fb891fe"
             ]
           },
           "properties": {
@@ -267,12 +257,10 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "Edge",
-            "vertices": [
-              [
-                "uuid:8e33e70b-b67f-4373-8151-69c2d6e44912",
-                "uuid:4e251dd0-97a0-42cf-b1b4-9a31e69f042c"
-              ]
+            "type": "LineString",
+            "references": [
+              "uuid:8e33e70b-b67f-4373-8151-69c2d6e44912",
+              "uuid:4e251dd0-97a0-42cf-b1b4-9a31e69f042c"
             ]
           },
           "properties": {

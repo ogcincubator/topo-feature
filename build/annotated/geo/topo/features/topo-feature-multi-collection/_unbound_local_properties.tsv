@@ -1,12 +1,5 @@
 path
 /type
 /metadata
-/points/features
-/points/features/geometry
-/points/features/geometry/type
-/points/features/geometry/coordinates
-/edges/topology/type
-/edges/topology/references
-/solids/geometry
-/solids/topology
-/solids/topology/type
+/points/_oneOf/1/features
+/edges/_oneOf/1/features
