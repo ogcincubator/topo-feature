@@ -235,3 +235,8 @@ Where such supporting data is supplied in a local or Engineering CRS, tooling sh
 [PROJ4](https://proj4js.org/) strings may be included for software compatibility, but should not be treated as the authoritative definition.
 
 This pattern allows local-grid supporting data to be visualised and compared with 3D CSDM content without weakening the CRS requirements for authoritative cadastral and survey data.
+
+## The Math
+
+1. [Helmert Transformation](helmert.md)
+
