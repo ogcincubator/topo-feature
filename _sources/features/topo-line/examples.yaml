@@ -25,4 +25,5 @@
   snippets:
     - language: json
       ref: examples/edge-from-2d-sections.json
-      schema-ref: "#testCollection"
+      schema-ref:       "#testCollection"
+      # "bblocks://ogc.geo.topo.features.topo-feature-multi-collection"

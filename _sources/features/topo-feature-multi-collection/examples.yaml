@@ -12,7 +12,7 @@
 - title: Tetrahedron example
   content: |
     Self-contained collection of topology objects defining a Tetrahedron
-    ![Tetrahedron Example]assets/tetrahedron.png)
+    ![Tetrahedron Example](assets/tetrahedron.png)
 
   base-output-filename: tetrahedron
   snippets:

@@ -4,7 +4,7 @@
   "$defs": {
     "testCollection": {
       "$anchor": "testCollection",
-      "description": "A convienence ref to a complete, testable collection objects and references",
+      "description": "A convienence ref to a complete, testable collection of objects and references",
       "$ref": "bblocks://ogc.geo.topo.features.topo-feature-multi-collection"
     }
   },

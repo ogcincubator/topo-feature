@@ -57,12 +57,17 @@ def process(input_data):
     for pc in data["points"]:
         data["features"].extend(pc["features"])
     geomsmap = extract_feature_coordinates(data["points"])
-    for feat in walk_features ( data["edges"] ):
-        if "topology" in feat:
-            coords =  [ geomsmap[node] for node in feat["topology"]["references"] ]
-            feat["geometry"] = { "type": "LineString", "coordinates": coords  }
-            geomsmap[ feat["id"]]  = coords
-        data["features"].append(feat)
+    geomtype = {"edges": "LineString", "solids": "Solid", "Ring": "LineString", "faces": "Polygon" , "shells": "Solid"}
+    for feat_type in [ "edges", "faces", "observedVectors", "adoptedVectors", "rings" ] :
+        if not feat_type in data:
+            continue
+        for feat in walk_features ( data[feat_type] ):
+            if "topology" in feat:
+                if "references" in feat["topology"] :
+                    coords =  [ geomsmap[node] for node in feat["topology"]["references"] ]
+                    feat["geometry"] = { "type": geomtype[feat_type], "coordinates": coords  }
+                    geomsmap[ feat["id"]]  = coords
+                    data["features"].append(feat)
 
 
     # Create GeoDataFrame from GeoJSON-like dict
