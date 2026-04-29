@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.features.topo-polyhedron - 3D (Polyhedron) using nested Polygons and Point topology",
   "bblockName": "3D (Polyhedron) using nested Polygons and Point topology",
   "bblockId": "ogc.geo.topo.features.topo-polyhedron",
-  "generated": "2026-04-29T03:32:17.706371+00:00",
+  "generated": "2026-04-29T03:47:14.150988+00:00",
   "result": true,
   "items": [
     {
@@ -72,17 +72,17 @@
             {
               "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
               "focusNodes": {
+                "topo:testTopoLinesReferencePoints": {
+                  "nodes": []
+                },
                 "topo:testTopoReferencesExist": {
                   "nodes": [
                     "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology"
                   ]
-                },
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
+              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology\n"
             },
             {
               "op": "shacl-report",
@@ -94,34 +94,34 @@
             {
               "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:nab4491b7a63a4f0c815ccf78c54a8a56b1": {
+                "_:n2266989a45f049c7b6479d5c70d23cd8b3": {
                   "nodes": [
-                    "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
-                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
                     "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
+                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
                     "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry"
+                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry"
                   ]
                 },
-                "_:nab4491b7a63a4f0c815ccf78c54a8a56b3": {
+                "_:n2266989a45f049c7b6479d5c70d23cd8b1": {
                   "nodes": [
-                    "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
-                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
-                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
                     "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
                     "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry"
+                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nab4491b7a63a4f0c815ccf78c54a8a56b1: <http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry\n - Shape _:nab4491b7a63a4f0c815ccf78c54a8a56b3: <http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry\n"
+              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n2266989a45f049c7b6479d5c70d23cd8b3: <http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry\n - Shape _:n2266989a45f049c7b6479d5c70d23cd8b1: <http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry\n"
             },
             {
               "op": "shacl-report",
@@ -133,29 +133,29 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
               "focusNodes": {
-                "geojson:FeatureCollectionShape": {
-                  "nodes": [
-                    "_:Nc7ef38b0d8054189a5db546f8026b5dc"
-                  ]
-                },
-                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                "geojson:GeometryShape/sh:or/rdf:first": {
                   "nodes": []
                 },
                 "geojson:GeometryShape": {
                   "nodes": []
                 },
-                "geojson:LinkShape": {
-                  "nodes": []
+                "geojson:FeatureCollectionShape": {
+                  "nodes": [
+                    "_:N8aa003ede17a4b358549ec1a8f2e5d80"
+                  ]
                 },
                 "geojson:FeatureShape": {
                   "nodes": []
                 },
-                "geojson:GeometryShape/sh:or/rdf:first": {
+                "geojson:LinkShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:FeatureCollectionShape: _:Nc7ef38b0d8054189a5db546f8026b5dc\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureCollectionShape: _:N8aa003ede17a4b358549ec1a8f2e5d80\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -170,31 +170,31 @@
                 "geojson:GeometryShape": {
                   "nodes": []
                 },
-                "geojson:LinkShape": {
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "<http://www.example.com/features/P479824.155_5705853.684_110>",
+                    "<http://www.example.com/features/P479829.666_5705858.785_100>",
+                    "<http://www.example.com/features/P479822.187_5705866.783_120>",
+                    "<http://www.example.com/features/P479824.155_5705853.684_100>",
+                    "<http://www.example.com/features/DENW19AL0000giv5BL>",
+                    "<http://www.example.com/features/P479822.187_5705866.783_100>",
+                    "<http://www.example.com/features/P479816.67_5705861.672_100>",
+                    "<http://www.example.com/features/P479816.67_5705861.672_110>",
+                    "<http://www.example.com/features/P479829.666_5705858.785_120>"
+                  ]
+                },
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
                 "geojson:GeometryShape/sh:or/rdf:first": {
                   "nodes": []
                 },
-                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                "geojson:LinkShape": {
                   "nodes": []
-                },
-                "geojson:FeatureShape": {
-                  "nodes": [
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>",
-                    "<http://www.example.com/features/P479822.187_5705866.783_100>",
-                    "<http://www.example.com/features/DENW19AL0000giv5BL>",
-                    "<http://www.example.com/features/P479824.155_5705853.684_110>",
-                    "<http://www.example.com/features/P479816.67_5705861.672_110>",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>",
-                    "<http://www.example.com/features/P479822.187_5705866.783_120>",
-                    "<http://www.example.com/features/P479816.67_5705861.672_100>",
-                    "<http://www.example.com/features/P479824.155_5705853.684_100>"
-                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <http://www.example.com/features/P479829.666_5705858.785_120>,<http://www.example.com/features/P479822.187_5705866.783_100>,<http://www.example.com/features/DENW19AL0000giv5BL>,<http://www.example.com/features/P479824.155_5705853.684_110>,<http://www.example.com/features/P479816.67_5705861.672_110>,<http://www.example.com/features/P479829.666_5705858.785_100>,<http://www.example.com/features/P479822.187_5705866.783_120>,<http://www.example.com/features/P479816.67_5705861.672_100>,<http://www.example.com/features/P479824.155_5705853.684_100>\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureShape: <http://www.example.com/features/P479824.155_5705853.684_110>,<http://www.example.com/features/P479829.666_5705858.785_100>,<http://www.example.com/features/P479822.187_5705866.783_120>,<http://www.example.com/features/P479824.155_5705853.684_100>,<http://www.example.com/features/DENW19AL0000giv5BL>,<http://www.example.com/features/P479822.187_5705866.783_100>,<http://www.example.com/features/P479816.67_5705861.672_100>,<http://www.example.com/features/P479816.67_5705861.672_110>,<http://www.example.com/features/P479829.666_5705858.785_120>\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n"
             }
           ]
         }
