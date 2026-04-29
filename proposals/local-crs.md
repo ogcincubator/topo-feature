@@ -12,10 +12,8 @@ This may support visualisation of BIM or CAD context, comparison with survey geo
 
 ## Background
 
-## Background
-
 This document is a preliminary work in progress. 
-There is ongoing work by OGC to develop a Semantic Web counterpart to [ISO 19111:2019 Geographic Information - Referencing by Coordinates](https://www.iso.org/obp/ui/en/#iso:std:iso:19111:ed-3:v1:en).  
+There is ongoing work by OGC to develop a Semantic Web counterpart to [ISO 19111:2019 Geographic Information - Referencing by Coordinates](https://www.iso.org/obp/ui/en/#iso:std:iso:19111:ed-3:v1:en).
 The OGC work can be found in the [OGC CRS Ontology project](https://github.com/opengeospatial/ontology-crs).
 
 The OGC CRS Ontology provides vocabularies for describing coordinate reference systems, spatial reference systems, and their components.

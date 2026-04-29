@@ -56,11 +56,27 @@ vertical reference, where relevant
 
 Let the source / local coordinate be:
 
-$$ p =\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$
+$$
+p =
+\begin{bmatrix}
+x \\
+y \\
+z \\
+1
+\end{bmatrix}
+$$
 
 and the transformed / map coordinate be:
 
-$$P = \begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix}$$
+$$
+P =
+\begin{bmatrix}
+X \\
+Y \\
+Z \\
+1
+\end{bmatrix}
+$$
 
 Then:
 
@@ -84,8 +100,16 @@ transformation direction = source CRS to target CRS
 
 ## Common Scale Matrix
 
-If the common scale factor is $s$, then:
-$$S = \begin{bmatrix} s & 0 & 0 & 0 \\ 0 & s & 0 & 0 \\ 0 & 0 & s & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+If the common scale factor is $S$, then:
+$$
+S =
+\begin{bmatrix}
+s & 0 & 0 & 0 \\
+0 & s & 0 & 0 \\
+0 & 0 & s & 0 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
 
 If `s = 1.0000` there is no scaling.
 
@@ -107,7 +131,15 @@ Other common scales are:
 
 For a right-handed coordinate system, with positive rotation counter-clockwise in the XY plane:
 
-$$R_z = \begin{bmatrix} \cos(\theta) & -\sin(\theta) & 0 & 0 \\ \sin(\theta) & \cos(\theta) & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+$$
+R_z =
+\begin{bmatrix}
+\cos(\theta) & -\sin(\theta) & 0 & 0 \\
+\sin(\theta) & \cos(\theta)  & 0 & 0 \\
+0            & 0             & 1 & 0 \\
+0            & 0             & 0 & 1
+\end{bmatrix}
+$$
 
 where $\theta$ is the rotation angle in radians.
 
@@ -119,17 +151,43 @@ $$\theta = \frac{\theta_{deg}}{180}\pi$$
 
 If the translation from the source / local CRS to the target CRS is $t_x$, $t_y$, and $t_z$, then:
 
-$$T = \begin{bmatrix} 1 & 0 & 0 & t_x \\ 0 & 1 & 0 & t_y \\ 0 & 0 & 1 & t_z \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+$$
+T =
+\begin{bmatrix}
+1 & 0 & 0 & t_x \\
+0 & 1 & 0 & t_y \\
+0 & 0 & 1 & t_z \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
 
 ## Combined Transformation Matrix
 
 Because the scale is common, the scale and rotation can be combined directly:
 
-$$M = \begin{bmatrix} s\cos(\theta) & -s\sin(\theta) & 0 & t_x \\ s\sin(\theta) & s\cos(\theta) & 0 & t_y \\ 0 & 0 & s & t_z \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+$$
+M =
+\begin{bmatrix}
+s\cos(\theta) & -s\sin(\theta) & 0 & t_x \\
+s\sin(\theta) &  s\cos(\theta) & 0 & t_y \\
+0             & 0              & s & t_z \\
+0             & 0              & 0 & 1
+\end{bmatrix}
+$$
 
 then:
 
-$$\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix} = \begin{bmatrix} s\cos(\theta) & -s\sin(\theta) & 0 & t_x \\ s\sin(\theta) & s\cos(\theta) & 0 & t_y \\ 0 & 0 & s & t_z \\ 0 & 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$
+$$
+\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix}
+=
+\begin{bmatrix}
+s\cos(\theta) & -s\sin(\theta) & 0 & t_x \\
+s\sin(\theta) &  s\cos(\theta) & 0 & t_y \\
+0             & 0              & s & t_z \\
+0             & 0              & 0 & 1
+\end{bmatrix}
+\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}
+$$
 
 Expanded into equations:
 
@@ -165,7 +223,15 @@ sin(34.46031°) ≈ 0.5662
 
 the matrix is: 
 
-$$M=\begin{bmatrix} 0.8243 & -0.5662 & 0.0 & 392000.0 \\ 0.5662 & 0.8243 & 0.0 & 6465000.0 \\ 0.0 & 0.0 & 1.0 & 12.4 \\ 0.0 & 0.0 & 0.0 & 1.0 \end{bmatrix}$$
+$$
+M =
+\begin{bmatrix}
+0.8243 & -0.5662 & 0.0 & 392000.0  \\
+0.5662 &  0.8243 & 0.0 & 6465000.0 \\
+0.0    &  0.0    & 1.0 & 12.4      \\
+0.0    &  0.0    & 0.0 & 1.0
+\end{bmatrix}
+$$
 
 ## Required Operation Conventions
 
@@ -316,7 +382,17 @@ $\begin{aligned}\cos(90-\alpha) = \sin(\alpha) \\ \sin(90-\alpha) = \cos(\alpha)
 
 the matrix becomes:
 
-$$\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix} = \begin{bmatrix} s\sin(\alpha) & -s\cos(\alpha) & 0 & t_x \\ s\cos(\alpha) & s\sin(\alpha) & 0 & t_y \\ 0 & 0 & s & t_z \\ 0 & 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$
+$$
+\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix}
+=
+\begin{bmatrix}
+s\sin(\alpha) & -s\cos(\alpha) & 0 & t_x \\
+s\cos(\alpha) &  s\sin(\alpha) & 0 & t_y \\
+0             & 0              & s & t_z \\
+0             & 0              & 0 & 1
+\end{bmatrix}
+\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}
+$$
 
 This direct matrix assumes that $\alpha$ is the bearing of the local $+X$ axis measured clockwise from grid north.
 
@@ -335,7 +411,17 @@ $\theta = -\beta$
 
 and the matrix is:
 
-$$\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix} = \begin{bmatrix} s\cos(\beta) & s\sin(\beta) & 0 & t_x \\ -s\sin(\beta) & s\cos(\beta) & 0 & t_y \\ 0 & 0 & s & t_z \\ 0 & 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$
+$$
+\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix}
+=
+\begin{bmatrix}
+ s\cos(\beta) & s\sin(\beta) & 0 & t_x \\
+-s\sin(\beta) & s\cos(\beta) & 0 & t_y \\
+0             & 0            & s & t_z \\
+0             & 0            & 0 & 1
+\end{bmatrix}
+\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}
+$$
 
 If $\beta=0$ the local $+Y$ axis is aligned with North, so no rotation needs to be applied.
 
