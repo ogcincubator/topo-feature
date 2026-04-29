@@ -102,13 +102,15 @@ transformation direction = source CRS to target CRS
 
 If the common scale factor is $S$, then:
 
-$$S =
+$$
+S =
 \begin{bmatrix}
 s & 0 & 0 & 0 \\
 0 & s & 0 & 0 \\
 0 & 0 & s & 0 \\
 0 & 0 & 0 & 1
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 If `s = 1.0000` there is no scaling.
 
@@ -176,7 +178,8 @@ $$
 
 then:
 
-$$\begin{bmatrix}
+$$
+\begin{bmatrix}
 X \\
 Y \\
 Z \\
@@ -194,15 +197,18 @@ x \\
 y \\
 z \\
 1
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 Expanded into equations:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 X &= t_x + s(x\cos\theta - y\sin\theta) \\
 Y &= t_y + s(x\sin\theta + y\cos\theta) \\
 Z &= t_z + sz \\
-\end{aligned}$$
+\end{aligned}
+$$
 
 ## Example
 
@@ -614,13 +620,15 @@ $c_\theta = \cos(\theta), s_\theta = \sin(\theta)$
 
 The combined matrix is:
 
-$$M =
+$$
+M =
 \begin{bmatrix}
  s c_\theta c_\phi & s (c_\theta s_\phi s_\omega - s_\theta c_\omega) & s (c_\theta s_\phi c_\omega + s_\theta s_\omega) & tx \\
 s s_\theta c_\phi & s (s_\theta s_\phi s_\omega + c_\theta c_\omega) & s (s_\theta s_\phi c_\omega - c_\theta s_\omega) & ty \\
 -s s_\phi & s c_\phi s_\omega & s c_\phi c_\omega & tz \\
 0 & 0 & 0 & 1
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 > **Note**:
 > This matrix assumes:
