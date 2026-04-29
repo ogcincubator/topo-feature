@@ -102,15 +102,13 @@ transformation direction = source CRS to target CRS
 
 If the common scale factor is $S$, then:
 
-$$
-S =
+$$S =
 \begin{bmatrix}
 s & 0 & 0 & 0 \\
 0 & s & 0 & 0 \\
 0 & 0 & s & 0 \\
 0 & 0 & 0 & 1
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
 If `s = 1.0000` there is no scaling.
 
@@ -178,8 +176,7 @@ $$
 
 then:
 
-$$
-\begin{bmatrix}
+$$\begin{bmatrix}
 X \\
 Y \\
 Z \\
@@ -197,8 +194,7 @@ x \\
 y \\
 z \\
 1
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
 Expanded into equations:
 
