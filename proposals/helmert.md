@@ -101,6 +101,7 @@ transformation direction = source CRS to target CRS
 ## Common Scale Matrix
 
 If the common scale factor is $S$, then:
+
 $$
 S =
 \begin{bmatrix}
@@ -178,7 +179,12 @@ $$
 then:
 
 $$
-\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix}
+\begin{bmatrix}
+X \\
+Y \\
+Z \\
+1
+\end{bmatrix}
 =
 \begin{bmatrix}
 s\cos(\theta) & -s\sin(\theta) & 0 & t_x \\
@@ -186,7 +192,12 @@ s\sin(\theta) &  s\cos(\theta) & 0 & t_y \\
 0             & 0              & s & t_z \\
 0             & 0              & 0 & 1
 \end{bmatrix}
-\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z \\
+1
+\end{bmatrix}
 $$
 
 Expanded into equations:
@@ -378,12 +389,20 @@ The conversion can also be avoided by writing the matrix directly in terms of th
 
 Since:
 
-$\begin{aligned}\cos(90-\alpha) = \sin(\alpha) \\ \sin(90-\alpha) = \cos(\alpha)\end{aligned}$
+$$
+\begin{aligned}\cos(90-\alpha) = \sin(\alpha) \\ 
+\sin(90-\alpha) = \cos(\alpha)\end{aligned}
+$$
 
 the matrix becomes:
 
 $$
-\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix}
+\begin{bmatrix}
+X \\
+Y \\
+Z \\
+1
+\end{bmatrix}
 =
 \begin{bmatrix}
 s\sin(\alpha) & -s\cos(\alpha) & 0 & t_x \\
@@ -391,7 +410,12 @@ s\cos(\alpha) &  s\sin(\alpha) & 0 & t_y \\
 0             & 0              & s & t_z \\
 0             & 0              & 0 & 1
 \end{bmatrix}
-\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z \\
+1
+\end{bmatrix}
 $$
 
 This direct matrix assumes that $\alpha$ is the bearing of the local $+X$ axis measured clockwise from grid north.
@@ -412,7 +436,12 @@ $\theta = -\beta$
 and the matrix is:
 
 $$
-\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix}
+\begin{bmatrix}
+X \\
+Y \\
+Z \\
+1
+\end{bmatrix}
 =
 \begin{bmatrix}
  s\cos(\beta) & s\sin(\beta) & 0 & t_x \\
@@ -420,7 +449,12 @@ $$
 0             & 0            & s & t_z \\
 0             & 0            & 0 & 1
 \end{bmatrix}
-\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z \\
+1
+\end{bmatrix}
 $$
 
 If $\beta=0$ the local $+Y$ axis is aligned with North, so no rotation needs to be applied.
