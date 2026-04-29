@@ -418,7 +418,7 @@ y \\
 z \\
 1
 \end{bmatrix}
-$$
+$$ 
 
 This direct matrix assumes that $\alpha$ is the bearing of the local $+X$ axis measured clockwise from grid north.
 
