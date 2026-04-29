@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.datatypes.topology - Geometry using references
-Generated 2026-04-28T23:25:30.809329+00:00
+Generated 2026-04-29T03:21:44.429798+00:00
 === Files ===
 Using example.json from examples
 JSON-LD context is present - uplifting
