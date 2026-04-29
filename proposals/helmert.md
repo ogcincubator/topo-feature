@@ -184,8 +184,7 @@ X \\
 Y \\
 Z \\
 1
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 s\cos(\theta) & -s\sin(\theta) & 0 & t_x \\
 s\sin(\theta) &  s\cos(\theta) & 0 & t_y \\
@@ -404,8 +403,7 @@ X \\
 Y \\
 Z \\
 1
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 s\sin(\alpha) & -s\cos(\alpha) & 0 & t_x \\
 s\cos(\alpha) &  s\sin(\alpha) & 0 & t_y \\
@@ -443,8 +441,7 @@ X \\
 Y \\
 Z \\
 1
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
  s\cos(\beta) & s\sin(\beta) & 0 & t_x \\
 -s\sin(\beta) & s\cos(\beta) & 0 & t_y \\
@@ -491,8 +488,7 @@ X \\
 Y \\
 Z \\
 1
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 a_{11} & a_{12} & a_{13} & t_x \\
 a_{21} & a_{22} & a_{23} & t_y \\
