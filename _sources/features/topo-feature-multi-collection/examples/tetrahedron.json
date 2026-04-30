@@ -172,7 +172,7 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "LineString",
+            "type": "Edge",
             "references": [
 
                 "uuid:e89491fc-d6e7-479a-9e4b-3159a62ef302",
@@ -191,7 +191,7 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "LineString",
+            "type": "Edge",
             "references": [
 
                 "uuid:94b1472b-5c9c-4e21-a62f-98d47fb891fe",
@@ -210,7 +210,7 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "LineString",
+            "type": "Edge",
             "references": [
 
                 "uuid:8e33e70b-b67f-4373-8151-69c2d6e44912",
@@ -229,7 +229,7 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "LineString",
+            "type": "Edge",
             "references": [
 
                 "uuid:e89491fc-d6e7-479a-9e4b-3159a62ef302",
@@ -248,7 +248,7 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "LineString",
+            "type": "Edge",
             "references": [
 
                 "uuid:4e251dd0-97a0-42cf-b1b4-9a31e69f042c",
@@ -267,7 +267,7 @@
           "type": "Feature",
           "geometry": null,
           "topology": {
-            "type": "LineString",
+            "type": "Edge",
             "references": [
 
                 "uuid:8e33e70b-b67f-4373-8151-69c2d6e44912",

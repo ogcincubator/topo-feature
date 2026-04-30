@@ -32,6 +32,7 @@
       "type": "@id"
     },
     "orientation": "https://purl.org/geojson/topo#orientation",
+    "Edge": "https://purl.org/geojson/topo#Edge",
     "Face": "https://purl.org/geojson/topo#Face",
     "Ring": "https://purl.org/geojson/topo#Ring",
     "Shell": "https://purl.org/geojson/topo#Shell",

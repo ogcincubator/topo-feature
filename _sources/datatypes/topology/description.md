@@ -9,7 +9,7 @@ Two mutually exclusive reference styles are supported — exactly one must be pr
 **`references`** — a plain ordered array of string feature IDs (or nested arrays thereof). Used for positional references where traversal direction is not meaningful, e.g. a LineString naming its vertex point features:
 
 ```json
-{ "type": "LineString", "references": ["uuid:point-a", "uuid:point-b"] }
+{ "type": "Edge", "references": ["uuid:point-a", "uuid:point-b"] }
 ```
 
 **`directed_references`** — an ordered array of oriented object references, each with `ref` (feature ID) and `orientation` (`"+"` or `"-"`). Used where traversal direction matters, e.g. Ring boundaries and Shell boundaries:

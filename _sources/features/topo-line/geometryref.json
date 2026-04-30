@@ -15,7 +15,7 @@
               "enum": [
                 "Point",
                 "MultiPoint",
-                "LineString",
+                ,
                 "MultiLineString",
                 "Polygon",
                 "MultiPolygon",
@@ -49,14 +49,14 @@
           }
         }
       },
-      "LineString": {
+      : {
         "title": "GeoJSON LineString with additional 'coordRefSys' member",
         "type": "object",
         "required": ["type"],
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["LineString"]
+            "enum": []
           },
           "coordRefSys": {
             "$ref": "coordrefsys.json"

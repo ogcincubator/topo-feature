@@ -8,6 +8,5 @@ TopoFeature is feature type using a topology property to reference an ordered li
 
 Other features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.
 
-This is a generalisation of the TopoJSON concept using inline data, but not limited to the LineStrings. Topological defined objects 
-can be solids, swept volumes or any other concept.
+This is a generalisation of the [TopoJSON](https://github.com/topojson/topojson) concept using inline data, but not limited to the LineStrings. Topological defined objects can be solids, swept volumes or any other concept.
 

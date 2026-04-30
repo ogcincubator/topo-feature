@@ -39,7 +39,7 @@ solids
 {
   "type": "FeatureCollection",
   "points": [ { "type": "Feature", "geometry": { "type": "Point", "coordinates": [...] }, ... } ],
-  "edges":  [ { "type": "Feature", "geometry": null, "topology": { "type": "LineString", "references": ["uuid:...", "uuid:..."] }, ... } ],
+  "edges":  [ { "type": "Feature", "geometry": null, "topology": { "type": "Edge", "references": ["uuid:...", "uuid:..."] }, ... } ],
   "faces":  [ { "type": "Feature", "geometry": null, "topology": { "type": "Face",   "rings": [{ "type": "Ring", "directed_references": [...] }] }, ... } ],
   "solids": [ { "type": "Feature", "geometry": null, "topology": { "type": "Solid",  "shells": [{ "type": "Shell", "directed_references": [...] }] }, ... } ]
 }
