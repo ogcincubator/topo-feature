@@ -1,19 +1,82 @@
-# Helmert Transformation
+# Helmert / Similarity Transformation
 
-A Helmert transformation is a similarity transformation. 
-It preserves shape as a common scale factor is applied.
-This is an important consideration for Cadastral and BIM data where it is important that local shape is maintained when the data is transformed..
-When applying a 3D translation, a rotation about the Z axis and a common scale factor a 4 x 4 matrix can be applied to solve the transformation.
+A Helmert transformation is a similarity transformation.
+It applies translation, rotation, and one common scale factor.
+Because the same scale factor is applied to all axes, the transformation preserves shape.
+
+For 3D CSDM tool-support purposes, a Helmert or similarity transformation should be described as a **coordinate operation** between a **source CRS** and a **target CRS**.
+
+In the local CRS use case:
+
+- the **source CRS** will commonly be a local or Engineering CRS used by a BIM, CAD, engineering, construction, or project-local dataset;
+- the **target CRS** will normally be the jurisdictional or recognised CRS used to visualise or compare the supporting data with 3D CSDM content; and
+- the **coordinate operation** describes how coordinates are transformed from the source CRS to the target CRS.
+
+The matrix described below is therefore the **implementation form** of the coordinate operation.  
+It does not define the CRS by itself.
+
+## Ontology Alignment
+
+To align with the OGC CRS Ontology pattern, the transformation should distinguish between:
+
+1. the **source CRS**;
+2. the **target CRS**;
+3. the **coordinate operation**;
+4. the **operation method**;
+5. the **operation parameters**; and
+6. the **implementation encoding**, such as a 4 $\times$ 4 matrix, [WKT2:2019](https://docs.ogc.org/is/18-010r7/18-010r7.html), or [PROJJSON](https://proj.org/en/stable/specifications/projjson.html).
+
+In this case, the coordinate operation may be described as a restricted Helmert / similarity transformation where the operation parameters are:
+
+```text
+translation in X, Y, Z
+rotation about the Z axis
+one common scale factor
+```
+
+For a full 3D Helmert transformation, rotations about X, Y, and Z may be included.
+However, for many BIM, CAD, and local-grid visualisation cases, a restricted form using Z-axis rotation is sufficient.
+
+The matrix should be accompanied by explicit metadata describing:
+
+```text
+source CRS
+target CRS
+operation method
+operation parameters
+transformation direction
+axis convention
+rotation convention
+scale convention
+linear and angular units
+vertical reference, where relevant
+```
 
 ## Basic transformation model
 
 Let the source / local coordinate be:
 
-$$ p =\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$
+$$
+p =
+\begin{bmatrix}
+x \\
+y \\
+z \\
+1
+\end{bmatrix}
+$$
 
 and the transformed / map coordinate be:
 
-$$P = \begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix}$$
+$$
+P =
+\begin{bmatrix}
+X \\
+Y \\
+Z \\
+1
+\end{bmatrix}
+$$
 
 Then:
 
@@ -21,23 +84,44 @@ $$P = T R_z S p$$
 
 where:
 
-$S$ is the common scale factor matrix
-
-$R_z$ is the rotation matrix about the Z axis
-
-$T$ is the translation matrix
+- $S$ is the common scale factor matrix;
+- $R_z$ is the rotation matrix about the $Z$ axis; and
+- $T$ is the translation matrix.
 
 Applied in this order, the local coordinates are first scaled, then rotated, then translated.
 
+This assumes the following matrix convention:
+
+```text
+column-vector convention
+target = M * source
+transformation direction = source CRS to target CRS
+```
+
 ## Common Scale Matrix
 
-If the common scale factor is $s$, then:
-$$S = \begin{bmatrix} s & 0 & 0 & 0 \\ 0 & s & 0 & 0 \\ 0 & 0 & s & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+If the common scale factor is $S$, then:
 
-If `s = 1.0000` there is no scaling. Many map projections have a central meridian scale factor `s = 0.99996` which will reduce the local coordiates slightly.
-Note that it is the combined Scale Factor at the target location that should generally be applied. 
-The combined scale factor is the product of the Grid Scale Factor and the Elevation Scale Factor.
+$$
+S =
+\begin{bmatrix}
+s & 0 & 0 & 0 \\
+0 & s & 0 & 0 \\
+0 & 0 & s & 0 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
 
+If `s = 1.0000` there is no scaling.
+
+Many map projections have a grid scale factor that slightly changes the relationship between ground distances and grid distances.
+Where scale is required, it is generally the combined scale factor at the target location that should be applied.
+
+The combined scale factor is the product of:
+
+```text
+grid scale factor x elevation scale factor.
+```
 Other common scales are:
 
 - `s = 0.0254` for inches to meters
@@ -48,81 +132,174 @@ Other common scales are:
 
 For a right-handed coordinate system, with positive rotation counter-clockwise in the XY plane:
 
-$$R_z = \begin{bmatrix} \cos(\theta) & -\sin(\theta) & 0 & 0 \\ \sin(\theta) & \cos(\theta) & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+$$
+R_z =
+\begin{bmatrix}
+\cos(\theta) & -\sin(\theta) & 0 & 0 \\
+\sin(\theta) & \cos(\theta)  & 0 & 0 \\
+0            & 0             & 1 & 0 \\
+0            & 0             & 0 & 1
+\end{bmatrix}
+$$
 
 where $\theta$ is the rotation angle in radians.
 
+If the rotation angle is provided in degrees:
+
+$$\theta = \frac{\theta_{deg}}{180}\pi$$
+
 ## Translation Matrix
 
-If the translation from the local system to the target/map system is `tx, ty, tz`, then:
+If the translation from the source / local CRS to the target CRS is $t_x$, $t_y$, and $t_z$, then:
 
-$$T = \begin{bmatrix} 1 & 0 & 0 & tx \\ 0 & 1 & 0 & ty \\ 0 & 0 & 1 & tz \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+$$
+T =
+\begin{bmatrix}
+1 & 0 & 0 & t_x \\
+0 & 1 & 0 & t_y \\
+0 & 0 & 1 & t_z \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
 
 ## Combined Transformation Matrix
 
 Because the scale is common, the scale and rotation can be combined directly:
 
-$$M = \begin{bmatrix} s\cos(\theta) & -s\sin(\theta) & 0 & t_x \\ s\sin(\theta) & s\cos(\theta) & 0 & t_y \\ 0 & 0 & s & t_z \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+$$
+M =
+\begin{bmatrix}
+s\cos(\theta) & -s\sin(\theta) & 0 & t_x \\
+s\sin(\theta) &  s\cos(\theta) & 0 & t_y \\
+0             & 0              & s & t_z \\
+0             & 0              & 0 & 1
+\end{bmatrix}
+$$
 
 then:
 
-$$\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix} = \begin{bmatrix} s\cos(\theta) & -s\sin(\theta) & 0 & t_x \\ s\sin(\theta) & s\cos(\theta) & 0 & t_y \\ 0 & 0 & s & t_z \\ 0 & 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$
+$$
+\begin{bmatrix}
+X \\
+Y \\
+Z \\
+1
+\end{bmatrix} =
+\begin{bmatrix}
+s\cos(\theta) & -s\sin(\theta) & 0 & t_x \\
+s\sin(\theta) &  s\cos(\theta) & 0 & t_y \\
+0             & 0              & s & t_z \\
+0             & 0              & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z \\
+1
+\end{bmatrix}
+$$
 
 Expanded into equations:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 X &= t_x + s(x\cos\theta - y\sin\theta) \\
 Y &= t_y + s(x\sin\theta + y\cos\theta) \\
 Z &= t_z + sz \\
-\end{aligned}$$
+\end{aligned}
+$$
 
 ## Example
 
-Assuming the local origin is `0, 0, 0`, and the target system is at `392000.0, 6465000.0, 12.4`, with a scale factor of `1.0` and rotation angle of `34.46031` degrees
+Assume:
+
+```text
+source CRS = local Engineering CRS
+target CRS = GDA2020 / MGA zone 50
+local origin = 0, 0, 0
+target origin = 392000.0, 6465000.0, 12.4
+scale factor = 1.0
+rotation about Z = 34.46031 degrees
+```
 
 then:
 
 $\theta = 34.46031\frac{\pi}{180}$
 
-and: 
-
-$$M=\begin{bmatrix} 0.8243 & -0.5662 & 0.0 & 392000.0 \\ 0.5662 & 0.8243 & 0.0 & 6465000.0 \\ 0.0 & 0.0 & 1.0 & 12.4 \\ 0.0 & 0.0 & 0.0 & 1.0 \end{bmatrix}$$
-
-## Conventions
-
-Rotations must be explicitly defined
+Using approximate values:
 
 ```text
-positive counter-clockwise from local X to target X
+cos(34.46031°) ≈ 0.8243
+sin(34.46031°) ≈ 0.5662
 ```
-or
+
+the matrix is: 
+
+$$
+M =
+\begin{bmatrix}
+0.8243 & -0.5662 & 0.0 & 392000.0  \\
+0.5662 &  0.8243 & 0.0 & 6465000.0 \\
+0.0    &  0.0    & 1.0 & 12.4      \\
+0.0    &  0.0    & 0.0 & 1.0
+\end{bmatrix}
+$$
+
+## Required Operation Conventions
+
+Rotations must be explicitly defined.
+
+For example:
+
+```text
+positive counter-clockwise from +X / east
+```
+
+or:
+
 ```text
 clockwise from north / grid north
 ```
 
-This matters because surveying, BIM, GIS, and graphics software do not always use the same sign conventions.
+This matters because surveying, BIM, GIS, CAD, and graphics software do not always use the same sign conventions.
 
 For the matrix algebra above, the convention is:
 
 ```text
+source CRS = local Engineering CRS
+target CRS = jurisdictional or recognised CRS
 right-handed coordinate system
 X = east
 Y = north
 Z = up
 positive θ = counter-clockwise rotation in the XY plane
-transformation direction = local CRS to target CRS
+transformation direction = source CRS to target CRS
 matrix multiplication = column-vector convention
+target = M * source
 ```
-The convention should be stated anywhere that the matrix is encoded.
+These conventions should be encoded as metadata associated with the coordinate operation.
+
+## Example Operation Encoding
+
+The following JSON-LD-style example shows how the transformation can be described as a coordinate operation.
+The matrix is included as the executable implementation form.
 
 ```json
 {
-  "operationMethod": "HelmertSimilarity3D_ZRotation",
-  "transformationDirection": "source-to-target",
-  "matrixConvention": "column-vector; target = M * source",
-  "axisConvention": "right-handed; X east, Y north, Z up",
-  "zAxisRotationConvention": "positive counter-clockwise from +X/east",
-  "parameters": {
+  "@context": {
+    "geosrs": "https://w3id.org/geosrs/",
+    "srs": "https://w3id.org/geosrs/srs/",
+    "co": "https://w3id.org/geosrs/co/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "csdm-crs": "https://example.org/3d-csdm/crs-support/"
+  },
+  "@id": "csdm-crs:operation/local-to-map",
+  "@type": "co:CoordinateOperation",
+  "rdfs:label": "Building A local engineering CRS to GDA2020 / MGA zone 50",
+  "co:sourceCRS": "csdm-crs:crs/local-building-a",
+  "co:targetCRS": "http://www.opengis.net/def/crs/EPSG/0/7850",
+  "operationMethod": "Restricted Helmert / similarity transformation",
+  "operationParameters": {
     "translation": {
       "tx": 392000.0,
       "ty": 6465000.0,
@@ -138,27 +315,58 @@ The convention should be stated anywhere that the matrix is encoded.
       "unit": "unity"
     }
   },
-  "matrix": [
+  "operationConventions": {
+    "transformationDirection": "source-to-target",
+    "matrixConvention": "column-vector; target = M * source",
+    "axisConvention": "right-handed; X east, Y north, Z up",
+    "zAxisRotationConvention": "positive counter-clockwise from +X/east"
+  },
+  "implementationMatrix": [
     [0.8243, -0.5662, 0.0, 392000.0],
     [0.5662,  0.8243, 0.0, 6465000.0],
     [0.0,     0.0,    1.0, 12.4],
     [0.0,     0.0,    0.0, 1.0]
-  ]
+  ],
+  "operationEncoding": {
+    "format": "PROJJSON",
+    "definition": {}
+  }
 }
 ```
 
-The Helmert Transformation description is effectively a restricted Helmert / Similarity transformation suitable for many BIM or CAD datasets where the local model only needs a plan rotation, a common scale, and a translation into the jurisdictional CRS.
+The `implementationMatrix` allows software to execute the transformation directly.
+The CRS and coordinate-operation metadata explain what the matrix means.
+
+Where ontology-crs terms are available, they should be used to describe the CRS and coordinate operation resources.
+Where implementation-specific details are required, such as a homogeneous transformation matrix or matrix multiplication convention, the 3D CSDM tool-support profile may define additional properties.
 
 ## Clockwise from North
 
 If the angle is defined clockwise from north / grid north, the main change is that the angle is no longer the standard mathematical angle used by the usual rotation matrix.
-The bearing-style angle must first be converted into a standard mathematical rotation angle before using the usual matrix.
+
+The standard matrix assumes:
+
+```text
+0° is along +X / east
+positive rotation is counter-clockwise
+```
+
+A bearing or azimuth convention assumes:
+
+```text
+0° is along +Y / north
+positive rotation is clockwise
+```
+
+Therefore, the bearing-style angle must first be converted into a standard mathematical rotation angle before using the usual matrix.
 
 Let:
 
 $\alpha$ = clockwise angle from north / grid north
 
-$\theta$ = standard mathematical angle from +X, positive counter-clockwise
+and:
+
+$\theta$ = standard mathematical angle from $+X$, positive counter-clockwise
 
 Then:
 
@@ -168,7 +376,7 @@ or in radians:
 
 $\theta = (90 - \alpha)\frac{\pi}{180}$
 
-The specification of the rotation angle is:
+The specification of the rotation angle should make the convention explicit:
 
 ```json
 {
@@ -178,35 +386,77 @@ The specification of the rotation angle is:
 
 ## Direct bearing-form matrix
 
-You can also avoid the conversion and write the matrix directly in terms of the clockwise-from-north angle $\alpha$.
+The conversion can also be avoided by writing the matrix directly in terms of the clockwise-from-north angle $\alpha$.
 
 Since:
 
-$\begin{aligned}\cos(90-\alpha) = \sin(\alpha) \\ \sin(90-\alpha) = \cos(\alpha)\end{aligned}$
+$$
+\begin{aligned}\cos(90-\alpha) = \sin(\alpha) \\ 
+\sin(90-\alpha) = \cos(\alpha)\end{aligned}
+$$
 
 the matrix becomes:
 
-$$\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix} = \begin{bmatrix} s\sin(\alpha) & -s\cos(\alpha) & 0 & t_x \\ s\cos(\alpha) & s\sin(\alpha) & 0 & t_y \\ 0 & 0 & s & t_z \\ 0 & 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$
+$$
+\begin{bmatrix}
+X \\
+Y \\
+Z \\
+1
+\end{bmatrix} =
+\begin{bmatrix}
+s\sin(\alpha) & -s\cos(\alpha) & 0 & t_x \\
+s\cos(\alpha) &  s\sin(\alpha) & 0 & t_y \\
+0             & 0              & s & t_z \\
+0             & 0              & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z \\
+1
+\end{bmatrix}
+$$ 
 
-This direct matrix assumes that $\alpha$ is the bearing of the local +X axis measured clockwise from grid north.
+This direct matrix assumes that $\alpha$ is the bearing of the local $+X$ axis measured clockwise from grid north.
 
-## Common Alternative
+## Common Alternative: Bearing of Local $+Y$ Axis
 
-Sometimes _clockwise from north_ is used to describe the bearing of the local +Y axis, not the local +X axis. 
+Sometimes _clockwise from north_ is used to describe the bearing of the local $+Y$ axis, not the local $+X$ axis. 
 In BIM/CAD this is common when people say the project “Y axis” is aligned with north or grid north.
 
 In this case, let:
 
-$\beta$ = bearing of local +Y measured clockwise from north
+$\beta$ = bearing of local $+Y$ axis measured clockwise from north
 
 Then the standard mathematical rotation angle is:
 
 $\theta = -\beta$
 
 and the matrix is:
-$$\begin{bmatrix} X \\ Y \\ Z \\ 1 \end{bmatrix} = \begin{bmatrix} s\cos(\beta) & s\sin(\beta) & 0 & t_x \\ -s\sin(\beta) & s\cos(\beta) & 0 & t_y \\ 0 & 0 & s & t_z \\ 0 & 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$
 
-If $\beta=0$ the local +Y axis is aligned with North, so no rotation needs to be applied.
+$$
+\begin{bmatrix}
+X \\
+Y \\
+Z \\
+1
+\end{bmatrix} =
+\begin{bmatrix}
+ s\cos(\beta) & s\sin(\beta) & 0 & t_x \\
+-s\sin(\beta) & s\cos(\beta) & 0 & t_y \\
+0             & 0            & s & t_z \\
+0             & 0            & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z \\
+1
+\end{bmatrix}
+$$
+
+If $\beta=0$ the local $+Y$ axis is aligned with North, so no rotation needs to be applied.
 
 The specification of the rotation angle is:
 
@@ -238,8 +488,7 @@ X \\
 Y \\
 Z \\
 1
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 a_{11} & a_{12} & a_{13} & t_x \\
 a_{21} & a_{22} & a_{23} & t_y \\
@@ -367,13 +616,15 @@ $c_\theta = \cos(\theta), s_\theta = \sin(\theta)$
 
 The combined matrix is:
 
-$$M =
+$$
+M =
 \begin{bmatrix}
  s c_\theta c_\phi & s (c_\theta s_\phi s_\omega - s_\theta c_\omega) & s (c_\theta s_\phi c_\omega + s_\theta s_\omega) & tx \\
 s s_\theta c_\phi & s (s_\theta s_\phi s_\omega + c_\theta c_\omega) & s (s_\theta s_\phi c_\omega - c_\theta s_\omega) & ty \\
 -s s_\phi & s c_\phi s_\omega & s c_\phi c_\omega & tz \\
 0 & 0 & 0 & 1
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 > **Note**:
 > This matrix assumes:
@@ -434,11 +685,44 @@ s s_\theta c_\phi & s (s_\theta s_\phi s_\omega + c_\theta c_\omega) & s (s_\the
 > **Note:** that if Scale is not constant, strictly, it is an Affine Transformation.
 > But the only difference is that the $S$ matrix allows different values for elements $a_{11}$, $a_{22}$, and $a_{33}$.
 
+## Summary
+
+The Helmert transformation described here is a restricted Helmert / similarity transformation suitable for many BIM, CAD, or local-grid visualisation cases where the local model only needs:
+
+```text
+translation into the target CRS
+plan rotation
+one common scale factor
+```
+
+For 3D CSDM tool support, the transformation should be described as a coordinate operation from a source Engineering CRS to a target jurisdictional or recognised CRS.
+
+The 4 $\times$ 4 matrix is the executable implementation form of that coordinate operation.
+It should be accompanied by semantic CRS and coordinate-operation metadata so that software can understand:
+
+```text
+what CRS the source coordinates are in
+what CRS the target coordinates are in
+what operation is being applied
+what parameters and units are used
+what conventions are required to interpret the matrix
+```
 ## References
+
+buildingSMART International Limited. 2024. ‘IFC 4.3.2 Documentation’. https://ifc43-docs.standards.buildingsmart.org/ 
+
+CRS Ontology Working Group Github. 2026. ‘Ontology-CRS’. https://github.com/opengeospatial/ontology-crs.
+
+ISO, 2019. ‘ISO 19111:2019(En), Geographic Information — Referencing by Coordinates’. https://www.iso.org/obp/ui/en/#iso:std:iso:19111:ed-3:v1:en:en). (April 29, 2026).
+
+Lott, Roger, ed. 2019. ‘Geographic Information — Well-Known Text Representation of Coordinate Reference Systems’. https://docs.ogc.org/is/18-010r7/18-010r7.html.
+
+PROJ Contributors. 2026. ‘PROJJSON — PROJ 9.8.1 Documentation’. https://proj.org/en/stable/specifications/projjson.html
 
 Robinson, A.H., J.L. Morrison, P.C. Muehrcke, A.J. Kimerling, and S.C. Guptill. 1995. Elements of Cartography. 6th edn Hoboken, NJ: John Wiley & Sons.
 
 Snyder, J.P. 1987. Map Projections–a Working Manual. USGPO. http://pubs.er.usgs.gov/publication/pp1395.
 
 Wolf, Paul R., Bon DeWitt, and Benjamin Wilkinson. 2014. Elements of Photogrammetry with Application in GIS. 4th edn London, UK: McGraw-Hill.
+
 

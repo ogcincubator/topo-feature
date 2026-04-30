@@ -1,0 +1,180 @@
+Validation report for ogc.geo.topo.features.topo-feature-multi-collection - Topo Feature Multi-Collection
+Generated 2026-04-29T11:38:58.970366+00:00
+=== Files ===
+Using examples/cube.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD cube.jsonld created
+Output Turtle cube.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: [{'id': 'uuid:2e6ccc7c-5281-4bcd-9a4d-a3d6ecea9f7c', 'type': 'FeatureCollection', 'featureType': 'Edge', 'features': [{'id': 'uuid:6384bde9-4ced-4171-a7f0-d004039fca80', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4', 'uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.998}}, {'id': 'uuid:eff3a191-d0cc-496c-9b24-6134842b1c46', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656', 'uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.997}}, {'id': 'uuid:e5d652b1-1998-4ecc-bd5a-94e5ca1e839c', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432', 'uuid:63c6eeab-41a1-4259-8311-840754422246']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.998}}, {'id': 'uuid:75e3a244-67db-4eeb-bd03-7168b92b519a', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:63c6eeab-41a1-4259-8311-840754422246', 'uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.997}}, {'id': 'uuid:443eb63f-c20d-4f3e-a6c9-8d81bce492c7', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4', 'uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 10.0}}, {'id': 'uuid:0761370f-a608-49b2-8527-993f891eb14b', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2', 'uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.998}}, {'id': 'uuid:7b7393b6-9568-4657-a1aa-72c94f11276b', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2', 'uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 10.0}}, {'id': 'uuid:080940ec-1a56-4a4b-8c15-bc27322310b0', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740', 'uuid:de936c58-46ed-4448-991f-f6b526d87f0a']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.997}}, {'id': 'uuid:e8f2be65-98b8-4907-b5f7-a805b70e0af9', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:de936c58-46ed-4448-991f-f6b526d87f0a', 'uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.998}}, {'id': 'uuid:3833d35f-5a7f-4ef0-81f2-1c257002ff5f', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3', 'uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.997}}, {'id': 'uuid:b3752f9d-1e6c-4cfe-9e20-3130921e7107', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:63c6eeab-41a1-4259-8311-840754422246', 'uuid:de936c58-46ed-4448-991f-f6b526d87f0a']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 10.0}}, {'id': 'uuid:49a9bd3d-5d7d-4264-b59e-31cb630f51e1', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432', 'uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 10.0}}]}] is not valid under any of the given schemas
+
+Failed validating 'oneOf' in schema['properties']['edges']:
+    {'oneOf': [{'$ref': '#EdgeFeatures'},
+               {'description': 'Edge (LineString) features referencing two '
+                               'point nodes via topology.references.',
+                'items': {'allOf': [{'$ref': 'https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions'},
+                                    {'properties': {'features': {'$ref': '#EdgeFeatures'}}}]},
+                'type': 'array'}],
+     'x-jsonld-container': '@list',
+     'x-jsonld-id': 'https://purl.org/geojson/topo#edges'}
+
+On instance['edges']:
+    [{'featureType': 'Edge',
+      'features': [{'geometry': None,
+                    'id': 'uuid:6384bde9-4ced-4171-a7f0-d004039fca80',
+                    'properties': {'comment': None,
+                                   'length': 9.998,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4',
+                                                 'uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:eff3a191-d0cc-496c-9b24-6134842b1c46',
+                    'properties': {'comment': None,
+                                   'length': 9.997,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656',
+                                                 'uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:e5d652b1-1998-4ecc-bd5a-94e5ca1e839c',
+                    'properties': {'comment': None,
+                                   'length': 9.998,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432',
+                                                 'uuid:63c6eeab-41a1-4259-8311-840754422246']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:75e3a244-67db-4eeb-bd03-7168b92b519a',
+                    'properties': {'comment': None,
+                                   'length': 9.997,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:63c6eeab-41a1-4259-8311-840754422246',
+                                                 'uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:443eb63f-c20d-4f3e-a6c9-8d81bce492c7',
+                    'properties': {'comment': None,
+                                   'length': 10.0,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4',
+                                                 'uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:0761370f-a608-49b2-8527-993f891eb14b',
+                    'properties': {'comment': None,
+                                   'length': 9.998,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2',
+                                                 'uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:7b7393b6-9568-4657-a1aa-72c94f11276b',
+                    'properties': {'comment': None,
+                                   'length': 10.0,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2',
+                                                 'uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:080940ec-1a56-4a4b-8c15-bc27322310b0',
+                    'properties': {'comment': None,
+                                   'length': 9.997,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740',
+                                                 'uuid:de936c58-46ed-4448-991f-f6b526d87f0a']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:e8f2be65-98b8-4907-b5f7-a805b70e0af9',
+                    'properties': {'comment': None,
+                                   'length': 9.998,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:de936c58-46ed-4448-991f-f6b526d87f0a',
+                                                 'uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:3833d35f-5a7f-4ef0-81f2-1c257002ff5f',
+                    'properties': {'comment': None,
+                                   'length': 9.997,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3',
+                                                 'uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:b3752f9d-1e6c-4cfe-9e20-3130921e7107',
+                    'properties': {'comment': None,
+                                   'length': 10.0,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:63c6eeab-41a1-4259-8311-840754422246',
+                                                 'uuid:de936c58-46ed-4448-991f-f6b526d87f0a']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:49a9bd3d-5d7d-4264-b59e-31cb630f51e1',
+                    'properties': {'comment': None,
+                                   'length': 10.0,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432',
+                                                 'uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'}],
+      'id': 'uuid:2e6ccc7c-5281-4bcd-9a4d-a3d6ecea9f7c',
+      'type': 'FeatureCollection'}]
+=== End JSON Schema ===
+
+=== SHACL ===
+Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n8d81448707d94b7eb53cbd83864640f0b1: <uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740>/geojson:geometry,<uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740>/dct:spatial,<uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3>/geojson:geometry,<uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2>/geojson:geometry,<uuid:63c6eeab-41a1-4259-8311-840754422246>/dct:spatial,<uuid:de936c58-46ed-4448-991f-f6b526d87f0a>/geojson:geometry,<uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2>/dct:spatial,<uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4>/geojson:geometry,<uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656>/dct:spatial,<uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4>/dct:spatial,<uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432>/dct:spatial,<uuid:de936c58-46ed-4448-991f-f6b526d87f0a>/dct:spatial,<uuid:63c6eeab-41a1-4259-8311-840754422246>/geojson:geometry,<uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432>/geojson:geometry,<uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656>/geojson:geometry,<uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3>/dct:spatial
+ - Shape _:n8d81448707d94b7eb53cbd83864640f0b3: <uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740>/geojson:geometry,<uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3>/geojson:geometry,<uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2>/geojson:geometry,<uuid:63c6eeab-41a1-4259-8311-840754422246>/geojson:geometry,<uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432>/geojson:geometry,<uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656>/geojson:geometry,<uuid:de936c58-46ed-4448-991f-f6b526d87f0a>/geojson:geometry,<uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4>/geojson:geometry
+
+Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape topo:testTopoReferencesExist: <uuid:3833d35f-5a7f-4ef0-81f2-1c257002ff5f>/geojson:topology,<uuid:eff3a191-d0cc-496c-9b24-6134842b1c46>/geojson:topology,<uuid:49a9bd3d-5d7d-4264-b59e-31cb630f51e1>/geojson:topology,<uuid:75e3a244-67db-4eeb-bd03-7168b92b519a>/geojson:topology,<uuid:7b7393b6-9568-4657-a1aa-72c94f11276b>/geojson:topology,<uuid:b3752f9d-1e6c-4cfe-9e20-3130921e7107>/geojson:topology,<uuid:0761370f-a608-49b2-8527-993f891eb14b>/geojson:topology,<uuid:080940ec-1a56-4a4b-8c15-bc27322310b0>/geojson:topology,<uuid:e5d652b1-1998-4ecc-bd5a-94e5ca1e839c>/geojson:topology,<uuid:e8f2be65-98b8-4907-b5f7-a805b70e0af9>/geojson:topology,<uuid:443eb63f-c20d-4f3e-a6c9-8d81bce492c7>/geojson:topology,<uuid:6384bde9-4ced-4171-a7f0-d004039fca80>/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: <uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656>,_:N8c90d6de2e0f44cc92021b97c84b7098,<uuid:b3752f9d-1e6c-4cfe-9e20-3130921e7107>,<uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432>,<uuid:eff3a191-d0cc-496c-9b24-6134842b1c46>,<uuid:75e3a244-67db-4eeb-bd03-7168b92b519a>,_:N1955363954bb4bcc9f9cde8f4e6d2b29,_:Nde42ae127c3d4a1b80d69b1b6c03bee7,_:Nc90eb813962c401cbeb551fc739cf711,_:N4df0aa5003c74424ad5764d2d569f273,<uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4>,<uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740>,<uuid:e8f2be65-98b8-4907-b5f7-a805b70e0af9>,_:N21223fe63e1a4707afbdae306f582b4e,_:Nb5160a72680c47c0baffb8bda723d2f4,_:Nd19b8e8614c649f1a57cca88f7727e97,<uuid:0761370f-a608-49b2-8527-993f891eb14b>,<uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2>,<uuid:6384bde9-4ced-4171-a7f0-d004039fca80>,<uuid:443eb63f-c20d-4f3e-a6c9-8d81bce492c7>,<uuid:080940ec-1a56-4a4b-8c15-bc27322310b0>,_:Ncf87b4d0a9ab492fa2cba2590e527f15,_:N92040dbfb2a64737b37755fe35890d67,<uuid:e5d652b1-1998-4ecc-bd5a-94e5ca1e839c>,_:N75cb36dca58b43bcbf73dea2faafdcfc,<uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3>,<uuid:de936c58-46ed-4448-991f-f6b526d87f0a>,<uuid:63c6eeab-41a1-4259-8311-840754422246>,<uuid:7b7393b6-9568-4657-a1aa-72c94f11276b>,<uuid:3833d35f-5a7f-4ef0-81f2-1c257002ff5f>,_:Nb060d6606646496496eee4966e756667,_:Nc645c8722b9b47639549fcf386c89c0c,<uuid:49a9bd3d-5d7d-4264-b59e-31cb630f51e1>,_:Ndbaadc83f11a428f8875dd40a4f464c7
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: <uuid:2e6ccc7c-5281-4bcd-9a4d-a3d6ecea9f7c>,_:N24346fad36ee46f8ab0d5940dce407fa,_:Nbf972da85dbe47b2ac0a115ac56fc7ee,_:Nb00b2e656a1b456f9cdb0342f45a54b2,_:N0344e07b32ef42f19a068ee4ee241244,_:Nfeacd3778eba48cabe6d91504fef35b5
+
+=== End SHACL ===
+

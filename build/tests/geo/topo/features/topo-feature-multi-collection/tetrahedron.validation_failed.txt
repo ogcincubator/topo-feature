@@ -1,0 +1,126 @@
+Validation report for ogc.geo.topo.features.topo-feature-multi-collection - Topo Feature Multi-Collection
+Generated 2026-04-29T11:38:59.157049+00:00
+=== Files ===
+Using examples/tetrahedron.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD tetrahedron.jsonld created
+Output Turtle tetrahedron.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: [{'id': 'uuid:fb8a9ceb-5327-43dd-9903-9e55f944c504', 'type': 'FeatureCollection', 'featureType': 'Edge', 'features': [{'id': 'uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194', 'uuid:d0d49749-4274-409c-9445-49dd23ff004f']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.997}}, {'id': 'uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:d0d49749-4274-409c-9445-49dd23ff004f', 'uuid:6c915239-26ce-458b-ac64-92c7c4192d84']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.998}}, {'id': 'uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194', 'uuid:6c915239-26ce-458b-ac64-92c7c4192d84']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.997}}, {'id': 'uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c', 'uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.999}}, {'id': 'uuid:97c57559-d350-41e0-b9b1-ddfce388269a', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c', 'uuid:d0d49749-4274-409c-9445-49dd23ff004f']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.999}}, {'id': 'uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1', 'type': 'Feature', 'geometry': None, 'topology': {'type': 'Edge', 'references': [['uuid:6c915239-26ce-458b-ac64-92c7c4192d84', 'uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c']]}, 'properties': {'vectorPurpose': 'wa-vector-purpose:3D-Construct', 'comment': None, 'length': 9.999}}]}] is not valid under any of the given schemas
+
+Failed validating 'oneOf' in schema['properties']['edges']:
+    {'oneOf': [{'$ref': '#EdgeFeatures'},
+               {'description': 'Edge (LineString) features referencing two '
+                               'point nodes via topology.references.',
+                'items': {'allOf': [{'$ref': 'https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions'},
+                                    {'properties': {'features': {'$ref': '#EdgeFeatures'}}}]},
+                'type': 'array'}],
+     'x-jsonld-container': '@list',
+     'x-jsonld-id': 'https://purl.org/geojson/topo#edges'}
+
+On instance['edges']:
+    [{'featureType': 'Edge',
+      'features': [{'geometry': None,
+                    'id': 'uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28',
+                    'properties': {'comment': None,
+                                   'length': 9.997,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194',
+                                                 'uuid:d0d49749-4274-409c-9445-49dd23ff004f']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8',
+                    'properties': {'comment': None,
+                                   'length': 9.998,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:d0d49749-4274-409c-9445-49dd23ff004f',
+                                                 'uuid:6c915239-26ce-458b-ac64-92c7c4192d84']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d',
+                    'properties': {'comment': None,
+                                   'length': 9.997,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194',
+                                                 'uuid:6c915239-26ce-458b-ac64-92c7c4192d84']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555',
+                    'properties': {'comment': None,
+                                   'length': 9.999,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c',
+                                                 'uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:97c57559-d350-41e0-b9b1-ddfce388269a',
+                    'properties': {'comment': None,
+                                   'length': 9.999,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c',
+                                                 'uuid:d0d49749-4274-409c-9445-49dd23ff004f']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'},
+                   {'geometry': None,
+                    'id': 'uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1',
+                    'properties': {'comment': None,
+                                   'length': 9.999,
+                                   'vectorPurpose': 'wa-vector-purpose:3D-Construct'},
+                    'topology': {'references': [['uuid:6c915239-26ce-458b-ac64-92c7c4192d84',
+                                                 'uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c']],
+                                 'type': 'Edge'},
+                    'type': 'Feature'}],
+      'id': 'uuid:fb8a9ceb-5327-43dd-9903-9e55f944c504',
+      'type': 'FeatureCollection'}]
+=== End JSON Schema ===
+
+=== SHACL ===
+Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n8d81448707d94b7eb53cbd83864640f0b1: <uuid:6c915239-26ce-458b-ac64-92c7c4192d84>/geojson:geometry,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>/geojson:geometry,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>/dct:spatial,<uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>/geojson:geometry,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>/geojson:geometry,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>/dct:spatial,<uuid:6c915239-26ce-458b-ac64-92c7c4192d84>/dct:spatial,<uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>/dct:spatial
+ - Shape _:n8d81448707d94b7eb53cbd83864640f0b3: <uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>/geojson:geometry,<uuid:6c915239-26ce-458b-ac64-92c7c4192d84>/geojson:geometry,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>/geojson:geometry,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>/geojson:geometry
+
+Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape topo:testTopoReferencesExist: <uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d>/geojson:topology,<uuid:97c57559-d350-41e0-b9b1-ddfce388269a>/geojson:topology,<uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555>/geojson:topology,<uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8>/geojson:topology,<uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1>/geojson:topology,<uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28>/geojson:topology
+ - Shape topo:testTopoLinesReferencePoints: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:N2aec9bf1da2442879191e7ca56687205,<uuid:97c57559-d350-41e0-b9b1-ddfce388269a>,_:N267c3a520ee8455ab13a9438e8229225,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>,<uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555>,<uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1>,<uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d>,_:N9c94621e40d6457d9dff223b565411c3,<uuid:6c915239-26ce-458b-ac64-92c7c4192d84>,<uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>,_:N9b4d3820aa6b41b2998d118516d01c56,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>,_:Na56be779bd2147f98bf59239c1e20180,_:N050aa5cfb97c4e5c9a750365688e4ae8,_:Nfad2ba0c07714079b9994fba3862ba05,_:N5dadf9fc83344cd7aa809843e17343db,<uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28>,_:N4ba3547f4e2c46e0b6b3ee3614b77959,<uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8>,_:N76072537ccd84f439bd9d55c8cf2c1b3
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: _:Ndf73c57637c24967b3bd54af55239184,_:N071adf5177904c5c9874a57313f0fa99,_:N4a7c77c2ce5240e2b8f2eb85749356a7,_:Nb2087013cadb4d4a9a27b9993af304c3,_:N5e47e49c107f46829990e68389efe851,<uuid:fb8a9ceb-5327-43dd-9903-9e55f944c504>
+
+=== End SHACL ===
+
