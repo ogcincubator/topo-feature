@@ -27,9 +27,9 @@
     "foaf": "https://xmlns.com/foaf/0.1/",
     "activityType": "@type"
   },
-  "id": "uuid:dc6544b1-4890-465c-9e0e-2e3c9190e167",
-  "name": "DP 12346",
-  "description": "Tetrahedron test for Solid validation",
+  "id": "uuid:2cc09573-0114-4052-913b-d06650a34f6f",
+  "name": "DP 12345",
+  "description": "Tetrahedron test for Solid Validation",
   "type": "FeatureCollection",
   "featureType": "CSD",
   "tenureType": "wa-parcel-type:freehold",
@@ -46,22 +46,22 @@
   "adminUnit": [],
   "hasProvenance": [],
   "wasGeneratedBy": {
-    "id": "uuid:0caed182-4c7f-469c-bd22-353a0caa6029",
-    "endedAtTime": "2026-04-29T10:56:47.958523+00:00"
+    "id": "uuid:74f8b9f2-8d03-4519-bce2-83cb97bd9bdb",
+    "endedAtTime": "2026-04-30T04:11:02.770359+00:00"
   },
   "features": [],
   "referencedCSDs": [],
   "points": [
     {
-      "id": "uuid:ec81ba8d-22d4-4e48-9b1d-766a3a237c14",
+      "id": "uuid:e510e7d4-dc12-4b52-8563-448c9cdacf3f",
       "type": "FeatureCollection",
       "featureType": "CadastralMark",
       "features": [
         {
-          "id": "uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194",
+          "id": "uuid:a62d0217-7532-48be-b761-05c71c5822de",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-04-29T10:56:47.956526+00:00",
+          "time": "2026-04-30T04:11:02.765838+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -90,10 +90,10 @@
           }
         },
         {
-          "id": "uuid:d0d49749-4274-409c-9445-49dd23ff004f",
+          "id": "uuid:9b7fc19e-37ae-479d-9cbb-93234d08d137",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-04-29T10:56:47.956526+00:00",
+          "time": "2026-04-30T04:11:02.765838+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -122,10 +122,10 @@
           }
         },
         {
-          "id": "uuid:6c915239-26ce-458b-ac64-92c7c4192d84",
+          "id": "uuid:327b7cc7-5d0f-48a8-a25f-d6ddc0acd75d",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-04-29T10:56:47.956526+00:00",
+          "time": "2026-04-30T04:11:02.765838+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -154,10 +154,10 @@
           }
         },
         {
-          "id": "uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c",
+          "id": "uuid:2b9bc6e7-f98b-4db8-bec9-4827ea7ad343",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-04-29T10:56:47.956526+00:00",
+          "time": "2026-04-30T04:11:02.765838+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -193,21 +193,19 @@
   "parcels": [],
   "edges": [
     {
-      "id": "uuid:fb8a9ceb-5327-43dd-9903-9e55f944c504",
+      "id": "uuid:d1c91a1f-5354-4606-8b62-f6f913f862c6",
       "type": "FeatureCollection",
       "featureType": "Edge",
       "features": [
         {
-          "id": "uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28",
+          "id": "uuid:bb793e81-4d77-4b96-aa24-d203ea91e265",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              [
-                "uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194",
-                "uuid:d0d49749-4274-409c-9445-49dd23ff004f"
-              ]
+              "uuid:a62d0217-7532-48be-b761-05c71c5822de",
+              "uuid:9b7fc19e-37ae-479d-9cbb-93234d08d137"
             ]
           },
           "properties": {
@@ -217,16 +215,14 @@
           }
         },
         {
-          "id": "uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8",
+          "id": "uuid:1bb1fe3b-9e0a-428f-a5be-ea06559f3fa2",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              [
-                "uuid:d0d49749-4274-409c-9445-49dd23ff004f",
-                "uuid:6c915239-26ce-458b-ac64-92c7c4192d84"
-              ]
+              "uuid:9b7fc19e-37ae-479d-9cbb-93234d08d137",
+              "uuid:327b7cc7-5d0f-48a8-a25f-d6ddc0acd75d"
             ]
           },
           "properties": {
@@ -236,16 +232,14 @@
           }
         },
         {
-          "id": "uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d",
+          "id": "uuid:3d05d128-b419-4884-8657-ddb8384b2e52",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              [
-                "uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194",
-                "uuid:6c915239-26ce-458b-ac64-92c7c4192d84"
-              ]
+              "uuid:a62d0217-7532-48be-b761-05c71c5822de",
+              "uuid:327b7cc7-5d0f-48a8-a25f-d6ddc0acd75d"
             ]
           },
           "properties": {
@@ -255,16 +249,14 @@
           }
         },
         {
-          "id": "uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555",
+          "id": "uuid:5a2fbdbb-0031-4dd7-9de9-057131858081",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              [
-                "uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c",
-                "uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194"
-              ]
+              "uuid:2b9bc6e7-f98b-4db8-bec9-4827ea7ad343",
+              "uuid:a62d0217-7532-48be-b761-05c71c5822de"
             ]
           },
           "properties": {
@@ -274,16 +266,14 @@
           }
         },
         {
-          "id": "uuid:97c57559-d350-41e0-b9b1-ddfce388269a",
+          "id": "uuid:8bdc7e50-40d5-4b53-bb36-cd2630cfa054",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              [
-                "uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c",
-                "uuid:d0d49749-4274-409c-9445-49dd23ff004f"
-              ]
+              "uuid:2b9bc6e7-f98b-4db8-bec9-4827ea7ad343",
+              "uuid:9b7fc19e-37ae-479d-9cbb-93234d08d137"
             ]
           },
           "properties": {
@@ -293,16 +283,14 @@
           }
         },
         {
-          "id": "uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1",
+          "id": "uuid:c971173d-2242-4eec-ab42-ac02a0f37913",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              [
-                "uuid:6c915239-26ce-458b-ac64-92c7c4192d84",
-                "uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c"
-              ]
+              "uuid:327b7cc7-5d0f-48a8-a25f-d6ddc0acd75d",
+              "uuid:2b9bc6e7-f98b-4db8-bec9-4827ea7ad343"
             ]
           },
           "properties": {
@@ -316,28 +304,28 @@
   ],
   "rings": [
     {
-      "id": "uuid:8e35a252-be7e-4b9c-a944-eaa459a6edbc",
+      "id": "uuid:a8a340d1-447f-4297-ab3b-c8af46e9b660",
       "type": "FeatureCollection",
       "featureType": "Ring",
       "features": [
         {
-          "id": "uuid:eb83167b-f5af-4913-9829-3c7d77bea88d",
+          "id": "uuid:da47d730-0ffa-45fd-9723-85e61689d474",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28",
+                "ref": "uuid:bb793e81-4d77-4b96-aa24-d203ea91e265",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8",
+                "ref": "uuid:1bb1fe3b-9e0a-428f-a5be-ea06559f3fa2",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d",
-                "orientation": "-"
+                "ref": "uuid:3d05d128-b419-4884-8657-ddb8384b2e52",
+                "orientation": "+"
               }
             ]
           },
@@ -346,22 +334,22 @@
           }
         },
         {
-          "id": "uuid:4647be42-4c58-429c-a841-b3be89e0d224",
+          "id": "uuid:68ae07a8-94e4-4131-bac2-0a5b392207a0",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28",
+                "ref": "uuid:bb793e81-4d77-4b96-aa24-d203ea91e265",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555",
-                "orientation": "-"
+                "ref": "uuid:5a2fbdbb-0031-4dd7-9de9-057131858081",
+                "orientation": "+"
               },
               {
-                "ref": "uuid:97c57559-d350-41e0-b9b1-ddfce388269a",
+                "ref": "uuid:8bdc7e50-40d5-4b53-bb36-cd2630cfa054",
                 "orientation": "+"
               }
             ]
@@ -371,23 +359,23 @@
           }
         },
         {
-          "id": "uuid:fbd9c4a0-3923-46d4-9af9-5795b81a61f2",
+          "id": "uuid:ea936310-0ba2-403d-b7da-b8b65d2a8287",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d",
+                "ref": "uuid:3d05d128-b419-4884-8657-ddb8384b2e52",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:c971173d-2242-4eec-ab42-ac02a0f37913",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555",
-                "orientation": "+"
+                "ref": "uuid:5a2fbdbb-0031-4dd7-9de9-057131858081",
+                "orientation": "-"
               }
             ]
           },
@@ -396,22 +384,22 @@
           }
         },
         {
-          "id": "uuid:a04d6ffa-9361-43cc-bf4d-0bf8da93fb49",
+          "id": "uuid:9d7c4064-da52-4c0e-8001-ed01cdba9f06",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8",
+                "ref": "uuid:1bb1fe3b-9e0a-428f-a5be-ea06559f3fa2",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:97c57559-d350-41e0-b9b1-ddfce388269a",
+                "ref": "uuid:8bdc7e50-40d5-4b53-bb36-cd2630cfa054",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1",
+                "ref": "uuid:c971173d-2242-4eec-ab42-ac02a0f37913",
                 "orientation": "-"
               }
             ]
@@ -425,19 +413,19 @@
   ],
   "faces": [
     {
-      "id": "uuid:884e192c-c6a5-4ea2-b074-18e83338f4de",
+      "id": "uuid:6bffaeee-6cde-45a3-90a8-82e17d57ec51",
       "type": "FeatureCollection",
       "featureType": "Face",
       "features": [
         {
-          "id": "uuid:4c8c60fa-a557-42ad-8933-72f3df60c105",
+          "id": "uuid:5df742b5-a926-48d5-b751-47031c74949f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "rings": [
               {
-                "ref": "uuid:eb83167b-f5af-4913-9829-3c7d77bea88d",
+                "ref": "uuid:da47d730-0ffa-45fd-9723-85e61689d474",
                 "orientation": "+"
               }
             ]
@@ -453,14 +441,14 @@
           }
         },
         {
-          "id": "uuid:57fed3e9-9913-4bb5-b264-5a0dfe258ff0",
+          "id": "uuid:beed4139-2be7-4a1c-8e45-29fcc4959137",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "rings": [
               {
-                "ref": "uuid:4647be42-4c58-429c-a841-b3be89e0d224",
+                "ref": "uuid:68ae07a8-94e4-4131-bac2-0a5b392207a0",
                 "orientation": "+"
               }
             ]
@@ -476,14 +464,14 @@
           }
         },
         {
-          "id": "uuid:6715b0e9-60cf-4f3a-be10-e74f48ba1bba",
+          "id": "uuid:45aaa7f3-8046-43b5-8615-d73558e8be41",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "rings": [
               {
-                "ref": "uuid:fbd9c4a0-3923-46d4-9af9-5795b81a61f2",
+                "ref": "uuid:ea936310-0ba2-403d-b7da-b8b65d2a8287",
                 "orientation": "+"
               }
             ]
@@ -499,14 +487,14 @@
           }
         },
         {
-          "id": "uuid:332536ee-1da7-43cb-8b2f-f02bb954e577",
+          "id": "uuid:d6e95035-2161-4466-8cd6-2f0f218a1a37",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "rings": [
               {
-                "ref": "uuid:a04d6ffa-9361-43cc-bf4d-0bf8da93fb49",
+                "ref": "uuid:9d7c4064-da52-4c0e-8001-ed01cdba9f06",
                 "orientation": "+"
               }
             ]
@@ -526,31 +514,31 @@
   ],
   "shells": [
     {
-      "id": "uuid:cfbb341d-3d43-4222-9cdf-6c160d814dbe",
+      "id": "uuid:f7de3be8-0962-429c-bf00-c49fe70cf34b",
       "type": "FeatureCollection",
       "featureType": "Shell",
       "features": [
         {
-          "id": "uuid:3ab4f36c-87bb-49d8-b2c7-b54922c37a9d",
+          "id": "uuid:44243997-e5c6-41bb-82af-8bb6f9a08dc9",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:4c8c60fa-a557-42ad-8933-72f3df60c105",
+                "ref": "uuid:5df742b5-a926-48d5-b751-47031c74949f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:57fed3e9-9913-4bb5-b264-5a0dfe258ff0",
+                "ref": "uuid:beed4139-2be7-4a1c-8e45-29fcc4959137",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6715b0e9-60cf-4f3a-be10-e74f48ba1bba",
+                "ref": "uuid:45aaa7f3-8046-43b5-8615-d73558e8be41",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:332536ee-1da7-43cb-8b2f-f02bb954e577",
+                "ref": "uuid:d6e95035-2161-4466-8cd6-2f0f218a1a37",
                 "orientation": "+"
               }
             ]
@@ -564,19 +552,19 @@
   ],
   "solids": [
     {
-      "id": "uuid:c682a120-5f65-46c6-aaa4-b55670d13c2c",
+      "id": "uuid:ee250980-aa33-4499-8402-9b9fedd74035",
       "type": "FeatureCollection",
       "featureType": "Solid",
       "features": [
         {
-          "id": "uuid:7a8cf526-c5d4-4c95-951f-468c096f5ab1",
+          "id": "uuid:0187dfd0-4a76-4a59-aa59-3f1a84c58c10",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:3ab4f36c-87bb-49d8-b2c7-b54922c37a9d",
+                "ref": "uuid:44243997-e5c6-41bb-82af-8bb6f9a08dc9",
                 "orientation": "+"
               }
             ]
