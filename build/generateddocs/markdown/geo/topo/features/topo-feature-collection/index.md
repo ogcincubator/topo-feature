@@ -19,8 +19,7 @@ TopoFeature is feature type using a topology property to reference an ordered li
 
 Other features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.
 
-This is a generalisation of the TopoJSON concept using inline data, but not limited to the LineStrings. Topological defined objects 
-can be solids, swept volumes or any other concept.
+This is a generalisation of the [TopoJSON](https://github.com/topojson/topojson) concept using inline data, but not limited to the LineStrings. Topological defined objects can be solids, swept volumes or any other concept.
 
 
 ## Examples
@@ -129,7 +128,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP1P2",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P1",
           "P2"
@@ -177,7 +176,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP1P2",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P1",
           "P2"
@@ -217,6 +216,7 @@ can be solids, swept volumes or any other concept.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/line> a geojson:FeatureCollection ;
@@ -225,7 +225,7 @@ can be solids, swept volumes or any other concept.
         <http://www.example.com/features/P2> .
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 <http://www.example.com/features/P1> a geojson:Feature ;
@@ -288,7 +288,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP1P2",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P1",
           "P2"
@@ -301,7 +301,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP2P3",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P2",
           "P3"
@@ -314,7 +314,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP3P1",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P3",
           "P1"
@@ -388,7 +388,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP1P2",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P1",
           "P2"
@@ -401,7 +401,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP2P3",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P2",
           "P3"
@@ -414,7 +414,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP3P1",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P3",
           "P1"
@@ -444,6 +444,7 @@ can be solids, swept volumes or any other concept.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/TopoCollectionExample> a geojson:FeatureCollection ;
@@ -460,15 +461,15 @@ can be solids, swept volumes or any other concept.
             geojson:relatedFeatures ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ] .
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 <http://www.example.com/features/LineP2P3> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/P3> ) ] .
 
 <http://www.example.com/features/LineP3P1> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <http://www.example.com/features/P3> <http://www.example.com/features/P1> ) ] .
 
 <http://www.example.com/features/P1> a geojson:Feature ;
@@ -670,6 +671,7 @@ Links to the schema:
     "endTangentVector": "geojson:endTangentVector",
     "ref": "topo:ref",
     "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
     "Face": "topo:Face",
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",

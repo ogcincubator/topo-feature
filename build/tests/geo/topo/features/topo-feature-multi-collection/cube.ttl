@@ -6,14 +6,14 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <uuid:0761370f-a608-49b2-8527-993f891eb14b> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2> <uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740> ) ) ] .
 
 <uuid:080940ec-1a56-4a4b-8c15-bc27322310b0> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740> <uuid:de936c58-46ed-4448-991f-f6b526d87f0a> ) ) ] .
 
-<uuid:2e6ccc7c-5281-4bcd-9a4d-a3d6ecea9f7c> a <file:///github/workspace/Edge>,
+<uuid:2e6ccc7c-5281-4bcd-9a4d-a3d6ecea9f7c> a topo:Edge,
         geojson:FeatureCollection ;
     geojson:features <uuid:0761370f-a608-49b2-8527-993f891eb14b>,
         <uuid:080940ec-1a56-4a4b-8c15-bc27322310b0>,
@@ -29,43 +29,43 @@
         <uuid:eff3a191-d0cc-496c-9b24-6134842b1c46> .
 
 <uuid:3833d35f-5a7f-4ef0-81f2-1c257002ff5f> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3> <uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2> ) ) ] .
 
 <uuid:443eb63f-c20d-4f3e-a6c9-8d81bce492c7> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4> <uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740> ) ) ] .
 
 <uuid:49a9bd3d-5d7d-4264-b59e-31cb630f51e1> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432> <uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3> ) ) ] .
 
 <uuid:6384bde9-4ced-4171-a7f0-d004039fca80> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4> <uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656> ) ) ] .
 
 <uuid:75e3a244-67db-4eeb-bd03-7168b92b519a> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:63c6eeab-41a1-4259-8311-840754422246> <uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4> ) ) ] .
 
 <uuid:7b7393b6-9568-4657-a1aa-72c94f11276b> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2> <uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656> ) ) ] .
 
 <uuid:b3752f9d-1e6c-4cfe-9e20-3130921e7107> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:63c6eeab-41a1-4259-8311-840754422246> <uuid:de936c58-46ed-4448-991f-f6b526d87f0a> ) ) ] .
 
 <uuid:e5d652b1-1998-4ecc-bd5a-94e5ca1e839c> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432> <uuid:63c6eeab-41a1-4259-8311-840754422246> ) ) ] .
 
 <uuid:e8f2be65-98b8-4907-b5f7-a805b70e0af9> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:de936c58-46ed-4448-991f-f6b526d87f0a> <uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3> ) ) ] .
 
 <uuid:eff3a191-d0cc-496c-9b24-6134842b1c46> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656> <uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432> ) ) ] .
 
 <uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2> a <file:///github/workspace/BoundaryMark>,

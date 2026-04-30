@@ -224,6 +224,7 @@
     "endTangentVector": "geojson:endTangentVector",
     "ref": "topo:ref",
     "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
     "topo": "https://purl.org/geojson/topo#",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

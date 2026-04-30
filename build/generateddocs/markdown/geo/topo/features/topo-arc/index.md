@@ -689,6 +689,7 @@ Links to the schema:
     "endTangentVector": "geojson:endTangentVector",
     "ref": "topo:ref",
     "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
     "Face": "topo:Face",
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",

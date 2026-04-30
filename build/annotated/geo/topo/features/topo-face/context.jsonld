@@ -134,6 +134,7 @@
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "Edge": "topo:Edge",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
     "geojson": "https://purl.org/geojson/vocab#",

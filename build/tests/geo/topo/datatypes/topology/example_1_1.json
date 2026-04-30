@@ -1,5 +1,5 @@
 {
-  "type": "LineString",
+  "type": "Edge",
   "references": [
     "P1",
     "P2"

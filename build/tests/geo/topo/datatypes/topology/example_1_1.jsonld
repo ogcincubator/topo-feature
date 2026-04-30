@@ -1,6 +1,6 @@
 {
   "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
-  "type": "LineString",
+  "type": "Edge",
   "references": [
     "P1",
     "P2"

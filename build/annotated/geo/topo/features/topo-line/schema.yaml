@@ -3,7 +3,7 @@ description: Line Feature with geometry by reference
 $defs:
   testCollection:
     $anchor: testCollection
-    description: A convienence ref to a complete, testable collection of objects and
+    description: A convenience ref to a complete, testable collection of objects and
       references
     $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
 allOf:
@@ -16,6 +16,7 @@ allOf:
           type:
             type: string
             enum:
+            - Edge
             - LineString
             - MultiLineString
   required:

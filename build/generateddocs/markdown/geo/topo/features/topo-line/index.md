@@ -30,7 +30,7 @@ This is a generalisation of the TopoJSON concept using inline data, and hence no
   "id": "LineP1P2",
   "geometry": null,
   "topology": {
-    "type": "LineString",
+    "type": "Edge",
     "references": [
       "P1",
       "P2"
@@ -48,7 +48,7 @@ This is a generalisation of the TopoJSON concept using inline data, and hence no
   "id": "LineP1P2",
   "geometry": null,
   "topology": {
-    "type": "LineString",
+    "type": "Edge",
     "references": [
       "P1",
       "P2"
@@ -62,9 +62,10 @@ This is a generalisation of the TopoJSON concept using inline data, and hence no
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 
@@ -203,7 +204,7 @@ point features at render time. This is the standard topo-feature pattern for lin
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -218,7 +219,7 @@ point features at render time. This is the standard topo-feature pattern for lin
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -233,7 +234,7 @@ point features at render time. This is the standard topo-feature pattern for lin
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -313,7 +314,7 @@ point features at render time. This is the standard topo-feature pattern for lin
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -328,7 +329,7 @@ point features at render time. This is the standard topo-feature pattern for lin
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -343,7 +344,7 @@ point features at render time. This is the standard topo-feature pattern for lin
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -374,7 +375,7 @@ description: Line Feature with geometry by reference
 $defs:
   testCollection:
     $anchor: testCollection
-    description: A convienence ref to a complete, testable collection of objects and
+    description: A convenience ref to a complete, testable collection of objects and
       references
     $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
 allOf:
@@ -387,6 +388,7 @@ allOf:
           type:
             type: string
             enum:
+            - Edge
             - LineString
             - MultiLineString
   required:
@@ -534,6 +536,7 @@ Links to the schema:
     "endTangentVector": "geojson:endTangentVector",
     "ref": "topo:ref",
     "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
     "Face": "topo:Face",
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",

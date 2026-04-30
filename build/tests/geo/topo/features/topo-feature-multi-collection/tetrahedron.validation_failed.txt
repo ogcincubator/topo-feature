@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature-multi-collection - Topo Feature Multi-Collection
-Generated 2026-04-29T11:38:59.157049+00:00
+Generated 2026-04-30T03:31:05.239109+00:00
 === Files ===
 Using examples/tetrahedron.json from examples
 JSON-LD context is present - uplifting
@@ -88,15 +88,15 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n8d81448707d94b7eb53cbd83864640f0b1: <uuid:6c915239-26ce-458b-ac64-92c7c4192d84>/geojson:geometry,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>/geojson:geometry,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>/dct:spatial,<uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>/geojson:geometry,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>/geojson:geometry,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>/dct:spatial,<uuid:6c915239-26ce-458b-ac64-92c7c4192d84>/dct:spatial,<uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>/dct:spatial
- - Shape _:n8d81448707d94b7eb53cbd83864640f0b3: <uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>/geojson:geometry,<uuid:6c915239-26ce-458b-ac64-92c7c4192d84>/geojson:geometry,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>/geojson:geometry,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>/geojson:geometry
+ - Shape _:n2c94c50194bd429a97180f9a8d7d2b85b3: <uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>/geojson:geometry,<uuid:6c915239-26ce-458b-ac64-92c7c4192d84>/geojson:geometry,<uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>/geojson:geometry,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>/geojson:geometry
+ - Shape _:n2c94c50194bd429a97180f9a8d7d2b85b1: <uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>/geojson:geometry,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>/dct:spatial,<uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>/dct:spatial,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>/geojson:geometry,<uuid:6c915239-26ce-458b-ac64-92c7c4192d84>/geojson:geometry,<uuid:6c915239-26ce-458b-ac64-92c7c4192d84>/dct:spatial,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>/geojson:geometry,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>/dct:spatial
 
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoReferencesExist: <uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d>/geojson:topology,<uuid:97c57559-d350-41e0-b9b1-ddfce388269a>/geojson:topology,<uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555>/geojson:topology,<uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8>/geojson:topology,<uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1>/geojson:topology,<uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28>/geojson:topology
+ - Shape topo:testTopoReferencesExist: <uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28>/geojson:topology,<uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1>/geojson:topology,<uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555>/geojson:topology,<uuid:97c57559-d350-41e0-b9b1-ddfce388269a>/geojson:topology,<uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8>/geojson:topology,<uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d>/geojson:topology
  - Shape topo:testTopoLinesReferencePoints: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -104,23 +104,23 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:N043c8c33b54441f6a01ed44cfb7a6dfd,_:N46e63005eda245a8b56eb623c34f1489,<uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8>,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>,_:N2be1d01834fc41789fc6c16bc27a7f50,<uuid:97c57559-d350-41e0-b9b1-ddfce388269a>,_:N5d4dd14e36264af0aa7796c52125164e,_:N7595e6f4150f45febeb51c216d3890b4,_:Naa600193ac2642538b1f6901a7bbfed7,_:N585c626c719f4d73bcc580ed512c4b13,_:N4bfc3e2a503848168d0678ab81144392,<uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>,<uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1>,<uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d>,<uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555>,_:N7b95050fd87d423eb7a8ad2cb2b8dd3f,<uuid:6c915239-26ce-458b-ac64-92c7c4192d84>,<uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28>,_:Nc46237baaac146c79069475d102f4e23
+ - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: _:N2aec9bf1da2442879191e7ca56687205,<uuid:97c57559-d350-41e0-b9b1-ddfce388269a>,_:N267c3a520ee8455ab13a9438e8229225,<uuid:d0d49749-4274-409c-9445-49dd23ff004f>,<uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555>,<uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1>,<uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d>,_:N9c94621e40d6457d9dff223b565411c3,<uuid:6c915239-26ce-458b-ac64-92c7c4192d84>,<uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194>,_:N9b4d3820aa6b41b2998d118516d01c56,<uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c>,_:Na56be779bd2147f98bf59239c1e20180,_:N050aa5cfb97c4e5c9a750365688e4ae8,_:Nfad2ba0c07714079b9994fba3862ba05,_:N5dadf9fc83344cd7aa809843e17343db,<uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28>,_:N4ba3547f4e2c46e0b6b3ee3614b77959,<uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8>,_:N76072537ccd84f439bd9d55c8cf2c1b3
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
  - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureCollectionShape: _:Ndf73c57637c24967b3bd54af55239184,_:N071adf5177904c5c9874a57313f0fa99,_:N4a7c77c2ce5240e2b8f2eb85749356a7,_:Nb2087013cadb4d4a9a27b9993af304c3,_:N5e47e49c107f46829990e68389efe851,<uuid:fb8a9ceb-5327-43dd-9903-9e55f944c504>
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: _:N17430b20bd12451da3a4b9cc322b607e,_:N2d3d857d0bcb4f0086a37267428042b6,<uuid:fb8a9ceb-5327-43dd-9903-9e55f944c504>,_:Nc77091b330594eae886d222a908fc605,_:N0bd0dd405b164cbea0a8dcbe22789019,_:N9a5b450240b247a8898c69e03782be60
 
 === End SHACL ===
 

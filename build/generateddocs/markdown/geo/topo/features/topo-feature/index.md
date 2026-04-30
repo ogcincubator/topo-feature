@@ -42,7 +42,7 @@ This is a generalisation of the TopoJSON concept using identified features rathe
   "id": "LineP1P2",
   "geometry": null,
   "topology": {
-    "type": "LineString",
+    "type": "Edge",
     "references": [
       "P1",
       "P2"
@@ -60,7 +60,7 @@ This is a generalisation of the TopoJSON concept using identified features rathe
   "id": "LineP1P2",
   "geometry": null,
   "topology": {
-    "type": "LineString",
+    "type": "Edge",
     "references": [
       "P1",
       "P2"
@@ -74,9 +74,10 @@ This is a generalisation of the TopoJSON concept using identified features rathe
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 
@@ -150,7 +151,7 @@ from the referenced point features at render time.
   "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
   "geometry": null,
   "topology": {
-    "type": "LineString",
+    "type": "Edge",
     "references": [
       "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
       "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -170,7 +171,7 @@ from the referenced point features at render time.
   "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
   "geometry": null,
   "topology": {
-    "type": "LineString",
+    "type": "Edge",
     "references": [
       "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
       "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -186,9 +187,10 @@ from the referenced point features at render time.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
 <uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 
@@ -484,6 +486,7 @@ Links to the schema:
     "endTangentVector": "geojson:endTangentVector",
     "ref": "topo:ref",
     "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
     "Face": "topo:Face",
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",

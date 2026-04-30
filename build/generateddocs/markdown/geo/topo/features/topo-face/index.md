@@ -134,7 +134,7 @@ edge and face geometry are null (topology-only).
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -149,7 +149,7 @@ edge and face geometry are null (topology-only).
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -164,7 +164,7 @@ edge and face geometry are null (topology-only).
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -179,7 +179,7 @@ edge and face geometry are null (topology-only).
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -301,7 +301,7 @@ edge and face geometry are null (topology-only).
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -316,7 +316,7 @@ edge and face geometry are null (topology-only).
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -331,7 +331,7 @@ edge and face geometry are null (topology-only).
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -346,7 +346,7 @@ edge and face geometry are null (topology-only).
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -864,6 +864,7 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "Edge": "topo:Edge",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
     "geojson": "https://purl.org/geojson/vocab#",

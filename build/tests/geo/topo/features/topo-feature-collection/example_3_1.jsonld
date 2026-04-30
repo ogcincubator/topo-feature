@@ -44,7 +44,7 @@
       "id": "LineP1P2",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P1",
           "P2"
@@ -57,7 +57,7 @@
       "id": "LineP2P3",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P2",
           "P3"
@@ -70,7 +70,7 @@
       "id": "LineP3P1",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P3",
           "P1"

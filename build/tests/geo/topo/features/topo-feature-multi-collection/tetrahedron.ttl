@@ -6,30 +6,30 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194> <uuid:6c915239-26ce-458b-ac64-92c7c4192d84> ) ) ] .
 
 <uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:d0d49749-4274-409c-9445-49dd23ff004f> <uuid:6c915239-26ce-458b-ac64-92c7c4192d84> ) ) ] .
 
 <uuid:97c57559-d350-41e0-b9b1-ddfce388269a> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c> <uuid:d0d49749-4274-409c-9445-49dd23ff004f> ) ) ] .
 
 <uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194> <uuid:d0d49749-4274-409c-9445-49dd23ff004f> ) ) ] .
 
 <uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:6c915239-26ce-458b-ac64-92c7c4192d84> <uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c> ) ) ] .
 
 <uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c> <uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194> ) ) ] .
 
-<uuid:fb8a9ceb-5327-43dd-9903-9e55f944c504> a <file:///github/workspace/Edge>,
+<uuid:fb8a9ceb-5327-43dd-9903-9e55f944c504> a topo:Edge,
         geojson:FeatureCollection ;
     geojson:features <uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d>,
         <uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8>,

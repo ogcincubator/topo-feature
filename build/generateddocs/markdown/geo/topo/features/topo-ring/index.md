@@ -329,6 +329,7 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "Edge": "topo:Edge",
     "Face": "topo:Face",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",

@@ -50,7 +50,7 @@ solids
 {
   "type": "FeatureCollection",
   "points": [ { "type": "Feature", "geometry": { "type": "Point", "coordinates": [...] }, ... } ],
-  "edges":  [ { "type": "Feature", "geometry": null, "topology": { "type": "LineString", "references": ["uuid:...", "uuid:..."] }, ... } ],
+  "edges":  [ { "type": "Feature", "geometry": null, "topology": { "type": "Edge", "references": ["uuid:...", "uuid:..."] }, ... } ],
   "faces":  [ { "type": "Feature", "geometry": null, "topology": { "type": "Face",   "rings": [{ "type": "Ring", "directed_references": [...] }] }, ... } ],
   "solids": [ { "type": "Feature", "geometry": null, "topology": { "type": "Solid",  "shells": [{ "type": "Shell", "directed_references": [...] }] }, ... } ]
 }
@@ -2033,14 +2033,14 @@ Self-contained collection of topology objects defining a Cube
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <uuid:0761370f-a608-49b2-8527-993f891eb14b> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2> <uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740> ) ) ] .
 
 <uuid:080940ec-1a56-4a4b-8c15-bc27322310b0> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740> <uuid:de936c58-46ed-4448-991f-f6b526d87f0a> ) ) ] .
 
-<uuid:2e6ccc7c-5281-4bcd-9a4d-a3d6ecea9f7c> a <file:///github/workspace/Edge>,
+<uuid:2e6ccc7c-5281-4bcd-9a4d-a3d6ecea9f7c> a topo:Edge,
         geojson:FeatureCollection ;
     geojson:features <uuid:0761370f-a608-49b2-8527-993f891eb14b>,
         <uuid:080940ec-1a56-4a4b-8c15-bc27322310b0>,
@@ -2056,43 +2056,43 @@ Self-contained collection of topology objects defining a Cube
         <uuid:eff3a191-d0cc-496c-9b24-6134842b1c46> .
 
 <uuid:3833d35f-5a7f-4ef0-81f2-1c257002ff5f> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3> <uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2> ) ) ] .
 
 <uuid:443eb63f-c20d-4f3e-a6c9-8d81bce492c7> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4> <uuid:ec47d6c8-7252-4d21-a9ec-72eb19275740> ) ) ] .
 
 <uuid:49a9bd3d-5d7d-4264-b59e-31cb630f51e1> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432> <uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3> ) ) ] .
 
 <uuid:6384bde9-4ced-4171-a7f0-d004039fca80> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4> <uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656> ) ) ] .
 
 <uuid:75e3a244-67db-4eeb-bd03-7168b92b519a> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:63c6eeab-41a1-4259-8311-840754422246> <uuid:50447df5-e5a0-45fe-b9f1-9647fc1822a4> ) ) ] .
 
 <uuid:7b7393b6-9568-4657-a1aa-72c94f11276b> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2> <uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656> ) ) ] .
 
 <uuid:b3752f9d-1e6c-4cfe-9e20-3130921e7107> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:63c6eeab-41a1-4259-8311-840754422246> <uuid:de936c58-46ed-4448-991f-f6b526d87f0a> ) ) ] .
 
 <uuid:e5d652b1-1998-4ecc-bd5a-94e5ca1e839c> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432> <uuid:63c6eeab-41a1-4259-8311-840754422246> ) ) ] .
 
 <uuid:e8f2be65-98b8-4907-b5f7-a805b70e0af9> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:de936c58-46ed-4448-991f-f6b526d87f0a> <uuid:3ddd4be9-563e-44b3-9543-d528eb1246d3> ) ) ] .
 
 <uuid:eff3a191-d0cc-496c-9b24-6134842b1c46> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:a9a916c0-7014-4c99-8c36-7ef46ef50656> <uuid:9c35c3cd-f638-4d26-8e11-14c9cd2a1432> ) ) ] .
 
 <uuid:1d6deefc-950b-4612-97d6-2a0ab0e9a7b2> a <file:///github/workspace/BoundaryMark>,
@@ -3430,30 +3430,30 @@ Self-contained collection of topology objects defining a Tetrahedron
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194> <uuid:6c915239-26ce-458b-ac64-92c7c4192d84> ) ) ] .
 
 <uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:d0d49749-4274-409c-9445-49dd23ff004f> <uuid:6c915239-26ce-458b-ac64-92c7c4192d84> ) ) ] .
 
 <uuid:97c57559-d350-41e0-b9b1-ddfce388269a> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c> <uuid:d0d49749-4274-409c-9445-49dd23ff004f> ) ) ] .
 
 <uuid:b2d5631c-35d2-40a3-b220-b2c96cbf7e28> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194> <uuid:d0d49749-4274-409c-9445-49dd23ff004f> ) ) ] .
 
 <uuid:e5764f3b-563a-443f-a72e-5cbe720ab5b1> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:6c915239-26ce-458b-ac64-92c7c4192d84> <uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c> ) ) ] .
 
 <uuid:ecd6673f-14f4-4a5e-955c-3bd37a285555> a geojson:Feature ;
-    geojson:topology [ a <file:///github/workspace/Edge> ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( ( <uuid:8c7e2a33-ab89-4612-a9c0-a17f521dae4c> <uuid:0cb551de-32c8-4e8e-b35c-29dafd16d194> ) ) ] .
 
-<uuid:fb8a9ceb-5327-43dd-9903-9e55f944c504> a <file:///github/workspace/Edge>,
+<uuid:fb8a9ceb-5327-43dd-9903-9e55f944c504> a topo:Edge,
         geojson:FeatureCollection ;
     geojson:features <uuid:1829c5f4-dadd-4fc3-b45c-2fbb5ccd2a4d>,
         <uuid:50813a67-e5a5-4387-8f08-42fad0fb30c8>,
@@ -3815,7 +3815,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -3830,7 +3830,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -3845,7 +3845,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -3860,7 +3860,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -3958,7 +3958,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -3973,7 +3973,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -3988,7 +3988,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -4003,7 +4003,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -4025,11 +4025,11 @@ geometry is null; actual coordinates are resolved from the referenced points.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> <uuid:c611f840-2829-44b2-b367-3915ca7875a4> ) ] .
 
 <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> a geojson:Feature ;
@@ -4037,11 +4037,11 @@ geometry is null; actual coordinates are resolved from the referenced points.
             geojson:coordinates ( 1.2e+01 2e+00 3e+00 ) ] .
 
 <uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> ) ] .
 
 <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> a geojson:Feature ;
@@ -4566,7 +4566,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -4581,7 +4581,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -4596,7 +4596,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -4611,7 +4611,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -4626,7 +4626,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -4641,7 +4641,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -4656,7 +4656,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -4671,7 +4671,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -4686,7 +4686,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -4701,7 +4701,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -4716,7 +4716,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -4731,7 +4731,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -4746,7 +4746,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -4761,7 +4761,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -4776,7 +4776,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -4791,7 +4791,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -4806,7 +4806,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -4821,7 +4821,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -4836,7 +4836,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -4851,7 +4851,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -4866,7 +4866,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -4881,7 +4881,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -4896,7 +4896,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -4911,7 +4911,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -4926,7 +4926,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -4941,7 +4941,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9"
@@ -4956,7 +4956,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6"
@@ -4971,7 +4971,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e"
@@ -4986,7 +4986,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -5001,7 +5001,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -5016,7 +5016,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -5031,7 +5031,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -5046,7 +5046,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9"
@@ -5061,7 +5061,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -5076,7 +5076,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -5091,7 +5091,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -5106,7 +5106,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51"
@@ -5121,7 +5121,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -5136,7 +5136,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -5151,7 +5151,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e"
@@ -5166,7 +5166,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -5181,7 +5181,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -5196,7 +5196,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -5211,7 +5211,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -5226,7 +5226,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -5241,7 +5241,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -5256,7 +5256,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -5271,7 +5271,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -5286,7 +5286,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df"
@@ -5301,7 +5301,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -5316,7 +5316,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:8e503e04-ad51-423b-8102-708a845189b6"
@@ -5331,7 +5331,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -5346,7 +5346,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -5361,7 +5361,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -5376,7 +5376,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -5391,7 +5391,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606"
@@ -5406,7 +5406,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -5421,7 +5421,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -5436,7 +5436,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -5451,7 +5451,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0"
@@ -5466,7 +5466,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -5481,7 +5481,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -5496,7 +5496,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -5511,7 +5511,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -5526,7 +5526,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -5541,7 +5541,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -6122,7 +6122,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -6137,7 +6137,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -6152,7 +6152,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -6167,7 +6167,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -6182,7 +6182,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -6197,7 +6197,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -6212,7 +6212,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -6227,7 +6227,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -6242,7 +6242,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -6257,7 +6257,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -6272,7 +6272,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -6287,7 +6287,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -6302,7 +6302,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -6317,7 +6317,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -6332,7 +6332,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -6347,7 +6347,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -6362,7 +6362,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -6377,7 +6377,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -6392,7 +6392,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -6407,7 +6407,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -6422,7 +6422,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -6437,7 +6437,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -6452,7 +6452,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -6467,7 +6467,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -6482,7 +6482,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -6497,7 +6497,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9"
@@ -6512,7 +6512,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6"
@@ -6527,7 +6527,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e"
@@ -6542,7 +6542,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -6557,7 +6557,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -6572,7 +6572,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -6587,7 +6587,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -6602,7 +6602,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9"
@@ -6617,7 +6617,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -6632,7 +6632,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -6647,7 +6647,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -6662,7 +6662,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51"
@@ -6677,7 +6677,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -6692,7 +6692,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -6707,7 +6707,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e"
@@ -6722,7 +6722,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -6737,7 +6737,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -6752,7 +6752,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -6767,7 +6767,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -6782,7 +6782,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -6797,7 +6797,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -6812,7 +6812,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -6827,7 +6827,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -6842,7 +6842,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df"
@@ -6857,7 +6857,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -6872,7 +6872,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:8e503e04-ad51-423b-8102-708a845189b6"
@@ -6887,7 +6887,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -6902,7 +6902,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -6917,7 +6917,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -6932,7 +6932,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -6947,7 +6947,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606"
@@ -6962,7 +6962,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -6977,7 +6977,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -6992,7 +6992,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -7007,7 +7007,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0"
@@ -7022,7 +7022,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -7037,7 +7037,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -7052,7 +7052,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -7067,7 +7067,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -7082,7 +7082,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -7097,7 +7097,7 @@ are derived from the topological reference chain.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -7199,267 +7199,267 @@ are derived from the topological reference chain.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <uuid:06babc8d-f0d6-43eb-bfad-931055bae084> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
 
 <uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:307b7db6-8014-4628-b80e-ff925bf71168> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
 
 <uuid:13dd8184-f73e-4d9f-9977-3e573274fccc> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
 
 <uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:242a8400-a076-4817-86c6-acd56087cec6> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
 
 <uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:38499704-81f7-4d47-965f-435e0b7b0850> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
 
 <uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
 
 <uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> ) ] .
 
 <uuid:4406e3f5-89dc-463b-84e4-487490f71f1a> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
 
 <uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
 
 <uuid:474fef44-eb6e-4e19-a871-433f9bac5650> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
 
 <uuid:4ad210b7-5de5-4732-af7c-978de28f988b> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> ) ] .
 
 <uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
 
 <uuid:511c6e7d-728b-4f1f-9763-9461eb628586> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:5a36c75b-053b-4d7b-b512-6777786d6180> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
 
 <uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:61f99921-a94d-4e0d-8353-f027d76227c5> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
 
 <uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
 
 <uuid:71af0dde-7fc9-4290-9624-119e91f422ea> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:8e503e04-ad51-423b-8102-708a845189b6> ) ] .
 
 <uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
 
 <uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
 
 <uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
 
 <uuid:745aa367-94b6-4949-a856-5271ec6672e9> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
 
 <uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> ) ] .
 
 <uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:7da1c2fe-f798-43cc-af44-ac63f968139c> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> <uuid:c611f840-2829-44b2-b367-3915ca7875a4> ) ] .
 
 <uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
 
 <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:8582d9c2-6053-495a-8413-f5493691c0de> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
 
 <uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:91cdc345-f745-4643-bc88-a24f8e2216b0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
 
 <uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:9238cbda-d019-4b57-8319-0cc355656802> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
 
 <uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
 
 <uuid:a604828d-a36b-4fac-ba6f-6160ade95301> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:aafd209b-cd13-401a-83f5-26751a02cffe> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> ) ] .
 
 <uuid:ad13a84c-df97-4b75-9dc1-1ce452249964> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
 
 <uuid:af347f25-a547-477c-b246-cb810756d4dc> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:caa6045e-4189-4571-8914-1189e51ac71e> ) ] .
 
 <uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:b6e30631-9768-4020-8947-c32137328216> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
 
 <uuid:c2a00070-f12b-42f9-b78c-b33daa500873> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
 
 <uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> ) ] .
 
 <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> ) ] .
 
 <uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
 
 <uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> ) ] .
 
 <uuid:ed666061-98c5-439d-ab0d-5a792437a873> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> ) ] .
 
 <uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
 
 <uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
 
 <uuid:f921656a-58e3-4375-bdff-ac8019f524cf> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
 
 <uuid:fb03276b-4250-4d52-81e1-035a0bd92895> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> ) ] .
 
 <uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
 
 <uuid:fc877bbe-72a8-4e59-b959-010e6660984a> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
 
 <uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
 
 <uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:206806a4-a2f8-4c04-858e-99d289858a40> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> a geojson:Feature ;
@@ -8147,7 +8147,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -8162,7 +8162,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -8177,7 +8177,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -8192,7 +8192,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -8207,7 +8207,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -8222,7 +8222,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -8237,7 +8237,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -8252,7 +8252,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -8267,7 +8267,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -8282,7 +8282,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -8297,7 +8297,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -8312,7 +8312,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -8327,7 +8327,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -8342,7 +8342,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -8357,7 +8357,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -8372,7 +8372,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -8387,7 +8387,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -8402,7 +8402,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -8417,7 +8417,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -8432,7 +8432,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -8447,7 +8447,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -8462,7 +8462,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -8477,7 +8477,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -8492,7 +8492,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -8507,7 +8507,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -8522,7 +8522,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9"
@@ -8537,7 +8537,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6"
@@ -8552,7 +8552,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e"
@@ -8567,7 +8567,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -8582,7 +8582,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -8597,7 +8597,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -8612,7 +8612,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -8627,7 +8627,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9"
@@ -8642,7 +8642,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -8657,7 +8657,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -8672,7 +8672,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -8687,7 +8687,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51"
@@ -8702,7 +8702,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -8717,7 +8717,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -8732,7 +8732,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e"
@@ -8747,7 +8747,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -8762,7 +8762,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -8777,7 +8777,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -8792,7 +8792,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -8807,7 +8807,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -8822,7 +8822,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -8837,7 +8837,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -8852,7 +8852,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -8867,7 +8867,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df"
@@ -8882,7 +8882,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -8897,7 +8897,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:8e503e04-ad51-423b-8102-708a845189b6"
@@ -8912,7 +8912,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -8927,7 +8927,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -8942,7 +8942,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -8957,7 +8957,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -8972,7 +8972,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606"
@@ -8987,7 +8987,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -9002,7 +9002,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -9017,7 +9017,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -9032,7 +9032,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0"
@@ -9047,7 +9047,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -9062,7 +9062,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -9077,7 +9077,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -9092,7 +9092,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -9107,7 +9107,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -9122,7 +9122,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -11225,7 +11225,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -11240,7 +11240,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -11255,7 +11255,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -11270,7 +11270,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -11285,7 +11285,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -11300,7 +11300,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -11315,7 +11315,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -11330,7 +11330,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -11345,7 +11345,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -11360,7 +11360,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -11375,7 +11375,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -11390,7 +11390,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -11405,7 +11405,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -11420,7 +11420,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -11435,7 +11435,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -11450,7 +11450,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -11465,7 +11465,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -11480,7 +11480,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -11495,7 +11495,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -11510,7 +11510,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -11525,7 +11525,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -11540,7 +11540,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -11555,7 +11555,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -11570,7 +11570,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -11585,7 +11585,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -11600,7 +11600,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9"
@@ -11615,7 +11615,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6"
@@ -11630,7 +11630,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e"
@@ -11645,7 +11645,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -11660,7 +11660,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -11675,7 +11675,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -11690,7 +11690,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -11705,7 +11705,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9"
@@ -11720,7 +11720,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -11735,7 +11735,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -11750,7 +11750,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -11765,7 +11765,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51"
@@ -11780,7 +11780,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -11795,7 +11795,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -11810,7 +11810,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e"
@@ -11825,7 +11825,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -11840,7 +11840,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -11855,7 +11855,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -11870,7 +11870,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -11885,7 +11885,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -11900,7 +11900,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -11915,7 +11915,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -11930,7 +11930,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -11945,7 +11945,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df"
@@ -11960,7 +11960,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -11975,7 +11975,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:8e503e04-ad51-423b-8102-708a845189b6"
@@ -11990,7 +11990,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -12005,7 +12005,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -12020,7 +12020,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -12035,7 +12035,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -12050,7 +12050,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606"
@@ -12065,7 +12065,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -12080,7 +12080,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -12095,7 +12095,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -12110,7 +12110,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0"
@@ -12125,7 +12125,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -12140,7 +12140,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -12155,7 +12155,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -12170,7 +12170,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -12185,7 +12185,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -12200,7 +12200,7 @@ All supporting points, edges and faces are included to make the example self-con
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -13819,267 +13819,267 @@ All supporting points, edges and faces are included to make the example self-con
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <uuid:06babc8d-f0d6-43eb-bfad-931055bae084> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
 
 <uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:307b7db6-8014-4628-b80e-ff925bf71168> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
 
 <uuid:13dd8184-f73e-4d9f-9977-3e573274fccc> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
 
 <uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:242a8400-a076-4817-86c6-acd56087cec6> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
 
 <uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:38499704-81f7-4d47-965f-435e0b7b0850> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
 
 <uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
 
 <uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> ) ] .
 
 <uuid:4406e3f5-89dc-463b-84e4-487490f71f1a> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
 
 <uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
 
 <uuid:474fef44-eb6e-4e19-a871-433f9bac5650> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
 
 <uuid:4ad210b7-5de5-4732-af7c-978de28f988b> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> ) ] .
 
 <uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
 
 <uuid:511c6e7d-728b-4f1f-9763-9461eb628586> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:5a36c75b-053b-4d7b-b512-6777786d6180> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
 
 <uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:61f99921-a94d-4e0d-8353-f027d76227c5> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
 
 <uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
 
 <uuid:71af0dde-7fc9-4290-9624-119e91f422ea> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:8e503e04-ad51-423b-8102-708a845189b6> ) ] .
 
 <uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
 
 <uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
 
 <uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
 
 <uuid:745aa367-94b6-4949-a856-5271ec6672e9> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
 
 <uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> ) ] .
 
 <uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:7da1c2fe-f798-43cc-af44-ac63f968139c> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> <uuid:c611f840-2829-44b2-b367-3915ca7875a4> ) ] .
 
 <uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
 
 <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:8582d9c2-6053-495a-8413-f5493691c0de> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
 
 <uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:91cdc345-f745-4643-bc88-a24f8e2216b0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
 
 <uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:9238cbda-d019-4b57-8319-0cc355656802> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
 
 <uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
 
 <uuid:a604828d-a36b-4fac-ba6f-6160ade95301> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:aafd209b-cd13-401a-83f5-26751a02cffe> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> ) ] .
 
 <uuid:ad13a84c-df97-4b75-9dc1-1ce452249964> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
 
 <uuid:af347f25-a547-477c-b246-cb810756d4dc> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:caa6045e-4189-4571-8914-1189e51ac71e> ) ] .
 
 <uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:b6e30631-9768-4020-8947-c32137328216> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
 
 <uuid:c2a00070-f12b-42f9-b78c-b33daa500873> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
 
 <uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> ) ] .
 
 <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> ) ] .
 
 <uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
 
 <uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> ) ] .
 
 <uuid:ed666061-98c5-439d-ab0d-5a792437a873> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> ) ] .
 
 <uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
 
 <uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
 
 <uuid:f921656a-58e3-4375-bdff-ac8019f524cf> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
 
 <uuid:fb03276b-4250-4d52-81e1-035a0bd92895> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> ) ] .
 
 <uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
 
 <uuid:fc877bbe-72a8-4e59-b959-010e6660984a> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
 
 <uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
 
 <uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:206806a4-a2f8-4c04-858e-99d289858a40> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> a geojson:Feature ;
@@ -14771,7 +14771,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -14786,7 +14786,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -14801,7 +14801,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -14816,7 +14816,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -14831,7 +14831,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -14846,7 +14846,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -14861,7 +14861,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -14876,7 +14876,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -14891,7 +14891,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -14906,7 +14906,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -14921,7 +14921,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -14936,7 +14936,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -14951,7 +14951,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -14966,7 +14966,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -14981,7 +14981,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -14996,7 +14996,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -15011,7 +15011,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -15026,7 +15026,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -15041,7 +15041,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -15056,7 +15056,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -15071,7 +15071,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -15086,7 +15086,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -15101,7 +15101,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -15116,7 +15116,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -15131,7 +15131,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -15146,7 +15146,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9"
@@ -15161,7 +15161,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6"
@@ -15176,7 +15176,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e"
@@ -15191,7 +15191,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -15206,7 +15206,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -15221,7 +15221,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -15236,7 +15236,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -15251,7 +15251,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9"
@@ -15266,7 +15266,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -15281,7 +15281,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -15296,7 +15296,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -15311,7 +15311,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51"
@@ -15326,7 +15326,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -15341,7 +15341,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -15356,7 +15356,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e"
@@ -15371,7 +15371,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -15386,7 +15386,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -15401,7 +15401,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -15416,7 +15416,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -15431,7 +15431,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -15446,7 +15446,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -15461,7 +15461,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -15476,7 +15476,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -15491,7 +15491,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df"
@@ -15506,7 +15506,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -15521,7 +15521,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:8e503e04-ad51-423b-8102-708a845189b6"
@@ -15536,7 +15536,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -15551,7 +15551,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -15566,7 +15566,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -15581,7 +15581,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -15596,7 +15596,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606"
@@ -15611,7 +15611,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -15626,7 +15626,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -15641,7 +15641,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -15656,7 +15656,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0"
@@ -15671,7 +15671,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -15686,7 +15686,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -15701,7 +15701,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -15716,7 +15716,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -15731,7 +15731,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -15746,7 +15746,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -18085,7 +18085,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -18100,7 +18100,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -18115,7 +18115,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -18130,7 +18130,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -18145,7 +18145,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -18160,7 +18160,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -18175,7 +18175,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -18190,7 +18190,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -18205,7 +18205,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -18220,7 +18220,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -18235,7 +18235,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -18250,7 +18250,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -18265,7 +18265,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -18280,7 +18280,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -18295,7 +18295,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -18310,7 +18310,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -18325,7 +18325,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -18340,7 +18340,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -18355,7 +18355,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -18370,7 +18370,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -18385,7 +18385,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -18400,7 +18400,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -18415,7 +18415,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
@@ -18430,7 +18430,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
           "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
@@ -18445,7 +18445,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -18460,7 +18460,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9"
@@ -18475,7 +18475,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6"
@@ -18490,7 +18490,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e"
@@ -18505,7 +18505,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -18520,7 +18520,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -18535,7 +18535,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -18550,7 +18550,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -18565,7 +18565,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9"
@@ -18580,7 +18580,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -18595,7 +18595,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -18610,7 +18610,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -18625,7 +18625,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51"
@@ -18640,7 +18640,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -18655,7 +18655,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
           "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
@@ -18670,7 +18670,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e"
@@ -18685,7 +18685,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -18700,7 +18700,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
@@ -18715,7 +18715,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
@@ -18730,7 +18730,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -18745,7 +18745,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -18760,7 +18760,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -18775,7 +18775,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -18790,7 +18790,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
@@ -18805,7 +18805,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df"
@@ -18820,7 +18820,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -18835,7 +18835,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:8e503e04-ad51-423b-8102-708a845189b6"
@@ -18850,7 +18850,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -18865,7 +18865,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
@@ -18880,7 +18880,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8e503e04-ad51-423b-8102-708a845189b6",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -18895,7 +18895,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
@@ -18910,7 +18910,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
           "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606"
@@ -18925,7 +18925,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
           "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
@@ -18940,7 +18940,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
@@ -18955,7 +18955,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
@@ -18970,7 +18970,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0"
@@ -18985,7 +18985,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
@@ -19000,7 +19000,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
           "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
@@ -19015,7 +19015,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
           "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
@@ -19030,7 +19030,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -19045,7 +19045,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -19060,7 +19060,7 @@ topology is encoded via references and directed_references. Contains:
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -20916,267 +20916,267 @@ topology is encoded via references and directed_references. Contains:
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <uuid:06babc8d-f0d6-43eb-bfad-931055bae084> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
 
 <uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:307b7db6-8014-4628-b80e-ff925bf71168> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
 
 <uuid:13dd8184-f73e-4d9f-9977-3e573274fccc> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
 
 <uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:242a8400-a076-4817-86c6-acd56087cec6> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
 
 <uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:38499704-81f7-4d47-965f-435e0b7b0850> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
 
 <uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
 
 <uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> ) ] .
 
 <uuid:4406e3f5-89dc-463b-84e4-487490f71f1a> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
 
 <uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
 
 <uuid:474fef44-eb6e-4e19-a871-433f9bac5650> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
 
 <uuid:4ad210b7-5de5-4732-af7c-978de28f988b> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> ) ] .
 
 <uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
 
 <uuid:511c6e7d-728b-4f1f-9763-9461eb628586> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:5a36c75b-053b-4d7b-b512-6777786d6180> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
 
 <uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:61f99921-a94d-4e0d-8353-f027d76227c5> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
 
 <uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
 
 <uuid:71af0dde-7fc9-4290-9624-119e91f422ea> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:8e503e04-ad51-423b-8102-708a845189b6> ) ] .
 
 <uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
 
 <uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
 
 <uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
 
 <uuid:745aa367-94b6-4949-a856-5271ec6672e9> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
 
 <uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> ) ] .
 
 <uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:7da1c2fe-f798-43cc-af44-ac63f968139c> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> <uuid:c611f840-2829-44b2-b367-3915ca7875a4> ) ] .
 
 <uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
 
 <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:8582d9c2-6053-495a-8413-f5493691c0de> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
 
 <uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:91cdc345-f745-4643-bc88-a24f8e2216b0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
 
 <uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:9238cbda-d019-4b57-8319-0cc355656802> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
 
 <uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
 
 <uuid:a604828d-a36b-4fac-ba6f-6160ade95301> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:aafd209b-cd13-401a-83f5-26751a02cffe> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> ) ] .
 
 <uuid:ad13a84c-df97-4b75-9dc1-1ce452249964> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
 
 <uuid:af347f25-a547-477c-b246-cb810756d4dc> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:caa6045e-4189-4571-8914-1189e51ac71e> ) ] .
 
 <uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:b6e30631-9768-4020-8947-c32137328216> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
 
 <uuid:c2a00070-f12b-42f9-b78c-b33daa500873> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
 
 <uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> ) ] .
 
 <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> ) ] .
 
 <uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
 
 <uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> ) ] .
 
 <uuid:ed666061-98c5-439d-ab0d-5a792437a873> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> ) ] .
 
 <uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
 
 <uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
 
 <uuid:f921656a-58e3-4375-bdff-ac8019f524cf> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
 
 <uuid:fb03276b-4250-4d52-81e1-035a0bd92895> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> ) ] .
 
 <uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
 
 <uuid:fc877bbe-72a8-4e59-b959-010e6660984a> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
 
 <uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
 
 <uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
+    geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:206806a4-a2f8-4c04-858e-99d289858a40> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> a geojson:Feature ;
@@ -21818,6 +21818,7 @@ Links to the schema:
     "endTangentVector": "geojson:endTangentVector",
     "ref": "topo:ref",
     "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
     "topo": "https://purl.org/geojson/topo#",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

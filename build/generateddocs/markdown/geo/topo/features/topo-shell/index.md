@@ -230,7 +230,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -245,7 +245,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -260,7 +260,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -275,7 +275,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -290,7 +290,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -305,7 +305,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -320,7 +320,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -335,7 +335,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -350,7 +350,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -365,7 +365,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -380,7 +380,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -395,7 +395,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -410,7 +410,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -425,7 +425,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -440,7 +440,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -455,7 +455,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -470,7 +470,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -485,7 +485,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -1056,7 +1056,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -1071,7 +1071,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
@@ -1086,7 +1086,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -1101,7 +1101,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
@@ -1116,7 +1116,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
@@ -1131,7 +1131,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -1146,7 +1146,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
@@ -1161,7 +1161,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
@@ -1176,7 +1176,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
@@ -1191,7 +1191,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
@@ -1206,7 +1206,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -1221,7 +1221,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -1236,7 +1236,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
           "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
@@ -1251,7 +1251,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
@@ -1266,7 +1266,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
@@ -1281,7 +1281,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -1296,7 +1296,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
           "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
@@ -1311,7 +1311,7 @@ All geometry properties are null except on Point features.
       "type": "Feature",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
           "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
@@ -2041,6 +2041,7 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "Edge": "topo:Edge",
     "Face": "topo:Face",
     "Ring": "topo:Ring",
     "Solid": "topo:Solid",

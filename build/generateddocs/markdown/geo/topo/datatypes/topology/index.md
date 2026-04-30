@@ -20,7 +20,7 @@ Two mutually exclusive reference styles are supported — exactly one must be pr
 **`references`** — a plain ordered array of string feature IDs (or nested arrays thereof). Used for positional references where traversal direction is not meaningful, e.g. a LineString naming its vertex point features:
 
 ```json
-{ "type": "LineString", "references": ["uuid:point-a", "uuid:point-b"] }
+{ "type": "Edge", "references": ["uuid:point-a", "uuid:point-b"] }
 ```
 
 **`directed_references`** — an ordered array of oriented object references, each with `ref` (feature ID) and `orientation` (`"+"` or `"-"`). Used where traversal direction matters, e.g. Ring boundaries and Shell boundaries:
@@ -64,7 +64,7 @@ The 'references' array names the two point features that form the line's endpoin
 #### json
 ```json
 {
-  "type": "LineString",
+  "type": "Edge",
   "references": [
     "P1",
     "P2"
@@ -76,7 +76,7 @@ The 'references' array names the two point features that form the line's endpoin
 ```jsonld
 {
   "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
-  "type": "LineString",
+  "type": "Edge",
   "references": [
     "P1",
     "P2"
@@ -88,8 +88,9 @@ The 'references' array names the two point features that form the line's endpoin
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
-[] a geojson:LineString ;
+[] a topo:Edge ;
     geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) .
 
 
@@ -446,6 +447,7 @@ x-jsonld-extra-terms:
   ref:
     x-jsonld-id: topo:ref
   orientation: https://purl.org/geojson/topo#orientation
+  Edge: https://purl.org/geojson/topo#Edge
   Face: https://purl.org/geojson/topo#Face
   Ring: https://purl.org/geojson/topo#Ring
   Shell: https://purl.org/geojson/topo#Shell
@@ -513,6 +515,7 @@ Links to the schema:
     "endTangentVector": "geojson:endTangentVector",
     "ref": "topo:ref",
     "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
     "Face": "topo:Face",
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
