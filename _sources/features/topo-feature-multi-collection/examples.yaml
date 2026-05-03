@@ -1,6 +1,7 @@
 - title: Cube example
   content: |
-    Self-contained collection of topology objects defining a Cube
+    Self-contained collection of topology objects defining a Cube.
+    Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and one solid.
     ![Cube Example](assets/cube.png)
 
   base-output-filename: cube
@@ -11,13 +12,38 @@
 
 - title: Tetrahedron example
   content: |
-    Self-contained collection of topology objects defining a Tetrahedron
+    Self-contained collection of topology objects defining a Tetrahedron.
+    Dataset consists of four points, six edges, four rings, four faces, one shell, and one solid.
     ![Tetrahedron Example](assets/tetrahedron.png)
 
   base-output-filename: tetrahedron
   snippets:
     - language: json
       ref: examples/tetrahedron.json
+
+
+- title: Polyhedron example
+  content: |
+    Self-contained collection of topology objects defining a Polyhedron.
+    Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, and one solid.
+    ![Tetrahedron Example](assets/polyhedron.png)
+
+  base-output-filename: polyhedron
+  snippets:
+    - language: json
+      ref: examples/polyhedron.json
+
+
+- title: Four Unit Up/Down test example with stairwell
+  content: |
+    Self-contained collection of topology objects defining a Four Unit Up/Down example with stairwell. 
+    Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and five solids.
+    ![Tetrahedron Example](assets/4-unit.png)
+
+  base-output-filename: four-unit
+  snippets:
+    - language: json
+      ref: examples/4-unit-up-down.json
 
 
 - title: Points collection (topology nodes)
@@ -57,7 +83,7 @@
   content: |
     A Solid feature referencing faces via a Shell topology. The solid's topology contains
     a 'shells' array; each Shell has a directed_references array of oriented Face references.
-    All supporting points, edges and faces are included to make the example self-contained.
+    All supporting points, edges, and faces are included to make the example self-contained.
   snippets:
     - language: json
       ref: examples/solids-example.json
