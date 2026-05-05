@@ -46,6 +46,18 @@
       ref: examples/4-unit-up-down.json
 
 
+- title: Four Unit Up/Down test example with stairwell and Parcel
+  content: |
+    Self-contained collection of topology objects defining a Four Unit Up/Down example with stairwell. 
+    Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 rings, 35 faces, five shells, and five solids.
+    ![Tetrahedron Example](assets/4-unit.png)
+
+  base-output-filename: four-unit-parcel
+  snippets:
+    - language: json
+      ref: examples/4-unit-up-down-with-parcel.json
+
+
 - title: Points collection (topology nodes)
   content: |
     A minimal example showing 5 Point features used as topology nodes.
