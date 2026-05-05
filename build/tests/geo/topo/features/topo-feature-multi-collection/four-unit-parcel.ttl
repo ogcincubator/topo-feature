@@ -41,6 +41,22 @@
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4> ) ] .
 
+<uuid:291b7f49-8f18-498e-bd2f-7bfb6760eaa2> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061678e+05 6.471679e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160078e+02 -3.188683e+01 ) ] .
+
+<uuid:313731cb-1e0c-469c-b64e-06af1629ba2a> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061316e+05 6.47166e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160075e+02 -3.1887e+01 ) ] .
+
 <uuid:32ccd411-43f6-46f2-9fc8-0ae0a18e650d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:8c3b760e-6015-461f-b3e4-1f10a8458d78> <uuid:3d450239-8099-4649-a355-565e58332111> ) ] .
@@ -57,9 +73,57 @@
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b> <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> ) ] .
 
+<uuid:3c6c5996-1c40-4e52-932b-13cc41fcee71> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061889e+05 6.471667e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160081e+02 -3.188694e+01 ) ] .
+
+<uuid:3cf6b3c0-3acc-4720-a643-d885d6951b2a> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061925e+05 6.471653e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160081e+02 -3.188707e+01 ) ] .
+
+<uuid:4261adb8-2fa6-4ce6-94cc-d4906f2a40fc> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061303e+05 6.471637e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160074e+02 -3.188721e+01 ) ] .
+
 <uuid:44d3831e-c643-48f4-989b-d7ca9d2598bf> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> ) ] .
+
+<uuid:489a1c4c-0ac4-470f-9757-e50bc71d3aa8> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061509e+05 6.471677e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188685e+01 ) ] .
+
+<uuid:4a98b01f-7e97-4049-9f39-a0ba56758ce9> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.06149e+05 6.471622e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160076e+02 -3.188734e+01 ) ] .
+
+<uuid:4c83a22b-2309-4240-97b1-d130cb1a8d43> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061764e+05 6.471677e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160079e+02 -3.188685e+01 ) ] .
 
 <uuid:52d7c66c-e1f2-49c4-a670-8e1a80c816a2> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
@@ -101,6 +165,14 @@
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:29d783d3-10bb-4882-908a-eb8151cc52ec> <uuid:21a929df-71c5-47e2-a6d5-24f37bae8442> ) ] .
 
+<uuid:67c660f1-0e49-4ee4-996d-4d453fe6209b> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061915e+05 6.471662e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160081e+02 -3.188699e+01 ) ] .
+
 <uuid:689a0716-0880-4a1b-8454-ba189e331ee6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:cbbbff1a-ea9d-43e4-b292-9c26e91dc71d> <uuid:40a76a4c-fff8-4156-8071-61423b0d44e9> ) ] .
@@ -112,6 +184,14 @@
 <uuid:6b9374b0-671d-4603-9349-748b4c231518> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:7f9a7128-b01c-4568-8241-29391e9a5d30> <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4> ) ] .
+
+<uuid:7023d838-169a-4b01-a85f-e2b270751a7c> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061739e+05 6.471626e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160079e+02 -3.188731e+01 ) ] .
 
 <uuid:73751771-3e38-4526-8d49-9465d947b6dd> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
@@ -237,6 +317,14 @@
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:f683e96a-1e0d-450c-9df8-54e54aa8109e> <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> ) ] .
 
+<uuid:97571fb3-9987-49b3-b54c-88b8adcd2655> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.06184e+05 6.471673e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.16008e+02 -3.188689e+01 ) ] .
+
 <uuid:9d3409e1-67b8-4a8c-9ee6-981eaff19cf5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:21a929df-71c5-47e2-a6d5-24f37bae8442> <uuid:f683e96a-1e0d-450c-9df8-54e54aa8109e> ) ] .
@@ -248,6 +336,14 @@
 <uuid:a1660706-a249-4fd6-ab29-809940a8aedf> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> ) ] .
+
+<uuid:a221f31d-26c6-46f0-872a-567244fa5447> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.06191e+05 6.471645e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160081e+02 -3.188714e+01 ) ] .
 
 <uuid:a475a79b-06a2-400c-9460-6de8a6772ac6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
@@ -272,6 +368,30 @@
 <uuid:b769cbe5-703f-441e-8fc5-1b79d6ff3561> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70> ) ] .
+
+<uuid:be40befb-8498-4793-9ed6-d0e72c1a1d5b> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061613e+05 6.471622e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160078e+02 -3.188734e+01 ) ] .
+
+<uuid:c4aa05ba-997c-4b7e-b5bd-071f385e17d5> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.06159e+05 6.471679e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188683e+01 ) ] .
+
+<uuid:c7c0b650-ed8a-496d-bff5-46d9953137fd> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061287e+05 6.471648e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160074e+02 -3.18871e+01 ) ] .
 
 <uuid:c7f55cbd-30bc-4bae-95d8-d8a2e11739a3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
@@ -301,9 +421,33 @@
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:323ee5a8-7a23-4b0c-a7c0-f8f66ce2caba> <uuid:40a76a4c-fff8-4156-8071-61423b0d44e9> ) ] .
 
+<uuid:d72f308c-110a-459d-ae5f-9d459d9ae51e> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061869e+05 6.471637e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.16008e+02 -3.188721e+01 ) ] .
+
 <uuid:d78450ce-0f63-4c04-811a-5b87b9591b0f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70> <uuid:1b9a26b1-0913-459b-a0ba-fd3c8d5e0324> ) ] .
+
+<uuid:d9e43ed6-9387-4180-a25a-3b3208422263> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061375e+05 6.471628e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160075e+02 -3.188729e+01 ) ] .
+
+<uuid:e18342eb-1272-4582-b6bf-3c9d7e138667> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061413e+05 6.471671e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160076e+02 -3.18869e+01 ) ] .
 
 <uuid:e8b7a3f1-807b-47c1-a233-845f7e9492f1> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
@@ -324,6 +468,14 @@
 <uuid:f9f5fd81-680a-43f5-a04e-adc180a9ecdd> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
             geojson:relatedFeatures ( <uuid:029860ee-5cc9-4a34-a7fc-e9ee6704d0e4> <uuid:cd8c2acd-0d28-41d8-8a2a-966df677cfda> ) ] .
+
+<uuid:fbebc23c-cdef-4d02-bced-5b5bb7686b1f> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061811e+05 6.471631e+06 ) ] ;
+    dct:time "2026-05-05T00:14:08.163770+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.16008e+02 -3.188727e+01 ) ] .
 
 <uuid:fd6494bc-b8a0-4a99-a86e-89178fad956f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
@@ -667,18 +819,28 @@
                     <uuid:127223b8-ae77-4a0c-abe6-d76332e85af1>,
                     <uuid:1b9a26b1-0913-459b-a0ba-fd3c8d5e0324>,
                     <uuid:21a929df-71c5-47e2-a6d5-24f37bae8442>,
+                    <uuid:291b7f49-8f18-498e-bd2f-7bfb6760eaa2>,
                     <uuid:29d783d3-10bb-4882-908a-eb8151cc52ec>,
                     <uuid:2e36bfd1-f23a-412b-8715-7e342f6970b1>,
+                    <uuid:313731cb-1e0c-469c-b64e-06af1629ba2a>,
                     <uuid:323ee5a8-7a23-4b0c-a7c0-f8f66ce2caba>,
                     <uuid:33f0cc1b-317c-4e5a-be73-82210d7a9806>,
                     <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd>,
+                    <uuid:3c6c5996-1c40-4e52-932b-13cc41fcee71>,
+                    <uuid:3cf6b3c0-3acc-4720-a643-d885d6951b2a>,
                     <uuid:3d450239-8099-4649-a355-565e58332111>,
                     <uuid:40a76a4c-fff8-4156-8071-61423b0d44e9>,
+                    <uuid:4261adb8-2fa6-4ce6-94cc-d4906f2a40fc>,
+                    <uuid:489a1c4c-0ac4-470f-9757-e50bc71d3aa8>,
                     <uuid:4a18b6c9-e5f1-41a7-9f33-45be997255ec>,
+                    <uuid:4a98b01f-7e97-4049-9f39-a0ba56758ce9>,
+                    <uuid:4c83a22b-2309-4240-97b1-d130cb1a8d43>,
                     <uuid:5a934736-cab5-4fc7-9e8f-877eb80c5879>,
                     <uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b>,
                     <uuid:65b83fdc-a7ed-4178-9bc1-01da4a52ea0d>,
+                    <uuid:67c660f1-0e49-4ee4-996d-4d453fe6209b>,
                     <uuid:6d31e874-6317-43c3-b357-49a699f8a69d>,
+                    <uuid:7023d838-169a-4b01-a85f-e2b270751a7c>,
                     <uuid:7210455e-1a79-4c3c-9f3a-49565c0b4c89>,
                     <uuid:7970f2e9-9893-4e54-b249-187db718bd31>,
                     <uuid:7f9a7128-b01c-4568-8241-29391e9a5d30>,
@@ -686,17 +848,26 @@
                     <uuid:8c3b760e-6015-461f-b3e4-1f10a8458d78>,
                     <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4>,
                     <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70>,
+                    <uuid:97571fb3-9987-49b3-b54c-88b8adcd2655>,
+                    <uuid:a221f31d-26c6-46f0-872a-567244fa5447>,
                     <uuid:a9135246-4680-4183-b3a0-ea902313e04b>,
+                    <uuid:be40befb-8498-4793-9ed6-d0e72c1a1d5b>,
+                    <uuid:c4aa05ba-997c-4b7e-b5bd-071f385e17d5>,
+                    <uuid:c7c0b650-ed8a-496d-bff5-46d9953137fd>,
                     <uuid:cbbbff1a-ea9d-43e4-b292-9c26e91dc71d>,
                     <uuid:cd8c2acd-0d28-41d8-8a2a-966df677cfda>,
                     <uuid:d250661e-6383-4458-9323-bf347210311f>,
+                    <uuid:d72f308c-110a-459d-ae5f-9d459d9ae51e>,
+                    <uuid:d9e43ed6-9387-4180-a25a-3b3208422263>,
                     <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1>,
                     <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76>,
+                    <uuid:e18342eb-1272-4582-b6bf-3c9d7e138667>,
                     <uuid:e6bc54bc-bb9f-4535-860c-b1fbf67465e0>,
                     <uuid:e802ff21-40ea-4728-a6e7-4d5b79d45158>,
                     <uuid:f62c9eab-b63d-4cfe-ab76-b4a142b4a8ce>,
                     <uuid:f683e96a-1e0d-450c-9df8-54e54aa8109e>,
                     <uuid:fa85407d-b02e-4d8b-ba7f-f1643968bdfb>,
+                    <uuid:fbebc23c-cdef-4d02-bced-5b5bb7686b1f>,
                     <uuid:fc45a8b6-848f-46b9-b079-a0ebba08f96e> ] ) ;
     topo:rings ( [ a geojson:FeatureCollection ;
                 geojson:features [ a geojson:Feature ],
