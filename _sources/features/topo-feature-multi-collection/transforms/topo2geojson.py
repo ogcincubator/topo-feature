@@ -58,7 +58,7 @@ def process(input_data):
         data["features"].extend(pc["features"])
     geomsmap = extract_feature_coordinates(data["points"])
     geomtype = {"edges": "LineString", "solids": "Solid", "rings": "LineString", "faces": "Polygon" , "shells": "Solid"}
-    for feat_type in [ "edges", "faces", "observedVectors", "adoptedVectors", "rings" ] :
+    for feat_type in [ "edges", "faces", "rings" , "shells" ] :
         if not feat_type in data:
             continue
         for feat in walk_features ( data[feat_type] ):
