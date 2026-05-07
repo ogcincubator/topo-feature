@@ -599,7 +599,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
       ]
     }
   ],
-  "rings": [
+   "rings":  [
     {
       "id": "uuid:34b63b6f-8b9e-42a1-82fc-02e99b504d53",
       "type": "FeatureCollection",
@@ -794,7 +794,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:abc544c2-2fef-4c49-abf4-6aea9864ee25",
                 "orientation": "+"
@@ -817,7 +817,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:739a5ea7-5ec7-4beb-80fd-45a0472238e5",
                 "orientation": "+"
@@ -840,7 +840,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:5a5f29ca-9bd7-4b8b-8f8c-308c482a1f87",
                 "orientation": "+"
@@ -863,7 +863,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:b1cd58fd-64b2-478a-aa79-18a7ec03b59e",
                 "orientation": "+"
@@ -886,7 +886,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:14b110b1-79ae-4af7-a1ff-0bc3f2b777e6",
                 "orientation": "+"
@@ -909,7 +909,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:a67215aa-770d-4e2a-8629-8ce069bf2203",
                 "orientation": "+"
@@ -1752,7 +1752,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:abc544c2-2fef-4c49-abf4-6aea9864ee25",
                 "orientation": "+"
@@ -1775,7 +1775,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:739a5ea7-5ec7-4beb-80fd-45a0472238e5",
                 "orientation": "+"
@@ -1798,7 +1798,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:5a5f29ca-9bd7-4b8b-8f8c-308c482a1f87",
                 "orientation": "+"
@@ -1821,7 +1821,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:b1cd58fd-64b2-478a-aa79-18a7ec03b59e",
                 "orientation": "+"
@@ -1844,7 +1844,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:14b110b1-79ae-4af7-a1ff-0bc3f2b777e6",
                 "orientation": "+"
@@ -1867,7 +1867,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:a67215aa-770d-4e2a-8629-8ce069bf2203",
                 "orientation": "+"
@@ -2459,7 +2459,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
       ]
     }
   ],
-  "rings": [
+   "rings":  [
     {
       "id": "uuid:3948e040-179e-49d4-aaf5-29342faae294",
       "type": "FeatureCollection",
@@ -2580,7 +2580,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:769051df-df6b-40ce-b7a3-6dae2bcfda0e",
                 "orientation": "+"
@@ -2603,7 +2603,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:54aaccd9-5a7b-49a8-b82c-c46ce74a91eb",
                 "orientation": "+"
@@ -2626,7 +2626,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:62fe1162-dd37-45ae-b366-e4703bd727e9",
                 "orientation": "+"
@@ -2649,7 +2649,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:66b8d9df-50ad-4a0d-ac12-6c948ab4f5e7",
                 "orientation": "+"
@@ -3180,7 +3180,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:769051df-df6b-40ce-b7a3-6dae2bcfda0e",
                 "orientation": "+"
@@ -3203,7 +3203,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:54aaccd9-5a7b-49a8-b82c-c46ce74a91eb",
                 "orientation": "+"
@@ -3226,7 +3226,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:62fe1162-dd37-45ae-b366-e4703bd727e9",
                 "orientation": "+"
@@ -3249,7 +3249,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:66b8d9df-50ad-4a0d-ac12-6c948ab4f5e7",
                 "orientation": "+"
@@ -4223,7 +4223,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
       ]
     }
   ],
-  "rings": [
+   "rings":  [
     {
       "id": "uuid:22205f66-e238-465d-aa05-2a134850ca32",
       "type": "FeatureCollection",
@@ -4492,7 +4492,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:166c13a7-c069-4f77-9d2e-c7373e72c58a",
                 "orientation": "+"
@@ -4515,7 +4515,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:c450265d-7ca3-4d6c-acfa-e0e86e8e145a",
                 "orientation": "+"
@@ -4538,7 +4538,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:8fab9fcf-9c49-4d96-a489-a62c945569e1",
                 "orientation": "+"
@@ -4561,7 +4561,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:d3179cca-0eb3-41bc-a4f0-cea2bbfc927f",
                 "orientation": "+"
@@ -4584,7 +4584,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:026188c7-71ee-4287-8b2d-236a43a4194c",
                 "orientation": "+"
@@ -4607,7 +4607,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:b1239130-6619-413d-a8d9-4f025a10da6c",
                 "orientation": "+"
@@ -4630,7 +4630,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:408f532b-2b36-4425-8cbb-8fc4de916ce2",
                 "orientation": "+"
@@ -4653,7 +4653,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:c98c34b2-f96e-4bb2-b809-ca2b7d118f87",
                 "orientation": "+"
@@ -5808,7 +5808,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:166c13a7-c069-4f77-9d2e-c7373e72c58a",
                 "orientation": "+"
@@ -5831,7 +5831,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:c450265d-7ca3-4d6c-acfa-e0e86e8e145a",
                 "orientation": "+"
@@ -5854,7 +5854,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:8fab9fcf-9c49-4d96-a489-a62c945569e1",
                 "orientation": "+"
@@ -5877,7 +5877,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:d3179cca-0eb3-41bc-a4f0-cea2bbfc927f",
                 "orientation": "+"
@@ -5900,7 +5900,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:026188c7-71ee-4287-8b2d-236a43a4194c",
                 "orientation": "+"
@@ -5923,7 +5923,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:b1239130-6619-413d-a8d9-4f025a10da6c",
                 "orientation": "+"
@@ -5946,7 +5946,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:408f532b-2b36-4425-8cbb-8fc4de916ce2",
                 "orientation": "+"
@@ -5969,7 +5969,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:c98c34b2-f96e-4bb2-b809-ca2b7d118f87",
                 "orientation": "+"
@@ -8666,7 +8666,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
       ]
     }
   ],
-  "rings": [
+   "rings":  [
     {
       "id": "uuid:a212bf84-0fc3-4c11-b9ae-6324149206bf",
       "type": "FeatureCollection",
@@ -9790,7 +9790,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:0c487fe8-39b5-4a89-8c97-ac022dbe1fce",
                 "orientation": "+"
@@ -9813,7 +9813,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:777a02bc-f2d3-4b31-bc4c-7180bc13a31c",
                 "orientation": "+"
@@ -9836,7 +9836,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:e6fb50a4-9678-4e44-b31c-70cd67726e49",
                 "orientation": "+"
@@ -9859,7 +9859,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:f6d80de2-ba10-4748-9c16-f74eafa5e454",
                 "orientation": "+"
@@ -9882,7 +9882,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:abe41c77-3601-4c23-bc85-69d574e758f2",
                 "orientation": "+"
@@ -9905,7 +9905,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:cb61c522-2984-4aea-92b7-68b08b3da84d",
                 "orientation": "+"
@@ -9928,7 +9928,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:89e58766-afab-4d1f-8775-1311275c857a",
                 "orientation": "+"
@@ -9951,7 +9951,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:1c3ca0ce-fbaf-4929-bd1d-44ca6c3fd3bc",
                 "orientation": "+"
@@ -9974,7 +9974,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:356935be-07f0-4a7f-895d-78848298cc32",
                 "orientation": "+"
@@ -9997,7 +9997,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:b062d93a-cabd-45e1-845e-ca90e3c39730",
                 "orientation": "+"
@@ -10020,7 +10020,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:c47c2ae9-6ff5-4b26-a293-ca83b7046ac0",
                 "orientation": "+"
@@ -10043,7 +10043,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:55e481c1-3084-42de-b1b1-020ae90b594c",
                 "orientation": "+"
@@ -10066,7 +10066,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:70d6787b-0280-42a1-a46f-4c3ea010cbce",
                 "orientation": "+"
@@ -10089,7 +10089,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:c4eecceb-c7c0-4b2d-a462-de459de385f7",
                 "orientation": "+"
@@ -10112,7 +10112,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:d627f2d7-d27f-40bf-b30a-2298c50c5b88",
                 "orientation": "+"
@@ -10135,7 +10135,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:6d219ad2-36b7-4f0d-bc02-deba6c975ea2",
                 "orientation": "+"
@@ -10158,7 +10158,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:0e17be70-1378-48cc-b88b-f12de3d9e112",
                 "orientation": "+"
@@ -10181,7 +10181,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:bdf1b7f8-6f4e-4652-a24e-2d7328101807",
                 "orientation": "+"
@@ -10204,7 +10204,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:6b4acb54-1cd3-42d5-9845-7a7f57b26fab",
                 "orientation": "+"
@@ -10227,7 +10227,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:22851efb-93f5-492d-9a9c-102d1df785c1",
                 "orientation": "+"
@@ -10250,7 +10250,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:f02f10fc-79f0-4ba7-aa31-e50da369b0e0",
                 "orientation": "+"
@@ -10273,7 +10273,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:5943a3e8-75e7-45c0-9b66-3f29e77150cf",
                 "orientation": "+"
@@ -10296,7 +10296,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:0934c81e-8a94-41c5-8103-3365b8c33853",
                 "orientation": "+"
@@ -10319,7 +10319,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:cb6708a2-df56-4993-9699-9542c85c4f86",
                 "orientation": "+"
@@ -10342,7 +10342,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:4d4b7e04-ac90-4447-9d86-28db1ad4ac41",
                 "orientation": "+"
@@ -10365,7 +10365,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:315d5051-9eb9-4c1a-9434-a8d2e3e1d3f5",
                 "orientation": "+"
@@ -10388,7 +10388,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:9ca25210-c370-4b91-b92f-33f5e1921889",
                 "orientation": "+"
@@ -10411,7 +10411,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:6379c9a9-86c4-45a0-a508-a62309a4e766",
                 "orientation": "+"
@@ -10434,7 +10434,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:542934a9-f32d-401e-8e05-05d529492483",
                 "orientation": "+"
@@ -10457,7 +10457,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:7d373590-b767-45a5-8e6a-120d938d3736",
                 "orientation": "+"
@@ -10480,7 +10480,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:2eba2a4e-7b02-4921-894b-7882959e13fd",
                 "orientation": "+"
@@ -10503,7 +10503,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:abd9ba1e-6d89-417d-a8ee-2e84d2b296dc",
                 "orientation": "+"
@@ -10526,7 +10526,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:aaee3689-d94d-4193-af47-cdf29e45d3e3",
                 "orientation": "+"
@@ -10549,7 +10549,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:71721739-f1d5-4cac-9a53-34c39c7e2ce2",
                 "orientation": "+"
@@ -10572,7 +10572,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:2ff15613-8fa2-4410-af09-0f42e2c83dd1",
                 "orientation": "+"
@@ -14442,7 +14442,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:0c487fe8-39b5-4a89-8c97-ac022dbe1fce",
                 "orientation": "+"
@@ -14465,7 +14465,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:777a02bc-f2d3-4b31-bc4c-7180bc13a31c",
                 "orientation": "+"
@@ -14488,7 +14488,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:e6fb50a4-9678-4e44-b31c-70cd67726e49",
                 "orientation": "+"
@@ -14511,7 +14511,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:f6d80de2-ba10-4748-9c16-f74eafa5e454",
                 "orientation": "+"
@@ -14534,7 +14534,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:abe41c77-3601-4c23-bc85-69d574e758f2",
                 "orientation": "+"
@@ -14557,7 +14557,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:cb61c522-2984-4aea-92b7-68b08b3da84d",
                 "orientation": "+"
@@ -14580,7 +14580,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:89e58766-afab-4d1f-8775-1311275c857a",
                 "orientation": "+"
@@ -14603,7 +14603,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:1c3ca0ce-fbaf-4929-bd1d-44ca6c3fd3bc",
                 "orientation": "+"
@@ -14626,7 +14626,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:356935be-07f0-4a7f-895d-78848298cc32",
                 "orientation": "+"
@@ -14649,7 +14649,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:b062d93a-cabd-45e1-845e-ca90e3c39730",
                 "orientation": "+"
@@ -14672,7 +14672,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:c47c2ae9-6ff5-4b26-a293-ca83b7046ac0",
                 "orientation": "+"
@@ -14695,7 +14695,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:55e481c1-3084-42de-b1b1-020ae90b594c",
                 "orientation": "+"
@@ -14718,7 +14718,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:70d6787b-0280-42a1-a46f-4c3ea010cbce",
                 "orientation": "+"
@@ -14741,7 +14741,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:c4eecceb-c7c0-4b2d-a462-de459de385f7",
                 "orientation": "+"
@@ -14764,7 +14764,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:d627f2d7-d27f-40bf-b30a-2298c50c5b88",
                 "orientation": "+"
@@ -14787,7 +14787,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:6d219ad2-36b7-4f0d-bc02-deba6c975ea2",
                 "orientation": "+"
@@ -14810,7 +14810,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:0e17be70-1378-48cc-b88b-f12de3d9e112",
                 "orientation": "+"
@@ -14833,7 +14833,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:bdf1b7f8-6f4e-4652-a24e-2d7328101807",
                 "orientation": "+"
@@ -14856,7 +14856,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:6b4acb54-1cd3-42d5-9845-7a7f57b26fab",
                 "orientation": "+"
@@ -14879,7 +14879,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:22851efb-93f5-492d-9a9c-102d1df785c1",
                 "orientation": "+"
@@ -14902,7 +14902,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:f02f10fc-79f0-4ba7-aa31-e50da369b0e0",
                 "orientation": "+"
@@ -14925,7 +14925,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:5943a3e8-75e7-45c0-9b66-3f29e77150cf",
                 "orientation": "+"
@@ -14948,7 +14948,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:0934c81e-8a94-41c5-8103-3365b8c33853",
                 "orientation": "+"
@@ -14971,7 +14971,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:cb6708a2-df56-4993-9699-9542c85c4f86",
                 "orientation": "+"
@@ -14994,7 +14994,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:4d4b7e04-ac90-4447-9d86-28db1ad4ac41",
                 "orientation": "+"
@@ -15017,7 +15017,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:315d5051-9eb9-4c1a-9434-a8d2e3e1d3f5",
                 "orientation": "+"
@@ -15040,7 +15040,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:9ca25210-c370-4b91-b92f-33f5e1921889",
                 "orientation": "+"
@@ -15063,7 +15063,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:6379c9a9-86c4-45a0-a508-a62309a4e766",
                 "orientation": "+"
@@ -15086,7 +15086,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:542934a9-f32d-401e-8e05-05d529492483",
                 "orientation": "+"
@@ -15109,7 +15109,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:7d373590-b767-45a5-8e6a-120d938d3736",
                 "orientation": "+"
@@ -15132,7 +15132,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:2eba2a4e-7b02-4921-894b-7882959e13fd",
                 "orientation": "+"
@@ -15155,7 +15155,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:abd9ba1e-6d89-417d-a8ee-2e84d2b296dc",
                 "orientation": "+"
@@ -15178,7 +15178,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:aaee3689-d94d-4193-af47-cdf29e45d3e3",
                 "orientation": "+"
@@ -15201,7 +15201,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:71721739-f1d5-4cac-9a53-34c39c7e2ce2",
                 "orientation": "+"
@@ -15224,7 +15224,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:2ff15613-8fa2-4410-af09-0f42e2c83dd1",
                 "orientation": "+"
@@ -19668,7 +19668,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
       ]
     }
   ],
-  "rings": [
+   "rings":  [
     {
       "id": "uuid:a212bf84-0fc3-4c11-b9ae-6324149206bf",
       "type": "FeatureCollection",
@@ -20792,7 +20792,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:0c487fe8-39b5-4a89-8c97-ac022dbe1fce",
                 "orientation": "+"
@@ -20815,7 +20815,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:777a02bc-f2d3-4b31-bc4c-7180bc13a31c",
                 "orientation": "+"
@@ -20838,7 +20838,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:e6fb50a4-9678-4e44-b31c-70cd67726e49",
                 "orientation": "+"
@@ -20861,7 +20861,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:f6d80de2-ba10-4748-9c16-f74eafa5e454",
                 "orientation": "+"
@@ -20884,7 +20884,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:abe41c77-3601-4c23-bc85-69d574e758f2",
                 "orientation": "+"
@@ -20907,7 +20907,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:cb61c522-2984-4aea-92b7-68b08b3da84d",
                 "orientation": "+"
@@ -20930,7 +20930,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:89e58766-afab-4d1f-8775-1311275c857a",
                 "orientation": "+"
@@ -20953,7 +20953,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:1c3ca0ce-fbaf-4929-bd1d-44ca6c3fd3bc",
                 "orientation": "+"
@@ -20976,7 +20976,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:356935be-07f0-4a7f-895d-78848298cc32",
                 "orientation": "+"
@@ -20999,7 +20999,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:b062d93a-cabd-45e1-845e-ca90e3c39730",
                 "orientation": "+"
@@ -21022,7 +21022,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:c47c2ae9-6ff5-4b26-a293-ca83b7046ac0",
                 "orientation": "+"
@@ -21045,7 +21045,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:55e481c1-3084-42de-b1b1-020ae90b594c",
                 "orientation": "+"
@@ -21068,7 +21068,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:70d6787b-0280-42a1-a46f-4c3ea010cbce",
                 "orientation": "+"
@@ -21091,7 +21091,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:c4eecceb-c7c0-4b2d-a462-de459de385f7",
                 "orientation": "+"
@@ -21114,7 +21114,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:d627f2d7-d27f-40bf-b30a-2298c50c5b88",
                 "orientation": "+"
@@ -21137,7 +21137,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:6d219ad2-36b7-4f0d-bc02-deba6c975ea2",
                 "orientation": "+"
@@ -21160,7 +21160,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:0e17be70-1378-48cc-b88b-f12de3d9e112",
                 "orientation": "+"
@@ -21183,7 +21183,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:bdf1b7f8-6f4e-4652-a24e-2d7328101807",
                 "orientation": "+"
@@ -21206,7 +21206,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:6b4acb54-1cd3-42d5-9845-7a7f57b26fab",
                 "orientation": "+"
@@ -21229,7 +21229,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:22851efb-93f5-492d-9a9c-102d1df785c1",
                 "orientation": "+"
@@ -21252,7 +21252,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:f02f10fc-79f0-4ba7-aa31-e50da369b0e0",
                 "orientation": "+"
@@ -21275,7 +21275,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:5943a3e8-75e7-45c0-9b66-3f29e77150cf",
                 "orientation": "+"
@@ -21298,7 +21298,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:0934c81e-8a94-41c5-8103-3365b8c33853",
                 "orientation": "+"
@@ -21321,7 +21321,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:cb6708a2-df56-4993-9699-9542c85c4f86",
                 "orientation": "+"
@@ -21344,7 +21344,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:4d4b7e04-ac90-4447-9d86-28db1ad4ac41",
                 "orientation": "+"
@@ -21367,7 +21367,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:315d5051-9eb9-4c1a-9434-a8d2e3e1d3f5",
                 "orientation": "+"
@@ -21390,7 +21390,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:9ca25210-c370-4b91-b92f-33f5e1921889",
                 "orientation": "+"
@@ -21413,7 +21413,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:6379c9a9-86c4-45a0-a508-a62309a4e766",
                 "orientation": "+"
@@ -21436,7 +21436,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:542934a9-f32d-401e-8e05-05d529492483",
                 "orientation": "+"
@@ -21459,7 +21459,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:7d373590-b767-45a5-8e6a-120d938d3736",
                 "orientation": "+"
@@ -21482,7 +21482,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:2eba2a4e-7b02-4921-894b-7882959e13fd",
                 "orientation": "+"
@@ -21505,7 +21505,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:abd9ba1e-6d89-417d-a8ee-2e84d2b296dc",
                 "orientation": "+"
@@ -21528,7 +21528,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:aaee3689-d94d-4193-af47-cdf29e45d3e3",
                 "orientation": "+"
@@ -21551,7 +21551,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:71721739-f1d5-4cac-9a53-34c39c7e2ce2",
                 "orientation": "+"
@@ -21574,7 +21574,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:2ff15613-8fa2-4410-af09-0f42e2c83dd1",
                 "orientation": "+"
@@ -26390,7 +26390,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:0c487fe8-39b5-4a89-8c97-ac022dbe1fce",
                 "orientation": "+"
@@ -26413,7 +26413,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:777a02bc-f2d3-4b31-bc4c-7180bc13a31c",
                 "orientation": "+"
@@ -26436,7 +26436,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:e6fb50a4-9678-4e44-b31c-70cd67726e49",
                 "orientation": "+"
@@ -26459,7 +26459,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:f6d80de2-ba10-4748-9c16-f74eafa5e454",
                 "orientation": "+"
@@ -26482,7 +26482,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:abe41c77-3601-4c23-bc85-69d574e758f2",
                 "orientation": "+"
@@ -26505,7 +26505,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:cb61c522-2984-4aea-92b7-68b08b3da84d",
                 "orientation": "+"
@@ -26528,7 +26528,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:89e58766-afab-4d1f-8775-1311275c857a",
                 "orientation": "+"
@@ -26551,7 +26551,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:1c3ca0ce-fbaf-4929-bd1d-44ca6c3fd3bc",
                 "orientation": "+"
@@ -26574,7 +26574,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:356935be-07f0-4a7f-895d-78848298cc32",
                 "orientation": "+"
@@ -26597,7 +26597,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:b062d93a-cabd-45e1-845e-ca90e3c39730",
                 "orientation": "+"
@@ -26620,7 +26620,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:c47c2ae9-6ff5-4b26-a293-ca83b7046ac0",
                 "orientation": "+"
@@ -26643,7 +26643,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:55e481c1-3084-42de-b1b1-020ae90b594c",
                 "orientation": "+"
@@ -26666,7 +26666,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:70d6787b-0280-42a1-a46f-4c3ea010cbce",
                 "orientation": "+"
@@ -26689,7 +26689,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:c4eecceb-c7c0-4b2d-a462-de459de385f7",
                 "orientation": "+"
@@ -26712,7 +26712,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:d627f2d7-d27f-40bf-b30a-2298c50c5b88",
                 "orientation": "+"
@@ -26735,7 +26735,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:6d219ad2-36b7-4f0d-bc02-deba6c975ea2",
                 "orientation": "+"
@@ -26758,7 +26758,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:0e17be70-1378-48cc-b88b-f12de3d9e112",
                 "orientation": "+"
@@ -26781,7 +26781,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:bdf1b7f8-6f4e-4652-a24e-2d7328101807",
                 "orientation": "+"
@@ -26804,7 +26804,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:6b4acb54-1cd3-42d5-9845-7a7f57b26fab",
                 "orientation": "+"
@@ -26827,7 +26827,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:22851efb-93f5-492d-9a9c-102d1df785c1",
                 "orientation": "+"
@@ -26850,7 +26850,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:f02f10fc-79f0-4ba7-aa31-e50da369b0e0",
                 "orientation": "+"
@@ -26873,7 +26873,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:5943a3e8-75e7-45c0-9b66-3f29e77150cf",
                 "orientation": "+"
@@ -26896,7 +26896,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:0934c81e-8a94-41c5-8103-3365b8c33853",
                 "orientation": "+"
@@ -26919,7 +26919,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:cb6708a2-df56-4993-9699-9542c85c4f86",
                 "orientation": "+"
@@ -26942,7 +26942,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:4d4b7e04-ac90-4447-9d86-28db1ad4ac41",
                 "orientation": "+"
@@ -26965,7 +26965,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:315d5051-9eb9-4c1a-9434-a8d2e3e1d3f5",
                 "orientation": "+"
@@ -26988,7 +26988,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:9ca25210-c370-4b91-b92f-33f5e1921889",
                 "orientation": "+"
@@ -27011,7 +27011,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:6379c9a9-86c4-45a0-a508-a62309a4e766",
                 "orientation": "+"
@@ -27034,7 +27034,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:542934a9-f32d-401e-8e05-05d529492483",
                 "orientation": "+"
@@ -27057,7 +27057,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:7d373590-b767-45a5-8e6a-120d938d3736",
                 "orientation": "+"
@@ -27080,7 +27080,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:2eba2a4e-7b02-4921-894b-7882959e13fd",
                 "orientation": "+"
@@ -27103,7 +27103,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:abd9ba1e-6d89-417d-a8ee-2e84d2b296dc",
                 "orientation": "+"
@@ -27126,7 +27126,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:aaee3689-d94d-4193-af47-cdf29e45d3e3",
                 "orientation": "+"
@@ -27149,7 +27149,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:71721739-f1d5-4cac-9a53-34c39c7e2ce2",
                 "orientation": "+"
@@ -27172,7 +27172,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:2ff15613-8fa2-4410-af09-0f42e2c83dd1",
                 "orientation": "+"
@@ -30550,7 +30550,7 @@ are derived from the topological reference chain.
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -30589,7 +30589,7 @@ are derived from the topological reference chain.
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -32106,7 +32106,7 @@ are derived from the topological reference chain.
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -32145,7 +32145,7 @@ are derived from the topological reference chain.
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34131,7 +34131,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34170,7 +34170,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34209,7 +34209,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34248,7 +34248,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34295,7 +34295,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34334,7 +34334,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34373,7 +34373,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34420,7 +34420,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34459,7 +34459,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34498,7 +34498,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34537,7 +34537,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34576,7 +34576,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34623,7 +34623,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34662,7 +34662,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34709,7 +34709,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34748,7 +34748,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34787,7 +34787,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34826,7 +34826,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34869,7 +34869,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34916,7 +34916,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -34963,7 +34963,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35002,7 +35002,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35045,7 +35045,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35084,7 +35084,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35123,7 +35123,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35162,7 +35162,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35205,7 +35205,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35252,7 +35252,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35299,7 +35299,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35342,7 +35342,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35381,7 +35381,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35424,7 +35424,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35463,7 +35463,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35502,7 +35502,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35545,7 +35545,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35584,7 +35584,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -35627,7 +35627,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37209,7 +37209,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37248,7 +37248,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37287,7 +37287,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37326,7 +37326,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37373,7 +37373,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37412,7 +37412,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37451,7 +37451,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37498,7 +37498,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37537,7 +37537,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37576,7 +37576,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37615,7 +37615,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37654,7 +37654,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37701,7 +37701,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37740,7 +37740,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37787,7 +37787,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37826,7 +37826,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37865,7 +37865,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37904,7 +37904,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37947,7 +37947,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -37994,7 +37994,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38041,7 +38041,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38080,7 +38080,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38123,7 +38123,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38162,7 +38162,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38201,7 +38201,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38240,7 +38240,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38283,7 +38283,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38330,7 +38330,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38377,7 +38377,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38420,7 +38420,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38459,7 +38459,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38502,7 +38502,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38541,7 +38541,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38580,7 +38580,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38623,7 +38623,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38662,7 +38662,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -38705,7 +38705,7 @@ All supporting points, edges, and faces are included to make the example self-co
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -40755,7 +40755,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -40794,7 +40794,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -40833,7 +40833,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -40872,7 +40872,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -40919,7 +40919,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -40958,7 +40958,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -40997,7 +40997,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41044,7 +41044,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41083,7 +41083,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41122,7 +41122,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41161,7 +41161,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41200,7 +41200,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41247,7 +41247,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41286,7 +41286,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41333,7 +41333,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41372,7 +41372,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41411,7 +41411,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41450,7 +41450,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41493,7 +41493,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41540,7 +41540,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41587,7 +41587,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41626,7 +41626,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41669,7 +41669,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41708,7 +41708,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41747,7 +41747,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41786,7 +41786,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41829,7 +41829,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41876,7 +41876,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41923,7 +41923,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -41966,7 +41966,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -42005,7 +42005,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -42048,7 +42048,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -42087,7 +42087,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -42126,7 +42126,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -42169,7 +42169,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -42208,7 +42208,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -42251,7 +42251,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44069,7 +44069,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44108,7 +44108,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44147,7 +44147,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44186,7 +44186,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44233,7 +44233,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44272,7 +44272,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44311,7 +44311,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44358,7 +44358,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44397,7 +44397,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44436,7 +44436,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44475,7 +44475,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44514,7 +44514,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44561,7 +44561,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44600,7 +44600,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44647,7 +44647,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44686,7 +44686,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44725,7 +44725,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44764,7 +44764,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44807,7 +44807,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44854,7 +44854,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44901,7 +44901,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44940,7 +44940,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -44983,7 +44983,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45022,7 +45022,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45061,7 +45061,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45100,7 +45100,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45143,7 +45143,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45190,7 +45190,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45237,7 +45237,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45280,7 +45280,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45319,7 +45319,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45362,7 +45362,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45401,7 +45401,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45440,7 +45440,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45483,7 +45483,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45522,7 +45522,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -45565,7 +45565,7 @@ topology is encoded via references and directed_references. Contains:
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [

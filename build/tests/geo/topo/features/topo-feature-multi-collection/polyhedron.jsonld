@@ -1034,7 +1034,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:166c13a7-c069-4f77-9d2e-c7373e72c58a",
                 "orientation": "+"
@@ -1057,7 +1057,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:c450265d-7ca3-4d6c-acfa-e0e86e8e145a",
                 "orientation": "+"
@@ -1080,7 +1080,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:8fab9fcf-9c49-4d96-a489-a62c945569e1",
                 "orientation": "+"
@@ -1103,7 +1103,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:d3179cca-0eb3-41bc-a4f0-cea2bbfc927f",
                 "orientation": "+"
@@ -1126,7 +1126,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:026188c7-71ee-4287-8b2d-236a43a4194c",
                 "orientation": "+"
@@ -1149,7 +1149,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:b1239130-6619-413d-a8d9-4f025a10da6c",
                 "orientation": "+"
@@ -1172,7 +1172,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:408f532b-2b36-4425-8cbb-8fc4de916ce2",
                 "orientation": "+"
@@ -1195,7 +1195,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:c98c34b2-f96e-4bb2-b809-ca2b7d118f87",
                 "orientation": "+"

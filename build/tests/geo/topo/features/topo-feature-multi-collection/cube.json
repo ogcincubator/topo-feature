@@ -727,7 +727,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:abc544c2-2fef-4c49-abf4-6aea9864ee25",
                 "orientation": "+"
@@ -750,7 +750,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:739a5ea7-5ec7-4beb-80fd-45a0472238e5",
                 "orientation": "+"
@@ -773,7 +773,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:5a5f29ca-9bd7-4b8b-8f8c-308c482a1f87",
                 "orientation": "+"
@@ -796,7 +796,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:b1cd58fd-64b2-478a-aa79-18a7ec03b59e",
                 "orientation": "+"
@@ -819,7 +819,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:14b110b1-79ae-4af7-a1ff-0bc3f2b777e6",
                 "orientation": "+"
@@ -842,7 +842,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+            "directed_references": [
               {
                 "ref": "uuid:a67215aa-770d-4e2a-8629-8ce069bf2203",
                 "orientation": "+"
