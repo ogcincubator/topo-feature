@@ -302,7 +302,7 @@
       ]
     }
   ],
-  "rings": [
+   "rings":  [
     {
       "id": "uuid:3948e040-179e-49d4-aaf5-29342faae294",
       "type": "FeatureCollection",
@@ -423,7 +423,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:769051df-df6b-40ce-b7a3-6dae2bcfda0e",
                 "orientation": "+"
@@ -446,7 +446,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:54aaccd9-5a7b-49a8-b82c-c46ce74a91eb",
                 "orientation": "+"
@@ -469,7 +469,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:62fe1162-dd37-45ae-b366-e4703bd727e9",
                 "orientation": "+"
@@ -492,7 +492,7 @@
           "geometry": null,
           "topology": {
             "type": "Face",
-            "rings": [
+             "directed_references":  [
               {
                 "ref": "uuid:66b8d9df-50ad-4a0d-ac12-6c948ab4f5e7",
                 "orientation": "+"

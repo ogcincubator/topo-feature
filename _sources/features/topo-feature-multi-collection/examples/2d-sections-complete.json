@@ -1479,7 +1479,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1518,7 +1518,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1557,7 +1557,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1596,7 +1596,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1643,7 +1643,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1682,7 +1682,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1721,7 +1721,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1768,7 +1768,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1807,7 +1807,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1846,7 +1846,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1885,7 +1885,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1924,7 +1924,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -1971,7 +1971,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2010,7 +2010,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2057,7 +2057,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2096,7 +2096,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2135,7 +2135,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2174,7 +2174,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2217,7 +2217,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2264,7 +2264,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2311,7 +2311,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2350,7 +2350,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2393,7 +2393,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2432,7 +2432,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2471,7 +2471,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2510,7 +2510,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2553,7 +2553,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2600,7 +2600,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2647,7 +2647,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2690,7 +2690,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2729,7 +2729,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2772,7 +2772,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2811,7 +2811,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2850,7 +2850,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2893,7 +2893,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2932,7 +2932,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [
@@ -2975,7 +2975,7 @@
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
             "type": "Ring",
             "directed_references": [

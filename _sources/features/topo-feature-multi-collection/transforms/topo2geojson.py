@@ -38,7 +38,7 @@ def extract_feature_coordinates(data: list) -> dict[str, object]:
         for feature in walk_features(data)
     }
 
-def process(input_data):
+def process(input_data,mode):
     if type(input_data) == str:
         data = json.loads(input_data)
     else:
@@ -54,20 +54,36 @@ def process(input_data):
     epsg_code = crs_name.split(":")[-1] if crs_name else "4326"
     data["features"] = []
     # transfer coordinates to features
-    for pc in data["points"]:
-        data["features"].extend(pc["features"])
+    if "points" in mode:
+        for pc in data["points"]:
+            data["features"].extend(pc["features"])
     geomsmap = extract_feature_coordinates(data["points"])
-    geomtype = {"edges": "LineString", "solids": "Solid", "rings": "LineString", "faces": "Polygon" , "shells": "Solid"}
-    for feat_type in [ "edges", "faces", "rings" , "shells" ] :
-        if not feat_type in data:
+    geomtype = {"edges": "LineString", "solids": "Solid", "rings": "MultiLineString", "faces": "MultiPolygon" , "shells": "Solid"}
+    for feat_type in [ "edges",  "rings" , "faces" ] :
+        if not feat_type in data :
             continue
         for feat in walk_features ( data[feat_type] ):
             if "topology" in feat:
+                # check type matches expected
+                if feat["topology"]["type"].lower()+'s' != feat_type:
+                    print("Warning expected type{} does not match {}".format(feat["topology"]["type"].lower(),feat_type))
                 if "references" in feat["topology"] :
                     coords =  [ geomsmap[node] for node in feat["topology"]["references"] ]
-                    feat["geometry"] = { "type": geomtype[feat_type], "coordinates": coords  }
-                    geomsmap[ feat["id"]]  = coords
+
+                elif "directed_references" in feat["topology"] :
+                    drs = feat["topology"]["directed_references"]
+                    coords = [[]]
+                    for node in drs:
+                        coords[0] += geomsmap[node["ref"]]
+                else:
+                    print("No references found")
+                    continue
+
+                feat["geometry"] = {"type": geomtype[feat_type], "coordinates": coords}
+                geomsmap[feat["id"]] = coords
+                if feat_type in mode:
                     data["features"].append(feat)
+
 
 
     # Create GeoDataFrame from GeoJSON-like dict
@@ -96,10 +112,16 @@ def process(input_data):
 
 testmode = True
 try:
-    output_data = process(input_data)
+    if 'mode' in transform_metadata.metadata:
+        mode = transform_metadata.metadata["mode"]
+    else:
+        mode = "points,edges,faces"
     testmode = False
-except:
-    print("not running in transformer mode")
+    if input_data:
+        print("running in transformer mode")
+    output_data = process(input_data,mode)
+except Exception as e:
+    print("not running in transformer mode or error {e}".format(e=e))
     pass
 
 if __name__ == "__main__" and testmode:
@@ -108,13 +130,15 @@ if __name__ == "__main__" and testmode:
     argparser = argparse.ArgumentParser()
     argparser.add_argument('-i', '--input_data', help="input file")
     argparser.add_argument('-o', '--output_file', help="output file")
+    argparser.add_argument('-m', '--mode', default="points,edges,faces", help="points,edges,faces (comma separated list)")
     args = argparser.parse_args()
     if args.input_data:
+        print("Processing {}".format(args.input_data))
         input_data = open(args.input_data, "r").read()
+        output_data = process(input_data, args.mode)
+        print(output_data)
     else:
         print("No input file")
 
-    output_data = process(input_data)
 
-    if args.input_data:
-        print(output_data)
+
