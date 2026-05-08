@@ -15,6 +15,14 @@ canvas {
     display: block;
 }
 
+#sceneContainer canvas {
+    cursor: grab;
+}
+
+#sceneContainer canvas:active {
+    cursor: grabbing;
+}
+
 #info {
     color: black;
     background: rgba(135, 135, 135, 0.7);
