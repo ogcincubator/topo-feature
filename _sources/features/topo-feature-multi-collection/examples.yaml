@@ -14,7 +14,18 @@
   content: |
     Self-contained collection of topology objects defining a Tetrahedron.
     Dataset consists of four points, six edges, four rings, four faces, one shell, and one solid.
-    ![Tetrahedron Example](assets/tetrahedron.png)
+    
+    <iframe
+      title="Interactive 3D viewer for the tetrahedron example"
+      src="assets/topo_viewer.html?example=tetrahedron.json"
+      width="100%"
+      height="600"
+      loading="lazy"
+      style="border:1px solid #ddd; border-radius:8px;"
+      sandbox="allow-scripts allow-same-origin">
+    </iframe>
+    
+    [Open the interactive viewer](assets/topo_viewer.html?example=tetrahedron.json)
 
   base-output-filename: tetrahedron
   snippets:
