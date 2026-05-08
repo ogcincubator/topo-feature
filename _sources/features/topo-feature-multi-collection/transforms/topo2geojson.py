@@ -1,5 +1,6 @@
 import json, geopandas as gpd
 import sys
+import glob as glob_module
 
 from typing import Generator
 
@@ -73,13 +74,18 @@ def process(input_data,mode):
                 elif "directed_references" in feat["topology"] :
                     drs = feat["topology"]["directed_references"]
                     coords = [[]]
+                    startindex = 0
                     for node in drs:
-                        coords[0] += geomsmap[node["ref"]]
+                        coordSet = geomsmap[node["ref"]]
+                        if node["orientation"] == '-':
+                            coordSet.reverse()
+                        coords[0] += coordSet[startindex:]
+                        startindex = 1
                 else:
                     print("No references found")
                     continue
 
-                feat["geometry"] = {"type": geomtype[feat_type], "coordinates": coords}
+                feat["geometry"] = {"type": geomtype[feat_type], "coordinates": coords, "properties": feat["properties"]}
                 geomsmap[feat["id"]] = coords
                 if feat_type in mode:
                     data["features"].append(feat)
@@ -87,7 +93,11 @@ def process(input_data,mode):
 
 
     # Create GeoDataFrame from GeoJSON-like dict
-    gdf = gpd.GeoDataFrame.from_features(data["features"])
+    if data["features"] == []:
+        print("No feature geometries generated")
+        return "{}"
+    else:
+        gdf = gpd.GeoDataFrame.from_features(data["features"])
 
     # Set CRS dynamically
     if epsg_code:
@@ -130,13 +140,16 @@ if __name__ == "__main__" and testmode:
     argparser = argparse.ArgumentParser()
     argparser.add_argument('-i', '--input_data', help="input file")
     argparser.add_argument('-o', '--output_file', help="output file")
+    argparser.add_argument('-p', '--print', help="Print output of each file")
     argparser.add_argument('-m', '--mode', default="points,edges,faces", help="points,edges,faces (comma separated list)")
     args = argparser.parse_args()
     if args.input_data:
-        print("Processing {}".format(args.input_data))
-        input_data = open(args.input_data, "r").read()
-        output_data = process(input_data, args.mode)
-        print(output_data)
+        for f in sorted(glob_module.glob(args.input_data)):
+            print("Processing {}".format(f))
+            input_data = open(f, "r").read()
+            output_data = process(input_data, args.mode)
+        if args.print:
+            print(output_data)
     else:
         print("No input file")
 
