@@ -76,6 +76,13 @@ body.full-window #controls {
     right: 10px;
 }
 
+/* ─── Embed layout (topo_viewer_embed.html) ──────────────────────────────── */
+
+body.embed #info,
+body.embed #controls {
+    display: none;
+}
+
 /* ─── Fixed 500px layout (bb_topology_viewer.html) ───────────────────────── */
 
 body.fixed-layout {

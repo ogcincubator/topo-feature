@@ -17,9 +17,9 @@
     
     <iframe
       title="Interactive 3D viewer for the tetrahedron example"
-      src="assets/topo_viewer.html?example=tetrahedron.json"
+      src="assets/topo_viewer_embed.html?example=tetrahedron.json"
       width="100%"
-      height="600"
+      height="400"
       loading="lazy"
       style="border:1px solid #ddd; border-radius:8px;"
       sandbox="allow-scripts allow-same-origin">
