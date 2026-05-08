@@ -10,17 +10,17 @@
   "itemClass": "schema",
   "register": "ogcincubator",
   "version": "0.1",
-  "dateOfLastChange": "2026-05-07",
+  "dateOfLastChange": "2026-05-08",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.topo.features.topo-feature",
-    "ogc.geo.topo.features.topo-ring",
-    "ogc.geo.topo.features.topo-feature-collection",
-    "ogc.geo.topo.features.topo-face",
     "ogc.geo.topo.features.topo-shell",
-    "ogc.geo.topo.features.topo-line"
+    "ogc.geo.topo.features.topo-face",
+    "ogc.geo.topo.features.topo-feature-collection",
+    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.topo.features.topo-line",
+    "ogc.geo.topo.features.topo-ring"
   ],
   "tags": [
     "topology",
@@ -31,12 +31,12 @@
   "group": "OGC",
   "shaclShapes": {
     "ogc.geo.topo.features.topo-feature": [
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ],
     "ogc.geo.topo.features.topo-feature-collection": [
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ],
     "ogc.geo.features.featureCollection": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
@@ -161,7 +161,7 @@
     },
     {
       "title": "Tetrahedron example",
-      "content": "Self-contained collection of topology objects defining a Tetrahedron.\nDataset consists of four points, six edges, four rings, four faces, one shell, and one solid.\n![Tetrahedron Example](assets/tetrahedron.png)\n",
+      "content": "Self-contained collection of topology objects defining a Tetrahedron.\nDataset consists of four points, six edges, four rings, four faces, one shell, and one solid.\n\n<iframe\n  title=\"Interactive 3D viewer for the tetrahedron example\"\n  src=\"assets/topo_viewer.html?example=tetrahedron.json\"\n  width=\"100%\"\n  height=\"600\"\n  loading=\"lazy\"\n  style=\"border:1px solid #ddd; border-radius:8px;\"\n  sandbox=\"allow-scripts allow-same-origin\">\n</iframe>\n\n[Open the interactive viewer](assets/topo_viewer.html?example=tetrahedron.json)\n",
       "base-output-filename": "tetrahedron",
       "snippets": [
         {
