@@ -15,12 +15,12 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.topo.features.topo-shell",
-    "ogc.geo.topo.features.topo-face",
-    "ogc.geo.topo.features.topo-line",
+    "ogc.geo.topo.features.topo-ring",
     "ogc.geo.topo.features.topo-feature-collection",
+    "ogc.geo.topo.features.topo-line",
     "ogc.geo.topo.features.topo-feature",
-    "ogc.geo.topo.features.topo-ring"
+    "ogc.geo.topo.features.topo-shell",
+    "ogc.geo.topo.features.topo-face"
   ],
   "tags": [
     "topology",
@@ -126,7 +126,7 @@
   "examples": [
     {
       "title": "Cube example",
-      "content": "Self-contained collection of topology objects defining a Cube.\nDataset consists of eight points, 12 edges, six rings, six faces, one shell, and one solid.\n![Cube Example](assets/cube.png)\n",
+      "content": "Self-contained collection of topology objects defining a Cube.\nDataset consists of eight points, 12 edges, six rings, six faces, one shell, and one solid.\n\n<iframe\n  title=\"Interactive 3D viewer for the Cube example\"\n  src=\"assets/topo_viewer_embed.html?example=cube.json\"\n  width=\"100%\"\n  height=\"400\"\n  loading=\"lazy\"\n  style=\"border:1px solid #ddd; border-radius:8px;\"\n  sandbox=\"allow-scripts allow-same-origin\">\n</iframe>\n\n[Open the interactive viewer](assets/topo_viewer.html?example=cube.json)\n",
       "base-output-filename": "cube",
       "snippets": [
         {
@@ -196,7 +196,7 @@
     },
     {
       "title": "Polyhedron example",
-      "content": "Self-contained collection of topology objects defining a Polyhedron.\nDataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, and one solid.\n![Tetrahedron Example](assets/polyhedron.png)\n",
+      "content": "Self-contained collection of topology objects defining a Polyhedron.\nDataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, and one solid.\n\n<iframe\n  title=\"Interactive 3D viewer for the polyhedron example\"\n  src=\"assets/topo_viewer_embed.html?example=polyhedron.json\"\n  width=\"100%\"\n  height=\"400\"\n  loading=\"lazy\"\n  style=\"border:1px solid #ddd; border-radius:8px;\"\n  sandbox=\"allow-scripts allow-same-origin\">\n</iframe>\n\n[Open the interactive viewer](assets/topo_viewer.html?example=polyhedron.json)\n",
       "base-output-filename": "polyhedron",
       "snippets": [
         {
@@ -231,7 +231,7 @@
     },
     {
       "title": "Four Unit Up/Down test example with stairwell",
-      "content": "Self-contained collection of topology objects defining a Four Unit Up/Down example with stairwell. \nDataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and five solids.\n![Tetrahedron Example](assets/4-unit.png)\n",
+      "content": "Self-contained collection of topology objects defining a Four Unit Up/Down example with stairwell. \nDataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and five solids.\n\n<iframe\n  title=\"Interactive 3D viewer for the four unit up/down with stairwell example\"\n  src=\"assets/topo_viewer_embed.html?example=4-unit-up-down.json\"\n  width=\"100%\"\n  height=\"400\"\n  loading=\"lazy\"\n  style=\"border:1px solid #ddd; border-radius:8px;\"\n  sandbox=\"allow-scripts allow-same-origin\">\n</iframe>\n\n[Open the interactive viewer](assets/topo_viewer.html?example=4-unit-up-down.json)\n",
       "base-output-filename": "four-unit",
       "snippets": [
         {

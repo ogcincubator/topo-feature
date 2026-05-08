@@ -61,7 +61,18 @@ solids
 ### Cube example
 Self-contained collection of topology objects defining a Cube.
 Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and one solid.
-![Cube Example](assets/cube.png)
+
+<iframe
+  title="Interactive 3D viewer for the Cube example"
+  src="assets/topo_viewer_embed.html?example=cube.json"
+  width="100%"
+  height="400"
+  loading="lazy"
+  style="border:1px solid #ddd; border-radius:8px;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+[Open the interactive viewer](assets/topo_viewer.html?example=cube.json)
 
 #### json
 ```json
@@ -3466,7 +3477,18 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
 ### Polyhedron example
 Self-contained collection of topology objects defining a Polyhedron.
 Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, and one solid.
-![Tetrahedron Example](assets/polyhedron.png)
+
+<iframe
+  title="Interactive 3D viewer for the polyhedron example"
+  src="assets/topo_viewer_embed.html?example=polyhedron.json"
+  width="100%"
+  height="400"
+  loading="lazy"
+  style="border:1px solid #ddd; border-radius:8px;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+[Open the interactive viewer](assets/topo_viewer.html?example=polyhedron.json)
 
 #### json
 ```json
@@ -6342,7 +6364,18 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
 ### Four Unit Up/Down test example with stairwell
 Self-contained collection of topology objects defining a Four Unit Up/Down example with stairwell. 
 Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and five solids.
-![Tetrahedron Example](assets/4-unit.png)
+
+<iframe
+  title="Interactive 3D viewer for the four unit up/down with stairwell example"
+  src="assets/topo_viewer_embed.html?example=4-unit-up-down.json"
+  width="100%"
+  height="400"
+  loading="lazy"
+  style="border:1px solid #ddd; border-radius:8px;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+[Open the interactive viewer](assets/topo_viewer.html?example=4-unit-up-down.json)
 
 #### json
 ```json

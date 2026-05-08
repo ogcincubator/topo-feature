@@ -3,7 +3,7 @@
   "abstract": "Features with geometry defined via  generalised topology between identified objects (Features).",
   "description": "Defines Feature (object) topology using a _topology_ property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.\n\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \n\nTopo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. \n\nTopo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.\n\nNote: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features.. \n\n_Topo-Feature allows for explicit CRS. If desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2026-05-08T05:10:35.258462",
+  "modified": "2026-05-08T05:33:56.670352",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"6c782d91e288340ba681da9c977d75a37c22b8b7",
@@ -256,13 +256,13 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.featureCollection",
-        "ogc.geo.json-fg.featureCollection",
         "ogc.geo.json-fg.featureCollection-lenient",
-        "ogc.geo.json-fg.feature",
-        "ogc.geo.topo.features.topo-feature",
         "ogc.geo.features.feature",
-        "ogc.geo.json-fg.feature-lenient"
+        "ogc.geo.json-fg.feature",
+        "ogc.geo.json-fg.feature-lenient",
+        "ogc.geo.topo.features.topo-feature",
+        "ogc.geo.json-fg.featureCollection",
+        "ogc.geo.features.featureCollection"
       ],
       "tags": [
         "topology",
@@ -326,8 +326,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.topo.features.topo-feature-collection",
-        "ogc.geo.topo.datatypes.topology"
+        "ogc.geo.topo.datatypes.topology",
+        "ogc.geo.topo.features.topo-feature-collection"
       ],
       "tags": [
         "topology",
@@ -417,8 +417,8 @@
         ]
       },
       "dependsOn": [
-        "ogc.geo.topo.features.topo-feature",
-        "ogc.geo.topo.datatypes.topology"
+        "ogc.geo.topo.datatypes.topology",
+        "ogc.geo.topo.features.topo-feature"
       ],
       "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
       "schema": {
@@ -461,9 +461,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.features.topo-feature",
         "ogc.geo.topo.features.topo-feature-collection",
-        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.datatypes.oriented-ref"
       ],
       "tags": [
@@ -553,9 +553,9 @@
         ]
       },
       "dependsOn": [
+        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.features.topo-feature",
-        "ogc.geo.topo.features.topo-feature-collection",
-        "ogc.geo.topo.datatypes.topology"
+        "ogc.geo.topo.features.topo-feature-collection"
       ],
       "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-polyhedron/context.jsonld",
       "schema": {
@@ -598,9 +598,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.features.topo-feature",
         "ogc.geo.topo.features.topo-feature-collection",
-        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.datatypes.oriented-ref"
       ],
       "tags": [
@@ -666,9 +666,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.features.topo-feature",
         "ogc.geo.topo.features.topo-feature-collection",
-        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.datatypes.oriented-ref"
       ],
       "tags": [
@@ -735,12 +735,12 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.topo.features.topo-shell",
-        "ogc.geo.topo.features.topo-face",
-        "ogc.geo.topo.features.topo-line",
+        "ogc.geo.topo.features.topo-ring",
         "ogc.geo.topo.features.topo-feature-collection",
+        "ogc.geo.topo.features.topo-line",
         "ogc.geo.topo.features.topo-feature",
-        "ogc.geo.topo.features.topo-ring"
+        "ogc.geo.topo.features.topo-shell",
+        "ogc.geo.topo.features.topo-face"
       ],
       "tags": [
         "topology",
@@ -895,9 +895,9 @@
         ]
       },
       "dependsOn": [
+        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.features.topo-feature",
-        "ogc.geo.topo.features.topo-feature-multi-collection",
-        "ogc.geo.topo.datatypes.topology"
+        "ogc.geo.topo.features.topo-feature-multi-collection"
       ],
       "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
       "schema": {

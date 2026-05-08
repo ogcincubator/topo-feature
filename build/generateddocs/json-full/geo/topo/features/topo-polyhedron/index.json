@@ -38,9 +38,9 @@
     ]
   },
   "dependsOn": [
+    "ogc.geo.topo.datatypes.topology",
     "ogc.geo.topo.features.topo-feature",
-    "ogc.geo.topo.features.topo-feature-collection",
-    "ogc.geo.topo.datatypes.topology"
+    "ogc.geo.topo.features.topo-feature-collection"
   ],
   "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-polyhedron/context.jsonld",
   "schema": {

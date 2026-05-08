@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature - Feature with topology
-Generated 2026-05-08T05:10:44.910701+00:00
+Generated 2026-05-08T05:34:08.461900+00:00
 === Files ===
 Using examples/edge-vertex-refs.json from examples
 JSON-LD context is present - uplifting
@@ -27,30 +27,30 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n027c92d36d404c31b69a9934dffba2c3b1: *none*
- - Shape _:n027c92d36d404c31b69a9934dffba2c3b3: *none*
+ - Shape _:n6a54f3649f174d848b022a2e494b2403b3: *none*
+ - Shape _:n6a54f3649f174d848b022a2e494b2403b1: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureCollectionShape: *none*
- - Shape geojson:FeatureShape: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: <uuid:c60507ba-226b-4e49-a702-e9afef899b23>
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: <uuid:c60507ba-226b-4e49-a702-e9afef899b23>
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 
 === End SHACL ===
