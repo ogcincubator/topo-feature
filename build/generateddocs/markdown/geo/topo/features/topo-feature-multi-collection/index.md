@@ -28549,7 +28549,7 @@ All other feature types reference these points (directly or transitively) to res
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
@@ -28562,7 +28562,7 @@ All other feature types reference these points (directly or transitively) to res
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
@@ -28575,7 +28575,7 @@ All other feature types reference these points (directly or transitively) to res
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
@@ -28588,7 +28588,7 @@ All other feature types reference these points (directly or transitively) to res
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
@@ -28601,7 +28601,7 @@ All other feature types reference these points (directly or transitively) to res
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         }
       ]
     }
@@ -28630,7 +28630,7 @@ All other feature types reference these points (directly or transitively) to res
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
@@ -28643,7 +28643,7 @@ All other feature types reference these points (directly or transitively) to res
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
@@ -28656,7 +28656,7 @@ All other feature types reference these points (directly or transitively) to res
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
@@ -28669,7 +28669,7 @@ All other feature types reference these points (directly or transitively) to res
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
@@ -28682,7 +28682,7 @@ All other feature types reference these points (directly or transitively) to res
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         }
       ]
     }
@@ -28754,7 +28754,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
@@ -28767,7 +28767,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
@@ -28780,7 +28780,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
@@ -28793,7 +28793,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
@@ -28806,7 +28806,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         }
       ]
     }
@@ -28897,7 +28897,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
@@ -28910,7 +28910,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
@@ -28923,7 +28923,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
@@ -28936,7 +28936,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
@@ -28949,7 +28949,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         }
       ]
     }
@@ -29102,7 +29102,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
@@ -29115,7 +29115,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
@@ -29128,7 +29128,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
@@ -29141,7 +29141,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
@@ -29154,7 +29154,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
@@ -29167,7 +29167,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
@@ -29180,7 +29180,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
@@ -29193,7 +29193,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
@@ -29206,7 +29206,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
@@ -29219,7 +29219,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
@@ -29232,7 +29232,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
@@ -29245,7 +29245,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
@@ -29258,7 +29258,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
@@ -29271,7 +29271,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
@@ -29284,7 +29284,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
@@ -29297,7 +29297,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
@@ -29310,7 +29310,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
@@ -29323,7 +29323,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
@@ -29336,7 +29336,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
@@ -29349,7 +29349,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
@@ -29362,7 +29362,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
@@ -29375,7 +29375,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
@@ -29388,7 +29388,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
@@ -29401,7 +29401,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
@@ -29414,7 +29414,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
@@ -29427,7 +29427,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
@@ -29440,7 +29440,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
@@ -29453,7 +29453,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
@@ -29466,7 +29466,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
@@ -29479,7 +29479,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
@@ -29492,7 +29492,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
@@ -29505,7 +29505,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8e503e04-ad51-423b-8102-708a845189b6",
@@ -29518,7 +29518,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
@@ -29531,7 +29531,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
@@ -29544,7 +29544,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
@@ -29557,7 +29557,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         }
       ]
     }
@@ -30658,7 +30658,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
@@ -30671,7 +30671,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
@@ -30684,7 +30684,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
@@ -30697,7 +30697,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
@@ -30710,7 +30710,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
@@ -30723,7 +30723,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
@@ -30736,7 +30736,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
@@ -30749,7 +30749,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
@@ -30762,7 +30762,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
@@ -30775,7 +30775,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
@@ -30788,7 +30788,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
@@ -30801,7 +30801,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
@@ -30814,7 +30814,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
@@ -30827,7 +30827,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
@@ -30840,7 +30840,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
@@ -30853,7 +30853,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
@@ -30866,7 +30866,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
@@ -30879,7 +30879,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
@@ -30892,7 +30892,7 @@ are derived from the topological reference chain.
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
@@ -30905,7 +30905,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
@@ -30918,7 +30918,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
@@ -30931,7 +30931,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
@@ -30944,7 +30944,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
@@ -30957,7 +30957,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
@@ -30970,7 +30970,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
@@ -30983,7 +30983,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
@@ -30996,7 +30996,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
@@ -31009,7 +31009,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
@@ -31022,7 +31022,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
@@ -31035,7 +31035,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
@@ -31048,7 +31048,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
@@ -31061,7 +31061,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8e503e04-ad51-423b-8102-708a845189b6",
@@ -31074,7 +31074,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
@@ -31087,7 +31087,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
@@ -31100,7 +31100,7 @@ are derived from the topological reference chain.
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
@@ -31113,7 +31113,7 @@ are derived from the topological reference chain.
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         }
       ]
     }
@@ -32683,7 +32683,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
@@ -32696,7 +32696,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
@@ -32709,7 +32709,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
@@ -32722,7 +32722,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
@@ -32735,7 +32735,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
@@ -32748,7 +32748,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
@@ -32761,7 +32761,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
@@ -32774,7 +32774,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
@@ -32787,7 +32787,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
@@ -32800,7 +32800,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
@@ -32813,7 +32813,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
@@ -32826,7 +32826,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
@@ -32839,7 +32839,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
@@ -32852,7 +32852,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
@@ -32865,7 +32865,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
@@ -32878,7 +32878,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
@@ -32891,7 +32891,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
@@ -32904,7 +32904,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
@@ -32917,7 +32917,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
@@ -32930,7 +32930,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
@@ -32943,7 +32943,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
@@ -32956,7 +32956,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
@@ -32969,7 +32969,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
@@ -32982,7 +32982,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
@@ -32995,7 +32995,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
@@ -33008,7 +33008,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
@@ -33021,7 +33021,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
@@ -33034,7 +33034,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
@@ -33047,7 +33047,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
@@ -33060,7 +33060,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
@@ -33073,7 +33073,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
@@ -33086,7 +33086,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8e503e04-ad51-423b-8102-708a845189b6",
@@ -33099,7 +33099,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
@@ -33112,7 +33112,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
@@ -33125,7 +33125,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
@@ -33138,7 +33138,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         }
       ]
     }
@@ -35761,7 +35761,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
@@ -35774,7 +35774,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
@@ -35787,7 +35787,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
@@ -35800,7 +35800,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
@@ -35813,7 +35813,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
@@ -35826,7 +35826,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
@@ -35839,7 +35839,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
@@ -35852,7 +35852,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
@@ -35865,7 +35865,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
@@ -35878,7 +35878,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
@@ -35891,7 +35891,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
@@ -35904,7 +35904,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
@@ -35917,7 +35917,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
@@ -35930,7 +35930,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
@@ -35943,7 +35943,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
@@ -35956,7 +35956,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
@@ -35969,7 +35969,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
@@ -35982,7 +35982,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
@@ -35995,7 +35995,7 @@ All supporting points, edges, and faces are included to make the example self-co
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
@@ -36008,7 +36008,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
@@ -36021,7 +36021,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
@@ -36034,7 +36034,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
@@ -36047,7 +36047,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
@@ -36060,7 +36060,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
@@ -36073,7 +36073,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
@@ -36086,7 +36086,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
@@ -36099,7 +36099,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
@@ -36112,7 +36112,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
@@ -36125,7 +36125,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
@@ -36138,7 +36138,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
@@ -36151,7 +36151,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
@@ -36164,7 +36164,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8e503e04-ad51-423b-8102-708a845189b6",
@@ -36177,7 +36177,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
@@ -36190,7 +36190,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
@@ -36203,7 +36203,7 @@ All supporting points, edges, and faces are included to make the example self-co
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
@@ -36216,7 +36216,7 @@ All supporting points, edges, and faces are included to make the example self-co
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         }
       ]
     }
@@ -39307,7 +39307,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
@@ -39320,7 +39320,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
@@ -39333,7 +39333,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
@@ -39346,7 +39346,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
@@ -39359,7 +39359,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
@@ -39372,7 +39372,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
@@ -39385,7 +39385,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
@@ -39398,7 +39398,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
@@ -39411,7 +39411,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
@@ -39424,7 +39424,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
@@ -39437,7 +39437,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
@@ -39450,7 +39450,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
@@ -39463,7 +39463,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
@@ -39476,7 +39476,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
@@ -39489,7 +39489,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
@@ -39502,7 +39502,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
@@ -39515,7 +39515,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
@@ -39528,7 +39528,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
@@ -39541,7 +39541,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
@@ -39554,7 +39554,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
@@ -39567,7 +39567,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
@@ -39580,7 +39580,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
@@ -39593,7 +39593,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
@@ -39606,7 +39606,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
@@ -39619,7 +39619,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
@@ -39632,7 +39632,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
@@ -39645,7 +39645,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
@@ -39658,7 +39658,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
@@ -39671,7 +39671,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
@@ -39684,7 +39684,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
@@ -39697,7 +39697,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
@@ -39710,7 +39710,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8e503e04-ad51-423b-8102-708a845189b6",
@@ -39723,7 +39723,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
@@ -39736,7 +39736,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
@@ -39749,7 +39749,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties":  {}
         },
         {
           "id": "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
@@ -39762,7 +39762,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties":  {}
         }
       ]
     }
@@ -42621,7 +42621,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
@@ -42634,7 +42634,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
@@ -42647,7 +42647,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
@@ -42660,7 +42660,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
@@ -42673,7 +42673,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
@@ -42686,7 +42686,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
@@ -42699,7 +42699,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
@@ -42712,7 +42712,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
@@ -42725,7 +42725,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
@@ -42738,7 +42738,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
@@ -42751,7 +42751,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
@@ -42764,7 +42764,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
@@ -42777,7 +42777,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
@@ -42790,7 +42790,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
@@ -42803,7 +42803,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
@@ -42816,7 +42816,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
@@ -42829,7 +42829,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
@@ -42842,7 +42842,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
@@ -42855,7 +42855,7 @@ topology is encoded via references and directed_references. Contains:
               6.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
@@ -42868,7 +42868,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
@@ -42881,7 +42881,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
@@ -42894,7 +42894,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
@@ -42907,7 +42907,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
@@ -42920,7 +42920,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
@@ -42933,7 +42933,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
@@ -42946,7 +42946,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
@@ -42959,7 +42959,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
@@ -42972,7 +42972,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
@@ -42985,7 +42985,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
@@ -42998,7 +42998,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
@@ -43011,7 +43011,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
@@ -43024,7 +43024,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8e503e04-ad51-423b-8102-708a845189b6",
@@ -43037,7 +43037,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
@@ -43050,7 +43050,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
@@ -43063,7 +43063,7 @@ topology is encoded via references and directed_references. Contains:
               3.0
             ]
           },
-          "properties": null
+          "properties": {}
         },
         {
           "id": "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
@@ -43076,7 +43076,7 @@ topology is encoded via references and directed_references. Contains:
               0.0
             ]
           },
-          "properties": null
+          "properties": {}
         }
       ]
     }

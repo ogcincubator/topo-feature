@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-polyhedron - 3D (Polyhedron) using nested Polygons and Point topology
-Generated 2026-05-08T03:13:03.066684+00:00
+Generated 2026-05-08T04:44:59.351015+00:00
 === Files ===
 Using examples/building_topo.json from examples
 JSON-LD context is present - uplifting
@@ -12,6 +12,14 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
+Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n224a65ee219a4839bca05dac4a0e30beb3: <http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry
+ - Shape _:n224a65ee219a4839bca05dac4a0e30beb1: <http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry
+
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
@@ -20,36 +28,28 @@ Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.
  - Shape topo:testTopoLinesReferencePoints: *none*
  - Shape topo:testTopoReferencesExist: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology
 
-Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   
-Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n666e1dbb1fd54192bbdd541d457eac71b1: <http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry
- - Shape _:n666e1dbb1fd54192bbdd541d457eac71b3: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: <http://www.example.com/features/DENW19AL0000giv5BL>,<http://www.example.com/features/P479822.187_5705866.783_100>,<http://www.example.com/features/P479822.187_5705866.783_120>,<http://www.example.com/features/P479829.666_5705858.785_120>,<http://www.example.com/features/P479824.155_5705853.684_110>,<http://www.example.com/features/P479824.155_5705853.684_100>,<http://www.example.com/features/P479829.666_5705858.785_100>,<http://www.example.com/features/P479816.67_5705861.672_100>,<http://www.example.com/features/P479816.67_5705861.672_110>
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureCollectionShape: _:N20f26ac2dd2b4d78bd12a5923f459170
-
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureShape: <http://www.example.com/features/P479829.666_5705858.785_120>,<http://www.example.com/features/P479824.155_5705853.684_100>,<http://www.example.com/features/P479816.67_5705861.672_100>,<http://www.example.com/features/P479822.187_5705866.783_120>,<http://www.example.com/features/P479829.666_5705858.785_100>,<http://www.example.com/features/P479822.187_5705866.783_100>,<http://www.example.com/features/P479824.155_5705853.684_110>,<http://www.example.com/features/DENW19AL0000giv5BL>,<http://www.example.com/features/P479816.67_5705861.672_110>
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: _:Nce0bbae73b3e4e21917660b05dfb417d
 
 === End SHACL ===
 
