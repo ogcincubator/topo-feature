@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature-multi-collection - Topo Feature Multi-Collection
-Generated 2026-05-08T05:34:24.343856+00:00
+Generated 2026-05-08T13:30:55.219705+00:00
 === Files ===
 Using examples/cube.json from examples
 JSON-LD context is present - uplifting
@@ -12,44 +12,44 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
-Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoReferencesExist: <uuid:e71295e4-7595-4711-abac-70f172f42c03>/geojson:topology,<uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4>/geojson:topology,<uuid:23641631-470f-4c4b-981d-23ccb35d6a51>/geojson:topology,<uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f>/geojson:topology,<uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a>/geojson:topology,<uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57>/geojson:topology,<uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3>/geojson:topology,<uuid:bd7c5534-7e5c-407a-9402-fbe522312c07>/geojson:topology,<uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7>/geojson:topology,<uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b>/geojson:topology,<uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f>/geojson:topology,<uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f>/geojson:topology
- - Shape topo:testTopoLinesReferencePoints: *none*
-
 Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nae78b069b2604df3bc081b5b6ea3e798b1: <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269>/dct:spatial,<uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25>/geojson:geometry,<uuid:eb21daac-f715-4985-b298-a02e29143b46>/dct:spatial,<uuid:eb21daac-f715-4985-b298-a02e29143b46>/geojson:geometry,<uuid:5ea43aac-1f62-4d89-9750-429a522242f7>/dct:spatial,<uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db>/geojson:geometry,<uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269>/geojson:geometry,<uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8>/geojson:geometry,<uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3>/dct:spatial,<uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25>/dct:spatial,<uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3>/geojson:geometry,<uuid:5ea43aac-1f62-4d89-9750-429a522242f7>/geojson:geometry,<uuid:bd14602d-819d-4f21-8068-c0292c964133>/geojson:geometry,<uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8>/dct:spatial,<uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db>/dct:spatial,<uuid:bd14602d-819d-4f21-8068-c0292c964133>/dct:spatial
- - Shape _:nae78b069b2604df3bc081b5b6ea3e798b3: <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3>/geojson:geometry,<uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25>/geojson:geometry,<uuid:5ea43aac-1f62-4d89-9750-429a522242f7>/geojson:geometry,<uuid:bd14602d-819d-4f21-8068-c0292c964133>/geojson:geometry,<uuid:eb21daac-f715-4985-b298-a02e29143b46>/geojson:geometry,<uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db>/geojson:geometry,<uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269>/geojson:geometry,<uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8>/geojson:geometry
+ - Shape _:n26076b5e3dcd44fd8a7c5ea0623ed072b3: <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8>/geojson:geometry,<uuid:eb21daac-f715-4985-b298-a02e29143b46>/geojson:geometry,<uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269>/geojson:geometry,<uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db>/geojson:geometry,<uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3>/geojson:geometry,<uuid:bd14602d-819d-4f21-8068-c0292c964133>/geojson:geometry,<uuid:5ea43aac-1f62-4d89-9750-429a522242f7>/geojson:geometry,<uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25>/geojson:geometry
+ - Shape _:n26076b5e3dcd44fd8a7c5ea0623ed072b1: <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8>/geojson:geometry,<uuid:eb21daac-f715-4985-b298-a02e29143b46>/geojson:geometry,<uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269>/geojson:geometry,<uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25>/dct:spatial,<uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db>/geojson:geometry,<uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25>/geojson:geometry,<uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8>/dct:spatial,<uuid:eb21daac-f715-4985-b298-a02e29143b46>/dct:spatial,<uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269>/dct:spatial,<uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db>/dct:spatial,<uuid:bd14602d-819d-4f21-8068-c0292c964133>/dct:spatial,<uuid:5ea43aac-1f62-4d89-9750-429a522242f7>/dct:spatial,<uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3>/geojson:geometry,<uuid:bd14602d-819d-4f21-8068-c0292c964133>/geojson:geometry,<uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3>/dct:spatial,<uuid:5ea43aac-1f62-4d89-9750-429a522242f7>/geojson:geometry
+
+Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape topo:testTopoLinesReferencePoints: *none*
+ - Shape topo:testTopoReferencesExist: <uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a>/geojson:topology,<uuid:e71295e4-7595-4711-abac-70f172f42c03>/geojson:topology,<uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f>/geojson:topology,<uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f>/geojson:topology,<uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f>/geojson:topology,<uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57>/geojson:topology,<uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4>/geojson:topology,<uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3>/geojson:topology,<uuid:bd7c5534-7e5c-407a-9402-fbe522312c07>/geojson:topology,<uuid:23641631-470f-4c4b-981d-23ccb35d6a51>/geojson:topology,<uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b>/geojson:topology,<uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7>/geojson:topology
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: <uuid:f4aafb64-0512-46e6-aad9-d39ef1255674>,_:N51436f4896e8480baaa29bcfcfb90373,_:N8cc5291a2fa546c9a6c18f6c0e7caf37,_:N00f88e879bc34f89b0ad7f2f2bf9606d,_:Na5e673d8f5b844adbb9c1c8228c3b4be,_:N5833d1e9de71479a8f1761ea85a506ae
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureCollectionShape: _:N3b36852ba0c9461084a2f1482192ea35,_:N22fc2842e99b4858ab8ed787d2065a49,_:N43af129f70274b9faf27cbdf23e97ff6,_:N414014450beb41cc826b85e04dec6e8e,_:N1438544b4204419caf910d792b358b3a,<uuid:f4aafb64-0512-46e6-aad9-d39ef1255674>
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureShape: _:Ndb113b99ff9d404dba4bfde36b25f8a6,<uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f>,<uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269>,<uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3>,<uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3>,_:N2a9ddbf3568d4f819580ddba393da8c7,<uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a>,<uuid:bd14602d-819d-4f21-8068-c0292c964133>,<uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f>,<uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db>,_:N32d40d1fd37c4a7690f23d174b6d6535,_:N8636a6a8c7a2460797f0d9df55133b40,_:N3f2c40d3047a43ea8a54b8f7384fbaf1,_:Ndbe5d2acfd59404b84b1c999891e2cbf,_:N45812c42b3104422addd723539081900,<uuid:23641631-470f-4c4b-981d-23ccb35d6a51>,_:N4560df192ce543e7ba9f3f139394b59d,<uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7>,<uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25>,_:N45ab721f742244b98389124008c0fd91,_:Nd9728491720a42239d49f0fba5c19072,<uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f>,<uuid:e71295e4-7595-4711-abac-70f172f42c03>,<uuid:eb21daac-f715-4985-b298-a02e29143b46>,<uuid:bd7c5534-7e5c-407a-9402-fbe522312c07>,_:Nf8dce8897b814350b37ce1f503b8b8d3,<uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8>,_:Nd27eecdd33c5435babe0a92aa024ed0e,<uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57>,<uuid:5ea43aac-1f62-4d89-9750-429a522242f7>,_:Na0dabde1557c423682a5f70e253d4ee2,_:N05c11f8ddd9d476f8b50d927337d57fc,<uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b>,<uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4>
+ - Shape geojson:FeatureShape: _:N18ccff2fd09e45a5b51df196ce21c232,<uuid:eb21daac-f715-4985-b298-a02e29143b46>,<uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f>,<uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25>,_:N1e924be4c9664709919bf553cefa654e,<uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57>,_:Nab119173e8604a23bda68f87c76bb18f,<uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b>,<uuid:e71295e4-7595-4711-abac-70f172f42c03>,_:Ncf0e12118aef4c9eb89a26ba9bff4f7c,_:Nf097cf97133d44dbbdedf5fef7cf4eae,<uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7>,_:Nc94bae69be7e47be8ca148878db313c3,<uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db>,_:N23a8732ee94a461fb0db9e1790eee6d3,_:N69e26147f17942eabd979205d0c88286,_:Nd2eb9b1914674e9cb102d1788295ea0b,_:N0f8e07bb8e5c4434a5efc33f982fb691,<uuid:bd7c5534-7e5c-407a-9402-fbe522312c07>,<uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f>,<uuid:23641631-470f-4c4b-981d-23ccb35d6a51>,<uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3>,_:Nbe91addd1e2a48a5be5dd3d18a31e6dc,<uuid:5ea43aac-1f62-4d89-9750-429a522242f7>,_:Nee8175dfb597416faf4dfe3c8117f03a,<uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4>,_:N2f416015b51745f4b53b63af1b46eeef,<uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3>,<uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a>,_:N58adf928d307466fa00a4057d31e936a,<uuid:bd14602d-819d-4f21-8068-c0292c964133>,<uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269>,<uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8>,<uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f>
 
 === End SHACL ===
 
