@@ -39,12 +39,13 @@ def extract_feature_coordinates(data: list) -> dict[str, object]:
         for feature in walk_features(data)
     }
 
-def process(input_data,mode):
+def process(input_data,mode,number):
     if type(input_data) == str:
         data = json.loads(input_data)
     else:
         data = json.load(input_data)
 
+    count = 0 # compare to number
     # Normalize: wrap a single Feature into a FeatureCollection
     is_feature = data.get("type") == "Feature"
     if is_feature:
@@ -76,7 +77,7 @@ def process(input_data,mode):
                     coords = [[]]
                     startindex = 0
                     for node in drs:
-                        coordSet = geomsmap[node["ref"]]
+                        coordSet = geomsmap[node["ref"]][:]
                         if node["orientation"] == '-':
                             coordSet.reverse()
                         coords[0] += coordSet[startindex:]
@@ -87,7 +88,11 @@ def process(input_data,mode):
 
                 feat["geometry"] = {"type": geomtype[feat_type], "coordinates": coords, "properties": feat["properties"]}
                 geomsmap[feat["id"]] = coords
-                if feat_type in mode:
+                if feat_type in mode :
+                    if number:
+                        if count >= int(number):
+                            continue
+                    count +=1
                     data["features"].append(feat)
 
 
@@ -107,7 +112,7 @@ def process(input_data,mode):
     print("Transform from CRS" + str(gdf.crs))
 
     # Transform to another CRS (example: ETRS89)
-    if crs_name != "4326":
+    if epsg_code != "4326":
         gdf = gdf.to_crs(epsg=4326)
         # Print current CRS
         print("            to CRS" + str(gdf.crs))
@@ -129,7 +134,7 @@ try:
     testmode = False
     if input_data:
         print("running in transformer mode")
-    output_data = process(input_data,mode)
+    output_data = process(input_data,mode,None)
 except Exception as e:
     print("not running in transformer mode or error {e}".format(e=e))
     pass
@@ -141,13 +146,14 @@ if __name__ == "__main__" and testmode:
     argparser.add_argument('-i', '--input_data', help="input file")
     argparser.add_argument('-o', '--output_file', help="output file")
     argparser.add_argument('-p', '--print', help="Print output of each file")
+    argparser.add_argument('-n', '--number', default=None, help="Count of features to process")
     argparser.add_argument('-m', '--mode', default="points,edges,faces", help="points,edges,faces (comma separated list)")
     args = argparser.parse_args()
     if args.input_data:
         for f in sorted(glob_module.glob(args.input_data)):
             print("Processing {}".format(f))
             input_data = open(f, "r").read()
-            output_data = process(input_data, args.mode)
+            output_data = process(input_data, args.mode, args.number)
         if args.print:
             print(output_data)
     else:

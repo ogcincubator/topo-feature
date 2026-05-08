@@ -145,16 +145,3 @@
       ref: examples/solids-example.json
   base-output-filename: solids
 
-- title: Complete 2D Sections Topology (all feature types)
-  content: |
-    The full 2D sections topology dataset derived from a building floor plan,
-    expressed in the multi-collection model. All geometry is null except on Point features;
-    topology is encoded via references and directed_references. Contains:
-    - 36 point features (3D coordinate geometry nodes)
-    - 66 edge features (LineString topology via references to point IDs)
-    - 37 face features (Face topology via rings of directed_references to Edge IDs)
-    - 5 solid features (Solid topology via shells of directed_references to Face IDs)
-  snippets:
-    - language: json
-      ref: examples/2d-sections-complete.json
-  base-output-filename: 2d-sections
