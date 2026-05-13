@@ -17,6 +17,7 @@
         "geometry": {
           "type": "null"
         },
+        "circumference": { "type":  "number"},
         "topology": {
           "properties": {
             "type": {

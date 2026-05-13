@@ -1,19 +1,5 @@
 {
   "@context": {
-    "geojson": "https://purl.org/geojson/vocab#",
-    "topo": "https://purl.org/geojson/topo#",
-    "topology": {
-      "@type": "@id",
-      "@id": "geojson:topology"
-    },
-    "Ring": "topo:Ring",
-    "directed_references": {
-      "@id": "topo:directedReferences",
-      "@container": "@list"
-    },
-    "ref": {
-      "@id": "@id"
-    },
-    "orientation": "topo:orientation"
+    "circumference": "topo:circumference"
   }
 }

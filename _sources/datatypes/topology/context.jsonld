@@ -44,6 +44,10 @@
     "shells": {
       "@id": "https://purl.org/geojson/topo#shells",
       "@container": "@list"
+    },
+        "faces": {
+      "@id": "https://purl.org/geojson/topo#faces",
+      "@container": "@list"
     }
   }
 }
