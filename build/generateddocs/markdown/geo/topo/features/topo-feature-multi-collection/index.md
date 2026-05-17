@@ -19708,7 +19708,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
       ]
     }
   ],
-   "rings":  [
+  "rings": [
     {
       "id": "uuid:a212bf84-0fc3-4c11-b9ae-6324149206bf",
       "type": "FeatureCollection",
@@ -20832,7 +20832,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:0c487fe8-39b5-4a89-8c97-ac022dbe1fce",
                 "orientation": "+"
@@ -20855,7 +20855,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:777a02bc-f2d3-4b31-bc4c-7180bc13a31c",
                 "orientation": "+"
@@ -20878,7 +20878,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:e6fb50a4-9678-4e44-b31c-70cd67726e49",
                 "orientation": "+"
@@ -20901,7 +20901,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:f6d80de2-ba10-4748-9c16-f74eafa5e454",
                 "orientation": "+"
@@ -20924,7 +20924,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:abe41c77-3601-4c23-bc85-69d574e758f2",
                 "orientation": "+"
@@ -20947,7 +20947,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:cb61c522-2984-4aea-92b7-68b08b3da84d",
                 "orientation": "+"
@@ -20970,7 +20970,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:89e58766-afab-4d1f-8775-1311275c857a",
                 "orientation": "+"
@@ -20993,7 +20993,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:1c3ca0ce-fbaf-4929-bd1d-44ca6c3fd3bc",
                 "orientation": "+"
@@ -21016,7 +21016,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:356935be-07f0-4a7f-895d-78848298cc32",
                 "orientation": "+"
@@ -21039,7 +21039,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:b062d93a-cabd-45e1-845e-ca90e3c39730",
                 "orientation": "+"
@@ -21062,7 +21062,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:c47c2ae9-6ff5-4b26-a293-ca83b7046ac0",
                 "orientation": "+"
@@ -21085,7 +21085,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:55e481c1-3084-42de-b1b1-020ae90b594c",
                 "orientation": "+"
@@ -21108,7 +21108,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:70d6787b-0280-42a1-a46f-4c3ea010cbce",
                 "orientation": "+"
@@ -21131,7 +21131,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:c4eecceb-c7c0-4b2d-a462-de459de385f7",
                 "orientation": "+"
@@ -21154,7 +21154,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:d627f2d7-d27f-40bf-b30a-2298c50c5b88",
                 "orientation": "+"
@@ -21177,7 +21177,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:6d219ad2-36b7-4f0d-bc02-deba6c975ea2",
                 "orientation": "+"
@@ -21200,7 +21200,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:0e17be70-1378-48cc-b88b-f12de3d9e112",
                 "orientation": "+"
@@ -21223,7 +21223,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:bdf1b7f8-6f4e-4652-a24e-2d7328101807",
                 "orientation": "+"
@@ -21246,7 +21246,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:6b4acb54-1cd3-42d5-9845-7a7f57b26fab",
                 "orientation": "+"
@@ -21269,7 +21269,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:22851efb-93f5-492d-9a9c-102d1df785c1",
                 "orientation": "+"
@@ -21292,7 +21292,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:f02f10fc-79f0-4ba7-aa31-e50da369b0e0",
                 "orientation": "+"
@@ -21315,7 +21315,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:5943a3e8-75e7-45c0-9b66-3f29e77150cf",
                 "orientation": "+"
@@ -21338,7 +21338,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:0934c81e-8a94-41c5-8103-3365b8c33853",
                 "orientation": "+"
@@ -21361,7 +21361,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:cb6708a2-df56-4993-9699-9542c85c4f86",
                 "orientation": "+"
@@ -21384,7 +21384,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:4d4b7e04-ac90-4447-9d86-28db1ad4ac41",
                 "orientation": "+"
@@ -21407,7 +21407,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:315d5051-9eb9-4c1a-9434-a8d2e3e1d3f5",
                 "orientation": "+"
@@ -21430,7 +21430,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:9ca25210-c370-4b91-b92f-33f5e1921889",
                 "orientation": "+"
@@ -21453,7 +21453,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:6379c9a9-86c4-45a0-a508-a62309a4e766",
                 "orientation": "+"
@@ -21476,7 +21476,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:542934a9-f32d-401e-8e05-05d529492483",
                 "orientation": "+"
@@ -21499,7 +21499,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:7d373590-b767-45a5-8e6a-120d938d3736",
                 "orientation": "+"
@@ -21522,7 +21522,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:2eba2a4e-7b02-4921-894b-7882959e13fd",
                 "orientation": "+"
@@ -21545,7 +21545,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:abd9ba1e-6d89-417d-a8ee-2e84d2b296dc",
                 "orientation": "+"
@@ -21568,7 +21568,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:aaee3689-d94d-4193-af47-cdf29e45d3e3",
                 "orientation": "+"
@@ -21591,7 +21591,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:71721739-f1d5-4cac-9a53-34c39c7e2ce2",
                 "orientation": "+"
@@ -21614,7 +21614,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:2ff15613-8fa2-4410-af09-0f42e2c83dd1",
                 "orientation": "+"
@@ -21913,6 +21913,14 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
                 "ref": "uuid:26924195-da93-43af-946d-237910710449",
                 "orientation": "+"
               }
+            ],
+            "relationships": [
+              {
+                "type": "within",
+                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "targetRole": "containingPrimaryParcel",
+                "targetFeatureType": "PrimaryParcel"
+              }
             ]
           },
           "properties": {
@@ -21920,8 +21928,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             "floors": [
               2
             ],
-            "volume": 167.907,
-            "parentParcelID": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6"
+            "volume": 167.907
           }
         },
         {
@@ -21935,6 +21942,14 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
                 "ref": "uuid:89957e86-89d5-459d-a170-0c7c916f2382",
                 "orientation": "+"
               }
+            ],
+            "relationships": [
+              {
+                "type": "within",
+                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "targetRole": "containingPrimaryParcel",
+                "targetFeatureType": "PrimaryParcel"
+              }
             ]
           },
           "properties": {
@@ -21942,8 +21957,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             "floors": [
               2
             ],
-            "volume": 167.904,
-            "parentParcelID": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6"
+            "volume": 167.904
           }
         },
         {
@@ -21957,6 +21971,14 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
                 "ref": "uuid:9a31a4bf-8d83-4876-8bc3-df640512418a",
                 "orientation": "+"
               }
+            ],
+            "relationships": [
+              {
+                "type": "within",
+                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "targetRole": "containingPrimaryParcel",
+                "targetFeatureType": "PrimaryParcel"
+              }
             ]
           },
           "properties": {
@@ -21964,8 +21986,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             "floors": [
               1
             ],
-            "volume": 263.913,
-            "parentParcelID": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6"
+            "volume": 263.913
           }
         },
         {
@@ -21979,6 +22000,14 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
                 "ref": "uuid:ddbbed6c-5a7d-4405-9d41-59677b9484ee",
                 "orientation": "+"
               }
+            ],
+            "relationships": [
+              {
+                "type": "within",
+                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "targetRole": "containingPrimaryParcel",
+                "targetFeatureType": "PrimaryParcel"
+              }
             ]
           },
           "properties": {
@@ -21986,8 +22015,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             "floors": [
               1
             ],
-            "volume": 263.85,
-            "parentParcelID": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6"
+            "volume": 263.85
           }
         },
         {
@@ -22001,6 +22029,14 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
                 "ref": "uuid:1e877d2e-b9b0-4152-b693-fc4d76843142",
                 "orientation": "+"
               }
+            ],
+            "relationships": [
+              {
+                "type": "within",
+                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "targetRole": "containingPrimaryParcel",
+                "targetFeatureType": "PrimaryParcel"
+              }
             ]
           },
           "properties": {
@@ -22009,8 +22045,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
               1,
               2
             ],
-            "volume": 119.806,
-            "parentParcelID": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6"
+            "volume": 119.806
           }
         }
       ]
@@ -26430,7 +26465,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:0c487fe8-39b5-4a89-8c97-ac022dbe1fce",
                 "orientation": "+"
@@ -26453,7 +26488,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:777a02bc-f2d3-4b31-bc4c-7180bc13a31c",
                 "orientation": "+"
@@ -26476,7 +26511,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:e6fb50a4-9678-4e44-b31c-70cd67726e49",
                 "orientation": "+"
@@ -26499,7 +26534,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:f6d80de2-ba10-4748-9c16-f74eafa5e454",
                 "orientation": "+"
@@ -26522,7 +26557,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:abe41c77-3601-4c23-bc85-69d574e758f2",
                 "orientation": "+"
@@ -26545,7 +26580,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:cb61c522-2984-4aea-92b7-68b08b3da84d",
                 "orientation": "+"
@@ -26568,7 +26603,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:89e58766-afab-4d1f-8775-1311275c857a",
                 "orientation": "+"
@@ -26591,7 +26626,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:1c3ca0ce-fbaf-4929-bd1d-44ca6c3fd3bc",
                 "orientation": "+"
@@ -26614,7 +26649,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:356935be-07f0-4a7f-895d-78848298cc32",
                 "orientation": "+"
@@ -26637,7 +26672,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:b062d93a-cabd-45e1-845e-ca90e3c39730",
                 "orientation": "+"
@@ -26660,7 +26695,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:c47c2ae9-6ff5-4b26-a293-ca83b7046ac0",
                 "orientation": "+"
@@ -26683,7 +26718,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:55e481c1-3084-42de-b1b1-020ae90b594c",
                 "orientation": "+"
@@ -26706,7 +26741,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:70d6787b-0280-42a1-a46f-4c3ea010cbce",
                 "orientation": "+"
@@ -26729,7 +26764,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:c4eecceb-c7c0-4b2d-a462-de459de385f7",
                 "orientation": "+"
@@ -26752,7 +26787,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:d627f2d7-d27f-40bf-b30a-2298c50c5b88",
                 "orientation": "+"
@@ -26775,7 +26810,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:6d219ad2-36b7-4f0d-bc02-deba6c975ea2",
                 "orientation": "+"
@@ -26798,7 +26833,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:0e17be70-1378-48cc-b88b-f12de3d9e112",
                 "orientation": "+"
@@ -26821,7 +26856,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:bdf1b7f8-6f4e-4652-a24e-2d7328101807",
                 "orientation": "+"
@@ -26844,7 +26879,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:6b4acb54-1cd3-42d5-9845-7a7f57b26fab",
                 "orientation": "+"
@@ -26867,7 +26902,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:22851efb-93f5-492d-9a9c-102d1df785c1",
                 "orientation": "+"
@@ -26890,7 +26925,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:f02f10fc-79f0-4ba7-aa31-e50da369b0e0",
                 "orientation": "+"
@@ -26913,7 +26948,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:5943a3e8-75e7-45c0-9b66-3f29e77150cf",
                 "orientation": "+"
@@ -26936,7 +26971,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:0934c81e-8a94-41c5-8103-3365b8c33853",
                 "orientation": "+"
@@ -26959,7 +26994,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:cb6708a2-df56-4993-9699-9542c85c4f86",
                 "orientation": "+"
@@ -26982,7 +27017,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:4d4b7e04-ac90-4447-9d86-28db1ad4ac41",
                 "orientation": "+"
@@ -27005,7 +27040,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:315d5051-9eb9-4c1a-9434-a8d2e3e1d3f5",
                 "orientation": "+"
@@ -27028,7 +27063,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:9ca25210-c370-4b91-b92f-33f5e1921889",
                 "orientation": "+"
@@ -27051,7 +27086,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:6379c9a9-86c4-45a0-a508-a62309a4e766",
                 "orientation": "+"
@@ -27074,7 +27109,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:542934a9-f32d-401e-8e05-05d529492483",
                 "orientation": "+"
@@ -27097,7 +27132,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:7d373590-b767-45a5-8e6a-120d938d3736",
                 "orientation": "+"
@@ -27120,7 +27155,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:2eba2a4e-7b02-4921-894b-7882959e13fd",
                 "orientation": "+"
@@ -27143,7 +27178,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:abd9ba1e-6d89-417d-a8ee-2e84d2b296dc",
                 "orientation": "+"
@@ -27166,7 +27201,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:aaee3689-d94d-4193-af47-cdf29e45d3e3",
                 "orientation": "+"
@@ -27189,7 +27224,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:71721739-f1d5-4cac-9a53-34c39c7e2ce2",
                 "orientation": "+"
@@ -27212,7 +27247,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
           "geometry": null,
           "topology": {
             "type": "Face",
-            "directed_references": [
+            "rings": [
               {
                 "ref": "uuid:2ff15613-8fa2-4410-af09-0f42e2c83dd1",
                 "orientation": "+"
@@ -27511,6 +27546,14 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
                 "ref": "uuid:26924195-da93-43af-946d-237910710449",
                 "orientation": "+"
               }
+            ],
+            "relationships": [
+              {
+                "type": "within",
+                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "targetRole": "containingPrimaryParcel",
+                "targetFeatureType": "PrimaryParcel"
+              }
             ]
           },
           "properties": {
@@ -27518,8 +27561,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             "floors": [
               2
             ],
-            "volume": 167.907,
-            "parentParcelID": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6"
+            "volume": 167.907
           }
         },
         {
@@ -27533,6 +27575,14 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
                 "ref": "uuid:89957e86-89d5-459d-a170-0c7c916f2382",
                 "orientation": "+"
               }
+            ],
+            "relationships": [
+              {
+                "type": "within",
+                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "targetRole": "containingPrimaryParcel",
+                "targetFeatureType": "PrimaryParcel"
+              }
             ]
           },
           "properties": {
@@ -27540,8 +27590,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             "floors": [
               2
             ],
-            "volume": 167.904,
-            "parentParcelID": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6"
+            "volume": 167.904
           }
         },
         {
@@ -27555,6 +27604,14 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
                 "ref": "uuid:9a31a4bf-8d83-4876-8bc3-df640512418a",
                 "orientation": "+"
               }
+            ],
+            "relationships": [
+              {
+                "type": "within",
+                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "targetRole": "containingPrimaryParcel",
+                "targetFeatureType": "PrimaryParcel"
+              }
             ]
           },
           "properties": {
@@ -27562,8 +27619,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             "floors": [
               1
             ],
-            "volume": 263.913,
-            "parentParcelID": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6"
+            "volume": 263.913
           }
         },
         {
@@ -27577,6 +27633,14 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
                 "ref": "uuid:ddbbed6c-5a7d-4405-9d41-59677b9484ee",
                 "orientation": "+"
               }
+            ],
+            "relationships": [
+              {
+                "type": "within",
+                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "targetRole": "containingPrimaryParcel",
+                "targetFeatureType": "PrimaryParcel"
+              }
             ]
           },
           "properties": {
@@ -27584,8 +27648,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             "floors": [
               1
             ],
-            "volume": 263.85,
-            "parentParcelID": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6"
+            "volume": 263.85
           }
         },
         {
@@ -27599,6 +27662,14 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
                 "ref": "uuid:1e877d2e-b9b0-4152-b693-fc4d76843142",
                 "orientation": "+"
               }
+            ],
+            "relationships": [
+              {
+                "type": "within",
+                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "targetRole": "containingPrimaryParcel",
+                "targetFeatureType": "PrimaryParcel"
+              }
             ]
           },
           "properties": {
@@ -27607,8 +27678,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
               1,
               2
             ],
-            "volume": 119.806,
-            "parentParcelID": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6"
+            "volume": 119.806
           }
         }
       ]
