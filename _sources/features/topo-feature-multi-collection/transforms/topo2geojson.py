@@ -154,8 +154,8 @@ if __name__ == "__main__" and testmode:
             print("Processing {}".format(f))
             input_data = open(f, "r").read()
             output_data = process(input_data, args.mode, args.number)
-        if args.print:
-            print(output_data)
+            if args.print:
+                print(output_data)
     else:
         print("No input file")
 
