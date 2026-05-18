@@ -4,7 +4,16 @@
     The 'references' array names the two point features that form the line's endpoints.
   snippets:
     - language: json
-      ref: example.json
+      ref: examples/line.json
+      base-uri: http://www.example.com/features/
+
+- title: Topology Relationships
+  content: |
+    A topology object for an edge feature using plain string ID references.
+    The 'references' array names the two point features that form the line's endpoints.
+  snippets:
+    - language: json
+      ref: examples/relationship.json
       base-uri: http://www.example.com/features/
 
 - title: Ring topology (directed_references style)

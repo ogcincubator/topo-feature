@@ -39,6 +39,26 @@
           "items": {
             "$ref": "#/$defs/refOrNest"
           }
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "allOf": [
+              {
+                "$ref": "bblocks://ogc.geo.json-fg.link-role"
+              },
+              {
+                "properties": {
+                  "rel": {
+                    "const": "topology"
+                  }
+                },
+                "required": [
+                  "rel"
+                ]
+              }
+            ]
+          }
         }
       }
     },
