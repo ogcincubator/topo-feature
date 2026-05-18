@@ -55,6 +55,7 @@ closing the loop. geometry is null — a Ring has no independent coordinate geom
   "id": "uuid:ring-east-face-outer",
   "type": "Feature",
   "geometry": null,
+  "circumference": 33.2,
   "topology": {
     "type": "Ring",
     "directed_references": [
@@ -89,6 +90,7 @@ closing the loop. geometry is null — a Ring has no independent coordinate geom
   "id": "uuid:ring-east-face-outer",
   "type": "Feature",
   "geometry": null,
+  "circumference": 33.2,
   "topology": {
     "type": "Ring",
     "directed_references": [
@@ -121,8 +123,10 @@ closing the loop. geometry is null — a Ring has no independent coordinate geom
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <uuid:ring-east-face-outer> a geojson:Feature ;
+    topo:circumference 3.32e+01 ;
     geojson:topology [ a topo:Ring ;
             topo:directedReferences ( [ topo:orientation "+" ;
                         topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] [ topo:orientation "+" ;
@@ -140,17 +144,14 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: 'A Ring feature: an ordered closed loop of directed (oriented) Edge references
   forming a boundary. geometry must be null. Uses directed_references (not references)
   in its topology.'
-$defs:
-  testCollection:
-    $anchor: testCollection
-    description: A convienence ref to a complete, testable collection objects and
-      references
-    $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
 allOf:
 - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
 - properties:
     geometry:
       type: 'null'
+    circumference:
+      type: number
+      x-jsonld-id: topo:circumference
     topology:
       properties:
         type:
@@ -163,25 +164,14 @@ allOf:
           items:
             $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
           minItems: 3
-          x-jsonld-id: https://purl.org/geojson/topo#directedReferences
-          x-jsonld-container: '@list'
       required:
       - type
       - directed_references
       not:
         required:
         - references
-      x-jsonld-type: '@id'
-      x-jsonld-id: https://purl.org/geojson/vocab#topology
   required:
   - topology
-x-jsonld-extra-terms:
-  Ring: https://purl.org/geojson/topo#Ring
-  ref: '@id'
-  orientation: https://purl.org/geojson/topo#orientation
-x-jsonld-prefixes:
-  geojson: https://purl.org/geojson/vocab#
-  topo: https://purl.org/geojson/topo#
 
 ```
 
@@ -311,15 +301,12 @@ Links to the schema:
         "shells": {
           "@id": "topo:shells",
           "@container": "@list"
-        },
-        "ref": "topo:ref"
+        }
       },
       "@type": "@id",
       "@id": "geojson:topology"
     },
-    "Ring": "topo:Ring",
-    "ref": "@id",
-    "orientation": "topo:orientation",
+    "circumference": "topo:circumference",
     "Arc": "geojson:Arc",
     "ArcWithCenter": "geojson:ArcWithCenter",
     "ArcByChord": "geojson:ArcByChord",
@@ -329,10 +316,17 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "ref": "topo:ref",
+    "orientation": "topo:orientation",
     "Edge": "topo:Edge",
     "Face": "topo:Face",
+    "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
@@ -341,6 +335,7 @@ Links to the schema:
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "csdm": "https://linked.data.gov.au/def/csdm/",
     "topo": "https://purl.org/geojson/topo#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1
   }
 }

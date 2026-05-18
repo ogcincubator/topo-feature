@@ -97,6 +97,60 @@ The 'references' array names the two point features that form the line's endpoin
 ```
 
 
+### Topology Relationships
+A topology object for an edge feature using plain string ID references.
+The 'references' array names the two point features that form the line's endpoints.
+
+#### json
+```json
+{
+  "type": "Edge",
+  "references": [
+    "P1",
+    "P2"
+  ],
+  "relationships": [
+    {
+      "rel": "topology",
+      "href": "L2",
+      "role": "geof:sfTouches"
+    }
+  ]
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
+  "type": "Edge",
+  "references": [
+    "P1",
+    "P2"
+  ],
+  "relationships": [
+    {
+      "rel": "topology",
+      "href": "L2",
+      "role": "geof:sfTouches"
+    }
+  ]
+}
+```
+
+#### ttl
+```ttl
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
+
+[] a topo:Edge ;
+    geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) .
+
+
+```
+
+
 ### Ring topology (directed_references style)
 A Ring topology object using directed_references — each element has a 'ref' (Edge feature ID)
 and an 'orientation' ('+' or '-'). Mutually exclusive with 'references'.
@@ -345,6 +399,16 @@ oneOf:
       x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
       x-jsonld-type: '@id'
       x-jsonld-container: '@list'
+    relationships:
+      type: array
+      items:
+        allOf:
+        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.yaml
+        - properties:
+            rel:
+              const: topology
+          required:
+          - rel
 - description: "Oriented (directed) references \u2014 each with 'ref' and 'orientation'.
     Used for Ring, Shell."
   required:
@@ -452,6 +516,9 @@ x-jsonld-extra-terms:
   Ring: https://purl.org/geojson/topo#Ring
   Shell: https://purl.org/geojson/topo#Shell
   Solid: https://purl.org/geojson/topo#Solid
+  faces:
+    x-jsonld-id: https://purl.org/geojson/topo#faces
+    x-jsonld-container: '@list'
 x-jsonld-prefixes:
   geojson: https://purl.org/geojson/vocab#
   csdm: https://linked.data.gov.au/def/csdm/
@@ -520,10 +587,17 @@ Links to the schema:
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
     "geojson": "https://purl.org/geojson/vocab#",
     "csdm": "https://linked.data.gov.au/def/csdm/",
     "dct": "http://purl.org/dc/terms/",
     "topo": "https://purl.org/geojson/topo#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1
   }
 }

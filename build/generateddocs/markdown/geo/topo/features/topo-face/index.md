@@ -28,38 +28,11 @@ The `geometry` property is `null` — actual coordinates are derived from the re
 
 ## Relationship to other types
 
-| Lower dimension | Face | Higher dimension |
-|---|---|---|
-| Edge (referenced in Ring directed_references) | **Face** | Shell (references Faces via directed_references) |
+| Lower dimension                                            | Face dimension                                    | Higher dimension                                              |
+|:-----------------------------------------------------------|---------------------------------------------------|:--------------------------------------------------------------|
+| **Edge** <br/>(referenced in **Ring** directed_references) | **Face** <br/> (directed_references to **Rings**) | **Shell** <br/>(directed_references to  **Faces** ) |
 
-## Example
-
-```json
-{
-  "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
-  "type": "Feature",
-  "geometry": null,
-  "topology": {
-    "type": "Face",
-    "rings": [
-      {
-        "type": "Ring",
-        "directed_references": [
-          { "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23", "orientation": "+" },
-          { "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac", "orientation": "+" },
-          { "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569", "orientation": "+" },
-          { "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8", "orientation": "+" }
-        ]
-      }
-    ]
-  },
-  "properties": {
-    "normal": [1.0, 0.0, 0.0],
-    "area": 24.0
-  }
-}
-```
-
+Note **directed references** are required for 3D, whereas 2D may use **ordered references**, and directions can be calculated if required. For 3D this calculation burden is much greater and explicit directions are required.
 ## Examples
 
 ### Face with full topological context (points + edges + face)
@@ -404,8 +377,20 @@ edge and face geometry are null (topology-only).
 #### ttl
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
-[] a geojson:FeatureCollection .
+<uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> a geojson:Feature ;
+    geojson:topology [ a topo:Face ;
+            topo:rings ( [ a topo:Ring ;
+                        topo:directedReferences ( [ topo:orientation "+" ;
+                                    topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] [ topo:orientation "+" ;
+                                    topo:ref <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> ] [ topo:orientation "+" ;
+                                    topo:ref <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> ] [ topo:orientation "+" ;
+                                    topo:ref <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> ] ) ] ) ] .
+
+[] a geojson:FeatureCollection ;
+    topo:faces ( <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ) .
 
 
 ```
@@ -867,6 +852,10 @@ Links to the schema:
     "Edge": "topo:Edge",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
@@ -875,6 +864,7 @@ Links to the schema:
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "csdm": "https://linked.data.gov.au/def/csdm/",
     "topo": "https://purl.org/geojson/topo#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1
   }
 }

@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.datatypes.topology - Geometry using references",
   "bblockName": "Geometry using references",
   "bblockId": "ogc.geo.topo.datatypes.topology",
-  "generated": "2026-05-17T22:41:51.970945+00:00",
+  "generated": "2026-05-18T06:24:27.559027+00:00",
   "result": true,
   "items": [
     {
@@ -23,7 +23,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example.json from examples"
+              "message": "Using examples/line.json from examples"
             },
             {
               "op": "jsonld-uplift",
@@ -78,7 +78,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_2_1.json from examples"
+              "message": "Using examples/relationship.json from examples"
             },
             {
               "op": "jsonld-uplift",
@@ -95,7 +95,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_2_1.ttl",
-              "size": 18,
+              "size": 6,
               "isError": false,
               "message": "Output Turtle example_2_1.ttl created"
             }
@@ -150,7 +150,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_3_1.ttl",
-              "size": 22,
+              "size": 18,
               "isError": false,
               "message": "Output Turtle example_3_1.ttl created"
             }
@@ -205,9 +205,64 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_4_1.ttl",
-              "size": 30,
+              "size": 22,
               "isError": false,
               "message": "Output Turtle example_4_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/geo/topo/datatypes/topology/example_5_1.json",
+        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_5_1.json",
+        "exampleIndex": 5,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_5_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_5_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_5_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_5_1.ttl",
+              "size": 30,
+              "isError": false,
+              "message": "Output Turtle example_5_1.ttl created"
             }
           ]
         },
@@ -228,8 +283,8 @@
   ],
   "globalErrors": {},
   "counts": {
-    "total": 4,
-    "passed": 4,
+    "total": 5,
+    "passed": 5,
     "failed": 0
   }
 }

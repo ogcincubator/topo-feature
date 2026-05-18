@@ -43,6 +43,26 @@
           "x-jsonld-id": "https://purl.org/geojson/vocab#relatedFeatures",
           "x-jsonld-type": "@id",
           "x-jsonld-container": "@list"
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "allOf": [
+              {
+                "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.json"
+              },
+              {
+                "properties": {
+                  "rel": {
+                    "const": "topology"
+                  }
+                },
+                "required": [
+                  "rel"
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -190,7 +210,11 @@
     "Face": "https://purl.org/geojson/topo#Face",
     "Ring": "https://purl.org/geojson/topo#Ring",
     "Shell": "https://purl.org/geojson/topo#Shell",
-    "Solid": "https://purl.org/geojson/topo#Solid"
+    "Solid": "https://purl.org/geojson/topo#Solid",
+    "faces": {
+      "x-jsonld-id": "https://purl.org/geojson/topo#faces",
+      "x-jsonld-container": "@list"
+    }
   },
   "x-jsonld-prefixes": {
     "geojson": "https://purl.org/geojson/vocab#",

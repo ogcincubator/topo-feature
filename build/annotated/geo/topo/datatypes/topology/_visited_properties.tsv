@@ -3,6 +3,16 @@ path	@id	schema
 /_oneOf/0/references	https://purl.org/geojson/vocab#relatedFeatures	/github/workspace/build/annotated/geo/topo/datatypes/topology/schema.yaml
 /_oneOf/0/references/_oneOf/0/_oneOf/2/ref	https://purl.org/geojson/topo#ref	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
 /_oneOf/0/references/_oneOf/0/_oneOf/2/orientation	https://purl.org/geojson/topo#orientation	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
+/_oneOf/0/relationships		/github/workspace/build/annotated/geo/topo/datatypes/topology/schema.yaml
+/_oneOf/0/relationships/href	http://www.w3.org/ns/oa#hasTarget	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/_oneOf/0/relationships/rel	http://www.iana.org/assignments/relation	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/_oneOf/0/relationships/anchor		https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/_oneOf/0/relationships/type	http://purl.org/dc/terms/type	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/_oneOf/0/relationships/hreflang	http://purl.org/dc/terms/language	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/_oneOf/0/relationships/title	http://www.w3.org/2000/01/rdf-schema#label	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/_oneOf/0/relationships/length	http://purl.org/dc/terms/extent	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/_oneOf/0/relationships/role	http://www.w3.org/ns/dx/prof/hasRole	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.yaml
+/_oneOf/0/relationships/conformsTo	http://purl.org/dc/terms/conformsTo	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.yaml
 /_oneOf/1/type	@type	/github/workspace/build/annotated/geo/topo/datatypes/topology/schema.yaml
 /_oneOf/1/directed_references	https://purl.org/geojson/topo#directedReferences	/github/workspace/build/annotated/geo/topo/datatypes/topology/schema.yaml
 /_oneOf/2/type	@type	/github/workspace/build/annotated/geo/topo/datatypes/topology/schema.yaml

@@ -3,6 +3,7 @@
   "id": "uuid:ring-east-face-outer",
   "type": "Feature",
   "geometry": null,
+  "circumference": 33.2,
   "topology": {
     "type": "Ring",
     "directed_references": [

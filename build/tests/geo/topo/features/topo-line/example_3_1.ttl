@@ -1,4 +1,0 @@
-@prefix geojson: <https://purl.org/geojson/vocab#> .
-
-[] a geojson:FeatureCollection .
-
