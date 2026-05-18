@@ -78,7 +78,7 @@ This is a generalisation of the TopoJSON concept using identified features rathe
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 
 ```
@@ -130,10 +130,11 @@ This is a generalisation of the TopoJSON concept using identified features rathe
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
 <http://www.example.com/features/TriangleP1P2P3> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            geojson:relatedFeatures ( ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ) ] .
+            topo:relatedFeatures ( ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ) ] .
 
 
 ```
@@ -191,7 +192,7 @@ from the referenced point features at render time.
 
 <uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
+            topo:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 
 ```
@@ -299,10 +300,10 @@ and 'orientation' ('+' or '-'). geometry is null — geometry is fully defined b
     geojson:topology [ a topo:Face ;
             topo:rings ( [ a topo:Ring ;
                         topo:directedReferences ( [ topo:orientation "+" ;
-                                    topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> ] ) ] ) ] .
+                                    topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] [ topo:orientation "+" ;
+                                    topo:ref "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac" ] [ topo:orientation "+" ;
+                                    topo:ref "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569" ] [ topo:orientation "+" ;
+                                    topo:ref "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8" ] ) ] ) ] .
 
 
 ```
@@ -449,26 +450,38 @@ Links to the schema:
               "@id": "topo:ref"
             }
           },
-          "@id": "geojson:relatedFeatures",
+          "@id": "topo:relatedFeatures",
           "@type": "@id",
           "@container": "@list"
         },
-        "directed_references": {
+        "relationships": {
           "@context": {
-            "ref": {
+            "href": {
               "@type": "@id",
-              "@id": "topo:ref"
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent",
+            "role": {
+              "@id": "prof:hasRole",
+              "@type": "@id"
+            },
+            "conformsTo": {
+              "@id": "dct:conformsTo",
+              "@type": "@id"
             }
           },
-          "@id": "topo:directedReferences",
-          "@container": "@list"
-        },
-        "rings": {
-          "@id": "topo:rings",
-          "@container": "@list"
-        },
-        "shells": {
-          "@id": "topo:shells",
+          "@id": "topo:relatedFeatures",
+          "@type": "@id",
           "@container": "@list"
         }
       },
@@ -484,6 +497,10 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
@@ -491,6 +508,14 @@ Links to the schema:
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
     "faces": {
       "@id": "topo:faces",
       "@container": "@list"
@@ -501,7 +526,6 @@ Links to the schema:
     "dct": "http://purl.org/dc/terms/",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
     "topo": "https://purl.org/geojson/topo#",
     "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1

@@ -129,10 +129,10 @@ closing the loop. geometry is null — a Ring has no independent coordinate geom
     topo:circumference 3.32e+01 ;
     geojson:topology [ a topo:Ring ;
             topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] [ topo:orientation "+" ;
-                        topo:ref <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> ] [ topo:orientation "+" ;
-                        topo:ref <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> ] [ topo:orientation "+" ;
-                        topo:ref <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> ] ) ] .
+                        topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8" ] ) ] .
 
 
 ```
@@ -280,26 +280,38 @@ Links to the schema:
               "@id": "topo:ref"
             }
           },
-          "@id": "geojson:relatedFeatures",
+          "@id": "topo:relatedFeatures",
           "@type": "@id",
           "@container": "@list"
         },
-        "directed_references": {
+        "relationships": {
           "@context": {
-            "ref": {
+            "href": {
               "@type": "@id",
-              "@id": "topo:ref"
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent",
+            "role": {
+              "@id": "prof:hasRole",
+              "@type": "@id"
+            },
+            "conformsTo": {
+              "@id": "dct:conformsTo",
+              "@type": "@id"
             }
           },
-          "@id": "topo:directedReferences",
-          "@container": "@list"
-        },
-        "rings": {
-          "@id": "topo:rings",
-          "@container": "@list"
-        },
-        "shells": {
-          "@id": "topo:shells",
+          "@id": "topo:relatedFeatures",
+          "@type": "@id",
           "@container": "@list"
         }
       },
@@ -316,6 +328,10 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
@@ -323,6 +339,14 @@ Links to the schema:
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
     "faces": {
       "@id": "topo:faces",
       "@container": "@list"
@@ -333,7 +357,6 @@ Links to the schema:
     "dct": "http://purl.org/dc/terms/",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
     "topo": "https://purl.org/geojson/topo#",
     "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1

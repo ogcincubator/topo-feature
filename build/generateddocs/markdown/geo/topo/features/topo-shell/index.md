@@ -2081,27 +2081,49 @@ Links to the schema:
               "@id": "topo:ref"
             }
           },
-          "@id": "geojson:relatedFeatures",
+          "@id": "topo:relatedFeatures",
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "relationships": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent",
+            "role": {
+              "@id": "prof:hasRole",
+              "@type": "@id"
+            },
+            "conformsTo": {
+              "@id": "dct:conformsTo",
+              "@type": "@id"
+            }
+          },
+          "@id": "topo:relatedFeatures",
           "@type": "@id",
           "@container": "@list"
         },
         "directed_references": {
+          "@id": "topo:directedReferences",
+          "@container": "@list",
           "@context": {
             "ref": {
               "@type": "@id",
               "@id": "topo:ref"
             }
-          },
-          "@id": "topo:directedReferences",
-          "@container": "@list"
-        },
-        "rings": {
-          "@id": "topo:rings",
-          "@container": "@list"
-        },
-        "shells": {
-          "@id": "topo:shells",
-          "@container": "@list"
+          }
         },
         "ref": "topo:ref"
       },
@@ -2120,10 +2142,22 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "Edge": "topo:Edge",
     "Face": "topo:Face",
     "Ring": "topo:Ring",
     "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
     "faces": {
       "@id": "topo:faces",
       "@container": "@list"
@@ -2134,7 +2168,6 @@ Links to the schema:
     "dct": "http://purl.org/dc/terms/",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
     "topo": "https://purl.org/geojson/topo#",
     "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1

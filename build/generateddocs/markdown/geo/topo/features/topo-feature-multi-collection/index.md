@@ -1994,51 +1994,51 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
 
 <uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8> <uuid:bd14602d-819d-4f21-8068-c0292c964133> ) ] .
+            topo:relatedFeatures ( <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8> <uuid:bd14602d-819d-4f21-8068-c0292c964133> ) ] .
 
 <uuid:23641631-470f-4c4b-981d-23ccb35d6a51> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db> <uuid:5ea43aac-1f62-4d89-9750-429a522242f7> ) ] .
+            topo:relatedFeatures ( <uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db> <uuid:5ea43aac-1f62-4d89-9750-429a522242f7> ) ] .
 
 <uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:5ea43aac-1f62-4d89-9750-429a522242f7> <uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25> ) ] .
+            topo:relatedFeatures ( <uuid:5ea43aac-1f62-4d89-9750-429a522242f7> <uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25> ) ] .
 
 <uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8> <uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db> ) ] .
+            topo:relatedFeatures ( <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8> <uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db> ) ] .
 
 <uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:eb21daac-f715-4985-b298-a02e29143b46> <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> ) ] .
+            topo:relatedFeatures ( <uuid:eb21daac-f715-4985-b298-a02e29143b46> <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> ) ] .
 
 <uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db> <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> ) ] .
+            topo:relatedFeatures ( <uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db> <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> ) ] .
 
 <uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269> <uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25> ) ] .
+            topo:relatedFeatures ( <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269> <uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25> ) ] .
 
 <uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> <uuid:bd14602d-819d-4f21-8068-c0292c964133> ) ] .
+            topo:relatedFeatures ( <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> <uuid:bd14602d-819d-4f21-8068-c0292c964133> ) ] .
 
 <uuid:bd7c5534-7e5c-407a-9402-fbe522312c07> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:bd14602d-819d-4f21-8068-c0292c964133> <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269> ) ] .
+            topo:relatedFeatures ( <uuid:bd14602d-819d-4f21-8068-c0292c964133> <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269> ) ] .
 
 <uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25> <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8> ) ] .
+            topo:relatedFeatures ( <uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25> <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8> ) ] .
 
 <uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269> <uuid:eb21daac-f715-4985-b298-a02e29143b46> ) ] .
+            topo:relatedFeatures ( <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269> <uuid:eb21daac-f715-4985-b298-a02e29143b46> ) ] .
 
 <uuid:e71295e4-7595-4711-abac-70f172f42c03> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:5ea43aac-1f62-4d89-9750-429a522242f7> <uuid:eb21daac-f715-4985-b298-a02e29143b46> ) ] .
+            topo:relatedFeatures ( <uuid:5ea43aac-1f62-4d89-9750-429a522242f7> <uuid:eb21daac-f715-4985-b298-a02e29143b46> ) ] .
 
 <uuid:f4aafb64-0512-46e6-aad9-d39ef1255674> a topo:Edge,
         geojson:FeatureCollection ;
@@ -3379,27 +3379,27 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
 
 <uuid:2a9c0b08-2cf9-47f4-839e-bf18b3180de3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:078eb283-157a-4485-a441-8ad96457e46f> <uuid:cf012f5a-5407-4b5e-869c-c6e2d9115c8f> ) ] .
+            topo:relatedFeatures ( <uuid:078eb283-157a-4485-a441-8ad96457e46f> <uuid:cf012f5a-5407-4b5e-869c-c6e2d9115c8f> ) ] .
 
 <uuid:4b728acc-4734-4c57-8e77-4ba3989ea5a1> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9f19f896-9878-46dd-b769-c714f5ba017a> <uuid:c01a36a2-8d25-4aca-a2eb-3439608611be> ) ] .
+            topo:relatedFeatures ( <uuid:9f19f896-9878-46dd-b769-c714f5ba017a> <uuid:c01a36a2-8d25-4aca-a2eb-3439608611be> ) ] .
 
 <uuid:570d1dcd-b83d-44d2-b5a2-35a870d4ab5e> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c01a36a2-8d25-4aca-a2eb-3439608611be> <uuid:cf012f5a-5407-4b5e-869c-c6e2d9115c8f> ) ] .
+            topo:relatedFeatures ( <uuid:c01a36a2-8d25-4aca-a2eb-3439608611be> <uuid:cf012f5a-5407-4b5e-869c-c6e2d9115c8f> ) ] .
 
 <uuid:66869487-97cc-410d-a032-86687a24daef> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:078eb283-157a-4485-a441-8ad96457e46f> <uuid:c01a36a2-8d25-4aca-a2eb-3439608611be> ) ] .
+            topo:relatedFeatures ( <uuid:078eb283-157a-4485-a441-8ad96457e46f> <uuid:c01a36a2-8d25-4aca-a2eb-3439608611be> ) ] .
 
 <uuid:9c0fb727-2cbc-4d34-8503-fc20748e72e4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9f19f896-9878-46dd-b769-c714f5ba017a> <uuid:078eb283-157a-4485-a441-8ad96457e46f> ) ] .
+            topo:relatedFeatures ( <uuid:9f19f896-9878-46dd-b769-c714f5ba017a> <uuid:078eb283-157a-4485-a441-8ad96457e46f> ) ] .
 
 <uuid:acf884d9-d62a-41a0-a983-f63c427f5458> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:cf012f5a-5407-4b5e-869c-c6e2d9115c8f> <uuid:9f19f896-9878-46dd-b769-c714f5ba017a> ) ] .
+            topo:relatedFeatures ( <uuid:cf012f5a-5407-4b5e-869c-c6e2d9115c8f> <uuid:9f19f896-9878-46dd-b769-c714f5ba017a> ) ] .
 
 <uuid:dbe9315f-41ea-48b3-9307-a636d71be4a5> a topo:Edge,
         geojson:FeatureCollection ;
@@ -6126,15 +6126,15 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
 
 <uuid:056d873d-1fab-46d2-9cd4-f9f5f2e26661> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:6d6376b6-1cae-413c-ae60-4f9de4ada3cb> <uuid:7defdbf2-bc1d-431c-be24-30ac6dbc6535> ) ] .
+            topo:relatedFeatures ( <uuid:6d6376b6-1cae-413c-ae60-4f9de4ada3cb> <uuid:7defdbf2-bc1d-431c-be24-30ac6dbc6535> ) ] .
 
 <uuid:071e3387-fd35-4b0e-9a39-bfde6a76cea1> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:30f11458-fced-4df8-9ca3-df5a32739915> <uuid:3857f08b-3e0d-4be7-ba85-45b99d755800> ) ] .
+            topo:relatedFeatures ( <uuid:30f11458-fced-4df8-9ca3-df5a32739915> <uuid:3857f08b-3e0d-4be7-ba85-45b99d755800> ) ] .
 
 <uuid:0dc60c0b-43e2-4be0-a399-759a6a93110d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:2ededa55-7f1d-498b-a5fb-d9bdddcb6a62> <uuid:30f11458-fced-4df8-9ca3-df5a32739915> ) ] .
+            topo:relatedFeatures ( <uuid:2ededa55-7f1d-498b-a5fb-d9bdddcb6a62> <uuid:30f11458-fced-4df8-9ca3-df5a32739915> ) ] .
 
 <uuid:0e096965-f363-4b3e-9e04-643b5fb0d042> a topo:Edge,
         geojson:FeatureCollection ;
@@ -6159,63 +6159,63 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
 
 <uuid:11098a35-6cd6-4a04-acd7-e1daaa3cf7d9> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:47ea2814-8ec2-44ac-9809-d3561ed16860> <uuid:27b2c5a9-586a-4ca7-84a5-d94f31e42f82> ) ] .
+            topo:relatedFeatures ( <uuid:47ea2814-8ec2-44ac-9809-d3561ed16860> <uuid:27b2c5a9-586a-4ca7-84a5-d94f31e42f82> ) ] .
 
 <uuid:15fe8343-9f84-4167-b287-7a616095fb00> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:47ea2814-8ec2-44ac-9809-d3561ed16860> <uuid:5d6d6674-9754-469b-9297-5e523b5f3c66> ) ] .
+            topo:relatedFeatures ( <uuid:47ea2814-8ec2-44ac-9809-d3561ed16860> <uuid:5d6d6674-9754-469b-9297-5e523b5f3c66> ) ] .
 
 <uuid:2a47e31e-8b05-4765-bb8a-579af00ce3b6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7defdbf2-bc1d-431c-be24-30ac6dbc6535> <uuid:30f11458-fced-4df8-9ca3-df5a32739915> ) ] .
+            topo:relatedFeatures ( <uuid:7defdbf2-bc1d-431c-be24-30ac6dbc6535> <uuid:30f11458-fced-4df8-9ca3-df5a32739915> ) ] .
 
 <uuid:58541822-8452-489f-97d6-383c511883d6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:710447e6-872f-4bd8-b457-db63aa5aa32c> <uuid:6d6376b6-1cae-413c-ae60-4f9de4ada3cb> ) ] .
+            topo:relatedFeatures ( <uuid:710447e6-872f-4bd8-b457-db63aa5aa32c> <uuid:6d6376b6-1cae-413c-ae60-4f9de4ada3cb> ) ] .
 
 <uuid:587f3150-7d11-4c4e-8e1a-86bf37114620> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7c50d3f0-7874-4ed7-9ebd-13eebcdfe090> <uuid:7f0616be-94a5-4c31-a8d7-5d8e4fbcbd15> ) ] .
+            topo:relatedFeatures ( <uuid:7c50d3f0-7874-4ed7-9ebd-13eebcdfe090> <uuid:7f0616be-94a5-4c31-a8d7-5d8e4fbcbd15> ) ] .
 
 <uuid:81bdd944-5684-4b22-a663-ab3befc6ed07> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7defdbf2-bc1d-431c-be24-30ac6dbc6535> <uuid:5d6d6674-9754-469b-9297-5e523b5f3c66> ) ] .
+            topo:relatedFeatures ( <uuid:7defdbf2-bc1d-431c-be24-30ac6dbc6535> <uuid:5d6d6674-9754-469b-9297-5e523b5f3c66> ) ] .
 
 <uuid:b0f125d0-5543-49a8-b32e-d4ca63e0cb24> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:6d6376b6-1cae-413c-ae60-4f9de4ada3cb> <uuid:3857f08b-3e0d-4be7-ba85-45b99d755800> ) ] .
+            topo:relatedFeatures ( <uuid:6d6376b6-1cae-413c-ae60-4f9de4ada3cb> <uuid:3857f08b-3e0d-4be7-ba85-45b99d755800> ) ] .
 
 <uuid:bfff222f-6f5e-4937-817c-b347d8b53798> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:710447e6-872f-4bd8-b457-db63aa5aa32c> <uuid:e56433eb-e0db-465b-aa4e-cbda99cbbe31> ) ] .
+            topo:relatedFeatures ( <uuid:710447e6-872f-4bd8-b457-db63aa5aa32c> <uuid:e56433eb-e0db-465b-aa4e-cbda99cbbe31> ) ] .
 
 <uuid:c38f4870-3482-47a2-84a6-6b7012dd9e80> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:3857f08b-3e0d-4be7-ba85-45b99d755800> <uuid:e56433eb-e0db-465b-aa4e-cbda99cbbe31> ) ] .
+            topo:relatedFeatures ( <uuid:3857f08b-3e0d-4be7-ba85-45b99d755800> <uuid:e56433eb-e0db-465b-aa4e-cbda99cbbe31> ) ] .
 
 <uuid:c5df44f2-f272-441c-a47b-f0019e71b6eb> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:27b2c5a9-586a-4ca7-84a5-d94f31e42f82> <uuid:710447e6-872f-4bd8-b457-db63aa5aa32c> ) ] .
+            topo:relatedFeatures ( <uuid:27b2c5a9-586a-4ca7-84a5-d94f31e42f82> <uuid:710447e6-872f-4bd8-b457-db63aa5aa32c> ) ] .
 
 <uuid:cb4922bc-e4e0-4716-8d0c-b335a4f69278> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:5d6d6674-9754-469b-9297-5e523b5f3c66> <uuid:2ededa55-7f1d-498b-a5fb-d9bdddcb6a62> ) ] .
+            topo:relatedFeatures ( <uuid:5d6d6674-9754-469b-9297-5e523b5f3c66> <uuid:2ededa55-7f1d-498b-a5fb-d9bdddcb6a62> ) ] .
 
 <uuid:d65b0e4c-1359-4b0e-9d9f-8f701c332238> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7c50d3f0-7874-4ed7-9ebd-13eebcdfe090> <uuid:47ea2814-8ec2-44ac-9809-d3561ed16860> ) ] .
+            topo:relatedFeatures ( <uuid:7c50d3f0-7874-4ed7-9ebd-13eebcdfe090> <uuid:47ea2814-8ec2-44ac-9809-d3561ed16860> ) ] .
 
 <uuid:e07f0af9-9d39-4875-bea9-7bb014e4ff71> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:27b2c5a9-586a-4ca7-84a5-d94f31e42f82> <uuid:7f0616be-94a5-4c31-a8d7-5d8e4fbcbd15> ) ] .
+            topo:relatedFeatures ( <uuid:27b2c5a9-586a-4ca7-84a5-d94f31e42f82> <uuid:7f0616be-94a5-4c31-a8d7-5d8e4fbcbd15> ) ] .
 
 <uuid:e34c11bc-9868-4024-8e7e-af5fdff583c2> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e56433eb-e0db-465b-aa4e-cbda99cbbe31> <uuid:7f0616be-94a5-4c31-a8d7-5d8e4fbcbd15> ) ] .
+            topo:relatedFeatures ( <uuid:e56433eb-e0db-465b-aa4e-cbda99cbbe31> <uuid:7f0616be-94a5-4c31-a8d7-5d8e4fbcbd15> ) ] .
 
 <uuid:e3b221b4-a336-46cf-acea-5e8116bc8e42> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:2ededa55-7f1d-498b-a5fb-d9bdddcb6a62> <uuid:7c50d3f0-7874-4ed7-9ebd-13eebcdfe090> ) ] .
+            topo:relatedFeatures ( <uuid:2ededa55-7f1d-498b-a5fb-d9bdddcb6a62> <uuid:7c50d3f0-7874-4ed7-9ebd-13eebcdfe090> ) ] .
 
 <uuid:27b2c5a9-586a-4ca7-84a5-d94f31e42f82> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -15685,119 +15685,119 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
 
 <uuid:055757b8-e9a0-4986-b881-6e954dba2cd0> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fe8ffd7c-71c1-4041-b10a-9e31e2f276b9> <uuid:c9973591-a3a9-4999-a18f-b719919be865> ) ] .
+            topo:relatedFeatures ( <uuid:fe8ffd7c-71c1-4041-b10a-9e31e2f276b9> <uuid:c9973591-a3a9-4999-a18f-b719919be865> ) ] .
 
 <uuid:0804a148-79aa-43f1-8e1a-f2b52a03900d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ee817034-12da-4d11-a502-c0dfb388a565> <uuid:f665735e-5d97-4384-9a15-59ca9a229b1f> ) ] .
+            topo:relatedFeatures ( <uuid:ee817034-12da-4d11-a502-c0dfb388a565> <uuid:f665735e-5d97-4384-9a15-59ca9a229b1f> ) ] .
 
 <uuid:0b2c122c-f20a-4d22-9eb2-9cd728de1fea> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:d154a83d-68d8-4802-8fe6-7a3e2d8ca374> <uuid:1194cf9d-0986-4801-8318-e442fc161436> ) ] .
+            topo:relatedFeatures ( <uuid:d154a83d-68d8-4802-8fe6-7a3e2d8ca374> <uuid:1194cf9d-0986-4801-8318-e442fc161436> ) ] .
 
 <uuid:0b81bb73-9682-48f9-a8a8-34259ea1c66c> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:46ba5595-4bc6-4ee6-8341-f3181c2ffc25> <uuid:3b26621d-957e-4aee-b1b0-86fbd94f3af4> ) ] .
+            topo:relatedFeatures ( <uuid:46ba5595-4bc6-4ee6-8341-f3181c2ffc25> <uuid:3b26621d-957e-4aee-b1b0-86fbd94f3af4> ) ] .
 
 <uuid:0c0a50ec-b785-4b15-b14a-7ffa26019c53> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1fe34952-d357-46ed-9894-c8eb0b8068a2> <uuid:cce3029f-da86-4aa4-ad5c-c1c09efaae78> ) ] .
+            topo:relatedFeatures ( <uuid:1fe34952-d357-46ed-9894-c8eb0b8068a2> <uuid:cce3029f-da86-4aa4-ad5c-c1c09efaae78> ) ] .
 
 <uuid:1444ad67-b23d-449f-b228-0620dced94d3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f81f4eaa-900f-4815-88c9-156d9ce8e4df> <uuid:637eea8b-de60-49f7-9cc1-d78c97a684bd> ) ] .
+            topo:relatedFeatures ( <uuid:f81f4eaa-900f-4815-88c9-156d9ce8e4df> <uuid:637eea8b-de60-49f7-9cc1-d78c97a684bd> ) ] .
 
 <uuid:1602b55f-2ab0-4205-9fb9-ba079f0d0115> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ee817034-12da-4d11-a502-c0dfb388a565> <uuid:79514b5f-f40d-4f65-aa56-080dc60e2acd> ) ] .
+            topo:relatedFeatures ( <uuid:ee817034-12da-4d11-a502-c0dfb388a565> <uuid:79514b5f-f40d-4f65-aa56-080dc60e2acd> ) ] .
 
 <uuid:16a1a9f3-0b6f-40b5-a2d1-23f39c12c947> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:3b26621d-957e-4aee-b1b0-86fbd94f3af4> <uuid:3764eedf-67b6-4edb-a31a-24dc8d91390c> ) ] .
+            topo:relatedFeatures ( <uuid:3b26621d-957e-4aee-b1b0-86fbd94f3af4> <uuid:3764eedf-67b6-4edb-a31a-24dc8d91390c> ) ] .
 
 <uuid:1776a678-9341-4636-90e4-2b6caa79de98> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:637eea8b-de60-49f7-9cc1-d78c97a684bd> <uuid:c8e4af63-9764-4bc2-a65b-f4a8e88f135b> ) ] .
+            topo:relatedFeatures ( <uuid:637eea8b-de60-49f7-9cc1-d78c97a684bd> <uuid:c8e4af63-9764-4bc2-a65b-f4a8e88f135b> ) ] .
 
 <uuid:1be76d4c-7211-42db-aa4b-10a5d9f213c8> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:70a8f662-91ff-4b45-85f7-73758faa9338> <uuid:e4980ca2-4113-4021-8f63-7b0c91379b87> ) ] .
+            topo:relatedFeatures ( <uuid:70a8f662-91ff-4b45-85f7-73758faa9338> <uuid:e4980ca2-4113-4021-8f63-7b0c91379b87> ) ] .
 
 <uuid:211d3069-7c24-4770-8654-d61c61dfd276> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:79514b5f-f40d-4f65-aa56-080dc60e2acd> <uuid:f4be0d7e-deff-439a-9163-18684ac495df> ) ] .
+            topo:relatedFeatures ( <uuid:79514b5f-f40d-4f65-aa56-080dc60e2acd> <uuid:f4be0d7e-deff-439a-9163-18684ac495df> ) ] .
 
 <uuid:235c5983-4f2a-468b-b522-4e737cd9bfe6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1194cf9d-0986-4801-8318-e442fc161436> <uuid:77525e28-2927-41e7-af8c-f1072d137c2f> ) ] .
+            topo:relatedFeatures ( <uuid:1194cf9d-0986-4801-8318-e442fc161436> <uuid:77525e28-2927-41e7-af8c-f1072d137c2f> ) ] .
 
 <uuid:2575c032-344e-48e3-8a15-1a722675a63d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:96af0df1-eb4c-4539-92e0-ebf7de44d754> <uuid:f81f4eaa-900f-4815-88c9-156d9ce8e4df> ) ] .
+            topo:relatedFeatures ( <uuid:96af0df1-eb4c-4539-92e0-ebf7de44d754> <uuid:f81f4eaa-900f-4815-88c9-156d9ce8e4df> ) ] .
 
 <uuid:26fb0407-5baa-4383-a309-94a8c9499875> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1194cf9d-0986-4801-8318-e442fc161436> <uuid:70a8f662-91ff-4b45-85f7-73758faa9338> ) ] .
+            topo:relatedFeatures ( <uuid:1194cf9d-0986-4801-8318-e442fc161436> <uuid:70a8f662-91ff-4b45-85f7-73758faa9338> ) ] .
 
 <uuid:2e1f9d54-d87b-4f53-94c5-04c7d2f447c1> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:6f9db8d7-6e29-40bf-899d-1ff4373f7df0> <uuid:f665735e-5d97-4384-9a15-59ca9a229b1f> ) ] .
+            topo:relatedFeatures ( <uuid:6f9db8d7-6e29-40bf-899d-1ff4373f7df0> <uuid:f665735e-5d97-4384-9a15-59ca9a229b1f> ) ] .
 
 <uuid:32018e1e-cffd-4a7c-ac64-f0015b3a78e3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:714ef443-8273-437d-9eb5-5b707ab14851> <uuid:cce3029f-da86-4aa4-ad5c-c1c09efaae78> ) ] .
+            topo:relatedFeatures ( <uuid:714ef443-8273-437d-9eb5-5b707ab14851> <uuid:cce3029f-da86-4aa4-ad5c-c1c09efaae78> ) ] .
 
 <uuid:34c5eb3d-d627-4627-8ab8-c577df604491> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:43772316-7506-410f-b440-09ec671b3ae7> <uuid:1194cf9d-0986-4801-8318-e442fc161436> ) ] .
+            topo:relatedFeatures ( <uuid:43772316-7506-410f-b440-09ec671b3ae7> <uuid:1194cf9d-0986-4801-8318-e442fc161436> ) ] .
 
 <uuid:3786f46c-c011-4a8f-8cf8-346920537e58> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:4de8a4cb-3181-48b5-a7cd-032a6836a36c> <uuid:46ba5595-4bc6-4ee6-8341-f3181c2ffc25> ) ] .
+            topo:relatedFeatures ( <uuid:4de8a4cb-3181-48b5-a7cd-032a6836a36c> <uuid:46ba5595-4bc6-4ee6-8341-f3181c2ffc25> ) ] .
 
 <uuid:39ceaf2b-15e1-4ae7-9790-261aaa5ec8b4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:4de8a4cb-3181-48b5-a7cd-032a6836a36c> <uuid:f81f4eaa-900f-4815-88c9-156d9ce8e4df> ) ] .
+            topo:relatedFeatures ( <uuid:4de8a4cb-3181-48b5-a7cd-032a6836a36c> <uuid:f81f4eaa-900f-4815-88c9-156d9ce8e4df> ) ] .
 
 <uuid:3e9b6304-22cd-4d50-a6c5-4d3d9646b74a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:77525e28-2927-41e7-af8c-f1072d137c2f> <uuid:ffab1133-a565-4f69-99c7-499f790a286e> ) ] .
+            topo:relatedFeatures ( <uuid:77525e28-2927-41e7-af8c-f1072d137c2f> <uuid:ffab1133-a565-4f69-99c7-499f790a286e> ) ] .
 
 <uuid:3f1e688c-02da-4c2a-9184-4f0f9979a1d4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9c4bb36d-1825-4031-ae3b-9e0bc2c77125> <uuid:1194cf9d-0986-4801-8318-e442fc161436> ) ] .
+            topo:relatedFeatures ( <uuid:9c4bb36d-1825-4031-ae3b-9e0bc2c77125> <uuid:1194cf9d-0986-4801-8318-e442fc161436> ) ] .
 
 <uuid:479832d0-9e0c-4e90-bdbc-bb8446f95172> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8f37fb4b-db2a-4958-95e8-46b1c0743099> <uuid:e9ad762a-0f20-449d-9ef7-ea52c1a7d6e2> ) ] .
+            topo:relatedFeatures ( <uuid:8f37fb4b-db2a-4958-95e8-46b1c0743099> <uuid:e9ad762a-0f20-449d-9ef7-ea52c1a7d6e2> ) ] .
 
 <uuid:4f125a50-9bf7-447d-aa65-07613947097a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ffab1133-a565-4f69-99c7-499f790a286e> <uuid:1fe34952-d357-46ed-9894-c8eb0b8068a2> ) ] .
+            topo:relatedFeatures ( <uuid:ffab1133-a565-4f69-99c7-499f790a286e> <uuid:1fe34952-d357-46ed-9894-c8eb0b8068a2> ) ] .
 
 <uuid:50b60430-ef39-4a72-9e6e-fbe177c5967d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:b6c9d75d-7801-4294-82c0-5bc8990a8cfa> <uuid:4ffd4206-3ef4-4e17-95cd-6f63ef03ec0a> ) ] .
+            topo:relatedFeatures ( <uuid:b6c9d75d-7801-4294-82c0-5bc8990a8cfa> <uuid:4ffd4206-3ef4-4e17-95cd-6f63ef03ec0a> ) ] .
 
 <uuid:57b2c891-b6e7-42f5-91e7-8e083c8952dd> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e4980ca2-4113-4021-8f63-7b0c91379b87> <uuid:d154a83d-68d8-4802-8fe6-7a3e2d8ca374> ) ] .
+            topo:relatedFeatures ( <uuid:e4980ca2-4113-4021-8f63-7b0c91379b87> <uuid:d154a83d-68d8-4802-8fe6-7a3e2d8ca374> ) ] .
 
 <uuid:5a227634-3bad-4f61-bdc2-d1b245f00298> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e9ad762a-0f20-449d-9ef7-ea52c1a7d6e2> <uuid:7cdb7dd0-df59-4f0e-a6b2-1a69603ffb31> ) ] .
+            topo:relatedFeatures ( <uuid:e9ad762a-0f20-449d-9ef7-ea52c1a7d6e2> <uuid:7cdb7dd0-df59-4f0e-a6b2-1a69603ffb31> ) ] .
 
 <uuid:5adf66cb-5b96-492f-b409-a1dbcc9395ee> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9c4bb36d-1825-4031-ae3b-9e0bc2c77125> <uuid:3764eedf-67b6-4edb-a31a-24dc8d91390c> ) ] .
+            topo:relatedFeatures ( <uuid:9c4bb36d-1825-4031-ae3b-9e0bc2c77125> <uuid:3764eedf-67b6-4edb-a31a-24dc8d91390c> ) ] .
 
 <uuid:5f69685c-9d66-4fef-aef2-99ea2c816834> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c1d19950-621f-405d-922e-939a087f1b6e> <uuid:fca1bc3f-c15a-46d0-b568-e69736a72423> ) ] .
+            topo:relatedFeatures ( <uuid:c1d19950-621f-405d-922e-939a087f1b6e> <uuid:fca1bc3f-c15a-46d0-b568-e69736a72423> ) ] .
 
 <uuid:6094b89e-6fd3-43ec-8833-48d6087a6d0e> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ffab1133-a565-4f69-99c7-499f790a286e> <uuid:b6c9d75d-7801-4294-82c0-5bc8990a8cfa> ) ] .
+            topo:relatedFeatures ( <uuid:ffab1133-a565-4f69-99c7-499f790a286e> <uuid:b6c9d75d-7801-4294-82c0-5bc8990a8cfa> ) ] .
 
 <uuid:60c8037a-a363-47be-bcb8-e4851b946305> a topo:Edge,
         geojson:FeatureCollection ;
@@ -15869,147 +15869,147 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
 
 <uuid:6473dd6a-6153-4eac-a856-d589d16d67fd> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c9973591-a3a9-4999-a18f-b719919be865> <uuid:1fe34952-d357-46ed-9894-c8eb0b8068a2> ) ] .
+            topo:relatedFeatures ( <uuid:c9973591-a3a9-4999-a18f-b719919be865> <uuid:1fe34952-d357-46ed-9894-c8eb0b8068a2> ) ] .
 
 <uuid:65f86780-b92d-4340-ba05-f3d870963bf7> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:43772316-7506-410f-b440-09ec671b3ae7> <uuid:3764eedf-67b6-4edb-a31a-24dc8d91390c> ) ] .
+            topo:relatedFeatures ( <uuid:43772316-7506-410f-b440-09ec671b3ae7> <uuid:3764eedf-67b6-4edb-a31a-24dc8d91390c> ) ] .
 
 <uuid:667cc26e-903d-40ce-a790-c74c366c0fd4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e9ad762a-0f20-449d-9ef7-ea52c1a7d6e2> <uuid:c8e4af63-9764-4bc2-a65b-f4a8e88f135b> ) ] .
+            topo:relatedFeatures ( <uuid:e9ad762a-0f20-449d-9ef7-ea52c1a7d6e2> <uuid:c8e4af63-9764-4bc2-a65b-f4a8e88f135b> ) ] .
 
 <uuid:6a54d647-b3bf-41e4-9835-e792bee26667> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8f37fb4b-db2a-4958-95e8-46b1c0743099> <uuid:6f9db8d7-6e29-40bf-899d-1ff4373f7df0> ) ] .
+            topo:relatedFeatures ( <uuid:8f37fb4b-db2a-4958-95e8-46b1c0743099> <uuid:6f9db8d7-6e29-40bf-899d-1ff4373f7df0> ) ] .
 
 <uuid:6ef0398d-bcad-4403-8156-7911b6dbfc9e> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:3b26621d-957e-4aee-b1b0-86fbd94f3af4> <uuid:b5c46a56-9445-4294-816c-5934add40e84> ) ] .
+            topo:relatedFeatures ( <uuid:3b26621d-957e-4aee-b1b0-86fbd94f3af4> <uuid:b5c46a56-9445-4294-816c-5934add40e84> ) ] .
 
 <uuid:6fa96909-aca5-4bd5-a157-447ab99237ef> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:b5c46a56-9445-4294-816c-5934add40e84> <uuid:d72e5d2c-048d-4f77-a4e5-feb936a87101> ) ] .
+            topo:relatedFeatures ( <uuid:b5c46a56-9445-4294-816c-5934add40e84> <uuid:d72e5d2c-048d-4f77-a4e5-feb936a87101> ) ] .
 
 <uuid:7001daf5-9168-42fa-9b02-c0a7ed1f9aa6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:d72e5d2c-048d-4f77-a4e5-feb936a87101> <uuid:fe8ffd7c-71c1-4041-b10a-9e31e2f276b9> ) ] .
+            topo:relatedFeatures ( <uuid:d72e5d2c-048d-4f77-a4e5-feb936a87101> <uuid:fe8ffd7c-71c1-4041-b10a-9e31e2f276b9> ) ] .
 
 <uuid:7b1df2cf-b704-4223-a910-2ee0699278b8> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9c4bb36d-1825-4031-ae3b-9e0bc2c77125> <uuid:8f37fb4b-db2a-4958-95e8-46b1c0743099> ) ] .
+            topo:relatedFeatures ( <uuid:9c4bb36d-1825-4031-ae3b-9e0bc2c77125> <uuid:8f37fb4b-db2a-4958-95e8-46b1c0743099> ) ] .
 
 <uuid:7e1203ee-7816-41d8-a3aa-7e497a99d40e> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c1d19950-621f-405d-922e-939a087f1b6e> <uuid:c9973591-a3a9-4999-a18f-b719919be865> ) ] .
+            topo:relatedFeatures ( <uuid:c1d19950-621f-405d-922e-939a087f1b6e> <uuid:c9973591-a3a9-4999-a18f-b719919be865> ) ] .
 
 <uuid:7fa45745-2b2b-40b6-8702-a5f757706ae6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f4be0d7e-deff-439a-9163-18684ac495df> <uuid:77525e28-2927-41e7-af8c-f1072d137c2f> ) ] .
+            topo:relatedFeatures ( <uuid:f4be0d7e-deff-439a-9163-18684ac495df> <uuid:77525e28-2927-41e7-af8c-f1072d137c2f> ) ] .
 
 <uuid:80050666-7bb8-42dd-99ed-8e2a292e3634> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:b5c46a56-9445-4294-816c-5934add40e84> <uuid:3decf230-e465-48ef-84c4-0680461a5433> ) ] .
+            topo:relatedFeatures ( <uuid:b5c46a56-9445-4294-816c-5934add40e84> <uuid:3decf230-e465-48ef-84c4-0680461a5433> ) ] .
 
 <uuid:82f76e4b-bb1a-4d48-9d5a-d3b94c87a537> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:6f9db8d7-6e29-40bf-899d-1ff4373f7df0> <uuid:714ef443-8273-437d-9eb5-5b707ab14851> ) ] .
+            topo:relatedFeatures ( <uuid:6f9db8d7-6e29-40bf-899d-1ff4373f7df0> <uuid:714ef443-8273-437d-9eb5-5b707ab14851> ) ] .
 
 <uuid:8476442e-d6fe-406a-b48b-8a4d6e597edf> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:cce3029f-da86-4aa4-ad5c-c1c09efaae78> <uuid:70a8f662-91ff-4b45-85f7-73758faa9338> ) ] .
+            topo:relatedFeatures ( <uuid:cce3029f-da86-4aa4-ad5c-c1c09efaae78> <uuid:70a8f662-91ff-4b45-85f7-73758faa9338> ) ] .
 
 <uuid:8b209ee3-4cef-426e-a33d-f2bb92244f7b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c9973591-a3a9-4999-a18f-b719919be865> <uuid:96af0df1-eb4c-4539-92e0-ebf7de44d754> ) ] .
+            topo:relatedFeatures ( <uuid:c9973591-a3a9-4999-a18f-b719919be865> <uuid:96af0df1-eb4c-4539-92e0-ebf7de44d754> ) ] .
 
 <uuid:8bbca054-ced2-4af1-be7f-aa46472876f5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:637eea8b-de60-49f7-9cc1-d78c97a684bd> <uuid:7cdb7dd0-df59-4f0e-a6b2-1a69603ffb31> ) ] .
+            topo:relatedFeatures ( <uuid:637eea8b-de60-49f7-9cc1-d78c97a684bd> <uuid:7cdb7dd0-df59-4f0e-a6b2-1a69603ffb31> ) ] .
 
 <uuid:8be11df2-1721-463d-bbf1-3b2d01c4376b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:4ffd4206-3ef4-4e17-95cd-6f63ef03ec0a> <uuid:43772316-7506-410f-b440-09ec671b3ae7> ) ] .
+            topo:relatedFeatures ( <uuid:4ffd4206-3ef4-4e17-95cd-6f63ef03ec0a> <uuid:43772316-7506-410f-b440-09ec671b3ae7> ) ] .
 
 <uuid:8dac7666-1b29-48d8-89e1-7881f413177b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f665735e-5d97-4384-9a15-59ca9a229b1f> <uuid:e4980ca2-4113-4021-8f63-7b0c91379b87> ) ] .
+            topo:relatedFeatures ( <uuid:f665735e-5d97-4384-9a15-59ca9a229b1f> <uuid:e4980ca2-4113-4021-8f63-7b0c91379b87> ) ] .
 
 <uuid:9546a0d9-dc06-4c5d-85ff-324c3437ca46> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:3decf230-e465-48ef-84c4-0680461a5433> <uuid:c1d19950-621f-405d-922e-939a087f1b6e> ) ] .
+            topo:relatedFeatures ( <uuid:3decf230-e465-48ef-84c4-0680461a5433> <uuid:c1d19950-621f-405d-922e-939a087f1b6e> ) ] .
 
 <uuid:9741d593-eb96-4d17-9d23-cefa48f8d74e> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c1d19950-621f-405d-922e-939a087f1b6e> <uuid:cce3029f-da86-4aa4-ad5c-c1c09efaae78> ) ] .
+            topo:relatedFeatures ( <uuid:c1d19950-621f-405d-922e-939a087f1b6e> <uuid:cce3029f-da86-4aa4-ad5c-c1c09efaae78> ) ] .
 
 <uuid:aa57eb64-f8a1-4fb4-851b-c02261975cb7> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ffab1133-a565-4f69-99c7-499f790a286e> <uuid:79514b5f-f40d-4f65-aa56-080dc60e2acd> ) ] .
+            topo:relatedFeatures ( <uuid:ffab1133-a565-4f69-99c7-499f790a286e> <uuid:79514b5f-f40d-4f65-aa56-080dc60e2acd> ) ] .
 
 <uuid:b21af08c-d3eb-4939-9dd0-c8784e6ace50> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:96af0df1-eb4c-4539-92e0-ebf7de44d754> <uuid:46ba5595-4bc6-4ee6-8341-f3181c2ffc25> ) ] .
+            topo:relatedFeatures ( <uuid:96af0df1-eb4c-4539-92e0-ebf7de44d754> <uuid:46ba5595-4bc6-4ee6-8341-f3181c2ffc25> ) ] .
 
 <uuid:b6913377-3057-44e0-a434-8539fd4d3d55> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1fe34952-d357-46ed-9894-c8eb0b8068a2> <uuid:ee817034-12da-4d11-a502-c0dfb388a565> ) ] .
+            topo:relatedFeatures ( <uuid:1fe34952-d357-46ed-9894-c8eb0b8068a2> <uuid:ee817034-12da-4d11-a502-c0dfb388a565> ) ] .
 
 <uuid:c0baa169-30b9-4322-b8f6-bc7889a846eb> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:3764eedf-67b6-4edb-a31a-24dc8d91390c> <uuid:4de8a4cb-3181-48b5-a7cd-032a6836a36c> ) ] .
+            topo:relatedFeatures ( <uuid:3764eedf-67b6-4edb-a31a-24dc8d91390c> <uuid:4de8a4cb-3181-48b5-a7cd-032a6836a36c> ) ] .
 
 <uuid:c161d56f-5548-4428-9628-52ab55e5d1a1> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fe8ffd7c-71c1-4041-b10a-9e31e2f276b9> <uuid:b6c9d75d-7801-4294-82c0-5bc8990a8cfa> ) ] .
+            topo:relatedFeatures ( <uuid:fe8ffd7c-71c1-4041-b10a-9e31e2f276b9> <uuid:b6c9d75d-7801-4294-82c0-5bc8990a8cfa> ) ] .
 
 <uuid:ccc1f066-40bf-4f72-88e1-871261677ec4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:cce3029f-da86-4aa4-ad5c-c1c09efaae78> <uuid:f665735e-5d97-4384-9a15-59ca9a229b1f> ) ] .
+            topo:relatedFeatures ( <uuid:cce3029f-da86-4aa4-ad5c-c1c09efaae78> <uuid:f665735e-5d97-4384-9a15-59ca9a229b1f> ) ] .
 
 <uuid:cefc99e5-36a1-4877-8857-25f11a884324> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8f37fb4b-db2a-4958-95e8-46b1c0743099> <uuid:d154a83d-68d8-4802-8fe6-7a3e2d8ca374> ) ] .
+            topo:relatedFeatures ( <uuid:8f37fb4b-db2a-4958-95e8-46b1c0743099> <uuid:d154a83d-68d8-4802-8fe6-7a3e2d8ca374> ) ] .
 
 <uuid:d2e6439c-d9e7-49a5-8775-993af0e96e51> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:4ffd4206-3ef4-4e17-95cd-6f63ef03ec0a> <uuid:d72e5d2c-048d-4f77-a4e5-feb936a87101> ) ] .
+            topo:relatedFeatures ( <uuid:4ffd4206-3ef4-4e17-95cd-6f63ef03ec0a> <uuid:d72e5d2c-048d-4f77-a4e5-feb936a87101> ) ] .
 
 <uuid:d4ff27b2-a117-4606-bf34-c6a4ee109907> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f4be0d7e-deff-439a-9163-18684ac495df> <uuid:d154a83d-68d8-4802-8fe6-7a3e2d8ca374> ) ] .
+            topo:relatedFeatures ( <uuid:f4be0d7e-deff-439a-9163-18684ac495df> <uuid:d154a83d-68d8-4802-8fe6-7a3e2d8ca374> ) ] .
 
 <uuid:d5e31f52-3de9-4ee6-aa56-79eb716ab318> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:43772316-7506-410f-b440-09ec671b3ae7> <uuid:b5c46a56-9445-4294-816c-5934add40e84> ) ] .
+            topo:relatedFeatures ( <uuid:43772316-7506-410f-b440-09ec671b3ae7> <uuid:b5c46a56-9445-4294-816c-5934add40e84> ) ] .
 
 <uuid:d97445b9-fdea-44c8-af60-91235748ae1e> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1fe34952-d357-46ed-9894-c8eb0b8068a2> <uuid:637eea8b-de60-49f7-9cc1-d78c97a684bd> ) ] .
+            topo:relatedFeatures ( <uuid:1fe34952-d357-46ed-9894-c8eb0b8068a2> <uuid:637eea8b-de60-49f7-9cc1-d78c97a684bd> ) ] .
 
 <uuid:dc79cb63-779f-4353-9e4c-4f62bae73326> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fca1bc3f-c15a-46d0-b568-e69736a72423> <uuid:3b26621d-957e-4aee-b1b0-86fbd94f3af4> ) ] .
+            topo:relatedFeatures ( <uuid:fca1bc3f-c15a-46d0-b568-e69736a72423> <uuid:3b26621d-957e-4aee-b1b0-86fbd94f3af4> ) ] .
 
 <uuid:e26b9155-f2be-4b35-b3d7-1466e3f663ab> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fca1bc3f-c15a-46d0-b568-e69736a72423> <uuid:714ef443-8273-437d-9eb5-5b707ab14851> ) ] .
+            topo:relatedFeatures ( <uuid:fca1bc3f-c15a-46d0-b568-e69736a72423> <uuid:714ef443-8273-437d-9eb5-5b707ab14851> ) ] .
 
 <uuid:f65c4545-b711-443f-a925-d35222b9c75a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:714ef443-8273-437d-9eb5-5b707ab14851> <uuid:9c4bb36d-1825-4031-ae3b-9e0bc2c77125> ) ] .
+            topo:relatedFeatures ( <uuid:714ef443-8273-437d-9eb5-5b707ab14851> <uuid:9c4bb36d-1825-4031-ae3b-9e0bc2c77125> ) ] .
 
 <uuid:f8e28d79-7507-405e-a922-1560fd1ede51> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7cdb7dd0-df59-4f0e-a6b2-1a69603ffb31> <uuid:9c4bb36d-1825-4031-ae3b-9e0bc2c77125> ) ] .
+            topo:relatedFeatures ( <uuid:7cdb7dd0-df59-4f0e-a6b2-1a69603ffb31> <uuid:9c4bb36d-1825-4031-ae3b-9e0bc2c77125> ) ] .
 
 <uuid:fc050da8-b5ee-47a6-b43e-214ea2732790> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:70a8f662-91ff-4b45-85f7-73758faa9338> <uuid:3decf230-e465-48ef-84c4-0680461a5433> ) ] .
+            topo:relatedFeatures ( <uuid:70a8f662-91ff-4b45-85f7-73758faa9338> <uuid:3decf230-e465-48ef-84c4-0680461a5433> ) ] .
 
 <uuid:fc1d0ff8-68a0-4444-8da9-5744e9f1683a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c8e4af63-9764-4bc2-a65b-f4a8e88f135b> <uuid:ee817034-12da-4d11-a502-c0dfb388a565> ) ] .
+            topo:relatedFeatures ( <uuid:c8e4af63-9764-4bc2-a65b-f4a8e88f135b> <uuid:ee817034-12da-4d11-a502-c0dfb388a565> ) ] .
 
 <uuid:3decf230-e465-48ef-84c4-0680461a5433> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -27708,39 +27708,39 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:0175c2aa-87ea-4e50-9b5e-a702710d09a5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e6bc54bc-bb9f-4535-860c-b1fbf67465e0> <uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b> ) ] .
+            topo:relatedFeatures ( <uuid:e6bc54bc-bb9f-4535-860c-b1fbf67465e0> <uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b> ) ] .
 
 <uuid:06b36f25-9655-4795-a67e-51f17d95c50a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:33f0cc1b-317c-4e5a-be73-82210d7a9806> <uuid:f62c9eab-b63d-4cfe-ab76-b4a142b4a8ce> ) ] .
+            topo:relatedFeatures ( <uuid:33f0cc1b-317c-4e5a-be73-82210d7a9806> <uuid:f62c9eab-b63d-4cfe-ab76-b4a142b4a8ce> ) ] .
 
 <uuid:0a69a1c6-2a79-4e71-9149-b488b01ac1e0> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7f9a7128-b01c-4568-8241-29391e9a5d30> <uuid:7210455e-1a79-4c3c-9f3a-49565c0b4c89> ) ] .
+            topo:relatedFeatures ( <uuid:7f9a7128-b01c-4568-8241-29391e9a5d30> <uuid:7210455e-1a79-4c3c-9f3a-49565c0b4c89> ) ] .
 
 <uuid:105668a3-bd19-4802-a5ce-c200f1b06fad> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:6d31e874-6317-43c3-b357-49a699f8a69d> <uuid:65b83fdc-a7ed-4178-9bc1-01da4a52ea0d> ) ] .
+            topo:relatedFeatures ( <uuid:6d31e874-6317-43c3-b357-49a699f8a69d> <uuid:65b83fdc-a7ed-4178-9bc1-01da4a52ea0d> ) ] .
 
 <uuid:12307863-0535-49c5-9baf-ae6d2dc7241a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7970f2e9-9893-4e54-b249-187db718bd31> <uuid:4a18b6c9-e5f1-41a7-9f33-45be997255ec> ) ] .
+            topo:relatedFeatures ( <uuid:7970f2e9-9893-4e54-b249-187db718bd31> <uuid:4a18b6c9-e5f1-41a7-9f33-45be997255ec> ) ] .
 
 <uuid:123ff795-71e3-489c-89c8-8a1e53864313> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:2e36bfd1-f23a-412b-8715-7e342f6970b1> <uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b> ) ] .
+            topo:relatedFeatures ( <uuid:2e36bfd1-f23a-412b-8715-7e342f6970b1> <uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b> ) ] .
 
 <uuid:150f57fd-8d57-4533-9922-96732defb792> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fa85407d-b02e-4d8b-ba7f-f1643968bdfb> <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> ) ] .
+            topo:relatedFeatures ( <uuid:fa85407d-b02e-4d8b-ba7f-f1643968bdfb> <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> ) ] .
 
 <uuid:24d38d5c-3824-4088-8ab6-284a451e4ae5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:65b83fdc-a7ed-4178-9bc1-01da4a52ea0d> <uuid:7970f2e9-9893-4e54-b249-187db718bd31> ) ] .
+            topo:relatedFeatures ( <uuid:65b83fdc-a7ed-4178-9bc1-01da4a52ea0d> <uuid:7970f2e9-9893-4e54-b249-187db718bd31> ) ] .
 
 <uuid:26974107-8cc7-472a-98b1-bac952f4c924> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4> ) ] .
+            topo:relatedFeatures ( <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4> ) ] .
 
 <uuid:291b7f49-8f18-498e-bd2f-7bfb6760eaa2> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -27760,19 +27760,19 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:32ccd411-43f6-46f2-9fc8-0ae0a18e650d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8c3b760e-6015-461f-b3e4-1f10a8458d78> <uuid:3d450239-8099-4649-a355-565e58332111> ) ] .
+            topo:relatedFeatures ( <uuid:8c3b760e-6015-461f-b3e4-1f10a8458d78> <uuid:3d450239-8099-4649-a355-565e58332111> ) ] .
 
 <uuid:33deda4d-e880-418b-9b90-93bc255670db> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7210455e-1a79-4c3c-9f3a-49565c0b4c89> <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> ) ] .
+            topo:relatedFeatures ( <uuid:7210455e-1a79-4c3c-9f3a-49565c0b4c89> <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> ) ] .
 
 <uuid:380f1122-b209-41f6-8fd0-f013d06de253> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:029860ee-5cc9-4a34-a7fc-e9ee6704d0e4> <uuid:e6bc54bc-bb9f-4535-860c-b1fbf67465e0> ) ] .
+            topo:relatedFeatures ( <uuid:029860ee-5cc9-4a34-a7fc-e9ee6704d0e4> <uuid:e6bc54bc-bb9f-4535-860c-b1fbf67465e0> ) ] .
 
 <uuid:3accc489-4f33-4a69-ae3c-ad302bea4102> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b> <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> ) ] .
+            topo:relatedFeatures ( <uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b> <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> ) ] .
 
 <uuid:3c6c5996-1c40-4e52-932b-13cc41fcee71> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -27800,7 +27800,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:44d3831e-c643-48f4-989b-d7ca9d2598bf> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> ) ] .
+            topo:relatedFeatures ( <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> ) ] .
 
 <uuid:489a1c4c-0ac4-470f-9757-e50bc71d3aa8> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -27828,43 +27828,43 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:52d7c66c-e1f2-49c4-a670-8e1a80c816a2> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> <uuid:f62c9eab-b63d-4cfe-ab76-b4a142b4a8ce> ) ] .
+            topo:relatedFeatures ( <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> <uuid:f62c9eab-b63d-4cfe-ab76-b4a142b4a8ce> ) ] .
 
 <uuid:55372e38-9d41-4d12-bbac-fdb6c9613fc6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7210455e-1a79-4c3c-9f3a-49565c0b4c89> <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> ) ] .
+            topo:relatedFeatures ( <uuid:7210455e-1a79-4c3c-9f3a-49565c0b4c89> <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> ) ] .
 
 <uuid:5ad51e3c-9924-4a4f-83b3-a1b2605b56de> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8c3b760e-6015-461f-b3e4-1f10a8458d78> <uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b> ) ] .
+            topo:relatedFeatures ( <uuid:8c3b760e-6015-461f-b3e4-1f10a8458d78> <uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b> ) ] .
 
 <uuid:5cb6b170-6c30-4578-9fdf-a06662911c3f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7970f2e9-9893-4e54-b249-187db718bd31> <uuid:d250661e-6383-4458-9323-bf347210311f> ) ] .
+            topo:relatedFeatures ( <uuid:7970f2e9-9893-4e54-b249-187db718bd31> <uuid:d250661e-6383-4458-9323-bf347210311f> ) ] .
 
 <uuid:5ef7922d-72e6-4c88-bb01-b81714eee525> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> <uuid:029860ee-5cc9-4a34-a7fc-e9ee6704d0e4> ) ] .
+            topo:relatedFeatures ( <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> <uuid:029860ee-5cc9-4a34-a7fc-e9ee6704d0e4> ) ] .
 
 <uuid:5fe61aa8-ab56-4ce2-a8bb-8f8a27fb5147> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:29d783d3-10bb-4882-908a-eb8151cc52ec> <uuid:7970f2e9-9893-4e54-b249-187db718bd31> ) ] .
+            topo:relatedFeatures ( <uuid:29d783d3-10bb-4882-908a-eb8151cc52ec> <uuid:7970f2e9-9893-4e54-b249-187db718bd31> ) ] .
 
 <uuid:6378a84c-b6a9-46d8-871b-a28b3598bd67> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> <uuid:029860ee-5cc9-4a34-a7fc-e9ee6704d0e4> ) ] .
+            topo:relatedFeatures ( <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> <uuid:029860ee-5cc9-4a34-a7fc-e9ee6704d0e4> ) ] .
 
 <uuid:647124d6-678c-45aa-98ce-7e268086f742> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:4a18b6c9-e5f1-41a7-9f33-45be997255ec> <uuid:85f5fe02-792e-44e4-908e-10240b79ddb5> ) ] .
+            topo:relatedFeatures ( <uuid:4a18b6c9-e5f1-41a7-9f33-45be997255ec> <uuid:85f5fe02-792e-44e4-908e-10240b79ddb5> ) ] .
 
 <uuid:64cb5d00-fba4-44b2-ad2a-1913a94fe5a8> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> <uuid:2e36bfd1-f23a-412b-8715-7e342f6970b1> ) ] .
+            topo:relatedFeatures ( <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> <uuid:2e36bfd1-f23a-412b-8715-7e342f6970b1> ) ] .
 
 <uuid:6627f055-85b5-44c1-a7f8-a9c5b9c9fa9f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:29d783d3-10bb-4882-908a-eb8151cc52ec> <uuid:21a929df-71c5-47e2-a6d5-24f37bae8442> ) ] .
+            topo:relatedFeatures ( <uuid:29d783d3-10bb-4882-908a-eb8151cc52ec> <uuid:21a929df-71c5-47e2-a6d5-24f37bae8442> ) ] .
 
 <uuid:67c660f1-0e49-4ee4-996d-4d453fe6209b> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -27876,15 +27876,15 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:689a0716-0880-4a1b-8454-ba189e331ee6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:cbbbff1a-ea9d-43e4-b292-9c26e91dc71d> <uuid:40a76a4c-fff8-4156-8071-61423b0d44e9> ) ] .
+            topo:relatedFeatures ( <uuid:cbbbff1a-ea9d-43e4-b292-9c26e91dc71d> <uuid:40a76a4c-fff8-4156-8071-61423b0d44e9> ) ] .
 
 <uuid:6a1a5566-6cbd-42c6-991e-ef4e6ffda546> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> <uuid:3d450239-8099-4649-a355-565e58332111> ) ] .
+            topo:relatedFeatures ( <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> <uuid:3d450239-8099-4649-a355-565e58332111> ) ] .
 
 <uuid:6b9374b0-671d-4603-9349-748b4c231518> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7f9a7128-b01c-4568-8241-29391e9a5d30> <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4> ) ] .
+            topo:relatedFeatures ( <uuid:7f9a7128-b01c-4568-8241-29391e9a5d30> <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4> ) ] .
 
 <uuid:7023d838-169a-4b01-a85f-e2b270751a7c> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -27896,47 +27896,47 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:73751771-3e38-4526-8d49-9465d947b6dd> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:127223b8-ae77-4a0c-abe6-d76332e85af1> <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> ) ] .
+            topo:relatedFeatures ( <uuid:127223b8-ae77-4a0c-abe6-d76332e85af1> <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> ) ] .
 
 <uuid:74d06171-c161-4193-aea9-11cf904dd554> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:65b83fdc-a7ed-4178-9bc1-01da4a52ea0d> <uuid:cbbbff1a-ea9d-43e4-b292-9c26e91dc71d> ) ] .
+            topo:relatedFeatures ( <uuid:65b83fdc-a7ed-4178-9bc1-01da4a52ea0d> <uuid:cbbbff1a-ea9d-43e4-b292-9c26e91dc71d> ) ] .
 
 <uuid:75c75f5e-3c22-4b05-a4b7-5ce037bbd55b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:85f5fe02-792e-44e4-908e-10240b79ddb5> <uuid:d250661e-6383-4458-9323-bf347210311f> ) ] .
+            topo:relatedFeatures ( <uuid:85f5fe02-792e-44e4-908e-10240b79ddb5> <uuid:d250661e-6383-4458-9323-bf347210311f> ) ] .
 
 <uuid:7755d20a-6e6d-4356-b9d6-51a65a971dfb> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:323ee5a8-7a23-4b0c-a7c0-f8f66ce2caba> <uuid:a9135246-4680-4183-b3a0-ea902313e04b> ) ] .
+            topo:relatedFeatures ( <uuid:323ee5a8-7a23-4b0c-a7c0-f8f66ce2caba> <uuid:a9135246-4680-4183-b3a0-ea902313e04b> ) ] .
 
 <uuid:79014769-c1f8-4ffd-ae8a-2f43b1a5118d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:40a76a4c-fff8-4156-8071-61423b0d44e9> <uuid:4a18b6c9-e5f1-41a7-9f33-45be997255ec> ) ] .
+            topo:relatedFeatures ( <uuid:40a76a4c-fff8-4156-8071-61423b0d44e9> <uuid:4a18b6c9-e5f1-41a7-9f33-45be997255ec> ) ] .
 
 <uuid:7985a7eb-88fb-4f9d-8220-5d6804305f52> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7970f2e9-9893-4e54-b249-187db718bd31> <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> ) ] .
+            topo:relatedFeatures ( <uuid:7970f2e9-9893-4e54-b249-187db718bd31> <uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76> ) ] .
 
 <uuid:7b34e432-9892-4867-bebf-485a47054777> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:5a934736-cab5-4fc7-9e8f-877eb80c5879> <uuid:85f5fe02-792e-44e4-908e-10240b79ddb5> ) ] .
+            topo:relatedFeatures ( <uuid:5a934736-cab5-4fc7-9e8f-877eb80c5879> <uuid:85f5fe02-792e-44e4-908e-10240b79ddb5> ) ] .
 
 <uuid:84b3b6af-d3cb-402a-8ef3-1ed8b8b9c50b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1b9a26b1-0913-459b-a0ba-fd3c8d5e0324> <uuid:6d31e874-6317-43c3-b357-49a699f8a69d> ) ] .
+            topo:relatedFeatures ( <uuid:1b9a26b1-0913-459b-a0ba-fd3c8d5e0324> <uuid:6d31e874-6317-43c3-b357-49a699f8a69d> ) ] .
 
 <uuid:85afbe5b-65bf-40a1-b958-43bb89ef4936> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:2e36bfd1-f23a-412b-8715-7e342f6970b1> <uuid:7f9a7128-b01c-4568-8241-29391e9a5d30> ) ] .
+            topo:relatedFeatures ( <uuid:2e36bfd1-f23a-412b-8715-7e342f6970b1> <uuid:7f9a7128-b01c-4568-8241-29391e9a5d30> ) ] .
 
 <uuid:887b4e80-25a7-491c-9f99-c567acf7a098> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f683e96a-1e0d-450c-9df8-54e54aa8109e> <uuid:1b9a26b1-0913-459b-a0ba-fd3c8d5e0324> ) ] .
+            topo:relatedFeatures ( <uuid:f683e96a-1e0d-450c-9df8-54e54aa8109e> <uuid:1b9a26b1-0913-459b-a0ba-fd3c8d5e0324> ) ] .
 
 <uuid:89b34c59-ad3b-4935-91df-da4beef1a2a5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:3d450239-8099-4649-a355-565e58332111> <uuid:29d783d3-10bb-4882-908a-eb8151cc52ec> ) ] .
+            topo:relatedFeatures ( <uuid:3d450239-8099-4649-a355-565e58332111> <uuid:29d783d3-10bb-4882-908a-eb8151cc52ec> ) ] .
 
 <uuid:8a7f5e78-fcc3-4f6d-a19e-ece99b75234f> a topo:Edge,
         geojson:FeatureCollection ;
@@ -28008,15 +28008,15 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:8eefa72f-3f34-4866-a4cf-ebdde5d2483e> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:33f0cc1b-317c-4e5a-be73-82210d7a9806> <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70> ) ] .
+            topo:relatedFeatures ( <uuid:33f0cc1b-317c-4e5a-be73-82210d7a9806> <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70> ) ] .
 
 <uuid:94185a2f-45b0-4c79-95c0-44fef184e2c7> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:d250661e-6383-4458-9323-bf347210311f> <uuid:fc45a8b6-848f-46b9-b079-a0ebba08f96e> ) ] .
+            topo:relatedFeatures ( <uuid:d250661e-6383-4458-9323-bf347210311f> <uuid:fc45a8b6-848f-46b9-b079-a0ebba08f96e> ) ] .
 
 <uuid:9557e813-61c9-4ae4-a097-fe3ccf104c34> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f683e96a-1e0d-450c-9df8-54e54aa8109e> <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> ) ] .
+            topo:relatedFeatures ( <uuid:f683e96a-1e0d-450c-9df8-54e54aa8109e> <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> ) ] .
 
 <uuid:97571fb3-9987-49b3-b54c-88b8adcd2655> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -28028,15 +28028,15 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:9d3409e1-67b8-4a8c-9ee6-981eaff19cf5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:21a929df-71c5-47e2-a6d5-24f37bae8442> <uuid:f683e96a-1e0d-450c-9df8-54e54aa8109e> ) ] .
+            topo:relatedFeatures ( <uuid:21a929df-71c5-47e2-a6d5-24f37bae8442> <uuid:f683e96a-1e0d-450c-9df8-54e54aa8109e> ) ] .
 
 <uuid:a1386220-8990-43a9-800c-4ed3b3e323f6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fc45a8b6-848f-46b9-b079-a0ebba08f96e> <uuid:8c3b760e-6015-461f-b3e4-1f10a8458d78> ) ] .
+            topo:relatedFeatures ( <uuid:fc45a8b6-848f-46b9-b079-a0ebba08f96e> <uuid:8c3b760e-6015-461f-b3e4-1f10a8458d78> ) ] .
 
 <uuid:a1660706-a249-4fd6-ab29-809940a8aedf> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> ) ] .
+            topo:relatedFeatures ( <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> ) ] .
 
 <uuid:a221f31d-26c6-46f0-872a-567244fa5447> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -28048,27 +28048,27 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:a475a79b-06a2-400c-9460-6de8a6772ac6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f62c9eab-b63d-4cfe-ab76-b4a142b4a8ce> <uuid:323ee5a8-7a23-4b0c-a7c0-f8f66ce2caba> ) ] .
+            topo:relatedFeatures ( <uuid:f62c9eab-b63d-4cfe-ab76-b4a142b4a8ce> <uuid:323ee5a8-7a23-4b0c-a7c0-f8f66ce2caba> ) ] .
 
 <uuid:a49e4e7d-1f64-4162-9535-ac936901c370> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e802ff21-40ea-4728-a6e7-4d5b79d45158> <uuid:33f0cc1b-317c-4e5a-be73-82210d7a9806> ) ] .
+            topo:relatedFeatures ( <uuid:e802ff21-40ea-4728-a6e7-4d5b79d45158> <uuid:33f0cc1b-317c-4e5a-be73-82210d7a9806> ) ] .
 
 <uuid:a59870f2-8fa1-4cbf-9822-e1565922e3d1> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a9135246-4680-4183-b3a0-ea902313e04b> <uuid:33f0cc1b-317c-4e5a-be73-82210d7a9806> ) ] .
+            topo:relatedFeatures ( <uuid:a9135246-4680-4183-b3a0-ea902313e04b> <uuid:33f0cc1b-317c-4e5a-be73-82210d7a9806> ) ] .
 
 <uuid:b24b3a09-48c1-4fa3-a21c-71641207feae> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:6d31e874-6317-43c3-b357-49a699f8a69d> <uuid:21a929df-71c5-47e2-a6d5-24f37bae8442> ) ] .
+            topo:relatedFeatures ( <uuid:6d31e874-6317-43c3-b357-49a699f8a69d> <uuid:21a929df-71c5-47e2-a6d5-24f37bae8442> ) ] .
 
 <uuid:b62a056e-a219-4fc5-942e-3fb4c48d708d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:29d783d3-10bb-4882-908a-eb8151cc52ec> <uuid:fc45a8b6-848f-46b9-b079-a0ebba08f96e> ) ] .
+            topo:relatedFeatures ( <uuid:29d783d3-10bb-4882-908a-eb8151cc52ec> <uuid:fc45a8b6-848f-46b9-b079-a0ebba08f96e> ) ] .
 
 <uuid:b769cbe5-703f-441e-8fc5-1b79d6ff3561> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70> ) ] .
+            topo:relatedFeatures ( <uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac> <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70> ) ] .
 
 <uuid:be40befb-8498-4793-9ed6-d0e72c1a1d5b> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -28096,31 +28096,31 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:c7f55cbd-30bc-4bae-95d8-d8a2e11739a3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:d250661e-6383-4458-9323-bf347210311f> <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4> ) ] .
+            topo:relatedFeatures ( <uuid:d250661e-6383-4458-9323-bf347210311f> <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4> ) ] .
 
 <uuid:cc1617ec-c00c-42c4-abaa-9237964d2f9c> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:2e36bfd1-f23a-412b-8715-7e342f6970b1> <uuid:5a934736-cab5-4fc7-9e8f-877eb80c5879> ) ] .
+            topo:relatedFeatures ( <uuid:2e36bfd1-f23a-412b-8715-7e342f6970b1> <uuid:5a934736-cab5-4fc7-9e8f-877eb80c5879> ) ] .
 
 <uuid:cd257d47-13ca-40db-b196-d78c51872a3b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4> <uuid:e6bc54bc-bb9f-4535-860c-b1fbf67465e0> ) ] .
+            topo:relatedFeatures ( <uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4> <uuid:e6bc54bc-bb9f-4535-860c-b1fbf67465e0> ) ] .
 
 <uuid:cf3c1bfe-c40e-498c-ace8-52777c7aee55> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> <uuid:f62c9eab-b63d-4cfe-ab76-b4a142b4a8ce> ) ] .
+            topo:relatedFeatures ( <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> <uuid:f62c9eab-b63d-4cfe-ab76-b4a142b4a8ce> ) ] .
 
 <uuid:d001066e-9581-4f45-880e-4810c005aeb4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fa85407d-b02e-4d8b-ba7f-f1643968bdfb> <uuid:65b83fdc-a7ed-4178-9bc1-01da4a52ea0d> ) ] .
+            topo:relatedFeatures ( <uuid:fa85407d-b02e-4d8b-ba7f-f1643968bdfb> <uuid:65b83fdc-a7ed-4178-9bc1-01da4a52ea0d> ) ] .
 
 <uuid:d24a9e84-362c-4d6e-84f2-c1a16900185e> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:5a934736-cab5-4fc7-9e8f-877eb80c5879> <uuid:127223b8-ae77-4a0c-abe6-d76332e85af1> ) ] .
+            topo:relatedFeatures ( <uuid:5a934736-cab5-4fc7-9e8f-877eb80c5879> <uuid:127223b8-ae77-4a0c-abe6-d76332e85af1> ) ] .
 
 <uuid:d377883b-98a1-43bf-a10f-bffeeb530993> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:323ee5a8-7a23-4b0c-a7c0-f8f66ce2caba> <uuid:40a76a4c-fff8-4156-8071-61423b0d44e9> ) ] .
+            topo:relatedFeatures ( <uuid:323ee5a8-7a23-4b0c-a7c0-f8f66ce2caba> <uuid:40a76a4c-fff8-4156-8071-61423b0d44e9> ) ] .
 
 <uuid:d72f308c-110a-459d-ae5f-9d459d9ae51e> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -28132,7 +28132,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:d78450ce-0f63-4c04-811a-5b87b9591b0f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70> <uuid:1b9a26b1-0913-459b-a0ba-fd3c8d5e0324> ) ] .
+            topo:relatedFeatures ( <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70> <uuid:1b9a26b1-0913-459b-a0ba-fd3c8d5e0324> ) ] .
 
 <uuid:d9e43ed6-9387-4180-a25a-3b3208422263> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -28152,23 +28152,23 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:e8b7a3f1-807b-47c1-a233-845f7e9492f1> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:4a18b6c9-e5f1-41a7-9f33-45be997255ec> <uuid:127223b8-ae77-4a0c-abe6-d76332e85af1> ) ] .
+            topo:relatedFeatures ( <uuid:4a18b6c9-e5f1-41a7-9f33-45be997255ec> <uuid:127223b8-ae77-4a0c-abe6-d76332e85af1> ) ] .
 
 <uuid:f15f5cb8-bee6-4d84-951a-b4821a00cccf> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e802ff21-40ea-4728-a6e7-4d5b79d45158> <uuid:7210455e-1a79-4c3c-9f3a-49565c0b4c89> ) ] .
+            topo:relatedFeatures ( <uuid:e802ff21-40ea-4728-a6e7-4d5b79d45158> <uuid:7210455e-1a79-4c3c-9f3a-49565c0b4c89> ) ] .
 
 <uuid:f20cfff2-f3e6-41b2-843b-93e32f3f205a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:cd8c2acd-0d28-41d8-8a2a-966df677cfda> <uuid:fa85407d-b02e-4d8b-ba7f-f1643968bdfb> ) ] .
+            topo:relatedFeatures ( <uuid:cd8c2acd-0d28-41d8-8a2a-966df677cfda> <uuid:fa85407d-b02e-4d8b-ba7f-f1643968bdfb> ) ] .
 
 <uuid:f52b81d9-6877-4f7f-9210-8002f8ddc85f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fa85407d-b02e-4d8b-ba7f-f1643968bdfb> <uuid:e802ff21-40ea-4728-a6e7-4d5b79d45158> ) ] .
+            topo:relatedFeatures ( <uuid:fa85407d-b02e-4d8b-ba7f-f1643968bdfb> <uuid:e802ff21-40ea-4728-a6e7-4d5b79d45158> ) ] .
 
 <uuid:f9f5fd81-680a-43f5-a04e-adc180a9ecdd> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:029860ee-5cc9-4a34-a7fc-e9ee6704d0e4> <uuid:cd8c2acd-0d28-41d8-8a2a-966df677cfda> ) ] .
+            topo:relatedFeatures ( <uuid:029860ee-5cc9-4a34-a7fc-e9ee6704d0e4> <uuid:cd8c2acd-0d28-41d8-8a2a-966df677cfda> ) ] .
 
 <uuid:fbebc23c-cdef-4d02-bced-5b5bb7686b1f> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -28180,11 +28180,11 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:fd6494bc-b8a0-4a99-a86e-89178fad956f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70> <uuid:cd8c2acd-0d28-41d8-8a2a-966df677cfda> ) ] .
+            topo:relatedFeatures ( <uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70> <uuid:cd8c2acd-0d28-41d8-8a2a-966df677cfda> ) ] .
 
 <uuid:fe560591-08a1-4c35-998b-bee91f67ca50> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:cbbbff1a-ea9d-43e4-b292-9c26e91dc71d> <uuid:a9135246-4680-4183-b3a0-ea902313e04b> ) ] .
+            topo:relatedFeatures ( <uuid:cbbbff1a-ea9d-43e4-b292-9c26e91dc71d> <uuid:a9135246-4680-4183-b3a0-ea902313e04b> ) ] .
 
 <uuid:127223b8-ae77-4a0c-abe6-d76332e85af1> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
@@ -29127,11 +29127,11 @@ geometry is null; actual coordinates are resolved from the referenced points.
 
 <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> <uuid:c611f840-2829-44b2-b367-3915ca7875a4> ) ] .
+            topo:relatedFeatures ( <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> <uuid:c611f840-2829-44b2-b367-3915ca7875a4> ) ] .
 
 <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
+            topo:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;
@@ -29139,11 +29139,11 @@ geometry is null; actual coordinates are resolved from the referenced points.
 
 <uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
+            topo:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> ) ] .
+            topo:relatedFeatures ( <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> ) ] .
 
 <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;
@@ -32301,267 +32301,267 @@ are derived from the topological reference chain.
 
 <uuid:06babc8d-f0d6-43eb-bfad-931055bae084> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
+            topo:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
 
 <uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:307b7db6-8014-4628-b80e-ff925bf71168> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
+            topo:relatedFeatures ( <uuid:307b7db6-8014-4628-b80e-ff925bf71168> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
+            topo:relatedFeatures ( <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
 
 <uuid:13dd8184-f73e-4d9f-9977-3e573274fccc> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
+            topo:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
 
 <uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
+            topo:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:242a8400-a076-4817-86c6-acd56087cec6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
+            topo:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
+            topo:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
 
 <uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
+            topo:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
+            topo:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:38499704-81f7-4d47-965f-435e0b7b0850> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
+            topo:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
 
 <uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
+            topo:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
 
 <uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> ) ] .
+            topo:relatedFeatures ( <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> ) ] .
 
 <uuid:4406e3f5-89dc-463b-84e4-487490f71f1a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
+            topo:relatedFeatures ( <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
 
 <uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
+            topo:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
 
 <uuid:474fef44-eb6e-4e19-a871-433f9bac5650> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
+            topo:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
+            topo:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
 
 <uuid:4ad210b7-5de5-4732-af7c-978de28f988b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> ) ] .
+            topo:relatedFeatures ( <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> ) ] .
 
 <uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
+            topo:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
+            topo:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
 
 <uuid:511c6e7d-728b-4f1f-9763-9461eb628586> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
+            topo:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:5a36c75b-053b-4d7b-b512-6777786d6180> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
+            topo:relatedFeatures ( <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
 
 <uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
+            topo:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:61f99921-a94d-4e0d-8353-f027d76227c5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
+            topo:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
+            topo:relatedFeatures ( <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
 
 <uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
+            topo:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
 
 <uuid:71af0dde-7fc9-4290-9624-119e91f422ea> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:8e503e04-ad51-423b-8102-708a845189b6> ) ] .
+            topo:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:8e503e04-ad51-423b-8102-708a845189b6> ) ] .
 
 <uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
+            topo:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
 
 <uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
+            topo:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
 
 <uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
+            topo:relatedFeatures ( <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
 
 <uuid:745aa367-94b6-4949-a856-5271ec6672e9> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
+            topo:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
 
 <uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> ) ] .
+            topo:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> ) ] .
 
 <uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
+            topo:relatedFeatures ( <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:7da1c2fe-f798-43cc-af44-ac63f968139c> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
+            topo:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> <uuid:c611f840-2829-44b2-b367-3915ca7875a4> ) ] .
+            topo:relatedFeatures ( <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> <uuid:c611f840-2829-44b2-b367-3915ca7875a4> ) ] .
 
 <uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
+            topo:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
 
 <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
+            topo:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
+            topo:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:8582d9c2-6053-495a-8413-f5493691c0de> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
+            topo:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
+            topo:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
 
 <uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
+            topo:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:91cdc345-f745-4643-bc88-a24f8e2216b0> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
+            topo:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
 
 <uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
+            topo:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:9238cbda-d019-4b57-8319-0cc355656802> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
+            topo:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
 
 <uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
+            topo:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
 
 <uuid:a604828d-a36b-4fac-ba6f-6160ade95301> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
+            topo:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:aafd209b-cd13-401a-83f5-26751a02cffe> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> ) ] .
+            topo:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> ) ] .
 
 <uuid:ad13a84c-df97-4b75-9dc1-1ce452249964> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
+            topo:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
 
 <uuid:af347f25-a547-477c-b246-cb810756d4dc> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:caa6045e-4189-4571-8914-1189e51ac71e> ) ] .
+            topo:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:caa6045e-4189-4571-8914-1189e51ac71e> ) ] .
 
 <uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
+            topo:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:b6e30631-9768-4020-8947-c32137328216> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
+            topo:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
+            topo:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
 
 <uuid:c2a00070-f12b-42f9-b78c-b33daa500873> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
+            topo:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
 
 <uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
+            topo:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> ) ] .
+            topo:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> ) ] .
 
 <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> ) ] .
+            topo:relatedFeatures ( <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> ) ] .
 
 <uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
+            topo:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
 
 <uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> ) ] .
+            topo:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> ) ] .
 
 <uuid:ed666061-98c5-439d-ab0d-5a792437a873> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> ) ] .
+            topo:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> ) ] .
 
 <uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
+            topo:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
 
 <uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
+            topo:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
 
 <uuid:f921656a-58e3-4375-bdff-ac8019f524cf> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
+            topo:relatedFeatures ( <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
 
 <uuid:fb03276b-4250-4d52-81e1-035a0bd92895> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> ) ] .
+            topo:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> ) ] .
 
 <uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
+            topo:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
 
 <uuid:fc877bbe-72a8-4e59-b959-010e6660984a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
+            topo:relatedFeatures ( <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
 
 <uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
+            topo:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
 
 <uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:206806a4-a2f8-4c04-858e-99d289858a40> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
+            topo:relatedFeatures ( <uuid:206806a4-a2f8-4c04-858e-99d289858a40> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;
@@ -38921,267 +38921,267 @@ All supporting points, edges, and faces are included to make the example self-co
 
 <uuid:06babc8d-f0d6-43eb-bfad-931055bae084> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
+            topo:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
 
 <uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:307b7db6-8014-4628-b80e-ff925bf71168> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
+            topo:relatedFeatures ( <uuid:307b7db6-8014-4628-b80e-ff925bf71168> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
+            topo:relatedFeatures ( <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
 
 <uuid:13dd8184-f73e-4d9f-9977-3e573274fccc> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
+            topo:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
 
 <uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
+            topo:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:242a8400-a076-4817-86c6-acd56087cec6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
+            topo:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
+            topo:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
 
 <uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
+            topo:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
+            topo:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:38499704-81f7-4d47-965f-435e0b7b0850> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
+            topo:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> ) ] .
 
 <uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
+            topo:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
 
 <uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> ) ] .
+            topo:relatedFeatures ( <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> ) ] .
 
 <uuid:4406e3f5-89dc-463b-84e4-487490f71f1a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
+            topo:relatedFeatures ( <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
 
 <uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
+            topo:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
 
 <uuid:474fef44-eb6e-4e19-a871-433f9bac5650> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
+            topo:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
+            topo:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
 
 <uuid:4ad210b7-5de5-4732-af7c-978de28f988b> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> ) ] .
+            topo:relatedFeatures ( <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> ) ] .
 
 <uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
+            topo:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
+            topo:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> ) ] .
 
 <uuid:511c6e7d-728b-4f1f-9763-9461eb628586> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
+            topo:relatedFeatures ( <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:5a36c75b-053b-4d7b-b512-6777786d6180> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
+            topo:relatedFeatures ( <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
 
 <uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
+            topo:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:61f99921-a94d-4e0d-8353-f027d76227c5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
+            topo:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> ) ] .
 
 <uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
+            topo:relatedFeatures ( <uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
 
 <uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
+            topo:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
 
 <uuid:71af0dde-7fc9-4290-9624-119e91f422ea> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:8e503e04-ad51-423b-8102-708a845189b6> ) ] .
+            topo:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:8e503e04-ad51-423b-8102-708a845189b6> ) ] .
 
 <uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
+            topo:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1> ) ] .
 
 <uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
+            topo:relatedFeatures ( <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> <uuid:206806a4-a2f8-4c04-858e-99d289858a40> ) ] .
 
 <uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
+            topo:relatedFeatures ( <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> ) ] .
 
 <uuid:745aa367-94b6-4949-a856-5271ec6672e9> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
+            topo:relatedFeatures ( <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
 
 <uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> ) ] .
+            topo:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> ) ] .
 
 <uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
+            topo:relatedFeatures ( <uuid:8087116e-84cc-44d1-8047-78dc3837d7e8> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:7da1c2fe-f798-43cc-af44-ac63f968139c> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
+            topo:relatedFeatures ( <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> <uuid:c611f840-2829-44b2-b367-3915ca7875a4> ) ] .
+            topo:relatedFeatures ( <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> <uuid:c611f840-2829-44b2-b367-3915ca7875a4> ) ] .
 
 <uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
+            topo:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> ) ] .
 
 <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
+            topo:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> ) ] .
 
 <uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
+            topo:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:8582d9c2-6053-495a-8413-f5493691c0de> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
+            topo:relatedFeatures ( <uuid:c611f840-2829-44b2-b367-3915ca7875a4> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
+            topo:relatedFeatures ( <uuid:caa6045e-4189-4571-8914-1189e51ac71e> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
 
 <uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
+            topo:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3> ) ] .
 
 <uuid:91cdc345-f745-4643-bc88-a24f8e2216b0> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
+            topo:relatedFeatures ( <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d> <uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4> ) ] .
 
 <uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
+            topo:relatedFeatures ( <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> <uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70> ) ] .
 
 <uuid:9238cbda-d019-4b57-8319-0cc355656802> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
+            topo:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> ) ] .
 
 <uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
+            topo:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:e7300a01-f8c1-4351-9511-02790a5376b0> ) ] .
 
 <uuid:a604828d-a36b-4fac-ba6f-6160ade95301> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
+            topo:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:aafd209b-cd13-401a-83f5-26751a02cffe> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> ) ] .
+            topo:relatedFeatures ( <uuid:20d3c864-4a8c-4440-b600-a1d424e92f51> <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> ) ] .
 
 <uuid:ad13a84c-df97-4b75-9dc1-1ce452249964> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
+            topo:relatedFeatures ( <uuid:8e503e04-ad51-423b-8102-708a845189b6> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
 
 <uuid:af347f25-a547-477c-b246-cb810756d4dc> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:caa6045e-4189-4571-8914-1189e51ac71e> ) ] .
+            topo:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:caa6045e-4189-4571-8914-1189e51ac71e> ) ] .
 
 <uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
+            topo:relatedFeatures ( <uuid:793997c5-bcc4-4610-984b-6cf2c2997348> <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> ) ] .
 
 <uuid:b6e30631-9768-4020-8947-c32137328216> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
+            topo:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071> ) ] .
 
 <uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
+            topo:relatedFeatures ( <uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
 
 <uuid:c2a00070-f12b-42f9-b78c-b33daa500873> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
+            topo:relatedFeatures ( <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> <uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717> ) ] .
 
 <uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
+            topo:relatedFeatures ( <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> <uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0> ) ] .
 
 <uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> ) ] .
+            topo:relatedFeatures ( <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> ) ] .
 
 <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> ) ] .
+            topo:relatedFeatures ( <uuid:fad324b9-801f-40f4-b65b-91f8753e9698> <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38> ) ] .
 
 <uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
+            topo:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> ) ] .
 
 <uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> ) ] .
+            topo:relatedFeatures ( <uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df> <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> ) ] .
 
 <uuid:ed666061-98c5-439d-ab0d-5a792437a873> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> ) ] .
+            topo:relatedFeatures ( <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e> <uuid:ca62577e-8e24-4af2-88bf-33b34e25e606> ) ] .
 
 <uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
+            topo:relatedFeatures ( <uuid:22138e52-65ef-4773-b69d-5ea2628fad7b> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
 
 <uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
+            topo:relatedFeatures ( <uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0> <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> ) ] .
 
 <uuid:f921656a-58e3-4375-bdff-ac8019f524cf> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
+            topo:relatedFeatures ( <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> <uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3> ) ] .
 
 <uuid:fb03276b-4250-4d52-81e1-035a0bd92895> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> ) ] .
+            topo:relatedFeatures ( <uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d> <uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9> ) ] .
 
 <uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
+            topo:relatedFeatures ( <uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6> <uuid:307b7db6-8014-4628-b80e-ff925bf71168> ) ] .
 
 <uuid:fc877bbe-72a8-4e59-b959-010e6660984a> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
+            topo:relatedFeatures ( <uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09> <uuid:c060c1dc-6544-4595-b583-72ecf603fd6d> ) ] .
 
 <uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
+            topo:relatedFeatures ( <uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e> <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f> ) ] .
 
 <uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <uuid:206806a4-a2f8-4c04-858e-99d289858a40> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
+            topo:relatedFeatures ( <uuid:206806a4-a2f8-4c04-858e-99d289858a40> <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ) ] .
 
 <uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;
@@ -39746,18 +39746,38 @@ Links to the schema:
                   "@id": "topo:ref"
                 }
               },
-              "@id": "geojson:relatedFeatures",
+              "@id": "topo:relatedFeatures",
               "@type": "@id",
               "@container": "@list"
             },
-            "directed_references": {
+            "relationships": {
               "@context": {
-                "ref": {
+                "href": {
                   "@type": "@id",
-                  "@id": "topo:ref"
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dct:type",
+                "hreflang": "dct:language",
+                "title": "rdfs:label",
+                "length": "dct:extent",
+                "role": {
+                  "@id": "prof:hasRole",
+                  "@type": "@id"
+                },
+                "conformsTo": {
+                  "@id": "dct:conformsTo",
+                  "@type": "@id"
                 }
               },
-              "@id": "topo:directedReferences",
+              "@id": "topo:relatedFeatures",
+              "@type": "@id",
               "@container": "@list"
             }
           },
@@ -39820,6 +39840,10 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
@@ -39831,7 +39855,6 @@ Links to the schema:
     "owlTime": "http://www.w3.org/2006/time#",
     "time": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
     "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1
   }

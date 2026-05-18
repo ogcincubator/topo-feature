@@ -148,18 +148,38 @@
                   "@id": "topo:ref"
                 }
               },
-              "@id": "geojson:relatedFeatures",
+              "@id": "topo:relatedFeatures",
               "@type": "@id",
               "@container": "@list"
             },
-            "directed_references": {
+            "relationships": {
               "@context": {
-                "ref": {
+                "href": {
                   "@type": "@id",
-                  "@id": "topo:ref"
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dct:type",
+                "hreflang": "dct:language",
+                "title": "rdfs:label",
+                "length": "dct:extent",
+                "role": {
+                  "@id": "prof:hasRole",
+                  "@type": "@id"
+                },
+                "conformsTo": {
+                  "@id": "dct:conformsTo",
+                  "@type": "@id"
                 }
               },
-              "@id": "topo:directedReferences",
+              "@id": "topo:relatedFeatures",
+              "@type": "@id",
               "@container": "@list"
             }
           },
@@ -222,6 +242,10 @@
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
@@ -233,7 +257,6 @@
     "owlTime": "http://www.w3.org/2006/time#",
     "time": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
     "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1
   }

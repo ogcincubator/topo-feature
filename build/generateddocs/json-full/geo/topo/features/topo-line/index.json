@@ -30,11 +30,11 @@
       "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
       "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ],
-    "ogc.geo.features.feature": [
-      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-    ],
     "ogc.geo.features.featureCollection": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+    ],
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ]
   },
   "dependsOn": [
@@ -74,7 +74,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n\n<http://www.example.com/features/LineP1P2> a geojson:Feature ;\n    geojson:topology [ a topo:Edge ;\n            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .\n\n",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n\n<http://www.example.com/features/LineP1P2> a geojson:Feature ;\n    geojson:topology [ a topo:Edge ;\n            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .\n\n",
           "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/features/topo-line/example_1_1.ttl"
         }
       ]
@@ -99,7 +99,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://www.example.com/features/MultiLineP1P2P3> a geojson:Feature ;\n    geojson:topology [ a geojson:MultiLineString ;\n            geojson:relatedFeatures ( ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ( <http://www.example.com/features/P2> <http://www.example.com/features/P3> ) ) ] .\n\n",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n\n<http://www.example.com/features/MultiLineP1P2P3> a geojson:Feature ;\n    geojson:topology [ a geojson:MultiLineString ;\n            topo:relatedFeatures ( ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ( <http://www.example.com/features/P2> <http://www.example.com/features/P3> ) ) ] .\n\n",
           "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/features/topo-line/example_2_1.ttl"
         }
       ]

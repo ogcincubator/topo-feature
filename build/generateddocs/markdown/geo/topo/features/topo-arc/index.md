@@ -97,7 +97,7 @@ radius and arcLength are implicit but may be provided as optional properties of 
     geojson:radius 1.05438e+02 ;
     geojson:topology [ a geojson:ArcWithCenter ;
             topo:orientation "ccw" ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .
 
 
 ```
@@ -160,6 +160,7 @@ Note that properties "radius" and "arcLength" are not required in the containing
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/arc1> a geojson:Feature,
@@ -167,7 +168,7 @@ Note that properties "radius" and "arcLength" are not required in the containing
     geojson:arcLength 2.5615e+01 ;
     geojson:radius 1.05438e+02 ;
     geojson:topology [ a geojson:Arc ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P3> <http://www.example.com/features/P2> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P3> <http://www.example.com/features/P2> ) ] .
 
 
 ```
@@ -236,8 +237,8 @@ Arc by Chord example.
     geojson:arcLength 2.5615e+01 ;
     geojson:topology [ a geojson:ArcByChord ;
             topo:orientation "cw" ;
-            geojson:radius 1.05438e+02 ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ;
+            geojson:radius 1.05438e+02 ] .
 
 
 ```
@@ -292,13 +293,14 @@ Circle with Center example.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:CircleFeature> ;
     geojson:topology [ a geojson:CircleByCenter ;
-            geojson:radius 10 ;
-            geojson:relatedFeatures ( <http://www.example.com/features/PC> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/PC> ) ;
+            geojson:radius 10 ] .
 
 
 ```
@@ -357,11 +359,12 @@ Cubic Spline example.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:SplineFeature> ;
     geojson:topology [ a geojson:CubicSpline ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/Px1> <http://www.example.com/features/Px2> <http://www.example.com/features/P2> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/Px1> <http://www.example.com/features/Px2> <http://www.example.com/features/P2> ) ] .
 
 
 ```
@@ -436,13 +439,14 @@ Cubic Spline with Tangents example.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:SplineFeature> ;
     geojson:topology [ a geojson:CubicSpline ;
-            geojson:endTangentVector [ geojson:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/PVE> ) ] ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ;
-            geojson:startTangentVector [ geojson:relatedFeatures ( <http://www.example.com/features/PVS> <http://www.example.com/features/P1> ) ] ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ;
+            geojson:endTangentVector [ topo:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/PVE> ) ] ;
+            geojson:startTangentVector [ topo:relatedFeatures ( <http://www.example.com/features/PVS> <http://www.example.com/features/P1> ) ] ] .
 
 
 ```
@@ -656,26 +660,38 @@ Links to the schema:
           "@id": "topo:ref"
         }
       },
-      "@id": "geojson:relatedFeatures",
+      "@id": "topo:relatedFeatures",
       "@type": "@id",
       "@container": "@list"
     },
-    "directed_references": {
+    "relationships": {
       "@context": {
-        "ref": {
+        "href": {
           "@type": "@id",
-          "@id": "topo:ref"
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent",
+        "role": {
+          "@id": "prof:hasRole",
+          "@type": "@id"
+        },
+        "conformsTo": {
+          "@id": "dct:conformsTo",
+          "@type": "@id"
         }
       },
-      "@id": "topo:directedReferences",
-      "@container": "@list"
-    },
-    "rings": {
-      "@id": "topo:rings",
-      "@container": "@list"
-    },
-    "shells": {
-      "@id": "topo:shells",
+      "@id": "topo:relatedFeatures",
+      "@type": "@id",
       "@container": "@list"
     },
     "Arc": "geojson:Arc",
@@ -687,6 +703,10 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
@@ -694,6 +714,14 @@ Links to the schema:
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
     "faces": {
       "@id": "topo:faces",
       "@container": "@list"
@@ -704,7 +732,6 @@ Links to the schema:
     "dct": "http://purl.org/dc/terms/",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
     "topo": "https://purl.org/geojson/topo#",
     "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1

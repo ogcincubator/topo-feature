@@ -10,7 +10,7 @@
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 <http://www.example.com/features/P1> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;

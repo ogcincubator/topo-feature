@@ -1,15 +1,23 @@
-Validation report for ogc.geo.topo.features.topo-shell - Shell Topology Feature
-Generated 2026-05-18T08:50:38.290549+00:00
+Validation report for ogc.geo.topo.features.topo-face - Face Topology Feature
+Generated 2026-05-18T08:50:29.486727+00:00
 === Files ===
-Using examples/shell-with-context.json from examples
+Using examples/face-6edge.json from examples
 JSON-LD context is present - uplifting
-Output JSON-LD example_1_1.jsonld created
-Output Turtle example_1_1.ttl created
+Output JSON-LD example_3_1.jsonld created
+Output Turtle example_3_1.ttl created
 === End Files ===
 
 === JSON Schema ===
-Using the following JSON Schema: #testCollection
-Validation passed
+
+** Validation error **
+ValidationError: 'Face' is not one of ['MultiLineString', 'Polygon', 'Polyhedron']
+
+Failed validating 'enum' in schema[1]['properties']['type']:
+    {'enum': ['MultiLineString', 'Polygon', 'Polyhedron'],
+     'x-jsonld-id': '@type'}
+
+On instance['type']:
+    'Face'
 === End JSON Schema ===
 
 === SHACL ===
@@ -18,8 +26,8 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nba044769f5f447598576a9f3431216f3b1: *none*
- - Shape _:nba044769f5f447598576a9f3431216f3b3: *none*
+ - Shape _:nf355c351d32345f99aea9d5b92f2ba34b3: *none*
+ - Shape _:nf355c351d32345f99aea9d5b92f2ba34b1: *none*
 
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
@@ -27,7 +35,7 @@ Validation result for _sources/features/topo-feature-collection/tests/topo-refs-
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape toporules:testTopoEdgesReferencePoints: *none*
- - Shape toporules:testTopoDirectedReferencesExist: _:Ndcb41ef77bdc4da59154aff18329f062,_:Nffbe96a0ffcd46d19cadb0e4733989ff,_:Nbd993a59ff3f4027ad9f43b806a16a7f,_:N08756531ebcb41e1add532ae79d99925,_:N2f025b9c10254d5c877312c60f566375,_:Ndafaf96f7916495d808fd715b7c4edd5,_:Nfbfab16b48144e559236bc03f5527062,_:Ne050747454a24242978f46ed7345ab30
+ - Shape toporules:testTopoDirectedReferencesExist: _:Nba65c423985740bb832e025cc66ab0ae
  - Shape toporules:testTopoLinesReferencePoints: *none*
  - Shape toporules:testTopoReferencesExist: *none*
 
@@ -36,9 +44,9 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:LinkShape: *none*
  - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:FeatureShape: *none*
@@ -48,11 +56,11 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureShape: <uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f>,<uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed>,<uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5>,<uuid:01947f47-ee13-44a9-85a4-2bcb4881982a>,<uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae>,<uuid:607a3363-3eb7-4ce6-a633-86d2e565692b>,<uuid:2387ae98-9236-42fe-9414-c45b99954c41>,<uuid:4a294022-4864-49c7-8cee-f9e43360bc4e>
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: <uuid:607a3363-3eb7-4ce6-a633-86d2e565692b>
 
 === End SHACL ===
 

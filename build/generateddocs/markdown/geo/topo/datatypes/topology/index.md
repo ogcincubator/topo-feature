@@ -86,12 +86,11 @@ The 'references' array names the two point features that form the line's endpoin
 
 #### ttl
 ```ttl
-@prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
 
 [] a topo:Edge ;
-    geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) .
+    topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) .
 
 
 ```
@@ -140,12 +139,17 @@ The 'references' array names the two point features that form the line's endpoin
 
 #### ttl
 ```ttl
-@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
 
 [] a topo:Edge ;
-    geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) .
+    topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ),
+        ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+                prof:hasRole <geof:sfTouches> ;
+                oa:hasTarget <http://www.example.com/features/L2> ] ) .
 
 
 ```
@@ -202,10 +206,10 @@ and an 'orientation' ('+' or '-'). Mutually exclusive with 'references'.
 
 [] a topo:Ring ;
     topo:directedReferences ( [ topo:orientation "+" ;
-                topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] [ topo:orientation "+" ;
-                topo:ref <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> ] [ topo:orientation "+" ;
-                topo:ref <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> ] [ topo:orientation "+" ;
-                topo:ref <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> ] ) .
+                topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] [ topo:orientation "+" ;
+                topo:ref "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac" ] [ topo:orientation "+" ;
+                topo:ref "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569" ] [ topo:orientation "+" ;
+                topo:ref "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8" ] ) .
 
 
 ```
@@ -274,10 +278,10 @@ directed_references to Edge features. The first ring is the outer boundary.
 [] a topo:Face ;
     topo:rings ( [ a topo:Ring ;
                 topo:directedReferences ( [ topo:orientation "+" ;
-                            topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] [ topo:orientation "+" ;
-                            topo:ref <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> ] [ topo:orientation "+" ;
-                            topo:ref <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> ] [ topo:orientation "+" ;
-                            topo:ref <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> ] ) ] ) .
+                            topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] [ topo:orientation "+" ;
+                            topo:ref "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac" ] [ topo:orientation "+" ;
+                            topo:ref "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569" ] [ topo:orientation "+" ;
+                            topo:ref "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8" ] ) ] ) .
 
 
 ```
@@ -355,12 +359,12 @@ directed_references to Face features forming the closed boundary surface.
 [] a topo:Solid ;
     topo:shells ( [ a topo:Shell ;
                 topo:directedReferences ( [ topo:orientation "+" ;
-                            topo:ref <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ] [ topo:orientation "+" ;
-                            topo:ref <uuid:4a294022-4864-49c7-8cee-f9e43360bc4e> ] [ topo:orientation "+" ;
-                            topo:ref <uuid:01947f47-ee13-44a9-85a4-2bcb4881982a> ] [ topo:orientation "+" ;
-                            topo:ref <uuid:607a3363-3eb7-4ce6-a633-86d2e565692b> ] [ topo:orientation "+" ;
-                            topo:ref <uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f> ] [ topo:orientation "+" ;
-                            topo:ref <uuid:2387ae98-9236-42fe-9414-c45b99954c41> ] ) ] ) .
+                            topo:ref "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae" ] [ topo:orientation "+" ;
+                            topo:ref "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e" ] [ topo:orientation "+" ;
+                            topo:ref "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a" ] [ topo:orientation "+" ;
+                            topo:ref "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b" ] [ topo:orientation "+" ;
+                            topo:ref "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f" ] [ topo:orientation "+" ;
+                            topo:ref "uuid:2387ae98-9236-42fe-9414-c45b99954c41" ] ) ] ) .
 
 
 ```
@@ -374,31 +378,72 @@ description: 'Topology datatype for topo-features. Supports two reference styles
   (array of oriented object references with ref+orientation) for references where
   traversal direction matters. Exactly one of the two must be present.'
 $defs:
-  refOrNest:
-    oneOf:
-    - type: array
-      items:
-        $ref: '#/$defs/refOrNest'
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
-    - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
-oneOf:
-- description: Plain string ID references (e.g. LineString referencing point nodes)
-  required:
-  - references
-  not:
+  simpleRefs:
+    description: Plain string ID references (e.g. LineString referencing point nodes)
+    properties:
+      references:
+        type: array
+        items:
+          $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+        x-jsonld-id: https://purl.org/geojson/topo#relatedFeatures
+        x-jsonld-type: '@id'
+        x-jsonld-container: '@list'
+    required:
+    - references
+    not:
+      required:
+      - directed_references
+  nestedRefs:
+    description: Plain string ID references (e.g. LineString referencing point nodes)
+    properties:
+      type:
+        enum:
+        - MultiLineString
+        - Polygon
+        - Polyhedron
+        x-jsonld-id: '@type'
+      references:
+        type: array
+        items:
+          type: array
+          items:
+            oneOf:
+            - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+            - description: wont check contents deeper
+              type: array
+        x-jsonld-id: https://purl.org/geojson/topo#relatedFeatures
+        x-jsonld-type: '@id'
+        x-jsonld-container: '@list'
+    required:
+    - references
+    not:
+      required:
+      - directed_references
+  directedRefs:
+    description: "Oriented (directed) references \u2014 each with 'ref' and 'orientation'.
+      Used for Ring, Shell."
+    properties:
+      references:
+        type: array
+        items:
+          $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
+        x-jsonld-id: https://purl.org/geojson/topo#relatedFeatures
+        x-jsonld-type: '@id'
+        x-jsonld-container: '@list'
     required:
     - directed_references
-  properties:
+    not:
+      required:
+      - references
+allOf:
+- oneOf:
+  - $ref: '#/$defs/simpleRefs'
+  - $ref: '#/$defs/nestedRefs'
+  - $ref: '#/$defs/directedRefs'
+- properties:
     type:
       type: string
       x-jsonld-id: '@type'
-    references:
-      type: array
-      items:
-        $ref: '#/$defs/refOrNest'
-      x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
-      x-jsonld-type: '@id'
-      x-jsonld-container: '@list'
     relationships:
       type: array
       items:
@@ -409,91 +454,11 @@ oneOf:
               const: topology
           required:
           - rel
-- description: "Oriented (directed) references \u2014 each with 'ref' and 'orientation'.
-    Used for Ring, Shell."
-  required:
-  - directed_references
-  not:
-    required:
-    - references
-  properties:
-    type:
-      type: string
-      x-jsonld-id: '@type'
-    directed_references:
-      type: array
-      items:
-        $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
-      x-jsonld-id: https://purl.org/geojson/topo#directedReferences
+      x-jsonld-id: https://purl.org/geojson/topo#relatedFeatures
+      x-jsonld-type: '@id'
       x-jsonld-container: '@list'
-- description: "Face topology \u2014 rings of directed Edge references"
   required:
-  - rings
-  not:
-    required:
-    - references
-    - directed_references
-  properties:
-    type:
-      type: string
-      const: Face
-      x-jsonld-id: '@type'
-    rings:
-      type: array
-      minItems: 1
-      items:
-        type: object
-        required:
-        - type
-        - directed_references
-        properties:
-          type:
-            type: string
-            const: Ring
-            x-jsonld-id: '@type'
-          directed_references:
-            type: array
-            minItems: 3
-            items:
-              $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
-            x-jsonld-id: https://purl.org/geojson/topo#directedReferences
-            x-jsonld-container: '@list'
-      x-jsonld-id: https://purl.org/geojson/topo#rings
-      x-jsonld-container: '@list'
-- description: "Solid topology \u2014 shells of directed Face references"
-  required:
-  - shells
-  not:
-    required:
-    - references
-    - directed_references
-  properties:
-    type:
-      type: string
-      const: Solid
-      x-jsonld-id: '@type'
-    shells:
-      type: array
-      minItems: 1
-      items:
-        type: object
-        required:
-        - type
-        - directed_references
-        properties:
-          type:
-            type: string
-            const: Shell
-            x-jsonld-id: '@type'
-          directed_references:
-            type: array
-            minItems: 4
-            items:
-              $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
-            x-jsonld-id: https://purl.org/geojson/topo#directedReferences
-            x-jsonld-container: '@list'
-      x-jsonld-id: https://purl.org/geojson/topo#shells
-      x-jsonld-container: '@list'
+  - type
 x-jsonld-extra-terms:
   LineString: https://purl.org/geojson/vocab#LineString
   MultiLineString: https://purl.org/geojson/vocab#MultiLineString
@@ -508,20 +473,29 @@ x-jsonld-extra-terms:
   arcLength: https://purl.org/geojson/vocab#arcLength
   startTangentVector: https://purl.org/geojson/vocab#startTangentVector
   endTangentVector: https://purl.org/geojson/vocab#endTangentVector
+  directed_references:
+    x-jsonld-id: https://purl.org/geojson/topo#directedReferences
+    x-jsonld-container: '@list'
   ref:
-    x-jsonld-id: topo:ref
+    x-jsonld-id: https://purl.org/geojson/topo#ref
   orientation: https://purl.org/geojson/topo#orientation
   Edge: https://purl.org/geojson/topo#Edge
   Face: https://purl.org/geojson/topo#Face
   Ring: https://purl.org/geojson/topo#Ring
   Shell: https://purl.org/geojson/topo#Shell
   Solid: https://purl.org/geojson/topo#Solid
+  rings:
+    x-jsonld-id: https://purl.org/geojson/topo#rings
+    x-jsonld-container: '@list'
+  shells:
+    x-jsonld-id: https://purl.org/geojson/topo#shells
+    x-jsonld-container: '@list'
   faces:
     x-jsonld-id: https://purl.org/geojson/topo#faces
     x-jsonld-container: '@list'
 x-jsonld-prefixes:
   geojson: https://purl.org/geojson/vocab#
-  csdm: https://linked.data.gov.au/def/csdm/
+  topo: https://purl.org/geojson/topo#
   dct: http://purl.org/dc/terms/
 
 ```
@@ -537,7 +511,6 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "type": "@type",
     "references": {
       "@context": {
         "ref": {
@@ -545,26 +518,39 @@ Links to the schema:
           "@id": "topo:ref"
         }
       },
-      "@id": "geojson:relatedFeatures",
+      "@id": "topo:relatedFeatures",
       "@type": "@id",
       "@container": "@list"
     },
-    "directed_references": {
+    "type": "@type",
+    "relationships": {
       "@context": {
-        "ref": {
+        "href": {
           "@type": "@id",
-          "@id": "topo:ref"
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent",
+        "role": {
+          "@id": "prof:hasRole",
+          "@type": "@id"
+        },
+        "conformsTo": {
+          "@id": "dct:conformsTo",
+          "@type": "@id"
         }
       },
-      "@id": "topo:directedReferences",
-      "@container": "@list"
-    },
-    "rings": {
-      "@id": "topo:rings",
-      "@container": "@list"
-    },
-    "shells": {
-      "@id": "topo:shells",
+      "@id": "topo:relatedFeatures",
+      "@type": "@id",
       "@container": "@list"
     },
     "LineString": "geojson:LineString",
@@ -580,6 +566,10 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
@@ -587,14 +577,21 @@ Links to the schema:
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
     "faces": {
       "@id": "topo:faces",
       "@container": "@list"
     },
     "geojson": "https://purl.org/geojson/vocab#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
-    "dct": "http://purl.org/dc/terms/",
     "topo": "https://purl.org/geojson/topo#",
+    "dct": "http://purl.org/dc/terms/",
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "prof": "http://www.w3.org/ns/dx/prof/",

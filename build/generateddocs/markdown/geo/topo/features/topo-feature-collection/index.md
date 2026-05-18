@@ -226,7 +226,7 @@ This is a generalisation of the [TopoJSON](https://github.com/topojson/topojson)
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 <http://www.example.com/features/P1> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;
@@ -458,19 +458,19 @@ This is a generalisation of the [TopoJSON](https://github.com/topojson/topojson)
 
 <http://www.example.com/features/TriangleP1P2P3> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            geojson:relatedFeatures ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ] .
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 <http://www.example.com/features/LineP2P3> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/P3> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/P3> ) ] .
 
 <http://www.example.com/features/LineP3P1> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P3> <http://www.example.com/features/P1> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P3> <http://www.example.com/features/P1> ) ] .
 
 <http://www.example.com/features/P1> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;
@@ -634,26 +634,38 @@ Links to the schema:
               "@id": "topo:ref"
             }
           },
-          "@id": "geojson:relatedFeatures",
+          "@id": "topo:relatedFeatures",
           "@type": "@id",
           "@container": "@list"
         },
-        "directed_references": {
+        "relationships": {
           "@context": {
-            "ref": {
+            "href": {
               "@type": "@id",
-              "@id": "topo:ref"
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent",
+            "role": {
+              "@id": "prof:hasRole",
+              "@type": "@id"
+            },
+            "conformsTo": {
+              "@id": "dct:conformsTo",
+              "@type": "@id"
             }
           },
-          "@id": "topo:directedReferences",
-          "@container": "@list"
-        },
-        "rings": {
-          "@id": "topo:rings",
-          "@container": "@list"
-        },
-        "shells": {
-          "@id": "topo:shells",
+          "@id": "topo:relatedFeatures",
+          "@type": "@id",
           "@container": "@list"
         }
       },
@@ -669,6 +681,10 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
@@ -676,6 +692,14 @@ Links to the schema:
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
     "faces": {
       "@id": "topo:faces",
       "@container": "@list"
@@ -686,7 +710,6 @@ Links to the schema:
     "dct": "http://purl.org/dc/terms/",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
     "topo": "https://purl.org/geojson/topo#",
     "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1

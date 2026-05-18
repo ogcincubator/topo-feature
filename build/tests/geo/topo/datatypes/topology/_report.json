@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.geo.topo.datatypes.topology - Geometry using references",
   "bblockName": "Geometry using references",
   "bblockId": "ogc.geo.topo.datatypes.topology",
-  "generated": "2026-05-18T06:24:27.559027+00:00",
-  "result": true,
+  "generated": "2026-05-18T08:50:19.423124+00:00",
+  "result": false,
   "items": [
     {
       "source": {
@@ -95,7 +95,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_2_1.ttl",
-              "size": 6,
+              "size": 12,
               "isError": false,
               "message": "Output Turtle example_2_1.ttl created"
             }
@@ -180,7 +180,7 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -217,9 +217,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'Face' is not one of ['MultiLineString', 'Polygon', 'Polyhedron']",
+              "isError": true,
+              "message": "ValidationError: 'Face' is not one of ['MultiLineString', 'Polygon', 'Polyhedron']\n\nFailed validating 'enum' in schema[1]['properties']['type']:\n    {'enum': ['MultiLineString', 'Polygon', 'Polyhedron'],\n     'x-jsonld-id': '@type'}\n\nOn instance['type']:\n    'Face'"
             }
           ]
         }
@@ -235,7 +237,7 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -272,9 +274,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'Solid' is not one of ['MultiLineString', 'Polygon', 'Polyhedron']",
+              "isError": true,
+              "message": "ValidationError: 'Solid' is not one of ['MultiLineString', 'Polygon', 'Polyhedron']\n\nFailed validating 'enum' in schema[1]['properties']['type']:\n    {'enum': ['MultiLineString', 'Polygon', 'Polyhedron'],\n     'x-jsonld-id': '@type'}\n\nOn instance['type']:\n    'Solid'"
             }
           ]
         }
@@ -284,7 +288,7 @@
   "globalErrors": {},
   "counts": {
     "total": 5,
-    "passed": 5,
-    "failed": 0
+    "passed": 3,
+    "failed": 2
   }
 }

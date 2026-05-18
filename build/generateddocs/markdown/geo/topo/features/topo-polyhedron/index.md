@@ -893,12 +893,13 @@ For a full 3D topology model supporting shared faces use the [topo-shell](../top
 ```ttl
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <http://www.opengis.net/def/glossary/term/> .
-@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix ns2: <http://www.opengis.net/def/glossary/term/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/DENW19AL0000giv5BL> a <app:building>,
@@ -906,17 +907,17 @@ For a full 3D topology model supporting shared faces use the [topo-shell](../top
     dcterms:spatial [ a geojson:Polyhedron ;
             geojson:coordinates ( ( ( ( ( 4.798167e+05 5.705862e+06 100 ) ( 4.798222e+05 5.705867e+06 100 ) ( 4.798297e+05 5.705859e+06 100 ) ( 4.798242e+05 5.705854e+06 100 ) ( 4.798167e+05 5.705862e+06 100 ) ) ) ( ( ( 4.798167e+05 5.705862e+06 110 ) ( 4.798242e+05 5.705854e+06 110 ) ( 4.798297e+05 5.705859e+06 120 ) ( 4.798222e+05 5.705867e+06 120 ) ( 4.798167e+05 5.705862e+06 110 ) ) ) ( ( ( 4.798167e+05 5.705862e+06 110 ) ( 4.798167e+05 5.705862e+06 100 ) ( 4.798242e+05 5.705854e+06 100 ) ( 4.798242e+05 5.705854e+06 110 ) ( 4.798167e+05 5.705862e+06 110 ) ) ) ( ( ( 4.798242e+05 5.705854e+06 110 ) ( 4.798242e+05 5.705854e+06 100 ) ( 4.798297e+05 5.705859e+06 100 ) ( 4.798297e+05 5.705859e+06 120 ) ( 4.798242e+05 5.705854e+06 110 ) ) ) ( ( ( 4.798297e+05 5.705859e+06 120 ) ( 4.798297e+05 5.705859e+06 100 ) ( 4.798222e+05 5.705867e+06 100 ) ( 4.798222e+05 5.705867e+06 120 ) ( 4.798297e+05 5.705859e+06 120 ) ) ) ( ( ( 4.798222e+05 5.705867e+06 120 ) ( 4.798222e+05 5.705867e+06 100 ) ( 4.798167e+05 5.705862e+06 100 ) ( 4.798167e+05 5.705862e+06 110 ) ( 4.798222e+05 5.705867e+06 120 ) ) ) ) ) ] ;
     dcterms:time [ time:hasTime ( "2014-04-24T10:50:18Z" ".." ) ] ;
-    ns1:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/5555" ;
+    ns2:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/5555" ;
     rdfs:seeAlso [ rdfs:label "This feature is of type 'building'" ;
-            ns2:relation <http://www.iana.org/assignments/relation/type> ;
+            ns1:relation <http://www.iana.org/assignments/relation/type> ;
             oa:hasTarget <https://inspire.ec.europa.eu/featureconcept/Building> ],
         [ rdfs:label "Cadastral parcel 313 in district WÃ¼nnenberg (016)" ;
-            ns2:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;
+            ns1:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;
             oa:hasTarget <https://example.org/data/v1/collections/cadastralparcel/items/05297001600313______> ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 8.709205e+00 5.150353e+01 100 ) ( 8.709313e+00 5.150346e+01 100 ) ( 8.709392e+00 5.15035e+01 100 ) ( 8.709284e+00 5.150357e+01 100 ) ( 8.709205e+00 5.150353e+01 100 ) ) ) ] ;
     geojson:topology [ a geojson:Polyhedron ;
-            geojson:relatedFeatures ( ( ( ( <http://www.example.com/features/P479816.67_5705861.672_100> <http://www.example.com/features/P479822.187_5705866.783_100> <http://www.example.com/features/P479829.666_5705858.785_100> <http://www.example.com/features/P479824.155_5705853.684_100> <http://www.example.com/features/P479816.67_5705861.672_100> ) ) ( ( <http://www.example.com/features/P479816.67_5705861.672_110> <http://www.example.com/features/P479824.155_5705853.684_110> <http://www.example.com/features/P479829.666_5705858.785_120> <http://www.example.com/features/P479822.187_5705866.783_120> <http://www.example.com/features/P479816.67_5705861.672_110> ) ) ( ( <http://www.example.com/features/P479816.67_5705861.672_110> <http://www.example.com/features/P479816.67_5705861.672_100> <http://www.example.com/features/P479824.155_5705853.684_100> <http://www.example.com/features/P479824.155_5705853.684_110> <http://www.example.com/features/P479816.67_5705861.672_110> ) ) ( ( <http://www.example.com/features/P479824.155_5705853.684_110> <http://www.example.com/features/P479824.155_5705853.684_100> <http://www.example.com/features/P479829.666_5705858.785_100> <http://www.example.com/features/P479829.666_5705858.785_120> <http://www.example.com/features/P479824.155_5705853.684_110> ) ) ( ( <http://www.example.com/features/P479829.666_5705858.785_120> <http://www.example.com/features/P479829.666_5705858.785_100> <http://www.example.com/features/P479822.187_5705866.783_100> <http://www.example.com/features/P479822.187_5705866.783_120> <http://www.example.com/features/P479829.666_5705858.785_120> ) ) ( ( <http://www.example.com/features/P479822.187_5705866.783_120> <http://www.example.com/features/P479822.187_5705866.783_100> <http://www.example.com/features/P479816.67_5705861.672_100> <http://www.example.com/features/P479816.67_5705861.672_110> <http://www.example.com/features/P479822.187_5705866.783_120> ) ) ) ) ] .
+            topo:relatedFeatures ( ( ( ( <http://www.example.com/features/P479816.67_5705861.672_100> <http://www.example.com/features/P479822.187_5705866.783_100> <http://www.example.com/features/P479829.666_5705858.785_100> <http://www.example.com/features/P479824.155_5705853.684_100> <http://www.example.com/features/P479816.67_5705861.672_100> ) ) ( ( <http://www.example.com/features/P479816.67_5705861.672_110> <http://www.example.com/features/P479824.155_5705853.684_110> <http://www.example.com/features/P479829.666_5705858.785_120> <http://www.example.com/features/P479822.187_5705866.783_120> <http://www.example.com/features/P479816.67_5705861.672_110> ) ) ( ( <http://www.example.com/features/P479816.67_5705861.672_110> <http://www.example.com/features/P479816.67_5705861.672_100> <http://www.example.com/features/P479824.155_5705853.684_100> <http://www.example.com/features/P479824.155_5705853.684_110> <http://www.example.com/features/P479816.67_5705861.672_110> ) ) ( ( <http://www.example.com/features/P479824.155_5705853.684_110> <http://www.example.com/features/P479824.155_5705853.684_100> <http://www.example.com/features/P479829.666_5705858.785_100> <http://www.example.com/features/P479829.666_5705858.785_120> <http://www.example.com/features/P479824.155_5705853.684_110> ) ) ( ( <http://www.example.com/features/P479829.666_5705858.785_120> <http://www.example.com/features/P479829.666_5705858.785_100> <http://www.example.com/features/P479822.187_5705866.783_100> <http://www.example.com/features/P479822.187_5705866.783_120> <http://www.example.com/features/P479829.666_5705858.785_120> ) ) ( ( <http://www.example.com/features/P479822.187_5705866.783_120> <http://www.example.com/features/P479822.187_5705866.783_100> <http://www.example.com/features/P479816.67_5705861.672_100> <http://www.example.com/features/P479816.67_5705861.672_110> <http://www.example.com/features/P479822.187_5705866.783_120> ) ) ) ) ] .
 
 <http://www.example.com/features/P479822.187_5705866.783_100> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;
@@ -1120,26 +1121,38 @@ Links to the schema:
               "@id": "topo:ref"
             }
           },
-          "@id": "geojson:relatedFeatures",
+          "@id": "topo:relatedFeatures",
           "@type": "@id",
           "@container": "@list"
         },
-        "directed_references": {
+        "relationships": {
           "@context": {
-            "ref": {
+            "href": {
               "@type": "@id",
-              "@id": "topo:ref"
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent",
+            "role": {
+              "@id": "prof:hasRole",
+              "@type": "@id"
+            },
+            "conformsTo": {
+              "@id": "dct:conformsTo",
+              "@type": "@id"
             }
           },
-          "@id": "topo:directedReferences",
-          "@container": "@list"
-        },
-        "rings": {
-          "@id": "topo:rings",
-          "@container": "@list"
-        },
-        "shells": {
-          "@id": "topo:shells",
+          "@id": "topo:relatedFeatures",
+          "@type": "@id",
           "@container": "@list"
         }
       },
@@ -1155,6 +1168,10 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
@@ -1162,6 +1179,14 @@ Links to the schema:
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
     "faces": {
       "@id": "topo:faces",
       "@container": "@list"
@@ -1172,7 +1197,6 @@ Links to the schema:
     "dct": "http://purl.org/dc/terms/",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
     "topo": "https://purl.org/geojson/topo#",
     "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1

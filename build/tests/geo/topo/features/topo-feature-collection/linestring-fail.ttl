@@ -10,7 +10,7 @@
 
 <file:///github/workspace/LineP1P2> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            geojson:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ] .
+            topo:relatedFeatures ( <file:///github/workspace/P1> <file:///github/workspace/P2> ) ] .
 
 <file:///github/workspace/P3> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;

@@ -1,7 +1,6 @@
-@prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
 
 [] a topo:Edge ;
-    geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) .
+    topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) .
 
