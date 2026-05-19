@@ -53,7 +53,7 @@ solids
   └─ topology.shells[].directed_references → Face IDs
        └─ topology.faces[].directed_references → Ring IDs
             └─ topology.rings[].directed_references → Edge IDs   
-                └─ topology..edges[].references → Point IDs
+                └─ topology.edges[].references → Point IDs
                     └─ points.geometry.coordinates (actual 3D coordinates)
 ```
 
@@ -32503,10 +32503,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
                     [ a geojson:Feature ],
                     [ a geojson:Feature ] ] ) ;
     topo:shells ( [ a geojson:FeatureCollection ;
-                geojson:features [ a geojson:Feature ] ] ),
-        ( [ a geojson:FeatureCollection ;
                 geojson:features [ a geojson:Feature ],
-                    [ a geojson:Feature ] ] ) .
+                    [ a geojson:Feature ] ] ),
+        ( [ a geojson:FeatureCollection ;
+                geojson:features [ a geojson:Feature ] ] ) .
 
 
 ```
