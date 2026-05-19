@@ -79,9 +79,12 @@ def process(input_data,mode,number):
                     for node in drs:
                         coordSet = geomsmap[node["ref"]][:]
                         if node["orientation"] == '-':
-                            coordSet.reverse()
-                        coords[0] += coordSet[startindex:]
-                        startindex = 1
+                            coords[0] += coordSet[::-1][startindex:]
+                        else:
+                            coords[0] += coordSet[startindex:]
+                        if feat_type == 'edges':
+                            # for lines skip starting point to join them up with duplicating end point
+                            startindex = 1
                 else:
                     print("No references found")
                     continue
@@ -145,7 +148,7 @@ if __name__ == "__main__" and testmode:
     argparser = argparse.ArgumentParser()
     argparser.add_argument('-i', '--input_data', help="input file")
     argparser.add_argument('-o', '--output_file', help="output file")
-    argparser.add_argument('-p', '--print', help="Print output of each file")
+    argparser.add_argument('-p', '--print', action='store_true', help="Print output of each file")
     argparser.add_argument('-n', '--number', default=None, help="Count of features to process")
     argparser.add_argument('-m', '--mode', default="points,edges,faces", help="points,edges,faces (comma separated list)")
     args = argparser.parse_args()
