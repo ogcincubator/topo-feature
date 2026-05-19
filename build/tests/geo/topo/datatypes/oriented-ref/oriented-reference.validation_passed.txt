@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.datatypes.oriented-ref - Oriented Object Reference
-Generated 2026-05-19T09:33:11.430786+00:00
+Generated 2026-05-19T09:41:38.272285+00:00
 === Files ===
 Using oriented-reference.json (example_1_1) from examples
 JSON-LD context is present - uplifting

@@ -15,9 +15,9 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.topo.datatypes.topology",
     "ogc.geo.topo.features.topo-feature-collection",
-    "ogc.geo.topo.datatypes.topology"
+    "ogc.geo.topo.features.topo-feature"
   ],
   "tags": [
     "topology",
@@ -27,19 +27,19 @@
   ],
   "group": "OGC",
   "shaclShapes": {
-    "ogc.geo.topo.features.topo-feature": [
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
-    ],
     "ogc.geo.topo.features.topo-feature-collection": [
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ],
     "ogc.geo.features.feature": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ],
     "ogc.geo.features.featureCollection": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+    ],
+    "ogc.geo.topo.features.topo-feature": [
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ]
   },
   "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/context.jsonld",
@@ -53,7 +53,7 @@
   "sourceFiles": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-face/",
   "validationPassed": true,
   "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/features/topo-face/",
-  "description": "# Face Topology Feature\n\nA **Face** is a topological feature representing a bounded planar region (a polygon surface) described by an outer boundary Ring and zero or more inner boundary Rings (holes).\n\n## Topology Model\n\nA Face's topology consists of:\n\n- `type`: `\"Face\"`\n- `rings`: an ordered array of Ring topology objects\n  - The **first** ring is the **outer boundary**\n  - Any **subsequent** rings are **inner boundaries** (holes)\n\nEach Ring contains a `directed_references` array \u2014 an ordered list of [Oriented Object References](../../datatypes/oriented-ref/) that reference Edge features, with orientation (`+` or `-`) indicating direction of traversal.\n\nThe `geometry` property is `null` \u2014 actual coordinates are derived from the referenced Edge and Point features.\n\n## Relationship to other types\n\n| Lower dimension                                            | Face dimension                                    | Higher dimension                                              |\n|:-----------------------------------------------------------|---------------------------------------------------|:--------------------------------------------------------------|\n| **Edge** <br/>(referenced in **Ring** directed_references) | **Face** <br/> (directed_references to **Rings**) | **Shell** <br/>(directed_references to  **Faces** ) |\n\nNote **directed references** are required for 3D, whereas 2D may use **ordered references**, and directions can be calculated if required. For 3D this calculation burden is much greater and explicit directions are required.",
+  "description": "# Face Topology Feature\n\nA **Face** is a topological feature representing a bounded planar region (a polygon surface) described by an outer boundary Ring and zero or more inner boundary Rings (holes).\n\n## Topology Model\n\nA Face's topology consists of:\n\n- `type`: `\"Face\"`\n- `rings`: an ordered array of Ring topology objects\n  - The **first** ring is the **outer boundary**\n  - Any **subsequent** rings are **inner boundaries** (holes)\n\nEach Ring contains a `directed_references` array \u2014 an ordered list of [Oriented Object References](../../datatypes/oriented-ref/) that reference Edge features, with orientation (`+` or `-`) indicating direction of traversal.\n\nThe `geometry` property is `null` \u2014 actual coordinates are derived from the referenced Edge and Point features.\n\n## Relationship to other types\n\n| Lower dimension                                            | Face dimension                                    | Higher dimension                                    |\n|:-----------------------------------------------------------|---------------------------------------------------|:----------------------------------------------------|\n| **Edge** <br/>(referenced in **Ring** directed_references) | **Face** <br/> (directed_references to **Rings**) | **Shell** <br/>(directed_references to  **Faces** ) |\n\nNote **directed references** are required for 3D, whereas 2D may use **ordered references**, and directions can be calculated if required. For 3D this calculation burden is much greater and explicit directions are required.",
   "examples": [
     {
       "title": "Face with full topological context (points + edges + face)",

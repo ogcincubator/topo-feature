@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature-collection - TopoFeatureCollection
-Generated 2026-05-19T09:33:13.610274+00:00
+Generated 2026-05-19T09:41:46.307608+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -21,8 +21,8 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nc24fc9a2060549afbc17a3221a5827acb3: <file:///github/workspace/P1>/geojson:geometry,<file:///github/workspace/P3>/geojson:geometry
- - Shape _:nc24fc9a2060549afbc17a3221a5827acb1: <file:///github/workspace/P1>/geojson:geometry,<file:///github/workspace/P3>/geojson:geometry
+ - Shape _:n093d0c58981b45129a01f9000d7b61fcb3: <file:///github/workspace/P1>/geojson:geometry,<file:///github/workspace/P3>/geojson:geometry
+ - Shape _:n093d0c58981b45129a01f9000d7b61fcb1: <file:///github/workspace/P1>/geojson:geometry,<file:///github/workspace/P3>/geojson:geometry
 
 
 ** Validation error **
@@ -52,10 +52,10 @@ Validation result for _sources/features/topo-feature-collection/tests/topo-refs-
   	Message: Referenced features must be present within current graph closure for  topological feature.
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
  - Shape toporules:testTopoReferencesExist: <file:///github/workspace/LineP1P2>/geojson:topology
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoDirectedReferencesExist: *none*
- - Shape toporules:testTopoEdgesReferencePoints: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
@@ -64,7 +64,7 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: <file:///github/workspace/P3>,<file:///github/workspace/LineP1P2>,<file:///github/workspace/P1>
+ - Shape geojson:FeatureShape: <file:///github/workspace/P1>,<file:///github/workspace/LineP1P2>,<file:///github/workspace/P3>
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 
@@ -74,11 +74,11 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureCollectionShape: <file:///github/workspace/line>
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureCollectionShape: <file:///github/workspace/line>
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 
 === End SHACL ===
 

@@ -11,7 +11,8 @@ A feature representing a Ring in topology: an ordered, closed sequence of orient
 
 # Ring Topology Feature
 
-A **Ring** is a topological feature representing an ordered, closed loop of oriented Edge references. It forms the boundary of a Face.
+A **Ring** is a topological feature representing an ordered, closed loop of oriented Edge references. 
+It forms the boundary of a Face.
 
 ## Topology Model
 
@@ -24,7 +25,8 @@ The `directed_references` form a closed loop: the end vertex of each edge (consi
 
 ## Orientation
 
-Each directed reference specifies an orientation (`+` or `-`) indicating whether the referenced Edge is traversed in its natural or reversed direction. This allows edges to be shared between adjacent faces.
+Each directed reference specifies an orientation (`+` or `-`) indicating whether the referenced Edge is traversed in its natural or reversed direction. 
+This allows edges to be shared between adjacent faces.
 
 ## Example
 
