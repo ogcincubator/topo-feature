@@ -1,0 +1,1727 @@
+{
+  "@context": [
+    "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+    {
+      "vocabs": "https://linked.data.gov.au/def/csdm/",
+      "wa-surveypoint-purpose": "https://linked.data.gov.au/def/csdm/wa-surveypoint-purpose/",
+      "wa-survey-purpose": "https://linked.data.gov.au/def/csdm/wa-survey-purpose/",
+      "wa-survey-type": "https://linked.data.gov.au/def/csdm/wa-survey-type/",
+      "wa-procedure-used": "https://linked.data.gov.au/def/csdm/wa-procedure-used/",
+      "wa-survey-documentation-type": "https://linked.data.gov.au/def/csdm/wa-survey-documentation-type/",
+      "wa-annotation-role": "https://linked.data.gov.au/def/csdm/wa-annotation/",
+      "wa-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-parcel-purpose/",
+      "wa-parcel-type": "https://linked.data.gov.au/def/csdm/wa-parcel-type/",
+      "wa-parcel-state": "https://linked.data.gov.au/def/csdm/wa-parcel-state/",
+      "wa-nonprimary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+      "wa-monument-form": "https://linked.data.gov.au/def/csdm/wa-monument-form/",
+      "wa-monument-condition": "https://linked.data.gov.au/def/csdm/wa-monument-condition/",
+      "wa-monument-state": "https://linked.data.gov.au/def/csdm/wa-monument-state/",
+      "wa-vector-purpose": "https://linked.data.gov.au/def/csdm/wa-vector-purpose/",
+      "wa-vector-type": "https://linked.data.gov.au/def/csdm/wa-vector-type/",
+      "wa-secondary-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-purpose/",
+      "wa-secondary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+      "wa-secondary-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-purpose/",
+      "wa-interest-type": "https://linked.data.gov.au/def/csdm/wa-interest-type/",
+      "wa-interest": "https://linked.data.gov.au/def/csdm/wa-interest/",
+      "wa-locality": "https://linked.data.gov.au/def/csdm/wa-locality/",
+      "wa-local-government": "https://linked.data.gov.au/def/csdm/wa-local-government/",
+      "registered-surveyors": "https://wa.gov.au/surveyors/",
+      "foaf": "https://xmlns.com/foaf/0.1/",
+      "activityType": "@type"
+    }
+  ],
+  "id": "uuid:65abe1ae-59bb-4fdd-82e8-8b24f263e743",
+  "name": "DP 12350",
+  "description": "Cube with Protrusion test for Solid validation",
+  "type": "FeatureCollection",
+  "featureType": "CSD",
+  "tenureType": "wa-parcel-type:freehold",
+  "planType": "wa-survey-type:deposited-plan",
+  "purpose": "wa-survey-purpose:subdivision",
+  "surveyType": "wa-survey-type:SSA",
+  "time": {
+    "date": "2026-04-22"
+  },
+  "horizontalCRS": "epsg:7850",
+  "verticalCRS": "epsg:5711",
+  "bearingRotation": 0.0,
+  "surveyTitle": "Cube with Protrusion",
+  "adminUnit": [],
+  "hasProvenance": [],
+  "wasGeneratedBy": {
+    "id": "uuid:f2a08a5e-16e7-40b8-b51e-a5692cf27949",
+    "endedAtTime": "2026-05-18T04:41:17.805303+00:00"
+  },
+  "features": [],
+  "referencedCSDs": [],
+  "points": [
+    {
+      "id": "uuid:fc3b042e-1160-4bfe-8d3a-fe523f90a6c5",
+      "type": "FeatureCollection",
+      "featureType": "CadastralMark",
+      "features": [
+        {
+          "id": "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.98953291633164,
+              -31.89062412837426,
+              10.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404440.65,
+              6471242.497,
+              10.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.98953193144317,
+              -31.89071430692773,
+              10.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404440.65,
+              6471232.5,
+              10.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.98953193144317,
+              -31.89071430692773,
+              20.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404440.65,
+              6471232.5,
+              20.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.98953291633164,
+              -31.89062412837426,
+              20.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404440.65,
+              6471242.497,
+              20.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.98963861291055,
+              -31.89062496861885,
+              10.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404450.647,
+              6471242.497,
+              10.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.98963861291055,
+              -31.89062496861885,
+              20.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404450.647,
+              6471242.497,
+              20.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.98963762812505,
+              -31.890715147175253,
+              10.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404450.647,
+              6471232.5,
+              10.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.98963762812505,
+              -31.890715147175253,
+              20.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404450.647,
+              6471232.5,
+              20.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.9896384159932,
+              -31.890643000722022,
+              18.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404450.647,
+              6471240.498,
+              18.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:5222db79-ba24-41c8-8661-0e37ca010924",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.98963782514161,
+              -31.890697106051743,
+              18.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404450.647,
+              6471234.5,
+              18.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.9896384159932,
+              -31.890643000722022,
+              12.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404450.647,
+              6471240.498,
+              12.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.98963782514161,
+              -31.890697106051743,
+              12.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404450.647,
+              6471234.5,
+              12.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.9895538544841,
+              -31.890642328499293,
+              12.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404442.649,
+              6471240.498,
+              12.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.9895532635831,
+              -31.890696433827607,
+              12.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404442.649,
+              6471234.5,
+              12.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.9895538544841,
+              -31.890642328499293,
+              18.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404442.649,
+              6471240.498,
+              18.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "uuid:1cd91836-ea95-438b-b67f-28c261c2f494",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": "2026-05-18T04:41:17.802302+00:00",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              115.9895532635831,
+              -31.890696433827607,
+              18.5
+            ]
+          },
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              404442.649,
+              6471234.5,
+              18.5
+            ]
+          },
+          "properties": {
+            "purpose": "wa-surveypoint-purpose:boundary",
+            "ptQualityMeasure": 0.1,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "vectorObservations": [],
+  "observedVectors": [],
+  "parcels": [],
+  "edges": [
+    {
+      "id": "uuid:69dddf2b-c94e-4f0a-98c0-d83f622126ca",
+      "type": "FeatureCollection",
+      "featureType": "Edge",
+      "features": [
+        {
+          "id": "uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe",
+              "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 9.997
+          }
+        },
+        {
+          "id": "uuid:2a432f54-75a3-4921-80fd-57460d162e21",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6",
+              "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 10.0
+          }
+        },
+        {
+          "id": "uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f",
+              "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 9.997
+          }
+        },
+        {
+          "id": "uuid:3e360965-27fe-4850-b435-f5421bcce1b3",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07",
+              "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 10.0
+          }
+        },
+        {
+          "id": "uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d",
+              "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 9.997
+          }
+        },
+        {
+          "id": "uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07",
+              "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 9.997
+          }
+        },
+        {
+          "id": "uuid:b8b43183-1e70-4972-b867-625897b10867",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7",
+              "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 10.0
+          }
+        },
+        {
+          "id": "uuid:d05095be-3eb9-405d-a456-424180bbdbfd",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c",
+              "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 9.997
+          }
+        },
+        {
+          "id": "uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7",
+              "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 9.997
+          }
+        },
+        {
+          "id": "uuid:66609f1f-21a9-4041-9068-cca1a38d9460",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502",
+              "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 10.0
+          }
+        },
+        {
+          "id": "uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86",
+              "uuid:5222db79-ba24-41c8-8661-0e37ca010924"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 5.998
+          }
+        },
+        {
+          "id": "uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6",
+              "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 6.0
+          }
+        },
+        {
+          "id": "uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e",
+              "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 5.998
+          }
+        },
+        {
+          "id": "uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:5222db79-ba24-41c8-8661-0e37ca010924",
+              "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 6.0
+          }
+        },
+        {
+          "id": "uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6",
+              "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 7.998
+          }
+        },
+        {
+          "id": "uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14",
+              "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 5.998
+          }
+        },
+        {
+          "id": "uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c",
+              "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 7.998
+          }
+        },
+        {
+          "id": "uuid:5ee50574-216d-4db3-a8dc-03475bbea27c",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86",
+              "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 7.998
+          }
+        },
+        {
+          "id": "uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780",
+              "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 6.0
+          }
+        },
+        {
+          "id": "uuid:e2736602-61f2-467f-b050-e0a1047474af",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:5222db79-ba24-41c8-8661-0e37ca010924",
+              "uuid:1cd91836-ea95-438b-b67f-28c261c2f494"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 7.998
+          }
+        },
+        {
+          "id": "uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:1cd91836-ea95-438b-b67f-28c261c2f494",
+              "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 5.998
+          }
+        },
+        {
+          "id": "uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c",
+              "uuid:1cd91836-ea95-438b-b67f-28c261c2f494"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 6.0
+          }
+        },
+        {
+          "id": "uuid:b4ea9b84-0468-4eea-8200-20ab2000692c",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6",
+              "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 9.997
+          }
+        },
+        {
+          "id": "uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Edge",
+            "references": [
+              "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502",
+              "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f"
+            ]
+          },
+          "properties": {
+            "vectorPurpose": "wa-vector-purpose:3D-Construct",
+            "comment": null,
+            "length": 9.997
+          }
+        }
+      ]
+    }
+  ],
+  "rings": [
+    {
+      "id": "uuid:e089fff6-3d26-450f-a188-139728de7269",
+      "type": "FeatureCollection",
+      "featureType": "Ring",
+      "features": [
+        {
+          "id": "uuid:d16e4e15-55b5-47c3-b137-8a80665327eb",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:2a432f54-75a3-4921-80fd-57460d162e21",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:3e360965-27fe-4850-b435-f5421bcce1b3",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 39.994
+          }
+        },
+        {
+          "id": "uuid:354e89e5-7f63-405d-b314-f546d7bd1720",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:3e360965-27fe-4850-b435-f5421bcce1b3",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:b8b43183-1e70-4972-b867-625897b10867",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 39.994
+          }
+        },
+        {
+          "id": "uuid:5a103c10-44de-4942-a362-77c11bce375a",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:d05095be-3eb9-405d-a456-424180bbdbfd",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:b8b43183-1e70-4972-b867-625897b10867",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:66609f1f-21a9-4041-9068-cca1a38d9460",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 39.994
+          }
+        },
+        {
+          "id": "uuid:133660ca-1a23-472b-a39f-76c6bf12655d",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866",
+                "orientation": "-"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 23.996
+          }
+        },
+        {
+          "id": "uuid:934d0add-3f15-493c-94c1-bd8b135ece56",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 27.992
+          }
+        },
+        {
+          "id": "uuid:c47bf67e-102e-44d1-ab1b-428782d644cc",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:5ee50574-216d-4db3-a8dc-03475bbea27c",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913",
+                "orientation": "-"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 27.996
+          }
+        },
+        {
+          "id": "uuid:425efe55-9931-4e31-a60c-6db08cb25e8a",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:e2736602-61f2-467f-b050-e0a1047474af",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:5ee50574-216d-4db3-a8dc-03475bbea27c",
+                "orientation": "-"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 27.992
+          }
+        },
+        {
+          "id": "uuid:6405a69a-a313-4334-982b-7af7b9b6e8e0",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:e2736602-61f2-467f-b050-e0a1047474af",
+                "orientation": "-"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 27.996
+          }
+        },
+        {
+          "id": "uuid:e9c44d08-5810-4481-a843-a2a15ababe59",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:b4ea9b84-0468-4eea-8200-20ab2000692c",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:66609f1f-21a9-4041-9068-cca1a38d9460",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:2a432f54-75a3-4921-80fd-57460d162e21",
+                "orientation": "-"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 39.994
+          }
+        },
+        {
+          "id": "uuid:feaa1540-b6ef-46c7-93c7-9db0e20039d0",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0",
+                "orientation": "-"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 39.988
+          }
+        },
+        {
+          "id": "uuid:096e1016-ef94-4942-a234-c2b0735f3568",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:d05095be-3eb9-405d-a456-424180bbdbfd",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:b4ea9b84-0468-4eea-8200-20ab2000692c",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda",
+                "orientation": "-"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 39.988
+          }
+        },
+        {
+          "id": "uuid:ee5d0c3a-7f69-4b1d-817e-06a0c8f837f0",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Ring",
+            "directed_references": [
+              {
+                "ref": "uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b",
+                "orientation": "-"
+              },
+              {
+                "ref": "uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785",
+                "orientation": "-"
+              }
+            ]
+          },
+          "properties": {
+            "circumference": 23.996
+          }
+        }
+      ]
+    }
+  ],
+  "faces": [
+    {
+      "id": "uuid:5e42ed7a-a9da-44bb-86fe-0cc1feff1f3d",
+      "type": "FeatureCollection",
+      "featureType": "Face",
+      "features": [
+        {
+          "id": "uuid:29ecec10-c621-4873-ab17-a45cb95ee321",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:d16e4e15-55b5-47c3-b137-8a80665327eb",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              -0.9999999999976539,
+              -2.16618204833425e-06,
+              6.326093721975811e-10
+            ],
+            "area": 99.97,
+            "description": "West-facing boundary face, [Cube with Protrusion]"
+          }
+        },
+        {
+          "id": "uuid:f8aa06c7-3c40-4dd9-a029-0b67a4fa0280",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:354e89e5-7f63-405d-b314-f546d7bd1720",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              -2.153187652198725e-06,
+              0.9999999999963367,
+              1.6403366978485525e-06
+            ],
+            "area": 99.97,
+            "description": "North-facing boundary face, [Cube with Protrusion]"
+          }
+        },
+        {
+          "id": "uuid:abedfbd9-9637-4c78-acba-9dc9df413b24",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:5a103c10-44de-4942-a362-77c11bce375a",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:133660ca-1a23-472b-a39f-76c6bf12655d",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              0.9999999999964289,
+              2.166134286404929e-06,
+              1.5653513048356715e-06
+            ],
+            "area": 47.982,
+            "description": "East-facing boundary face, [Cube with Protrusion]"
+          }
+        },
+        {
+          "id": "uuid:9784caee-d2dd-4908-9204-14a4280bd726",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:934d0add-3f15-493c-94c1-bd8b135ece56",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              -9.401478868027336e-07,
+              -7.871184648944955e-07,
+              0.9999999999992484
+            ],
+            "area": 47.972,
+            "description": "Top boundary face, [Cube with Protrusion]"
+          }
+        },
+        {
+          "id": "uuid:8ac99859-4d85-41e6-a842-0fc7aebec301",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:c47bf67e-102e-44d1-ab1b-428782d644cc",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              2.1591381596275373e-06,
+              -0.9999999999967859,
+              -1.3290728388717158e-06
+            ],
+            "area": 47.988,
+            "description": "South-facing boundary face, [Cube with Protrusion]"
+          }
+        },
+        {
+          "id": "uuid:472defbe-a781-4b74-8265-5d5cabab5582",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:425efe55-9931-4e31-a60c-6db08cb25e8a",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              9.400905451007333e-07,
+              7.873521060205954e-07,
+              -0.9999999999992482
+            ],
+            "area": 47.972,
+            "description": "Bottom boundary face, [Cube with Protrusion]"
+          }
+        },
+        {
+          "id": "uuid:d4211a73-0d4b-432d-851d-82c42977ae91",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:6405a69a-a313-4334-982b-7af7b9b6e8e0",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              -2.1734022604020526e-06,
+              0.9999999999975641,
+              3.849446070093322e-07
+            ],
+            "area": 47.988,
+            "description": "North-facing boundary face, [Cube with Protrusion]"
+          }
+        },
+        {
+          "id": "uuid:55e9c1cc-0f84-47c9-af2d-97cd017ee0fc",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:e9c44d08-5810-4481-a843-a2a15ababe59",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              2.1769419919791902e-06,
+              -0.9999999999976281,
+              -6.910242896174431e-08
+            ],
+            "area": 99.97,
+            "description": "South-facing boundary face, [Cube with Protrusion]"
+          }
+        },
+        {
+          "id": "uuid:40fde941-9b67-4d4e-9922-051db969d587",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:feaa1540-b6ef-46c7-93c7-9db0e20039d0",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              -7.833272329993001e-07,
+              -7.872433266770017e-07,
+              0.9999999999993834
+            ],
+            "area": 99.94,
+            "description": "Top boundary face, [Cube with Protrusion]"
+          }
+        },
+        {
+          "id": "uuid:f1dafb5b-606d-412b-993d-8da6ce2a39e6",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:096e1016-ef94-4942-a234-c2b0735f3568",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              7.84769969732799e-07,
+              7.886860574542007e-07,
+              -0.9999999999993812
+            ],
+            "area": 99.94,
+            "description": "Bottom boundary face, [Cube with Protrusion]"
+          }
+        },
+        {
+          "id": "uuid:6790c7df-a754-49ca-b45a-8c70b8fe409d",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Face",
+            "directed_references": [
+              {
+                "ref": "uuid:ee5d0c3a-7f69-4b1d-817e-06a0c8f837f0",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "normal": [
+              0.9999999999976045,
+              2.1664826358011434e-06,
+              3.1248967105407626e-07
+            ],
+            "area": 35.988,
+            "description": "East-facing boundary face, [Cube with Protrusion]"
+          }
+        }
+      ]
+    }
+  ],
+  "shells": [
+    {
+      "id": "uuid:7dca4428-0ce0-4082-8df8-78e7f1c760bb",
+      "type": "FeatureCollection",
+      "featureType": "Shell",
+      "features": [
+        {
+          "id": "uuid:9ac0d493-ba47-446b-b697-7099fec4f4bd",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Shell",
+            "directed_references": [
+              {
+                "ref": "uuid:29ecec10-c621-4873-ab17-a45cb95ee321",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:f8aa06c7-3c40-4dd9-a029-0b67a4fa0280",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:abedfbd9-9637-4c78-acba-9dc9df413b24",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:9784caee-d2dd-4908-9204-14a4280bd726",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:8ac99859-4d85-41e6-a842-0fc7aebec301",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:472defbe-a781-4b74-8265-5d5cabab5582",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:d4211a73-0d4b-432d-851d-82c42977ae91",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:55e9c1cc-0f84-47c9-af2d-97cd017ee0fc",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:40fde941-9b67-4d4e-9922-051db969d587",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:f1dafb5b-606d-412b-993d-8da6ce2a39e6",
+                "orientation": "+"
+              },
+              {
+                "ref": "uuid:6790c7df-a754-49ca-b45a-8c70b8fe409d",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "description": "Exterior Shell of Cube with Protrusion"
+          }
+        }
+      ]
+    }
+  ],
+  "solids": [
+    {
+      "id": "uuid:be39937f-9c37-4438-abc3-637ca1ce91eb",
+      "type": "FeatureCollection",
+      "featureType": "Solid",
+      "features": [
+        {
+          "id": "uuid:c961acbd-5816-48af-a288-bc5bbaeaa5da",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Solid",
+            "shells": [
+              {
+                "ref": "uuid:9ac0d493-ba47-446b-b697-7099fec4f4bd",
+                "orientation": "+"
+              }
+            ]
+          },
+          "properties": {
+            "name": "Cube with Protrusion",
+            "floors": [
+              1
+            ],
+            "volume": 711.568
+          }
+        }
+      ]
+    }
+  ],
+  "supportingDocuments": [],
+  "annotations": [],
+  "statistics": {
+    "point_count": 16,
+    "edge_count": 24,
+    "ring_count": 12,
+    "face_count": 11,
+    "shell_count": 1,
+    "solid_count": 1
+  }
+}
