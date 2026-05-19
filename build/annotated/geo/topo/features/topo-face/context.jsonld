@@ -128,29 +128,21 @@
           "@type": "@id",
           "@container": "@list"
         },
-        "ref": "topo:ref",
-        "rings": {
-          "@id": "topo:rings",
-          "@container": "@list",
-          "@context": {
-            "directed_references": {
-              "@context": {
-                "ref": {
-                  "@type": "@id",
-                  "@id": "topo:ref"
-                }
-              },
-              "@id": "topo:directedReferences",
-              "@container": "@list"
-            }
-          }
-        }
+        "ref": "topo:ref"
       },
       "@type": "@id",
       "@id": "geojson:topology"
     },
     "Face": "topo:Face",
     "Ring": "topo:Ring",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "ref": "@id",
     "orientation": "topo:orientation",
     "Arc": "geojson:Arc",
@@ -162,17 +154,9 @@
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
-    "directed_references": {
-      "@id": "topo:directedReferences",
-      "@container": "@list"
-    },
     "Edge": "topo:Edge",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
-    "rings": {
-      "@id": "topo:rings",
-      "@container": "@list"
-    },
     "shells": {
       "@id": "topo:shells",
       "@container": "@list"

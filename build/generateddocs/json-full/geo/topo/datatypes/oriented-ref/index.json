@@ -39,42 +39,44 @@
     {
       "title": "Oriented edge reference (forward)",
       "content": "An oriented reference to an edge feature, used as an element of a Ring's directed_references array.\nThe '+' orientation means the edge is traversed in its natural direction.\n",
+      "base-output-filename": "oriented-reference",
       "snippets": [
         {
           "language": "json",
           "code": "{\n  \"ref\": \"uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae\",\n  \"orientation\": \"+\"\n}\n",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/example_1_1.json"
+          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/oriented-reference.json"
         },
         {
           "language": "jsonld",
           "code": "{\n  \"@context\": \"https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/context.jsonld\",\n  \"ref\": \"uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae\",\n  \"orientation\": \"+\"\n}",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/example_1_1.jsonld"
+          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/oriented-reference.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix topo: <https://purl.org/geojson/topo#> .\n\n[] topo:orientation \"+\" ;\n    topo:ref <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> .\n\n",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/example_1_1.ttl"
+          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/oriented-reference.ttl"
         }
       ]
     },
     {
       "title": "Oriented edge reference (reverse)",
       "content": "An oriented reference to an edge feature traversed in reverse.\nThe '-' orientation means the edge is used in the opposite direction to its definition.\nThis allows the same edge to serve as a boundary of two adjacent faces without duplication.\n",
+      "base-output-filename": "edge-reference",
       "snippets": [
         {
           "language": "json",
           "code": "{\n  \"ref\": \"uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569\",\n  \"orientation\": \"-\"\n}\n",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/example_2_1.json"
+          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/edge-reference.json"
         },
         {
           "language": "jsonld",
           "code": "{\n  \"@context\": \"https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/context.jsonld\",\n  \"ref\": \"uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569\",\n  \"orientation\": \"-\"\n}",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/example_2_1.jsonld"
+          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/edge-reference.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix topo: <https://purl.org/geojson/topo#> .\n\n[] topo:orientation \"-\" ;\n    topo:ref <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> .\n\n",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/example_2_1.ttl"
+          "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/oriented-ref/edge-reference.ttl"
         }
       ]
     }

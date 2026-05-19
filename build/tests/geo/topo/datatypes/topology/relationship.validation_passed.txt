@@ -1,0 +1,13 @@
+Validation report for ogc.geo.topo.datatypes.topology - Geometry using references
+Generated 2026-05-19T04:54:52.099624+00:00
+=== Files ===
+Using examples/relationship.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD relationship.jsonld created
+Output Turtle relationship.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

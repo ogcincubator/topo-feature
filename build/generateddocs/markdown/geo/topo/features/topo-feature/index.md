@@ -198,10 +198,10 @@ from the referenced point features at render time.
 ```
 
 
-### Face Feature (Ring/directed_references model)
-A Face feature whose boundary is defined via Ring topology. Each Ring contains a
-directed_references array of oriented Edge references, each with a 'ref' (Edge feature ID)
-and 'orientation' ('+' or '-'). geometry is null — geometry is fully defined by the topology.
+### Face Feature (directed_references to Ring features)
+A Face feature referencing Ring features via directed_references. Each element has a
+'ref' (Ring feature ID) and an 'orientation' ('+' or '-'). geometry is null — geometry
+is fully defined by the topology.
 
 #### json
 ```json
@@ -211,27 +211,10 @@ and 'orientation' ('+' or '-'). geometry is null — geometry is fully defined b
   "geometry": null,
   "topology": {
     "type": "Face",
-    "rings": [
+    "directed_references": [
       {
-        "type": "Ring",
-        "directed_references": [
-          {
-            "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
-            "orientation": "+"
-          }
-        ]
+        "ref": "uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b",
+        "orientation": "+"
       }
     ]
   },
@@ -255,27 +238,10 @@ and 'orientation' ('+' or '-'). geometry is null — geometry is fully defined b
   "geometry": null,
   "topology": {
     "type": "Face",
-    "rings": [
+    "directed_references": [
       {
-        "type": "Ring",
-        "directed_references": [
-          {
-            "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
-            "orientation": "+"
-          }
-        ]
+        "ref": "uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b",
+        "orientation": "+"
       }
     ]
   },
@@ -298,12 +264,8 @@ and 'orientation' ('+' or '-'). geometry is null — geometry is fully defined b
 
 <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> a geojson:Feature ;
     geojson:topology [ a topo:Face ;
-            topo:rings ( [ a topo:Ring ;
-                        topo:directedReferences ( [ topo:orientation "+" ;
-                                    topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] [ topo:orientation "+" ;
-                                    topo:ref "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac" ] [ topo:orientation "+" ;
-                                    topo:ref "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569" ] [ topo:orientation "+" ;
-                                    topo:ref "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8" ] ) ] ) ] .
+            topo:directedReferences ( [ topo:orientation "+" ;
+                        topo:ref "uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b" ] ) ] .
 
 
 ```

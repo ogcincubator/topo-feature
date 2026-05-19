@@ -156,7 +156,7 @@ The 'references' array names the two point features that form the line's endpoin
 
 
 ### Ring topology (directed_references style)
-A Ring topology object using directed_references — each element has a 'ref' (Edge feature ID)
+A Ring topology object uses directed_references — each element has a 'ref' (Edge feature ID)
 and an 'orientation' ('+' or '-'). Mutually exclusive with 'references'.
 
 #### json
@@ -215,25 +215,17 @@ and an 'orientation' ('+' or '-'). Mutually exclusive with 'references'.
 ```
 
 
-### Face topology (rings of directed_references)
-A Face topology object. The 'rings' array contains Ring objects, each with
-directed_references to Edge features. The first ring is the outer boundary.
-'references' and 'directed_references' must not both be present.
+### Face topology (directed_references to Ring features)
+A Face topology object uses directed_references to reference Ring features.
+Each element has a 'ref' (Ring feature ID) and an 'orientation' ('+' or '-').
+Mutually exclusive with 'references'.
 
 #### json
 ```json
 {
   "type": "Face",
-  "rings": [
-    {
-      "type": "Ring",
-      "directed_references": [
-        { "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23", "orientation": "+" },
-        { "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac", "orientation": "+" },
-        { "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569", "orientation": "+" },
-        { "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8", "orientation": "+" }
-      ]
-    }
+  "directed_references": [
+    { "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23", "orientation": "+" }
   ]
 }
 
@@ -244,27 +236,10 @@ directed_references to Edge features. The first ring is the outer boundary.
 {
   "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
   "type": "Face",
-  "rings": [
+  "directed_references": [
     {
-      "type": "Ring",
-      "directed_references": [
-        {
-          "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
-          "orientation": "+"
-        },
-        {
-          "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-          "orientation": "+"
-        },
-        {
-          "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
-          "orientation": "+"
-        },
-        {
-          "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
-          "orientation": "+"
-        }
-      ]
+      "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+      "orientation": "+"
     }
   ]
 }
@@ -276,37 +251,85 @@ directed_references to Edge features. The first ring is the outer boundary.
 @prefix topo: <https://purl.org/geojson/topo#> .
 
 [] a topo:Face ;
-    topo:rings ( [ a topo:Ring ;
-                topo:directedReferences ( [ topo:orientation "+" ;
-                            topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] [ topo:orientation "+" ;
-                            topo:ref "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac" ] [ topo:orientation "+" ;
-                            topo:ref "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569" ] [ topo:orientation "+" ;
-                            topo:ref "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8" ] ) ] ) .
+    topo:directedReferences ( [ topo:orientation "+" ;
+                topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] ) .
 
 
 ```
 
 
-### Solid topology (shells of directed_references)
-A Solid topology object. The 'shells' array contains Shell objects, each with
-directed_references to Face features forming the closed boundary surface.
+### Shell topology (directed_references to Face features)
+A Shell topology object uses directed_references to reference Face features.
+Each element has a 'ref' (Face feature ID) and an 'orientation' ('+' or '-').
+Mutually exclusive with 'references'.
+
+#### json
+```json
+{
+  "type": "Shell",
+  "directed_references": [
+    { "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a2f0998ae", "orientation": "+" },
+    { "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae", "orientation": "+" },
+    { "ref": "uuid:4ac3b91b-eeb7-428c-b7e9-7e8a3f0998ae", "orientation": "-" },
+    { "ref": "uuid:4ac4b91b-eeb7-428c-b5e9-7e8a3f0998ae", "orientation": "+" }
+  ]
+}
+
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
+  "type": "Shell",
+  "directed_references": [
+    {
+      "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a2f0998ae",
+      "orientation": "+"
+    },
+    {
+      "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+      "orientation": "+"
+    },
+    {
+      "ref": "uuid:4ac3b91b-eeb7-428c-b7e9-7e8a3f0998ae",
+      "orientation": "-"
+    },
+    {
+      "ref": "uuid:4ac4b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+      "orientation": "+"
+    }
+  ]
+}
+```
+
+#### ttl
+```ttl
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
+
+[] a topo:Shell ;
+    topo:directedReferences ( [ topo:orientation "+" ;
+                topo:ref "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a2f0998ae" ] [ topo:orientation "+" ;
+                topo:ref "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae" ] [ topo:orientation "-" ;
+                topo:ref "uuid:4ac3b91b-eeb7-428c-b7e9-7e8a3f0998ae" ] [ topo:orientation "+" ;
+                topo:ref "uuid:4ac4b91b-eeb7-428c-b5e9-7e8a3f0998ae" ] ) .
+
+
+```
+
+
+### Solid topology (directed_references to Shell features)
+A Solid topology object uses directed_references to reference Shell features.
+Each element has a 'ref' (Shell feature ID) and an 'orientation' ('+' or '-').
+Mutually exclusive with 'references'.
 
 #### json
 ```json
 {
   "type": "Solid",
-  "shells": [
-    {
-      "type": "Shell",
-      "directed_references": [
-        { "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae", "orientation": "+" },
-        { "ref": "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e", "orientation": "+" },
-        { "ref": "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a", "orientation": "+" },
-        { "ref": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b", "orientation": "+" },
-        { "ref": "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f", "orientation": "+" },
-        { "ref": "uuid:2387ae98-9236-42fe-9414-c45b99954c41", "orientation": "+" }
-      ]
-    }
+  "directed_references": [
+    { "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae", "orientation": "+" }
   ]
 }
 
@@ -317,35 +340,10 @@ directed_references to Face features forming the closed boundary surface.
 {
   "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
   "type": "Solid",
-  "shells": [
+  "directed_references": [
     {
-      "type": "Shell",
-      "directed_references": [
-        {
-          "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
-          "orientation": "+"
-        },
-        {
-          "ref": "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e",
-          "orientation": "+"
-        },
-        {
-          "ref": "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a",
-          "orientation": "+"
-        },
-        {
-          "ref": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
-          "orientation": "+"
-        },
-        {
-          "ref": "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f",
-          "orientation": "+"
-        },
-        {
-          "ref": "uuid:2387ae98-9236-42fe-9414-c45b99954c41",
-          "orientation": "+"
-        }
-      ]
+      "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+      "orientation": "+"
     }
   ]
 }
@@ -357,14 +355,8 @@ directed_references to Face features forming the closed boundary surface.
 @prefix topo: <https://purl.org/geojson/topo#> .
 
 [] a topo:Solid ;
-    topo:shells ( [ a topo:Shell ;
-                topo:directedReferences ( [ topo:orientation "+" ;
-                            topo:ref "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae" ] [ topo:orientation "+" ;
-                            topo:ref "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e" ] [ topo:orientation "+" ;
-                            topo:ref "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a" ] [ topo:orientation "+" ;
-                            topo:ref "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b" ] [ topo:orientation "+" ;
-                            topo:ref "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f" ] [ topo:orientation "+" ;
-                            topo:ref "uuid:2387ae98-9236-42fe-9414-c45b99954c41" ] ) ] ) .
+    topo:directedReferences ( [ topo:orientation "+" ;
+                topo:ref "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae" ] ) .
 
 
 ```

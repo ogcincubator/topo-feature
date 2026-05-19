@@ -2,15 +2,15 @@
   "title": "Validation report for ogc.geo.topo.datatypes.topology - Geometry using references",
   "bblockName": "Geometry using references",
   "bblockId": "ogc.geo.topo.datatypes.topology",
-  "generated": "2026-05-19T01:09:15.042548+00:00",
-  "result": false,
+  "generated": "2026-05-19T04:54:52.111588+00:00",
+  "result": true,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/geo/topo/datatypes/topology/example_1_1.json",
-        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_1_1.json",
+        "filename": "build/tests/geo/topo/datatypes/topology/line.json",
+        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/line.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
@@ -32,17 +32,17 @@
             },
             {
               "op": "jsonld-create",
-              "filename": "example_1_1.jsonld",
+              "filename": "line.jsonld",
               "isError": false,
-              "message": "Output JSON-LD example_1_1.jsonld created"
+              "message": "Output JSON-LD line.jsonld created"
             },
             {
               "op": "ttl-create",
               "empty": false,
-              "filename": "example_1_1.ttl",
+              "filename": "line.ttl",
               "size": 6,
               "isError": false,
-              "message": "Output Turtle example_1_1.ttl created"
+              "message": "Output Turtle line.ttl created"
             }
           ]
         },
@@ -64,8 +64,8 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/geo/topo/datatypes/topology/example_2_1.json",
-        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_2_1.json",
+        "filename": "build/tests/geo/topo/datatypes/topology/relationship.json",
+        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/relationship.json",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "application/json"
@@ -87,17 +87,17 @@
             },
             {
               "op": "jsonld-create",
-              "filename": "example_2_1.jsonld",
+              "filename": "relationship.jsonld",
               "isError": false,
-              "message": "Output JSON-LD example_2_1.jsonld created"
+              "message": "Output JSON-LD relationship.jsonld created"
             },
             {
               "op": "ttl-create",
               "empty": false,
-              "filename": "example_2_1.ttl",
+              "filename": "relationship.ttl",
               "size": 12,
               "isError": false,
-              "message": "Output Turtle example_2_1.ttl created"
+              "message": "Output Turtle relationship.ttl created"
             }
           ]
         },
@@ -119,8 +119,8 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/geo/topo/datatypes/topology/example_3_1.json",
-        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_3_1.json",
+        "filename": "build/tests/geo/topo/datatypes/topology/ring-topology.json",
+        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/ring-topology.json",
         "exampleIndex": 3,
         "snippetIndex": 1,
         "language": "application/json"
@@ -133,7 +133,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_3_1.json from examples"
+              "message": "Using ring-topology.json (example_3_1) from examples"
             },
             {
               "op": "jsonld-uplift",
@@ -142,17 +142,17 @@
             },
             {
               "op": "jsonld-create",
-              "filename": "example_3_1.jsonld",
+              "filename": "ring-topology.jsonld",
               "isError": false,
-              "message": "Output JSON-LD example_3_1.jsonld created"
+              "message": "Output JSON-LD ring-topology.jsonld created"
             },
             {
               "op": "ttl-create",
               "empty": false,
-              "filename": "example_3_1.ttl",
+              "filename": "ring-topology.ttl",
               "size": 18,
               "isError": false,
-              "message": "Output Turtle example_3_1.ttl created"
+              "message": "Output Turtle ring-topology.ttl created"
             }
           ]
         },
@@ -174,13 +174,13 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/geo/topo/datatypes/topology/example_4_1.json",
-        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_4_1.json",
+        "filename": "build/tests/geo/topo/datatypes/topology/face-topology.json",
+        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/face-topology.json",
         "exampleIndex": 4,
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": false,
+      "result": true,
       "sections": [
         {
           "name": "FILES",
@@ -188,7 +188,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_4_1.json from examples"
+              "message": "Using face-topology.json (example_4_1) from examples"
             },
             {
               "op": "jsonld-uplift",
@@ -197,17 +197,17 @@
             },
             {
               "op": "jsonld-create",
-              "filename": "example_4_1.jsonld",
+              "filename": "face-topology.jsonld",
               "isError": false,
-              "message": "Output JSON-LD example_4_1.jsonld created"
+              "message": "Output JSON-LD face-topology.jsonld created"
             },
             {
               "op": "ttl-create",
               "empty": false,
-              "filename": "example_4_1.ttl",
-              "size": 22,
+              "filename": "face-topology.ttl",
+              "size": 6,
               "isError": false,
-              "message": "Output Turtle example_4_1.ttl created"
+              "message": "Output Turtle face-topology.ttl created"
             }
           ]
         },
@@ -217,11 +217,9 @@
           "entries": [
             {
               "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'Face' is not one of ['MultiLineString', 'Polygon', 'Polyhedron']",
-              "isError": true,
-              "message": "ValidationError: 'Face' is not one of ['MultiLineString', 'Polygon', 'Polyhedron']\n\nFailed validating 'enum' in schema[1]['properties']['type']:\n    {'enum': ['MultiLineString', 'Polygon', 'Polyhedron'],\n     'x-jsonld-id': '@type'}\n\nOn instance['type']:\n    'Face'"
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
             }
           ]
         }
@@ -231,13 +229,13 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/geo/topo/datatypes/topology/example_5_1.json",
-        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/example_5_1.json",
+        "filename": "build/tests/geo/topo/datatypes/topology/shell-topology.json",
+        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/shell-topology.json",
         "exampleIndex": 5,
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": false,
+      "result": true,
       "sections": [
         {
           "name": "FILES",
@@ -245,7 +243,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_5_1.json from examples"
+              "message": "Using shell-topology.json (example_5_1) from examples"
             },
             {
               "op": "jsonld-uplift",
@@ -254,17 +252,17 @@
             },
             {
               "op": "jsonld-create",
-              "filename": "example_5_1.jsonld",
+              "filename": "shell-topology.jsonld",
               "isError": false,
-              "message": "Output JSON-LD example_5_1.jsonld created"
+              "message": "Output JSON-LD shell-topology.jsonld created"
             },
             {
               "op": "ttl-create",
               "empty": false,
-              "filename": "example_5_1.ttl",
-              "size": 30,
+              "filename": "shell-topology.ttl",
+              "size": 18,
               "isError": false,
-              "message": "Output Turtle example_5_1.ttl created"
+              "message": "Output Turtle shell-topology.ttl created"
             }
           ]
         },
@@ -274,11 +272,64 @@
           "entries": [
             {
               "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'Solid' is not one of ['MultiLineString', 'Polygon', 'Polyhedron']",
-              "isError": true,
-              "message": "ValidationError: 'Solid' is not one of ['MultiLineString', 'Polygon', 'Polyhedron']\n\nFailed validating 'enum' in schema[1]['properties']['type']:\n    {'enum': ['MultiLineString', 'Polygon', 'Polyhedron'],\n     'x-jsonld-id': '@type'}\n\nOn instance['type']:\n    'Solid'"
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/geo/topo/datatypes/topology/solid-topology.json",
+        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/datatypes/topology/solid-topology.json",
+        "exampleIndex": 6,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using solid-topology.json (example_6_1) from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "solid-topology.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD solid-topology.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "solid-topology.ttl",
+              "size": 6,
+              "isError": false,
+              "message": "Output Turtle solid-topology.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
             }
           ]
         }
@@ -287,8 +338,8 @@
   ],
   "globalErrors": {},
   "counts": {
-    "total": 5,
-    "passed": 3,
-    "failed": 2
+    "total": 6,
+    "passed": 6,
+    "failed": 0
   }
 }

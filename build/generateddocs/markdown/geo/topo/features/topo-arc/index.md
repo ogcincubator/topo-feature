@@ -28,13 +28,13 @@ Note: the geojson: namespace is used for semantic annotations - this may be repl
 ## Examples
 
 ### Example GeoJSON feature using ArcWithCenter topology
-Arc with Center example.
+Arc with Centre example.
 
-Topology defined by 2 end points and a centre that are references to features with point geometry.
+Topology is defined by 2 end points and a centre that are references to features with point geometry.
 
 ![Example](assets/arc-by-center.png)
 
-radius and arcLength are implicit but may be provided as optional properties of the feature.
+Radius and arcLength are implicit but may be provided as optional properties of the feature.
 #### json
 ```json
 {

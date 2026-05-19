@@ -11,35 +11,50 @@ A schema for a structured topology dataset containing typed Feature Collections 
 
 # Topo Feature Multi-Collection
 
-A **Topo Feature Multi-Collection** is a structured dataset that organises topological features into typed named collections, one for each topological dimension. This enables representation of a full topology hierarchy — from point nodes to volumetric solids — in a single, self-describing document.
+A **Topo Feature Multi-Collection** is a structured dataset that organises topological features into typed named collections, one for each topological dimension. 
+This enables representation of a full topology hierarchy — from point nodes to volumetric solids — in a single, self-describing document.
 
 ## Structure
 
-| Collection key | Feature type | Building block | Topology property |
-|---|---|---|---|
-| `points` | Point geometry nodes | GeoJSON Feature (Point geometry) | — (explicit coordinates) |
-| `edges` | Edge (line) topology | `topo-line` | `references`: ordered string IDs |
-| `faces` | Face (polygon surface) topology | `topo-face` | `rings[].directed_references`: oriented Edge refs |
-| `shells` | Shell (closed surface) topology | `topo-shell` | `directed_references`: oriented Face refs |
-| `solids` | Solid (volumetric) topology | `topo-feature` (Solid/Shell) | `shells[].directed_references`: oriented Face refs |
+| Collection key | Feature type                    | Building block                   | Topology property                                  |
+|----------------|---------------------------------|----------------------------------|----------------------------------------------------|
+| `points`       | Point geometry nodes            | GeoJSON Feature (Point geometry) | — (explicit coordinates)                           |
+| `edges`        | Edge (line) topology            | `topo-line`                      | `references`: ordered (string) point IDs           |
+| `rings`        | Ring (closed curve) topology    | `topo-ring`                      | `edge[].directed_references`: oriented Edge refs   |
+| `faces`        | Face (polygon surface) topology | `topo-face`                      | `rings[].directed_references`: oriented Ring refs  |
+| `shells`       | Shell (closed surface) topology | `topo-shell`                     | `face[].directed_references`: oriented Face refs   |
+| `solids`       | Solid (volumetric) topology     | `topo-feature` (Solid/Shell)     | `shells[].directed_references`: oriented Face refs |
 
 ## Reference models
 
 Two reference styles are used, each appropriate to the relationship type:
 
 - **`references`** — a plain ordered array of string feature IDs. Used for edges referencing point nodes, where position (not direction) is what matters.
-- **`directed_references`** — an ordered array of oriented object references `{ "ref": "...", "orientation": "+"|"-" }`. Used for Rings referencing Edges, and Shells referencing Faces, where traversal direction determines the sense of the boundary.
+- **`directed_references`** — an ordered array of oriented object references `{ "ref": "...", "orientation": "+"|"-" }`. 
+Used for Rings referencing Edges, Faces referencing Edges, Shells referencing Faces, and Solids referencing Shells, where traversal direction determines the sense of the boundary.
 
 The two styles must not coexist within the same topology object.
+
+Orientation is needed where the same primitive can be reused in opposite directions or on opposite sides of a higher-dimensional object. 
+A point has no direction, so an edge does not need to reference an “oriented point” in the same way that a ring references an oriented edge or a shell references an oriented face.
+Edges orientation is defined by an edges `startPoint` and `endPoint`. 
+
+Orientation is important because it defines which side of a face is inside or outside A solid.
+Shells bound a solid; shells are made from faces; faces are bounded by rings; rings use edges. 
+To know whether the solid is valid, closed, and consistently formed, it is important to understand which way each face is pointing.
+
+While for 2D polygons, orientation can be optional as exterior and interior boundaries can be readily identified. 
+For 3D solids orientation should be explicit, as interpreting unoriented 3D solids is harder and riskier because reversing a face can invert the local meaning of a solid boundary.
 
 ## Referential integrity chain
 
 ```
 solids
   └─ topology.shells[].directed_references → Face IDs
-       └─ topology.rings[].directed_references → Edge IDs
-            └─ topology.references → Point IDs
-                 └─ geometry.coordinates (actual 3D coordinates)
+       └─ topology.faces[].directed_references → Ring IDs
+            └─ topology.rings[].directed_references → Edge IDs   
+                └─ topology..edges[].references → Point IDs
+                    └─ points.geometry.coordinates (actual 3D coordinates)
 ```
 
 `geometry` is `null` on all feature types except Points — coordinates are derived by following the reference chain.
@@ -51,8 +66,10 @@ solids
   "type": "FeatureCollection",
   "points": [ { "type": "Feature", "geometry": { "type": "Point", "coordinates": [...] }, ... } ],
   "edges":  [ { "type": "Feature", "geometry": null, "topology": { "type": "Edge", "references": ["uuid:...", "uuid:..."] }, ... } ],
-  "faces":  [ { "type": "Feature", "geometry": null, "topology": { "type": "Face",   "rings": [{ "type": "Ring", "directed_references": [...] }] }, ... } ],
-  "solids": [ { "type": "Feature", "geometry": null, "topology": { "type": "Solid",  "shells": [{ "type": "Shell", "directed_references": [...] }] }, ... } ]
+  "rings":  [ { "type": "Feature", "geometry": null, "topology": { "type": "Ring", "directed_references": [{ "ref": "uuid:...", "orientation": "+" }, ... ] }, ... } ],
+  "faces":  [ { "type": "Feature", "geometry": null, "topology": { "type": "Face", "directed_references": [{ "ref": "uuid:...", "orientation": "+" }, ... ] }, ... } ],
+  "shells": [ { "type": "Feature", "geometry": null, "topology": { "type": "Shell", "directed_references": [{ "ref": "uuid:...", "orientation": "-" }, ... ] }, ... } ],
+  "solids": [ { "type": "Feature", "geometry": null, "topology": { "type": "Solid", "directed_references": [{ "ref": "uuid:...", "orientation": "+" }, ... ] }, ... } ]
 }
 ```
 
@@ -32542,7 +32559,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     "foaf": "https://xmlns.com/foaf/0.1/",
     "activityType": "@type"
   },
-  "id": "uuid:65abe1ae-59bb-4fdd-82e8-8b24f263e743",
+  "id": "uuid:85702346-7889-4c90-88a8-81c0dde911ba",
   "name": "DP 12350",
   "description": "Cube with Protrusion test for Solid validation",
   "type": "FeatureCollection",
@@ -32561,22 +32578,22 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   "adminUnit": [],
   "hasProvenance": [],
   "wasGeneratedBy": {
-    "id": "uuid:f2a08a5e-16e7-40b8-b51e-a5692cf27949",
-    "endedAtTime": "2026-05-18T04:41:17.805303+00:00"
+    "id": "uuid:4315a17f-95c4-4f14-aafe-af668813c7aa",
+    "endedAtTime": "2026-05-19T03:52:52.191309+00:00"
   },
   "features": [],
   "referencedCSDs": [],
   "points": [
     {
-      "id": "uuid:fc3b042e-1160-4bfe-8d3a-fe523f90a6c5",
+      "id": "uuid:7a9002f6-8e9f-46ec-b0bd-302955bfbd38",
       "type": "FeatureCollection",
       "featureType": "CadastralMark",
       "features": [
         {
-          "id": "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe",
+          "id": "uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32605,10 +32622,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6",
+          "id": "uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32637,10 +32654,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f",
+          "id": "uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32669,10 +32686,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07",
+          "id": "uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32701,10 +32718,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d",
+          "id": "uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32733,10 +32750,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7",
+          "id": "uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32765,10 +32782,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c",
+          "id": "uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32797,10 +32814,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502",
+          "id": "uuid:cfc8b55e-1745-4943-a559-7263a49b9568",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32829,10 +32846,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86",
+          "id": "uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32861,10 +32878,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:5222db79-ba24-41c8-8661-0e37ca010924",
+          "id": "uuid:7dbd23f0-8173-4dfa-91f1-53129738520f",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32893,10 +32910,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6",
+          "id": "uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32925,10 +32942,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e",
+          "id": "uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32957,10 +32974,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14",
+          "id": "uuid:97e57f30-94e6-4871-8176-da926297232f",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -32989,10 +33006,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c",
+          "id": "uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -33021,10 +33038,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780",
+          "id": "uuid:ef3dcc76-513c-4043-980b-2764b7b341e4",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -33053,10 +33070,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:1cd91836-ea95-438b-b67f-28c261c2f494",
+          "id": "uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -33092,19 +33109,19 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   "parcels": [],
   "edges": [
     {
-      "id": "uuid:69dddf2b-c94e-4f0a-98c0-d83f622126ca",
+      "id": "uuid:a1cff144-27d7-46e8-9d19-2957c0d14193",
       "type": "FeatureCollection",
       "featureType": "Edge",
       "features": [
         {
-          "id": "uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda",
+          "id": "uuid:4de72a54-dc6e-453b-8679-f640004b3fb9",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe",
-              "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6"
+              "uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6",
+              "uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177"
             ]
           },
           "properties": {
@@ -33114,14 +33131,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:2a432f54-75a3-4921-80fd-57460d162e21",
+          "id": "uuid:2b07a965-fe9b-4500-ae99-8d577b091b51",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6",
-              "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f"
+              "uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177",
+              "uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593"
             ]
           },
           "properties": {
@@ -33131,14 +33148,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae",
+          "id": "uuid:69eeb511-0d06-4dbd-83d9-329bfbf4430c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f",
-              "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07"
+              "uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593",
+              "uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b"
             ]
           },
           "properties": {
@@ -33148,14 +33165,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:3e360965-27fe-4850-b435-f5421bcce1b3",
+          "id": "uuid:2c406787-a710-4ca2-a39f-487a9ac31bfc",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07",
-              "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe"
+              "uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b",
+              "uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6"
             ]
           },
           "properties": {
@@ -33165,14 +33182,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5",
+          "id": "uuid:569b7961-5cd8-4c15-9d78-897da56085b2",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d",
-              "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe"
+              "uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a",
+              "uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6"
             ]
           },
           "properties": {
@@ -33182,14 +33199,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16",
+          "id": "uuid:14e9e034-a3a4-4426-8e48-14d0ba5b4839",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07",
-              "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7"
+              "uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b",
+              "uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd"
             ]
           },
           "properties": {
@@ -33199,14 +33216,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:b8b43183-1e70-4972-b867-625897b10867",
+          "id": "uuid:6c6b25f1-6a58-4995-8e9d-136a4c313ffa",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7",
-              "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d"
+              "uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd",
+              "uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a"
             ]
           },
           "properties": {
@@ -33216,14 +33233,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:d05095be-3eb9-405d-a456-424180bbdbfd",
+          "id": "uuid:8b738339-47ba-4e2f-941c-0b11e851343c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c",
-              "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d"
+              "uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca",
+              "uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a"
             ]
           },
           "properties": {
@@ -33233,14 +33250,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0",
+          "id": "uuid:6050a59e-4f96-44c8-af20-8fe4ab73b1af",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7",
-              "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502"
+              "uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd",
+              "uuid:cfc8b55e-1745-4943-a559-7263a49b9568"
             ]
           },
           "properties": {
@@ -33250,14 +33267,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:66609f1f-21a9-4041-9068-cca1a38d9460",
+          "id": "uuid:7a074a74-690b-4ca8-97b7-78b328a0651d",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502",
-              "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c"
+              "uuid:cfc8b55e-1745-4943-a559-7263a49b9568",
+              "uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca"
             ]
           },
           "properties": {
@@ -33267,14 +33284,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a",
+          "id": "uuid:848720a5-5a41-488d-ab8a-24e944b422fe",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86",
-              "uuid:5222db79-ba24-41c8-8661-0e37ca010924"
+              "uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f",
+              "uuid:7dbd23f0-8173-4dfa-91f1-53129738520f"
             ]
           },
           "properties": {
@@ -33284,14 +33301,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8",
+          "id": "uuid:79af8c69-fbc0-4aea-9756-ebbb1184de61",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6",
-              "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86"
+              "uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368",
+              "uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f"
             ]
           },
           "properties": {
@@ -33301,14 +33318,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d",
+          "id": "uuid:a7bf25eb-0ba4-4a7a-830e-0203fef8bc9c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e",
-              "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6"
+              "uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54",
+              "uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368"
             ]
           },
           "properties": {
@@ -33318,14 +33335,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866",
+          "id": "uuid:da372a4b-04a9-4960-bc1f-c1e63ca5baff",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:5222db79-ba24-41c8-8661-0e37ca010924",
-              "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e"
+              "uuid:7dbd23f0-8173-4dfa-91f1-53129738520f",
+              "uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54"
             ]
           },
           "properties": {
@@ -33335,14 +33352,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913",
+          "id": "uuid:4057e37e-7772-4407-9af6-6106a7ce3357",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6",
-              "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14"
+              "uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368",
+              "uuid:97e57f30-94e6-4871-8176-da926297232f"
             ]
           },
           "properties": {
@@ -33352,14 +33369,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b",
+          "id": "uuid:230661f6-40b6-4038-a892-c21cdc65a441",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14",
-              "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c"
+              "uuid:97e57f30-94e6-4871-8176-da926297232f",
+              "uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25"
             ]
           },
           "properties": {
@@ -33369,14 +33386,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6",
+          "id": "uuid:afabe16a-2949-435c-9660-9a6b1d76975f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c",
-              "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e"
+              "uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25",
+              "uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54"
             ]
           },
           "properties": {
@@ -33386,14 +33403,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:5ee50574-216d-4db3-a8dc-03475bbea27c",
+          "id": "uuid:87c95736-4b67-4a77-8e60-76a309d9ea3d",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86",
-              "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780"
+              "uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f",
+              "uuid:ef3dcc76-513c-4043-980b-2764b7b341e4"
             ]
           },
           "properties": {
@@ -33403,14 +33420,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785",
+          "id": "uuid:73e00170-a8d8-4cad-8c93-75e99303786a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780",
-              "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14"
+              "uuid:ef3dcc76-513c-4043-980b-2764b7b341e4",
+              "uuid:97e57f30-94e6-4871-8176-da926297232f"
             ]
           },
           "properties": {
@@ -33420,14 +33437,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:e2736602-61f2-467f-b050-e0a1047474af",
+          "id": "uuid:4581a51b-5bd6-4b58-bc40-91ae85534046",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:5222db79-ba24-41c8-8661-0e37ca010924",
-              "uuid:1cd91836-ea95-438b-b67f-28c261c2f494"
+              "uuid:7dbd23f0-8173-4dfa-91f1-53129738520f",
+              "uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03"
             ]
           },
           "properties": {
@@ -33437,14 +33454,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393",
+          "id": "uuid:60d9a7e8-5511-4f8f-a4d8-1609abb15d8b",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:1cd91836-ea95-438b-b67f-28c261c2f494",
-              "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780"
+              "uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03",
+              "uuid:ef3dcc76-513c-4043-980b-2764b7b341e4"
             ]
           },
           "properties": {
@@ -33454,14 +33471,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658",
+          "id": "uuid:969851a7-72b3-406d-9d92-8e7cdd157b2f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c",
-              "uuid:1cd91836-ea95-438b-b67f-28c261c2f494"
+              "uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25",
+              "uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03"
             ]
           },
           "properties": {
@@ -33471,14 +33488,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:b4ea9b84-0468-4eea-8200-20ab2000692c",
+          "id": "uuid:c5c2dcdb-3f69-45d0-90d6-0f08ad71c7e6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6",
-              "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c"
+              "uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177",
+              "uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca"
             ]
           },
           "properties": {
@@ -33488,14 +33505,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb",
+          "id": "uuid:28b19e75-23cb-4c72-ae42-0839b7f39e27",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502",
-              "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f"
+              "uuid:cfc8b55e-1745-4943-a559-7263a49b9568",
+              "uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593"
             ]
           },
           "properties": {
@@ -33509,31 +33526,31 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   ],
   "rings": [
     {
-      "id": "uuid:e089fff6-3d26-450f-a188-139728de7269",
+      "id": "uuid:394e96e4-c335-49f4-916b-47593774cb5b",
       "type": "FeatureCollection",
       "featureType": "Ring",
       "features": [
         {
-          "id": "uuid:d16e4e15-55b5-47c3-b137-8a80665327eb",
+          "id": "uuid:c9547610-3aea-4af5-ba1c-99411fab12d6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda",
+                "ref": "uuid:4de72a54-dc6e-453b-8679-f640004b3fb9",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:2a432f54-75a3-4921-80fd-57460d162e21",
+                "ref": "uuid:2b07a965-fe9b-4500-ae99-8d577b091b51",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae",
+                "ref": "uuid:69eeb511-0d06-4dbd-83d9-329bfbf4430c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:3e360965-27fe-4850-b435-f5421bcce1b3",
+                "ref": "uuid:2c406787-a710-4ca2-a39f-487a9ac31bfc",
                 "orientation": "+"
               }
             ]
@@ -33543,26 +33560,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:354e89e5-7f63-405d-b314-f546d7bd1720",
+          "id": "uuid:b03457ab-1cbf-46ee-bc54-9778eada63d6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5",
+                "ref": "uuid:569b7961-5cd8-4c15-9d78-897da56085b2",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:3e360965-27fe-4850-b435-f5421bcce1b3",
+                "ref": "uuid:2c406787-a710-4ca2-a39f-487a9ac31bfc",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16",
+                "ref": "uuid:14e9e034-a3a4-4426-8e48-14d0ba5b4839",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:b8b43183-1e70-4972-b867-625897b10867",
+                "ref": "uuid:6c6b25f1-6a58-4995-8e9d-136a4c313ffa",
                 "orientation": "+"
               }
             ]
@@ -33572,26 +33589,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:5a103c10-44de-4942-a362-77c11bce375a",
+          "id": "uuid:8371609e-f12a-450b-8d72-119378d4e90c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:d05095be-3eb9-405d-a456-424180bbdbfd",
+                "ref": "uuid:8b738339-47ba-4e2f-941c-0b11e851343c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:b8b43183-1e70-4972-b867-625897b10867",
+                "ref": "uuid:6c6b25f1-6a58-4995-8e9d-136a4c313ffa",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0",
+                "ref": "uuid:6050a59e-4f96-44c8-af20-8fe4ab73b1af",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:66609f1f-21a9-4041-9068-cca1a38d9460",
+                "ref": "uuid:7a074a74-690b-4ca8-97b7-78b328a0651d",
                 "orientation": "+"
               }
             ]
@@ -33601,26 +33618,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:133660ca-1a23-472b-a39f-76c6bf12655d",
+          "id": "uuid:1fafe839-6460-4cd6-8f9c-451005384804",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a",
+                "ref": "uuid:848720a5-5a41-488d-ab8a-24e944b422fe",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8",
+                "ref": "uuid:79af8c69-fbc0-4aea-9756-ebbb1184de61",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d",
+                "ref": "uuid:a7bf25eb-0ba4-4a7a-830e-0203fef8bc9c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866",
+                "ref": "uuid:da372a4b-04a9-4960-bc1f-c1e63ca5baff",
                 "orientation": "-"
               }
             ]
@@ -33630,26 +33647,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:934d0add-3f15-493c-94c1-bd8b135ece56",
+          "id": "uuid:0451532d-168c-4f08-83cc-d94629b744a7",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d",
+                "ref": "uuid:a7bf25eb-0ba4-4a7a-830e-0203fef8bc9c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913",
+                "ref": "uuid:4057e37e-7772-4407-9af6-6106a7ce3357",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b",
+                "ref": "uuid:230661f6-40b6-4038-a892-c21cdc65a441",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6",
+                "ref": "uuid:afabe16a-2949-435c-9660-9a6b1d76975f",
                 "orientation": "+"
               }
             ]
@@ -33659,26 +33676,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:c47bf67e-102e-44d1-ab1b-428782d644cc",
+          "id": "uuid:8c7b5e4d-3b96-4dcf-8b35-44ea0e434206",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8",
+                "ref": "uuid:79af8c69-fbc0-4aea-9756-ebbb1184de61",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:5ee50574-216d-4db3-a8dc-03475bbea27c",
+                "ref": "uuid:87c95736-4b67-4a77-8e60-76a309d9ea3d",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785",
+                "ref": "uuid:73e00170-a8d8-4cad-8c93-75e99303786a",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913",
+                "ref": "uuid:4057e37e-7772-4407-9af6-6106a7ce3357",
                 "orientation": "-"
               }
             ]
@@ -33688,26 +33705,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:425efe55-9931-4e31-a60c-6db08cb25e8a",
+          "id": "uuid:9558f5c8-06f7-44ba-bf0b-907bc441ef83",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a",
+                "ref": "uuid:848720a5-5a41-488d-ab8a-24e944b422fe",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e2736602-61f2-467f-b050-e0a1047474af",
+                "ref": "uuid:4581a51b-5bd6-4b58-bc40-91ae85534046",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393",
+                "ref": "uuid:60d9a7e8-5511-4f8f-a4d8-1609abb15d8b",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:5ee50574-216d-4db3-a8dc-03475bbea27c",
+                "ref": "uuid:87c95736-4b67-4a77-8e60-76a309d9ea3d",
                 "orientation": "-"
               }
             ]
@@ -33717,26 +33734,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:6405a69a-a313-4334-982b-7af7b9b6e8e0",
+          "id": "uuid:35c56557-1373-4357-9002-44898436268f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866",
+                "ref": "uuid:da372a4b-04a9-4960-bc1f-c1e63ca5baff",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6",
+                "ref": "uuid:afabe16a-2949-435c-9660-9a6b1d76975f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658",
+                "ref": "uuid:969851a7-72b3-406d-9d92-8e7cdd157b2f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e2736602-61f2-467f-b050-e0a1047474af",
+                "ref": "uuid:4581a51b-5bd6-4b58-bc40-91ae85534046",
                 "orientation": "-"
               }
             ]
@@ -33746,26 +33763,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:e9c44d08-5810-4481-a843-a2a15ababe59",
+          "id": "uuid:8073b1ec-1831-4de2-84a3-81ee0f115674",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:b4ea9b84-0468-4eea-8200-20ab2000692c",
+                "ref": "uuid:c5c2dcdb-3f69-45d0-90d6-0f08ad71c7e6",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:66609f1f-21a9-4041-9068-cca1a38d9460",
+                "ref": "uuid:7a074a74-690b-4ca8-97b7-78b328a0651d",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb",
+                "ref": "uuid:28b19e75-23cb-4c72-ae42-0839b7f39e27",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:2a432f54-75a3-4921-80fd-57460d162e21",
+                "ref": "uuid:2b07a965-fe9b-4500-ae99-8d577b091b51",
                 "orientation": "-"
               }
             ]
@@ -33775,26 +33792,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:feaa1540-b6ef-46c7-93c7-9db0e20039d0",
+          "id": "uuid:f9ccef4f-1d39-4430-8ba3-4fb7ebd1c528",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16",
+                "ref": "uuid:14e9e034-a3a4-4426-8e48-14d0ba5b4839",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae",
+                "ref": "uuid:69eeb511-0d06-4dbd-83d9-329bfbf4430c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb",
+                "ref": "uuid:28b19e75-23cb-4c72-ae42-0839b7f39e27",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0",
+                "ref": "uuid:6050a59e-4f96-44c8-af20-8fe4ab73b1af",
                 "orientation": "-"
               }
             ]
@@ -33804,26 +33821,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:096e1016-ef94-4942-a234-c2b0735f3568",
+          "id": "uuid:e0452825-9a9e-4422-a3fa-21ee220c5d40",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5",
+                "ref": "uuid:569b7961-5cd8-4c15-9d78-897da56085b2",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:d05095be-3eb9-405d-a456-424180bbdbfd",
+                "ref": "uuid:8b738339-47ba-4e2f-941c-0b11e851343c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:b4ea9b84-0468-4eea-8200-20ab2000692c",
+                "ref": "uuid:c5c2dcdb-3f69-45d0-90d6-0f08ad71c7e6",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda",
+                "ref": "uuid:4de72a54-dc6e-453b-8679-f640004b3fb9",
                 "orientation": "-"
               }
             ]
@@ -33833,26 +33850,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:ee5d0c3a-7f69-4b1d-817e-06a0c8f837f0",
+          "id": "uuid:7bc386a9-a7de-470d-98b2-85d0db96788d",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393",
+                "ref": "uuid:60d9a7e8-5511-4f8f-a4d8-1609abb15d8b",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658",
+                "ref": "uuid:969851a7-72b3-406d-9d92-8e7cdd157b2f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b",
+                "ref": "uuid:230661f6-40b6-4038-a892-c21cdc65a441",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785",
+                "ref": "uuid:73e00170-a8d8-4cad-8c93-75e99303786a",
                 "orientation": "-"
               }
             ]
@@ -33866,19 +33883,19 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   ],
   "faces": [
     {
-      "id": "uuid:5e42ed7a-a9da-44bb-86fe-0cc1feff1f3d",
+      "id": "uuid:a78b491a-9cf9-4dc8-b195-519601b38cff",
       "type": "FeatureCollection",
       "featureType": "Face",
       "features": [
         {
-          "id": "uuid:29ecec10-c621-4873-ab17-a45cb95ee321",
+          "id": "uuid:2ca00a69-cccb-408f-924a-8cb54ddb9fe8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:d16e4e15-55b5-47c3-b137-8a80665327eb",
+                "ref": "uuid:c9547610-3aea-4af5-ba1c-99411fab12d6",
                 "orientation": "+"
               }
             ]
@@ -33894,14 +33911,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:f8aa06c7-3c40-4dd9-a029-0b67a4fa0280",
+          "id": "uuid:88fedfec-2cb7-41f7-8948-dc5a5a2ecf55",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:354e89e5-7f63-405d-b314-f546d7bd1720",
+                "ref": "uuid:b03457ab-1cbf-46ee-bc54-9778eada63d6",
                 "orientation": "+"
               }
             ]
@@ -33917,18 +33934,18 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:abedfbd9-9637-4c78-acba-9dc9df413b24",
+          "id": "uuid:3b3cd92a-5778-408d-8b6f-04b390c7f6fc",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:5a103c10-44de-4942-a362-77c11bce375a",
+                "ref": "uuid:8371609e-f12a-450b-8d72-119378d4e90c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:133660ca-1a23-472b-a39f-76c6bf12655d",
+                "ref": "uuid:1fafe839-6460-4cd6-8f9c-451005384804",
                 "orientation": "+"
               }
             ]
@@ -33939,19 +33956,19 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
               2.166134286404929e-06,
               1.5653513048356715e-06
             ],
-            "area": 47.982,
+            "area": 63.982,
             "description": "East-facing boundary face, [Cube with Protrusion]"
           }
         },
         {
-          "id": "uuid:9784caee-d2dd-4908-9204-14a4280bd726",
+          "id": "uuid:4f371f0a-c9e0-4f4e-bdcc-d74d495b434f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:934d0add-3f15-493c-94c1-bd8b135ece56",
+                "ref": "uuid:0451532d-168c-4f08-83cc-d94629b744a7",
                 "orientation": "+"
               }
             ]
@@ -33967,14 +33984,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:8ac99859-4d85-41e6-a842-0fc7aebec301",
+          "id": "uuid:113f902b-349b-4e42-98ac-65dc5bfc1e8d",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:c47bf67e-102e-44d1-ab1b-428782d644cc",
+                "ref": "uuid:8c7b5e4d-3b96-4dcf-8b35-44ea0e434206",
                 "orientation": "+"
               }
             ]
@@ -33990,14 +34007,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:472defbe-a781-4b74-8265-5d5cabab5582",
+          "id": "uuid:b4afb1e1-8688-4be8-9e58-e0fe573ba896",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:425efe55-9931-4e31-a60c-6db08cb25e8a",
+                "ref": "uuid:9558f5c8-06f7-44ba-bf0b-907bc441ef83",
                 "orientation": "+"
               }
             ]
@@ -34013,14 +34030,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:d4211a73-0d4b-432d-851d-82c42977ae91",
+          "id": "uuid:e67afa7f-cf0c-4201-a066-9c5a23a961fa",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:6405a69a-a313-4334-982b-7af7b9b6e8e0",
+                "ref": "uuid:35c56557-1373-4357-9002-44898436268f",
                 "orientation": "+"
               }
             ]
@@ -34036,14 +34053,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:55e9c1cc-0f84-47c9-af2d-97cd017ee0fc",
+          "id": "uuid:c8d5a816-1012-40de-b696-aacf763e9be4",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:e9c44d08-5810-4481-a843-a2a15ababe59",
+                "ref": "uuid:8073b1ec-1831-4de2-84a3-81ee0f115674",
                 "orientation": "+"
               }
             ]
@@ -34059,14 +34076,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:40fde941-9b67-4d4e-9922-051db969d587",
+          "id": "uuid:da87be42-6980-4503-925d-a61b27eded57",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:feaa1540-b6ef-46c7-93c7-9db0e20039d0",
+                "ref": "uuid:f9ccef4f-1d39-4430-8ba3-4fb7ebd1c528",
                 "orientation": "+"
               }
             ]
@@ -34082,14 +34099,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:f1dafb5b-606d-412b-993d-8da6ce2a39e6",
+          "id": "uuid:5c11a64f-3b16-45b1-97b5-23e825d38402",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:096e1016-ef94-4942-a234-c2b0735f3568",
+                "ref": "uuid:e0452825-9a9e-4422-a3fa-21ee220c5d40",
                 "orientation": "+"
               }
             ]
@@ -34105,14 +34122,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:6790c7df-a754-49ca-b45a-8c70b8fe409d",
+          "id": "uuid:1de8896f-a293-4c4b-90f6-3670fe0cd761",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:ee5d0c3a-7f69-4b1d-817e-06a0c8f837f0",
+                "ref": "uuid:7bc386a9-a7de-470d-98b2-85d0db96788d",
                 "orientation": "+"
               }
             ]
@@ -34132,59 +34149,59 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   ],
   "shells": [
     {
-      "id": "uuid:7dca4428-0ce0-4082-8df8-78e7f1c760bb",
+      "id": "uuid:08f3c7cd-4b9b-4bdd-a77f-1032c29bd3be",
       "type": "FeatureCollection",
       "featureType": "Shell",
       "features": [
         {
-          "id": "uuid:9ac0d493-ba47-446b-b697-7099fec4f4bd",
+          "id": "uuid:c1c50d16-4ae4-4b00-8df3-169a51b37aad",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:29ecec10-c621-4873-ab17-a45cb95ee321",
+                "ref": "uuid:2ca00a69-cccb-408f-924a-8cb54ddb9fe8",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f8aa06c7-3c40-4dd9-a029-0b67a4fa0280",
+                "ref": "uuid:88fedfec-2cb7-41f7-8948-dc5a5a2ecf55",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:abedfbd9-9637-4c78-acba-9dc9df413b24",
+                "ref": "uuid:3b3cd92a-5778-408d-8b6f-04b390c7f6fc",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:9784caee-d2dd-4908-9204-14a4280bd726",
+                "ref": "uuid:4f371f0a-c9e0-4f4e-bdcc-d74d495b434f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8ac99859-4d85-41e6-a842-0fc7aebec301",
+                "ref": "uuid:113f902b-349b-4e42-98ac-65dc5bfc1e8d",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:472defbe-a781-4b74-8265-5d5cabab5582",
+                "ref": "uuid:b4afb1e1-8688-4be8-9e58-e0fe573ba896",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:d4211a73-0d4b-432d-851d-82c42977ae91",
+                "ref": "uuid:e67afa7f-cf0c-4201-a066-9c5a23a961fa",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:55e9c1cc-0f84-47c9-af2d-97cd017ee0fc",
+                "ref": "uuid:c8d5a816-1012-40de-b696-aacf763e9be4",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:40fde941-9b67-4d4e-9922-051db969d587",
+                "ref": "uuid:da87be42-6980-4503-925d-a61b27eded57",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f1dafb5b-606d-412b-993d-8da6ce2a39e6",
+                "ref": "uuid:5c11a64f-3b16-45b1-97b5-23e825d38402",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6790c7df-a754-49ca-b45a-8c70b8fe409d",
+                "ref": "uuid:1de8896f-a293-4c4b-90f6-3670fe0cd761",
                 "orientation": "+"
               }
             ]
@@ -34198,19 +34215,19 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   ],
   "solids": [
     {
-      "id": "uuid:be39937f-9c37-4438-abc3-637ca1ce91eb",
+      "id": "uuid:53011530-7534-4cc4-b4cb-21be6a4ccea7",
       "type": "FeatureCollection",
       "featureType": "Solid",
       "features": [
         {
-          "id": "uuid:c961acbd-5816-48af-a288-bc5bbaeaa5da",
+          "id": "uuid:ae57392f-b8f3-412f-bb7a-351a39659606",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:9ac0d493-ba47-446b-b697-7099fec4f4bd",
+                "ref": "uuid:c1c50d16-4ae4-4b00-8df3-169a51b37aad",
                 "orientation": "+"
               }
             ]
@@ -34273,7 +34290,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
       "activityType": "@type"
     }
   ],
-  "id": "uuid:65abe1ae-59bb-4fdd-82e8-8b24f263e743",
+  "id": "uuid:85702346-7889-4c90-88a8-81c0dde911ba",
   "name": "DP 12350",
   "description": "Cube with Protrusion test for Solid validation",
   "type": "FeatureCollection",
@@ -34292,22 +34309,22 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   "adminUnit": [],
   "hasProvenance": [],
   "wasGeneratedBy": {
-    "id": "uuid:f2a08a5e-16e7-40b8-b51e-a5692cf27949",
-    "endedAtTime": "2026-05-18T04:41:17.805303+00:00"
+    "id": "uuid:4315a17f-95c4-4f14-aafe-af668813c7aa",
+    "endedAtTime": "2026-05-19T03:52:52.191309+00:00"
   },
   "features": [],
   "referencedCSDs": [],
   "points": [
     {
-      "id": "uuid:fc3b042e-1160-4bfe-8d3a-fe523f90a6c5",
+      "id": "uuid:7a9002f6-8e9f-46ec-b0bd-302955bfbd38",
       "type": "FeatureCollection",
       "featureType": "CadastralMark",
       "features": [
         {
-          "id": "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe",
+          "id": "uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34336,10 +34353,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6",
+          "id": "uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34368,10 +34385,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f",
+          "id": "uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34400,10 +34417,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07",
+          "id": "uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34432,10 +34449,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d",
+          "id": "uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34464,10 +34481,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7",
+          "id": "uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34496,10 +34513,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c",
+          "id": "uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34528,10 +34545,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502",
+          "id": "uuid:cfc8b55e-1745-4943-a559-7263a49b9568",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34560,10 +34577,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86",
+          "id": "uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34592,10 +34609,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:5222db79-ba24-41c8-8661-0e37ca010924",
+          "id": "uuid:7dbd23f0-8173-4dfa-91f1-53129738520f",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34624,10 +34641,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6",
+          "id": "uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34656,10 +34673,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e",
+          "id": "uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34688,10 +34705,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14",
+          "id": "uuid:97e57f30-94e6-4871-8176-da926297232f",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34720,10 +34737,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c",
+          "id": "uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34752,10 +34769,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780",
+          "id": "uuid:ef3dcc76-513c-4043-980b-2764b7b341e4",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34784,10 +34801,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:1cd91836-ea95-438b-b67f-28c261c2f494",
+          "id": "uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-18T04:41:17.802302+00:00",
+          "time": "2026-05-19T03:52:52.187308+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34823,19 +34840,19 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   "parcels": [],
   "edges": [
     {
-      "id": "uuid:69dddf2b-c94e-4f0a-98c0-d83f622126ca",
+      "id": "uuid:a1cff144-27d7-46e8-9d19-2957c0d14193",
       "type": "FeatureCollection",
       "featureType": "Edge",
       "features": [
         {
-          "id": "uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda",
+          "id": "uuid:4de72a54-dc6e-453b-8679-f640004b3fb9",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe",
-              "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6"
+              "uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6",
+              "uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177"
             ]
           },
           "properties": {
@@ -34845,14 +34862,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:2a432f54-75a3-4921-80fd-57460d162e21",
+          "id": "uuid:2b07a965-fe9b-4500-ae99-8d577b091b51",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6",
-              "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f"
+              "uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177",
+              "uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593"
             ]
           },
           "properties": {
@@ -34862,14 +34879,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae",
+          "id": "uuid:69eeb511-0d06-4dbd-83d9-329bfbf4430c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f",
-              "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07"
+              "uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593",
+              "uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b"
             ]
           },
           "properties": {
@@ -34879,14 +34896,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:3e360965-27fe-4850-b435-f5421bcce1b3",
+          "id": "uuid:2c406787-a710-4ca2-a39f-487a9ac31bfc",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07",
-              "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe"
+              "uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b",
+              "uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6"
             ]
           },
           "properties": {
@@ -34896,14 +34913,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5",
+          "id": "uuid:569b7961-5cd8-4c15-9d78-897da56085b2",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d",
-              "uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe"
+              "uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a",
+              "uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6"
             ]
           },
           "properties": {
@@ -34913,14 +34930,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16",
+          "id": "uuid:14e9e034-a3a4-4426-8e48-14d0ba5b4839",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07",
-              "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7"
+              "uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b",
+              "uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd"
             ]
           },
           "properties": {
@@ -34930,14 +34947,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:b8b43183-1e70-4972-b867-625897b10867",
+          "id": "uuid:6c6b25f1-6a58-4995-8e9d-136a4c313ffa",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7",
-              "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d"
+              "uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd",
+              "uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a"
             ]
           },
           "properties": {
@@ -34947,14 +34964,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:d05095be-3eb9-405d-a456-424180bbdbfd",
+          "id": "uuid:8b738339-47ba-4e2f-941c-0b11e851343c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c",
-              "uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d"
+              "uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca",
+              "uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a"
             ]
           },
           "properties": {
@@ -34964,14 +34981,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0",
+          "id": "uuid:6050a59e-4f96-44c8-af20-8fe4ab73b1af",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7",
-              "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502"
+              "uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd",
+              "uuid:cfc8b55e-1745-4943-a559-7263a49b9568"
             ]
           },
           "properties": {
@@ -34981,14 +34998,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:66609f1f-21a9-4041-9068-cca1a38d9460",
+          "id": "uuid:7a074a74-690b-4ca8-97b7-78b328a0651d",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502",
-              "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c"
+              "uuid:cfc8b55e-1745-4943-a559-7263a49b9568",
+              "uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca"
             ]
           },
           "properties": {
@@ -34998,14 +35015,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a",
+          "id": "uuid:848720a5-5a41-488d-ab8a-24e944b422fe",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86",
-              "uuid:5222db79-ba24-41c8-8661-0e37ca010924"
+              "uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f",
+              "uuid:7dbd23f0-8173-4dfa-91f1-53129738520f"
             ]
           },
           "properties": {
@@ -35015,14 +35032,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8",
+          "id": "uuid:79af8c69-fbc0-4aea-9756-ebbb1184de61",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6",
-              "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86"
+              "uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368",
+              "uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f"
             ]
           },
           "properties": {
@@ -35032,14 +35049,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d",
+          "id": "uuid:a7bf25eb-0ba4-4a7a-830e-0203fef8bc9c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e",
-              "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6"
+              "uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54",
+              "uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368"
             ]
           },
           "properties": {
@@ -35049,14 +35066,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866",
+          "id": "uuid:da372a4b-04a9-4960-bc1f-c1e63ca5baff",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:5222db79-ba24-41c8-8661-0e37ca010924",
-              "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e"
+              "uuid:7dbd23f0-8173-4dfa-91f1-53129738520f",
+              "uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54"
             ]
           },
           "properties": {
@@ -35066,14 +35083,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913",
+          "id": "uuid:4057e37e-7772-4407-9af6-6106a7ce3357",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6",
-              "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14"
+              "uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368",
+              "uuid:97e57f30-94e6-4871-8176-da926297232f"
             ]
           },
           "properties": {
@@ -35083,14 +35100,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b",
+          "id": "uuid:230661f6-40b6-4038-a892-c21cdc65a441",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14",
-              "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c"
+              "uuid:97e57f30-94e6-4871-8176-da926297232f",
+              "uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25"
             ]
           },
           "properties": {
@@ -35100,14 +35117,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6",
+          "id": "uuid:afabe16a-2949-435c-9660-9a6b1d76975f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c",
-              "uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e"
+              "uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25",
+              "uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54"
             ]
           },
           "properties": {
@@ -35117,14 +35134,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:5ee50574-216d-4db3-a8dc-03475bbea27c",
+          "id": "uuid:87c95736-4b67-4a77-8e60-76a309d9ea3d",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86",
-              "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780"
+              "uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f",
+              "uuid:ef3dcc76-513c-4043-980b-2764b7b341e4"
             ]
           },
           "properties": {
@@ -35134,14 +35151,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785",
+          "id": "uuid:73e00170-a8d8-4cad-8c93-75e99303786a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780",
-              "uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14"
+              "uuid:ef3dcc76-513c-4043-980b-2764b7b341e4",
+              "uuid:97e57f30-94e6-4871-8176-da926297232f"
             ]
           },
           "properties": {
@@ -35151,14 +35168,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:e2736602-61f2-467f-b050-e0a1047474af",
+          "id": "uuid:4581a51b-5bd6-4b58-bc40-91ae85534046",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:5222db79-ba24-41c8-8661-0e37ca010924",
-              "uuid:1cd91836-ea95-438b-b67f-28c261c2f494"
+              "uuid:7dbd23f0-8173-4dfa-91f1-53129738520f",
+              "uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03"
             ]
           },
           "properties": {
@@ -35168,14 +35185,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393",
+          "id": "uuid:60d9a7e8-5511-4f8f-a4d8-1609abb15d8b",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:1cd91836-ea95-438b-b67f-28c261c2f494",
-              "uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780"
+              "uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03",
+              "uuid:ef3dcc76-513c-4043-980b-2764b7b341e4"
             ]
           },
           "properties": {
@@ -35185,14 +35202,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658",
+          "id": "uuid:969851a7-72b3-406d-9d92-8e7cdd157b2f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c",
-              "uuid:1cd91836-ea95-438b-b67f-28c261c2f494"
+              "uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25",
+              "uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03"
             ]
           },
           "properties": {
@@ -35202,14 +35219,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:b4ea9b84-0468-4eea-8200-20ab2000692c",
+          "id": "uuid:c5c2dcdb-3f69-45d0-90d6-0f08ad71c7e6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6",
-              "uuid:f638776d-4ad1-4798-913d-2792c08f0a5c"
+              "uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177",
+              "uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca"
             ]
           },
           "properties": {
@@ -35219,14 +35236,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb",
+          "id": "uuid:28b19e75-23cb-4c72-ae42-0839b7f39e27",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502",
-              "uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f"
+              "uuid:cfc8b55e-1745-4943-a559-7263a49b9568",
+              "uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593"
             ]
           },
           "properties": {
@@ -35240,31 +35257,31 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   ],
   "rings": [
     {
-      "id": "uuid:e089fff6-3d26-450f-a188-139728de7269",
+      "id": "uuid:394e96e4-c335-49f4-916b-47593774cb5b",
       "type": "FeatureCollection",
       "featureType": "Ring",
       "features": [
         {
-          "id": "uuid:d16e4e15-55b5-47c3-b137-8a80665327eb",
+          "id": "uuid:c9547610-3aea-4af5-ba1c-99411fab12d6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda",
+                "ref": "uuid:4de72a54-dc6e-453b-8679-f640004b3fb9",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:2a432f54-75a3-4921-80fd-57460d162e21",
+                "ref": "uuid:2b07a965-fe9b-4500-ae99-8d577b091b51",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae",
+                "ref": "uuid:69eeb511-0d06-4dbd-83d9-329bfbf4430c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:3e360965-27fe-4850-b435-f5421bcce1b3",
+                "ref": "uuid:2c406787-a710-4ca2-a39f-487a9ac31bfc",
                 "orientation": "+"
               }
             ]
@@ -35274,26 +35291,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:354e89e5-7f63-405d-b314-f546d7bd1720",
+          "id": "uuid:b03457ab-1cbf-46ee-bc54-9778eada63d6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5",
+                "ref": "uuid:569b7961-5cd8-4c15-9d78-897da56085b2",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:3e360965-27fe-4850-b435-f5421bcce1b3",
+                "ref": "uuid:2c406787-a710-4ca2-a39f-487a9ac31bfc",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16",
+                "ref": "uuid:14e9e034-a3a4-4426-8e48-14d0ba5b4839",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:b8b43183-1e70-4972-b867-625897b10867",
+                "ref": "uuid:6c6b25f1-6a58-4995-8e9d-136a4c313ffa",
                 "orientation": "+"
               }
             ]
@@ -35303,26 +35320,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:5a103c10-44de-4942-a362-77c11bce375a",
+          "id": "uuid:8371609e-f12a-450b-8d72-119378d4e90c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:d05095be-3eb9-405d-a456-424180bbdbfd",
+                "ref": "uuid:8b738339-47ba-4e2f-941c-0b11e851343c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:b8b43183-1e70-4972-b867-625897b10867",
+                "ref": "uuid:6c6b25f1-6a58-4995-8e9d-136a4c313ffa",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0",
+                "ref": "uuid:6050a59e-4f96-44c8-af20-8fe4ab73b1af",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:66609f1f-21a9-4041-9068-cca1a38d9460",
+                "ref": "uuid:7a074a74-690b-4ca8-97b7-78b328a0651d",
                 "orientation": "+"
               }
             ]
@@ -35332,26 +35349,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:133660ca-1a23-472b-a39f-76c6bf12655d",
+          "id": "uuid:1fafe839-6460-4cd6-8f9c-451005384804",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a",
+                "ref": "uuid:848720a5-5a41-488d-ab8a-24e944b422fe",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8",
+                "ref": "uuid:79af8c69-fbc0-4aea-9756-ebbb1184de61",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d",
+                "ref": "uuid:a7bf25eb-0ba4-4a7a-830e-0203fef8bc9c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866",
+                "ref": "uuid:da372a4b-04a9-4960-bc1f-c1e63ca5baff",
                 "orientation": "-"
               }
             ]
@@ -35361,26 +35378,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:934d0add-3f15-493c-94c1-bd8b135ece56",
+          "id": "uuid:0451532d-168c-4f08-83cc-d94629b744a7",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d",
+                "ref": "uuid:a7bf25eb-0ba4-4a7a-830e-0203fef8bc9c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913",
+                "ref": "uuid:4057e37e-7772-4407-9af6-6106a7ce3357",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b",
+                "ref": "uuid:230661f6-40b6-4038-a892-c21cdc65a441",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6",
+                "ref": "uuid:afabe16a-2949-435c-9660-9a6b1d76975f",
                 "orientation": "+"
               }
             ]
@@ -35390,26 +35407,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:c47bf67e-102e-44d1-ab1b-428782d644cc",
+          "id": "uuid:8c7b5e4d-3b96-4dcf-8b35-44ea0e434206",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8",
+                "ref": "uuid:79af8c69-fbc0-4aea-9756-ebbb1184de61",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:5ee50574-216d-4db3-a8dc-03475bbea27c",
+                "ref": "uuid:87c95736-4b67-4a77-8e60-76a309d9ea3d",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785",
+                "ref": "uuid:73e00170-a8d8-4cad-8c93-75e99303786a",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913",
+                "ref": "uuid:4057e37e-7772-4407-9af6-6106a7ce3357",
                 "orientation": "-"
               }
             ]
@@ -35419,26 +35436,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:425efe55-9931-4e31-a60c-6db08cb25e8a",
+          "id": "uuid:9558f5c8-06f7-44ba-bf0b-907bc441ef83",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a",
+                "ref": "uuid:848720a5-5a41-488d-ab8a-24e944b422fe",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e2736602-61f2-467f-b050-e0a1047474af",
+                "ref": "uuid:4581a51b-5bd6-4b58-bc40-91ae85534046",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393",
+                "ref": "uuid:60d9a7e8-5511-4f8f-a4d8-1609abb15d8b",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:5ee50574-216d-4db3-a8dc-03475bbea27c",
+                "ref": "uuid:87c95736-4b67-4a77-8e60-76a309d9ea3d",
                 "orientation": "-"
               }
             ]
@@ -35448,26 +35465,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:6405a69a-a313-4334-982b-7af7b9b6e8e0",
+          "id": "uuid:35c56557-1373-4357-9002-44898436268f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866",
+                "ref": "uuid:da372a4b-04a9-4960-bc1f-c1e63ca5baff",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6",
+                "ref": "uuid:afabe16a-2949-435c-9660-9a6b1d76975f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658",
+                "ref": "uuid:969851a7-72b3-406d-9d92-8e7cdd157b2f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e2736602-61f2-467f-b050-e0a1047474af",
+                "ref": "uuid:4581a51b-5bd6-4b58-bc40-91ae85534046",
                 "orientation": "-"
               }
             ]
@@ -35477,26 +35494,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:e9c44d08-5810-4481-a843-a2a15ababe59",
+          "id": "uuid:8073b1ec-1831-4de2-84a3-81ee0f115674",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:b4ea9b84-0468-4eea-8200-20ab2000692c",
+                "ref": "uuid:c5c2dcdb-3f69-45d0-90d6-0f08ad71c7e6",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:66609f1f-21a9-4041-9068-cca1a38d9460",
+                "ref": "uuid:7a074a74-690b-4ca8-97b7-78b328a0651d",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb",
+                "ref": "uuid:28b19e75-23cb-4c72-ae42-0839b7f39e27",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:2a432f54-75a3-4921-80fd-57460d162e21",
+                "ref": "uuid:2b07a965-fe9b-4500-ae99-8d577b091b51",
                 "orientation": "-"
               }
             ]
@@ -35506,26 +35523,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:feaa1540-b6ef-46c7-93c7-9db0e20039d0",
+          "id": "uuid:f9ccef4f-1d39-4430-8ba3-4fb7ebd1c528",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16",
+                "ref": "uuid:14e9e034-a3a4-4426-8e48-14d0ba5b4839",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae",
+                "ref": "uuid:69eeb511-0d06-4dbd-83d9-329bfbf4430c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb",
+                "ref": "uuid:28b19e75-23cb-4c72-ae42-0839b7f39e27",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0",
+                "ref": "uuid:6050a59e-4f96-44c8-af20-8fe4ab73b1af",
                 "orientation": "-"
               }
             ]
@@ -35535,26 +35552,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:096e1016-ef94-4942-a234-c2b0735f3568",
+          "id": "uuid:e0452825-9a9e-4422-a3fa-21ee220c5d40",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5",
+                "ref": "uuid:569b7961-5cd8-4c15-9d78-897da56085b2",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:d05095be-3eb9-405d-a456-424180bbdbfd",
+                "ref": "uuid:8b738339-47ba-4e2f-941c-0b11e851343c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:b4ea9b84-0468-4eea-8200-20ab2000692c",
+                "ref": "uuid:c5c2dcdb-3f69-45d0-90d6-0f08ad71c7e6",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda",
+                "ref": "uuid:4de72a54-dc6e-453b-8679-f640004b3fb9",
                 "orientation": "-"
               }
             ]
@@ -35564,26 +35581,26 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:ee5d0c3a-7f69-4b1d-817e-06a0c8f837f0",
+          "id": "uuid:7bc386a9-a7de-470d-98b2-85d0db96788d",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393",
+                "ref": "uuid:60d9a7e8-5511-4f8f-a4d8-1609abb15d8b",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658",
+                "ref": "uuid:969851a7-72b3-406d-9d92-8e7cdd157b2f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b",
+                "ref": "uuid:230661f6-40b6-4038-a892-c21cdc65a441",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785",
+                "ref": "uuid:73e00170-a8d8-4cad-8c93-75e99303786a",
                 "orientation": "-"
               }
             ]
@@ -35597,19 +35614,19 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   ],
   "faces": [
     {
-      "id": "uuid:5e42ed7a-a9da-44bb-86fe-0cc1feff1f3d",
+      "id": "uuid:a78b491a-9cf9-4dc8-b195-519601b38cff",
       "type": "FeatureCollection",
       "featureType": "Face",
       "features": [
         {
-          "id": "uuid:29ecec10-c621-4873-ab17-a45cb95ee321",
+          "id": "uuid:2ca00a69-cccb-408f-924a-8cb54ddb9fe8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:d16e4e15-55b5-47c3-b137-8a80665327eb",
+                "ref": "uuid:c9547610-3aea-4af5-ba1c-99411fab12d6",
                 "orientation": "+"
               }
             ]
@@ -35625,14 +35642,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:f8aa06c7-3c40-4dd9-a029-0b67a4fa0280",
+          "id": "uuid:88fedfec-2cb7-41f7-8948-dc5a5a2ecf55",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:354e89e5-7f63-405d-b314-f546d7bd1720",
+                "ref": "uuid:b03457ab-1cbf-46ee-bc54-9778eada63d6",
                 "orientation": "+"
               }
             ]
@@ -35648,18 +35665,18 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:abedfbd9-9637-4c78-acba-9dc9df413b24",
+          "id": "uuid:3b3cd92a-5778-408d-8b6f-04b390c7f6fc",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:5a103c10-44de-4942-a362-77c11bce375a",
+                "ref": "uuid:8371609e-f12a-450b-8d72-119378d4e90c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:133660ca-1a23-472b-a39f-76c6bf12655d",
+                "ref": "uuid:1fafe839-6460-4cd6-8f9c-451005384804",
                 "orientation": "+"
               }
             ]
@@ -35670,19 +35687,19 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
               2.166134286404929e-06,
               1.5653513048356715e-06
             ],
-            "area": 47.982,
+            "area": 63.982,
             "description": "East-facing boundary face, [Cube with Protrusion]"
           }
         },
         {
-          "id": "uuid:9784caee-d2dd-4908-9204-14a4280bd726",
+          "id": "uuid:4f371f0a-c9e0-4f4e-bdcc-d74d495b434f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:934d0add-3f15-493c-94c1-bd8b135ece56",
+                "ref": "uuid:0451532d-168c-4f08-83cc-d94629b744a7",
                 "orientation": "+"
               }
             ]
@@ -35698,14 +35715,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:8ac99859-4d85-41e6-a842-0fc7aebec301",
+          "id": "uuid:113f902b-349b-4e42-98ac-65dc5bfc1e8d",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:c47bf67e-102e-44d1-ab1b-428782d644cc",
+                "ref": "uuid:8c7b5e4d-3b96-4dcf-8b35-44ea0e434206",
                 "orientation": "+"
               }
             ]
@@ -35721,14 +35738,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:472defbe-a781-4b74-8265-5d5cabab5582",
+          "id": "uuid:b4afb1e1-8688-4be8-9e58-e0fe573ba896",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:425efe55-9931-4e31-a60c-6db08cb25e8a",
+                "ref": "uuid:9558f5c8-06f7-44ba-bf0b-907bc441ef83",
                 "orientation": "+"
               }
             ]
@@ -35744,14 +35761,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:d4211a73-0d4b-432d-851d-82c42977ae91",
+          "id": "uuid:e67afa7f-cf0c-4201-a066-9c5a23a961fa",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:6405a69a-a313-4334-982b-7af7b9b6e8e0",
+                "ref": "uuid:35c56557-1373-4357-9002-44898436268f",
                 "orientation": "+"
               }
             ]
@@ -35767,14 +35784,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:55e9c1cc-0f84-47c9-af2d-97cd017ee0fc",
+          "id": "uuid:c8d5a816-1012-40de-b696-aacf763e9be4",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:e9c44d08-5810-4481-a843-a2a15ababe59",
+                "ref": "uuid:8073b1ec-1831-4de2-84a3-81ee0f115674",
                 "orientation": "+"
               }
             ]
@@ -35790,14 +35807,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:40fde941-9b67-4d4e-9922-051db969d587",
+          "id": "uuid:da87be42-6980-4503-925d-a61b27eded57",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:feaa1540-b6ef-46c7-93c7-9db0e20039d0",
+                "ref": "uuid:f9ccef4f-1d39-4430-8ba3-4fb7ebd1c528",
                 "orientation": "+"
               }
             ]
@@ -35813,14 +35830,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:f1dafb5b-606d-412b-993d-8da6ce2a39e6",
+          "id": "uuid:5c11a64f-3b16-45b1-97b5-23e825d38402",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:096e1016-ef94-4942-a234-c2b0735f3568",
+                "ref": "uuid:e0452825-9a9e-4422-a3fa-21ee220c5d40",
                 "orientation": "+"
               }
             ]
@@ -35836,14 +35853,14 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
           }
         },
         {
-          "id": "uuid:6790c7df-a754-49ca-b45a-8c70b8fe409d",
+          "id": "uuid:1de8896f-a293-4c4b-90f6-3670fe0cd761",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:ee5d0c3a-7f69-4b1d-817e-06a0c8f837f0",
+                "ref": "uuid:7bc386a9-a7de-470d-98b2-85d0db96788d",
                 "orientation": "+"
               }
             ]
@@ -35863,59 +35880,59 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   ],
   "shells": [
     {
-      "id": "uuid:7dca4428-0ce0-4082-8df8-78e7f1c760bb",
+      "id": "uuid:08f3c7cd-4b9b-4bdd-a77f-1032c29bd3be",
       "type": "FeatureCollection",
       "featureType": "Shell",
       "features": [
         {
-          "id": "uuid:9ac0d493-ba47-446b-b697-7099fec4f4bd",
+          "id": "uuid:c1c50d16-4ae4-4b00-8df3-169a51b37aad",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:29ecec10-c621-4873-ab17-a45cb95ee321",
+                "ref": "uuid:2ca00a69-cccb-408f-924a-8cb54ddb9fe8",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f8aa06c7-3c40-4dd9-a029-0b67a4fa0280",
+                "ref": "uuid:88fedfec-2cb7-41f7-8948-dc5a5a2ecf55",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:abedfbd9-9637-4c78-acba-9dc9df413b24",
+                "ref": "uuid:3b3cd92a-5778-408d-8b6f-04b390c7f6fc",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:9784caee-d2dd-4908-9204-14a4280bd726",
+                "ref": "uuid:4f371f0a-c9e0-4f4e-bdcc-d74d495b434f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8ac99859-4d85-41e6-a842-0fc7aebec301",
+                "ref": "uuid:113f902b-349b-4e42-98ac-65dc5bfc1e8d",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:472defbe-a781-4b74-8265-5d5cabab5582",
+                "ref": "uuid:b4afb1e1-8688-4be8-9e58-e0fe573ba896",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:d4211a73-0d4b-432d-851d-82c42977ae91",
+                "ref": "uuid:e67afa7f-cf0c-4201-a066-9c5a23a961fa",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:55e9c1cc-0f84-47c9-af2d-97cd017ee0fc",
+                "ref": "uuid:c8d5a816-1012-40de-b696-aacf763e9be4",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:40fde941-9b67-4d4e-9922-051db969d587",
+                "ref": "uuid:da87be42-6980-4503-925d-a61b27eded57",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f1dafb5b-606d-412b-993d-8da6ce2a39e6",
+                "ref": "uuid:5c11a64f-3b16-45b1-97b5-23e825d38402",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6790c7df-a754-49ca-b45a-8c70b8fe409d",
+                "ref": "uuid:1de8896f-a293-4c4b-90f6-3670fe0cd761",
                 "orientation": "+"
               }
             ]
@@ -35929,19 +35946,19 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
   ],
   "solids": [
     {
-      "id": "uuid:be39937f-9c37-4438-abc3-637ca1ce91eb",
+      "id": "uuid:53011530-7534-4cc4-b4cb-21be6a4ccea7",
       "type": "FeatureCollection",
       "featureType": "Solid",
       "features": [
         {
-          "id": "uuid:c961acbd-5816-48af-a288-bc5bbaeaa5da",
+          "id": "uuid:ae57392f-b8f3-412f-bb7a-351a39659606",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:9ac0d493-ba47-446b-b697-7099fec4f4bd",
+                "ref": "uuid:c1c50d16-4ae4-4b00-8df3-169a51b37aad",
                 "orientation": "+"
               }
             ]
@@ -35979,260 +35996,260 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866> a geojson:Feature ;
+<uuid:14e9e034-a3a4-4426-8e48-14d0ba5b4839> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:5222db79-ba24-41c8-8661-0e37ca010924> <uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e> ) ] .
+            topo:relatedFeatures ( <uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b> <uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd> ) ] .
 
-<uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8> a geojson:Feature ;
+<uuid:230661f6-40b6-4038-a892-c21cdc65a441> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6> <uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86> ) ] .
+            topo:relatedFeatures ( <uuid:97e57f30-94e6-4871-8176-da926297232f> <uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25> ) ] .
 
-<uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16> a geojson:Feature ;
+<uuid:28b19e75-23cb-4c72-ae42-0839b7f39e27> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07> <uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7> ) ] .
+            topo:relatedFeatures ( <uuid:cfc8b55e-1745-4943-a559-7263a49b9568> <uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593> ) ] .
 
-<uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913> a geojson:Feature ;
+<uuid:2b07a965-fe9b-4500-ae99-8d577b091b51> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6> <uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14> ) ] .
+            topo:relatedFeatures ( <uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177> <uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593> ) ] .
 
-<uuid:2a432f54-75a3-4921-80fd-57460d162e21> a geojson:Feature ;
+<uuid:2c406787-a710-4ca2-a39f-487a9ac31bfc> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6> <uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f> ) ] .
+            topo:relatedFeatures ( <uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b> <uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6> ) ] .
 
-<uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb> a geojson:Feature ;
+<uuid:4057e37e-7772-4407-9af6-6106a7ce3357> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502> <uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f> ) ] .
+            topo:relatedFeatures ( <uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368> <uuid:97e57f30-94e6-4871-8176-da926297232f> ) ] .
 
-<uuid:3e360965-27fe-4850-b435-f5421bcce1b3> a geojson:Feature ;
+<uuid:4581a51b-5bd6-4b58-bc40-91ae85534046> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07> <uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe> ) ] .
+            topo:relatedFeatures ( <uuid:7dbd23f0-8173-4dfa-91f1-53129738520f> <uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03> ) ] .
 
-<uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6> a geojson:Feature ;
+<uuid:4de72a54-dc6e-453b-8679-f640004b3fb9> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c> <uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e> ) ] .
+            topo:relatedFeatures ( <uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6> <uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177> ) ] .
 
-<uuid:5ee50574-216d-4db3-a8dc-03475bbea27c> a geojson:Feature ;
+<uuid:569b7961-5cd8-4c15-9d78-897da56085b2> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86> <uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780> ) ] .
+            topo:relatedFeatures ( <uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a> <uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6> ) ] .
 
-<uuid:66609f1f-21a9-4041-9068-cca1a38d9460> a geojson:Feature ;
+<uuid:6050a59e-4f96-44c8-af20-8fe4ab73b1af> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502> <uuid:f638776d-4ad1-4798-913d-2792c08f0a5c> ) ] .
+            topo:relatedFeatures ( <uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd> <uuid:cfc8b55e-1745-4943-a559-7263a49b9568> ) ] .
 
-<uuid:69dddf2b-c94e-4f0a-98c0-d83f622126ca> a topo:Edge,
+<uuid:60d9a7e8-5511-4f8f-a4d8-1609abb15d8b> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03> <uuid:ef3dcc76-513c-4043-980b-2764b7b341e4> ) ] .
+
+<uuid:69eeb511-0d06-4dbd-83d9-329bfbf4430c> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593> <uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b> ) ] .
+
+<uuid:6c6b25f1-6a58-4995-8e9d-136a4c313ffa> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd> <uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a> ) ] .
+
+<uuid:73e00170-a8d8-4cad-8c93-75e99303786a> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:ef3dcc76-513c-4043-980b-2764b7b341e4> <uuid:97e57f30-94e6-4871-8176-da926297232f> ) ] .
+
+<uuid:79af8c69-fbc0-4aea-9756-ebbb1184de61> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368> <uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f> ) ] .
+
+<uuid:7a074a74-690b-4ca8-97b7-78b328a0651d> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:cfc8b55e-1745-4943-a559-7263a49b9568> <uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca> ) ] .
+
+<uuid:848720a5-5a41-488d-ab8a-24e944b422fe> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f> <uuid:7dbd23f0-8173-4dfa-91f1-53129738520f> ) ] .
+
+<uuid:87c95736-4b67-4a77-8e60-76a309d9ea3d> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f> <uuid:ef3dcc76-513c-4043-980b-2764b7b341e4> ) ] .
+
+<uuid:8b738339-47ba-4e2f-941c-0b11e851343c> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca> <uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a> ) ] .
+
+<uuid:969851a7-72b3-406d-9d92-8e7cdd157b2f> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25> <uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03> ) ] .
+
+<uuid:a1cff144-27d7-46e8-9d19-2957c0d14193> a topo:Edge,
         geojson:FeatureCollection ;
-    geojson:features <uuid:0d971cf7-3ca5-48a4-86a2-7fcd094f3866>,
-        <uuid:187a71f4-78b5-4590-a505-ac9f1893c8b8>,
-        <uuid:25e122a6-a42f-4fcf-9ba2-4b6d8cac4c16>,
-        <uuid:2992bb6a-8ec5-4224-a1e8-ea28a5585913>,
-        <uuid:2a432f54-75a3-4921-80fd-57460d162e21>,
-        <uuid:2e7af4a9-949d-45d9-a3fd-35c4b24baffb>,
-        <uuid:3e360965-27fe-4850-b435-f5421bcce1b3>,
-        <uuid:4f742e96-9fdb-4782-b3c9-411991c3c7e6>,
-        <uuid:5ee50574-216d-4db3-a8dc-03475bbea27c>,
-        <uuid:66609f1f-21a9-4041-9068-cca1a38d9460>,
-        <uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785>,
-        <uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae>,
-        <uuid:b4ea9b84-0468-4eea-8200-20ab2000692c>,
-        <uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393>,
-        <uuid:b8b43183-1e70-4972-b867-625897b10867>,
-        <uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658>,
-        <uuid:d05095be-3eb9-405d-a456-424180bbdbfd>,
-        <uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0>,
-        <uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b>,
-        <uuid:e2736602-61f2-467f-b050-e0a1047474af>,
-        <uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a>,
-        <uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5>,
-        <uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda>,
-        <uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d> .
+    geojson:features <uuid:14e9e034-a3a4-4426-8e48-14d0ba5b4839>,
+        <uuid:230661f6-40b6-4038-a892-c21cdc65a441>,
+        <uuid:28b19e75-23cb-4c72-ae42-0839b7f39e27>,
+        <uuid:2b07a965-fe9b-4500-ae99-8d577b091b51>,
+        <uuid:2c406787-a710-4ca2-a39f-487a9ac31bfc>,
+        <uuid:4057e37e-7772-4407-9af6-6106a7ce3357>,
+        <uuid:4581a51b-5bd6-4b58-bc40-91ae85534046>,
+        <uuid:4de72a54-dc6e-453b-8679-f640004b3fb9>,
+        <uuid:569b7961-5cd8-4c15-9d78-897da56085b2>,
+        <uuid:6050a59e-4f96-44c8-af20-8fe4ab73b1af>,
+        <uuid:60d9a7e8-5511-4f8f-a4d8-1609abb15d8b>,
+        <uuid:69eeb511-0d06-4dbd-83d9-329bfbf4430c>,
+        <uuid:6c6b25f1-6a58-4995-8e9d-136a4c313ffa>,
+        <uuid:73e00170-a8d8-4cad-8c93-75e99303786a>,
+        <uuid:79af8c69-fbc0-4aea-9756-ebbb1184de61>,
+        <uuid:7a074a74-690b-4ca8-97b7-78b328a0651d>,
+        <uuid:848720a5-5a41-488d-ab8a-24e944b422fe>,
+        <uuid:87c95736-4b67-4a77-8e60-76a309d9ea3d>,
+        <uuid:8b738339-47ba-4e2f-941c-0b11e851343c>,
+        <uuid:969851a7-72b3-406d-9d92-8e7cdd157b2f>,
+        <uuid:a7bf25eb-0ba4-4a7a-830e-0203fef8bc9c>,
+        <uuid:afabe16a-2949-435c-9660-9a6b1d76975f>,
+        <uuid:c5c2dcdb-3f69-45d0-90d6-0f08ad71c7e6>,
+        <uuid:da372a4b-04a9-4960-bc1f-c1e63ca5baff> .
 
-<uuid:8b026a49-a942-4c60-b6f9-1eec9a9e2785> a geojson:Feature ;
+<uuid:a7bf25eb-0ba4-4a7a-830e-0203fef8bc9c> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780> <uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14> ) ] .
+            topo:relatedFeatures ( <uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54> <uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368> ) ] .
 
-<uuid:a1fddc15-2a57-416f-b5d7-45e78b496dae> a geojson:Feature ;
+<uuid:afabe16a-2949-435c-9660-9a6b1d76975f> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f> <uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07> ) ] .
+            topo:relatedFeatures ( <uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25> <uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54> ) ] .
 
-<uuid:b4ea9b84-0468-4eea-8200-20ab2000692c> a geojson:Feature ;
+<uuid:c5c2dcdb-3f69-45d0-90d6-0f08ad71c7e6> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6> <uuid:f638776d-4ad1-4798-913d-2792c08f0a5c> ) ] .
+            topo:relatedFeatures ( <uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177> <uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca> ) ] .
 
-<uuid:b6a97f35-fbf7-43aa-b98f-4d117c5ce393> a geojson:Feature ;
+<uuid:da372a4b-04a9-4960-bc1f-c1e63ca5baff> a geojson:Feature ;
     geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:1cd91836-ea95-438b-b67f-28c261c2f494> <uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780> ) ] .
+            topo:relatedFeatures ( <uuid:7dbd23f0-8173-4dfa-91f1-53129738520f> <uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54> ) ] .
 
-<uuid:b8b43183-1e70-4972-b867-625897b10867> a geojson:Feature ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7> <uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d> ) ] .
-
-<uuid:c6c71c92-9daf-41a5-a2ab-c1b63166d658> a geojson:Feature ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c> <uuid:1cd91836-ea95-438b-b67f-28c261c2f494> ) ] .
-
-<uuid:d05095be-3eb9-405d-a456-424180bbdbfd> a geojson:Feature ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:f638776d-4ad1-4798-913d-2792c08f0a5c> <uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d> ) ] .
-
-<uuid:da652fb9-5d0b-4edc-9b2b-9d34c7c705c0> a geojson:Feature ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7> <uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502> ) ] .
-
-<uuid:df7143d2-41f4-4252-8d6b-9fd0ee24088b> a geojson:Feature ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14> <uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c> ) ] .
-
-<uuid:e2736602-61f2-467f-b050-e0a1047474af> a geojson:Feature ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:5222db79-ba24-41c8-8661-0e37ca010924> <uuid:1cd91836-ea95-438b-b67f-28c261c2f494> ) ] .
-
-<uuid:e7e434cb-2492-4e3d-a77e-3b587dfeb89a> a geojson:Feature ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86> <uuid:5222db79-ba24-41c8-8661-0e37ca010924> ) ] .
-
-<uuid:e7fc710e-1cef-462e-ba2d-a95a72857ce5> a geojson:Feature ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d> <uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe> ) ] .
-
-<uuid:ec64d4a3-dd60-4f9b-8336-b08c616ffcda> a geojson:Feature ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe> <uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6> ) ] .
-
-<uuid:f18f9ce4-3ba9-412e-bd63-05ec6c9c808d> a geojson:Feature ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e> <uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6> ) ] .
-
-<uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044506e+05 6.471242e+06 2.05e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.189062e+01 2.05e+01 ) ] .
-
-<uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044407e+05 6.471232e+06 2.05e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159895e+02 -3.189071e+01 2.05e+01 ) ] .
-
-<uuid:1cd91836-ea95-438b-b67f-28c261c2f494> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044426e+05 6.471234e+06 1.85e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.18907e+01 1.85e+01 ) ] .
-
-<uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044426e+05 6.471234e+06 1.25e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.18907e+01 1.25e+01 ) ] .
-
-<uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044407e+05 6.471242e+06 2.05e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159895e+02 -3.189062e+01 2.05e+01 ) ] .
-
-<uuid:5222db79-ba24-41c8-8661-0e37ca010924> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044506e+05 6.471234e+06 1.85e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.18907e+01 1.85e+01 ) ] .
-
-<uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044506e+05 6.47124e+06 1.85e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.189064e+01 1.85e+01 ) ] .
-
-<uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044426e+05 6.47124e+06 1.25e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.189064e+01 1.25e+01 ) ] .
-
-<uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044506e+05 6.471232e+06 2.05e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.189072e+01 2.05e+01 ) ] .
-
-<uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044506e+05 6.47124e+06 1.25e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.189064e+01 1.25e+01 ) ] .
-
-<uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044506e+05 6.471234e+06 1.25e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.18907e+01 1.25e+01 ) ] .
-
-<uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044426e+05 6.47124e+06 1.85e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.189064e+01 1.85e+01 ) ] .
-
-<uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d> a <file:///github/workspace/BoundaryMark>,
+<uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044506e+05 6.471242e+06 1.05e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
     geojson:geometry [ a geojson:Point ;
             geojson:coordinates ( 1.159896e+02 -3.189062e+01 1.05e+01 ) ] .
 
-<uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6> a <file:///github/workspace/BoundaryMark>,
+<uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044407e+05 6.471232e+06 1.05e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
+            geojson:coordinates ( 4.044506e+05 6.47124e+06 1.85e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
     geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159895e+02 -3.189071e+01 1.05e+01 ) ] .
+            geojson:coordinates ( 1.159896e+02 -3.189064e+01 1.85e+01 ) ] .
 
-<uuid:f638776d-4ad1-4798-913d-2792c08f0a5c> a <file:///github/workspace/BoundaryMark>,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.044506e+05 6.471232e+06 1.05e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159896e+02 -3.189072e+01 1.05e+01 ) ] .
-
-<uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe> a <file:///github/workspace/BoundaryMark>,
+<uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044407e+05 6.471242e+06 1.05e+01 ) ] ;
-    dct:time "2026-05-18T04:41:17.802302+00:00" ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
     geojson:geometry [ a geojson:Point ;
             geojson:coordinates ( 1.159895e+02 -3.189062e+01 1.05e+01 ) ] .
 
+<uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044407e+05 6.471242e+06 2.05e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159895e+02 -3.189062e+01 2.05e+01 ) ] .
+
+<uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044426e+05 6.471234e+06 1.85e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159896e+02 -3.18907e+01 1.85e+01 ) ] .
+
+<uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044506e+05 6.471234e+06 1.25e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159896e+02 -3.18907e+01 1.25e+01 ) ] .
+
+<uuid:7dbd23f0-8173-4dfa-91f1-53129738520f> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044506e+05 6.471234e+06 1.85e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159896e+02 -3.18907e+01 1.85e+01 ) ] .
+
+<uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044506e+05 6.471242e+06 2.05e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159896e+02 -3.189062e+01 2.05e+01 ) ] .
+
+<uuid:97e57f30-94e6-4871-8176-da926297232f> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044426e+05 6.47124e+06 1.25e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159896e+02 -3.189064e+01 1.25e+01 ) ] .
+
+<uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044506e+05 6.471232e+06 1.05e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159896e+02 -3.189072e+01 1.05e+01 ) ] .
+
+<uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044407e+05 6.471232e+06 2.05e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159895e+02 -3.189071e+01 2.05e+01 ) ] .
+
+<uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044506e+05 6.47124e+06 1.25e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159896e+02 -3.189064e+01 1.25e+01 ) ] .
+
+<uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044426e+05 6.471234e+06 1.25e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159896e+02 -3.18907e+01 1.25e+01 ) ] .
+
+<uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044407e+05 6.471232e+06 1.05e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159895e+02 -3.189071e+01 1.05e+01 ) ] .
+
+<uuid:cfc8b55e-1745-4943-a559-7263a49b9568> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044506e+05 6.471232e+06 2.05e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159896e+02 -3.189072e+01 2.05e+01 ) ] .
+
+<uuid:ef3dcc76-513c-4043-980b-2764b7b341e4> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.044426e+05 6.47124e+06 1.85e+01 ) ] ;
+    dct:time "2026-05-19T03:52:52.187308+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.159896e+02 -3.189064e+01 1.85e+01 ) ] .
+
 [] a geojson:FeatureCollection ;
     time: [ ] ;
-    topo:edges ( <uuid:69dddf2b-c94e-4f0a-98c0-d83f622126ca> ) ;
+    topo:edges ( <uuid:a1cff144-27d7-46e8-9d19-2957c0d14193> ) ;
     topo:faces ( [ a geojson:FeatureCollection ;
                 geojson:features [ a geojson:Feature ],
                     [ a geojson:Feature ],
@@ -36247,22 +36264,22 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
                     [ a geojson:Feature ] ] ) ;
     topo:points ( [ a geojson:FeatureCollection ;
                 geojson:collectionFeatureType "CadastralMark" ;
-                geojson:features <uuid:00668ea1-fb8f-4f2a-a9c1-f4d4a13cd7d7>,
-                    <uuid:1af22cd6-c241-4cd2-bdd5-e6e45ff0518f>,
-                    <uuid:1cd91836-ea95-438b-b67f-28c261c2f494>,
-                    <uuid:303d015d-e6c9-46f0-8dd9-1953ec5ca06c>,
-                    <uuid:4ac5232b-b2d2-432c-b047-7df2c3cb3c07>,
-                    <uuid:5222db79-ba24-41c8-8661-0e37ca010924>,
-                    <uuid:62eed8d4-ef4a-4727-9cc3-f9701f796b86>,
-                    <uuid:67e37eb9-ab2e-4c5e-abce-7ce1ca3acd14>,
-                    <uuid:a1969f57-01b3-4f1c-917f-e1cc05efb502>,
-                    <uuid:a1cadc18-0ede-4146-b5c6-f2094d3002d6>,
-                    <uuid:af6ce8d8-a428-4f7c-8de5-4867cdf7882e>,
-                    <uuid:c41396dd-24b4-4a99-9d29-2b793bdb3780>,
-                    <uuid:c9d13baf-25cc-4165-be0c-feb8382f6f5d>,
-                    <uuid:dde7c070-c23a-4240-923f-6601f1b2bcd6>,
-                    <uuid:f638776d-4ad1-4798-913d-2792c08f0a5c>,
-                    <uuid:fba8e15d-9f2a-4b68-8e12-567728d164fe> ] ) ;
+                geojson:features <uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a>,
+                    <uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f>,
+                    <uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6>,
+                    <uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b>,
+                    <uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03>,
+                    <uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54>,
+                    <uuid:7dbd23f0-8173-4dfa-91f1-53129738520f>,
+                    <uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd>,
+                    <uuid:97e57f30-94e6-4871-8176-da926297232f>,
+                    <uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca>,
+                    <uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593>,
+                    <uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368>,
+                    <uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25>,
+                    <uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177>,
+                    <uuid:cfc8b55e-1745-4943-a559-7263a49b9568>,
+                    <uuid:ef3dcc76-513c-4043-980b-2764b7b341e4> ] ) ;
     topo:rings ( [ a geojson:FeatureCollection ;
                 geojson:features [ a geojson:Feature ],
                     [ a geojson:Feature ],

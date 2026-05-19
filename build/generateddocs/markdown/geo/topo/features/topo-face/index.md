@@ -54,9 +54,9 @@ edge and face geometry are null (topology-only).
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.0,
           10.0,
-          3.0
+          0.0,
+          0.0
         ]
       },
       "properties": null
@@ -67,9 +67,9 @@ edge and face geometry are null (topology-only).
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.0,
           10.0,
-          6.0
+          10.0,
+          0.0
         ]
       },
       "properties": null
@@ -80,9 +80,9 @@ edge and face geometry are null (topology-only).
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.0,
-          2.0,
-          6.0
+          10.0,
+          10.0,
+          10.0
         ]
       },
       "properties": null
@@ -94,8 +94,8 @@ edge and face geometry are null (topology-only).
         "type": "Point",
         "coordinates": [
           18.0,
-          2.0,
-          3.0
+          0.0,
+          10.0
         ]
       },
       "properties": null
@@ -103,7 +103,7 @@ edge and face geometry are null (topology-only).
   ],
   "edges": [
     {
-      "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+      "id": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -114,11 +114,11 @@ edge and face geometry are null (topology-only).
         ]
       },
       "properties": {
-        "length": 3.0
+        "length": 10.0
       }
     },
     {
-      "id": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
+      "id": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -129,11 +129,11 @@ edge and face geometry are null (topology-only).
         ]
       },
       "properties": {
-        "length": 8.0
+        "length": 10.0
       }
     },
     {
-      "id": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
+      "id": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -144,11 +144,11 @@ edge and face geometry are null (topology-only).
         ]
       },
       "properties": {
-        "length": 3.0
+        "length": 10.0
       }
     },
     {
-      "id": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
+      "id": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -159,38 +159,52 @@ edge and face geometry are null (topology-only).
         ]
       },
       "properties": {
-        "length": 8.0
+        "length": 10.0
+      }
+    }
+  ],
+  "rings": [
+    {
+      "id": "uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Ring",
+        "directed_references": [
+          {
+            "ref": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "circumference": 40.00
       }
     }
   ],
   "faces": [
     {
-      "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+      "id": "uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b",
       "type": "Feature",
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
-            "type": "Ring",
-            "directed_references": [
-              {
-                "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
-                "orientation": "+"
-              }
-            ]
+            "ref": "uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8",
+            "orientation": "+"
           }
         ]
       },
@@ -198,9 +212,10 @@ edge and face geometry are null (topology-only).
         "normal": [
           1.0,
           0.0,
-          -0.0
+          0.0
         ],
-        "area": 24.0
+        "area": 100.0,
+        "description": "East-facing boundary face, [Cube]"
       }
     }
   ]
@@ -221,9 +236,9 @@ edge and face geometry are null (topology-only).
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.0,
           10.0,
-          3.0
+          0.0,
+          0.0
         ]
       },
       "properties": null
@@ -234,9 +249,9 @@ edge and face geometry are null (topology-only).
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.0,
           10.0,
-          6.0
+          10.0,
+          0.0
         ]
       },
       "properties": null
@@ -247,9 +262,9 @@ edge and face geometry are null (topology-only).
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.0,
-          2.0,
-          6.0
+          10.0,
+          10.0,
+          10.0
         ]
       },
       "properties": null
@@ -261,8 +276,8 @@ edge and face geometry are null (topology-only).
         "type": "Point",
         "coordinates": [
           18.0,
-          2.0,
-          3.0
+          0.0,
+          10.0
         ]
       },
       "properties": null
@@ -270,7 +285,7 @@ edge and face geometry are null (topology-only).
   ],
   "edges": [
     {
-      "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+      "id": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -281,11 +296,11 @@ edge and face geometry are null (topology-only).
         ]
       },
       "properties": {
-        "length": 3.0
+        "length": 10.0
       }
     },
     {
-      "id": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
+      "id": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -296,11 +311,11 @@ edge and face geometry are null (topology-only).
         ]
       },
       "properties": {
-        "length": 8.0
+        "length": 10.0
       }
     },
     {
-      "id": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
+      "id": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -311,11 +326,11 @@ edge and face geometry are null (topology-only).
         ]
       },
       "properties": {
-        "length": 3.0
+        "length": 10.0
       }
     },
     {
-      "id": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
+      "id": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -326,7 +341,135 @@ edge and face geometry are null (topology-only).
         ]
       },
       "properties": {
-        "length": 8.0
+        "length": 10.0
+      }
+    }
+  ],
+  "rings": [
+    {
+      "id": "uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Ring",
+        "directed_references": [
+          {
+            "ref": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "circumference": 40.0
+      }
+    }
+  ],
+  "faces": [
+    {
+      "id": "uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "area": 100.0,
+        "description": "East-facing boundary face, [Cube]"
+      }
+    }
+  ]
+}
+```
+
+#### ttl
+```ttl
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
+
+<uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b> a geojson:Feature ;
+    geojson:topology [ a topo:Face ;
+            topo:directedReferences ( [ topo:orientation "+" ;
+                        topo:ref "uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8" ] ) ] .
+
+<uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8> a geojson:Feature ;
+    geojson:topology [ a topo:Ring ;
+            topo:directedReferences ( [ topo:orientation "+" ;
+                        topo:ref "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:23641631-470f-4c4b-981d-23ccb35d6a51" ] ) ] .
+
+[] a geojson:FeatureCollection ;
+    topo:faces ( <uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b> ) ;
+    topo:rings ( <uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8> ) .
+
+
+```
+
+
+### Simple Face (4-edge rectangular face)
+A Face feature with a single outer Ring containing four oriented Edge references.
+The Ring feature is referenced from the Face via directed_references. All edges are
+traversed in the '+' (forward) direction, closing the loop. Face geometry is null —
+coordinates are derived from the referenced edges and points.
+
+#### json
+```json
+{
+  "type": "FeatureCollection",
+  "features": [],
+  "rings": [
+    {
+      "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Ring",
+        "directed_references": [
+          {
+            "ref": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "circumference": 40.0
       }
     }
   ],
@@ -337,27 +480,10 @@ edge and face geometry are null (topology-only).
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
-            "type": "Ring",
-            "directed_references": [
-              {
-                "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
-                "orientation": "+"
-              }
-            ]
+            "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+            "orientation": "+"
           }
         ]
       },
@@ -365,9 +491,74 @@ edge and face geometry are null (topology-only).
         "normal": [
           1.0,
           0.0,
-          -0.0
+          0.0
         ],
-        "area": 24.0
+        "area": 100.0
+      }
+    }
+  ]
+}
+
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/context.jsonld",
+  "type": "FeatureCollection",
+  "features": [],
+  "rings": [
+    {
+      "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Ring",
+        "directed_references": [
+          {
+            "ref": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "circumference": 40.0
+      }
+    }
+  ],
+  "faces": [
+    {
+      "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "area": 100.0
       }
     }
   ]
@@ -382,65 +573,98 @@ edge and face geometry are null (topology-only).
 
 <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> a geojson:Feature ;
     geojson:topology [ a topo:Face ;
-            topo:rings ( [ a topo:Ring ;
-                        topo:directedReferences ( [ topo:orientation "+" ;
-                                    topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> ] ) ] ) ] .
+            topo:directedReferences ( [ topo:orientation "+" ;
+                        topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] ) ] .
+
+<uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
+    geojson:topology [ a topo:Ring ;
+            topo:directedReferences ( [ topo:orientation "+" ;
+                        topo:ref "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:23641631-470f-4c4b-981d-23ccb35d6a51" ] ) ] .
 
 [] a geojson:FeatureCollection ;
-    topo:faces ( <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ) .
+    topo:faces ( <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ) ;
+    topo:rings ( <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ) .
 
 
 ```
 
 
-### Simple Face (4-edge rectangular face)
-A Face feature with a single outer Ring containing four oriented Edge references
-in directed_references. All edges are traversed in the '+' (forward) direction,
-closing the loop. geometry is null — coordinates are derived from the referenced edges and points.
+### Face with 6 edges and mixed orientations
+A hexagonal-shaped Face with 6 edges in its outer Ring directed_references. Some edges are
+shared with adjacent faces and therefore appear with '-' (reverse) orientation,
+reflecting the shared boundary convention.
 
 #### json
 ```json
 {
-  "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
-  "type": "Feature",
-  "geometry": null,
-  "topology": {
-    "type": "Face",
-    "rings": [
-      {
+  "type": "FeatureCollection",
+  "features": [],
+  "rings": [
+    {
+      "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
         "type": "Ring",
+        "directed_references": [
+          {
+            "ref": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:23141631-470f-4c4b-981d-23ccb35d6a51",
+            "orientation": "-"
+          },
+          {
+            "ref": "uuid:23641631-470f-4d4b-981d-23ccb35d6a51",
+            "orientation": "-"
+          }
+        ]
+      },
+      "properties": {
+        "circumference": 60.0
+      }
+    }
+  ],
+  "faces": [
+    {
+      "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
         "directed_references": [
           {
             "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
             "orientation": "+"
-          },
-          {
-            "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
-            "orientation": "+"
           }
         ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "area": 260.0
       }
-    ]
-  },
-  "properties": {
-    "normal": [
-      1.0,
-      0.0,
-      0.0
-    ],
-    "area": 24.0
-  }
+    }
+  ]
 }
 ```
 
@@ -448,43 +672,71 @@ closing the loop. geometry is null — coordinates are derived from the referenc
 ```jsonld
 {
   "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/context.jsonld",
-  "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
-  "type": "Feature",
-  "geometry": null,
-  "topology": {
-    "type": "Face",
-    "rings": [
-      {
+  "type": "FeatureCollection",
+  "features": [],
+  "rings": [
+    {
+      "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
         "type": "Ring",
+        "directed_references": [
+          {
+            "ref": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:23141631-470f-4c4b-981d-23ccb35d6a51",
+            "orientation": "-"
+          },
+          {
+            "ref": "uuid:23641631-470f-4d4b-981d-23ccb35d6a51",
+            "orientation": "-"
+          }
+        ]
+      },
+      "properties": {
+        "circumference": 60.0
+      }
+    }
+  ],
+  "faces": [
+    {
+      "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
         "directed_references": [
           {
             "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
             "orientation": "+"
-          },
-          {
-            "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
-            "orientation": "+"
           }
         ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "area": 260.0
       }
-    ]
-  },
-  "properties": {
-    "normal": [
-      1.0,
-      0.0,
-      0.0
-    ],
-    "area": 24.0
-  }
+    }
+  ]
 }
 ```
 
@@ -496,141 +748,22 @@ closing the loop. geometry is null — coordinates are derived from the referenc
 
 <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> a geojson:Feature ;
     geojson:topology [ a topo:Face ;
-            topo:rings ( [ a topo:Ring ;
-                        topo:directedReferences ( [ topo:orientation "+" ;
-                                    topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> ] ) ] ) ] .
+            topo:directedReferences ( [ topo:orientation "+" ;
+                        topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] ) ] .
 
+<uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;
+    geojson:topology [ a topo:Ring ;
+            topo:directedReferences ( [ topo:orientation "+" ;
+                        topo:ref "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a" ] [ topo:orientation "+" ;
+                        topo:ref "uuid:23641631-470f-4c4b-981d-23ccb35d6a51" ] [ topo:orientation "-" ;
+                        topo:ref "uuid:23141631-470f-4c4b-981d-23ccb35d6a51" ] [ topo:orientation "-" ;
+                        topo:ref "uuid:23641631-470f-4d4b-981d-23ccb35d6a51" ] ) ] .
 
-```
-
-
-### Face with 6 edges and mixed orientations
-An L-shaped Face with 6 edges in its outer Ring directed_references. Some edges are
-shared with adjacent faces and therefore appear with '-' (reverse) orientation,
-reflecting the shared boundary convention.
-
-#### json
-```json
-{
-  "id": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
-  "type": "Feature",
-  "geometry": null,
-  "topology": {
-    "type": "Face",
-    "rings": [
-      {
-        "type": "Ring",
-        "directed_references": [
-          {
-            "ref": "uuid:8582d9c2-6053-495a-8413-f5493691c0de",
-            "orientation": "-"
-          },
-          {
-            "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-            "orientation": "-"
-          },
-          {
-            "ref": "uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555",
-            "orientation": "-"
-          },
-          {
-            "ref": "uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5",
-            "orientation": "+"
-          }
-        ]
-      }
-    ]
-  },
-  "properties": {
-    "normal": [
-      0.0,
-      0.0,
-      1.0
-    ],
-    "area": 56.0
-  }
-}
-```
-
-#### jsonld
-```jsonld
-{
-  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/context.jsonld",
-  "id": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
-  "type": "Feature",
-  "geometry": null,
-  "topology": {
-    "type": "Face",
-    "rings": [
-      {
-        "type": "Ring",
-        "directed_references": [
-          {
-            "ref": "uuid:8582d9c2-6053-495a-8413-f5493691c0de",
-            "orientation": "-"
-          },
-          {
-            "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-            "orientation": "-"
-          },
-          {
-            "ref": "uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555",
-            "orientation": "-"
-          },
-          {
-            "ref": "uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d",
-            "orientation": "+"
-          },
-          {
-            "ref": "uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5",
-            "orientation": "+"
-          }
-        ]
-      }
-    ]
-  },
-  "properties": {
-    "normal": [
-      0.0,
-      0.0,
-      1.0
-    ],
-    "area": 56.0
-  }
-}
-```
-
-#### ttl
-```ttl
-@prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix topo: <https://purl.org/geojson/topo#> .
-
-<uuid:607a3363-3eb7-4ce6-a633-86d2e565692b> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:rings ( [ a topo:Ring ;
-                        topo:directedReferences ( [ topo:orientation "-" ;
-                                    topo:ref <uuid:8582d9c2-6053-495a-8413-f5493691c0de> ] [ topo:orientation "-" ;
-                                    topo:ref <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> ] [ topo:orientation "-" ;
-                                    topo:ref <uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d> ] [ topo:orientation "+" ;
-                                    topo:ref <uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5> ] ) ] ) ] .
+[] a geojson:FeatureCollection ;
+    topo:faces ( <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ) ;
+    topo:rings ( <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ) .
 
 
 ```
@@ -639,13 +772,12 @@ reflecting the shared boundary convention.
 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
-description: 'A Face feature: a bounded planar surface described by an outer Ring
-  and optional inner (hole) Rings. geometry must be null. Each Ring uses directed_references
-  to oriented Edge features.'
+description: 'A Face feature: a bounded planar surface referencing Ring features via
+  directed_references. geometry must be null.'
 $defs:
   testCollection:
     $anchor: testCollection
-    description: A convienence ref to a complete, testable collection objects and
+    description: A convenience ref to a complete, testable collection objects and
       references
     $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
 allOf:
@@ -658,37 +790,9 @@ allOf:
         type:
           type: string
           const: Face
-        rings:
-          type: array
-          description: Ordered list of Ring topology objects. First ring is the outer
-            boundary; any subsequent rings are inner boundaries (holes).
-          items:
-            type: object
-            required:
-            - type
-            - directed_references
-            properties:
-              type:
-                type: string
-                const: Ring
-              directed_references:
-                type: array
-                description: Ordered oriented Edge references forming the ring boundary
-                items:
-                  $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
-                minItems: 3
-                x-jsonld-id: https://purl.org/geojson/topo#directedReferences
-                x-jsonld-container: '@list'
-          minItems: 1
-          x-jsonld-id: https://purl.org/geojson/topo#rings
-          x-jsonld-container: '@list'
       required:
       - type
-      - rings
-      not:
-        required:
-        - references
-        - directed_references
+      - directed_references
       x-jsonld-type: '@id'
       x-jsonld-id: https://purl.org/geojson/vocab#topology
   required:
@@ -696,6 +800,12 @@ allOf:
 x-jsonld-extra-terms:
   Face: https://purl.org/geojson/topo#Face
   Ring: https://purl.org/geojson/topo#Ring
+  rings:
+    x-jsonld-id: https://purl.org/geojson/topo#rings
+    x-jsonld-container: '@list'
+  directed_references:
+    x-jsonld-id: https://purl.org/geojson/topo#directedReferences
+    x-jsonld-container: '@list'
   ref: '@id'
   orientation: https://purl.org/geojson/topo#orientation
 x-jsonld-prefixes:
@@ -843,29 +953,21 @@ Links to the schema:
           "@type": "@id",
           "@container": "@list"
         },
-        "ref": "topo:ref",
-        "rings": {
-          "@id": "topo:rings",
-          "@container": "@list",
-          "@context": {
-            "directed_references": {
-              "@context": {
-                "ref": {
-                  "@type": "@id",
-                  "@id": "topo:ref"
-                }
-              },
-              "@id": "topo:directedReferences",
-              "@container": "@list"
-            }
-          }
-        }
+        "ref": "topo:ref"
       },
       "@type": "@id",
       "@id": "geojson:topology"
     },
     "Face": "topo:Face",
     "Ring": "topo:Ring",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "ref": "@id",
     "orientation": "topo:orientation",
     "Arc": "geojson:Arc",
@@ -877,17 +979,9 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
-    "directed_references": {
-      "@id": "topo:directedReferences",
-      "@container": "@list"
-    },
     "Edge": "topo:Edge",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
-    "rings": {
-      "@id": "topo:rings",
-      "@container": "@list"
-    },
     "shells": {
       "@id": "topo:shells",
       "@container": "@list"

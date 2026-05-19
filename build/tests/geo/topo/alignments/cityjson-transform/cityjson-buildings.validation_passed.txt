@@ -1,0 +1,6 @@
+Validation report for ogc.geo.topo.alignments.cityjson-transform - CityJSON to TopoFeature transform
+Generated 2026-05-19T04:54:51.751507+00:00
+=== Files ===
+Using examples/twobuildings.city.json from examples
+=== End Files ===
+
