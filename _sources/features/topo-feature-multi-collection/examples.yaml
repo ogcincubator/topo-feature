@@ -102,6 +102,52 @@
       ref: examples/4-unit-up-down-with-parcel.json
 
 
+- title: Cube with Void
+  content: |
+    Self-contained collection of topology objects defining a single cube with a void, i.e. the solid contains an interior Shell. 
+    Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one solid.
+
+    <iframe
+      title="Interactive 3D viewer for Cube with Void example"
+      src="assets/topo_viewer_embed.html?example=cube-with-void.json"
+      width="100%"
+      height="400"
+      loading="lazy"
+      style="border:1px solid #ddd; border-radius:8px;"
+      sandbox="allow-scripts allow-same-origin">
+    </iframe>
+    
+    [Open the interactive viewer](assets/topo_viewer.html?example=cube-with-void.json)
+
+  base-output-filename: cube-with-void
+  snippets:
+    - language: json
+      ref: examples/cube-with-void.json
+
+
+- title: Cube with Protrusion
+  content: |
+    Self-contained collection of topology objects defining a single cube with a protrusion, i.e. a face has an interior ring. 
+    Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one solid.
+    
+    <iframe
+      title="Interactive 3D viewer for Cube with Protrusion example"
+      src="assets/topo_viewer_embed.html?example=cube-with-protrusion.json"
+      width="100%"
+      height="400"
+      loading="lazy"
+      style="border:1px solid #ddd; border-radius:8px;"
+      sandbox="allow-scripts allow-same-origin">
+    </iframe>
+    
+    [Open the interactive viewer](assets/topo_viewer.html?example=cube-with-protrusion.json)
+
+  base-output-filename: cube-with-protrusion
+  snippets:
+    - language: json
+      ref: examples/cube-with-protrusion.json
+
+
 - title: Points collection (topology nodes)
   content: |
     A minimal example showing 5 Point features used as topology nodes.
@@ -111,6 +157,7 @@
   snippets:
     - language: json
       ref: examples/points-example.json
+
 
 - title: Edges collection (LineString topology referencing points)
   content: |
