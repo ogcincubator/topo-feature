@@ -1,10 +1,12 @@
 examples:
   - title: CityJSON Cube
+    base-output-filename: cityjson-cube
     snippets:
       - language: json
         ref: examples/cube.city.json
 
   - title: CityJSON Two Buildings
+    base-output-filename: cityjson-buildings
     snippets:
       - language: json
         ref: examples/twobuildings.city.json

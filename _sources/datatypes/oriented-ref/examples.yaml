@@ -2,6 +2,7 @@
   content: |
     An oriented reference to an edge feature, used as an element of a Ring's directed_references array.
     The '+' orientation means the edge is traversed in its natural direction.
+  base-output-filename: oriented-reference
   snippets:
     - language: json
       code: |
@@ -15,6 +16,7 @@
     An oriented reference to an edge feature traversed in reverse.
     The '-' orientation means the edge is used in the opposite direction to its definition.
     This allows the same edge to serve as a boundary of two adjacent faces without duplication.
+  base-output-filename: edge-reference
   snippets:
     - language: json
       code: |
