@@ -26,13 +26,13 @@ The two styles must not coexist within the same topology object.
 
 Orientation is needed where the same primitive can be reused in opposite directions or on opposite sides of a higher-dimensional object. 
 A point has no direction, so an edge does not need to reference an “oriented point” in the same way that a ring references an oriented edge or a shell references an oriented face.
-Edges orientation is defined by an edges `startPoint` and `endPoint`. 
+Edge orientation is defined by an edges `startPoint` and `endPoint`. 
 
-Orientation is important because it defines which side of a face is inside or outside A solid.
+Orientation is important because it defines which side of a face is inside or outside a solid.
 Shells bound a solid; shells are made from faces; faces are bounded by rings; rings use edges. 
 To know whether the solid is valid, closed, and consistently formed, it is important to understand which way each face is pointing.
 
-While for 2D polygons, orientation can be optional as exterior and interior boundaries can be readily identified. 
+For 2D polygons, orientation can be optional as exterior and interior boundaries can be readily identified. 
 For 3D solids orientation should be explicit, as interpreting unoriented 3D solids is harder and riskier because reversing a face can invert the local meaning of a solid boundary.
 
 ## Referential integrity chain
