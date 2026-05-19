@@ -1,6 +1,7 @@
 # Shell Topology Feature
 
-A **Shell** is a topological feature representing a closed surface — the boundary of a volumetric Solid. It is composed of an ordered set of oriented Face references in its `directed_references` array.
+A **Shell** is a topological feature representing a closed surface — the boundary of a volumetric Solid. 
+It is composed of an ordered set of oriented Face references in its `directed_references` array.
 
 A Shell is the 3D analog of a Ring: just as a Ring closes a 2D boundary from Edges, a Shell closes a 3D boundary from Faces.
 
@@ -15,12 +16,13 @@ The `geometry` property is `null` — actual coordinates are derived from the re
 
 ## Orientation
 
-The orientation of each Face reference (`+` or `-`) indicates the outward normal direction with respect to the enclosed solid volume. Faces shared between adjacent solids appear with opposite orientations in each solid's shell.
+The orientation of each Face reference (`+` or `-`) indicates the outward normal direction with respect to the enclosed solid volume. 
+Faces shared between adjacent solids appear with opposite orientations in each solid's shell.
 
 ## Relationship to other types
 
-| Lower dimension | Shell | Higher dimension |
-|---|---|---|
+| Lower dimension                                | Shell     | Higher dimension                                     |
+|------------------------------------------------|-----------|------------------------------------------------------|
 | Face (referenced in Shell directed_references) | **Shell** | Solid (contains Shell objects in its `shells` array) |
 
 ## Example

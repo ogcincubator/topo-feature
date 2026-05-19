@@ -17,8 +17,8 @@ The `geometry` property is `null` — actual coordinates are derived from the re
 
 ## Relationship to other types
 
-| Lower dimension                                            | Face dimension                                    | Higher dimension                                              |
-|:-----------------------------------------------------------|---------------------------------------------------|:--------------------------------------------------------------|
+| Lower dimension                                            | Face dimension                                    | Higher dimension                                    |
+|:-----------------------------------------------------------|---------------------------------------------------|:----------------------------------------------------|
 | **Edge** <br/>(referenced in **Ring** directed_references) | **Face** <br/> (directed_references to **Rings**) | **Shell** <br/>(directed_references to  **Faces** ) |
 
 Note **directed references** are required for 3D, whereas 2D may use **ordered references**, and directions can be calculated if required. For 3D this calculation burden is much greater and explicit directions are required.
