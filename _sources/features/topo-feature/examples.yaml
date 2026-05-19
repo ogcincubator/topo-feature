@@ -1,5 +1,6 @@
 - title: Example of a LineString
 
+  base-output-filename: LineString
   snippets:
     - language: json
       ref: examples/linestring.json
@@ -9,6 +10,7 @@
 
 - title: Example of a Polygon
 
+  base-output-filename: Polygon
   snippets:
     - language: json
       ref: examples/polygon.json
@@ -23,6 +25,7 @@
     topology array (type LineString). geometry is null — actual coordinates are resolved
     from the referenced point features at render time.
 
+  base-output-filename: edge-feature
   snippets:
     - language: json
       ref: examples/edge-vertex-refs.json
@@ -30,12 +33,13 @@
       shacl-closure:
         - examples/points2.ttl
 
-- title: Face Feature (Ring/directed_references model)
+- title: Face Feature (directed_references to Ring features)
   content: |
-    A Face feature whose boundary is defined via Ring topology. Each Ring contains a
-    directed_references array of oriented Edge references, each with a 'ref' (Edge feature ID)
-    and 'orientation' ('+' or '-'). geometry is null — geometry is fully defined by the topology.
+    A Face feature referencing Ring features via directed_references. Each element has a
+    'ref' (Ring feature ID) and an 'orientation' ('+' or '-'). geometry is null — geometry
+    is fully defined by the topology.
 
+  base-output-filename: face-feature
   snippets:
     - language: json
       ref: examples/face-edge-refs.json

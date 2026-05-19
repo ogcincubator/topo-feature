@@ -1,5 +1,6 @@
 - title: Example referenced points (no topology)
 
+  base-output-filename: points-only
   snippets:
     - language: json
       ref: examples/example-points.json
@@ -7,6 +8,7 @@
 
 - title: Example Lines
 
+  base-output-filename: referenced-points
   snippets:
     - language: json
       ref: examples/linestring.json
@@ -14,6 +16,7 @@
 
 - title: Points Lines and Polygons
 
+  base-output-filename: referenced-point-line-polygon
   snippets:
     - language: json
       ref: example.json

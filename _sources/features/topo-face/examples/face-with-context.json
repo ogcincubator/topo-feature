@@ -9,9 +9,9 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.0,
           10.0,
-          3.0
+          0.0,
+          0.0
         ]
       },
       "properties": null
@@ -22,9 +22,9 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.0,
           10.0,
-          6.0
+          10.0,
+          0.0
         ]
       },
       "properties": null
@@ -35,9 +35,9 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.0,
-          2.0,
-          6.0
+          10.0,
+          10.0,
+          10.0
         ]
       },
       "properties": null
@@ -49,8 +49,8 @@
         "type": "Point",
         "coordinates": [
           18.0,
-          2.0,
-          3.0
+          0.0,
+          10.0
         ]
       },
       "properties": null
@@ -58,7 +58,7 @@
   ],
   "edges": [
     {
-      "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+      "id": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -69,11 +69,11 @@
         ]
       },
       "properties": {
-        "length": 3.0
+        "length": 10.0
       }
     },
     {
-      "id": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
+      "id": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -84,11 +84,11 @@
         ]
       },
       "properties": {
-        "length": 8.0
+        "length": 10.0
       }
     },
     {
-      "id": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
+      "id": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -99,11 +99,11 @@
         ]
       },
       "properties": {
-        "length": 3.0
+        "length": 10.0
       }
     },
     {
-      "id": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
+      "id": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
       "type": "Feature",
       "geometry": null,
       "topology": {
@@ -114,38 +114,52 @@
         ]
       },
       "properties": {
-        "length": 8.0
+        "length": 10.0
+      }
+    }
+  ],
+  "rings": [
+    {
+      "id": "uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Ring",
+        "directed_references": [
+          {
+            "ref": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "circumference": 40.00
       }
     }
   ],
   "faces": [
     {
-      "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+      "id": "uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b",
       "type": "Feature",
       "geometry": null,
       "topology": {
         "type": "Face",
-        "rings": [
+        "directed_references": [
           {
-            "type": "Ring",
-            "directed_references": [
-              {
-                "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
-                "orientation": "+"
-              }
-            ]
+            "ref": "uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8",
+            "orientation": "+"
           }
         ]
       },
@@ -153,9 +167,10 @@
         "normal": [
           1.0,
           0.0,
-          -0.0
+          0.0
         ],
-        "area": 24.0
+        "area": 100.0,
+        "description": "East-facing boundary face, [Cube]"
       }
     }
   ]

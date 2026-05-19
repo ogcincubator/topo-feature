@@ -1,14 +1,15 @@
 - title: Example GeoJSON feature using ArcWithCenter topology
   content: |-
-    Arc with Center example.
+    Arc with Centre example.
 
-    Topology defined by 2 end points and a centre that are references to features with point geometry.
+    Topology is defined by 2 end points and a centre that are references to features with point geometry.
 
     ![Example](assets/arc-by-center.png)
     
-    radius and arcLength are implicit but may be provided as optional properties of the feature.
+    Radius and arcLength are implicit but may be provided as optional properties of the feature.
 
 
+  base-output-filename: arc-with-centre
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
@@ -25,6 +26,7 @@
 
       ![Example](assets/arc.png)
 
+  base-output-filename: arc
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
@@ -39,6 +41,7 @@
 
       ![Example](assets/arc-by-chord.png)
 
+  base-output-filename: arc-by-chord
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
@@ -53,6 +56,7 @@
     
       ![Example](assets/circle-with-center.png)
 -
+  base-output-filename: circle
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
@@ -67,6 +71,7 @@
 
     ![Example](assets/spline.png)
 -
+  base-output-filename: spline
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
@@ -79,6 +84,7 @@
   content: |-
     Cubic Spline with Tangents example.
 
+  base-output-filename: spline-with-tangents
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
