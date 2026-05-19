@@ -27,9 +27,4 @@ initViewerApp({
     initialModel: dataUrl.href,
 });
 
-// Resize handler
-window.addEventListener('resize', () => {
-    sceneObjects.camera.aspect = window.innerWidth / window.innerHeight;
-    sceneObjects.camera.updateProjectionMatrix();
-    sceneObjects.renderer.setSize(window.innerWidth, window.innerHeight);
-});
+window.addEventListener('resize', sceneObjects.handleResize);

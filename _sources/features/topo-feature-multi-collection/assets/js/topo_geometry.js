@@ -18,6 +18,7 @@ const VERTEX_MARKER_COLOR = 0xffff00;
 const VERTEX_KEY_PRECISION = 6;
 const VERTEX_RADIUS_SCALE = 0.05;
 const MESH_SHININESS = 30;
+const MESH_OPACITY_SOLID = 1.0;
 const POLYGON_OFFSET_FACTOR = 1;
 const POLYGON_OFFSET_UNITS = 1;
 
@@ -158,6 +159,24 @@ function _countFeatures(featureCollections = []) {
     );
 }
 
+/**
+ * Returns true when the dataset contains any geometry that requires transparency
+ * to remain visible: a face with an inner ring (hole) or a solid with more than
+ * one shell (void/protrusion topology).
+ *
+ * @param {Object} data - The topology dataset (faces, solids arrays).
+ * @return {boolean}
+ */
+export function needsTransparency(data) {
+    const faceHasHole = getFeatures(data.faces || [])
+        .some(face => face.topology.directed_references.length > 1);
+
+    const solidHasVoid = getFeatures(data.solids || [])
+        .some(solid => solid.topology.shells.length > 1);
+
+    return faceHasHole || solidHasVoid;
+}
+
 // ─── Coordinate geometry ──────────────────────────────────────────────────────
 
 /**
@@ -187,9 +206,9 @@ function _ringToCoords(ringFeature, edgeMap, pointMap) {
  * system for the plane.
  *
  * @param {number[]} normal - The normal vector of the plane as an array of three numbers [x, y, z].
- * @return {Object} An object containing two perpendicular normalized vectors:
- *                  `axisU` - A normalized vector perpendicular to the plane normal.
- *                  `axisV` - A normalized vector perpendicular to both the plane normal and `axisU`.
+ * @return {Object} An object containing two perpendicular normalised vectors:
+ *                  `axisU` - A normalised vector perpendicular to the plane normal.
+ *                  `axisV` - A normalised vector perpendicular to both the plane normal and `axisU`.
  */
 function _createPlaneBasis(normal) {
     const planeNormal = new THREE.Vector3(...normal).normalize();
@@ -206,49 +225,56 @@ function _createPlaneBasis(normal) {
 }
 
 /**
- * Projects a set of 3D coordinates onto a 2D plane defined by a normal vector.
+ * Triangulates a 3D planar polygon (convex or concave) with optional holes using earcut.
  *
- * @param {Array<Array<number>>} coords3D - An array of 3D coordinates, where each coordinate is represented as an array of three numbers [x, y, z].
- * @param {Array<number>} normal - A normal vector defining the plane onto which the coordinates will be projected, represented as an array of three numbers [x, y, z].
- * @return {Array<number>} A flattened array of the projected 2D coordinates, where each pair of values represents a 2D point [u, v].
- */
-function _projectTo2D(coords3D, normal) {
-    const {axisU, axisV} = _createPlaneBasis(normal);
-    const origin = new THREE.Vector3(...coords3D[0]);
-
-    return coords3D.flatMap(coord => {
-        const relativePoint = new THREE.Vector3(...coord).sub(origin);
-        return [relativePoint.dot(axisU), relativePoint.dot(axisV)];
-    });
-}
-
-/**
- * Triangulates a 3D planar polygon (convex or concave) using earcut, into a set of triangles based on the input vertex
- * coordinates and a normal vector.
+ * All rings (outer boundary and holes) are projected onto the same 2D plane using the
+ * outer ring's first vertex as the shared origin, then passed to earcut with hole start
+ * indices so that the hole regions are excluded from the triangulation.
  *
- * @param {Array<number>} coords - An array of 3D vertex coordinates forming the polygon. Each vertex is represented
- *                                  by a set of three numbers [x, y, z].
- * @param {Array<number>} normal - A 3D normal vector [nx, ny, nz] representing the plane of the polygon. It is used
- *                                 for projecting the polygon into 2D space.
+ * @param {Array<Array<number>>} outerCoords - Ordered 3D vertices of the outer boundary.
+ * @param {Array<Array<Array<number>>>} holeCoordsList - Zero or more arrays of 3D vertices,
+ *   each describing one hole boundary.
+ * @param {Array<number>} normal - A 3D normal vector [nx, ny, nz] for the polygon's plane.
  * @return {Object} An object containing:
- *                  - `positions`: An array of 3D vertex positions of the resulting triangles, where each triangle
- *                                 is represented by three consecutive vertices.
- *                  - `normals`: An array of normal vectors for the triangles, where each normal is repeated three
- *                               times (once for each vertex in the corresponding triangle).
+ *                  - `positions`: Flat array of 3D vertex positions for the output triangles.
+ *                  - `normals`: Flat array of normals, one per triangle vertex.
  */
-function _triangulatePolygon(coords, normal) {
+function _triangulatePolygon(outerCoords, holeCoordsList, normal) {
     const positions = [];
     const normals = [];
-    if (coords.length < 3) return { positions, normals };
+    if (outerCoords.length < 3) return { positions, normals };
 
-    const flat2D = _projectTo2D(coords, normal);
-    const indices = earcut(flat2D); // no holes, 2D
+    const {axisU, axisV} = _createPlaneBasis(normal);
+    const origin = new THREE.Vector3(...outerCoords[0]);
+
+    const projectPoint = coord => {
+        const rel = new THREE.Vector3(...coord).sub(origin);
+        return [rel.dot(axisU), rel.dot(axisV)];
+    };
+
+    // Build flat 2D vertex array and record where each hole starts.
+    const allCoords3D = [...outerCoords];
+    const flat2D = outerCoords.flatMap(projectPoint);
+    const holeIndices = [];
+
+    for (const holeCoords of holeCoordsList) {
+        if (holeCoords.length < 3) continue;
+        holeIndices.push(allCoords3D.length);
+        allCoords3D.push(...holeCoords);
+        flat2D.push(...holeCoords.flatMap(projectPoint));
+    }
+
+    const indices = earcut(flat2D, holeIndices.length ? holeIndices : null);
 
     for (let i = 0; i < indices.length; i += 3) {
-        positions.push(...coords[indices[i]], ...coords[indices[i + 1]], ...coords[indices[i + 2]]);
+        positions.push(
+            ...allCoords3D[indices[i]],
+            ...allCoords3D[indices[i + 1]],
+            ...allCoords3D[indices[i + 2]]
+        );
         normals.push(...normal, ...normal, ...normal);
     }
-    return { positions, normals };
+    return {positions, normals};
 }
 
 // ─── Edge geometry ────────────────────────────────────────────────────────────
@@ -360,15 +386,22 @@ function _triangulateFaceReference(faceRef, faceMap, ringMap, edgeMap, pointMap)
     if (!face) return null;
 
     const normal = _getOrientedNormal(face, faceRef);
-    const outerRingRef = face.topology.directed_references[0];
-    const outerRing = ringMap[outerRingRef.ref];
+    const ringRefs = face.topology.directed_references;
 
+    const outerRing = ringMap[ringRefs[0]?.ref];
     if (!outerRing) return null;
 
-    const faceVertices = _ringToCoords(outerRing, edgeMap, pointMap);
-    if (faceVertices.length < 3) return null;
+    const outerCoords = _ringToCoords(outerRing, edgeMap, pointMap);
+    if (outerCoords.length < 3) return null;
 
-    return _triangulatePolygon(faceVertices, normal);
+    // Collect inner rings (holes) — all directed_references after the first.
+    const holeCoordsList = ringRefs.slice(1)
+        .map(ringRef => ringMap[ringRef.ref])
+        .filter(ring => ring != null)
+        .map(ring => _ringToCoords(ring, edgeMap, pointMap))
+        .filter(coords => coords.length >= 3);
+
+    return _triangulatePolygon(outerCoords, holeCoordsList, normal);
 }
 
 /**
@@ -441,12 +474,14 @@ export function buildSolidGeometry(solid, shellMap, faceMap, ringMap, edgeMap, p
  * @param {THREE.Geometry | THREE.BufferGeometry} geometry - The geometry to be used for the mesh.
  * @return {THREE.Mesh} The created 3D mesh object with associated material and user data.
  */
-export function createSolidMesh(solid, index, geometry) {
+export function createSolidMesh(solid, index, geometry, opacity = MESH_OPACITY_SOLID) {
     const material = new THREE.MeshPhongMaterial({
         color: SOLID_COLORS[index % SOLID_COLORS.length],
         side: THREE.DoubleSide,
         flatShading: false,
         shininess: MESH_SHININESS,
+        transparent: opacity < 1.0,
+        opacity,
         polygonOffset: true,
         polygonOffsetFactor: POLYGON_OFFSET_FACTOR,
         polygonOffsetUnits: POLYGON_OFFSET_UNITS,

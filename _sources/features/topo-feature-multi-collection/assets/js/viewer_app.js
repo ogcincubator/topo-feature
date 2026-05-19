@@ -1,8 +1,10 @@
 import {
     buildMaps, buildSolidGeometry, buildSolidEdgeLines,
     createSolidMesh, createVertexMarkers,
-    getFeatures, getTopologyFeatureCounts,
+    getFeatures, getTopologyFeatureCounts, needsTransparency,
 } from './topo_geometry.js';
+
+const MESH_OPACITY_TRANSPARENT = 0.85;
 
 // ─── UI messages ──────────────────────────────────────────────────────────────
 
@@ -85,9 +87,10 @@ export function initViewerApp({ sceneObjects, viewerControls, initialModel, mode
             }
 
             const featureCounts = getTopologyFeatureCounts(data);
+            const opacity = needsTransparency(data) ? MESH_OPACITY_TRANSPARENT : 1.0;
 
             solids.forEach((solid, index) => {
-                _addSolidToScene(solid, index, topologyMaps);
+                _addSolidToScene(solid, index, topologyMaps, opacity);
             });
 
             const modelBounds = fitCameraToModel();
@@ -118,16 +121,17 @@ export function initViewerApp({ sceneObjects, viewerControls, initialModel, mode
      * @param {Object} solid - The solid object to be added to the scene.
      * @param {number} index - The index of the solid, used for colour selection and labelling.
      * @param {Object} topologyMaps - The topological maps required for constructing the solid geometry.
+     * @param opacity - Opacity value for faces, either 0.85 or 1.0.
      * @return {void}
      */
-    function _addSolidToScene(solid, index, topologyMaps) {
+    function _addSolidToScene(solid, index, topologyMaps, opacity) {
         const {pointMap, edgeMap, ringMap, faceMap, shellMap} = topologyMaps;
 
         const {geometry, faceCount} = buildSolidGeometry(
             solid, shellMap, faceMap, ringMap, edgeMap, pointMap
         );
 
-        const mesh = createSolidMesh(solid, index, geometry);
+        const mesh = createSolidMesh(solid, index, geometry, opacity);
         const edges = buildSolidEdgeLines(solid, shellMap, faceMap, ringMap, edgeMap, pointMap);
         const verticesGroup = createVertexMarkers(geometry);
         const solidName = mesh.userData.solidName;

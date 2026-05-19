@@ -104,5 +104,19 @@ export function initScene(width, height, container) {
         renderer.render(scene, camera);
     }
 
-    return { scene, camera, renderer, controls, gridHelper, axesHelper, animate };
+        // ─── Resize handler ───────────────────────────────────────────────────────
+
+    /**
+     * Updates the camera aspect ratio and renderer size to match the current window dimensions.
+     * Wire to window 'resize' events in responsive (full-window) entry points.
+     *
+     * @return {void}
+     */
+    function handleResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    return { scene, camera, renderer, controls, gridHelper, axesHelper, animate, handleResize };
 }
