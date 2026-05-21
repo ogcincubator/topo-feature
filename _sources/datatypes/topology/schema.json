@@ -25,7 +25,12 @@
       "description": "Plain string ID references (e.g. LineString referencing point nodes)",
       "properties": {
         "type": {
-          "enum": [ "MultiLineString", "Polygon" , "Polyhedron"]
+          "enum": [
+            "MultiLineString",
+            "Polygon",
+            "Polyhedron",
+            "Solid"
+          ]
         },
         "references": {
           "type": "array",
@@ -34,7 +39,8 @@
             "items": {
               "oneOf": [
                 {
-              "$ref": "bblocks://ogc.ogc-utils.iri-or-curie"},
+                  "$ref": "bblocks://ogc.ogc-utils.iri-or-curie"
+                },
                 {
                   "description": "wont check contents deeper",
                   "type": "array"
@@ -56,7 +62,15 @@
     "directedRefs": {
       "description": "Oriented (directed) references — each with 'ref' and 'orientation'. Used for Ring, Shell.",
       "properties": {
-        "references": {
+               "type": {
+          "enum": [
+            "Face",
+            "Ring",
+            "Shell",
+            "Solid"
+          ]
+        },
+        "directed_references": {
           "type": "array",
           "items": {
             "$ref": "bblocks://ogc.geo.topo.datatypes.oriented-ref"
