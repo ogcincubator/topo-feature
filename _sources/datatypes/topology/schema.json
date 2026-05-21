@@ -5,6 +5,16 @@
     "simpleRefs": {
       "description": "Plain string ID references (e.g. LineString referencing point nodes)",
       "properties": {
+        "type": {
+          "not": {
+            "enum": [
+              "Face",
+              "Ring",
+              "Shell",
+              "Solid"
+            ]
+          }
+        },
         "references": {
           "type": "array",
           "items": {
@@ -62,7 +72,7 @@
     "directedRefs": {
       "description": "Oriented (directed) references — each with 'ref' and 'orientation'. Used for Ring, Shell.",
       "properties": {
-               "type": {
+        "type": {
           "enum": [
             "Face",
             "Ring",

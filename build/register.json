@@ -3,12 +3,12 @@
   "abstract": "Features with geometry defined via  generalised topology between identified objects (Features).",
   "description": "Defines Feature (object) topology using a _topology_ property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.\n\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \n\nTopo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. \n\nTopo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.\n\nNote: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features.. \n\n_Topo-Feature allows for explicit CRS. If desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2026-05-19T11:47:34.486175",
+  "modified": "2026-05-21T05:41:13.840810",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"8c64c21f96076bf94b01ff61a9e3c5c2aafe9e73",
-      "shortCommitId": "\"8c64c2",
-      "date": "2026-05-19T08:38:54+00:00\""
+      "commitId": "\"1c38e230d79a22d5b242ea63ec3c6d6a95af173d",
+      "shortCommitId": "\"1c38e2",
+      "date": "2026-05-20T11:46:31+00:00\""
     }
   },
   "gitRepository": "https://github.com/surroundaustralia/topo-feature",
@@ -31,7 +31,7 @@
       "itemClass": "schema",
       "register": "ogc",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "tags": [
         "3D",
         "geometry",
@@ -150,7 +150,7 @@
       "itemClass": "datatype",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -200,7 +200,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "maturity": "development",
@@ -212,9 +212,9 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.geo.topo.datatypes.oriented-ref",
+        "ogc.geo.json-fg.link-role",
         "ogc.ogc-utils.iri-or-curie",
-        "ogc.geo.json-fg.link-role"
+        "ogc.geo.topo.datatypes.oriented-ref"
       ],
       "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
       "schema": {
@@ -252,7 +252,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -317,7 +317,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -387,18 +387,18 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
         "ogc.geo.json-fg.featureCollection-lenient",
+        "ogc.geo.json-fg.featureCollection",
+        "ogc.geo.features.feature",
         "ogc.geo.features.featureCollection",
-        "ogc.geo.json-fg.feature-lenient",
-        "ogc.geo.topo.features.topo-feature",
         "ogc.geo.json-fg.feature",
-        "ogc.geo.json-fg.featureCollection"
+        "ogc.geo.topo.features.topo-feature",
+        "ogc.geo.json-fg.feature-lenient"
       ],
       "tags": [
         "topology",
@@ -457,7 +457,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "shaclClosures": [],
@@ -524,7 +524,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -592,7 +592,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -660,7 +660,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -727,14 +727,14 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
         "ogc.geo.topo.datatypes.topology",
-        "ogc.geo.topo.datatypes.oriented-ref",
         "ogc.geo.topo.features.topo-feature-collection",
+        "ogc.geo.topo.datatypes.oriented-ref",
         "ogc.geo.topo.features.topo-feature"
       ],
       "tags": [
@@ -796,17 +796,17 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-19",
+      "dateOfLastChange": "2026-05-21",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.topo.features.topo-face",
-        "ogc.geo.topo.features.topo-line",
+        "ogc.geo.topo.features.topo-shell",
         "ogc.geo.topo.features.topo-feature-collection",
+        "ogc.geo.topo.features.topo-line",
         "ogc.geo.topo.features.topo-ring",
-        "ogc.geo.topo.features.topo-feature",
-        "ogc.geo.topo.features.topo-shell"
+        "ogc.geo.topo.features.topo-face",
+        "ogc.geo.topo.features.topo-feature"
       ],
       "tags": [
         "topology",
