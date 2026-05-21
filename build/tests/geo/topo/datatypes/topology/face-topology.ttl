@@ -3,5 +3,5 @@
 
 [] a topo:Face ;
     topo:directedReferences ( [ topo:orientation "+" ;
-                topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] ) .
+                topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] ) .
 

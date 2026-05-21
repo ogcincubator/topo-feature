@@ -15,9 +15,9 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.topo.datatypes.topology",
+    "ogc.geo.topo.features.topo-feature",
     "ogc.geo.topo.features.topo-feature-collection",
-    "ogc.geo.topo.features.topo-feature"
+    "ogc.geo.topo.datatypes.topology"
   ],
   "tags": [
     "topology",
@@ -27,19 +27,19 @@
   ],
   "group": "OGC",
   "shaclShapes": {
+    "ogc.geo.topo.features.topo-feature": [
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+    ],
     "ogc.geo.topo.features.topo-feature-collection": [
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ],
     "ogc.geo.features.feature": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ],
     "ogc.geo.features.featureCollection": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
-    ],
-    "ogc.geo.topo.features.topo-feature": [
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ]
   },
   "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/context.jsonld",
@@ -74,7 +74,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n\n<uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b> a geojson:Feature ;\n    geojson:topology [ a topo:Face ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8\" ] ) ] .\n\n<uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8> a geojson:Feature ;\n    geojson:topology [ a topo:Ring ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3\" ] [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f\" ] [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a\" ] [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:23641631-470f-4c4b-981d-23ccb35d6a51\" ] ) ] .\n\n[] a geojson:FeatureCollection ;\n    topo:faces ( <uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b> ) ;\n    topo:rings ( <uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8> ) .\n\n",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n\n<uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b> a geojson:Feature ;\n    geojson:topology [ a topo:Face ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref <uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8> ] ) ] .\n\n<uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8> a geojson:Feature ;\n    geojson:topology [ a topo:Ring ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref <uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3> ] [ topo:orientation \"+\" ;\n                        topo:ref <uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f> ] [ topo:orientation \"+\" ;\n                        topo:ref <uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a> ] [ topo:orientation \"+\" ;\n                        topo:ref <uuid:23641631-470f-4c4b-981d-23ccb35d6a51> ] ) ] .\n\n[] a geojson:FeatureCollection ;\n    topo:faces ( <uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b> ) ;\n    topo:rings ( <uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8> ) .\n\n",
           "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/features/topo-face/face.ttl"
         }
       ]
@@ -98,7 +98,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n\n<uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> a geojson:Feature ;\n    geojson:topology [ a topo:Face ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:c60507ba-226b-4e49-a702-e9afef899b23\" ] ) ] .\n\n<uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;\n    geojson:topology [ a topo:Ring ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3\" ] [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f\" ] [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a\" ] [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:23641631-470f-4c4b-981d-23ccb35d6a51\" ] ) ] .\n\n[] a geojson:FeatureCollection ;\n    topo:faces ( <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ) ;\n    topo:rings ( <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ) .\n\n",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n\n<uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> a geojson:Feature ;\n    geojson:topology [ a topo:Face ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] ) ] .\n\n<uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;\n    geojson:topology [ a topo:Ring ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref <uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3> ] [ topo:orientation \"+\" ;\n                        topo:ref <uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f> ] [ topo:orientation \"+\" ;\n                        topo:ref <uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a> ] [ topo:orientation \"+\" ;\n                        topo:ref <uuid:23641631-470f-4c4b-981d-23ccb35d6a51> ] ) ] .\n\n[] a geojson:FeatureCollection ;\n    topo:faces ( <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ) ;\n    topo:rings ( <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ) .\n\n",
           "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/features/topo-face/4-edge-face.ttl"
         }
       ]
@@ -122,7 +122,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n\n<uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> a geojson:Feature ;\n    geojson:topology [ a topo:Face ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:c60507ba-226b-4e49-a702-e9afef899b23\" ] ) ] .\n\n<uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;\n    geojson:topology [ a topo:Ring ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3\" ] [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f\" ] [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a\" ] [ topo:orientation \"+\" ;\n                        topo:ref \"uuid:23641631-470f-4c4b-981d-23ccb35d6a51\" ] [ topo:orientation \"-\" ;\n                        topo:ref \"uuid:23141631-470f-4c4b-981d-23ccb35d6a51\" ] [ topo:orientation \"-\" ;\n                        topo:ref \"uuid:23641631-470f-4d4b-981d-23ccb35d6a51\" ] ) ] .\n\n[] a geojson:FeatureCollection ;\n    topo:faces ( <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ) ;\n    topo:rings ( <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ) .\n\n",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n\n<uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> a geojson:Feature ;\n    geojson:topology [ a topo:Face ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] ) ] .\n\n<uuid:c60507ba-226b-4e49-a702-e9afef899b23> a geojson:Feature ;\n    geojson:topology [ a topo:Ring ;\n            topo:directedReferences ( [ topo:orientation \"+\" ;\n                        topo:ref <uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3> ] [ topo:orientation \"+\" ;\n                        topo:ref <uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f> ] [ topo:orientation \"+\" ;\n                        topo:ref <uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a> ] [ topo:orientation \"+\" ;\n                        topo:ref <uuid:23641631-470f-4c4b-981d-23ccb35d6a51> ] [ topo:orientation \"-\" ;\n                        topo:ref <uuid:23141631-470f-4c4b-981d-23ccb35d6a51> ] [ topo:orientation \"-\" ;\n                        topo:ref <uuid:23641631-470f-4d4b-981d-23ccb35d6a51> ] ) ] .\n\n[] a geojson:FeatureCollection ;\n    topo:faces ( <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ) ;\n    topo:rings ( <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ) .\n\n",
           "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/features/topo-face/6-edge-face.ttl"
         }
       ]

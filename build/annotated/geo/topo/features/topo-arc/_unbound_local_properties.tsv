@@ -1,7 +1,6 @@
 path
-/topology/_oneOf/0/type
 /topology/_oneOf/1/orientation
-/topology/_oneOf/2/type
+/topology/_oneOf/2/references
 /topology/_oneOf/2/radius
 /topology/_oneOf/2/orientation
 /topology/_oneOf/3/type

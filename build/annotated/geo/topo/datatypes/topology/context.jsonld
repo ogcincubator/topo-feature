@@ -1,17 +1,21 @@
 {
   "@context": {
+    "type": "@type",
     "references": {
+      "@id": "topo:relatedFeatures",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "directed_references": {
       "@context": {
         "ref": {
           "@type": "@id",
           "@id": "topo:ref"
         }
       },
-      "@id": "topo:relatedFeatures",
-      "@type": "@id",
+      "@id": "topo:directedReferences",
       "@container": "@list"
     },
-    "type": "@type",
     "relationships": {
       "@context": {
         "href": {
@@ -55,10 +59,6 @@
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
-    "directed_references": {
-      "@id": "topo:directedReferences",
-      "@container": "@list"
-    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",

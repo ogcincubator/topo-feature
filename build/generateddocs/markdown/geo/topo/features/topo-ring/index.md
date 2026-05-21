@@ -131,10 +131,10 @@ closing the loop. geometry is null — a Ring has no independent coordinate geom
     topo:circumference 3.32e+01 ;
     geojson:topology [ a topo:Ring ;
             topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8" ] ) ] .
+                        topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] [ topo:orientation "+" ;
+                        topo:ref <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> ] [ topo:orientation "+" ;
+                        topo:ref <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> ] [ topo:orientation "+" ;
+                        topo:ref <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> ] ) ] .
 
 
 ```
@@ -276,14 +276,18 @@ Links to the schema:
     "topology": {
       "@context": {
         "references": {
+          "@id": "topo:relatedFeatures",
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "directed_references": {
           "@context": {
             "ref": {
               "@type": "@id",
               "@id": "topo:ref"
             }
           },
-          "@id": "topo:relatedFeatures",
-          "@type": "@id",
+          "@id": "topo:directedReferences",
           "@container": "@list"
         },
         "relationships": {
@@ -330,10 +334,6 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
-    "directed_references": {
-      "@id": "topo:directedReferences",
-      "@container": "@list"
-    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",

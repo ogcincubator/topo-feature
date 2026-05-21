@@ -2077,14 +2077,18 @@ Links to the schema:
     "topology": {
       "@context": {
         "references": {
+          "@id": "topo:relatedFeatures",
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "directed_references": {
           "@context": {
             "ref": {
               "@type": "@id",
               "@id": "topo:ref"
             }
           },
-          "@id": "topo:relatedFeatures",
-          "@type": "@id",
+          "@id": "topo:directedReferences",
           "@container": "@list"
         },
         "relationships": {
@@ -2117,16 +2121,6 @@ Links to the schema:
           "@type": "@id",
           "@container": "@list"
         },
-        "directed_references": {
-          "@id": "topo:directedReferences",
-          "@container": "@list",
-          "@context": {
-            "ref": {
-              "@type": "@id",
-              "@id": "topo:ref"
-            }
-          }
-        },
         "ref": "topo:ref"
       },
       "@type": "@id",
@@ -2144,10 +2138,6 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
-    "directed_references": {
-      "@id": "topo:directedReferences",
-      "@container": "@list"
-    },
     "Edge": "topo:Edge",
     "Face": "topo:Face",
     "Ring": "topo:Ring",

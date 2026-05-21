@@ -206,10 +206,10 @@ and an 'orientation' ('+' or '-'). Mutually exclusive with 'references'.
 
 [] a topo:Ring ;
     topo:directedReferences ( [ topo:orientation "+" ;
-                topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] [ topo:orientation "+" ;
-                topo:ref "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac" ] [ topo:orientation "+" ;
-                topo:ref "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569" ] [ topo:orientation "+" ;
-                topo:ref "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8" ] ) .
+                topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] [ topo:orientation "+" ;
+                topo:ref <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> ] [ topo:orientation "+" ;
+                topo:ref <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> ] [ topo:orientation "+" ;
+                topo:ref <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> ] ) .
 
 
 ```
@@ -252,7 +252,7 @@ Mutually exclusive with 'references'.
 
 [] a topo:Face ;
     topo:directedReferences ( [ topo:orientation "+" ;
-                topo:ref "uuid:c60507ba-226b-4e49-a702-e9afef899b23" ] ) .
+                topo:ref <uuid:c60507ba-226b-4e49-a702-e9afef899b23> ] ) .
 
 
 ```
@@ -310,10 +310,10 @@ Mutually exclusive with 'references'.
 
 [] a topo:Shell ;
     topo:directedReferences ( [ topo:orientation "+" ;
-                topo:ref "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a2f0998ae" ] [ topo:orientation "+" ;
-                topo:ref "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae" ] [ topo:orientation "-" ;
-                topo:ref "uuid:4ac3b91b-eeb7-428c-b7e9-7e8a3f0998ae" ] [ topo:orientation "+" ;
-                topo:ref "uuid:4ac4b91b-eeb7-428c-b5e9-7e8a3f0998ae" ] ) .
+                topo:ref <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a2f0998ae> ] [ topo:orientation "+" ;
+                topo:ref <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ] [ topo:orientation "-" ;
+                topo:ref <uuid:4ac3b91b-eeb7-428c-b7e9-7e8a3f0998ae> ] [ topo:orientation "+" ;
+                topo:ref <uuid:4ac4b91b-eeb7-428c-b5e9-7e8a3f0998ae> ] ) .
 
 
 ```
@@ -356,7 +356,7 @@ Mutually exclusive with 'references'.
 
 [] a topo:Solid ;
     topo:directedReferences ( [ topo:orientation "+" ;
-                topo:ref "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae" ] ) .
+                topo:ref <uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae> ] ) .
 
 
 ```
@@ -373,6 +373,14 @@ $defs:
   simpleRefs:
     description: Plain string ID references (e.g. LineString referencing point nodes)
     properties:
+      type:
+        not:
+          enum:
+          - Face
+          - Ring
+          - Shell
+          - Solid
+        x-jsonld-id: '@type'
       references:
         type: array
         items:
@@ -393,6 +401,7 @@ $defs:
         - MultiLineString
         - Polygon
         - Polyhedron
+        - Solid
         x-jsonld-id: '@type'
       references:
         type: array
@@ -415,12 +424,18 @@ $defs:
     description: "Oriented (directed) references \u2014 each with 'ref' and 'orientation'.
       Used for Ring, Shell."
     properties:
-      references:
+      type:
+        enum:
+        - Face
+        - Ring
+        - Shell
+        - Solid
+        x-jsonld-id: '@type'
+      directed_references:
         type: array
         items:
           $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
-        x-jsonld-id: https://purl.org/geojson/topo#relatedFeatures
-        x-jsonld-type: '@id'
+        x-jsonld-id: https://purl.org/geojson/topo#directedReferences
         x-jsonld-container: '@list'
     required:
     - directed_references
@@ -465,9 +480,6 @@ x-jsonld-extra-terms:
   arcLength: https://purl.org/geojson/vocab#arcLength
   startTangentVector: https://purl.org/geojson/vocab#startTangentVector
   endTangentVector: https://purl.org/geojson/vocab#endTangentVector
-  directed_references:
-    x-jsonld-id: https://purl.org/geojson/topo#directedReferences
-    x-jsonld-container: '@list'
   ref:
     x-jsonld-id: https://purl.org/geojson/topo#ref
   orientation: https://purl.org/geojson/topo#orientation
@@ -503,18 +515,22 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "type": "@type",
     "references": {
+      "@id": "topo:relatedFeatures",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "directed_references": {
       "@context": {
         "ref": {
           "@type": "@id",
           "@id": "topo:ref"
         }
       },
-      "@id": "topo:relatedFeatures",
-      "@type": "@id",
+      "@id": "topo:directedReferences",
       "@container": "@list"
     },
-    "type": "@type",
     "relationships": {
       "@context": {
         "href": {
@@ -558,10 +574,6 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
-    "directed_references": {
-      "@id": "topo:directedReferences",
-      "@container": "@list"
-    },
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
