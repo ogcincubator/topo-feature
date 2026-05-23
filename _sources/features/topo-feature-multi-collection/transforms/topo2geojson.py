@@ -2,7 +2,7 @@ import json, geopandas as gpd
 import sys
 import glob as glob_module
 
-from typing import Generator
+from typing import Generator, List
 
 
 def walk_features(data: list) -> Generator[dict, None, None]:
@@ -16,13 +16,19 @@ def walk_features(data: list) -> Generator[dict, None, None]:
         Individual GeoJSON Feature dictionaries
     """
     for item in data:
-        match item.get("type"):
-            case "Feature":
-                yield item
-            case "FeatureCollection":
-                yield from walk_features(item.get("features", []))
-            case _:
-                raise ValueError(f"Unexpected GeoJSON type: {item.get('type')!r}")
+        if isinstance(item, List):
+            yield from  walk_features(item)
+            continue
+        elif isinstance(item, dict):
+            match item.get("type"):
+                case "Feature":
+                    yield item
+                case "FeatureCollection":
+                    yield from walk_features(item.get("features", []))
+                case _:
+                    raise ValueError(f"Unexpected GeoJSON type: {item.get('type')!r}")
+        else:
+            yield item
 
 def extract_feature_coordinates(data: list) -> dict[str, object]:
     """
@@ -55,10 +61,16 @@ def process(input_data,mode,number):
     crs_name = data.get("crs", {}).get("properties", {}).get("name")
     epsg_code = crs_name.split(":")[-1] if crs_name else "4326"
     data["features"] = []
+
     # transfer coordinates to features
     if "points" in mode:
         for pc in data["points"]:
+            for feature in pc['features']:
+                if 'id' in feature:
+                    feature['properties']['feature_id'] = feature['id']
             data["features"].extend(pc["features"])
+        # push ids to prop3rties so geopandas doesnt nuke them
+
     geomsmap = extract_feature_coordinates(data["points"])
     geomtype = {"edges": "LineString", "solids": "Solid", "rings": "MultiLineString", "faces": "MultiPolygon" , "shells": "Solid"}
     for feat_type in [ "edges",  "rings" , "faces" ] :
@@ -106,7 +118,6 @@ def process(input_data,mode,number):
         return "{}"
     else:
         gdf = gpd.GeoDataFrame.from_features(data["features"])
-
     # Set CRS dynamically
     if epsg_code:
         gdf.set_crs(epsg=int(epsg_code), inplace=True)
@@ -123,10 +134,23 @@ def process(input_data,mode,number):
     # Convert back to GeoJSON — unwrap back to a single Feature if input was one
     result = json.loads(gdf.to_json())
     if is_feature == 1:
-        output_data = json.dumps(result["features"][0], indent=2)
+        outputstr = json.dumps(result["features"][0], indent=2)
     else:
-        output_data = gdf.to_json(indent=2)
-    return output_data
+        outputstr = gdf.to_json(indent=2)
+    # JSON-LD enablement for viewer
+    output_data = json.loads(outputstr)
+    output_data["@context"] = [
+        "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld"
+    ]
+    if "@context" in data:
+        context = data["@context"]
+        if isinstance(context, List):
+            iterable_data = context
+        else:
+            iterable_data = [context]
+        for c in iterable_data:
+            output_data["@context"].append(c)
+    return json.dumps(output_data, indent=2)
 
 testmode = True
 try:

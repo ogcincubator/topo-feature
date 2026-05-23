@@ -179,7 +179,7 @@
     are derived from the topological reference chain.
   snippets:
     - language: json
-      ref: examples/faces-example.json
+      ref: examples/faces-example2.json
   base-output-filename: faces
 
 - title: Solid (Polyhedron) referencing faces via Shell directed_references
@@ -189,6 +189,6 @@
     All supporting points, edges, and faces are included to make the example self-contained.
   snippets:
     - language: json
-      ref: examples/solids-example.json
+      ref: examples/solids-example2.json
   base-output-filename: solids
 
