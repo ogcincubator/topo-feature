@@ -450,5 +450,6 @@
                     <uuid:e7300a01-f8c1-4351-9511-02790a5376b0>,
                     <uuid:f34d9f2e-4180-41de-a613-46f78f4c178f>,
                     <uuid:fad324b9-801f-40f4-b65b-91f8753e9698>,
-                    <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ] ) .
+                    <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ] ) ;
+    topo:rings ( [ a geojson:Feature ] [ a geojson:Feature ] ) .
 

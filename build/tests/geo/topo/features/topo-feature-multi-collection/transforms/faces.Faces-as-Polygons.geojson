@@ -1,0 +1,130 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "0",
+      "type": "Feature",
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "area": 24.0
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                18.0,
+                10.0,
+                3.0
+              ],
+              [
+                18.0,
+                10.0,
+                6.0
+              ],
+              [
+                18.0,
+                10.0,
+                6.0
+              ],
+              [
+                18.0,
+                2.0,
+                6.0
+              ],
+              [
+                18.0,
+                2.0,
+                6.0
+              ],
+              [
+                18.0,
+                2.0,
+                3.0
+              ],
+              [
+                18.0,
+                2.0,
+                3.0
+              ],
+              [
+                18.0,
+                10.0,
+                3.0
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "1",
+      "type": "Feature",
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          3.007964248051e-16
+        ],
+        "area": 18.0
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                12.0,
+                2.0,
+                3.0
+              ],
+              [
+                18.0,
+                2.0,
+                3.0
+              ],
+              [
+                18.0,
+                2.0,
+                3.0
+              ],
+              [
+                18.0,
+                2.0,
+                6.0
+              ],
+              [
+                18.0,
+                2.0,
+                6.0
+              ],
+              [
+                12.0,
+                2.0,
+                6.0
+              ],
+              [
+                12.0,
+                2.0,
+                6.0
+              ],
+              [
+                12.0,
+                2.0,
+                3.0
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "@context": [
+    "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld"
+  ]
+}

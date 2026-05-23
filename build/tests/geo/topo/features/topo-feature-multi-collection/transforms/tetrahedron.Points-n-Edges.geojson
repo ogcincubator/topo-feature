@@ -13,6 +13,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:078eb283-157a-4485-a441-8ad96457e46f",
         "vectorPurpose": null,
         "length": null
       },
@@ -37,6 +38,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:c01a36a2-8d25-4aca-a2eb-3439608611be",
         "vectorPurpose": null,
         "length": null
       },
@@ -61,6 +63,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:cf012f5a-5407-4b5e-869c-c6e2d9115c8f",
         "vectorPurpose": null,
         "length": null
       },
@@ -85,6 +88,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:9f19f896-9878-46dd-b769-c714f5ba017a",
         "vectorPurpose": null,
         "length": null
       },
@@ -105,6 +109,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.997
       },
@@ -132,6 +137,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.998
       },
@@ -159,6 +165,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.997
       },
@@ -186,6 +193,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.999
       },
@@ -213,6 +221,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.999
       },
@@ -240,6 +249,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.999
       },
@@ -258,6 +268,37 @@
           ]
         ]
       }
+    }
+  ],
+  "@context": [
+    "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld",
+    {
+      "vocabs": "https://linked.data.gov.au/def/csdm/",
+      "wa-surveypoint-purpose": "https://linked.data.gov.au/def/csdm/wa-surveypoint-purpose/",
+      "wa-survey-purpose": "https://linked.data.gov.au/def/csdm/wa-survey-purpose/",
+      "wa-survey-type": "https://linked.data.gov.au/def/csdm/wa-survey-type/",
+      "wa-procedure-used": "https://linked.data.gov.au/def/csdm/wa-procedure-used/",
+      "wa-survey-documentation-type": "https://linked.data.gov.au/def/csdm/wa-survey-documentation-type/",
+      "wa-annotation-role": "https://linked.data.gov.au/def/csdm/wa-annotation/",
+      "wa-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-parcel-purpose/",
+      "wa-parcel-type": "https://linked.data.gov.au/def/csdm/wa-parcel-type/",
+      "wa-parcel-state": "https://linked.data.gov.au/def/csdm/wa-parcel-state/",
+      "wa-nonprimary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+      "wa-monument-form": "https://linked.data.gov.au/def/csdm/wa-monument-form/",
+      "wa-monument-condition": "https://linked.data.gov.au/def/csdm/wa-monument-condition/",
+      "wa-monument-state": "https://linked.data.gov.au/def/csdm/wa-monument-state/",
+      "wa-vector-purpose": "https://linked.data.gov.au/def/csdm/wa-vector-purpose/",
+      "wa-vector-type": "https://linked.data.gov.au/def/csdm/wa-vector-type/",
+      "wa-secondary-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-purpose/",
+      "wa-secondary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+      "wa-secondary-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-purpose/",
+      "wa-interest-type": "https://linked.data.gov.au/def/csdm/wa-interest-type/",
+      "wa-interest": "https://linked.data.gov.au/def/csdm/wa-interest/",
+      "wa-locality": "https://linked.data.gov.au/def/csdm/wa-locality/",
+      "wa-local-government": "https://linked.data.gov.au/def/csdm/wa-local-government/",
+      "registered-surveyors": "https://wa.gov.au/surveyors/",
+      "foaf": "https://xmlns.com/foaf/0.1/",
+      "activityType": "@type"
     }
   ]
 }

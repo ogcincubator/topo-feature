@@ -4,7 +4,9 @@
     {
       "id": "0",
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "feature_id": "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -17,7 +19,9 @@
     {
       "id": "1",
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "feature_id": "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -30,7 +34,9 @@
     {
       "id": "2",
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "feature_id": "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -43,7 +49,9 @@
     {
       "id": "3",
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "feature_id": "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -56,7 +64,9 @@
     {
       "id": "4",
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "feature_id": "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -66,5 +76,8 @@
         ]
       }
     }
+  ],
+  "@context": [
+    "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld"
   ]
 }

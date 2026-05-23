@@ -13,6 +13,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:29d783d3-10bb-4882-908a-eb8151cc52ec",
         "vectorPurpose": null,
         "length": null
       },
@@ -37,6 +38,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:fc45a8b6-848f-46b9-b079-a0ebba08f96e",
         "vectorPurpose": null,
         "length": null
       },
@@ -61,6 +63,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:8c3b760e-6015-461f-b3e4-1f10a8458d78",
         "vectorPurpose": null,
         "length": null
       },
@@ -85,6 +88,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:3d450239-8099-4649-a355-565e58332111",
         "vectorPurpose": null,
         "length": null
       },
@@ -109,6 +113,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:359c2049-41e8-4f00-ab35-458acc23f4bd",
         "vectorPurpose": null,
         "length": null
       },
@@ -133,6 +138,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:5f0ab17c-c5fa-49ef-a027-18876ea9181b",
         "vectorPurpose": null,
         "length": null
       },
@@ -157,6 +163,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:d250661e-6383-4458-9323-bf347210311f",
         "vectorPurpose": null,
         "length": null
       },
@@ -181,6 +188,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:7970f2e9-9893-4e54-b249-187db718bd31",
         "vectorPurpose": null,
         "length": null
       },
@@ -205,6 +213,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:8e0f2f64-c9e9-474d-ac20-07954d8759c4",
         "vectorPurpose": null,
         "length": null
       },
@@ -229,6 +238,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:e6bc54bc-bb9f-4535-860c-b1fbf67465e0",
         "vectorPurpose": null,
         "length": null
       },
@@ -253,6 +263,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:dd93eb3d-d9e7-4977-b6c5-df894bfcdd76",
         "vectorPurpose": null,
         "length": null
       },
@@ -277,6 +288,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:029860ee-5cc9-4a34-a7fc-e9ee6704d0e4",
         "vectorPurpose": null,
         "length": null
       },
@@ -301,6 +313,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:4a18b6c9-e5f1-41a7-9f33-45be997255ec",
         "vectorPurpose": null,
         "length": null
       },
@@ -325,6 +338,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:85f5fe02-792e-44e4-908e-10240b79ddb5",
         "vectorPurpose": null,
         "length": null
       },
@@ -349,6 +363,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:127223b8-ae77-4a0c-abe6-d76332e85af1",
         "vectorPurpose": null,
         "length": null
       },
@@ -373,6 +388,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:5a934736-cab5-4fc7-9e8f-877eb80c5879",
         "vectorPurpose": null,
         "length": null
       },
@@ -397,6 +413,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1",
         "vectorPurpose": null,
         "length": null
       },
@@ -421,6 +438,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:2e36bfd1-f23a-412b-8715-7e342f6970b1",
         "vectorPurpose": null,
         "length": null
       },
@@ -445,6 +463,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:7f9a7128-b01c-4568-8241-29391e9a5d30",
         "vectorPurpose": null,
         "length": null
       },
@@ -469,6 +488,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:7210455e-1a79-4c3c-9f3a-49565c0b4c89",
         "vectorPurpose": null,
         "length": null
       },
@@ -493,6 +513,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:9281190b-ec34-4dac-afe3-3a7c064f0b70",
         "vectorPurpose": null,
         "length": null
       },
@@ -517,6 +538,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:1b9a26b1-0913-459b-a0ba-fd3c8d5e0324",
         "vectorPurpose": null,
         "length": null
       },
@@ -541,6 +563,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:f683e96a-1e0d-450c-9df8-54e54aa8109e",
         "vectorPurpose": null,
         "length": null
       },
@@ -565,6 +588,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:0941cb64-d6e3-4fd4-81da-6586b21f27ac",
         "vectorPurpose": null,
         "length": null
       },
@@ -589,6 +613,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:6d31e874-6317-43c3-b357-49a699f8a69d",
         "vectorPurpose": null,
         "length": null
       },
@@ -613,6 +638,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:21a929df-71c5-47e2-a6d5-24f37bae8442",
         "vectorPurpose": null,
         "length": null
       },
@@ -637,6 +663,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:65b83fdc-a7ed-4178-9bc1-01da4a52ea0d",
         "vectorPurpose": null,
         "length": null
       },
@@ -661,6 +688,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:cd8c2acd-0d28-41d8-8a2a-966df677cfda",
         "vectorPurpose": null,
         "length": null
       },
@@ -685,6 +713,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:fa85407d-b02e-4d8b-ba7f-f1643968bdfb",
         "vectorPurpose": null,
         "length": null
       },
@@ -709,6 +738,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:a9135246-4680-4183-b3a0-ea902313e04b",
         "vectorPurpose": null,
         "length": null
       },
@@ -733,6 +763,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:33f0cc1b-317c-4e5a-be73-82210d7a9806",
         "vectorPurpose": null,
         "length": null
       },
@@ -757,6 +788,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:f62c9eab-b63d-4cfe-ab76-b4a142b4a8ce",
         "vectorPurpose": null,
         "length": null
       },
@@ -781,6 +813,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:323ee5a8-7a23-4b0c-a7c0-f8f66ce2caba",
         "vectorPurpose": null,
         "length": null
       },
@@ -805,6 +838,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:cbbbff1a-ea9d-43e4-b292-9c26e91dc71d",
         "vectorPurpose": null,
         "length": null
       },
@@ -829,6 +863,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:40a76a4c-fff8-4156-8071-61423b0d44e9",
         "vectorPurpose": null,
         "length": null
       },
@@ -853,6 +888,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:e802ff21-40ea-4728-a6e7-4d5b79d45158",
         "vectorPurpose": null,
         "length": null
       },
@@ -877,6 +913,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:c4aa05ba-997c-4b7e-b5bd-071f385e17d5",
         "vectorPurpose": null,
         "length": null
       },
@@ -900,6 +937,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:489a1c4c-0ac4-470f-9757-e50bc71d3aa8",
         "vectorPurpose": null,
         "length": null
       },
@@ -923,6 +961,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:e18342eb-1272-4582-b6bf-3c9d7e138667",
         "vectorPurpose": null,
         "length": null
       },
@@ -946,6 +985,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:313731cb-1e0c-469c-b64e-06af1629ba2a",
         "vectorPurpose": null,
         "length": null
       },
@@ -969,6 +1009,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:c7c0b650-ed8a-496d-bff5-46d9953137fd",
         "vectorPurpose": null,
         "length": null
       },
@@ -992,6 +1033,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:4261adb8-2fa6-4ce6-94cc-d4906f2a40fc",
         "vectorPurpose": null,
         "length": null
       },
@@ -1015,6 +1057,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:d9e43ed6-9387-4180-a25a-3b3208422263",
         "vectorPurpose": null,
         "length": null
       },
@@ -1038,6 +1081,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:4a98b01f-7e97-4049-9f39-a0ba56758ce9",
         "vectorPurpose": null,
         "length": null
       },
@@ -1061,6 +1105,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:be40befb-8498-4793-9ed6-d0e72c1a1d5b",
         "vectorPurpose": null,
         "length": null
       },
@@ -1084,6 +1129,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:7023d838-169a-4b01-a85f-e2b270751a7c",
         "vectorPurpose": null,
         "length": null
       },
@@ -1107,6 +1153,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:fbebc23c-cdef-4d02-bced-5b5bb7686b1f",
         "vectorPurpose": null,
         "length": null
       },
@@ -1130,6 +1177,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:d72f308c-110a-459d-ae5f-9d459d9ae51e",
         "vectorPurpose": null,
         "length": null
       },
@@ -1153,6 +1201,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:a221f31d-26c6-46f0-872a-567244fa5447",
         "vectorPurpose": null,
         "length": null
       },
@@ -1176,6 +1225,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:3cf6b3c0-3acc-4720-a643-d885d6951b2a",
         "vectorPurpose": null,
         "length": null
       },
@@ -1199,6 +1249,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:67c660f1-0e49-4ee4-996d-4d453fe6209b",
         "vectorPurpose": null,
         "length": null
       },
@@ -1222,6 +1273,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:3c6c5996-1c40-4e52-932b-13cc41fcee71",
         "vectorPurpose": null,
         "length": null
       },
@@ -1245,6 +1297,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:97571fb3-9987-49b3-b54c-88b8adcd2655",
         "vectorPurpose": null,
         "length": null
       },
@@ -1268,6 +1321,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:4c83a22b-2309-4240-97b1-d130cb1a8d43",
         "vectorPurpose": null,
         "length": null
       },
@@ -1291,6 +1345,7 @@
           "condition": "wa-monument-condition:ok",
           "state": "wa-monument-state:unmarked"
         },
+        "feature_id": "uuid:291b7f49-8f18-498e-bd2f-7bfb6760eaa2",
         "vectorPurpose": null,
         "length": null
       },
@@ -1310,6 +1365,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -1337,6 +1393,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.997
       },
@@ -1364,6 +1421,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -1391,6 +1449,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.997
       },
@@ -1418,6 +1477,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 5.999
       },
@@ -1445,6 +1505,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 5.999
       },
@@ -1472,6 +1533,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -1499,6 +1561,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.998
       },
@@ -1526,6 +1589,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.998
       },
@@ -1553,6 +1617,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -1580,6 +1645,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.999
       },
@@ -1607,6 +1673,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 1.999
       },
@@ -1634,6 +1701,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.998
       },
@@ -1661,6 +1729,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.999
       },
@@ -1688,6 +1757,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -1715,6 +1785,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 1.999
       },
@@ -1742,6 +1813,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -1769,6 +1841,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.998
       },
@@ -1796,6 +1869,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.998
       },
@@ -1823,6 +1897,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -1850,6 +1925,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.998
       },
@@ -1877,6 +1953,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.997
       },
@@ -1904,6 +1981,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -1931,6 +2009,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.997
       },
@@ -1958,6 +2037,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 5.999
       },
@@ -1985,6 +2065,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2012,6 +2093,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 5.999
       },
@@ -2039,6 +2121,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.998
       },
@@ -2066,6 +2149,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 1.999
       },
@@ -2093,6 +2177,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 1.999
       },
@@ -2120,6 +2205,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2147,6 +2233,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.998
       },
@@ -2174,6 +2261,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.997
       },
@@ -2201,6 +2289,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2228,6 +2317,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.998
       },
@@ -2255,6 +2345,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2282,6 +2373,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.997
       },
@@ -2309,6 +2401,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2336,6 +2429,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.997
       },
@@ -2363,6 +2457,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.997
       },
@@ -2390,6 +2485,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2417,6 +2513,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 1.999
       },
@@ -2444,6 +2541,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 5.998
       },
@@ -2471,6 +2569,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 1.999
       },
@@ -2498,6 +2597,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.999
       },
@@ -2525,6 +2625,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2552,6 +2653,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2579,6 +2681,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 2.0
       },
@@ -2606,6 +2709,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.998
       },
@@ -2633,6 +2737,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2660,6 +2765,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 7.998
       },
@@ -2687,6 +2793,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2714,6 +2821,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.997
       },
@@ -2741,6 +2849,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.997
       },
@@ -2768,6 +2877,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2795,6 +2905,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 9.997
       },
@@ -2822,6 +2933,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 1.999
       },
@@ -2849,6 +2961,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 1.999
       },
@@ -2876,6 +2989,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 5.998
       },
@@ -2903,6 +3017,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.0
       },
@@ -2930,6 +3045,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 2.0
       },
@@ -2957,6 +3073,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.999
       },
@@ -2984,6 +3101,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.998
       },
@@ -3011,6 +3129,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.998
       },
@@ -3038,6 +3157,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:3D-Construct",
         "length": 3.998
       },
@@ -3065,6 +3185,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3090,6 +3211,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3115,6 +3237,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3140,6 +3263,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3165,6 +3289,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3190,6 +3315,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3215,6 +3341,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3240,6 +3367,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3265,6 +3393,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3290,6 +3419,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3315,6 +3445,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3340,6 +3471,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3365,6 +3497,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3390,6 +3523,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3415,6 +3549,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3440,6 +3575,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3465,6 +3601,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3490,6 +3627,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3515,6 +3653,7 @@
         "ptQualityMeasure": null,
         "comment": null,
         "monumentedBy": null,
+        "feature_id": null,
         "vectorPurpose": "wa-vector-purpose:I",
         "length": null
       },
@@ -3531,6 +3670,37 @@
           ]
         ]
       }
+    }
+  ],
+  "@context": [
+    "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld",
+    {
+      "vocabs": "https://linked.data.gov.au/def/csdm/",
+      "wa-surveypoint-purpose": "https://linked.data.gov.au/def/csdm/wa-surveypoint-purpose/",
+      "wa-survey-purpose": "https://linked.data.gov.au/def/csdm/wa-survey-purpose/",
+      "wa-survey-type": "https://linked.data.gov.au/def/csdm/wa-survey-type/",
+      "wa-procedure-used": "https://linked.data.gov.au/def/csdm/wa-procedure-used/",
+      "wa-survey-documentation-type": "https://linked.data.gov.au/def/csdm/wa-survey-documentation-type/",
+      "wa-annotation-role": "https://linked.data.gov.au/def/csdm/wa-annotation/",
+      "wa-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-parcel-purpose/",
+      "wa-parcel-type": "https://linked.data.gov.au/def/csdm/wa-parcel-type/",
+      "wa-parcel-state": "https://linked.data.gov.au/def/csdm/wa-parcel-state/",
+      "wa-nonprimary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+      "wa-monument-form": "https://linked.data.gov.au/def/csdm/wa-monument-form/",
+      "wa-monument-condition": "https://linked.data.gov.au/def/csdm/wa-monument-condition/",
+      "wa-monument-state": "https://linked.data.gov.au/def/csdm/wa-monument-state/",
+      "wa-vector-purpose": "https://linked.data.gov.au/def/csdm/wa-vector-purpose/",
+      "wa-vector-type": "https://linked.data.gov.au/def/csdm/wa-vector-type/",
+      "wa-secondary-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-purpose/",
+      "wa-secondary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+      "wa-secondary-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-purpose/",
+      "wa-interest-type": "https://linked.data.gov.au/def/csdm/wa-interest-type/",
+      "wa-interest": "https://linked.data.gov.au/def/csdm/wa-interest/",
+      "wa-locality": "https://linked.data.gov.au/def/csdm/wa-locality/",
+      "wa-local-government": "https://linked.data.gov.au/def/csdm/wa-local-government/",
+      "registered-surveyors": "https://wa.gov.au/surveyors/",
+      "foaf": "https://xmlns.com/foaf/0.1/",
+      "activityType": "@type"
     }
   ]
 }
