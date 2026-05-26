@@ -1,0 +1,113 @@
+/* ─── Reset ───────────────────────────────────────────────────────────────── */
+
+html, body {
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family: monospace;
+}
+
+/* ─── Shared UI components ────────────────────────────────────────────────── */
+
+canvas {
+    display: block;
+}
+
+#sceneContainer canvas {
+    cursor: grab;
+}
+
+#sceneContainer canvas:active {
+    cursor: grabbing;
+}
+
+#info {
+    color: black;
+    background: rgba(135, 135, 135, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+#controls {
+    color: black;
+    background: rgba(135, 135, 135, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+button {
+    background: #3388ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background: #2277ee;
+}
+
+select {
+    background: #555;
+    color: white;
+    border: 1px solid #555;
+    padding: 4px 6px;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* ─── Full-window layout (topology_viewer.html) ───────────────────────────── */
+
+body.full-window #info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+body.full-window #controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* ─── Embed layout (topo_viewer_embed.html) ──────────────────────────────── */
+
+body.embed #info,
+body.embed #controls {
+    display: none;
+}
+
+/* ─── Fixed 500px layout (bb_topology_viewer.html) ───────────────────────── */
+
+body.fixed-layout {
+    background-color: #eef2f2;
+}
+
+body.fixed-layout #sceneContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 500px;
+    gap: 10px;
+    width: 500px;
+    overflow: hidden;
+}
+
+body.fixed-layout canvas {
+    width: 500px;
+    height: 500px;
+    grid-column: 1 / -1;
+}

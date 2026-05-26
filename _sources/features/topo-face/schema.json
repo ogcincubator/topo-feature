@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "A Face feature: a bounded planar surface referencing Ring features via directed_references. geometry must be null.",
+  "$defs": {
+    "testCollection": {
+      "$anchor": "testCollection",
+      "description": "A convenience ref to a complete, testable collection objects and references",
+      "$ref": "bblocks://ogc.geo.topo.features.topo-feature-collection"
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "bblocks://ogc.geo.topo.features.topo-feature"
+    },
+    {
+      "properties": {
+        "geometry": { "type": "null" },
+        "topology": {
+          "properties": {
+            "type": { "type": "string", "const": "Face" }
+          },
+          "required": ["type", "directed_references"]
+        }
+      },
+      "required": ["topology"]
+    }
+  ]
+}

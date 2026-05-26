@@ -2,15 +2,15 @@
   "title": "Validation report for ogc.geo.topo.alignments.cityjson-transform - CityJSON to TopoFeature transform",
   "bblockName": "CityJSON to TopoFeature transform",
   "bblockId": "ogc.geo.topo.alignments.cityjson-transform",
-  "generated": "2026-03-05T23:21:01.530086+00:00",
+  "generated": "2026-05-23T10:54:15.739323+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/geo/topo/alignments/cityjson-transform/example_1_1.json",
-        "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/alignments/cityjson-transform/example_1_1.json",
+        "filename": "build/tests/geo/topo/alignments/cityjson-transform/cityjson-cube.json",
+        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/alignments/cityjson-transform/cityjson-cube.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
@@ -33,8 +33,8 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/geo/topo/alignments/cityjson-transform/example_2_1.json",
-        "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/alignments/cityjson-transform/example_2_1.json",
+        "filename": "build/tests/geo/topo/alignments/cityjson-transform/cityjson-buildings.json",
+        "url": "https://surroundaustralia.github.io/topo-feature/build/tests/geo/topo/alignments/cityjson-transform/cityjson-buildings.json",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "application/json"

@@ -1,0 +1,29 @@
+transforms:
+
+  - id: Points-n-Edges
+    description: GeoJSON points and Edges
+    type: python
+    inputs:
+      mediaTypes: [ application/json ]
+    outputs:
+      mediaTypes: [ application/geo+json ]
+    metadata:
+      dependencies:
+        pip: geopandas>=1.1.3
+        python: ">=3.10"   # optional; skipped if not met
+      mode: edges,points
+    ref: transforms/topo2geojson.py
+
+  - id: Faces-as-Polygons
+    description: GeoJSON Polygons for faces
+    type: python
+    inputs:
+      mediaTypes: [ application/json ]
+    outputs:
+      mediaTypes: [ application/geo+json ]
+    metadata:
+      dependencies:
+        pip: geopandas>=1.1.3
+        python: ">=3.10"   # optional; skipped if not met
+      mode: faces
+    ref: transforms/topo2geojson.py

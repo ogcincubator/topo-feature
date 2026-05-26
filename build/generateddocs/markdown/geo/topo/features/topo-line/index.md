@@ -30,7 +30,7 @@ This is a generalisation of the TopoJSON concept using inline data, and hence no
   "id": "LineP1P2",
   "geometry": null,
   "topology": {
-    "type": "LineString",
+    "type": "Edge",
     "references": [
       "P1",
       "P2"
@@ -43,12 +43,12 @@ This is a generalisation of the TopoJSON concept using inline data, and hence no
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
   "type": "Feature",
   "id": "LineP1P2",
   "geometry": null,
   "topology": {
-    "type": "LineString",
+    "type": "Edge",
     "references": [
       "P1",
       "P2"
@@ -62,10 +62,11 @@ This is a generalisation of the TopoJSON concept using inline data, and hence no
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 
 ```
@@ -98,7 +99,7 @@ This is a generalisation of the TopoJSON concept using inline data, and hence no
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld",
   "type": "Feature",
   "id": "MultiLineP1P2P3",
   "geometry": null,
@@ -123,10 +124,11 @@ This is a generalisation of the TopoJSON concept using inline data, and hence no
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
 <http://www.example.com/features/MultiLineP1P2P3> a geojson:Feature ;
     geojson:topology [ a geojson:MultiLineString ;
-            geojson:relatedFeatures ( ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ( <http://www.example.com/features/P2> <http://www.example.com/features/P3> ) ) ] .
+            topo:relatedFeatures ( ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ( <http://www.example.com/features/P2> <http://www.example.com/features/P3> ) ) ] .
 
 
 ```
@@ -137,15 +139,16 @@ This is a generalisation of the TopoJSON concept using inline data, and hence no
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Line Feature with geometry by reference
 allOf:
-- $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
+- $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
 - properties:
     topology:
       allOf:
-      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+      - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
       - properties:
           type:
             type: string
             enum:
+            - Edge
             - LineString
             - MultiLineString
   required:
@@ -155,8 +158,8 @@ allOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml)
+* YAML version: [schema.yaml](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.json)
+* JSON version: [schema.json](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml)
 
 
 # JSON-LD Context
@@ -254,7 +257,47 @@ Links to the schema:
       "@id": "geojson:topology"
     },
     "references": {
-      "@id": "geojson:relatedFeatures",
+      "@id": "topo:relatedFeatures",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "directed_references": {
+      "@context": {
+        "ref": {
+          "@type": "@id",
+          "@id": "topo:ref"
+        }
+      },
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
+    "relationships": {
+      "@context": {
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent",
+        "role": {
+          "@id": "prof:hasRole",
+          "@type": "@id"
+        },
+        "conformsTo": {
+          "@id": "dct:conformsTo",
+          "@type": "@id"
+        }
+      },
+      "@id": "topo:relatedFeatures",
       "@type": "@id",
       "@container": "@list"
     },
@@ -267,26 +310,46 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "ref": "topo:ref",
+    "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
+    "Face": "topo:Face",
+    "Ring": "topo:Ring",
+    "Shell": "topo:Shell",
+    "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+    "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
+    "topo": "https://purl.org/geojson/topo#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1
   }
 }
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld)
+[context.jsonld](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/topo-feature](https://github.com/ogcincubator/topo-feature)
+* URL: [https://github.com/surroundaustralia/topo-feature](https://github.com/surroundaustralia/topo-feature)
 * Path: `_sources/features/topo-line`
 

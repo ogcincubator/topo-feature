@@ -1,8 +1,88 @@
-- title: Example Topology object
-  content: |-
-    See panel to right - note that a more user friendly "collapsable" version is in development. 
-
+- title: LineString topology (references style)
+  content: |
+    A topology object for an edge feature using plain string ID references.
+    The 'references' array names the two point features that form the line's endpoints.
+  base-output-filename: line
   snippets:
     - language: json
-      ref: example.json
+      ref: examples/line.json
       base-uri: http://www.example.com/features/
+
+- title: Topology Relationships
+  content: |
+    A topology object for an edge feature using plain string ID references.
+    The 'references' array names the two point features that form the line's endpoints.
+  base-output-filename: relationship
+  snippets:
+    - language: json
+      ref: examples/relationship.json
+      base-uri: http://www.example.com/features/
+
+- title: Ring topology (directed_references style)
+  content: |
+    A Ring topology object uses directed_references — each element has a 'ref' (Edge feature ID)
+    and an 'orientation' ('+' or '-'). Mutually exclusive with 'references'.
+  base-output-filename: ring-topology
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Ring",
+          "directed_references": [
+            { "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23", "orientation": "+" },
+            { "ref": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac", "orientation": "+" },
+            { "ref": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569", "orientation": "+" },
+            { "ref": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8", "orientation": "+" }
+          ]
+        }
+
+- title: Face topology (directed_references to Ring features)
+  content: |
+    A Face topology object uses directed_references to reference Ring features.
+    Each element has a 'ref' (Ring feature ID) and an 'orientation' ('+' or '-').
+    Mutually exclusive with 'references'.
+  base-output-filename: face-topology
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Face",
+          "directed_references": [
+            { "ref": "uuid:c60507ba-226b-4e49-a702-e9afef899b23", "orientation": "+" }
+          ]
+        }
+
+- title: Shell topology (directed_references to Face features)
+  content: |
+    A Shell topology object uses directed_references to reference Face features.
+    Each element has a 'ref' (Face feature ID) and an 'orientation' ('+' or '-').
+    Mutually exclusive with 'references'.
+  base-output-filename: shell-topology
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Shell",
+          "directed_references": [
+            { "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a2f0998ae", "orientation": "+" },
+            { "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae", "orientation": "+" },
+            { "ref": "uuid:4ac3b91b-eeb7-428c-b7e9-7e8a3f0998ae", "orientation": "-" },
+            { "ref": "uuid:4ac4b91b-eeb7-428c-b5e9-7e8a3f0998ae", "orientation": "+" }
+          ]
+        }
+
+- title: Solid topology (directed_references to Shell features)
+  content: |
+    A Solid topology object uses directed_references to reference Shell features.
+    Each element has a 'ref' (Shell feature ID) and an 'orientation' ('+' or '-').
+    Mutually exclusive with 'references'.
+  base-output-filename: solid-topology
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Solid",
+          "directed_references": [
+            { "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae", "orientation": "+" }
+          ]
+        }

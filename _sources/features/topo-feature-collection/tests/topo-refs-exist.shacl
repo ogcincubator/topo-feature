@@ -3,14 +3,15 @@
 @prefix sh:      <http://www.w3.org/ns/shacl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix dct:     <http://purl.org/dc/terms/> .
-@prefix topo:    <https://www.ogc.org/rules/topo/> .
+@prefix toporules:    <https://www.ogc.org/rules/topo/> .
 
 
-topo:testTopoReferencesExist
+toporules:testTopoReferencesExist
     a                  sh:NodeShape ;
     sh:description     "Topology references to features are present within current graph closure." ;
-    sh:targetObjectsOf geojson:topology ;
+    sh:targetSubjectsOf topo:relatedFeatures ;
     sh:name            "Topo Referenced Features" ;
     sh:sparql          [ sh:message
                                    "Referenced features must be present within current graph closure for  topological feature." ;
@@ -18,10 +19,10 @@ topo:testTopoReferencesExist
         prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
         prefix geojson: <https://purl.org/geojson/vocab#>
-
-        SELECT $this (geojson:relatedFeatures as ?path) (?ref as ?value)
+        prefix topo: <https://purl.org/geojson/topo#>
+        SELECT $this (topo:relatedFeatures as ?path) (?ref as ?value)
         WHERE {
-         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+         $this topo:relatedFeatures/rdf:rest*/rdf:first ?ref .
          $this a ?geomtype .
          FILTER ( ?geomtype != geojson:Polygon)
          FILTER NOT EXISTS { ?ref ?p ?o }
@@ -29,7 +30,30 @@ topo:testTopoReferencesExist
 """ ; ]
 .
 
-topo:testTopoLinesReferencePoints
+toporules:testTopoDirectedReferencesExist
+    a                  sh:NodeShape ;
+    sh:description     "Topology references to features are present within current graph closure." ;
+    sh:targetObjectsOf topo:directedReferences ;
+    sh:name            "Topo Directed Feature References" ;
+    sh:sparql          [ sh:message
+                                   "Orientated Referenced features must be present within current graph closure for  topological feature." ;
+                         sh:select """
+        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+        prefix geojson: <https://purl.org/geojson/vocab#>
+        prefix topo: <https://purl.org/geojson/topo#>
+        SELECT $this (topo:directedReferences as ?path) (?ref as ?value)
+        WHERE {
+         $this topo:directedReferences/rdf:rest*/rdf:first ?dref .
+         $dref topo:ref ?ref .
+         $this a ?geomtype .
+         FILTER ( ?geomtype != geojson:Polygon)
+         FILTER NOT EXISTS { ?ref ?p ?o }
+        }
+""" ; ]
+.
+
+toporules:testTopoLinesReferencePoints
     a                  sh:NodeShape ;
     sh:description     "Topology references for lines are points." ;
     sh:targetClass     geojson:LineString ;
@@ -42,16 +66,39 @@ topo:testTopoLinesReferencePoints
         prefix geojson: <https://purl.org/geojson/vocab#>
         prefix dct:     <http://purl.org/dc/terms/>
         PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
-
+        prefix topo: <https://purl.org/geojson/topo#>
         SELECT $this (geojson:topology as ?path) (?ref as ?value)
         WHERE {
-         $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+         $this topo:relatedFeatures/rdf:rest*/rdf:first ?ref .
          FILTER NOT EXISTS {
              ?ref (geojson:geometry|geosparql:hasGeometry|dct:spatial)/rdf:type geojson:Point }
         }
 """ ; ]
 .
 
+toporules:testTopoEdgesReferencePoints
+    a                  sh:NodeShape ;
+    sh:description     "Topology references for lines are points." ;
+    sh:targetClass     geojson:LineString ;
+    sh:name            "Lines reference points" ;
+    sh:sparql          [ sh:message
+                                   "Lines topologies must reference points within current graph closure." ;
+                         sh:select """
+        prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+        prefix geojson: <https://purl.org/geojson/vocab#>
+        prefix dct:     <http://purl.org/dc/terms/>
+        PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+        prefix topo: <https://purl.org/geojson/topo#>
+         SELECT $this (topo:directedReferences as ?path) (?ref as ?value)
+        WHERE {
+         $this topo:directedReferences/rdf:rest*/rdf:first ?dref .
+         $dref topo:ref ?ref .
+         FILTER NOT EXISTS {
+             ?ref (geojson:geometry|geosparql:hasGeometry|dct:spatial)/rdf:type geojson:Point }
+        }
+""" ; ]
+.
 #topo:testTopoPolyReferences
 #    a                  sh:NodeShape ;
 #    sh:description     "Topology references for polygons are lines, arcs or a circle." ;

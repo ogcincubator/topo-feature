@@ -1,0 +1,1108 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "0",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:3f45a6c1-29b0-4440-8beb-170b96f2a9b6",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.98953291633164,
+          -31.89062412837426,
+          10.5
+        ]
+      }
+    },
+    {
+      "id": "1",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:bc2c9cb5-2a49-4335-a4d2-ec74be876177",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.98953193144317,
+          -31.89071430692773,
+          10.5
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:a3bf8f35-cf71-437e-b0ef-d21cb6b63593",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.98953193144317,
+          -31.89071430692773,
+          20.5
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:57ed804e-51ef-4240-bc46-a9cc0f01562b",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.98953291633164,
+          -31.89062412837426,
+          20.5
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:060be32c-a4a5-4d41-b9a4-0ecdfe98c31a",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.98963861291055,
+          -31.89062496861885,
+          10.5
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:8405e765-0540-4c14-8cee-662ffa1a8fbd",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.98963861291055,
+          -31.89062496861885,
+          20.5
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:98d4e171-bd19-44bd-ba29-7c46d1fae1ca",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.98963762812505,
+          -31.890715147175253,
+          10.5
+        ]
+      }
+    },
+    {
+      "id": "7",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:cfc8b55e-1745-4943-a559-7263a49b9568",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.98963762812505,
+          -31.890715147175253,
+          20.5
+        ]
+      }
+    },
+    {
+      "id": "8",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:3cf453ea-d869-4bd7-b3da-c683276bba6f",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9896384159932,
+          -31.890643000722022,
+          18.5
+        ]
+      }
+    },
+    {
+      "id": "9",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:7dbd23f0-8173-4dfa-91f1-53129738520f",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.98963782514161,
+          -31.890697106051743,
+          18.5
+        ]
+      }
+    },
+    {
+      "id": "10",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:a4f741a8-dcda-415c-80ec-2d5a7d84c368",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9896384159932,
+          -31.890643000722022,
+          12.5
+        ]
+      }
+    },
+    {
+      "id": "11",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:7d6f1a6e-d89f-4505-a779-7b1ab044cb54",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.98963782514161,
+          -31.890697106051743,
+          12.5
+        ]
+      }
+    },
+    {
+      "id": "12",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:97e57f30-94e6-4871-8176-da926297232f",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9895538544841,
+          -31.890642328499293,
+          12.5
+        ]
+      }
+    },
+    {
+      "id": "13",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:bbea1ffa-82a4-4c52-8e89-db5d4c7a0c25",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9895532635831,
+          -31.890696433827607,
+          12.5
+        ]
+      }
+    },
+    {
+      "id": "14",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:ef3dcc76-513c-4043-980b-2764b7b341e4",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9895538544841,
+          -31.890642328499293,
+          18.5
+        ]
+      }
+    },
+    {
+      "id": "15",
+      "type": "Feature",
+      "properties": {
+        "purpose": "wa-surveypoint-purpose:boundary",
+        "ptQualityMeasure": 0.1,
+        "comment": null,
+        "monumentedBy": {
+          "form": "wa-monument-form:cadastral-point-unmarked",
+          "condition": "wa-monument-condition:ok",
+          "state": "wa-monument-state:unmarked"
+        },
+        "feature_id": "uuid:7c8ac01f-1514-48ad-a6f3-6fcbe9c21d03",
+        "vectorPurpose": null,
+        "length": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9895532635831,
+          -31.890696433827607,
+          18.5
+        ]
+      }
+    },
+    {
+      "id": "16",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 9.997
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98953291633164,
+            -31.89062412837426,
+            10.5
+          ],
+          [
+            115.98953193144317,
+            -31.89071430692773,
+            10.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "17",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 10.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98953193144317,
+            -31.89071430692773,
+            10.5
+          ],
+          [
+            115.98953193144317,
+            -31.89071430692773,
+            20.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "18",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 9.997
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98953193144317,
+            -31.89071430692773,
+            20.5
+          ],
+          [
+            115.98953291633164,
+            -31.89062412837426,
+            20.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "19",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 10.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98953291633164,
+            -31.89062412837426,
+            20.5
+          ],
+          [
+            115.98953291633164,
+            -31.89062412837426,
+            10.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "20",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 9.997
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98963861291055,
+            -31.89062496861885,
+            10.5
+          ],
+          [
+            115.98953291633164,
+            -31.89062412837426,
+            10.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "21",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 9.997
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98953291633164,
+            -31.89062412837426,
+            20.5
+          ],
+          [
+            115.98963861291055,
+            -31.89062496861885,
+            20.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "22",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 10.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98963861291055,
+            -31.89062496861885,
+            20.5
+          ],
+          [
+            115.98963861291055,
+            -31.89062496861885,
+            10.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "23",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 9.997
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98963762812505,
+            -31.890715147175253,
+            10.5
+          ],
+          [
+            115.98963861291055,
+            -31.89062496861885,
+            10.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "24",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 9.997
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98963861291055,
+            -31.89062496861885,
+            20.5
+          ],
+          [
+            115.98963762812505,
+            -31.890715147175253,
+            20.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "25",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 10.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98963762812505,
+            -31.890715147175253,
+            20.5
+          ],
+          [
+            115.98963762812505,
+            -31.890715147175253,
+            10.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "26",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 5.998
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.9896384159932,
+            -31.890643000722022,
+            18.5
+          ],
+          [
+            115.98963782514161,
+            -31.890697106051743,
+            18.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "27",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 6.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.9896384159932,
+            -31.890643000722022,
+            12.5
+          ],
+          [
+            115.9896384159932,
+            -31.890643000722022,
+            18.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "28",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 5.998
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98963782514161,
+            -31.890697106051743,
+            12.5
+          ],
+          [
+            115.9896384159932,
+            -31.890643000722022,
+            12.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "29",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 6.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98963782514161,
+            -31.890697106051743,
+            18.5
+          ],
+          [
+            115.98963782514161,
+            -31.890697106051743,
+            12.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "30",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 7.998
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.9896384159932,
+            -31.890643000722022,
+            12.5
+          ],
+          [
+            115.9895538544841,
+            -31.890642328499293,
+            12.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "31",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 5.998
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.9895538544841,
+            -31.890642328499293,
+            12.5
+          ],
+          [
+            115.9895532635831,
+            -31.890696433827607,
+            12.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "32",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 7.998
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.9895532635831,
+            -31.890696433827607,
+            12.5
+          ],
+          [
+            115.98963782514161,
+            -31.890697106051743,
+            12.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "33",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 7.998
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.9896384159932,
+            -31.890643000722022,
+            18.5
+          ],
+          [
+            115.9895538544841,
+            -31.890642328499293,
+            18.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "34",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 6.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.9895538544841,
+            -31.890642328499293,
+            18.5
+          ],
+          [
+            115.9895538544841,
+            -31.890642328499293,
+            12.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "35",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 7.998
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98963782514161,
+            -31.890697106051743,
+            18.5
+          ],
+          [
+            115.9895532635831,
+            -31.890696433827607,
+            18.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "36",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 5.998
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.9895532635831,
+            -31.890696433827607,
+            18.5
+          ],
+          [
+            115.9895538544841,
+            -31.890642328499293,
+            18.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "37",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 6.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.9895532635831,
+            -31.890696433827607,
+            12.5
+          ],
+          [
+            115.9895532635831,
+            -31.890696433827607,
+            18.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "38",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 9.997
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98953193144317,
+            -31.89071430692773,
+            10.5
+          ],
+          [
+            115.98963762812505,
+            -31.890715147175253,
+            10.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "39",
+      "type": "Feature",
+      "properties": {
+        "purpose": null,
+        "ptQualityMeasure": null,
+        "comment": null,
+        "monumentedBy": null,
+        "feature_id": null,
+        "vectorPurpose": "wa-vector-purpose:3D-Construct",
+        "length": 9.997
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.98963762812505,
+            -31.890715147175253,
+            20.5
+          ],
+          [
+            115.98953193144317,
+            -31.89071430692773,
+            20.5
+          ]
+        ]
+      }
+    }
+  ],
+  "@context": [
+    "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld",
+    {
+      "vocabs": "https://linked.data.gov.au/def/csdm/",
+      "wa-surveypoint-purpose": "https://linked.data.gov.au/def/csdm/wa-surveypoint-purpose/",
+      "wa-survey-purpose": "https://linked.data.gov.au/def/csdm/wa-survey-purpose/",
+      "wa-survey-type": "https://linked.data.gov.au/def/csdm/wa-survey-type/",
+      "wa-procedure-used": "https://linked.data.gov.au/def/csdm/wa-procedure-used/",
+      "wa-survey-documentation-type": "https://linked.data.gov.au/def/csdm/wa-survey-documentation-type/",
+      "wa-annotation-role": "https://linked.data.gov.au/def/csdm/wa-annotation/",
+      "wa-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-parcel-purpose/",
+      "wa-parcel-type": "https://linked.data.gov.au/def/csdm/wa-parcel-type/",
+      "wa-parcel-state": "https://linked.data.gov.au/def/csdm/wa-parcel-state/",
+      "wa-nonprimary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+      "wa-monument-form": "https://linked.data.gov.au/def/csdm/wa-monument-form/",
+      "wa-monument-condition": "https://linked.data.gov.au/def/csdm/wa-monument-condition/",
+      "wa-monument-state": "https://linked.data.gov.au/def/csdm/wa-monument-state/",
+      "wa-vector-purpose": "https://linked.data.gov.au/def/csdm/wa-vector-purpose/",
+      "wa-vector-type": "https://linked.data.gov.au/def/csdm/wa-vector-type/",
+      "wa-secondary-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-purpose/",
+      "wa-secondary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+      "wa-secondary-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-purpose/",
+      "wa-interest-type": "https://linked.data.gov.au/def/csdm/wa-interest-type/",
+      "wa-interest": "https://linked.data.gov.au/def/csdm/wa-interest/",
+      "wa-locality": "https://linked.data.gov.au/def/csdm/wa-locality/",
+      "wa-local-government": "https://linked.data.gov.au/def/csdm/wa-local-government/",
+      "registered-surveyors": "https://wa.gov.au/surveyors/",
+      "foaf": "https://xmlns.com/foaf/0.1/",
+      "activityType": "@type"
+    }
+  ]
+}

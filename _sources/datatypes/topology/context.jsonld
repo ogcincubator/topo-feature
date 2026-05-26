@@ -1,16 +1,21 @@
 {
   "@context": {
     "@version": 1.1,
-    "csdm": "https://linked.data.gov.au/def/csdm/",
     "dct": "http://purl.org/dc/terms/",
     "geojson": "https://purl.org/geojson/vocab#",
+    "topo": "https://purl.org/geojson/topo#",
     "type": "@type",
     "LineString": "geojson:LineString",
     "MultiLineString": "geojson:MultiLineString",
     "MultiPolygon": "geojson:MultiPolygon",
     "Polygon": "geojson:Polygon",
     "references": {
-      "@id": "geojson:relatedFeatures",
+      "@id": "topo:relatedFeatures",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "relationships": {
+      "@id": "topo:relatedFeatures",
       "@type": "@id",
       "@container": "@list"
     },
@@ -22,6 +27,32 @@
     "radius": "geojson:radius",
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
-    "endTangentVector": "geojson:endTangentVector"
+    "endTangentVector": "geojson:endTangentVector",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
+    "ref": {
+      "@id": "topo:ref",
+      "type": "@id"
+    },
+    "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
+    "Face": "topo:Face",
+    "Ring": "topo:Ring",
+    "Shell": "topo:Shell",
+    "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+        "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    }
   }
 }

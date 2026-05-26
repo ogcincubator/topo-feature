@@ -1,7 +1,7 @@
 {
   "name": "3D (Polyhedron) using nested Polygons and Point topology",
   "highlighted": true,
-  "abstract": "Defines options for describing 3D polyhedrons using features with Point geometry coordinates",
+  "abstract": "Typical 3D polyhedrons using features with Point geometry coordinates - note this does not support full topology of shared faces but matches many simplified geometry models.",
   "status": "under-development",
   "dateTimeAddition": "2023-11-01T00:00:00Z",
   "itemClass": "schema",

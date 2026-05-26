@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3D CSDM Solid Viewer</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/topo_viewer.css" />
+</head>
+<body class="embed">
+    <div id="sceneContainer">
+        <div id="info">Loading model...<br>Use mouse to rotate and zoom</div>
+        <div id="controls">
+            <strong id="modelLabel">Model:</strong>
+            <label><input type="checkbox" id="toggleWireframe"> Wireframe Mode</label>
+            <label><input type="checkbox" id="toggleEdges" checked> Show Edges</label>
+            <label><input type="checkbox" id="toggleVertices"> Show Vertices</label>
+            <button id="resetCamera">Reset Camera</button>
+            <button id="toggleGrid">Toggle Grid</button>
+            <hr style="border-color: #555; margin: 10px 0;">
+            <div id="solidsControls"><strong>Solids:</strong></div>
+        </div>
+    </div>
+    <script src="./vendor/earcut.min.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "./vendor/three.module.js",
+            "three/addons/": "./vendor/"
+        }
+    }
+    </script>
+    <script type="module" src="js/topo_viewer.js"></script>
+</body>
+</html>

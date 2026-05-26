@@ -28,13 +28,13 @@ Note: the geojson: namespace is used for semantic annotations - this may be repl
 ## Examples
 
 ### Example GeoJSON feature using ArcWithCenter topology
-Arc with Center example.
+Arc with Centre example.
 
-Topology defined by 2 end points and a centre that are references to features with point geometry.
+Topology is defined by 2 end points and a centre that are references to features with point geometry.
 
 ![Example](assets/arc-by-center.png)
 
-radius and arcLength are implicit but may be provided as optional properties of the feature.
+Radius and arcLength are implicit but may be provided as optional properties of the feature.
 #### json
 ```json
 {
@@ -62,7 +62,7 @@ radius and arcLength are implicit but may be provided as optional properties of 
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "1853004",
   "type": "Feature",
   "featureType": "my:ArcFeature",
@@ -88,6 +88,7 @@ radius and arcLength are implicit but may be provided as optional properties of 
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/1853004> a geojson:Feature,
@@ -95,7 +96,8 @@ radius and arcLength are implicit but may be provided as optional properties of 
     geojson:arcLength 2.5615e+01 ;
     geojson:radius 1.05438e+02 ;
     geojson:topology [ a geojson:ArcWithCenter ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .
+            topo:orientation "ccw" ;
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> <http://www.example.com/features/PC> ) ] .
 
 
 ```
@@ -133,7 +135,7 @@ Note that properties "radius" and "arcLength" are not required in the containing
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "arc1",
   "type": "Feature",
   "featureType": "my:ArcFeature",
@@ -158,6 +160,7 @@ Note that properties "radius" and "arcLength" are not required in the containing
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/arc1> a geojson:Feature,
@@ -165,7 +168,7 @@ Note that properties "radius" and "arcLength" are not required in the containing
     geojson:arcLength 2.5615e+01 ;
     geojson:radius 1.05438e+02 ;
     geojson:topology [ a geojson:Arc ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P3> <http://www.example.com/features/P2> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P3> <http://www.example.com/features/P2> ) ] .
 
 
 ```
@@ -201,7 +204,7 @@ Arc by Chord example.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "chord1",
   "type": "Feature",
   "featureType": "my:ArcChordFeature",
@@ -226,14 +229,16 @@ Arc by Chord example.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/chord1> a geojson:Feature,
         <my:ArcChordFeature> ;
     geojson:arcLength 2.5615e+01 ;
     geojson:topology [ a geojson:ArcByChord ;
-            geojson:radius 1.05438e+02 ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+            topo:orientation "cw" ;
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ;
+            geojson:radius 1.05438e+02 ] .
 
 
 ```
@@ -267,7 +272,7 @@ Circle with Center example.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "1853004",
   "type": "Feature",
   "featureType": "my:CircleFeature",
@@ -288,13 +293,14 @@ Circle with Center example.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:CircleFeature> ;
     geojson:topology [ a geojson:CircleByCenter ;
-            geojson:radius 10 ;
-            geojson:relatedFeatures ( <http://www.example.com/features/PC> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/PC> ) ;
+            geojson:radius 10 ] .
 
 
 ```
@@ -330,7 +336,7 @@ Cubic Spline example.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "1853004",
   "type": "Feature",
   "featureType": "my:SplineFeature",
@@ -353,11 +359,12 @@ Cubic Spline example.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:SplineFeature> ;
     geojson:topology [ a geojson:CubicSpline ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/Px1> <http://www.example.com/features/Px2> <http://www.example.com/features/P2> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/Px1> <http://www.example.com/features/Px2> <http://www.example.com/features/P2> ) ] .
 
 
 ```
@@ -399,7 +406,7 @@ Cubic Spline with Tangents example.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "id": "1853004",
   "type": "Feature",
   "featureType": "my:SplineFeature",
@@ -432,13 +439,14 @@ Cubic Spline with Tangents example.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 
 <http://www.example.com/features/1853004> a geojson:Feature,
         <my:SplineFeature> ;
     geojson:topology [ a geojson:CubicSpline ;
-            geojson:endTangentVector [ geojson:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/PVE> ) ] ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ;
-            geojson:startTangentVector [ geojson:relatedFeatures ( <http://www.example.com/features/PVS> <http://www.example.com/features/P1> ) ] ] .
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ;
+            geojson:endTangentVector [ topo:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/PVE> ) ] ;
+            geojson:startTangentVector [ topo:relatedFeatures ( <http://www.example.com/features/PVS> <http://www.example.com/features/P1> ) ] ] .
 
 
 ```
@@ -449,11 +457,11 @@ Cubic Spline with Tangents example.
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Arc Feature with geometry by reference
 allOf:
-- $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
+- $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
 - properties:
     topology:
       allOf:
-      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+      - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
       - oneOf:
         - properties:
             type:
@@ -547,8 +555,8 @@ allOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.yaml)
+* YAML version: [schema.yaml](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.json)
+* JSON version: [schema.json](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.yaml)
 
 
 # JSON-LD Context
@@ -646,7 +654,47 @@ Links to the schema:
       "@id": "geojson:topology"
     },
     "references": {
-      "@id": "geojson:relatedFeatures",
+      "@id": "topo:relatedFeatures",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "directed_references": {
+      "@context": {
+        "ref": {
+          "@type": "@id",
+          "@id": "topo:ref"
+        }
+      },
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
+    "relationships": {
+      "@context": {
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent",
+        "role": {
+          "@id": "prof:hasRole",
+          "@type": "@id"
+        },
+        "conformsTo": {
+          "@id": "dct:conformsTo",
+          "@type": "@id"
+        }
+      },
+      "@id": "topo:relatedFeatures",
       "@type": "@id",
       "@container": "@list"
     },
@@ -659,26 +707,46 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "ref": "topo:ref",
+    "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
+    "Face": "topo:Face",
+    "Ring": "topo:Ring",
+    "Shell": "topo:Shell",
+    "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+    "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
+    "topo": "https://purl.org/geojson/topo#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1
   }
 }
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld)
+[context.jsonld](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/topo-feature](https://github.com/ogcincubator/topo-feature)
+* URL: [https://github.com/surroundaustralia/topo-feature](https://github.com/surroundaustralia/topo-feature)
 * Path: `_sources/features/topo-arc`
 

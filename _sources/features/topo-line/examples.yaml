@@ -1,20 +1,19 @@
 - title: LineString
-  # content: |-
-
 
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
       ref: examples/linestring.json
-      # this is a "closure" of objects required to perform SHACL validation of logical constraints.
       shacl-closure:
         - ../topo-feature/examples/points.ttl
+
 - title: MultiLineString
-# content: |-
+
   snippets:
     - language: json
       base-uri: http://www.example.com/features/
       ref: examples/multilinestring.json
-      # this is a "closure" of objects required to perform SHACL validation of logical constraints.
       shacl-closure:
         - ../topo-feature/examples/points.ttl
+
+

@@ -13,14 +13,14 @@ This building block defines a GeoJSON (or FG-JSON) Feature Collection for a set 
 
 %definition% 
 
-A Feature Collection where the set of TopoFeatures contained describe the full geometry of higher-dimension features by topology relationships, ultimately grounded in Point features with explicit coordinates.
+A Feature Collection where the set of TopoFeatures contained describes the full geometry of higher-dimension features by topology relationships, ultimately grounded in Point features with explicit coordinates.
 
-TopoFeature is feature type using a topology property to reference an ordered list of references to other features. 
+TopoFeature is a feature type using a topology property to reference an ordered list of references to other features. 
 
 Other features may be either features with topology properties or GeoJSON (or FG-JSON) point objects.
 
-This is a generalisation of the TopoJSON concept using inline data, but not limited to the LineStrings. Topological defined objects 
-can be solids, swept volumes or any other concept.
+This is a generalisation of the [TopoJSON](https://github.com/topojson/topojson) concept using inline data, but not limited to the LineStrings. 
+Topological defined objects can be solids, swept volumes or any other concept.
 
 
 ## Examples
@@ -63,7 +63,7 @@ can be solids, swept volumes or any other concept.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
   "type": "FeatureCollection",
   "id": "pointsonly",
   "features": [
@@ -129,7 +129,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP1P2",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P1",
           "P2"
@@ -168,7 +168,7 @@ can be solids, swept volumes or any other concept.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
   "type": "FeatureCollection",
   "id": "line",
   "features": [
@@ -177,7 +177,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP1P2",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P1",
           "P2"
@@ -217,6 +217,7 @@ can be solids, swept volumes or any other concept.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/line> a geojson:FeatureCollection ;
@@ -225,8 +226,8 @@ can be solids, swept volumes or any other concept.
         <http://www.example.com/features/P2> .
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 <http://www.example.com/features/P1> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;
@@ -288,7 +289,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP1P2",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P1",
           "P2"
@@ -301,7 +302,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP2P3",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P2",
           "P3"
@@ -314,7 +315,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP3P1",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P3",
           "P1"
@@ -343,7 +344,7 @@ can be solids, swept volumes or any other concept.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
   "type": "FeatureCollection",
   "id": "TopoCollectionExample",
   "features": [
@@ -388,7 +389,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP1P2",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P1",
           "P2"
@@ -401,7 +402,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP2P3",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P2",
           "P3"
@@ -414,7 +415,7 @@ can be solids, swept volumes or any other concept.
       "id": "LineP3P1",
       "geometry": null,
       "topology": {
-        "type": "LineString",
+        "type": "Edge",
         "references": [
           "P3",
           "P1"
@@ -444,6 +445,7 @@ can be solids, swept volumes or any other concept.
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/TopoCollectionExample> a geojson:FeatureCollection ;
@@ -457,19 +459,19 @@ can be solids, swept volumes or any other concept.
 
 <http://www.example.com/features/TriangleP1P2P3> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            geojson:relatedFeatures ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/LineP1P2> <http://www.example.com/features/LineP2P3> <http://www.example.com/features/LineP3P1> ) ] .
 
 <http://www.example.com/features/LineP1P2> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ] .
 
 <http://www.example.com/features/LineP2P3> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/P3> ) ] .
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <http://www.example.com/features/P2> <http://www.example.com/features/P3> ) ] .
 
 <http://www.example.com/features/LineP3P1> a geojson:Feature ;
-    geojson:topology [ a geojson:LineString ;
-            geojson:relatedFeatures ( <http://www.example.com/features/P3> <http://www.example.com/features/P1> ) ] .
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <http://www.example.com/features/P3> <http://www.example.com/features/P1> ) ] .
 
 <http://www.example.com/features/P1> a geojson:Feature ;
     geojson:geometry [ a geojson:Point ;
@@ -523,15 +525,15 @@ properties:
     type: array
     items:
       anyOf:
-      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
+      - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
       - $ref: '#/$defs/PointOptions'
 
 ```
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml)
+* YAML version: [schema.yaml](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json)
+* JSON version: [schema.json](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml)
 
 
 # JSON-LD Context
@@ -539,6 +541,15 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "type": "@type",
+    "features": {
+      "@id": "geojson:features",
+      "@container": "@set"
+    },
+    "bbox": {
+      "@id": "geojson:bbox",
+      "@container": "@list"
+    },
     "links": {
       "@context": {
         "href": {
@@ -559,13 +570,9 @@ Links to the schema:
       },
       "@id": "rdfs:seeAlso"
     },
-    "features": {
-      "@container": "@set",
-      "@id": "geojson:features"
-    },
     "properties": "@nest",
-    "type": "@type",
     "featureType": "@type",
+    "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -577,10 +584,6 @@ Links to the schema:
     "Polygon": "geojson:Polygon",
     "id": "@id",
     "geometry": "geojson:geometry",
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
     "time": {
       "@context": {
         "date": {
@@ -598,7 +601,6 @@ Links to the schema:
       },
       "@id": "dct:time"
     },
-    "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
     "place": "dct:spatial",
     "Polyhedron": "geojson:Polyhedron",
     "MultiPolyhedron": "geojson:MultiPolyhedron",
@@ -627,7 +629,47 @@ Links to the schema:
     "topology": {
       "@context": {
         "references": {
-          "@id": "geojson:relatedFeatures",
+          "@id": "topo:relatedFeatures",
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "directed_references": {
+          "@context": {
+            "ref": {
+              "@type": "@id",
+              "@id": "topo:ref"
+            }
+          },
+          "@id": "topo:directedReferences",
+          "@container": "@list"
+        },
+        "relationships": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent",
+            "role": {
+              "@id": "prof:hasRole",
+              "@type": "@id"
+            },
+            "conformsTo": {
+              "@id": "dct:conformsTo",
+              "@type": "@id"
+            }
+          },
+          "@id": "topo:relatedFeatures",
           "@type": "@id",
           "@container": "@list"
         }
@@ -644,26 +686,46 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "ref": "topo:ref",
+    "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
+    "Face": "topo:Face",
+    "Ring": "topo:Ring",
+    "Shell": "topo:Shell",
+    "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+    "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "geojson": "https://purl.org/geojson/vocab#",
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
-    "geojson": "https://purl.org/geojson/vocab#",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
+    "topo": "https://purl.org/geojson/topo#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1
   }
 }
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld)
+[context.jsonld](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/topo-feature](https://github.com/ogcincubator/topo-feature)
+* URL: [https://github.com/surroundaustralia/topo-feature](https://github.com/surroundaustralia/topo-feature)
 * Path: `_sources/features/topo-feature-collection`
 

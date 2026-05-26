@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "topo": "https://purl.org/geojson/topo#",
+    "ref": {
+      "@type": "@id",
+      "@id": "topo:ref"
+    },
+    "orientation": "topo:orientation"
+  }
+}

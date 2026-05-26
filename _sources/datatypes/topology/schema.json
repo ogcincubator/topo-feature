@@ -1,71 +1,45 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "feature with geometry by reference",
+  "description": "Topology datatype for topo-features. Supports two reference styles: 'references' (array of string IDs) for simple positional references, and 'directed_references' (array of oriented object references with ref+orientation) for references where traversal direction matters. Exactly one of the two must be present.",
   "$defs": {
-    "refOrNest": {
-      "oneOf": [
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/refOrNest"
-          }
-        },
-        {
-          "type": "string"
-        }
-      ]
-    }
-  },
-  "oneOf": [
-    {
+    "simpleRefs": {
+      "description": "Plain string ID references (e.g. LineString referencing point nodes)",
       "properties": {
         "type": {
-          "type": "string",
           "not": {
             "enum": [
-              "Polygon",
-              "MultiLineString",
-              "MultiPolygon"
+              "Face",
+              "Ring",
+              "Shell",
+              "Solid"
             ]
           }
         },
         "references": {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/refOrNest"
+            "$ref": "bblocks://ogc.ogc-utils.iri-or-curie"
           }
         }
+      },
+      "required": [
+        "references"
+      ],
+      "not": {
+        "required": [
+          "directed_references"
+        ]
       }
     },
-    {
+    "nestedRefs": {
+      "description": "Plain string ID references (e.g. LineString referencing point nodes)",
       "properties": {
         "type": {
-          "type": "string",
           "enum": [
-            "MultiPolygon"
-          ]
-        },
-        "references": {
-          "type": "array",
-          "items": {
-            "type": "array",
-            "items": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/refOrNest"
-              }
-            }
-          }
-        }
-      }
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
+            "MultiLineString",
             "Polygon",
-            "MultiLineString"
+            "Polyhedron",
+            "Solid"
           ]
         },
         "references": {
@@ -73,15 +47,99 @@
           "items": {
             "type": "array",
             "items": {
-              "$ref": "#/$defs/refOrNest"
+              "oneOf": [
+                {
+                  "$ref": "bblocks://ogc.ogc-utils.iri-or-curie"
+                },
+                {
+                  "description": "wont check contents deeper",
+                  "type": "array"
+                }
+              ]
             }
           }
         }
+      },
+      "required": [
+        "references"
+      ],
+      "not": {
+        "required": [
+          "directed_references"
+        ]
+      }
+    },
+    "directedRefs": {
+      "description": "Oriented (directed) references — each with 'ref' and 'orientation'. Used for Ring, Shell.",
+      "properties": {
+        "type": {
+          "enum": [
+            "Face",
+            "Ring",
+            "Shell",
+            "Solid"
+          ]
+        },
+        "directed_references": {
+          "type": "array",
+          "items": {
+            "$ref": "bblocks://ogc.geo.topo.datatypes.oriented-ref"
+          }
+        }
+      },
+      "required": [
+        "directed_references"
+      ],
+      "not": {
+        "required": [
+          "references"
+        ]
       }
     }
-  ],
-  "required": [
-    "references",
-    "type"
+  },
+  "allOf": [
+    {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/simpleRefs"
+        },
+        {
+          "$ref": "#/$defs/nestedRefs"
+        },
+        {
+          "$ref": "#/$defs/directedRefs"
+        }
+      ]
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "allOf": [
+              {
+                "$ref": "bblocks://ogc.geo.json-fg.link-role"
+              },
+              {
+                "properties": {
+                  "rel": {
+                    "const": "topology"
+                  }
+                },
+                "required": [
+                  "rel"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "type"
+      ]
+    }
   ]
 }
