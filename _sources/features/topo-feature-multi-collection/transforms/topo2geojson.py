@@ -58,7 +58,7 @@ def process(input_data,mode,number):
         data = {"type": "FeatureCollection", "features": [data], "crs": data.get("crs")}
 
     # Extract CRS
-    crs_name = data.get("crs", {}).get("properties", {}).get("name")
+    crs_name = ((data.get("crs") or {}).get("properties") or {}).get("name")
     epsg_code = crs_name.split(":")[-1] if crs_name else "4326"
     data["features"] = []
 
