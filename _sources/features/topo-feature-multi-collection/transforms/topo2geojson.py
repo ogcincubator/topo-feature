@@ -153,18 +153,14 @@ def process(input_data,mode,number):
     return json.dumps(output_data, indent=2)
 
 testmode = True
-try:
-    if 'mode' in transform_metadata.metadata:
-        mode = transform_metadata.metadata["mode"]
-    else:
-        mode = "points,edges,faces"
-    testmode = False
-    if input_data:
-        print("running in transformer mode")
-    output_data = process(input_data,mode,None)
-except Exception as e:
-    print("not running in transformer mode or error {e}".format(e=e))
-    pass
+if 'mode' in transform_metadata.metadata:
+    mode = transform_metadata.metadata["mode"]
+else:
+    mode = "points,edges,faces"
+testmode = False
+if input_data:
+    print("running in transformer mode")
+output_data = process(input_data,mode,None)
 
 if __name__ == "__main__" and testmode:
     import argparse
