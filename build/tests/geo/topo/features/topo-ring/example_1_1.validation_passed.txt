@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-ring - Ring Topology Feature
-Generated 2026-05-23T10:54:34.405823+00:00
+Generated 2026-05-26T06:15:50.603853+00:00
 === Files ===
 Using examples/ring-simple.json from examples
 JSON-LD context is present - uplifting
@@ -17,29 +17,18 @@ Validation result for _sources/features/topo-feature-collection/tests/topo-refs-
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoReferencesExist: *none*
- - Shape toporules:testTopoDirectedReferencesExist: <uuid:ring-east-face-outer>/geojson:topology/topo:directedReferences
  - Shape toporules:testTopoLinesReferencePoints: *none*
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoReferencesExist: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: <uuid:ring-east-face-outer>/geojson:topology/topo:directedReferences
 
 Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n80c4580d568d4a948bb3bbc4c366d4f5b3: *none*
- - Shape _:n80c4580d568d4a948bb3bbc4c366d4f5b1: *none*
-
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: <uuid:ring-east-face-outer>
+ - Shape _:nb61dace4c62b4576b2d30514653046efb1: *none*
+ - Shape _:nb61dace4c62b4576b2d30514653046efb3: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
@@ -47,11 +36,22 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureCollectionShape: *none*
+ - Shape geojson:FeatureShape: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureCollectionShape: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:FeatureShape: <uuid:ring-east-face-outer>
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 === End SHACL ===
 
