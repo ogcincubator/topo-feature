@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2026-05-23",
+  "dateOfLastChange": "2026-05-26",
   "link": "https://github.com/icsm-au/3d-csdm-schema",
   "sources": [],
   "maturity": "development",
@@ -23,8 +23,8 @@
   "shaclShapes": {},
   "dependsOn": [
     "ogc.ogc-utils.iri-or-curie",
-    "ogc.geo.json-fg.link-role",
-    "ogc.geo.topo.datatypes.oriented-ref"
+    "ogc.geo.topo.datatypes.oriented-ref",
+    "ogc.geo.json-fg.link-role"
   ],
   "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
   "schema": {
