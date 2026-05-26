@@ -304,8 +304,8 @@
                     [ a geojson:Feature ],
                     [ a geojson:Feature ] ] ) ;
     topo:shells ( [ a geojson:FeatureCollection ;
-                geojson:features [ a geojson:Feature ] ] ),
-        ( [ a geojson:FeatureCollection ;
                 geojson:features [ a geojson:Feature ],
-                    [ a geojson:Feature ] ] ) .
+                    [ a geojson:Feature ] ] ),
+        ( [ a geojson:FeatureCollection ;
+                geojson:features [ a geojson:Feature ] ] ) .
 

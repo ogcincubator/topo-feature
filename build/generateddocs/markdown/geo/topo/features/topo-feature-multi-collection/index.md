@@ -32597,10 +32597,10 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
                     [ a geojson:Feature ],
                     [ a geojson:Feature ] ] ) ;
     topo:shells ( [ a geojson:FeatureCollection ;
-                geojson:features [ a geojson:Feature ] ] ),
-        ( [ a geojson:FeatureCollection ;
                 geojson:features [ a geojson:Feature ],
-                    [ a geojson:Feature ] ] ) .
+                    [ a geojson:Feature ] ] ),
+        ( [ a geojson:FeatureCollection ;
+                geojson:features [ a geojson:Feature ] ] ) .
 
 
 ```
@@ -48089,9 +48089,9 @@ All supporting points, edges, and faces are included to make the example self-co
                     <uuid:fad324b9-801f-40f4-b65b-91f8753e9698>,
                     <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ] ) ;
     topo:rings ( [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] ) ;
-    topo:shells ( [ a geojson:Feature ] ),
-        ( [ a geojson:FeatureCollection ;
-                geojson:features [ a geojson:Feature ] ] ) .
+    topo:shells ( [ a geojson:FeatureCollection ;
+                geojson:features [ a geojson:Feature ] ] ),
+        ( [ a geojson:Feature ] ) .
 
 
 ```
