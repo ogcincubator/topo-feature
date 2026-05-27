@@ -1978,8 +1978,8 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     topo:edges <uuid:f4aafb64-0512-46e6-aad9-d39ef1255674> ;
     topo:faces ( <uuid:b197eb9f-d623-4276-ab90-56deed4d70ee> ) ;
     topo:rings ( <uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54> ) ;
-    topo:shells ( <uuid:22177114-a434-4a3e-bc39-b204a4c5b79a> ),
-        ( <uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30> ) ;
+    topo:shells ( <uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30> ),
+        ( <uuid:22177114-a434-4a3e-bc39-b204a4c5b79a> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54> a geojson:FeatureCollection ;
@@ -3487,8 +3487,8 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
     topo:edges <uuid:dbe9315f-41ea-48b3-9307-a636d71be4a5> ;
     topo:faces ( <uuid:f6081e8b-46f0-4cfa-a97a-ebc3d9f45756> ) ;
     topo:rings ( <uuid:7ee1cf56-6075-480a-a5bc-d877b9fae2c7> ) ;
-    topo:shells ( <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> ),
-        ( <uuid:51326c6a-b938-4c83-8b6a-e2ffe6afd839> ) ;
+    topo:shells ( <uuid:51326c6a-b938-4c83-8b6a-e2ffe6afd839> ),
+        ( <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> a geojson:FeatureCollection ;
@@ -6300,8 +6300,8 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     topo:edges <uuid:0e096965-f363-4b3e-9e04-643b5fb0d042> ;
     topo:faces ( <uuid:5ea35606-e9fc-4db3-8935-35be81feaade> ) ;
     topo:rings ( <uuid:e1be1058-cea4-4bd7-a9a7-ce1e4a1ddc51> ) ;
-    topo:shells ( <uuid:4dea63f9-8deb-4736-8c4b-7d2534a5b40e> ),
-        ( <uuid:ca3c28b2-7bfa-44b5-8129-da1e3f1723c3> ) ;
+    topo:shells ( <uuid:ca3c28b2-7bfa-44b5-8129-da1e3f1723c3> ),
+        ( <uuid:4dea63f9-8deb-4736-8c4b-7d2534a5b40e> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:056d873d-1fab-46d2-9cd4-f9f5f2e26661> a geojson:Feature ;
@@ -16041,8 +16041,8 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
     topo:edges <uuid:21566231-4d84-4ee5-9812-6d730600f6c9> ;
     topo:faces ( <uuid:423f5a0c-8751-4e98-a2aa-db1d830c4778> ) ;
     topo:rings ( <uuid:fb7fe2d6-f507-41f6-a725-3fa5cb252068> ) ;
-    topo:shells ( <uuid:357f1d28-405c-4086-83a8-9716876fe301> ),
-        ( <uuid:2d32ac86-f165-4f74-95e6-bab2a73776a6> ) ;
+    topo:shells ( <uuid:2d32ac86-f165-4f74-95e6-bab2a73776a6> ),
+        ( <uuid:357f1d28-405c-4086-83a8-9716876fe301> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:02a5f63e-b3ad-46dd-a505-3f2746c8dc6c> a geojson:Feature ;
@@ -28863,8 +28863,8 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
         <uuid:8a7f5e78-fcc3-4f6d-a19e-ece99b75234f> ;
     topo:faces ( <uuid:b877b36c-fa85-40c3-b254-fe4d8cbf637c> ) ;
     topo:rings ( <uuid:a212bf84-0fc3-4c11-b9ae-6324149206bf> ) ;
-    topo:shells ( <uuid:057e31e4-e48d-4690-85f5-7f9bee5503ec> ),
-        ( <uuid:4239e2e9-e975-4d03-9c5a-65321c4830b1> ) ;
+    topo:shells ( <uuid:4239e2e9-e975-4d03-9c5a-65321c4830b1> ),
+        ( <uuid:057e31e4-e48d-4690-85f5-7f9bee5503ec> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:0175c2aa-87ea-4e50-9b5e-a702710d09a5> a geojson:Feature ;
@@ -34375,8 +34375,8 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     topo:edges <uuid:696ce04d-ecba-46ed-8d11-95a17f490933> ;
     topo:faces ( <uuid:66682266-e880-42c1-a61f-d92a48267c90> ) ;
     topo:rings ( <uuid:ec6d63b8-c842-4560-8e08-1c6d5d041ae9> ) ;
-    topo:shells ( <uuid:dcf03c4e-dd72-4d79-89e0-6a254806b438> ),
-        ( <uuid:bff4a861-5f47-4bcb-a803-5441d2dc7e92> ) ;
+    topo:shells ( <uuid:bff4a861-5f47-4bcb-a803-5441d2dc7e92> ),
+        ( <uuid:dcf03c4e-dd72-4d79-89e0-6a254806b438> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:05c94a8c-f507-42b4-b4b7-16ee622b45fe> a geojson:Feature ;
@@ -38432,8 +38432,8 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     topo:edges <uuid:a1cff144-27d7-46e8-9d19-2957c0d14193> ;
     topo:faces ( <uuid:a78b491a-9cf9-4dc8-b195-519601b38cff> ) ;
     topo:rings ( <uuid:394e96e4-c335-49f4-916b-47593774cb5b> ) ;
-    topo:shells ( <uuid:53011530-7534-4cc4-b4cb-21be6a4ccea7> ),
-        ( <uuid:08f3c7cd-4b9b-4bdd-a77f-1032c29bd3be> ) ;
+    topo:shells ( <uuid:08f3c7cd-4b9b-4bdd-a77f-1032c29bd3be> ),
+        ( <uuid:53011530-7534-4cc4-b4cb-21be6a4ccea7> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:0451532d-168c-4f08-83cc-d94629b744a7> a geojson:Feature ;

@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-shell - Shell Topology Feature
-Generated 2026-05-26T07:15:15.399241+00:00
+Generated 2026-05-27T07:41:18.568976+00:00
 === Files ===
 Using examples/shell-with-context.json from examples
 JSON-LD context is present - uplifting
@@ -18,18 +18,18 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n0a06618737ba47b98a0bf0daf4507b50b3: *none*
- - Shape _:n0a06618737ba47b98a0bf0daf4507b50b1: *none*
+ - Shape _:n329019ee0856461aa2be93738bbbaff5b3: *none*
+ - Shape _:n329019ee0856461aa2be93738bbbaff5b1: *none*
 
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoReferencesExist: *none*
- - Shape toporules:testTopoDirectedReferencesExist: _:Na9c588305a7f44eb9e87d9dbb27c38dc,_:N680644cadbcb499ab74f821eb8db5ab7,_:N938bf64e4624425494885c97ef7be58d,_:N8778cbac18c4457294eb66ef194fa973,_:Na5987f99e79a46b8b45c1a352a6b87a4,_:N7af197da1db54f1b8251e1b2a3508366,_:N3221e9a288d94d00abfa500a7b72ee14,_:N0bf0a64df4404db0a2687e05f2858479
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: _:Nd1711ff8936f4890bea000e8ac364fb3,_:N434ab40ed0194313b0bcf93841dc224a,_:N9badc914b9ca48a0a718e26fc3c0b4f7,_:N8f240c771e9344638090d429817168eb,_:N2ba22a53ca0e45a88200a5aab78a3e56,_:Nd31edc82235549a58e2b5fb3177317e5,_:N2330558c31594c4b9f72e4cc2acf7527,_:N222ac1014f264f3b943be2ee7e21bbd4
+ - Shape toporules:testTopoReferencesExist: *none*
+ - Shape toporules:testTopoLinesReferencePoints: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
@@ -38,9 +38,9 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: <uuid:2387ae98-9236-42fe-9414-c45b99954c41>,<uuid:4a294022-4864-49c7-8cee-f9e43360bc4e>,<uuid:607a3363-3eb7-4ce6-a633-86d2e565692b>,<uuid:01947f47-ee13-44a9-85a4-2bcb4881982a>,<uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5>,<uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed>,<uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f>,<uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae>
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: <uuid:607a3363-3eb7-4ce6-a633-86d2e565692b>,<uuid:2387ae98-9236-42fe-9414-c45b99954c41>,<uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae>,<uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f>,<uuid:01947f47-ee13-44a9-85a4-2bcb4881982a>,<uuid:4a294022-4864-49c7-8cee-f9e43360bc4e>,<uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed>,<uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5>
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
@@ -48,11 +48,11 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureCollectionShape: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 === End SHACL ===
 

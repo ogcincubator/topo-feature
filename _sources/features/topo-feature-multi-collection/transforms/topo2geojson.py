@@ -58,20 +58,40 @@ def process(input_data,mode,number):
         data = {"type": "FeatureCollection", "features": [data], "crs": data.get("crs")}
 
     # Extract CRS
-    crs_name = data.get("crs", {}).get("properties", {}).get("name")
+    crs_name = ((data.get("crs") or {}).get("properties") or {}).get("name")
     epsg_code = crs_name.split(":")[-1] if crs_name else "4326"
-    data["features"] = []
+
+    geomsmap = {}
 
     # transfer coordinates to features
-    if "points" in mode:
+
+    if "points" in data:
+        # assume we nuke any features if points are explicit.
+        data["features"] = []
         for pc in data["points"]:
             for feature in pc['features']:
                 if 'id' in feature:
                     feature['properties']['feature_id'] = feature['id']
-            data["features"].extend(pc["features"])
-        # push ids to prop3rties so geopandas doesnt nuke them
+            if "points" in mode:
+                data["features"].extend(pc["features"])
+            geomsmap = extract_feature_coordinates(data["points"])
+        # push ids to properties so geopandas doesnt nuke them
+    elif "features" in data:
+        # need to find points in features[] else cannot generate geometries
+        pfeatures = []
+        for feature in walk_features(data["features"]):
+            if feature["type"] != "Point":
+                pfeatures.add(feature)
+        if len(pfeatures) > 0:
+            if "points" in mode:
+                data["features"] = list(pfeatures)
+            else:
+                data["features"] = []
+            geomsmap = extract_feature_coordinates(pfeatures)
 
-    geomsmap = extract_feature_coordinates(data["points"])
+    if geomsmap == {}:
+        raise ValueError("No point geometries found")
+
     geomtype = {"edges": "LineString", "solids": "Solid", "rings": "MultiLineString", "faces": "MultiPolygon" , "shells": "Solid"}
     for feat_type in [ "edges",  "rings" , "faces" ] :
         if not feat_type in data :
@@ -156,15 +176,18 @@ testmode = True
 try:
     if 'mode' in transform_metadata.metadata:
         mode = transform_metadata.metadata["mode"]
-    else:
-        mode = "points,edges,faces"
-    testmode = False
+except:
+    mode = "points,edges,faces"
+
+
+try:
     if input_data:
         print("running in transformer mode")
     output_data = process(input_data,mode,None)
-except Exception as e:
-    print("not running in transformer mode or error {e}".format(e=e))
-    pass
+    testmode = False
+except:
+    mode = "points,edges,faces"
+    testmode = True
 
 if __name__ == "__main__" and testmode:
     import argparse

@@ -194,12 +194,12 @@
   "name": "Building Blocks - Topo-Feature",
   "abstract": "Features with geometry defined via  generalised topology between identified objects (Features).",
   "description": "Defines Feature (object) topology using a _topology_ property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.\n\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \n\nTopo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. \n\nTopo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.\n\nNote: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features.. \n\n_Topo-Feature allows for explicit CRS. If desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._\n",
-  "modified": "2026-05-26T07:14:50.808042",
+  "modified": "2026-05-27T07:40:56.081114",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"25abca22c897dd633f68c669e182ee84446aa519",
-      "shortCommitId": "\"25abca",
-      "date": "2026-05-21T23:39:18+00:00\""
+      "commitId": "\"ccc2722ff09e6ff35b4415d9a62b15eb66c2dc45",
+      "shortCommitId": "\"ccc272",
+      "date": "2026-05-26T10:12:47+00:00\""
     }
   },
   "gitRepository": "https://github.com/surroundaustralia/topo-feature",
@@ -249,7 +249,7 @@
       "itemClass": "schema",
       "register": "ogc",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "tags": [
         "3D",
         "geometry",
@@ -345,13 +345,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/alignments/cityjson-transform/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/alignments/cityjson-transform/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/alignments/cityjson-transform/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -386,7 +386,7 @@
       "itemClass": "datatype",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -427,13 +427,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/datatypes/oriented-ref/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/datatypes/oriented-ref/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/datatypes/oriented-ref/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/datatypes/oriented-ref/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -466,7 +466,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "maturity": "development",
@@ -478,9 +478,9 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
+        "bblocks://ogc.geo.json-fg.link-role",
         "bblocks://ogc.ogc-utils.iri-or-curie",
-        "bblocks://ogc.geo.topo.datatypes.oriented-ref",
-        "bblocks://ogc.geo.json-fg.link-role"
+        "bblocks://ogc.geo.topo.datatypes.oriented-ref"
       ],
       "ldContext": {
         "prof:hasArtifact": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
@@ -509,13 +509,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/datatypes/topology/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/datatypes/topology/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/datatypes/topology/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/datatypes/topology/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -548,17 +548,17 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.json-fg.feature-lenient",
-        "bblocks://ogc.geo.json-fg.feature",
-        "bblocks://ogc.geo.json-fg.featureCollection",
-        "bblocks://ogc.geo.features.featureCollection",
-        "bblocks://ogc.geo.features.feature",
         "bblocks://ogc.geo.topo.features.topo-feature",
+        "bblocks://ogc.geo.json-fg.featureCollection",
+        "bblocks://ogc.geo.json-fg.feature",
+        "bblocks://ogc.geo.features.feature",
+        "bblocks://ogc.geo.features.featureCollection",
+        "bblocks://ogc.geo.json-fg.feature-lenient",
         "bblocks://ogc.geo.json-fg.featureCollection-lenient"
       ],
       "tags": [
@@ -569,10 +569,20 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature-collection",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
+        },
+        {
+          "prof:hasArtifact": [
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
@@ -591,16 +601,6 @@
             "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.features.featureCollection",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
-        {
-          "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
@@ -633,13 +633,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature-collection/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature-collection/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature-collection/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature-collection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -672,13 +672,13 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.topo.datatypes.topology",
-        "bblocks://ogc.geo.topo.features.topo-feature-collection"
+        "bblocks://ogc.geo.topo.features.topo-feature-collection",
+        "bblocks://ogc.geo.topo.datatypes.topology"
       ],
       "tags": [
         "topology",
@@ -688,8 +688,8 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature",
           "prof:hasRole": "role:validation",
@@ -698,8 +698,8 @@
         },
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature-collection",
           "prof:hasRole": "role:validation",
@@ -752,13 +752,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -791,7 +791,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -804,8 +804,8 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-arc",
           "prof:hasRole": "role:validation",
@@ -814,8 +814,8 @@
         },
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature",
           "prof:hasRole": "role:validation",
@@ -824,8 +824,8 @@
         },
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature-collection",
           "prof:hasRole": "role:validation",
@@ -882,13 +882,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/features/topo-arc/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-arc/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-arc/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-arc/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -921,14 +921,14 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
         "bblocks://ogc.geo.topo.features.topo-feature",
-        "bblocks://ogc.geo.topo.datatypes.topology",
-        "bblocks://ogc.geo.topo.features.topo-feature-collection"
+        "bblocks://ogc.geo.topo.features.topo-feature-collection",
+        "bblocks://ogc.geo.topo.datatypes.topology"
       ],
       "tags": [
         "topology",
@@ -940,8 +940,8 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature",
           "prof:hasRole": "role:validation",
@@ -950,8 +950,8 @@
         },
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature-collection",
           "prof:hasRole": "role:validation",
@@ -1004,13 +1004,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/features/topo-face/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-face/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-face/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-face/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1043,7 +1043,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "shaclClosures": [],
@@ -1057,8 +1057,8 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature",
           "prof:hasRole": "role:validation",
@@ -1067,8 +1067,8 @@
         },
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature-collection",
           "prof:hasRole": "role:validation",
@@ -1125,13 +1125,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/features/topo-line/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-line/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-line/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-line/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1164,7 +1164,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -1178,8 +1178,8 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature",
           "prof:hasRole": "role:validation",
@@ -1188,8 +1188,8 @@
         },
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature-collection",
           "prof:hasRole": "role:validation",
@@ -1217,8 +1217,8 @@
       ],
       "dependsOn": [
         "bblocks://ogc.geo.topo.features.topo-feature",
-        "bblocks://ogc.geo.topo.datatypes.topology",
-        "bblocks://ogc.geo.topo.features.topo-feature-collection"
+        "bblocks://ogc.geo.topo.features.topo-feature-collection",
+        "bblocks://ogc.geo.topo.datatypes.topology"
       ],
       "ldContext": {
         "prof:hasArtifact": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-polyhedron/context.jsonld",
@@ -1247,13 +1247,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/features/topo-polyhedron/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-polyhedron/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-polyhedron/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-polyhedron/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1286,14 +1286,14 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
         "bblocks://ogc.geo.topo.features.topo-feature",
-        "bblocks://ogc.geo.topo.datatypes.oriented-ref",
-        "bblocks://ogc.geo.topo.datatypes.topology"
+        "bblocks://ogc.geo.topo.datatypes.topology",
+        "bblocks://ogc.geo.topo.datatypes.oriented-ref"
       ],
       "tags": [
         "topology",
@@ -1305,8 +1305,8 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature",
           "prof:hasRole": "role:validation",
@@ -1315,8 +1315,8 @@
         },
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature-collection",
           "prof:hasRole": "role:validation",
@@ -1369,13 +1369,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/features/topo-ring/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-ring/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-ring/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-ring/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1407,15 +1407,15 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
         "bblocks://ogc.geo.topo.features.topo-feature",
+        "bblocks://ogc.geo.topo.features.topo-feature-collection",
         "bblocks://ogc.geo.topo.datatypes.oriented-ref",
-        "bblocks://ogc.geo.topo.datatypes.topology",
-        "bblocks://ogc.geo.topo.features.topo-feature-collection"
+        "bblocks://ogc.geo.topo.datatypes.topology"
       ],
       "tags": [
         "topology",
@@ -1427,8 +1427,8 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature",
           "prof:hasRole": "role:validation",
@@ -1437,8 +1437,8 @@
         },
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature-collection",
           "prof:hasRole": "role:validation",
@@ -1491,13 +1491,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/features/topo-shell/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-shell/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-shell/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-shell/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1530,16 +1530,16 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-05-26",
+      "dateOfLastChange": "2026-05-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.topo.features.topo-face",
-        "bblocks://ogc.geo.topo.features.topo-line",
-        "bblocks://ogc.geo.topo.features.topo-feature-collection",
         "bblocks://ogc.geo.topo.features.topo-feature",
+        "bblocks://ogc.geo.topo.features.topo-feature-collection",
+        "bblocks://ogc.geo.topo.features.topo-face",
         "bblocks://ogc.geo.topo.features.topo-shell",
+        "bblocks://ogc.geo.topo.features.topo-line",
         "bblocks://ogc.geo.topo.features.topo-ring"
       ],
       "tags": [
@@ -1552,8 +1552,8 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature",
           "prof:hasRole": "role:validation",
@@ -1562,8 +1562,8 @@
         },
         {
           "prof:hasArtifact": [
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+            "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.topo.features.topo-feature-collection",
           "prof:hasRole": "role:validation",
@@ -1646,7 +1646,7 @@
             "mode": "edges,points"
           },
           "ref": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-multi-collection/transforms/topo2geojson.py",
-          "code": "import json, geopandas as gpd\nimport sys\nimport glob as glob_module\n\nfrom typing import Generator, List\n\n\ndef walk_features(data: list) -> Generator[dict, None, None]:\n    \"\"\"\n    Walk features from a list of GeoJSON Features or FeatureCollections.\n\n    Args:\n        data: A list containing GeoJSON Feature or FeatureCollection objects\n\n    Yields:\n        Individual GeoJSON Feature dictionaries\n    \"\"\"\n    for item in data:\n        if isinstance(item, List):\n            yield from  walk_features(item)\n            continue\n        elif isinstance(item, dict):\n            match item.get(\"type\"):\n                case \"Feature\":\n                    yield item\n                case \"FeatureCollection\":\n                    yield from walk_features(item.get(\"features\", []))\n                case _:\n                    raise ValueError(f\"Unexpected GeoJSON type: {item.get('type')!r}\")\n        else:\n            yield item\n\ndef extract_feature_coordinates(data: list) -> dict[str, object]:\n    \"\"\"\n    Extract a mapping of feature IDs to their coordinates as JSON strings.\n\n    Args:\n        data: A list containing GeoJSON Feature or FeatureCollection objects\n\n    Returns:\n        A dictionary mapping feature ID -> JSON-encoded coordinates\n    \"\"\"\n    return {\n        feature[\"id\"]: feature[\"geometry\"][\"coordinates\"]\n        for feature in walk_features(data)\n    }\n\ndef process(input_data,mode,number):\n    if type(input_data) == str:\n        data = json.loads(input_data)\n    else:\n        data = json.load(input_data)\n\n    count = 0 # compare to number\n    # Normalize: wrap a single Feature into a FeatureCollection\n    is_feature = data.get(\"type\") == \"Feature\"\n    if is_feature:\n        data = {\"type\": \"FeatureCollection\", \"features\": [data], \"crs\": data.get(\"crs\")}\n\n    # Extract CRS\n    crs_name = data.get(\"crs\", {}).get(\"properties\", {}).get(\"name\")\n    epsg_code = crs_name.split(\":\")[-1] if crs_name else \"4326\"\n    data[\"features\"] = []\n\n    # transfer coordinates to features\n    if \"points\" in mode:\n        for pc in data[\"points\"]:\n            for feature in pc['features']:\n                if 'id' in feature:\n                    feature['properties']['feature_id'] = feature['id']\n            data[\"features\"].extend(pc[\"features\"])\n        # push ids to prop3rties so geopandas doesnt nuke them\n\n    geomsmap = extract_feature_coordinates(data[\"points\"])\n    geomtype = {\"edges\": \"LineString\", \"solids\": \"Solid\", \"rings\": \"MultiLineString\", \"faces\": \"MultiPolygon\" , \"shells\": \"Solid\"}\n    for feat_type in [ \"edges\",  \"rings\" , \"faces\" ] :\n        if not feat_type in data :\n            continue\n        for feat in walk_features ( data[feat_type] ):\n            if \"topology\" in feat:\n                # check type matches expected\n                if feat[\"topology\"][\"type\"].lower()+'s' != feat_type:\n                    print(\"Warning expected type{} does not match {}\".format(feat[\"topology\"][\"type\"].lower(),feat_type))\n                if \"references\" in feat[\"topology\"] :\n                    coords =  [ geomsmap[node] for node in feat[\"topology\"][\"references\"] ]\n\n                elif \"directed_references\" in feat[\"topology\"] :\n                    drs = feat[\"topology\"][\"directed_references\"]\n                    coords = [[]]\n                    startindex = 0\n                    for node in drs:\n                        coordSet = geomsmap[node[\"ref\"]][:]\n                        if node[\"orientation\"] == '-':\n                            coords[0] += coordSet[::-1][startindex:]\n                        else:\n                            coords[0] += coordSet[startindex:]\n                        if feat_type == 'edges':\n                            # for lines skip starting point to join them up with duplicating end point\n                            startindex = 1\n                else:\n                    print(\"No references found\")\n                    continue\n\n                feat[\"geometry\"] = {\"type\": geomtype[feat_type], \"coordinates\": coords, \"properties\": feat[\"properties\"]}\n                geomsmap[feat[\"id\"]] = coords\n                if feat_type in mode :\n                    if number:\n                        if count >= int(number):\n                            continue\n                    count +=1\n                    data[\"features\"].append(feat)\n\n\n\n    # Create GeoDataFrame from GeoJSON-like dict\n    if data[\"features\"] == []:\n        print(\"No feature geometries generated\")\n        return \"{}\"\n    else:\n        gdf = gpd.GeoDataFrame.from_features(data[\"features\"])\n    # Set CRS dynamically\n    if epsg_code:\n        gdf.set_crs(epsg=int(epsg_code), inplace=True)\n\n    # Print current CRS\n    print(\"Transform from CRS\" + str(gdf.crs))\n\n    # Transform to another CRS (example: ETRS89)\n    if epsg_code != \"4326\":\n        gdf = gdf.to_crs(epsg=4326)\n        # Print current CRS\n        print(\"            to CRS\" + str(gdf.crs))\n\n    # Convert back to GeoJSON \u2014 unwrap back to a single Feature if input was one\n    result = json.loads(gdf.to_json())\n    if is_feature == 1:\n        outputstr = json.dumps(result[\"features\"][0], indent=2)\n    else:\n        outputstr = gdf.to_json(indent=2)\n    # JSON-LD enablement for viewer\n    output_data = json.loads(outputstr)\n    output_data[\"@context\"] = [\n        \"https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld\"\n    ]\n    if \"@context\" in data:\n        context = data[\"@context\"]\n        if isinstance(context, List):\n            iterable_data = context\n        else:\n            iterable_data = [context]\n        for c in iterable_data:\n            output_data[\"@context\"].append(c)\n    return json.dumps(output_data, indent=2)\n\ntestmode = True\ntry:\n    if 'mode' in transform_metadata.metadata:\n        mode = transform_metadata.metadata[\"mode\"]\n    else:\n        mode = \"points,edges,faces\"\n    testmode = False\n    if input_data:\n        print(\"running in transformer mode\")\n    output_data = process(input_data,mode,None)\nexcept Exception as e:\n    print(\"not running in transformer mode or error {e}\".format(e=e))\n    pass\n\nif __name__ == \"__main__\" and testmode:\n    import argparse\n\n    argparser = argparse.ArgumentParser()\n    argparser.add_argument('-i', '--input_data', help=\"input file\")\n    argparser.add_argument('-o', '--output_file', help=\"output file\")\n    argparser.add_argument('-p', '--print', action='store_true', help=\"Print output of each file\")\n    argparser.add_argument('-n', '--number', default=None, help=\"Count of features to process\")\n    argparser.add_argument('-m', '--mode', default=\"points,edges,faces\", help=\"points,edges,faces (comma separated list)\")\n    args = argparser.parse_args()\n    if args.input_data:\n        for f in sorted(glob_module.glob(args.input_data)):\n            print(\"Processing {}\".format(f))\n            input_data = open(f, \"r\").read()\n            output_data = process(input_data, args.mode, args.number)\n            if args.print:\n                print(output_data)\n    else:\n        print(\"No input file\")\n\n\n\n"
+          "code": "import json, geopandas as gpd\nimport sys\nimport glob as glob_module\n\nfrom typing import Generator, List\n\n\ndef walk_features(data: list) -> Generator[dict, None, None]:\n    \"\"\"\n    Walk features from a list of GeoJSON Features or FeatureCollections.\n\n    Args:\n        data: A list containing GeoJSON Feature or FeatureCollection objects\n\n    Yields:\n        Individual GeoJSON Feature dictionaries\n    \"\"\"\n    for item in data:\n        if isinstance(item, List):\n            yield from  walk_features(item)\n            continue\n        elif isinstance(item, dict):\n            match item.get(\"type\"):\n                case \"Feature\":\n                    yield item\n                case \"FeatureCollection\":\n                    yield from walk_features(item.get(\"features\", []))\n                case _:\n                    raise ValueError(f\"Unexpected GeoJSON type: {item.get('type')!r}\")\n        else:\n            yield item\n\ndef extract_feature_coordinates(data: list) -> dict[str, object]:\n    \"\"\"\n    Extract a mapping of feature IDs to their coordinates as JSON strings.\n\n    Args:\n        data: A list containing GeoJSON Feature or FeatureCollection objects\n\n    Returns:\n        A dictionary mapping feature ID -> JSON-encoded coordinates\n    \"\"\"\n    return {\n        feature[\"id\"]: feature[\"geometry\"][\"coordinates\"]\n        for feature in walk_features(data)\n    }\n\ndef process(input_data,mode,number):\n    if type(input_data) == str:\n        data = json.loads(input_data)\n    else:\n        data = json.load(input_data)\n\n    count = 0 # compare to number\n    # Normalize: wrap a single Feature into a FeatureCollection\n    is_feature = data.get(\"type\") == \"Feature\"\n    if is_feature:\n        data = {\"type\": \"FeatureCollection\", \"features\": [data], \"crs\": data.get(\"crs\")}\n\n    # Extract CRS\n    crs_name = ((data.get(\"crs\") or {}).get(\"properties\") or {}).get(\"name\")\n    epsg_code = crs_name.split(\":\")[-1] if crs_name else \"4326\"\n\n    geomsmap = {}\n\n    # transfer coordinates to features\n\n    if \"points\" in data:\n        # assume we nuke any features if points are explicit.\n        data[\"features\"] = []\n        for pc in data[\"points\"]:\n            for feature in pc['features']:\n                if 'id' in feature:\n                    feature['properties']['feature_id'] = feature['id']\n            if \"points\" in mode:\n                data[\"features\"].extend(pc[\"features\"])\n            geomsmap = extract_feature_coordinates(data[\"points\"])\n        # push ids to properties so geopandas doesnt nuke them\n    elif \"features\" in data:\n        # need to find points in features[] else cannot generate geometries\n        pfeatures = []\n        for feature in walk_features(data[\"features\"]):\n            if feature[\"type\"] != \"Point\":\n                pfeatures.add(feature)\n        if len(pfeatures) > 0:\n            if \"points\" in mode:\n                data[\"features\"] = list(pfeatures)\n            else:\n                data[\"features\"] = []\n            geomsmap = extract_feature_coordinates(pfeatures)\n\n    if geomsmap == {}:\n        raise ValueError(\"No point geometries found\")\n\n    geomtype = {\"edges\": \"LineString\", \"solids\": \"Solid\", \"rings\": \"MultiLineString\", \"faces\": \"MultiPolygon\" , \"shells\": \"Solid\"}\n    for feat_type in [ \"edges\",  \"rings\" , \"faces\" ] :\n        if not feat_type in data :\n            continue\n        for feat in walk_features ( data[feat_type] ):\n            if \"topology\" in feat:\n                # check type matches expected\n                if feat[\"topology\"][\"type\"].lower()+'s' != feat_type:\n                    print(\"Warning expected type{} does not match {}\".format(feat[\"topology\"][\"type\"].lower(),feat_type))\n                if \"references\" in feat[\"topology\"] :\n                    coords =  [ geomsmap[node] for node in feat[\"topology\"][\"references\"] ]\n\n                elif \"directed_references\" in feat[\"topology\"] :\n                    drs = feat[\"topology\"][\"directed_references\"]\n                    coords = [[]]\n                    startindex = 0\n                    for node in drs:\n                        coordSet = geomsmap[node[\"ref\"]][:]\n                        if node[\"orientation\"] == '-':\n                            coords[0] += coordSet[::-1][startindex:]\n                        else:\n                            coords[0] += coordSet[startindex:]\n                        if feat_type == 'edges':\n                            # for lines skip starting point to join them up with duplicating end point\n                            startindex = 1\n                else:\n                    print(\"No references found\")\n                    continue\n\n                feat[\"geometry\"] = {\"type\": geomtype[feat_type], \"coordinates\": coords, \"properties\": feat[\"properties\"]}\n                geomsmap[feat[\"id\"]] = coords\n                if feat_type in mode :\n                    if number:\n                        if count >= int(number):\n                            continue\n                    count +=1\n                    data[\"features\"].append(feat)\n\n\n\n    # Create GeoDataFrame from GeoJSON-like dict\n    if data[\"features\"] == []:\n        print(\"No feature geometries generated\")\n        return \"{}\"\n    else:\n        gdf = gpd.GeoDataFrame.from_features(data[\"features\"])\n    # Set CRS dynamically\n    if epsg_code:\n        gdf.set_crs(epsg=int(epsg_code), inplace=True)\n\n    # Print current CRS\n    print(\"Transform from CRS\" + str(gdf.crs))\n\n    # Transform to another CRS (example: ETRS89)\n    if epsg_code != \"4326\":\n        gdf = gdf.to_crs(epsg=4326)\n        # Print current CRS\n        print(\"            to CRS\" + str(gdf.crs))\n\n    # Convert back to GeoJSON \u2014 unwrap back to a single Feature if input was one\n    result = json.loads(gdf.to_json())\n    if is_feature == 1:\n        outputstr = json.dumps(result[\"features\"][0], indent=2)\n    else:\n        outputstr = gdf.to_json(indent=2)\n    # JSON-LD enablement for viewer\n    output_data = json.loads(outputstr)\n    output_data[\"@context\"] = [\n        \"https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld\"\n    ]\n    if \"@context\" in data:\n        context = data[\"@context\"]\n        if isinstance(context, List):\n            iterable_data = context\n        else:\n            iterable_data = [context]\n        for c in iterable_data:\n            output_data[\"@context\"].append(c)\n    return json.dumps(output_data, indent=2)\n\ntestmode = True\ntry:\n    if 'mode' in transform_metadata.metadata:\n        mode = transform_metadata.metadata[\"mode\"]\nexcept:\n    mode = \"points,edges,faces\"\n\n\ntry:\n    if input_data:\n        print(\"running in transformer mode\")\n    output_data = process(input_data,mode,None)\n    testmode = False\nexcept:\n    mode = \"points,edges,faces\"\n    testmode = True\n\nif __name__ == \"__main__\" and testmode:\n    import argparse\n\n    argparser = argparse.ArgumentParser()\n    argparser.add_argument('-i', '--input_data', help=\"input file\")\n    argparser.add_argument('-o', '--output_file', help=\"output file\")\n    argparser.add_argument('-p', '--print', action='store_true', help=\"Print output of each file\")\n    argparser.add_argument('-n', '--number', default=None, help=\"Count of features to process\")\n    argparser.add_argument('-m', '--mode', default=\"points,edges,faces\", help=\"points,edges,faces (comma separated list)\")\n    args = argparser.parse_args()\n    if args.input_data:\n        for f in sorted(glob_module.glob(args.input_data)):\n            print(\"Processing {}\".format(f))\n            input_data = open(f, \"r\").read()\n            output_data = process(input_data, args.mode, args.number)\n            if args.print:\n                print(output_data)\n    else:\n        print(\"No input file\")\n\n\n\n"
         },
         {
           "id": "Faces-as-Polygons",
@@ -1678,17 +1678,17 @@
             "mode": "faces"
           },
           "ref": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-multi-collection/transforms/topo2geojson.py",
-          "code": "import json, geopandas as gpd\nimport sys\nimport glob as glob_module\n\nfrom typing import Generator, List\n\n\ndef walk_features(data: list) -> Generator[dict, None, None]:\n    \"\"\"\n    Walk features from a list of GeoJSON Features or FeatureCollections.\n\n    Args:\n        data: A list containing GeoJSON Feature or FeatureCollection objects\n\n    Yields:\n        Individual GeoJSON Feature dictionaries\n    \"\"\"\n    for item in data:\n        if isinstance(item, List):\n            yield from  walk_features(item)\n            continue\n        elif isinstance(item, dict):\n            match item.get(\"type\"):\n                case \"Feature\":\n                    yield item\n                case \"FeatureCollection\":\n                    yield from walk_features(item.get(\"features\", []))\n                case _:\n                    raise ValueError(f\"Unexpected GeoJSON type: {item.get('type')!r}\")\n        else:\n            yield item\n\ndef extract_feature_coordinates(data: list) -> dict[str, object]:\n    \"\"\"\n    Extract a mapping of feature IDs to their coordinates as JSON strings.\n\n    Args:\n        data: A list containing GeoJSON Feature or FeatureCollection objects\n\n    Returns:\n        A dictionary mapping feature ID -> JSON-encoded coordinates\n    \"\"\"\n    return {\n        feature[\"id\"]: feature[\"geometry\"][\"coordinates\"]\n        for feature in walk_features(data)\n    }\n\ndef process(input_data,mode,number):\n    if type(input_data) == str:\n        data = json.loads(input_data)\n    else:\n        data = json.load(input_data)\n\n    count = 0 # compare to number\n    # Normalize: wrap a single Feature into a FeatureCollection\n    is_feature = data.get(\"type\") == \"Feature\"\n    if is_feature:\n        data = {\"type\": \"FeatureCollection\", \"features\": [data], \"crs\": data.get(\"crs\")}\n\n    # Extract CRS\n    crs_name = data.get(\"crs\", {}).get(\"properties\", {}).get(\"name\")\n    epsg_code = crs_name.split(\":\")[-1] if crs_name else \"4326\"\n    data[\"features\"] = []\n\n    # transfer coordinates to features\n    if \"points\" in mode:\n        for pc in data[\"points\"]:\n            for feature in pc['features']:\n                if 'id' in feature:\n                    feature['properties']['feature_id'] = feature['id']\n            data[\"features\"].extend(pc[\"features\"])\n        # push ids to prop3rties so geopandas doesnt nuke them\n\n    geomsmap = extract_feature_coordinates(data[\"points\"])\n    geomtype = {\"edges\": \"LineString\", \"solids\": \"Solid\", \"rings\": \"MultiLineString\", \"faces\": \"MultiPolygon\" , \"shells\": \"Solid\"}\n    for feat_type in [ \"edges\",  \"rings\" , \"faces\" ] :\n        if not feat_type in data :\n            continue\n        for feat in walk_features ( data[feat_type] ):\n            if \"topology\" in feat:\n                # check type matches expected\n                if feat[\"topology\"][\"type\"].lower()+'s' != feat_type:\n                    print(\"Warning expected type{} does not match {}\".format(feat[\"topology\"][\"type\"].lower(),feat_type))\n                if \"references\" in feat[\"topology\"] :\n                    coords =  [ geomsmap[node] for node in feat[\"topology\"][\"references\"] ]\n\n                elif \"directed_references\" in feat[\"topology\"] :\n                    drs = feat[\"topology\"][\"directed_references\"]\n                    coords = [[]]\n                    startindex = 0\n                    for node in drs:\n                        coordSet = geomsmap[node[\"ref\"]][:]\n                        if node[\"orientation\"] == '-':\n                            coords[0] += coordSet[::-1][startindex:]\n                        else:\n                            coords[0] += coordSet[startindex:]\n                        if feat_type == 'edges':\n                            # for lines skip starting point to join them up with duplicating end point\n                            startindex = 1\n                else:\n                    print(\"No references found\")\n                    continue\n\n                feat[\"geometry\"] = {\"type\": geomtype[feat_type], \"coordinates\": coords, \"properties\": feat[\"properties\"]}\n                geomsmap[feat[\"id\"]] = coords\n                if feat_type in mode :\n                    if number:\n                        if count >= int(number):\n                            continue\n                    count +=1\n                    data[\"features\"].append(feat)\n\n\n\n    # Create GeoDataFrame from GeoJSON-like dict\n    if data[\"features\"] == []:\n        print(\"No feature geometries generated\")\n        return \"{}\"\n    else:\n        gdf = gpd.GeoDataFrame.from_features(data[\"features\"])\n    # Set CRS dynamically\n    if epsg_code:\n        gdf.set_crs(epsg=int(epsg_code), inplace=True)\n\n    # Print current CRS\n    print(\"Transform from CRS\" + str(gdf.crs))\n\n    # Transform to another CRS (example: ETRS89)\n    if epsg_code != \"4326\":\n        gdf = gdf.to_crs(epsg=4326)\n        # Print current CRS\n        print(\"            to CRS\" + str(gdf.crs))\n\n    # Convert back to GeoJSON \u2014 unwrap back to a single Feature if input was one\n    result = json.loads(gdf.to_json())\n    if is_feature == 1:\n        outputstr = json.dumps(result[\"features\"][0], indent=2)\n    else:\n        outputstr = gdf.to_json(indent=2)\n    # JSON-LD enablement for viewer\n    output_data = json.loads(outputstr)\n    output_data[\"@context\"] = [\n        \"https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld\"\n    ]\n    if \"@context\" in data:\n        context = data[\"@context\"]\n        if isinstance(context, List):\n            iterable_data = context\n        else:\n            iterable_data = [context]\n        for c in iterable_data:\n            output_data[\"@context\"].append(c)\n    return json.dumps(output_data, indent=2)\n\ntestmode = True\ntry:\n    if 'mode' in transform_metadata.metadata:\n        mode = transform_metadata.metadata[\"mode\"]\n    else:\n        mode = \"points,edges,faces\"\n    testmode = False\n    if input_data:\n        print(\"running in transformer mode\")\n    output_data = process(input_data,mode,None)\nexcept Exception as e:\n    print(\"not running in transformer mode or error {e}\".format(e=e))\n    pass\n\nif __name__ == \"__main__\" and testmode:\n    import argparse\n\n    argparser = argparse.ArgumentParser()\n    argparser.add_argument('-i', '--input_data', help=\"input file\")\n    argparser.add_argument('-o', '--output_file', help=\"output file\")\n    argparser.add_argument('-p', '--print', action='store_true', help=\"Print output of each file\")\n    argparser.add_argument('-n', '--number', default=None, help=\"Count of features to process\")\n    argparser.add_argument('-m', '--mode', default=\"points,edges,faces\", help=\"points,edges,faces (comma separated list)\")\n    args = argparser.parse_args()\n    if args.input_data:\n        for f in sorted(glob_module.glob(args.input_data)):\n            print(\"Processing {}\".format(f))\n            input_data = open(f, \"r\").read()\n            output_data = process(input_data, args.mode, args.number)\n            if args.print:\n                print(output_data)\n    else:\n        print(\"No input file\")\n\n\n\n"
+          "code": "import json, geopandas as gpd\nimport sys\nimport glob as glob_module\n\nfrom typing import Generator, List\n\n\ndef walk_features(data: list) -> Generator[dict, None, None]:\n    \"\"\"\n    Walk features from a list of GeoJSON Features or FeatureCollections.\n\n    Args:\n        data: A list containing GeoJSON Feature or FeatureCollection objects\n\n    Yields:\n        Individual GeoJSON Feature dictionaries\n    \"\"\"\n    for item in data:\n        if isinstance(item, List):\n            yield from  walk_features(item)\n            continue\n        elif isinstance(item, dict):\n            match item.get(\"type\"):\n                case \"Feature\":\n                    yield item\n                case \"FeatureCollection\":\n                    yield from walk_features(item.get(\"features\", []))\n                case _:\n                    raise ValueError(f\"Unexpected GeoJSON type: {item.get('type')!r}\")\n        else:\n            yield item\n\ndef extract_feature_coordinates(data: list) -> dict[str, object]:\n    \"\"\"\n    Extract a mapping of feature IDs to their coordinates as JSON strings.\n\n    Args:\n        data: A list containing GeoJSON Feature or FeatureCollection objects\n\n    Returns:\n        A dictionary mapping feature ID -> JSON-encoded coordinates\n    \"\"\"\n    return {\n        feature[\"id\"]: feature[\"geometry\"][\"coordinates\"]\n        for feature in walk_features(data)\n    }\n\ndef process(input_data,mode,number):\n    if type(input_data) == str:\n        data = json.loads(input_data)\n    else:\n        data = json.load(input_data)\n\n    count = 0 # compare to number\n    # Normalize: wrap a single Feature into a FeatureCollection\n    is_feature = data.get(\"type\") == \"Feature\"\n    if is_feature:\n        data = {\"type\": \"FeatureCollection\", \"features\": [data], \"crs\": data.get(\"crs\")}\n\n    # Extract CRS\n    crs_name = ((data.get(\"crs\") or {}).get(\"properties\") or {}).get(\"name\")\n    epsg_code = crs_name.split(\":\")[-1] if crs_name else \"4326\"\n\n    geomsmap = {}\n\n    # transfer coordinates to features\n\n    if \"points\" in data:\n        # assume we nuke any features if points are explicit.\n        data[\"features\"] = []\n        for pc in data[\"points\"]:\n            for feature in pc['features']:\n                if 'id' in feature:\n                    feature['properties']['feature_id'] = feature['id']\n            if \"points\" in mode:\n                data[\"features\"].extend(pc[\"features\"])\n            geomsmap = extract_feature_coordinates(data[\"points\"])\n        # push ids to properties so geopandas doesnt nuke them\n    elif \"features\" in data:\n        # need to find points in features[] else cannot generate geometries\n        pfeatures = []\n        for feature in walk_features(data[\"features\"]):\n            if feature[\"type\"] != \"Point\":\n                pfeatures.add(feature)\n        if len(pfeatures) > 0:\n            if \"points\" in mode:\n                data[\"features\"] = list(pfeatures)\n            else:\n                data[\"features\"] = []\n            geomsmap = extract_feature_coordinates(pfeatures)\n\n    if geomsmap == {}:\n        raise ValueError(\"No point geometries found\")\n\n    geomtype = {\"edges\": \"LineString\", \"solids\": \"Solid\", \"rings\": \"MultiLineString\", \"faces\": \"MultiPolygon\" , \"shells\": \"Solid\"}\n    for feat_type in [ \"edges\",  \"rings\" , \"faces\" ] :\n        if not feat_type in data :\n            continue\n        for feat in walk_features ( data[feat_type] ):\n            if \"topology\" in feat:\n                # check type matches expected\n                if feat[\"topology\"][\"type\"].lower()+'s' != feat_type:\n                    print(\"Warning expected type{} does not match {}\".format(feat[\"topology\"][\"type\"].lower(),feat_type))\n                if \"references\" in feat[\"topology\"] :\n                    coords =  [ geomsmap[node] for node in feat[\"topology\"][\"references\"] ]\n\n                elif \"directed_references\" in feat[\"topology\"] :\n                    drs = feat[\"topology\"][\"directed_references\"]\n                    coords = [[]]\n                    startindex = 0\n                    for node in drs:\n                        coordSet = geomsmap[node[\"ref\"]][:]\n                        if node[\"orientation\"] == '-':\n                            coords[0] += coordSet[::-1][startindex:]\n                        else:\n                            coords[0] += coordSet[startindex:]\n                        if feat_type == 'edges':\n                            # for lines skip starting point to join them up with duplicating end point\n                            startindex = 1\n                else:\n                    print(\"No references found\")\n                    continue\n\n                feat[\"geometry\"] = {\"type\": geomtype[feat_type], \"coordinates\": coords, \"properties\": feat[\"properties\"]}\n                geomsmap[feat[\"id\"]] = coords\n                if feat_type in mode :\n                    if number:\n                        if count >= int(number):\n                            continue\n                    count +=1\n                    data[\"features\"].append(feat)\n\n\n\n    # Create GeoDataFrame from GeoJSON-like dict\n    if data[\"features\"] == []:\n        print(\"No feature geometries generated\")\n        return \"{}\"\n    else:\n        gdf = gpd.GeoDataFrame.from_features(data[\"features\"])\n    # Set CRS dynamically\n    if epsg_code:\n        gdf.set_crs(epsg=int(epsg_code), inplace=True)\n\n    # Print current CRS\n    print(\"Transform from CRS\" + str(gdf.crs))\n\n    # Transform to another CRS (example: ETRS89)\n    if epsg_code != \"4326\":\n        gdf = gdf.to_crs(epsg=4326)\n        # Print current CRS\n        print(\"            to CRS\" + str(gdf.crs))\n\n    # Convert back to GeoJSON \u2014 unwrap back to a single Feature if input was one\n    result = json.loads(gdf.to_json())\n    if is_feature == 1:\n        outputstr = json.dumps(result[\"features\"][0], indent=2)\n    else:\n        outputstr = gdf.to_json(indent=2)\n    # JSON-LD enablement for viewer\n    output_data = json.loads(outputstr)\n    output_data[\"@context\"] = [\n        \"https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld\"\n    ]\n    if \"@context\" in data:\n        context = data[\"@context\"]\n        if isinstance(context, List):\n            iterable_data = context\n        else:\n            iterable_data = [context]\n        for c in iterable_data:\n            output_data[\"@context\"].append(c)\n    return json.dumps(output_data, indent=2)\n\ntestmode = True\ntry:\n    if 'mode' in transform_metadata.metadata:\n        mode = transform_metadata.metadata[\"mode\"]\nexcept:\n    mode = \"points,edges,faces\"\n\n\ntry:\n    if input_data:\n        print(\"running in transformer mode\")\n    output_data = process(input_data,mode,None)\n    testmode = False\nexcept:\n    mode = \"points,edges,faces\"\n    testmode = True\n\nif __name__ == \"__main__\" and testmode:\n    import argparse\n\n    argparser = argparse.ArgumentParser()\n    argparser.add_argument('-i', '--input_data', help=\"input file\")\n    argparser.add_argument('-o', '--output_file', help=\"output file\")\n    argparser.add_argument('-p', '--print', action='store_true', help=\"Print output of each file\")\n    argparser.add_argument('-n', '--number', default=None, help=\"Count of features to process\")\n    argparser.add_argument('-m', '--mode', default=\"points,edges,faces\", help=\"points,edges,faces (comma separated list)\")\n    args = argparser.parse_args()\n    if args.input_data:\n        for f in sorted(glob_module.glob(args.input_data)):\n            print(\"Processing {}\".format(f))\n            input_data = open(f, \"r\").read()\n            output_data = process(input_data, args.mode, args.number)\n            if args.print:\n                print(output_data)\n    else:\n        print(\"No input file\")\n\n\n\n"
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature-multi-collection/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature-multi-collection/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://surroundaustralia.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature-multi-collection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",

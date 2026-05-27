@@ -28,8 +28,8 @@
     topo:edges <uuid:21566231-4d84-4ee5-9812-6d730600f6c9> ;
     topo:faces ( <uuid:423f5a0c-8751-4e98-a2aa-db1d830c4778> ) ;
     topo:rings ( <uuid:fb7fe2d6-f507-41f6-a725-3fa5cb252068> ) ;
-    topo:shells ( <uuid:357f1d28-405c-4086-83a8-9716876fe301> ),
-        ( <uuid:2d32ac86-f165-4f74-95e6-bab2a73776a6> ) ;
+    topo:shells ( <uuid:2d32ac86-f165-4f74-95e6-bab2a73776a6> ),
+        ( <uuid:357f1d28-405c-4086-83a8-9716876fe301> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:02a5f63e-b3ad-46dd-a505-3f2746c8dc6c> a geojson:Feature ;
