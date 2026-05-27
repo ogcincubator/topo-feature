@@ -145,7 +145,7 @@
         ]
       },
       "properties": {
-        "circumference": 40.0
+        "circumference": 40.00
       }
     }
   ],

@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.geo.topo.features.topo-polyhedron - 3D (Polyhedron) using nested Polygons and Point topology",
   "bblockName": "3D (Polyhedron) using nested Polygons and Point topology",
   "bblockId": "ogc.geo.topo.features.topo-polyhedron",
-  "generated": "2026-05-27T07:41:16.756203+00:00",
-  "result": true,
+  "generated": "2026-05-27T22:20:24.288601+00:00",
+  "result": false,
   "items": [
     {
       "source": {
@@ -15,7 +15,7 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -24,183 +24,17 @@
             {
               "isError": false,
               "message": "Using examples/building_topo.json from examples"
-            },
-            {
-              "op": "jsonld-uplift",
-              "isError": false,
-              "message": "JSON-LD context is present - uplifting"
-            },
-            {
-              "op": "jsonld-create",
-              "filename": "example_1_1.jsonld",
-              "isError": false,
-              "message": "Output JSON-LD example_1_1.jsonld created"
-            },
-            {
-              "op": "ttl-create",
-              "empty": false,
-              "filename": "example_1_1.ttl",
-              "size": 510,
-              "isError": false,
-              "message": "Output Turtle example_1_1.ttl created"
             }
           ]
         },
         {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
           "entries": [
             {
-              "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
-            }
-          ]
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "focusNodes": {
-                "_:n820bfa0e30d64d75aa464c0a52c421f4b3": {
-                  "nodes": [
-                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
-                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry"
-                  ]
-                },
-                "_:n820bfa0e30d64d75aa464c0a52c421f4b1": {
-                  "nodes": [
-                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n820bfa0e30d64d75aa464c0a52c421f4b3: <http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry\n - Shape _:n820bfa0e30d64d75aa464c0a52c421f4b1: <http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "toporules:testTopoEdgesReferencePoints": {
-                  "nodes": []
-                },
-                "toporules:testTopoDirectedReferencesExist": {
-                  "nodes": []
-                },
-                "toporules:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology"
-                  ]
-                },
-                "toporules:testTopoLinesReferencePoints": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape toporules:testTopoEdgesReferencePoints: *none*\n - Shape toporules:testTopoDirectedReferencesExist: *none*\n - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology\n - Shape toporules:testTopoLinesReferencePoints: *none*\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-              "focusNodes": {
-                "geojson:LinkShape": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape/sh:or/rdf:first": {
-                  "nodes": []
-                },
-                "geojson:FeatureShape": {
-                  "nodes": [
-                    "<http://www.example.com/features/P479822.187_5705866.783_100>",
-                    "<http://www.example.com/features/DENW19AL0000giv5BL>",
-                    "<http://www.example.com/features/P479816.67_5705861.672_100>",
-                    "<http://www.example.com/features/P479822.187_5705866.783_120>",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>",
-                    "<http://www.example.com/features/P479824.155_5705853.684_100>",
-                    "<http://www.example.com/features/P479824.155_5705853.684_110>",
-                    "<http://www.example.com/features/P479816.67_5705861.672_110>"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <http://www.example.com/features/P479822.187_5705866.783_100>,<http://www.example.com/features/DENW19AL0000giv5BL>,<http://www.example.com/features/P479816.67_5705861.672_100>,<http://www.example.com/features/P479822.187_5705866.783_120>,<http://www.example.com/features/P479829.666_5705858.785_100>,<http://www.example.com/features/P479829.666_5705858.785_120>,<http://www.example.com/features/P479824.155_5705853.684_100>,<http://www.example.com/features/P479824.155_5705853.684_110>,<http://www.example.com/features/P479816.67_5705861.672_110>\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
-              "focusNodes": {
-                "geojson:LinkShape": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape/sh:or/rdf:first": {
-                  "nodes": []
-                },
-                "geojson:FeatureCollectionShape": {
-                  "nodes": [
-                    "_:Nf51bd64b9fa04e8d8916697b214e64d5"
-                  ]
-                },
-                "geojson:GeometryShape": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "geojson:FeatureShape": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureCollectionShape: _:Nf51bd64b9fa04e8d8916697b214e64d5\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: *none*\n"
+              "exception": "AttributeError",
+              "isError": true,
+              "message": "Traceback (most recent call last):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 910, in resolve_from_url\n    document = self.store[url]\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_utils.py\", line 28, in __getitem__\n    return self.store[self.normalize(uri)]\n,KeyError: 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml'\n,\nDuring handling of the above exception, another exception occurred:\n\n,Traceback (most recent call last):\n,  File \"/usr/local/lib/python3.10/ssl.py\", line 1050, in _create\n    self.getpeername()\n,OSError: [Errno 107] Transport endpoint is not connected\n,\nDuring handling of the above exception, another exception occurred:\n\n,Traceback (most recent call last):\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 788, in urlopen\n    response = self._make_request(\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 488, in _make_request\n    raise new_e\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 464, in _make_request\n    self._validate_conn(conn)\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 1106, in _validate_conn\n    conn.connect()\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connection.py\", line 796, in connect\n    sock_and_verified = _ssl_wrap_socket_and_match_hostname(\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connection.py\", line 975, in _ssl_wrap_socket_and_match_hostname\n    ssl_sock = ssl_wrap_socket(\n,  File \"/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py\", line 433, in ssl_wrap_socket\n    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)\n,  File \"/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py\", line 477, in _ssl_wrap_socket_impl\n    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)\n,  File \"/usr/local/lib/python3.10/ssl.py\", line 513, in wrap_socket\n    return self.sslsocket_class._create(\n,  File \"/usr/local/lib/python3.10/ssl.py\", line 1062, in _create\n    notconn_pre_handshake_data = self.recv(1)\n,  File \"/usr/local/lib/python3.10/ssl.py\", line 1294, in recv\n    return super().recv(buflen, flags)\n,ConnectionResetError: [Errno 104] Connection reset by peer\n,\nDuring handling of the above exception, another exception occurred:\n\n,Traceback (most recent call last):\n,  File \"/venv/lib/python3.10/site-packages/requests/adapters.py\", line 645, in send\n    resp = conn.urlopen(\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 842, in urlopen\n    retries = retries.increment(\n,  File \"/venv/lib/python3.10/site-packages/urllib3/util/retry.py\", line 498, in increment\n    raise reraise(type(error), error, _stacktrace)\n,  File \"/venv/lib/python3.10/site-packages/urllib3/util/util.py\", line 38, in reraise\n    raise value.with_traceback(tb)\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 788, in urlopen\n    response = self._make_request(\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 488, in _make_request\n    raise new_e\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 464, in _make_request\n    self._validate_conn(conn)\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 1106, in _validate_conn\n    conn.connect()\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connection.py\", line 796, in connect\n    sock_and_verified = _ssl_wrap_socket_and_match_hostname(\n,  File \"/venv/lib/python3.10/site-packages/urllib3/connection.py\", line 975, in _ssl_wrap_socket_and_match_hostname\n    ssl_sock = ssl_wrap_socket(\n,  File \"/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py\", line 433, in ssl_wrap_socket\n    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)\n,  File \"/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py\", line 477, in _ssl_wrap_socket_impl\n    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)\n,  File \"/usr/local/lib/python3.10/ssl.py\", line 513, in wrap_socket\n    return self.sslsocket_class._create(\n,  File \"/usr/local/lib/python3.10/ssl.py\", line 1062, in _create\n    notconn_pre_handshake_data = self.recv(1)\n,  File \"/usr/local/lib/python3.10/ssl.py\", line 1294, in recv\n    return super().recv(buflen, flags)\n,urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))\n,\nDuring handling of the above exception, another exception occurred:\n\n,Traceback (most recent call last):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 913, in resolve_from_url\n    document = self.resolve_remote(url)\n,  File \"/src/ogc/bblocks/validation/json_.py\", line 66, in resolve_remote\n    result = load_yaml(content=requests.get(uri).content)\n,  File \"/venv/lib/python3.10/site-packages/requests/api.py\", line 73, in get\n    return request(\"get\", url, params=params, **kwargs)\n,  File \"/venv/lib/python3.10/site-packages/requests/api.py\", line 59, in request\n    return session.request(method=method, url=url, **kwargs)\n,  File \"/src/ogc/bblocks/http_interceptor.py\", line 107, in mock_requests_session_requests\n    return _original_requests_session_request(self, method, url, *args, **kwargs)\n,  File \"/venv/lib/python3.10/site-packages/requests/sessions.py\", line 592, in request\n    resp = self.send(prep, **send_kwargs)\n,  File \"/venv/lib/python3.10/site-packages/requests/sessions.py\", line 706, in send\n    r = adapter.send(request, **kwargs)\n,  File \"/venv/lib/python3.10/site-packages/requests/adapters.py\", line 660, in send\n    raise ConnectionError(err, request=request)\n,requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))\n,\nDuring handling of the above exception, another exception occurred:\n\n,Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validation/json_.py\", line 200, in validate\n    validate_json(json_doc, schema_validator)\n,  File \"/src/ogc/bblocks/validation/json_.py\", line 44, in validate_json\n    error = jsonschema.exceptions.best_match(validator.iter_errors(instance))\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/exceptions.py\", line 384, in best_match\n    best = next(errors, None)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 288, in iter_errors\n    for error in errors:\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_validators.py\", line 383, in oneOf\n    errs = list(validator.descend(instance, subschema, schema_path=index))\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 305, in descend\n    for error in self.evolve(schema=schema).iter_errors(instance):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 288, in iter_errors\n    for error in errors:\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_validators.py\", line 298, in ref\n    yield from validator.descend(instance, resolved)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 305, in descend\n    for error in self.evolve(schema=schema).iter_errors(instance):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 288, in iter_errors\n    for error in errors:\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_validators.py\", line 362, in allOf\n    yield from validator.descend(instance, subschema, schema_path=index)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 305, in descend\n    for error in self.evolve(schema=schema).iter_errors(instance):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 288, in iter_errors\n    for error in errors:\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_validators.py\", line 298, in ref\n    yield from validator.descend(instance, resolved)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 305, in descend\n    for error in self.evolve(schema=schema).iter_errors(instance):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 288, in iter_errors\n    for error in errors:\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_validators.py\", line 362, in allOf\n    yield from validator.descend(instance, subschema, schema_path=index)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 305, in descend\n    for error in self.evolve(schema=schema).iter_errors(instance):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 288, in iter_errors\n    for error in errors:\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_validators.py\", line 298, in ref\n    yield from validator.descend(instance, resolved)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 305, in descend\n    for error in self.evolve(schema=schema).iter_errors(instance):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 288, in iter_errors\n    for error in errors:\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_validators.py\", line 368, in anyOf\n    errs = list(validator.descend(instance, subschema, schema_path=index))\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 305, in descend\n    for error in self.evolve(schema=schema).iter_errors(instance):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 288, in iter_errors\n    for error in errors:\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_validators.py\", line 294, in ref\n    scope, resolved = validator.resolver.resolve(ref)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 899, in resolve\n    return url, self._remote_cache(url)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 915, in resolve_from_url\n    raise exceptions.RefResolutionError(exc)\n,jsonschema.exceptions.RefResolutionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))\n,\nDuring handling of the above exception, another exception occurred:\n\n,Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 199, in _validate_resource\n    result = validator.validate(filename, output_filename, report,\n,  File \"/src/ogc/bblocks/validation/json_.py\", line 221, in validate\n    'errorMessage': e.message,\n,AttributeError: 'RefResolutionError' object has no attribute 'message'\n"
             }
           ]
         }
@@ -210,7 +44,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 1,
-    "failed": 0
+    "passed": 0,
+    "failed": 1
   }
 }

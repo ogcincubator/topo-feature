@@ -1017,1284 +1017,6 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
 }
 ```
 
-#### jsonld
-```jsonld
-{
-  "@context": [
-    "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
-    "https://surroundaustralia.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/wa-core/context.jsonld"
-  ],
-  "id": "uuid:2c3dbfad-aa78-4ff1-8ef3-4022e7d5eeec",
-  "name": "DP 12346",
-  "description": "Cube test for Solid Validation",
-  "type": "FeatureCollection",
-  "featureType": "CSD",
-  "tenureType": "wa-parcel-type:freehold",
-  "planType": "wa-survey-type:deposited-plan",
-  "purpose": "wa-survey-purpose:subdivision",
-  "surveyType": "wa-survey-type:SSA",
-  "time": {
-    "date": "2026-04-22"
-  },
-  "horizontalCRS": "epsg:7850",
-  "verticalCRS": "epsg:5711",
-  "bearingRotation": 0.0,
-  "surveyTitle": "Cube",
-  "adminUnit": [],
-  "hasProvenance": [],
-  "wasGeneratedBy": {
-    "id": "uuid:ac0fb45d-1cde-4a9d-9f69-8b9f19f9b9b9",
-    "endedAtTime": "2026-05-08T04:57:21.733214+00:00"
-  },
-  "features": [],
-  "referencedCSDs": [],
-  "points": [
-    {
-      "id": "uuid:b099409d-51cc-47a5-8bbb-ce8f8872643b",
-      "type": "FeatureCollection",
-      "featureType": "CadastralMark",
-      "features": [
-        {
-          "id": "uuid:5ea43aac-1f62-4d89-9750-429a522242f7",
-          "type": "Feature",
-          "featureType": "BoundaryMark",
-          "time": "2026-05-08T04:57:21.731215+00:00",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              115.99419160999591,
-              -31.88795465588693,
-              2.5
-            ]
-          },
-          "place": {
-            "type": "Point",
-            "coordinates": [
-              404878.496,
-              6471542.499,
-              2.5
-            ]
-          },
-          "properties": {
-            "purpose": "wa-surveypoint-purpose:boundary",
-            "ptQualityMeasure": 0.1,
-            "comment": null,
-            "monumentedBy": {
-              "form": "wa-monument-form:cadastral-point-unmarked",
-              "condition": "wa-monument-condition:ok",
-              "state": "wa-monument-state:unmarked"
-            }
-          }
-        },
-        {
-          "id": "uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25",
-          "type": "Feature",
-          "featureType": "BoundaryMark",
-          "time": "2026-05-08T04:57:21.731215+00:00",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              115.99419062965137,
-              -31.888044843628364,
-              2.5
-            ]
-          },
-          "place": {
-            "type": "Point",
-            "coordinates": [
-              404878.496,
-              6471532.501,
-              2.5
-            ]
-          },
-          "properties": {
-            "purpose": "wa-surveypoint-purpose:boundary",
-            "ptQualityMeasure": 0.1,
-            "comment": null,
-            "monumentedBy": {
-              "form": "wa-monument-form:cadastral-point-unmarked",
-              "condition": "wa-monument-condition:ok",
-              "state": "wa-monument-state:unmarked"
-            }
-          }
-        },
-        {
-          "id": "uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8",
-          "type": "Feature",
-          "featureType": "BoundaryMark",
-          "time": "2026-05-08T04:57:21.731215+00:00",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              115.99408493587124,
-              -31.88804400722897,
-              2.5
-            ]
-          },
-          "place": {
-            "type": "Point",
-            "coordinates": [
-              404868.499,
-              6471532.501,
-              2.5
-            ]
-          },
-          "properties": {
-            "purpose": "wa-surveypoint-purpose:boundary",
-            "ptQualityMeasure": 0.1,
-            "comment": null,
-            "monumentedBy": {
-              "form": "wa-monument-form:cadastral-point-unmarked",
-              "condition": "wa-monument-condition:ok",
-              "state": "wa-monument-state:unmarked"
-            }
-          }
-        },
-        {
-          "id": "uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db",
-          "type": "Feature",
-          "featureType": "BoundaryMark",
-          "time": "2026-05-08T04:57:21.731215+00:00",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              115.99408591631878,
-              -31.887953819490452,
-              2.5
-            ]
-          },
-          "place": {
-            "type": "Point",
-            "coordinates": [
-              404868.499,
-              6471542.499,
-              2.5
-            ]
-          },
-          "properties": {
-            "purpose": "wa-surveypoint-purpose:boundary",
-            "ptQualityMeasure": 0.1,
-            "comment": null,
-            "monumentedBy": {
-              "form": "wa-monument-form:cadastral-point-unmarked",
-              "condition": "wa-monument-condition:ok",
-              "state": "wa-monument-state:unmarked"
-            }
-          }
-        },
-        {
-          "id": "uuid:eb21daac-f715-4985-b298-a02e29143b46",
-          "type": "Feature",
-          "featureType": "BoundaryMark",
-          "time": "2026-05-08T04:57:21.731215+00:00",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              115.99419160999591,
-              -31.88795465588693,
-              12.5
-            ]
-          },
-          "place": {
-            "type": "Point",
-            "coordinates": [
-              404878.496,
-              6471542.499,
-              12.5
-            ]
-          },
-          "properties": {
-            "purpose": "wa-surveypoint-purpose:boundary",
-            "ptQualityMeasure": 0.1,
-            "comment": null,
-            "monumentedBy": {
-              "form": "wa-monument-form:cadastral-point-unmarked",
-              "condition": "wa-monument-condition:ok",
-              "state": "wa-monument-state:unmarked"
-            }
-          }
-        },
-        {
-          "id": "uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269",
-          "type": "Feature",
-          "featureType": "BoundaryMark",
-          "time": "2026-05-08T04:57:21.731215+00:00",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              115.99419062965137,
-              -31.888044843628364,
-              12.5
-            ]
-          },
-          "place": {
-            "type": "Point",
-            "coordinates": [
-              404878.496,
-              6471532.501,
-              12.5
-            ]
-          },
-          "properties": {
-            "purpose": "wa-surveypoint-purpose:boundary",
-            "ptQualityMeasure": 0.1,
-            "comment": null,
-            "monumentedBy": {
-              "form": "wa-monument-form:cadastral-point-unmarked",
-              "condition": "wa-monument-condition:ok",
-              "state": "wa-monument-state:unmarked"
-            }
-          }
-        },
-        {
-          "id": "uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3",
-          "type": "Feature",
-          "featureType": "BoundaryMark",
-          "time": "2026-05-08T04:57:21.731215+00:00",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              115.99408591631878,
-              -31.887953819490452,
-              12.5
-            ]
-          },
-          "place": {
-            "type": "Point",
-            "coordinates": [
-              404868.499,
-              6471542.499,
-              12.5
-            ]
-          },
-          "properties": {
-            "purpose": "wa-surveypoint-purpose:boundary",
-            "ptQualityMeasure": 0.1,
-            "comment": null,
-            "monumentedBy": {
-              "form": "wa-monument-form:cadastral-point-unmarked",
-              "condition": "wa-monument-condition:ok",
-              "state": "wa-monument-state:unmarked"
-            }
-          }
-        },
-        {
-          "id": "uuid:bd14602d-819d-4f21-8068-c0292c964133",
-          "type": "Feature",
-          "featureType": "BoundaryMark",
-          "time": "2026-05-08T04:57:21.731215+00:00",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              115.99408493587124,
-              -31.88804400722897,
-              12.5
-            ]
-          },
-          "place": {
-            "type": "Point",
-            "coordinates": [
-              404868.499,
-              6471532.501,
-              12.5
-            ]
-          },
-          "properties": {
-            "purpose": "wa-surveypoint-purpose:boundary",
-            "ptQualityMeasure": 0.1,
-            "comment": null,
-            "monumentedBy": {
-              "form": "wa-monument-form:cadastral-point-unmarked",
-              "condition": "wa-monument-condition:ok",
-              "state": "wa-monument-state:unmarked"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  "parcels": [],
-  "edges": [
-    {
-      "id": "uuid:f4aafb64-0512-46e6-aad9-d39ef1255674",
-      "type": "FeatureCollection",
-      "featureType": "Edge",
-      "features": [
-        {
-          "id": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:5ea43aac-1f62-4d89-9750-429a522242f7",
-              "uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 9.998
-          }
-        },
-        {
-          "id": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25",
-              "uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 9.997
-          }
-        },
-        {
-          "id": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8",
-              "uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 9.998
-          }
-        },
-        {
-          "id": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db",
-              "uuid:5ea43aac-1f62-4d89-9750-429a522242f7"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 9.997
-          }
-        },
-        {
-          "id": "uuid:e71295e4-7595-4711-abac-70f172f42c03",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:5ea43aac-1f62-4d89-9750-429a522242f7",
-              "uuid:eb21daac-f715-4985-b298-a02e29143b46"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269",
-              "uuid:eb21daac-f715-4985-b298-a02e29143b46"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 9.998
-          }
-        },
-        {
-          "id": "uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269",
-              "uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:eb21daac-f715-4985-b298-a02e29143b46",
-              "uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 9.997
-          }
-        },
-        {
-          "id": "uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3",
-              "uuid:bd14602d-819d-4f21-8068-c0292c964133"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 9.998
-          }
-        },
-        {
-          "id": "uuid:bd7c5534-7e5c-407a-9402-fbe522312c07",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:bd14602d-819d-4f21-8068-c0292c964133",
-              "uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 9.997
-          }
-        },
-        {
-          "id": "uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db",
-              "uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8",
-              "uuid:bd14602d-819d-4f21-8068-c0292c964133"
-            ]
-          },
-          "properties": {
-            "vectorPurpose": "wa-vector-purpose:3D-Construct",
-            "comment": null,
-            "length": 10.0
-          }
-        }
-      ]
-    }
-  ],
-  "rings": [
-    {
-      "id": "uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54",
-      "type": "FeatureCollection",
-      "featureType": "Ring",
-      "features": [
-        {
-          "id": "uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Ring",
-            "directed_references": [
-              {
-                "ref": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "circumference": 39.99
-          }
-        },
-        {
-          "id": "uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Ring",
-            "directed_references": [
-              {
-                "ref": "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3",
-                "orientation": "-"
-              },
-              {
-                "ref": "uuid:e71295e4-7595-4711-abac-70f172f42c03",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b",
-                "orientation": "-"
-              },
-              {
-                "ref": "uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "circumference": 39.996
-          }
-        },
-        {
-          "id": "uuid:19d85793-6db1-4bd3-8dcc-0b23f0f29965",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Ring",
-            "directed_references": [
-              {
-                "ref": "uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:bd7c5534-7e5c-407a-9402-fbe522312c07",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "circumference": 39.99
-          }
-        },
-        {
-          "id": "uuid:1c068866-928b-48a1-ba2a-d324f13a9a2d",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Ring",
-            "directed_references": [
-              {
-                "ref": "uuid:23641631-470f-4c4b-981d-23ccb35d6a51",
-                "orientation": "-"
-              },
-              {
-                "ref": "uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f",
-                "orientation": "-"
-              },
-              {
-                "ref": "uuid:e71295e4-7595-4711-abac-70f172f42c03",
-                "orientation": "-"
-              }
-            ]
-          },
-          "properties": {
-            "circumference": 39.994
-          }
-        },
-        {
-          "id": "uuid:cc739e83-eaf9-4778-a6b6-89282172f44f",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Ring",
-            "directed_references": [
-              {
-                "ref": "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a",
-                "orientation": "-"
-              },
-              {
-                "ref": "uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4",
-                "orientation": "-"
-              },
-              {
-                "ref": "uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57",
-                "orientation": "-"
-              }
-            ]
-          },
-          "properties": {
-            "circumference": 39.996
-          }
-        },
-        {
-          "id": "uuid:da54190a-a12b-4bd9-a3fd-a10f1fc71115",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Ring",
-            "directed_references": [
-              {
-                "ref": "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f",
-                "orientation": "-"
-              },
-              {
-                "ref": "uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f",
-                "orientation": "-"
-              },
-              {
-                "ref": "uuid:bd7c5534-7e5c-407a-9402-fbe522312c07",
-                "orientation": "-"
-              },
-              {
-                "ref": "uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7",
-                "orientation": "-"
-              }
-            ]
-          },
-          "properties": {
-            "circumference": 39.994
-          }
-        }
-      ]
-    }
-  ],
-  "faces": [
-    {
-      "id": "uuid:b197eb9f-d623-4276-ab90-56deed4d70ee",
-      "type": "FeatureCollection",
-      "featureType": "Face",
-      "features": [
-        {
-          "id": "uuid:da2e85b6-5670-4759-a076-00a9225c7ca8",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              1.491151358216829e-06,
-              7.876927158248097e-08,
-              -0.9999999999988852
-            ],
-            "area": 99.95,
-            "description": "Bottom boundary face, [Cube]"
-          }
-        },
-        {
-          "id": "uuid:dc1da294-ce0e-4c6e-9819-98e040e74fe9",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.9999999999950753,
-              2.167074932871163e-06,
-              2.2700698904251706e-06
-            ],
-            "area": 99.98,
-            "description": "East-facing boundary face, [Cube]"
-          }
-        },
-        {
-          "id": "uuid:bfd7bbd1-94f1-4556-9336-2cd28f3b7bc8",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:19d85793-6db1-4bd3-8dcc-0b23f0f29965",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -1.4886383938598346e-06,
-              -7.85830713343613e-08,
-              0.999999999998889
-            ],
-            "area": 99.95,
-            "description": "Top boundary face, [Cube]"
-          }
-        },
-        {
-          "id": "uuid:4d1ae25a-0d3b-48f2-8169-b4c2451e95b3",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:1c068866-928b-48a1-ba2a-d324f13a9a2d",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -2.1532830796335323e-06,
-              0.9999999999972471,
-              9.322506564778303e-07
-            ],
-            "area": 99.97,
-            "description": "North-facing boundary face, [Cube]"
-          }
-        },
-        {
-          "id": "uuid:4588ddd8-9939-44f0-8b20-cfd4b2c4afcf",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:cc739e83-eaf9-4778-a6b6-89282172f44f",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -0.9999999999974037,
-              -2.1672380337658753e-06,
-              -7.040161281095843e-07
-            ],
-            "area": 99.98,
-            "description": "West-facing boundary face, [Cube]"
-          }
-        },
-        {
-          "id": "uuid:bf405007-c6dd-4c9c-b4ff-29af5fd3edf7",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:da54190a-a12b-4bd9-a3fd-a10f1fc71115",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              2.176710274047926e-06,
-              -0.9999999999974256,
-              6.410791044193729e-07
-            ],
-            "area": 99.97,
-            "description": "South-facing boundary face, [Cube]"
-          }
-        }
-      ]
-    }
-  ],
-  "shells": [
-    {
-      "id": "uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30",
-      "type": "FeatureCollection",
-      "featureType": "Shell",
-      "features": [
-        {
-          "id": "uuid:29246856-504f-48d4-9a72-a90fd0f5837b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Shell",
-            "directed_references": [
-              {
-                "ref": "uuid:da2e85b6-5670-4759-a076-00a9225c7ca8",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:dc1da294-ce0e-4c6e-9819-98e040e74fe9",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:bfd7bbd1-94f1-4556-9336-2cd28f3b7bc8",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:4d1ae25a-0d3b-48f2-8169-b4c2451e95b3",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:4588ddd8-9939-44f0-8b20-cfd4b2c4afcf",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:bf405007-c6dd-4c9c-b4ff-29af5fd3edf7",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "description": "Exterior Shell of Cube"
-          }
-        }
-      ]
-    }
-  ],
-  "solids": [
-    {
-      "id": "uuid:22177114-a434-4a3e-bc39-b204a4c5b79a",
-      "type": "FeatureCollection",
-      "featureType": "Solid",
-      "features": [
-        {
-          "id": "uuid:1683a565-764a-47c7-94e6-bf07e790cbca",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Solid",
-            "shells": [
-              {
-                "ref": "uuid:29246856-504f-48d4-9a72-a90fd0f5837b",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "name": "Cube",
-            "floors": [
-              1
-            ],
-            "volume": 999.5
-          }
-        }
-      ]
-    }
-  ],
-  "supportingDocuments": [],
-  "annotations": [],
-  "statistics": {
-    "point_count": 8,
-    "edge_count": 12,
-    "ring_count": 6,
-    "face_count": 6,
-    "shell_count": 1,
-    "solid_count": 1
-  }
-}
-```
-
-#### ttl
-```ttl
-@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
-@prefix container: <https://linked.data.gov.au/def/csdm/container/> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
-@prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix owlTime: <http://www.w3.org/2006/time#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
-@prefix topo: <https://purl.org/geojson/topo#> .
-@prefix wa-monument-condition: <https://linked.data.gov.au/def/csdm/wa-monument-condition/> .
-@prefix wa-monument-form: <https://linked.data.gov.au/def/csdm/wa-monument-form/> .
-@prefix wa-monument-state: <https://linked.data.gov.au/def/csdm/wa-monument-state/> .
-@prefix wa-survey-purpose: <https://linked.data.gov.au/def/csdm/wa-survey-purpose/> .
-@prefix wa-survey-type: <https://linked.data.gov.au/def/csdm/wa-survey-type/> .
-@prefix wa-surveypoint-purpose: <https://linked.data.gov.au/def/csdm/wa-surveypoint-purpose/> .
-@prefix wa-vector-purpose: <https://linked.data.gov.au/def/csdm/wa-vector-purpose/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<uuid:2c3dbfad-aa78-4ff1-8ef3-4022e7d5eeec> a geojson:FeatureCollection ;
-    rdfs:label "DP 12346" ;
-    dct:time [ owlTime:hasTime "2026-04-22"^^xsd:date ] ;
-    container:bearingRotation 0e+00 ;
-    container:horizontalCRS epsg:7850 ;
-    container:points <uuid:b099409d-51cc-47a5-8bbb-ce8f8872643b> ;
-    container:purpose wa-survey-purpose:subdivision ;
-    container:surveyType wa-survey-type:SSA ;
-    topo:edges <uuid:f4aafb64-0512-46e6-aad9-d39ef1255674> ;
-    topo:faces ( <uuid:b197eb9f-d623-4276-ab90-56deed4d70ee> ) ;
-    topo:rings ( <uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54> ) ;
-    topo:shells ( <uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30> ),
-        ( <uuid:22177114-a434-4a3e-bc39-b204a4c5b79a> ) ;
-    geojson:collectionFeatureType "CSD" .
-
-<uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "Ring" ;
-    geojson:features <uuid:19d85793-6db1-4bd3-8dcc-0b23f0f29965>,
-        <uuid:1c068866-928b-48a1-ba2a-d324f13a9a2d>,
-        <uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b>,
-        <uuid:cc739e83-eaf9-4778-a6b6-89282172f44f>,
-        <uuid:da54190a-a12b-4bd9-a3fd-a10f1fc71115>,
-        <uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8> .
-
-<uuid:1683a565-764a-47c7-94e6-bf07e790cbca> a geojson:Feature ;
-    rdfs:label "Cube" ;
-    geojson:topology [ a topo:Solid ;
-            topo:shells ( [ topo:orientation "+" ;
-                        topo:ref "uuid:29246856-504f-48d4-9a72-a90fd0f5837b" ] ) ] .
-
-<uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8> <uuid:bd14602d-819d-4f21-8068-c0292c964133> ) ] .
-
-<uuid:19d85793-6db1-4bd3-8dcc-0b23f0f29965> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:bd7c5534-7e5c-407a-9402-fbe522312c07" ] ) ] .
-
-<uuid:1c068866-928b-48a1-ba2a-d324f13a9a2d> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:23641631-470f-4c4b-981d-23ccb35d6a51" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:e71295e4-7595-4711-abac-70f172f42c03" ] ) ] .
-
-<uuid:22177114-a434-4a3e-bc39-b204a4c5b79a> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "Solid" ;
-    geojson:features <uuid:1683a565-764a-47c7-94e6-bf07e790cbca> .
-
-<uuid:23641631-470f-4c4b-981d-23ccb35d6a51> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db> <uuid:5ea43aac-1f62-4d89-9750-429a522242f7> ) ] .
-
-<uuid:29246856-504f-48d4-9a72-a90fd0f5837b> a geojson:Feature ;
-    geojson:topology [ a topo:Shell ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:da2e85b6-5670-4759-a076-00a9225c7ca8" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:dc1da294-ce0e-4c6e-9819-98e040e74fe9" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:bfd7bbd1-94f1-4556-9336-2cd28f3b7bc8" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:4d1ae25a-0d3b-48f2-8169-b4c2451e95b3" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:4588ddd8-9939-44f0-8b20-cfd4b2c4afcf" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:bf405007-c6dd-4c9c-b4ff-29af5fd3edf7" ] ) ] .
-
-<uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:23641631-470f-4c4b-981d-23ccb35d6a51" ] ) ] .
-
-<uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "Shell" ;
-    geojson:features <uuid:29246856-504f-48d4-9a72-a90fd0f5837b> .
-
-<uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:5ea43aac-1f62-4d89-9750-429a522242f7> <uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25> ) ] .
-
-<uuid:4588ddd8-9939-44f0-8b20-cfd4b2c4afcf> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:cc739e83-eaf9-4778-a6b6-89282172f44f" ] ) ] .
-
-<uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8> <uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db> ) ] .
-
-<uuid:4d1ae25a-0d3b-48f2-8169-b4c2451e95b3> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:1c068866-928b-48a1-ba2a-d324f13a9a2d" ] ) ] .
-
-<uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:eb21daac-f715-4985-b298-a02e29143b46> <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> ) ] .
-
-<uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db> <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> ) ] .
-
-<uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269> <uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25> ) ] .
-
-<uuid:b099409d-51cc-47a5-8bbb-ce8f8872643b> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "CadastralMark" ;
-    geojson:features <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8>,
-        <uuid:5ea43aac-1f62-4d89-9750-429a522242f7>,
-        <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269>,
-        <uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db>,
-        <uuid:bd14602d-819d-4f21-8068-c0292c964133>,
-        <uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25>,
-        <uuid:eb21daac-f715-4985-b298-a02e29143b46>,
-        <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> .
-
-<uuid:b197eb9f-d623-4276-ab90-56deed4d70ee> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "Face" ;
-    geojson:features <uuid:4588ddd8-9939-44f0-8b20-cfd4b2c4afcf>,
-        <uuid:4d1ae25a-0d3b-48f2-8169-b4c2451e95b3>,
-        <uuid:bf405007-c6dd-4c9c-b4ff-29af5fd3edf7>,
-        <uuid:bfd7bbd1-94f1-4556-9336-2cd28f3b7bc8>,
-        <uuid:da2e85b6-5670-4759-a076-00a9225c7ca8>,
-        <uuid:dc1da294-ce0e-4c6e-9819-98e040e74fe9> .
-
-<uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> <uuid:bd14602d-819d-4f21-8068-c0292c964133> ) ] .
-
-<uuid:bd7c5534-7e5c-407a-9402-fbe522312c07> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:bd14602d-819d-4f21-8068-c0292c964133> <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269> ) ] .
-
-<uuid:bf405007-c6dd-4c9c-b4ff-29af5fd3edf7> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:da54190a-a12b-4bd9-a3fd-a10f1fc71115" ] ) ] .
-
-<uuid:bfd7bbd1-94f1-4556-9336-2cd28f3b7bc8> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:19d85793-6db1-4bd3-8dcc-0b23f0f29965" ] ) ] .
-
-<uuid:cc739e83-eaf9-4778-a6b6-89282172f44f> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57" ] ) ] .
-
-<uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25> <uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8> ) ] .
-
-<uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269> <uuid:eb21daac-f715-4985-b298-a02e29143b46> ) ] .
-
-<uuid:da2e85b6-5670-4759-a076-00a9225c7ca8> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:2c21efab-db80-4dd0-96c0-59a63f956d5b" ] ) ] .
-
-<uuid:da54190a-a12b-4bd9-a3fd-a10f1fc71115> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:bd7c5534-7e5c-407a-9402-fbe522312c07" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7" ] ) ] .
-
-<uuid:dc1da294-ce0e-4c6e-9819-98e040e74fe9> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8" ] ) ] .
-
-<uuid:e71295e4-7595-4711-abac-70f172f42c03> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:5ea43aac-1f62-4d89-9750-429a522242f7> <uuid:eb21daac-f715-4985-b298-a02e29143b46> ) ] .
-
-<uuid:f4aafb64-0512-46e6-aad9-d39ef1255674> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "Edge" ;
-    geojson:features <uuid:18f0ab5a-17c8-4a07-adb0-f0e6dffef9d7>,
-        <uuid:23641631-470f-4c4b-981d-23ccb35d6a51>,
-        <uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3>,
-        <uuid:47d12439-8724-4a64-b43b-5f2f7ff9ce1a>,
-        <uuid:4e92f321-24c2-44ac-a908-a8d19e6b019f>,
-        <uuid:83fd28da-ab41-46e6-a64f-1bf82d822b57>,
-        <uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f>,
-        <uuid:b1d5527c-f6fd-4b3f-87ff-81dff0d04af4>,
-        <uuid:bd7c5534-7e5c-407a-9402-fbe522312c07>,
-        <uuid:cdf01952-2518-4523-a3a7-363be4b8bc3f>,
-        <uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b>,
-        <uuid:e71295e4-7595-4711-abac-70f172f42c03> .
-
-<uuid:fbcc1a1e-5e9a-47c4-b3b0-d7812f585ab8> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:3af6ffd3-355f-48a4-badf-dcc136d547f3" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:e71295e4-7595-4711-abac-70f172f42c03" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:d0a7e696-6e63-4e2a-84ec-919e40f65c5b" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:ae651558-9820-4bb6-b6d2-6c04a8979d1f" ] ) ] .
-
-<uuid:136e9f4f-4652-423d-ba35-4fb81c59a5c8> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.048685e+05 6.471533e+06 2.5e+00 ) ] ;
-    dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159941e+02 -3.188804e+01 2.5e+00 ) ] .
-
-<uuid:5ea43aac-1f62-4d89-9750-429a522242f7> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.048785e+05 6.471542e+06 2.5e+00 ) ] ;
-    dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159942e+02 -3.188795e+01 2.5e+00 ) ] .
-
-<uuid:74e9be6d-8c3d-4474-a239-5a0fa8025269> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.048785e+05 6.471533e+06 1.25e+01 ) ] ;
-    dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159942e+02 -3.188804e+01 1.25e+01 ) ] .
-
-<uuid:89fbbae7-a5a3-4539-acfe-cf6bd02115db> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.048685e+05 6.471542e+06 2.5e+00 ) ] ;
-    dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159941e+02 -3.188795e+01 2.5e+00 ) ] .
-
-<uuid:bd14602d-819d-4f21-8068-c0292c964133> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.048685e+05 6.471533e+06 1.25e+01 ) ] ;
-    dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159941e+02 -3.188804e+01 1.25e+01 ) ] .
-
-<uuid:e2dada34-29b6-4e51-8911-ad5199d7fc25> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.048785e+05 6.471533e+06 2.5e+00 ) ] ;
-    dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159942e+02 -3.188804e+01 2.5e+00 ) ] .
-
-<uuid:eb21daac-f715-4985-b298-a02e29143b46> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.048785e+05 6.471542e+06 1.25e+01 ) ] ;
-    dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159942e+02 -3.188795e+01 1.25e+01 ) ] .
-
-<uuid:f924f074-3dd5-430e-a3f9-4af9d60c98e3> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.048685e+05 6.471542e+06 1.25e+01 ) ] ;
-    dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.159941e+02 -3.188795e+01 1.25e+01 ) ] .
-
-
-```
-
 
 ### Tetrahedron example
 Self-contained collection of topology objects defining a Tetrahedron.
@@ -3487,8 +2209,8 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
     topo:edges <uuid:dbe9315f-41ea-48b3-9307-a636d71be4a5> ;
     topo:faces ( <uuid:f6081e8b-46f0-4cfa-a97a-ebc3d9f45756> ) ;
     topo:rings ( <uuid:7ee1cf56-6075-480a-a5bc-d877b9fae2c7> ) ;
-    topo:shells ( <uuid:51326c6a-b938-4c83-8b6a-e2ffe6afd839> ),
-        ( <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> ) ;
+    topo:shells ( <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> ),
+        ( <uuid:51326c6a-b938-4c83-8b6a-e2ffe6afd839> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> a geojson:FeatureCollection ;
@@ -6765,8 +5487,35 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
 #### json
 ```json
 {
-  "@context": [ "https://surroundaustralia.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/wa-core/context.jsonld"],
-  "id": "uuid:85927669-32a3-4d50-b8dc-2785c78df4bd",
+  "@context": {
+    "vocabs": "https://linked.data.gov.au/def/csdm/",
+    "wa-surveypoint-purpose": "https://linked.data.gov.au/def/csdm/wa-surveypoint-purpose/",
+    "wa-survey-purpose": "https://linked.data.gov.au/def/csdm/wa-survey-purpose/",
+    "wa-survey-type": "https://linked.data.gov.au/def/csdm/wa-survey-type/",
+    "wa-procedure-used": "https://linked.data.gov.au/def/csdm/wa-procedure-used/",
+    "wa-survey-documentation-type": "https://linked.data.gov.au/def/csdm/wa-survey-documentation-type/",
+    "wa-annotation-role": "https://linked.data.gov.au/def/csdm/wa-annotation/",
+    "wa-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-parcel-purpose/",
+    "wa-parcel-type": "https://linked.data.gov.au/def/csdm/wa-parcel-type/",
+    "wa-parcel-state": "https://linked.data.gov.au/def/csdm/wa-parcel-state/",
+    "wa-nonprimary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+    "wa-monument-form": "https://linked.data.gov.au/def/csdm/wa-monument-form/",
+    "wa-monument-condition": "https://linked.data.gov.au/def/csdm/wa-monument-condition/",
+    "wa-monument-state": "https://linked.data.gov.au/def/csdm/wa-monument-state/",
+    "wa-vector-purpose": "https://linked.data.gov.au/def/csdm/wa-vector-purpose/",
+    "wa-vector-type": "https://linked.data.gov.au/def/csdm/wa-vector-type/",
+    "wa-secondary-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-purpose/",
+    "wa-secondary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+    "wa-secondary-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-purpose/",
+    "wa-interest-type": "https://linked.data.gov.au/def/csdm/wa-interest-type/",
+    "wa-interest": "https://linked.data.gov.au/def/csdm/wa-interest/",
+    "wa-locality": "https://linked.data.gov.au/def/csdm/wa-locality/",
+    "wa-local-government": "https://linked.data.gov.au/def/csdm/wa-local-government/",
+    "registered-surveyors": "https://wa.gov.au/surveyors/",
+    "foaf": "https://xmlns.com/foaf/0.1/",
+    "activityType": "@type"
+  },
+  "id": "uuid:a4df5a33-fc85-40a0-9fe6-b749d8170a33",
   "name": "DP 12347",
   "description": "Multi-solid test for Solid validation",
   "type": "FeatureCollection",
@@ -6785,22 +5534,22 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   "adminUnit": [],
   "hasProvenance": [],
   "wasGeneratedBy": {
-    "id": "uuid:f3e43453-6503-4cc4-9c9a-13a5564c3514",
-    "endedAtTime": "2026-05-21T05:15:56.524819+00:00"
+    "id": "uuid:08fe8ebb-59f4-4489-81e1-b0640caa9056",
+    "endedAtTime": "2026-05-27T05:58:56.923046+00:00"
   },
   "features": [],
   "referencedCSDs": [],
   "points": [
     {
-      "id": "uuid:fb4abc7c-4533-4bbd-8907-9557ad54e94f",
+      "id": "uuid:9a3a584a-38b4-49ec-84a2-15512d31db5b",
       "type": "FeatureCollection",
       "featureType": "CadastralMark",
       "features": [
         {
-          "id": "uuid:f8265e86-f991-4a36-befc-fef9f603e7dd",
+          "id": "uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -6829,10 +5578,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:27021be0-edb1-4235-acd9-b412e7a36d7d",
+          "id": "uuid:fa551002-6466-46f1-a2f3-f433334447e6",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -6861,10 +5610,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2",
+          "id": "uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -6893,10 +5642,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952",
+          "id": "uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -6925,10 +5674,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:10199cf3-665f-45a3-96d3-47043d749991",
+          "id": "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -6957,10 +5706,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca",
+          "id": "uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -6989,10 +5738,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3",
+          "id": "uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7021,10 +5770,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf",
+          "id": "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7053,10 +5802,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:dfadb111-777d-406e-b511-1f0dc19409f0",
+          "id": "uuid:e0d36194-78e8-4255-b6b7-4f59b79544db",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7085,10 +5834,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1",
+          "id": "uuid:5228ad62-0730-416f-89b0-5042da216efb",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7117,10 +5866,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e",
+          "id": "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7149,10 +5898,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464",
+          "id": "uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7181,10 +5930,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:56d1ab96-3795-4e26-aa31-858f2698d768",
+          "id": "uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7213,10 +5962,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4",
+          "id": "uuid:48b7ec92-e7ff-468f-8dff-d03483468e97",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7245,10 +5994,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b23fbe07-e549-428e-b539-ea66851ba6cd",
+          "id": "uuid:754fd788-08c8-45b0-a591-e608a27f0948",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7277,10 +6026,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1",
+          "id": "uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7309,10 +6058,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9",
+          "id": "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7341,10 +6090,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c",
+          "id": "uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7373,10 +6122,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:4c11a36b-5379-462c-90c0-d99d0557ea25",
+          "id": "uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7405,10 +6154,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a",
+          "id": "uuid:073f2f24-c85a-455d-9807-c24f75ea50f5",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7437,10 +6186,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:2415b0ae-7d30-43c2-8757-82a577c694b5",
+          "id": "uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7469,10 +6218,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd",
+          "id": "uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7501,10 +6250,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:148a5543-ff12-4460-986c-449d5243d885",
+          "id": "uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7533,10 +6282,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:74369382-b3b3-46b5-adb7-18fac4de68e0",
+          "id": "uuid:7e2ed802-251e-48b6-b140-013cad070d9f",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7565,10 +6314,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960",
+          "id": "uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7597,10 +6346,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041",
+          "id": "uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7629,10 +6378,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340",
+          "id": "uuid:9d786d21-169c-459e-a354-4eeee65bf8a3",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7661,10 +6410,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:571b14af-afc3-41ee-800e-b507fac82ae7",
+          "id": "uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7693,10 +6442,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:28af1f47-ab41-493c-af53-3a490074fa52",
+          "id": "uuid:9ccc8672-7244-42a9-8d65-1b40a637a603",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7725,10 +6474,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5",
+          "id": "uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7757,10 +6506,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d",
+          "id": "uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7789,10 +6538,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6",
+          "id": "uuid:451e256a-6127-4e18-97f5-644093e9f9df",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7821,10 +6570,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954",
+          "id": "uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7853,10 +6602,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7",
+          "id": "uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7885,10 +6634,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009",
+          "id": "uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7917,10 +6666,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:686186b8-788e-454a-9d4b-581056f66141",
+          "id": "uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -7956,19 +6705,19 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   "parcels": [],
   "edges": [
     {
-      "id": "uuid:21566231-4d84-4ee5-9812-6d730600f6c9",
+      "id": "uuid:d1d9c298-e00e-47e4-94b8-d9aa5ab0b854",
       "type": "FeatureCollection",
       "featureType": "Edge",
       "features": [
         {
-          "id": "uuid:497de1cd-b8cb-4570-a0ad-f7303fd3655c",
+          "id": "uuid:cc9ce047-61a1-4bf9-a366-bfc5b43092c2",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f8265e86-f991-4a36-befc-fef9f603e7dd",
-              "uuid:27021be0-edb1-4235-acd9-b412e7a36d7d"
+              "uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e",
+              "uuid:fa551002-6466-46f1-a2f3-f433334447e6"
             ]
           },
           "properties": {
@@ -7978,14 +6727,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:77d328c1-9d6f-4c11-a390-de701a4cdec6",
+          "id": "uuid:c795e6d9-0f44-4b1c-bc01-686d5e2acaa3",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:27021be0-edb1-4235-acd9-b412e7a36d7d",
-              "uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2"
+              "uuid:fa551002-6466-46f1-a2f3-f433334447e6",
+              "uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9"
             ]
           },
           "properties": {
@@ -7995,14 +6744,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5a388390-6b1e-45ec-9f63-fc2878ba5866",
+          "id": "uuid:f0aa8d02-1aa3-4f44-be28-d135c94de497",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2",
-              "uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952"
+              "uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9",
+              "uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d"
             ]
           },
           "properties": {
@@ -8012,14 +6761,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb",
+          "id": "uuid:06e882da-e914-4ff8-a279-13c1b16b7646",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952",
-              "uuid:f8265e86-f991-4a36-befc-fef9f603e7dd"
+              "uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d",
+              "uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e"
             ]
           },
           "properties": {
@@ -8029,14 +6778,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0b2d959e-941c-4494-988a-d87b4b585041",
+          "id": "uuid:5f1fd4be-c4ba-4387-9d7d-6e26b8299dc9",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:10199cf3-665f-45a3-96d3-47043d749991",
-              "uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952"
+              "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010",
+              "uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d"
             ]
           },
           "properties": {
@@ -8046,14 +6795,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e27b12a4-7d3a-482b-8f8e-5b49e8765881",
+          "id": "uuid:d27bfb1b-ffd5-4fb3-9594-6f04ad66aa81",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2",
-              "uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca"
+              "uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9",
+              "uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1"
             ]
           },
           "properties": {
@@ -8063,14 +6812,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b",
+          "id": "uuid:9257083c-e11a-4914-a120-fbb11f0c10c8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca",
-              "uuid:10199cf3-665f-45a3-96d3-47043d749991"
+              "uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1",
+              "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010"
             ]
           },
           "properties": {
@@ -8080,14 +6829,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1f8835fd-8951-4bd6-a739-47ccf214c2d5",
+          "id": "uuid:725ebfd6-7c75-44fa-b917-94381bddef5f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3",
-              "uuid:27021be0-edb1-4235-acd9-b412e7a36d7d"
+              "uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96",
+              "uuid:fa551002-6466-46f1-a2f3-f433334447e6"
             ]
           },
           "properties": {
@@ -8097,14 +6846,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a",
+          "id": "uuid:b42f27c9-d0e6-4cfb-9ea3-7e2517426428",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f8265e86-f991-4a36-befc-fef9f603e7dd",
-              "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf"
+              "uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e",
+              "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b"
             ]
           },
           "properties": {
@@ -8114,14 +6863,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5",
+          "id": "uuid:5367fe8d-79c0-4161-a4ce-3b7f42afad3e",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf",
-              "uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3"
+              "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b",
+              "uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96"
             ]
           },
           "properties": {
@@ -8131,14 +6880,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:59e7006a-a17b-44d7-b02c-136d9730d241",
+          "id": "uuid:9a5a3eef-7ddb-40bf-ae2a-111b4623fb08",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3",
-              "uuid:dfadb111-777d-406e-b511-1f0dc19409f0"
+              "uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96",
+              "uuid:e0d36194-78e8-4255-b6b7-4f59b79544db"
             ]
           },
           "properties": {
@@ -8148,14 +6897,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d",
+          "id": "uuid:0795c157-5fcb-4d01-b0f0-fedf92b1d41f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:dfadb111-777d-406e-b511-1f0dc19409f0",
-              "uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1"
+              "uuid:e0d36194-78e8-4255-b6b7-4f59b79544db",
+              "uuid:5228ad62-0730-416f-89b0-5042da216efb"
             ]
           },
           "properties": {
@@ -8165,14 +6914,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:21687804-7ed3-4319-937b-654565f92b98",
+          "id": "uuid:21935dcb-8634-4e57-abf4-4585eba35018",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1",
-              "uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca"
+              "uuid:5228ad62-0730-416f-89b0-5042da216efb",
+              "uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1"
             ]
           },
           "properties": {
@@ -8182,14 +6931,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def",
+          "id": "uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf",
-              "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e"
+              "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b",
+              "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4"
             ]
           },
           "properties": {
@@ -8199,14 +6948,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece",
+          "id": "uuid:a51db565-6909-4151-ad98-9c7fbeb85c19",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e",
-              "uuid:dfadb111-777d-406e-b511-1f0dc19409f0"
+              "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4",
+              "uuid:e0d36194-78e8-4255-b6b7-4f59b79544db"
             ]
           },
           "properties": {
@@ -8216,14 +6965,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b",
+          "id": "uuid:e8b25b9d-346c-4cdf-985b-c742fd7c3a34",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e",
-              "uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464"
+              "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4",
+              "uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c"
             ]
           },
           "properties": {
@@ -8233,14 +6982,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f4ab88fb-fed2-42d6-86c8-5d966fec7a25",
+          "id": "uuid:aa458878-e72e-454e-9921-bfbf14315787",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464",
-              "uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1"
+              "uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c",
+              "uuid:5228ad62-0730-416f-89b0-5042da216efb"
             ]
           },
           "properties": {
@@ -8250,14 +6999,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f",
+          "id": "uuid:791da2a3-ee19-44a1-b604-5f379ab00bb1",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:10199cf3-665f-45a3-96d3-47043d749991",
-              "uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464"
+              "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010",
+              "uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c"
             ]
           },
           "properties": {
@@ -8267,14 +7016,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3",
+          "id": "uuid:1b26a418-ddc1-4e7d-8ff0-811102c413b5",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf",
-              "uuid:56d1ab96-3795-4e26-aa31-858f2698d768"
+              "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b",
+              "uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8"
             ]
           },
           "properties": {
@@ -8284,14 +7033,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:4543461b-48f1-4d8d-8e6b-cf5eac440240",
+          "id": "uuid:1f8b2b5d-416a-4b6b-90da-9c672bc42d2c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:56d1ab96-3795-4e26-aa31-858f2698d768",
-              "uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4"
+              "uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8",
+              "uuid:48b7ec92-e7ff-468f-8dff-d03483468e97"
             ]
           },
           "properties": {
@@ -8301,14 +7050,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e5e0b3e1-3cf0-4413-a8e9-899a40496a7c",
+          "id": "uuid:f83f26bd-63dc-4a5e-959c-e90a7640d8a2",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4",
-              "uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3"
+              "uuid:48b7ec92-e7ff-468f-8dff-d03483468e97",
+              "uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96"
             ]
           },
           "properties": {
@@ -8318,14 +7067,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9",
+          "id": "uuid:6c6ddd1e-2780-4758-bbe7-a4c77bba6118",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:56d1ab96-3795-4e26-aa31-858f2698d768",
-              "uuid:b23fbe07-e549-428e-b539-ea66851ba6cd"
+              "uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8",
+              "uuid:754fd788-08c8-45b0-a591-e608a27f0948"
             ]
           },
           "properties": {
@@ -8335,14 +7084,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:23863019-f8d1-4165-abca-8ce1f208b13f",
+          "id": "uuid:a493ef53-2a0f-42f3-9523-23dea4dc19d6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1",
-              "uuid:b23fbe07-e549-428e-b539-ea66851ba6cd"
+              "uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa",
+              "uuid:754fd788-08c8-45b0-a591-e608a27f0948"
             ]
           },
           "properties": {
@@ -8352,14 +7101,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b8e3ea88-ac1b-4694-abf7-731b3f6108b5",
+          "id": "uuid:8eb102da-ae40-45c1-9a30-8ca97c69bdf6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1",
-              "uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4"
+              "uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa",
+              "uuid:48b7ec92-e7ff-468f-8dff-d03483468e97"
             ]
           },
           "properties": {
@@ -8369,14 +7118,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a",
+          "id": "uuid:615aed99-8ae9-4857-931c-90bdd126e8c8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:b23fbe07-e549-428e-b539-ea66851ba6cd",
-              "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9"
+              "uuid:754fd788-08c8-45b0-a591-e608a27f0948",
+              "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2"
             ]
           },
           "properties": {
@@ -8386,14 +7135,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002",
+          "id": "uuid:6968cfbb-265a-48a5-8fac-91fbc7fe1a16",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9",
-              "uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c"
+              "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2",
+              "uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e"
             ]
           },
           "properties": {
@@ -8403,14 +7152,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f7becfcc-f978-4188-bb49-d688434f4936",
+          "id": "uuid:ab68b5c9-0626-4a27-b735-c591dfc47e0a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c",
-              "uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1"
+              "uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e",
+              "uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa"
             ]
           },
           "properties": {
@@ -8420,14 +7169,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:3df80dfa-8278-479b-887c-89599b90417f",
+          "id": "uuid:4bbdae51-6837-4cbb-974d-ab8987d4a018",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c",
-              "uuid:4c11a36b-5379-462c-90c0-d99d0557ea25"
+              "uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e",
+              "uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6"
             ]
           },
           "properties": {
@@ -8437,14 +7186,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8",
+          "id": "uuid:580818ce-50f0-486c-85c9-91c35ab39509",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4c11a36b-5379-462c-90c0-d99d0557ea25",
-              "uuid:dfadb111-777d-406e-b511-1f0dc19409f0"
+              "uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6",
+              "uuid:e0d36194-78e8-4255-b6b7-4f59b79544db"
             ]
           },
           "properties": {
@@ -8454,14 +7203,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b",
+          "id": "uuid:b745f3b0-caff-4c6a-8839-9c709893e1c2",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a",
-              "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e"
+              "uuid:073f2f24-c85a-455d-9807-c24f75ea50f5",
+              "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4"
             ]
           },
           "properties": {
@@ -8471,14 +7220,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:aede0d1a-6743-458f-83d0-83eb3cefc97d",
+          "id": "uuid:17fa2c1e-5416-443b-b263-2f47cb514aa6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4c11a36b-5379-462c-90c0-d99d0557ea25",
-              "uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a"
+              "uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6",
+              "uuid:073f2f24-c85a-455d-9807-c24f75ea50f5"
             ]
           },
           "properties": {
@@ -8488,14 +7237,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5",
+          "id": "uuid:f60637f4-cdf9-4bf7-b969-72eabb91eb79",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a",
-              "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9"
+              "uuid:073f2f24-c85a-455d-9807-c24f75ea50f5",
+              "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2"
             ]
           },
           "properties": {
@@ -8505,14 +7254,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c064e2ed-f6db-49d1-9e8d-39478e07c56c",
+          "id": "uuid:e47e1b0a-ecee-4d50-987e-d10ad397f597",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:2415b0ae-7d30-43c2-8757-82a577c694b5",
-              "uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd"
+              "uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198",
+              "uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd"
             ]
           },
           "properties": {
@@ -8522,14 +7271,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f1fecfd8-3943-42b7-b719-15f17d6e18ec",
+          "id": "uuid:0cc9dbeb-9ae4-429b-80d5-a637d54f9bc4",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:148a5543-ff12-4460-986c-449d5243d885",
-              "uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd"
+              "uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f",
+              "uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd"
             ]
           },
           "properties": {
@@ -8539,14 +7288,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:35940328-3e54-4538-8936-ef7ab97f698b",
+          "id": "uuid:d6b33a71-4823-4c26-8ca1-ed929f278377",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:148a5543-ff12-4460-986c-449d5243d885",
-              "uuid:74369382-b3b3-46b5-adb7-18fac4de68e0"
+              "uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f",
+              "uuid:7e2ed802-251e-48b6-b140-013cad070d9f"
             ]
           },
           "properties": {
@@ -8556,14 +7305,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:78fceb81-8a17-42be-a55b-57b328908f22",
+          "id": "uuid:51c0f9c6-7c13-4460-8636-2ed5ee228a6c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:74369382-b3b3-46b5-adb7-18fac4de68e0",
-              "uuid:2415b0ae-7d30-43c2-8757-82a577c694b5"
+              "uuid:7e2ed802-251e-48b6-b140-013cad070d9f",
+              "uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198"
             ]
           },
           "properties": {
@@ -8573,14 +7322,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:98628e3a-b2df-4627-9326-3b30e2d31630",
+          "id": "uuid:7197ee0b-aa79-40dd-a8ec-9d4413777a19",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd",
-              "uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960"
+              "uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd",
+              "uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8"
             ]
           },
           "properties": {
@@ -8590,14 +7339,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:d1d2f042-31e4-41e3-b22e-173c10b3394a",
+          "id": "uuid:030a717f-c3d7-46c9-8e04-4a90a2de6971",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960",
-              "uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041"
+              "uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8",
+              "uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29"
             ]
           },
           "properties": {
@@ -8607,14 +7356,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0ba80381-37c0-4aff-bad6-0381103675d9",
+          "id": "uuid:c0a27c02-e38f-4648-b296-3ba0372f0e50",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041",
-              "uuid:148a5543-ff12-4460-986c-449d5243d885"
+              "uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29",
+              "uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f"
             ]
           },
           "properties": {
@@ -8624,14 +7373,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f511f306-b61e-4ae5-82cb-bece777e3d84",
+          "id": "uuid:5698e261-6451-4ffe-90dd-05d5270c59a7",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960",
-              "uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340"
+              "uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8",
+              "uuid:9d786d21-169c-459e-a354-4eeee65bf8a3"
             ]
           },
           "properties": {
@@ -8641,14 +7390,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f293604e-b0f7-46d7-b087-3c86930da413",
+          "id": "uuid:eb0aaf70-bb65-4855-a35b-860b1c23c53f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340",
-              "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf"
+              "uuid:9d786d21-169c-459e-a354-4eeee65bf8a3",
+              "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b"
             ]
           },
           "properties": {
@@ -8658,14 +7407,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0372d1a6-a543-4a84-9870-af81aa08887f",
+          "id": "uuid:9e2b2cf4-db16-4c58-9cea-86b593995bdf",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f8265e86-f991-4a36-befc-fef9f603e7dd",
-              "uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041"
+              "uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e",
+              "uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29"
             ]
           },
           "properties": {
@@ -8675,14 +7424,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357",
+          "id": "uuid:d302b67e-99d1-4033-84c8-bec14b1a3a29",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:2415b0ae-7d30-43c2-8757-82a577c694b5",
-              "uuid:571b14af-afc3-41ee-800e-b507fac82ae7"
+              "uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198",
+              "uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca"
             ]
           },
           "properties": {
@@ -8692,14 +7441,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5",
+          "id": "uuid:23375f61-8d9d-407c-bc86-ff0a4a1a3030",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:571b14af-afc3-41ee-800e-b507fac82ae7",
-              "uuid:28af1f47-ab41-493c-af53-3a490074fa52"
+              "uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca",
+              "uuid:9ccc8672-7244-42a9-8d65-1b40a637a603"
             ]
           },
           "properties": {
@@ -8709,14 +7458,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8",
+          "id": "uuid:dbed95c2-94f5-4c01-ac9e-a71441efd65a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:28af1f47-ab41-493c-af53-3a490074fa52",
-              "uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340"
+              "uuid:9ccc8672-7244-42a9-8d65-1b40a637a603",
+              "uuid:9d786d21-169c-459e-a354-4eeee65bf8a3"
             ]
           },
           "properties": {
@@ -8726,14 +7475,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488",
+          "id": "uuid:8e931595-7a01-4678-a20e-5607229a0d01",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:28af1f47-ab41-493c-af53-3a490074fa52",
-              "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e"
+              "uuid:9ccc8672-7244-42a9-8d65-1b40a637a603",
+              "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4"
             ]
           },
           "properties": {
@@ -8743,14 +7492,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:80a73235-bd0d-4255-b1c1-e213a7ce376b",
+          "id": "uuid:8a34c9fb-e3d6-45d3-817e-93d0c58be464",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464",
-              "uuid:571b14af-afc3-41ee-800e-b507fac82ae7"
+              "uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c",
+              "uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca"
             ]
           },
           "properties": {
@@ -8760,14 +7509,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75",
+          "id": "uuid:6ac9e1bc-3c5f-468b-8646-ac85e38d3013",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:74369382-b3b3-46b5-adb7-18fac4de68e0",
-              "uuid:10199cf3-665f-45a3-96d3-47043d749991"
+              "uuid:7e2ed802-251e-48b6-b140-013cad070d9f",
+              "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010"
             ]
           },
           "properties": {
@@ -8777,14 +7526,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0702cb55-bfdf-47a3-9e03-5a1101f375d3",
+          "id": "uuid:2413de82-7661-4536-8a05-58c4fadbd5fd",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5",
-              "uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d"
+              "uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a",
+              "uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4"
             ]
           },
           "properties": {
@@ -8794,14 +7543,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:caea09b7-5bb4-473a-bac8-559a8385e485",
+          "id": "uuid:28922e7d-7683-40da-916c-241f473ee3bd",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d",
-              "uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6"
+              "uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4",
+              "uuid:451e256a-6127-4e18-97f5-644093e9f9df"
             ]
           },
           "properties": {
@@ -8811,14 +7560,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:dc2293f6-d716-4fe0-a542-cfdf00bc9d07",
+          "id": "uuid:99e2aa85-d004-4eed-8533-1313133f0809",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6",
-              "uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954"
+              "uuid:451e256a-6127-4e18-97f5-644093e9f9df",
+              "uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd"
             ]
           },
           "properties": {
@@ -8828,14 +7577,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f013fc74-d38d-4caa-9e9b-af749f4e86fd",
+          "id": "uuid:8103a475-c12f-4664-ac95-50afbd4c782d",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954",
-              "uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5"
+              "uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd",
+              "uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a"
             ]
           },
           "properties": {
@@ -8845,14 +7594,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:9cb950e8-e8dd-4323-9dc0-6f030f169a48",
+          "id": "uuid:3bc984fd-e2fa-48de-9397-635b28834926",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7",
-              "uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5"
+              "uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e",
+              "uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a"
             ]
           },
           "properties": {
@@ -8862,14 +7611,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:62b0df5f-e5c0-4e02-8f05-17469482d920",
+          "id": "uuid:ba83542a-054c-4671-ad1f-412f89783e0f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954",
-              "uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009"
+              "uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd",
+              "uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3"
             ]
           },
           "properties": {
@@ -8879,14 +7628,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e0c8c309-5568-4e9a-b22c-982f0bc9457d",
+          "id": "uuid:259ec3c3-5480-484c-8b6f-d081695a0a3f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7",
-              "uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009"
+              "uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e",
+              "uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3"
             ]
           },
           "properties": {
@@ -8896,14 +7645,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5e6c3ed6-4011-4407-a7a4-187d1ae6bc82",
+          "id": "uuid:e3c87c26-8a6a-4889-923c-d87562d2dde9",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340",
-              "uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7"
+              "uuid:9d786d21-169c-459e-a354-4eeee65bf8a3",
+              "uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e"
             ]
           },
           "properties": {
@@ -8913,14 +7662,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c6391658-8f77-4ea2-b8af-3484683133fc",
+          "id": "uuid:4a32db28-5b1a-4b4c-8fd4-e94cfca8c03a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009",
-              "uuid:56d1ab96-3795-4e26-aa31-858f2698d768"
+              "uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3",
+              "uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8"
             ]
           },
           "properties": {
@@ -8930,14 +7679,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0",
+          "id": "uuid:d2e6c025-8dc2-45b0-896a-8cfbb94fd4e4",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:28af1f47-ab41-493c-af53-3a490074fa52",
-              "uuid:686186b8-788e-454a-9d4b-581056f66141"
+              "uuid:9ccc8672-7244-42a9-8d65-1b40a637a603",
+              "uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d"
             ]
           },
           "properties": {
@@ -8947,14 +7696,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82",
+          "id": "uuid:2fe7500a-344c-43c9-8a4a-42a4dc381958",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:686186b8-788e-454a-9d4b-581056f66141",
-              "uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d"
+              "uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d",
+              "uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4"
             ]
           },
           "properties": {
@@ -8964,14 +7713,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:96ace84a-b09f-4624-b773-8e849bd7d7d1",
+          "id": "uuid:e4a49176-d47d-41f7-85c1-7d91bb836286",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:686186b8-788e-454a-9d4b-581056f66141",
-              "uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a"
+              "uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d",
+              "uuid:073f2f24-c85a-455d-9807-c24f75ea50f5"
             ]
           },
           "properties": {
@@ -8981,14 +7730,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1",
+          "id": "uuid:929d7ecd-8ff2-4be6-af3e-929b8a3bdd52",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9",
-              "uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6"
+              "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2",
+              "uuid:451e256a-6127-4e18-97f5-644093e9f9df"
             ]
           },
           "properties": {
@@ -8998,14 +7747,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:28d289ac-d197-4346-a5e1-a78b0fb408ae",
+          "id": "uuid:eb237aee-db71-4faf-8bb2-aeefc8515821",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d",
-              "uuid:2415b0ae-7d30-43c2-8757-82a577c694b5"
+              "uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4",
+              "uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198"
             ]
           },
           "properties": {
@@ -9015,14 +7764,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:79977e2b-0adf-4e7f-9c30-a7bca716df14",
+          "id": "uuid:05253350-3d88-4edc-b6cb-759a2234382f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:74369382-b3b3-46b5-adb7-18fac4de68e0",
-              "uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6"
+              "uuid:7e2ed802-251e-48b6-b140-013cad070d9f",
+              "uuid:451e256a-6127-4e18-97f5-644093e9f9df"
             ]
           },
           "properties": {
@@ -9032,14 +7781,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:77f25fdc-6684-4b9a-8cbd-18cfc7145e0a",
+          "id": "uuid:78d47480-6451-451e-b35c-afbc40f27f93",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9",
-              "uuid:10199cf3-665f-45a3-96d3-47043d749991"
+              "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2",
+              "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010"
             ]
           },
           "properties": {
@@ -9049,14 +7798,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:933a2bb5-9610-4c8b-b857-ebfa014c631b",
+          "id": "uuid:0c7efeba-1fb3-49a1-aafd-3e38affa4a9c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c",
-              "uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca"
+              "uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e",
+              "uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1"
             ]
           },
           "properties": {
@@ -9070,31 +7819,31 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   ],
   "rings": [
     {
-      "id": "uuid:fb7fe2d6-f507-41f6-a725-3fa5cb252068",
+      "id": "uuid:e473c559-9182-4bde-98af-669971f814d1",
       "type": "FeatureCollection",
       "featureType": "Ring",
       "features": [
         {
-          "id": "uuid:8aeb3333-b440-4655-afa4-9c6469240ec0",
+          "id": "uuid:bec0f9d8-0d77-46ba-8941-f884943ac3d8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:497de1cd-b8cb-4570-a0ad-f7303fd3655c",
+                "ref": "uuid:cc9ce047-61a1-4bf9-a366-bfc5b43092c2",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:77d328c1-9d6f-4c11-a390-de701a4cdec6",
+                "ref": "uuid:c795e6d9-0f44-4b1c-bc01-686d5e2acaa3",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:5a388390-6b1e-45ec-9f63-fc2878ba5866",
+                "ref": "uuid:f0aa8d02-1aa3-4f44-be28-d135c94de497",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb",
+                "ref": "uuid:06e882da-e914-4ff8-a279-13c1b16b7646",
                 "orientation": "+"
               }
             ]
@@ -9104,26 +7853,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:9b97b5f1-5acd-4cf2-9d5e-e7654a1a0fce",
+          "id": "uuid:6642ea7b-0b5e-474c-95ef-fe5a15be551b",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:0b2d959e-941c-4494-988a-d87b4b585041",
+                "ref": "uuid:5f1fd4be-c4ba-4387-9d7d-6e26b8299dc9",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:5a388390-6b1e-45ec-9f63-fc2878ba5866",
+                "ref": "uuid:f0aa8d02-1aa3-4f44-be28-d135c94de497",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e27b12a4-7d3a-482b-8f8e-5b49e8765881",
+                "ref": "uuid:d27bfb1b-ffd5-4fb3-9594-6f04ad66aa81",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b",
+                "ref": "uuid:9257083c-e11a-4914-a120-fbb11f0c10c8",
                 "orientation": "+"
               }
             ]
@@ -9133,26 +7882,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:3b789531-378b-428d-a286-f6f7f4eaf6b0",
+          "id": "uuid:10ebd12b-36b6-4db0-b43e-b742e05540ce",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:1f8835fd-8951-4bd6-a739-47ccf214c2d5",
+                "ref": "uuid:725ebfd6-7c75-44fa-b917-94381bddef5f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:497de1cd-b8cb-4570-a0ad-f7303fd3655c",
+                "ref": "uuid:cc9ce047-61a1-4bf9-a366-bfc5b43092c2",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a",
+                "ref": "uuid:b42f27c9-d0e6-4cfb-9ea3-7e2517426428",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5",
+                "ref": "uuid:5367fe8d-79c0-4161-a4ce-3b7f42afad3e",
                 "orientation": "+"
               }
             ]
@@ -9162,34 +7911,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:3b50bf6b-2d5c-45b8-ae19-2103ff36599d",
+          "id": "uuid:f8c1f3d2-aeb6-4b33-b6f8-7d01a5e8ae59",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e27b12a4-7d3a-482b-8f8e-5b49e8765881",
+                "ref": "uuid:d27bfb1b-ffd5-4fb3-9594-6f04ad66aa81",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:77d328c1-9d6f-4c11-a390-de701a4cdec6",
+                "ref": "uuid:c795e6d9-0f44-4b1c-bc01-686d5e2acaa3",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:1f8835fd-8951-4bd6-a739-47ccf214c2d5",
+                "ref": "uuid:725ebfd6-7c75-44fa-b917-94381bddef5f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:59e7006a-a17b-44d7-b02c-136d9730d241",
+                "ref": "uuid:9a5a3eef-7ddb-40bf-ae2a-111b4623fb08",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d",
+                "ref": "uuid:0795c157-5fcb-4d01-b0f0-fedf92b1d41f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:21687804-7ed3-4319-937b-654565f92b98",
+                "ref": "uuid:21935dcb-8634-4e57-abf4-4585eba35018",
                 "orientation": "+"
               }
             ]
@@ -9199,26 +7948,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:bed13d65-1e70-4b39-b729-f99f6cb37f47",
+          "id": "uuid:72d54df4-b018-4897-a96d-7d62cb9d8c4a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def",
+                "ref": "uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece",
+                "ref": "uuid:a51db565-6909-4151-ad98-9c7fbeb85c19",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:59e7006a-a17b-44d7-b02c-136d9730d241",
+                "ref": "uuid:9a5a3eef-7ddb-40bf-ae2a-111b4623fb08",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5",
+                "ref": "uuid:5367fe8d-79c0-4161-a4ce-3b7f42afad3e",
                 "orientation": "-"
               }
             ]
@@ -9228,26 +7977,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0a3d33b0-b98b-44f0-96a3-5b35fd133fb0",
+          "id": "uuid:d7b9eb80-93ca-4ee5-adcb-ab1cfda75d4f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b",
+                "ref": "uuid:e8b25b9d-346c-4cdf-985b-c742fd7c3a34",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f4ab88fb-fed2-42d6-86c8-5d966fec7a25",
+                "ref": "uuid:aa458878-e72e-454e-9921-bfbf14315787",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d",
+                "ref": "uuid:0795c157-5fcb-4d01-b0f0-fedf92b1d41f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece",
+                "ref": "uuid:a51db565-6909-4151-ad98-9c7fbeb85c19",
                 "orientation": "-"
               }
             ]
@@ -9257,34 +8006,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:660aa943-0834-4d48-b32d-773808d37f09",
+          "id": "uuid:79e3d840-7da3-4380-8288-6c2db4ac8b06",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:0b2d959e-941c-4494-988a-d87b4b585041",
+                "ref": "uuid:5f1fd4be-c4ba-4387-9d7d-6e26b8299dc9",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f",
+                "ref": "uuid:791da2a3-ee19-44a1-b604-5f379ab00bb1",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b",
+                "ref": "uuid:e8b25b9d-346c-4cdf-985b-c742fd7c3a34",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def",
+                "ref": "uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a",
+                "ref": "uuid:b42f27c9-d0e6-4cfb-9ea3-7e2517426428",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb",
+                "ref": "uuid:06e882da-e914-4ff8-a279-13c1b16b7646",
                 "orientation": "-"
               }
             ]
@@ -9294,26 +8043,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c13a006a-907c-4c2a-bee7-820325ada29a",
+          "id": "uuid:7472a7e9-efcf-49a8-a19f-4a14c3e6f86e",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f",
+                "ref": "uuid:791da2a3-ee19-44a1-b604-5f379ab00bb1",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b",
+                "ref": "uuid:9257083c-e11a-4914-a120-fbb11f0c10c8",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:21687804-7ed3-4319-937b-654565f92b98",
+                "ref": "uuid:21935dcb-8634-4e57-abf4-4585eba35018",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f4ab88fb-fed2-42d6-86c8-5d966fec7a25",
+                "ref": "uuid:aa458878-e72e-454e-9921-bfbf14315787",
                 "orientation": "-"
               }
             ]
@@ -9323,26 +8072,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:9768053c-311f-4ad2-9da9-7627f42aeb88",
+          "id": "uuid:bba09dfa-33c6-4256-8f33-b802aec75bdb",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3",
+                "ref": "uuid:1b26a418-ddc1-4e7d-8ff0-811102c413b5",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:4543461b-48f1-4d8d-8e6b-cf5eac440240",
+                "ref": "uuid:1f8b2b5d-416a-4b6b-90da-9c672bc42d2c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e5e0b3e1-3cf0-4413-a8e9-899a40496a7c",
+                "ref": "uuid:f83f26bd-63dc-4a5e-959c-e90a7640d8a2",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5",
+                "ref": "uuid:5367fe8d-79c0-4161-a4ce-3b7f42afad3e",
                 "orientation": "-"
               }
             ]
@@ -9352,26 +8101,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1a18ec4e-93d2-4e21-931b-05ae1fd9d31e",
+          "id": "uuid:5b1af58d-21f4-4582-96f8-14d356205491",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:4543461b-48f1-4d8d-8e6b-cf5eac440240",
+                "ref": "uuid:1f8b2b5d-416a-4b6b-90da-9c672bc42d2c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9",
+                "ref": "uuid:6c6ddd1e-2780-4758-bbe7-a4c77bba6118",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:23863019-f8d1-4165-abca-8ce1f208b13f",
+                "ref": "uuid:a493ef53-2a0f-42f3-9523-23dea4dc19d6",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:b8e3ea88-ac1b-4694-abf7-731b3f6108b5",
+                "ref": "uuid:8eb102da-ae40-45c1-9a30-8ca97c69bdf6",
                 "orientation": "+"
               }
             ]
@@ -9381,26 +8130,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b01715b1-8ed7-47f2-9050-344a22a2847f",
+          "id": "uuid:8c5381e4-64ab-4b9d-bdd5-aea3de220330",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:23863019-f8d1-4165-abca-8ce1f208b13f",
+                "ref": "uuid:a493ef53-2a0f-42f3-9523-23dea4dc19d6",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a",
+                "ref": "uuid:615aed99-8ae9-4857-931c-90bdd126e8c8",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002",
+                "ref": "uuid:6968cfbb-265a-48a5-8fac-91fbc7fe1a16",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f7becfcc-f978-4188-bb49-d688434f4936",
+                "ref": "uuid:ab68b5c9-0626-4a27-b735-c591dfc47e0a",
                 "orientation": "+"
               }
             ]
@@ -9410,34 +8159,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:913979f7-aaab-4985-b5f6-f2286137641a",
+          "id": "uuid:73155e38-87b0-4ded-9af7-dd354d36a728",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e5e0b3e1-3cf0-4413-a8e9-899a40496a7c",
+                "ref": "uuid:f83f26bd-63dc-4a5e-959c-e90a7640d8a2",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:b8e3ea88-ac1b-4694-abf7-731b3f6108b5",
+                "ref": "uuid:8eb102da-ae40-45c1-9a30-8ca97c69bdf6",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f7becfcc-f978-4188-bb49-d688434f4936",
+                "ref": "uuid:ab68b5c9-0626-4a27-b735-c591dfc47e0a",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:3df80dfa-8278-479b-887c-89599b90417f",
+                "ref": "uuid:4bbdae51-6837-4cbb-974d-ab8987d4a018",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8",
+                "ref": "uuid:580818ce-50f0-486c-85c9-91c35ab39509",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:59e7006a-a17b-44d7-b02c-136d9730d241",
+                "ref": "uuid:9a5a3eef-7ddb-40bf-ae2a-111b4623fb08",
                 "orientation": "-"
               }
             ]
@@ -9447,26 +8196,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6876e445-1eb6-4a91-9b18-c6eaf96f5bd8",
+          "id": "uuid:ce452f84-97f5-43ad-83f8-1758fba42a49",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b",
+                "ref": "uuid:b745f3b0-caff-4c6a-8839-9c709893e1c2",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece",
+                "ref": "uuid:a51db565-6909-4151-ad98-9c7fbeb85c19",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8",
+                "ref": "uuid:580818ce-50f0-486c-85c9-91c35ab39509",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:aede0d1a-6743-458f-83d0-83eb3cefc97d",
+                "ref": "uuid:17fa2c1e-5416-443b-b263-2f47cb514aa6",
                 "orientation": "+"
               }
             ]
@@ -9476,34 +8225,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:88550bf5-23af-44fd-a323-c043682481d7",
+          "id": "uuid:46d1879a-0f3f-42ef-b68d-d813f684e3f9",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5",
+                "ref": "uuid:f60637f4-cdf9-4bf7-b969-72eabb91eb79",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a",
+                "ref": "uuid:615aed99-8ae9-4857-931c-90bdd126e8c8",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9",
+                "ref": "uuid:6c6ddd1e-2780-4758-bbe7-a4c77bba6118",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3",
+                "ref": "uuid:1b26a418-ddc1-4e7d-8ff0-811102c413b5",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def",
+                "ref": "uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b",
+                "ref": "uuid:b745f3b0-caff-4c6a-8839-9c709893e1c2",
                 "orientation": "-"
               }
             ]
@@ -9513,26 +8262,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:44b86750-060a-4627-81cb-1d21e7ecf82b",
+          "id": "uuid:98685c3a-fc3b-4490-b99f-5a4f9ef3aae4",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5",
+                "ref": "uuid:f60637f4-cdf9-4bf7-b969-72eabb91eb79",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:aede0d1a-6743-458f-83d0-83eb3cefc97d",
+                "ref": "uuid:17fa2c1e-5416-443b-b263-2f47cb514aa6",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:3df80dfa-8278-479b-887c-89599b90417f",
+                "ref": "uuid:4bbdae51-6837-4cbb-974d-ab8987d4a018",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002",
+                "ref": "uuid:6968cfbb-265a-48a5-8fac-91fbc7fe1a16",
                 "orientation": "-"
               }
             ]
@@ -9542,26 +8291,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:910b7ace-52b3-4d2a-afef-9340c0af3f41",
+          "id": "uuid:8efc4bcc-0265-4aba-82f9-4e9c5f818018",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:c064e2ed-f6db-49d1-9e8d-39478e07c56c",
+                "ref": "uuid:e47e1b0a-ecee-4d50-987e-d10ad397f597",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f1fecfd8-3943-42b7-b719-15f17d6e18ec",
+                "ref": "uuid:0cc9dbeb-9ae4-429b-80d5-a637d54f9bc4",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:35940328-3e54-4538-8936-ef7ab97f698b",
+                "ref": "uuid:d6b33a71-4823-4c26-8ca1-ed929f278377",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:78fceb81-8a17-42be-a55b-57b328908f22",
+                "ref": "uuid:51c0f9c6-7c13-4460-8636-2ed5ee228a6c",
                 "orientation": "+"
               }
             ]
@@ -9571,26 +8320,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:69e604be-11d5-4fd2-981c-e5d2a93db493",
+          "id": "uuid:0bdb8d8a-3d53-4a97-bee6-56bf509e6b69",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:98628e3a-b2df-4627-9326-3b30e2d31630",
+                "ref": "uuid:7197ee0b-aa79-40dd-a8ec-9d4413777a19",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:d1d2f042-31e4-41e3-b22e-173c10b3394a",
+                "ref": "uuid:030a717f-c3d7-46c9-8e04-4a90a2de6971",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:0ba80381-37c0-4aff-bad6-0381103675d9",
+                "ref": "uuid:c0a27c02-e38f-4648-b296-3ba0372f0e50",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f1fecfd8-3943-42b7-b719-15f17d6e18ec",
+                "ref": "uuid:0cc9dbeb-9ae4-429b-80d5-a637d54f9bc4",
                 "orientation": "+"
               }
             ]
@@ -9600,30 +8349,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:58916334-ab3e-487a-ae20-5d1fe016af3e",
+          "id": "uuid:2d2a332b-7633-41ee-8f53-712fc6f2b877",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:f511f306-b61e-4ae5-82cb-bece777e3d84",
+                "ref": "uuid:5698e261-6451-4ffe-90dd-05d5270c59a7",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f293604e-b0f7-46d7-b087-3c86930da413",
+                "ref": "uuid:eb0aaf70-bb65-4855-a35b-860b1c23c53f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a",
+                "ref": "uuid:b42f27c9-d0e6-4cfb-9ea3-7e2517426428",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:0372d1a6-a543-4a84-9870-af81aa08887f",
+                "ref": "uuid:9e2b2cf4-db16-4c58-9cea-86b593995bdf",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:d1d2f042-31e4-41e3-b22e-173c10b3394a",
+                "ref": "uuid:030a717f-c3d7-46c9-8e04-4a90a2de6971",
                 "orientation": "-"
               }
             ]
@@ -9633,34 +8382,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:27504969-a1b2-4051-b522-a3453c07dcd0",
+          "id": "uuid:424281c5-646a-48c3-b0f2-ac703d3a8d10",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:c064e2ed-f6db-49d1-9e8d-39478e07c56c",
+                "ref": "uuid:e47e1b0a-ecee-4d50-987e-d10ad397f597",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357",
+                "ref": "uuid:d302b67e-99d1-4033-84c8-bec14b1a3a29",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5",
+                "ref": "uuid:23375f61-8d9d-407c-bc86-ff0a4a1a3030",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8",
+                "ref": "uuid:dbed95c2-94f5-4c01-ac9e-a71441efd65a",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f511f306-b61e-4ae5-82cb-bece777e3d84",
+                "ref": "uuid:5698e261-6451-4ffe-90dd-05d5270c59a7",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:98628e3a-b2df-4627-9326-3b30e2d31630",
+                "ref": "uuid:7197ee0b-aa79-40dd-a8ec-9d4413777a19",
                 "orientation": "-"
               }
             ]
@@ -9670,26 +8419,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:3d7b4f73-fc49-42eb-940a-801e16fce1f3",
+          "id": "uuid:d4e4f6d3-3603-4da5-9d20-661ff9a38015",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488",
+                "ref": "uuid:8e931595-7a01-4678-a20e-5607229a0d01",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def",
+                "ref": "uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f293604e-b0f7-46d7-b087-3c86930da413",
+                "ref": "uuid:eb0aaf70-bb65-4855-a35b-860b1c23c53f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8",
+                "ref": "uuid:dbed95c2-94f5-4c01-ac9e-a71441efd65a",
                 "orientation": "-"
               }
             ]
@@ -9699,30 +8448,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:ab77fa42-05de-4e0f-a1e5-57ed5dd871b5",
+          "id": "uuid:adb6be70-c29a-4dcc-9e4b-47970d9930dd",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:80a73235-bd0d-4255-b1c1-e213a7ce376b",
+                "ref": "uuid:8a34c9fb-e3d6-45d3-817e-93d0c58be464",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357",
+                "ref": "uuid:d302b67e-99d1-4033-84c8-bec14b1a3a29",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:78fceb81-8a17-42be-a55b-57b328908f22",
+                "ref": "uuid:51c0f9c6-7c13-4460-8636-2ed5ee228a6c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75",
+                "ref": "uuid:6ac9e1bc-3c5f-468b-8646-ac85e38d3013",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f",
+                "ref": "uuid:791da2a3-ee19-44a1-b604-5f379ab00bb1",
                 "orientation": "+"
               }
             ]
@@ -9732,26 +8481,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:489a82be-c45a-4b5c-8f46-dbe4efa2ac9c",
+          "id": "uuid:3ff8d8c4-90fe-4782-9717-1e3f4110f5a0",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:80a73235-bd0d-4255-b1c1-e213a7ce376b",
+                "ref": "uuid:8a34c9fb-e3d6-45d3-817e-93d0c58be464",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b",
+                "ref": "uuid:e8b25b9d-346c-4cdf-985b-c742fd7c3a34",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488",
+                "ref": "uuid:8e931595-7a01-4678-a20e-5607229a0d01",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5",
+                "ref": "uuid:23375f61-8d9d-407c-bc86-ff0a4a1a3030",
                 "orientation": "-"
               }
             ]
@@ -9761,34 +8510,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:a6e846dd-f611-4e3a-8c05-141c6b32fdcb",
+          "id": "uuid:2402e110-526c-49d6-82f2-5ecf689f64d3",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:0372d1a6-a543-4a84-9870-af81aa08887f",
+                "ref": "uuid:9e2b2cf4-db16-4c58-9cea-86b593995bdf",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb",
+                "ref": "uuid:06e882da-e914-4ff8-a279-13c1b16b7646",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:0b2d959e-941c-4494-988a-d87b4b585041",
+                "ref": "uuid:5f1fd4be-c4ba-4387-9d7d-6e26b8299dc9",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75",
+                "ref": "uuid:6ac9e1bc-3c5f-468b-8646-ac85e38d3013",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:35940328-3e54-4538-8936-ef7ab97f698b",
+                "ref": "uuid:d6b33a71-4823-4c26-8ca1-ed929f278377",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:0ba80381-37c0-4aff-bad6-0381103675d9",
+                "ref": "uuid:c0a27c02-e38f-4648-b296-3ba0372f0e50",
                 "orientation": "-"
               }
             ]
@@ -9798,26 +8547,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:77bc66ca-f5c1-4d25-8689-32d34d28f2ca",
+          "id": "uuid:64496114-d8c3-4643-9975-4ae0bb1af186",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:0702cb55-bfdf-47a3-9e03-5a1101f375d3",
+                "ref": "uuid:2413de82-7661-4536-8a05-58c4fadbd5fd",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:caea09b7-5bb4-473a-bac8-559a8385e485",
+                "ref": "uuid:28922e7d-7683-40da-916c-241f473ee3bd",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:dc2293f6-d716-4fe0-a542-cfdf00bc9d07",
+                "ref": "uuid:99e2aa85-d004-4eed-8533-1313133f0809",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f013fc74-d38d-4caa-9e9b-af749f4e86fd",
+                "ref": "uuid:8103a475-c12f-4664-ac95-50afbd4c782d",
                 "orientation": "+"
               }
             ]
@@ -9827,26 +8576,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:a13f36d3-6c2c-42be-a490-70fef723dfe9",
+          "id": "uuid:79e3d1de-56bc-47de-a18b-d29da6100eda",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:9cb950e8-e8dd-4323-9dc0-6f030f169a48",
+                "ref": "uuid:3bc984fd-e2fa-48de-9397-635b28834926",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f013fc74-d38d-4caa-9e9b-af749f4e86fd",
+                "ref": "uuid:8103a475-c12f-4664-ac95-50afbd4c782d",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:62b0df5f-e5c0-4e02-8f05-17469482d920",
+                "ref": "uuid:ba83542a-054c-4671-ad1f-412f89783e0f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e0c8c309-5568-4e9a-b22c-982f0bc9457d",
+                "ref": "uuid:259ec3c3-5480-484c-8b6f-d081695a0a3f",
                 "orientation": "-"
               }
             ]
@@ -9856,30 +8605,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:28753fb2-e05d-420b-bd23-0ec28b276e51",
+          "id": "uuid:815b8458-d756-45cc-8385-00314271e297",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:5e6c3ed6-4011-4407-a7a4-187d1ae6bc82",
+                "ref": "uuid:e3c87c26-8a6a-4889-923c-d87562d2dde9",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e0c8c309-5568-4e9a-b22c-982f0bc9457d",
+                "ref": "uuid:259ec3c3-5480-484c-8b6f-d081695a0a3f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:c6391658-8f77-4ea2-b8af-3484683133fc",
+                "ref": "uuid:4a32db28-5b1a-4b4c-8fd4-e94cfca8c03a",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3",
+                "ref": "uuid:1b26a418-ddc1-4e7d-8ff0-811102c413b5",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f293604e-b0f7-46d7-b087-3c86930da413",
+                "ref": "uuid:eb0aaf70-bb65-4855-a35b-860b1c23c53f",
                 "orientation": "-"
               }
             ]
@@ -9889,34 +8638,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:34283d3a-926c-4c21-a89a-2eb4974419f6",
+          "id": "uuid:1a7575a5-e039-4059-9fa8-b7e960c50c64",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:5e6c3ed6-4011-4407-a7a4-187d1ae6bc82",
+                "ref": "uuid:e3c87c26-8a6a-4889-923c-d87562d2dde9",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8",
+                "ref": "uuid:dbed95c2-94f5-4c01-ac9e-a71441efd65a",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0",
+                "ref": "uuid:d2e6c025-8dc2-45b0-896a-8cfbb94fd4e4",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82",
+                "ref": "uuid:2fe7500a-344c-43c9-8a4a-42a4dc381958",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:0702cb55-bfdf-47a3-9e03-5a1101f375d3",
+                "ref": "uuid:2413de82-7661-4536-8a05-58c4fadbd5fd",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:9cb950e8-e8dd-4323-9dc0-6f030f169a48",
+                "ref": "uuid:3bc984fd-e2fa-48de-9397-635b28834926",
                 "orientation": "-"
               }
             ]
@@ -9926,30 +8675,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:60717ebd-604c-423e-8b14-2740146445f5",
+          "id": "uuid:92f996ff-4259-4d40-96ec-65de71faa800",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:96ace84a-b09f-4624-b773-8e849bd7d7d1",
+                "ref": "uuid:e4a49176-d47d-41f7-85c1-7d91bb836286",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5",
+                "ref": "uuid:f60637f4-cdf9-4bf7-b969-72eabb91eb79",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1",
+                "ref": "uuid:929d7ecd-8ff2-4be6-af3e-929b8a3bdd52",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:caea09b7-5bb4-473a-bac8-559a8385e485",
+                "ref": "uuid:28922e7d-7683-40da-916c-241f473ee3bd",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82",
+                "ref": "uuid:2fe7500a-344c-43c9-8a4a-42a4dc381958",
                 "orientation": "-"
               }
             ]
@@ -9959,26 +8708,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:aaa596c1-245a-4a1d-b19d-ebe8cf5dbee1",
+          "id": "uuid:441f6a73-ea02-44a7-a04d-4fec5659d529",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488",
+                "ref": "uuid:8e931595-7a01-4678-a20e-5607229a0d01",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b",
+                "ref": "uuid:b745f3b0-caff-4c6a-8839-9c709893e1c2",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:96ace84a-b09f-4624-b773-8e849bd7d7d1",
+                "ref": "uuid:e4a49176-d47d-41f7-85c1-7d91bb836286",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0",
+                "ref": "uuid:d2e6c025-8dc2-45b0-896a-8cfbb94fd4e4",
                 "orientation": "-"
               }
             ]
@@ -9988,34 +8737,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5bc1cf2f-2aa7-4dcb-9f5d-d75d1cca76c0",
+          "id": "uuid:8ca4710e-2abd-4152-912d-55c25793b4b7",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1",
+                "ref": "uuid:929d7ecd-8ff2-4be6-af3e-929b8a3bdd52",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a",
+                "ref": "uuid:615aed99-8ae9-4857-931c-90bdd126e8c8",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9",
+                "ref": "uuid:6c6ddd1e-2780-4758-bbe7-a4c77bba6118",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:c6391658-8f77-4ea2-b8af-3484683133fc",
+                "ref": "uuid:4a32db28-5b1a-4b4c-8fd4-e94cfca8c03a",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:62b0df5f-e5c0-4e02-8f05-17469482d920",
+                "ref": "uuid:ba83542a-054c-4671-ad1f-412f89783e0f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:dc2293f6-d716-4fe0-a542-cfdf00bc9d07",
+                "ref": "uuid:99e2aa85-d004-4eed-8533-1313133f0809",
                 "orientation": "-"
               }
             ]
@@ -10025,30 +8774,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:92745bd3-f2b5-41ca-8c2e-97c11da03f28",
+          "id": "uuid:29f3aa93-c4e5-4961-9fd5-c2261a0b9f3b",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:28d289ac-d197-4346-a5e1-a78b0fb408ae",
+                "ref": "uuid:eb237aee-db71-4faf-8bb2-aeefc8515821",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82",
+                "ref": "uuid:2fe7500a-344c-43c9-8a4a-42a4dc381958",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0",
+                "ref": "uuid:d2e6c025-8dc2-45b0-896a-8cfbb94fd4e4",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5",
+                "ref": "uuid:23375f61-8d9d-407c-bc86-ff0a4a1a3030",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357",
+                "ref": "uuid:d302b67e-99d1-4033-84c8-bec14b1a3a29",
                 "orientation": "-"
               }
             ]
@@ -10058,26 +8807,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:d68df714-740d-404c-b8b1-f4c2b095cde4",
+          "id": "uuid:bac4ae02-1a53-4849-9e46-b3c0d67925b1",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:79977e2b-0adf-4e7f-9c30-a7bca716df14",
+                "ref": "uuid:05253350-3d88-4edc-b6cb-759a2234382f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:caea09b7-5bb4-473a-bac8-559a8385e485",
+                "ref": "uuid:28922e7d-7683-40da-916c-241f473ee3bd",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:28d289ac-d197-4346-a5e1-a78b0fb408ae",
+                "ref": "uuid:eb237aee-db71-4faf-8bb2-aeefc8515821",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:78fceb81-8a17-42be-a55b-57b328908f22",
+                "ref": "uuid:51c0f9c6-7c13-4460-8636-2ed5ee228a6c",
                 "orientation": "-"
               }
             ]
@@ -10087,26 +8836,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:96467122-b48d-4f8a-b51f-fffa1901a761",
+          "id": "uuid:6a58d678-e9cf-4466-b01f-76e8e7f1f4a4",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:79977e2b-0adf-4e7f-9c30-a7bca716df14",
+                "ref": "uuid:05253350-3d88-4edc-b6cb-759a2234382f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75",
+                "ref": "uuid:6ac9e1bc-3c5f-468b-8646-ac85e38d3013",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:77f25fdc-6684-4b9a-8cbd-18cfc7145e0a",
+                "ref": "uuid:78d47480-6451-451e-b35c-afbc40f27f93",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1",
+                "ref": "uuid:929d7ecd-8ff2-4be6-af3e-929b8a3bdd52",
                 "orientation": "+"
               }
             ]
@@ -10116,30 +8865,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:98430308-2fc8-4265-9475-5f249dd408e3",
+          "id": "uuid:49b309d9-6d39-4c44-9a9e-ac2e73c3b58e",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:933a2bb5-9610-4c8b-b857-ebfa014c631b",
+                "ref": "uuid:0c7efeba-1fb3-49a1-aafd-3e38affa4a9c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:21687804-7ed3-4319-937b-654565f92b98",
+                "ref": "uuid:21935dcb-8634-4e57-abf4-4585eba35018",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d",
+                "ref": "uuid:0795c157-5fcb-4d01-b0f0-fedf92b1d41f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8",
+                "ref": "uuid:580818ce-50f0-486c-85c9-91c35ab39509",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:3df80dfa-8278-479b-887c-89599b90417f",
+                "ref": "uuid:4bbdae51-6837-4cbb-974d-ab8987d4a018",
                 "orientation": "-"
               }
             ]
@@ -10149,26 +8898,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5d3314f0-3be8-49ba-a8db-720ab15c9138",
+          "id": "uuid:b17a9121-2cf2-427f-871d-78266deacddf",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:77f25fdc-6684-4b9a-8cbd-18cfc7145e0a",
+                "ref": "uuid:78d47480-6451-451e-b35c-afbc40f27f93",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b",
+                "ref": "uuid:9257083c-e11a-4914-a120-fbb11f0c10c8",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:933a2bb5-9610-4c8b-b857-ebfa014c631b",
+                "ref": "uuid:0c7efeba-1fb3-49a1-aafd-3e38affa4a9c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002",
+                "ref": "uuid:6968cfbb-265a-48a5-8fac-91fbc7fe1a16",
                 "orientation": "-"
               }
             ]
@@ -10182,19 +8931,19 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   ],
   "faces": [
     {
-      "id": "uuid:423f5a0c-8751-4e98-a2aa-db1d830c4778",
+      "id": "uuid:cc0799d5-a994-464b-8200-35566358138f",
       "type": "FeatureCollection",
       "featureType": "Face",
       "features": [
         {
-          "id": "uuid:93e9fcce-d973-41f1-a981-0019e8f2a7ee",
+          "id": "uuid:649a326e-bb1e-4492-943a-39aa35806c64",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:8aeb3333-b440-4655-afa4-9c6469240ec0",
+                "ref": "uuid:bec0f9d8-0d77-46ba-8941-f884943ac3d8",
                 "orientation": "+"
               }
             ]
@@ -10210,14 +8959,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1e6b1d36-7f8e-431b-bd0e-bf8fa2acfd74",
+          "id": "uuid:4fe850d8-d729-4851-b7d9-0f9e7ed39468",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:9b97b5f1-5acd-4cf2-9d5e-e7654a1a0fce",
+                "ref": "uuid:6642ea7b-0b5e-474c-95ef-fe5a15be551b",
                 "orientation": "+"
               }
             ]
@@ -10233,14 +8982,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:cf9f86b5-fd71-4c19-bcef-059d1a40d416",
+          "id": "uuid:0523e3be-6777-40f9-9e14-523e128647c0",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:3b789531-378b-428d-a286-f6f7f4eaf6b0",
+                "ref": "uuid:10ebd12b-36b6-4db0-b43e-b742e05540ce",
                 "orientation": "+"
               }
             ]
@@ -10256,14 +9005,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:d3f9206f-f221-4b1c-ac53-9669c8edf68f",
+          "id": "uuid:4def3698-95e1-486f-9588-a69a73640e5c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:3b50bf6b-2d5c-45b8-ae19-2103ff36599d",
+                "ref": "uuid:f8c1f3d2-aeb6-4b33-b6f8-7d01a5e8ae59",
                 "orientation": "+"
               }
             ]
@@ -10279,14 +9028,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6910e917-f057-4623-bf84-d9bda0b4f9b6",
+          "id": "uuid:fa7823a2-8ed7-43f0-9912-e7ade12c966a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:bed13d65-1e70-4b39-b729-f99f6cb37f47",
+                "ref": "uuid:72d54df4-b018-4897-a96d-7d62cb9d8c4a",
                 "orientation": "+"
               }
             ]
@@ -10302,14 +9051,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:9a2ca728-847a-439c-97f1-b7bb52330599",
+          "id": "uuid:f45d1ba5-ecfe-4b0b-b315-2dc71cfe2b3b",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:0a3d33b0-b98b-44f0-96a3-5b35fd133fb0",
+                "ref": "uuid:d7b9eb80-93ca-4ee5-adcb-ab1cfda75d4f",
                 "orientation": "+"
               }
             ]
@@ -10325,14 +9074,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:08d4e20d-eb16-49cb-9cd4-8fcd60f095bd",
+          "id": "uuid:d0ddc512-0c81-43bb-a000-bf5017ff64a7",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:660aa943-0834-4d48-b32d-773808d37f09",
+                "ref": "uuid:79e3d840-7da3-4380-8288-6c2db4ac8b06",
                 "orientation": "+"
               }
             ]
@@ -10348,14 +9097,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:10d84152-aca0-449e-91cc-b8062eeec0f6",
+          "id": "uuid:fbe45af6-b334-4500-97e3-3c4cd177db90",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:c13a006a-907c-4c2a-bee7-820325ada29a",
+                "ref": "uuid:7472a7e9-efcf-49a8-a19f-4a14c3e6f86e",
                 "orientation": "+"
               }
             ]
@@ -10371,14 +9120,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c8069715-2f4a-46f5-bdfe-6d561a33cff5",
+          "id": "uuid:d8aca1d0-8d06-4520-9437-7479640802df",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:9768053c-311f-4ad2-9da9-7627f42aeb88",
+                "ref": "uuid:bba09dfa-33c6-4256-8f33-b802aec75bdb",
                 "orientation": "+"
               }
             ]
@@ -10394,14 +9143,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:02a5f63e-b3ad-46dd-a505-3f2746c8dc6c",
+          "id": "uuid:f4b518ed-e4d2-48cc-b2b9-997df7a49c29",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:1a18ec4e-93d2-4e21-931b-05ae1fd9d31e",
+                "ref": "uuid:5b1af58d-21f4-4582-96f8-14d356205491",
                 "orientation": "+"
               }
             ]
@@ -10417,14 +9166,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1eb4b472-9d32-4980-869a-70a9743e68a6",
+          "id": "uuid:83e6f887-a532-473f-8f09-536ef1943f33",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:b01715b1-8ed7-47f2-9050-344a22a2847f",
+                "ref": "uuid:8c5381e4-64ab-4b9d-bdd5-aea3de220330",
                 "orientation": "+"
               }
             ]
@@ -10440,14 +9189,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:980f168e-ed23-4e8b-a952-84278d4bf22a",
+          "id": "uuid:16b0e4ac-22b3-40f5-8510-7fefb1b1cc06",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:913979f7-aaab-4985-b5f6-f2286137641a",
+                "ref": "uuid:73155e38-87b0-4ded-9af7-dd354d36a728",
                 "orientation": "+"
               }
             ]
@@ -10463,14 +9212,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5cd4de66-7799-4806-a981-39fb1400548d",
+          "id": "uuid:f3212f35-ba06-46b1-8822-fdfac0ec4bd1",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:6876e445-1eb6-4a91-9b18-c6eaf96f5bd8",
+                "ref": "uuid:ce452f84-97f5-43ad-83f8-1758fba42a49",
                 "orientation": "+"
               }
             ]
@@ -10486,14 +9235,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:91ab249a-af89-4447-aa69-ba6ea64cc469",
+          "id": "uuid:bda4a01e-afca-41dd-b296-81cd3df3c070",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:88550bf5-23af-44fd-a323-c043682481d7",
+                "ref": "uuid:46d1879a-0f3f-42ef-b68d-d813f684e3f9",
                 "orientation": "+"
               }
             ]
@@ -10509,14 +9258,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:4ec25580-07c5-4e00-b6c9-95a4d18a99de",
+          "id": "uuid:1713550e-1504-45f6-a00e-7eeb436306eb",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:44b86750-060a-4627-81cb-1d21e7ecf82b",
+                "ref": "uuid:98685c3a-fc3b-4490-b99f-5a4f9ef3aae4",
                 "orientation": "+"
               }
             ]
@@ -10532,14 +9281,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:30c110f9-5e95-49b1-a133-deb9ac707d98",
+          "id": "uuid:3f40fd91-3d85-404b-82cd-fd4bb7228ca5",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:910b7ace-52b3-4d2a-afef-9340c0af3f41",
+                "ref": "uuid:8efc4bcc-0265-4aba-82f9-4e9c5f818018",
                 "orientation": "+"
               }
             ]
@@ -10555,14 +9304,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:22b8152a-5086-40c6-9e5f-52ea7233a6c1",
+          "id": "uuid:0e50d98b-eed1-41b7-aec0-35970c4c03df",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:69e604be-11d5-4fd2-981c-e5d2a93db493",
+                "ref": "uuid:0bdb8d8a-3d53-4a97-bee6-56bf509e6b69",
                 "orientation": "+"
               }
             ]
@@ -10578,14 +9327,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:59c5803c-9e52-4b51-8cf6-8c3fadf646f4",
+          "id": "uuid:1d373111-f4b1-4627-92ab-14f0bbeb882b",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:58916334-ab3e-487a-ae20-5d1fe016af3e",
+                "ref": "uuid:2d2a332b-7633-41ee-8f53-712fc6f2b877",
                 "orientation": "+"
               }
             ]
@@ -10601,14 +9350,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:bcd5cbb9-92d8-45ab-8a57-709330d5079b",
+          "id": "uuid:6caff784-d847-4916-9360-03ab48f3a5df",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:27504969-a1b2-4051-b522-a3453c07dcd0",
+                "ref": "uuid:424281c5-646a-48c3-b0f2-ac703d3a8d10",
                 "orientation": "+"
               }
             ]
@@ -10624,14 +9373,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:19482d65-4c2b-4aff-8dac-c2d163d80f3d",
+          "id": "uuid:429a8b49-b82a-4521-9388-6b0b87bccb06",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:3d7b4f73-fc49-42eb-940a-801e16fce1f3",
+                "ref": "uuid:d4e4f6d3-3603-4da5-9d20-661ff9a38015",
                 "orientation": "+"
               }
             ]
@@ -10647,14 +9396,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e7a0f208-fa2e-4d5b-bf29-f1313cc7ce50",
+          "id": "uuid:48b5ada1-bbec-4aee-851d-6c1509e9d444",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:ab77fa42-05de-4e0f-a1e5-57ed5dd871b5",
+                "ref": "uuid:adb6be70-c29a-4dcc-9e4b-47970d9930dd",
                 "orientation": "+"
               }
             ]
@@ -10670,14 +9419,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:bcfd7996-2c5b-4976-ba97-6e5399ad8ea8",
+          "id": "uuid:a3e906eb-b583-4af2-a13b-fb6bb2d399a3",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:489a82be-c45a-4b5c-8f46-dbe4efa2ac9c",
+                "ref": "uuid:3ff8d8c4-90fe-4782-9717-1e3f4110f5a0",
                 "orientation": "+"
               }
             ]
@@ -10693,14 +9442,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:36a9805e-fb23-40bf-83c3-1c019b340443",
+          "id": "uuid:90f77d40-3e87-4627-993d-e0a9efef52d6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:a6e846dd-f611-4e3a-8c05-141c6b32fdcb",
+                "ref": "uuid:2402e110-526c-49d6-82f2-5ecf689f64d3",
                 "orientation": "+"
               }
             ]
@@ -10716,14 +9465,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:4042b94e-c39e-41ce-afcf-1046f5050975",
+          "id": "uuid:d9c6f295-4449-4e1d-bb3a-0c4ddf57e8f0",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:77bc66ca-f5c1-4d25-8689-32d34d28f2ca",
+                "ref": "uuid:64496114-d8c3-4643-9975-4ae0bb1af186",
                 "orientation": "+"
               }
             ]
@@ -10739,14 +9488,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:185adb6d-0a7a-427a-9c06-4a6095865432",
+          "id": "uuid:47967a8e-ab17-4db0-bbfa-7a6d797e6136",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:a13f36d3-6c2c-42be-a490-70fef723dfe9",
+                "ref": "uuid:79e3d1de-56bc-47de-a18b-d29da6100eda",
                 "orientation": "+"
               }
             ]
@@ -10762,14 +9511,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:57c388ed-780f-47a7-ae3b-e28a6b28c803",
+          "id": "uuid:538c874f-36f0-4fe5-9bb1-fc37f0b14f0e",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:28753fb2-e05d-420b-bd23-0ec28b276e51",
+                "ref": "uuid:815b8458-d756-45cc-8385-00314271e297",
                 "orientation": "+"
               }
             ]
@@ -10785,14 +9534,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c4c8f918-05c6-4b83-bac6-fcc63343667e",
+          "id": "uuid:c6d50260-a8fe-4fac-9279-2ac46d621e87",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:34283d3a-926c-4c21-a89a-2eb4974419f6",
+                "ref": "uuid:1a7575a5-e039-4059-9fa8-b7e960c50c64",
                 "orientation": "+"
               }
             ]
@@ -10808,14 +9557,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:fbfaf83d-7563-4b11-997d-bd3fb8c6f98b",
+          "id": "uuid:69183851-6fbc-495b-aa59-eba99d14bf68",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:60717ebd-604c-423e-8b14-2740146445f5",
+                "ref": "uuid:92f996ff-4259-4d40-96ec-65de71faa800",
                 "orientation": "+"
               }
             ]
@@ -10831,14 +9580,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:034d3912-3eba-418d-8819-8da27e5aa497",
+          "id": "uuid:6bb474bd-c5d6-4366-bc9e-d051dbf72a6e",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:aaa596c1-245a-4a1d-b19d-ebe8cf5dbee1",
+                "ref": "uuid:441f6a73-ea02-44a7-a04d-4fec5659d529",
                 "orientation": "+"
               }
             ]
@@ -10854,14 +9603,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:9566c1ae-4a84-4cf9-bba1-b37b75c86c4b",
+          "id": "uuid:ec0516e9-68b2-4d3d-8ed9-4a59f8e018c8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:5bc1cf2f-2aa7-4dcb-9f5d-d75d1cca76c0",
+                "ref": "uuid:8ca4710e-2abd-4152-912d-55c25793b4b7",
                 "orientation": "+"
               }
             ]
@@ -10877,14 +9626,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8873590f-688c-448f-8da3-8833140bacd8",
+          "id": "uuid:5381559d-4537-4041-81e1-a0978e7f3c64",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:92745bd3-f2b5-41ca-8c2e-97c11da03f28",
+                "ref": "uuid:29f3aa93-c4e5-4961-9fd5-c2261a0b9f3b",
                 "orientation": "+"
               }
             ]
@@ -10900,14 +9649,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0aa9a5ab-109b-43d9-abe1-de1598bdeaad",
+          "id": "uuid:a63b48bc-c0d9-440d-9238-c093d3a6c40c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:d68df714-740d-404c-b8b1-f4c2b095cde4",
+                "ref": "uuid:bac4ae02-1a53-4849-9e46-b3c0d67925b1",
                 "orientation": "+"
               }
             ]
@@ -10923,14 +9672,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8fd1fd2b-7f4b-405c-98e9-cfc727fc15eb",
+          "id": "uuid:029e7e2d-a650-4510-b861-ee68b46a2fff",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:96467122-b48d-4f8a-b51f-fffa1901a761",
+                "ref": "uuid:6a58d678-e9cf-4466-b01f-76e8e7f1f4a4",
                 "orientation": "+"
               }
             ]
@@ -10946,14 +9695,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6877f8e3-90e5-4c95-8b9c-f8b164ecbcb2",
+          "id": "uuid:64860b38-d1bf-4728-8f0d-6ced9451ce37",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:98430308-2fc8-4265-9475-5f249dd408e3",
+                "ref": "uuid:49b309d9-6d39-4c44-9a9e-ac2e73c3b58e",
                 "orientation": "+"
               }
             ]
@@ -10969,14 +9718,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:bff93356-53c3-4b96-8cda-0a07656b48f5",
+          "id": "uuid:4bd327dc-316a-4e1c-9b35-b377652e89d6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:5d3314f0-3be8-49ba-a8db-720ab15c9138",
+                "ref": "uuid:b17a9121-2cf2-427f-871d-78266deacddf",
                 "orientation": "+"
               }
             ]
@@ -10996,47 +9745,47 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   ],
   "shells": [
     {
-      "id": "uuid:357f1d28-405c-4086-83a8-9716876fe301",
+      "id": "uuid:c6ad4aa1-ed7a-4636-b80a-df7a673f74de",
       "type": "FeatureCollection",
       "featureType": "Shell",
       "features": [
         {
-          "id": "uuid:9da1d9ee-f32a-4ff0-8cdb-de5f9029b760",
+          "id": "uuid:31dcf84a-98c6-48b1-8ba6-14d7a5ff6749",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:93e9fcce-d973-41f1-a981-0019e8f2a7ee",
+                "ref": "uuid:649a326e-bb1e-4492-943a-39aa35806c64",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:1e6b1d36-7f8e-431b-bd0e-bf8fa2acfd74",
+                "ref": "uuid:4fe850d8-d729-4851-b7d9-0f9e7ed39468",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:cf9f86b5-fd71-4c19-bcef-059d1a40d416",
+                "ref": "uuid:0523e3be-6777-40f9-9e14-523e128647c0",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:d3f9206f-f221-4b1c-ac53-9669c8edf68f",
+                "ref": "uuid:4def3698-95e1-486f-9588-a69a73640e5c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6910e917-f057-4623-bf84-d9bda0b4f9b6",
+                "ref": "uuid:fa7823a2-8ed7-43f0-9912-e7ade12c966a",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:9a2ca728-847a-439c-97f1-b7bb52330599",
+                "ref": "uuid:f45d1ba5-ecfe-4b0b-b315-2dc71cfe2b3b",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:08d4e20d-eb16-49cb-9cd4-8fcd60f095bd",
+                "ref": "uuid:d0ddc512-0c81-43bb-a000-bf5017ff64a7",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:10d84152-aca0-449e-91cc-b8062eeec0f6",
+                "ref": "uuid:fbe45af6-b334-4500-97e3-3c4cd177db90",
                 "orientation": "+"
               }
             ]
@@ -11046,42 +9795,42 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c907a592-3c99-4932-959b-ce97dc808426",
+          "id": "uuid:f44d98c1-fc4e-45da-a233-6e63e58bd560",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:c8069715-2f4a-46f5-bdfe-6d561a33cff5",
+                "ref": "uuid:d8aca1d0-8d06-4520-9437-7479640802df",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:02a5f63e-b3ad-46dd-a505-3f2746c8dc6c",
+                "ref": "uuid:f4b518ed-e4d2-48cc-b2b9-997df7a49c29",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:1eb4b472-9d32-4980-869a-70a9743e68a6",
+                "ref": "uuid:83e6f887-a532-473f-8f09-536ef1943f33",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:980f168e-ed23-4e8b-a952-84278d4bf22a",
+                "ref": "uuid:16b0e4ac-22b3-40f5-8510-7fefb1b1cc06",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6910e917-f057-4623-bf84-d9bda0b4f9b6",
+                "ref": "uuid:fa7823a2-8ed7-43f0-9912-e7ade12c966a",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:5cd4de66-7799-4806-a981-39fb1400548d",
+                "ref": "uuid:f3212f35-ba06-46b1-8822-fdfac0ec4bd1",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:91ab249a-af89-4447-aa69-ba6ea64cc469",
+                "ref": "uuid:bda4a01e-afca-41dd-b296-81cd3df3c070",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:4ec25580-07c5-4e00-b6c9-95a4d18a99de",
+                "ref": "uuid:1713550e-1504-45f6-a00e-7eeb436306eb",
                 "orientation": "+"
               }
             ]
@@ -11091,46 +9840,46 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b5928f37-850e-4f74-b68a-10932196d478",
+          "id": "uuid:26bd463c-0433-4510-8ba8-074f5cdd1e64",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:30c110f9-5e95-49b1-a133-deb9ac707d98",
+                "ref": "uuid:3f40fd91-3d85-404b-82cd-fd4bb7228ca5",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:22b8152a-5086-40c6-9e5f-52ea7233a6c1",
+                "ref": "uuid:0e50d98b-eed1-41b7-aec0-35970c4c03df",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:59c5803c-9e52-4b51-8cf6-8c3fadf646f4",
+                "ref": "uuid:1d373111-f4b1-4627-92ab-14f0bbeb882b",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:bcd5cbb9-92d8-45ab-8a57-709330d5079b",
+                "ref": "uuid:6caff784-d847-4916-9360-03ab48f3a5df",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:19482d65-4c2b-4aff-8dac-c2d163d80f3d",
+                "ref": "uuid:429a8b49-b82a-4521-9388-6b0b87bccb06",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e7a0f208-fa2e-4d5b-bf29-f1313cc7ce50",
+                "ref": "uuid:48b5ada1-bbec-4aee-851d-6c1509e9d444",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:bcfd7996-2c5b-4976-ba97-6e5399ad8ea8",
+                "ref": "uuid:a3e906eb-b583-4af2-a13b-fb6bb2d399a3",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:08d4e20d-eb16-49cb-9cd4-8fcd60f095bd",
+                "ref": "uuid:d0ddc512-0c81-43bb-a000-bf5017ff64a7",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:36a9805e-fb23-40bf-83c3-1c019b340443",
+                "ref": "uuid:90f77d40-3e87-4627-993d-e0a9efef52d6",
                 "orientation": "+"
               }
             ]
@@ -11140,46 +9889,46 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e9901d39-6375-4a90-a483-58f7f5f5f76c",
+          "id": "uuid:3e5f9429-9bfb-498b-9624-e667f2e7b281",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:4042b94e-c39e-41ce-afcf-1046f5050975",
+                "ref": "uuid:d9c6f295-4449-4e1d-bb3a-0c4ddf57e8f0",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:185adb6d-0a7a-427a-9c06-4a6095865432",
+                "ref": "uuid:47967a8e-ab17-4db0-bbfa-7a6d797e6136",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:57c388ed-780f-47a7-ae3b-e28a6b28c803",
+                "ref": "uuid:538c874f-36f0-4fe5-9bb1-fc37f0b14f0e",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:c4c8f918-05c6-4b83-bac6-fcc63343667e",
+                "ref": "uuid:c6d50260-a8fe-4fac-9279-2ac46d621e87",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:fbfaf83d-7563-4b11-997d-bd3fb8c6f98b",
+                "ref": "uuid:69183851-6fbc-495b-aa59-eba99d14bf68",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:034d3912-3eba-418d-8819-8da27e5aa497",
+                "ref": "uuid:6bb474bd-c5d6-4366-bc9e-d051dbf72a6e",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:19482d65-4c2b-4aff-8dac-c2d163d80f3d",
+                "ref": "uuid:429a8b49-b82a-4521-9388-6b0b87bccb06",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:9566c1ae-4a84-4cf9-bba1-b37b75c86c4b",
+                "ref": "uuid:ec0516e9-68b2-4d3d-8ed9-4a59f8e018c8",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:91ab249a-af89-4447-aa69-ba6ea64cc469",
+                "ref": "uuid:bda4a01e-afca-41dd-b296-81cd3df3c070",
                 "orientation": "-"
               }
             ]
@@ -11189,62 +9938,62 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:ec469bfd-9810-4258-9d7c-7c36b46d2478",
+          "id": "uuid:9d4e9985-3788-4e70-a2ec-a809aba7c7e8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:8873590f-688c-448f-8da3-8833140bacd8",
+                "ref": "uuid:5381559d-4537-4041-81e1-a0978e7f3c64",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:0aa9a5ab-109b-43d9-abe1-de1598bdeaad",
+                "ref": "uuid:a63b48bc-c0d9-440d-9238-c093d3a6c40c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8fd1fd2b-7f4b-405c-98e9-cfc727fc15eb",
+                "ref": "uuid:029e7e2d-a650-4510-b861-ee68b46a2fff",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6877f8e3-90e5-4c95-8b9c-f8b164ecbcb2",
+                "ref": "uuid:64860b38-d1bf-4728-8f0d-6ced9451ce37",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:bff93356-53c3-4b96-8cda-0a07656b48f5",
+                "ref": "uuid:4bd327dc-316a-4e1c-9b35-b377652e89d6",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:10d84152-aca0-449e-91cc-b8062eeec0f6",
+                "ref": "uuid:fbe45af6-b334-4500-97e3-3c4cd177db90",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:4ec25580-07c5-4e00-b6c9-95a4d18a99de",
+                "ref": "uuid:1713550e-1504-45f6-a00e-7eeb436306eb",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:034d3912-3eba-418d-8819-8da27e5aa497",
+                "ref": "uuid:6bb474bd-c5d6-4366-bc9e-d051dbf72a6e",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:fbfaf83d-7563-4b11-997d-bd3fb8c6f98b",
+                "ref": "uuid:69183851-6fbc-495b-aa59-eba99d14bf68",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e7a0f208-fa2e-4d5b-bf29-f1313cc7ce50",
+                "ref": "uuid:48b5ada1-bbec-4aee-851d-6c1509e9d444",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:9a2ca728-847a-439c-97f1-b7bb52330599",
+                "ref": "uuid:f45d1ba5-ecfe-4b0b-b315-2dc71cfe2b3b",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:bcfd7996-2c5b-4976-ba97-6e5399ad8ea8",
+                "ref": "uuid:a3e906eb-b583-4af2-a13b-fb6bb2d399a3",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:5cd4de66-7799-4806-a981-39fb1400548d",
+                "ref": "uuid:f3212f35-ba06-46b1-8822-fdfac0ec4bd1",
                 "orientation": "-"
               }
             ]
@@ -11258,19 +10007,19 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   ],
   "solids": [
     {
-      "id": "uuid:2d32ac86-f165-4f74-95e6-bab2a73776a6",
+      "id": "uuid:dca59cc5-b097-4aec-8fb3-e7c839e50f09",
       "type": "FeatureCollection",
       "featureType": "Solid",
       "features": [
         {
-          "id": "uuid:cca8a912-844b-4ac4-989c-64215acd3e34",
+          "id": "uuid:799663c8-0a92-4852-921c-7a0230e91398",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:9da1d9ee-f32a-4ff0-8cdb-de5f9029b760",
+                "ref": "uuid:31dcf84a-98c6-48b1-8ba6-14d7a5ff6749",
                 "orientation": "+"
               }
             ]
@@ -11284,14 +10033,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1828e704-a264-4ebc-9bae-1dcf52fc7b41",
+          "id": "uuid:8b285c1f-d701-4a8e-ab33-499c70ddffc7",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:c907a592-3c99-4932-959b-ce97dc808426",
+                "ref": "uuid:f44d98c1-fc4e-45da-a233-6e63e58bd560",
                 "orientation": "+"
               }
             ]
@@ -11305,14 +10054,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b3e77f3e-8ae4-463b-b136-d331577a9876",
+          "id": "uuid:fd11dcb1-cdf6-43b6-b1de-92c296d21ffc",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:b5928f37-850e-4f74-b68a-10932196d478",
+                "ref": "uuid:26bd463c-0433-4510-8ba8-074f5cdd1e64",
                 "orientation": "+"
               }
             ]
@@ -11326,14 +10075,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b85a797a-b837-48ad-a77d-72b8881d58a5",
+          "id": "uuid:cbda787e-1805-4c86-94b1-de73e1534766",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:e9901d39-6375-4a90-a483-58f7f5f5f76c",
+                "ref": "uuid:3e5f9429-9bfb-498b-9624-e667f2e7b281",
                 "orientation": "+"
               }
             ]
@@ -11347,14 +10096,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6061fb1f-e335-407d-894e-fdb45f4bc11d",
+          "id": "uuid:113658a0-e13f-4abd-8a2b-f02f215d70f8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:ec469bfd-9810-4258-9d7c-7c36b46d2478",
+                "ref": "uuid:9d4e9985-3788-4e70-a2ec-a809aba7c7e8",
                 "orientation": "+"
               }
             ]
@@ -11389,9 +10138,36 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
 {
   "@context": [
     "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
-    "https://surroundaustralia.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/wa-core/context.jsonld"
+    {
+      "vocabs": "https://linked.data.gov.au/def/csdm/",
+      "wa-surveypoint-purpose": "https://linked.data.gov.au/def/csdm/wa-surveypoint-purpose/",
+      "wa-survey-purpose": "https://linked.data.gov.au/def/csdm/wa-survey-purpose/",
+      "wa-survey-type": "https://linked.data.gov.au/def/csdm/wa-survey-type/",
+      "wa-procedure-used": "https://linked.data.gov.au/def/csdm/wa-procedure-used/",
+      "wa-survey-documentation-type": "https://linked.data.gov.au/def/csdm/wa-survey-documentation-type/",
+      "wa-annotation-role": "https://linked.data.gov.au/def/csdm/wa-annotation/",
+      "wa-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-parcel-purpose/",
+      "wa-parcel-type": "https://linked.data.gov.au/def/csdm/wa-parcel-type/",
+      "wa-parcel-state": "https://linked.data.gov.au/def/csdm/wa-parcel-state/",
+      "wa-nonprimary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+      "wa-monument-form": "https://linked.data.gov.au/def/csdm/wa-monument-form/",
+      "wa-monument-condition": "https://linked.data.gov.au/def/csdm/wa-monument-condition/",
+      "wa-monument-state": "https://linked.data.gov.au/def/csdm/wa-monument-state/",
+      "wa-vector-purpose": "https://linked.data.gov.au/def/csdm/wa-vector-purpose/",
+      "wa-vector-type": "https://linked.data.gov.au/def/csdm/wa-vector-type/",
+      "wa-secondary-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-purpose/",
+      "wa-secondary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
+      "wa-secondary-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-purpose/",
+      "wa-interest-type": "https://linked.data.gov.au/def/csdm/wa-interest-type/",
+      "wa-interest": "https://linked.data.gov.au/def/csdm/wa-interest/",
+      "wa-locality": "https://linked.data.gov.au/def/csdm/wa-locality/",
+      "wa-local-government": "https://linked.data.gov.au/def/csdm/wa-local-government/",
+      "registered-surveyors": "https://wa.gov.au/surveyors/",
+      "foaf": "https://xmlns.com/foaf/0.1/",
+      "activityType": "@type"
+    }
   ],
-  "id": "uuid:85927669-32a3-4d50-b8dc-2785c78df4bd",
+  "id": "uuid:a4df5a33-fc85-40a0-9fe6-b749d8170a33",
   "name": "DP 12347",
   "description": "Multi-solid test for Solid validation",
   "type": "FeatureCollection",
@@ -11410,22 +10186,22 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   "adminUnit": [],
   "hasProvenance": [],
   "wasGeneratedBy": {
-    "id": "uuid:f3e43453-6503-4cc4-9c9a-13a5564c3514",
-    "endedAtTime": "2026-05-21T05:15:56.524819+00:00"
+    "id": "uuid:08fe8ebb-59f4-4489-81e1-b0640caa9056",
+    "endedAtTime": "2026-05-27T05:58:56.923046+00:00"
   },
   "features": [],
   "referencedCSDs": [],
   "points": [
     {
-      "id": "uuid:fb4abc7c-4533-4bbd-8907-9557ad54e94f",
+      "id": "uuid:9a3a584a-38b4-49ec-84a2-15512d31db5b",
       "type": "FeatureCollection",
       "featureType": "CadastralMark",
       "features": [
         {
-          "id": "uuid:f8265e86-f991-4a36-befc-fef9f603e7dd",
+          "id": "uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11454,10 +10230,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:27021be0-edb1-4235-acd9-b412e7a36d7d",
+          "id": "uuid:fa551002-6466-46f1-a2f3-f433334447e6",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11486,10 +10262,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2",
+          "id": "uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11518,10 +10294,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952",
+          "id": "uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11550,10 +10326,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:10199cf3-665f-45a3-96d3-47043d749991",
+          "id": "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11582,10 +10358,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca",
+          "id": "uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11614,10 +10390,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3",
+          "id": "uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11646,10 +10422,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf",
+          "id": "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11678,10 +10454,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:dfadb111-777d-406e-b511-1f0dc19409f0",
+          "id": "uuid:e0d36194-78e8-4255-b6b7-4f59b79544db",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11710,10 +10486,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1",
+          "id": "uuid:5228ad62-0730-416f-89b0-5042da216efb",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11742,10 +10518,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e",
+          "id": "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11774,10 +10550,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464",
+          "id": "uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11806,10 +10582,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:56d1ab96-3795-4e26-aa31-858f2698d768",
+          "id": "uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11838,10 +10614,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4",
+          "id": "uuid:48b7ec92-e7ff-468f-8dff-d03483468e97",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11870,10 +10646,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b23fbe07-e549-428e-b539-ea66851ba6cd",
+          "id": "uuid:754fd788-08c8-45b0-a591-e608a27f0948",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11902,10 +10678,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1",
+          "id": "uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11934,10 +10710,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9",
+          "id": "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11966,10 +10742,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c",
+          "id": "uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -11998,10 +10774,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:4c11a36b-5379-462c-90c0-d99d0557ea25",
+          "id": "uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12030,10 +10806,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a",
+          "id": "uuid:073f2f24-c85a-455d-9807-c24f75ea50f5",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12062,10 +10838,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:2415b0ae-7d30-43c2-8757-82a577c694b5",
+          "id": "uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12094,10 +10870,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd",
+          "id": "uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12126,10 +10902,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:148a5543-ff12-4460-986c-449d5243d885",
+          "id": "uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12158,10 +10934,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:74369382-b3b3-46b5-adb7-18fac4de68e0",
+          "id": "uuid:7e2ed802-251e-48b6-b140-013cad070d9f",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12190,10 +10966,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960",
+          "id": "uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12222,10 +10998,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041",
+          "id": "uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12254,10 +11030,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340",
+          "id": "uuid:9d786d21-169c-459e-a354-4eeee65bf8a3",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12286,10 +11062,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:571b14af-afc3-41ee-800e-b507fac82ae7",
+          "id": "uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12318,10 +11094,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:28af1f47-ab41-493c-af53-3a490074fa52",
+          "id": "uuid:9ccc8672-7244-42a9-8d65-1b40a637a603",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12350,10 +11126,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5",
+          "id": "uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12382,10 +11158,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d",
+          "id": "uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12414,10 +11190,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6",
+          "id": "uuid:451e256a-6127-4e18-97f5-644093e9f9df",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12446,10 +11222,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954",
+          "id": "uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12478,10 +11254,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7",
+          "id": "uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12510,10 +11286,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009",
+          "id": "uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12542,10 +11318,10 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:686186b8-788e-454a-9d4b-581056f66141",
+          "id": "uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d",
           "type": "Feature",
           "featureType": "BoundaryMark",
-          "time": "2026-05-21T05:15:56.511820+00:00",
+          "time": "2026-05-27T05:58:56.914093+00:00",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -12581,19 +11357,19 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   "parcels": [],
   "edges": [
     {
-      "id": "uuid:21566231-4d84-4ee5-9812-6d730600f6c9",
+      "id": "uuid:d1d9c298-e00e-47e4-94b8-d9aa5ab0b854",
       "type": "FeatureCollection",
       "featureType": "Edge",
       "features": [
         {
-          "id": "uuid:497de1cd-b8cb-4570-a0ad-f7303fd3655c",
+          "id": "uuid:cc9ce047-61a1-4bf9-a366-bfc5b43092c2",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f8265e86-f991-4a36-befc-fef9f603e7dd",
-              "uuid:27021be0-edb1-4235-acd9-b412e7a36d7d"
+              "uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e",
+              "uuid:fa551002-6466-46f1-a2f3-f433334447e6"
             ]
           },
           "properties": {
@@ -12603,14 +11379,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:77d328c1-9d6f-4c11-a390-de701a4cdec6",
+          "id": "uuid:c795e6d9-0f44-4b1c-bc01-686d5e2acaa3",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:27021be0-edb1-4235-acd9-b412e7a36d7d",
-              "uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2"
+              "uuid:fa551002-6466-46f1-a2f3-f433334447e6",
+              "uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9"
             ]
           },
           "properties": {
@@ -12620,14 +11396,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5a388390-6b1e-45ec-9f63-fc2878ba5866",
+          "id": "uuid:f0aa8d02-1aa3-4f44-be28-d135c94de497",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2",
-              "uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952"
+              "uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9",
+              "uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d"
             ]
           },
           "properties": {
@@ -12637,14 +11413,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb",
+          "id": "uuid:06e882da-e914-4ff8-a279-13c1b16b7646",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952",
-              "uuid:f8265e86-f991-4a36-befc-fef9f603e7dd"
+              "uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d",
+              "uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e"
             ]
           },
           "properties": {
@@ -12654,14 +11430,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0b2d959e-941c-4494-988a-d87b4b585041",
+          "id": "uuid:5f1fd4be-c4ba-4387-9d7d-6e26b8299dc9",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:10199cf3-665f-45a3-96d3-47043d749991",
-              "uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952"
+              "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010",
+              "uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d"
             ]
           },
           "properties": {
@@ -12671,14 +11447,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e27b12a4-7d3a-482b-8f8e-5b49e8765881",
+          "id": "uuid:d27bfb1b-ffd5-4fb3-9594-6f04ad66aa81",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2",
-              "uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca"
+              "uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9",
+              "uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1"
             ]
           },
           "properties": {
@@ -12688,14 +11464,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b",
+          "id": "uuid:9257083c-e11a-4914-a120-fbb11f0c10c8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca",
-              "uuid:10199cf3-665f-45a3-96d3-47043d749991"
+              "uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1",
+              "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010"
             ]
           },
           "properties": {
@@ -12705,14 +11481,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1f8835fd-8951-4bd6-a739-47ccf214c2d5",
+          "id": "uuid:725ebfd6-7c75-44fa-b917-94381bddef5f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3",
-              "uuid:27021be0-edb1-4235-acd9-b412e7a36d7d"
+              "uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96",
+              "uuid:fa551002-6466-46f1-a2f3-f433334447e6"
             ]
           },
           "properties": {
@@ -12722,14 +11498,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a",
+          "id": "uuid:b42f27c9-d0e6-4cfb-9ea3-7e2517426428",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f8265e86-f991-4a36-befc-fef9f603e7dd",
-              "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf"
+              "uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e",
+              "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b"
             ]
           },
           "properties": {
@@ -12739,14 +11515,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5",
+          "id": "uuid:5367fe8d-79c0-4161-a4ce-3b7f42afad3e",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf",
-              "uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3"
+              "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b",
+              "uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96"
             ]
           },
           "properties": {
@@ -12756,14 +11532,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:59e7006a-a17b-44d7-b02c-136d9730d241",
+          "id": "uuid:9a5a3eef-7ddb-40bf-ae2a-111b4623fb08",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3",
-              "uuid:dfadb111-777d-406e-b511-1f0dc19409f0"
+              "uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96",
+              "uuid:e0d36194-78e8-4255-b6b7-4f59b79544db"
             ]
           },
           "properties": {
@@ -12773,14 +11549,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d",
+          "id": "uuid:0795c157-5fcb-4d01-b0f0-fedf92b1d41f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:dfadb111-777d-406e-b511-1f0dc19409f0",
-              "uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1"
+              "uuid:e0d36194-78e8-4255-b6b7-4f59b79544db",
+              "uuid:5228ad62-0730-416f-89b0-5042da216efb"
             ]
           },
           "properties": {
@@ -12790,14 +11566,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:21687804-7ed3-4319-937b-654565f92b98",
+          "id": "uuid:21935dcb-8634-4e57-abf4-4585eba35018",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1",
-              "uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca"
+              "uuid:5228ad62-0730-416f-89b0-5042da216efb",
+              "uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1"
             ]
           },
           "properties": {
@@ -12807,14 +11583,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def",
+          "id": "uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf",
-              "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e"
+              "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b",
+              "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4"
             ]
           },
           "properties": {
@@ -12824,14 +11600,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece",
+          "id": "uuid:a51db565-6909-4151-ad98-9c7fbeb85c19",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e",
-              "uuid:dfadb111-777d-406e-b511-1f0dc19409f0"
+              "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4",
+              "uuid:e0d36194-78e8-4255-b6b7-4f59b79544db"
             ]
           },
           "properties": {
@@ -12841,14 +11617,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b",
+          "id": "uuid:e8b25b9d-346c-4cdf-985b-c742fd7c3a34",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e",
-              "uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464"
+              "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4",
+              "uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c"
             ]
           },
           "properties": {
@@ -12858,14 +11634,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f4ab88fb-fed2-42d6-86c8-5d966fec7a25",
+          "id": "uuid:aa458878-e72e-454e-9921-bfbf14315787",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464",
-              "uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1"
+              "uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c",
+              "uuid:5228ad62-0730-416f-89b0-5042da216efb"
             ]
           },
           "properties": {
@@ -12875,14 +11651,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f",
+          "id": "uuid:791da2a3-ee19-44a1-b604-5f379ab00bb1",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:10199cf3-665f-45a3-96d3-47043d749991",
-              "uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464"
+              "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010",
+              "uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c"
             ]
           },
           "properties": {
@@ -12892,14 +11668,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3",
+          "id": "uuid:1b26a418-ddc1-4e7d-8ff0-811102c413b5",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf",
-              "uuid:56d1ab96-3795-4e26-aa31-858f2698d768"
+              "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b",
+              "uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8"
             ]
           },
           "properties": {
@@ -12909,14 +11685,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:4543461b-48f1-4d8d-8e6b-cf5eac440240",
+          "id": "uuid:1f8b2b5d-416a-4b6b-90da-9c672bc42d2c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:56d1ab96-3795-4e26-aa31-858f2698d768",
-              "uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4"
+              "uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8",
+              "uuid:48b7ec92-e7ff-468f-8dff-d03483468e97"
             ]
           },
           "properties": {
@@ -12926,14 +11702,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e5e0b3e1-3cf0-4413-a8e9-899a40496a7c",
+          "id": "uuid:f83f26bd-63dc-4a5e-959c-e90a7640d8a2",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4",
-              "uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3"
+              "uuid:48b7ec92-e7ff-468f-8dff-d03483468e97",
+              "uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96"
             ]
           },
           "properties": {
@@ -12943,14 +11719,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9",
+          "id": "uuid:6c6ddd1e-2780-4758-bbe7-a4c77bba6118",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:56d1ab96-3795-4e26-aa31-858f2698d768",
-              "uuid:b23fbe07-e549-428e-b539-ea66851ba6cd"
+              "uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8",
+              "uuid:754fd788-08c8-45b0-a591-e608a27f0948"
             ]
           },
           "properties": {
@@ -12960,14 +11736,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:23863019-f8d1-4165-abca-8ce1f208b13f",
+          "id": "uuid:a493ef53-2a0f-42f3-9523-23dea4dc19d6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1",
-              "uuid:b23fbe07-e549-428e-b539-ea66851ba6cd"
+              "uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa",
+              "uuid:754fd788-08c8-45b0-a591-e608a27f0948"
             ]
           },
           "properties": {
@@ -12977,14 +11753,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b8e3ea88-ac1b-4694-abf7-731b3f6108b5",
+          "id": "uuid:8eb102da-ae40-45c1-9a30-8ca97c69bdf6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1",
-              "uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4"
+              "uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa",
+              "uuid:48b7ec92-e7ff-468f-8dff-d03483468e97"
             ]
           },
           "properties": {
@@ -12994,14 +11770,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a",
+          "id": "uuid:615aed99-8ae9-4857-931c-90bdd126e8c8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:b23fbe07-e549-428e-b539-ea66851ba6cd",
-              "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9"
+              "uuid:754fd788-08c8-45b0-a591-e608a27f0948",
+              "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2"
             ]
           },
           "properties": {
@@ -13011,14 +11787,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002",
+          "id": "uuid:6968cfbb-265a-48a5-8fac-91fbc7fe1a16",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9",
-              "uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c"
+              "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2",
+              "uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e"
             ]
           },
           "properties": {
@@ -13028,14 +11804,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f7becfcc-f978-4188-bb49-d688434f4936",
+          "id": "uuid:ab68b5c9-0626-4a27-b735-c591dfc47e0a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c",
-              "uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1"
+              "uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e",
+              "uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa"
             ]
           },
           "properties": {
@@ -13045,14 +11821,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:3df80dfa-8278-479b-887c-89599b90417f",
+          "id": "uuid:4bbdae51-6837-4cbb-974d-ab8987d4a018",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c",
-              "uuid:4c11a36b-5379-462c-90c0-d99d0557ea25"
+              "uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e",
+              "uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6"
             ]
           },
           "properties": {
@@ -13062,14 +11838,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8",
+          "id": "uuid:580818ce-50f0-486c-85c9-91c35ab39509",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4c11a36b-5379-462c-90c0-d99d0557ea25",
-              "uuid:dfadb111-777d-406e-b511-1f0dc19409f0"
+              "uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6",
+              "uuid:e0d36194-78e8-4255-b6b7-4f59b79544db"
             ]
           },
           "properties": {
@@ -13079,14 +11855,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b",
+          "id": "uuid:b745f3b0-caff-4c6a-8839-9c709893e1c2",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a",
-              "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e"
+              "uuid:073f2f24-c85a-455d-9807-c24f75ea50f5",
+              "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4"
             ]
           },
           "properties": {
@@ -13096,14 +11872,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:aede0d1a-6743-458f-83d0-83eb3cefc97d",
+          "id": "uuid:17fa2c1e-5416-443b-b263-2f47cb514aa6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:4c11a36b-5379-462c-90c0-d99d0557ea25",
-              "uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a"
+              "uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6",
+              "uuid:073f2f24-c85a-455d-9807-c24f75ea50f5"
             ]
           },
           "properties": {
@@ -13113,14 +11889,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5",
+          "id": "uuid:f60637f4-cdf9-4bf7-b969-72eabb91eb79",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a",
-              "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9"
+              "uuid:073f2f24-c85a-455d-9807-c24f75ea50f5",
+              "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2"
             ]
           },
           "properties": {
@@ -13130,14 +11906,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c064e2ed-f6db-49d1-9e8d-39478e07c56c",
+          "id": "uuid:e47e1b0a-ecee-4d50-987e-d10ad397f597",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:2415b0ae-7d30-43c2-8757-82a577c694b5",
-              "uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd"
+              "uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198",
+              "uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd"
             ]
           },
           "properties": {
@@ -13147,14 +11923,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f1fecfd8-3943-42b7-b719-15f17d6e18ec",
+          "id": "uuid:0cc9dbeb-9ae4-429b-80d5-a637d54f9bc4",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:148a5543-ff12-4460-986c-449d5243d885",
-              "uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd"
+              "uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f",
+              "uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd"
             ]
           },
           "properties": {
@@ -13164,14 +11940,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:35940328-3e54-4538-8936-ef7ab97f698b",
+          "id": "uuid:d6b33a71-4823-4c26-8ca1-ed929f278377",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:148a5543-ff12-4460-986c-449d5243d885",
-              "uuid:74369382-b3b3-46b5-adb7-18fac4de68e0"
+              "uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f",
+              "uuid:7e2ed802-251e-48b6-b140-013cad070d9f"
             ]
           },
           "properties": {
@@ -13181,14 +11957,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:78fceb81-8a17-42be-a55b-57b328908f22",
+          "id": "uuid:51c0f9c6-7c13-4460-8636-2ed5ee228a6c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:74369382-b3b3-46b5-adb7-18fac4de68e0",
-              "uuid:2415b0ae-7d30-43c2-8757-82a577c694b5"
+              "uuid:7e2ed802-251e-48b6-b140-013cad070d9f",
+              "uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198"
             ]
           },
           "properties": {
@@ -13198,14 +11974,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:98628e3a-b2df-4627-9326-3b30e2d31630",
+          "id": "uuid:7197ee0b-aa79-40dd-a8ec-9d4413777a19",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd",
-              "uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960"
+              "uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd",
+              "uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8"
             ]
           },
           "properties": {
@@ -13215,14 +11991,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:d1d2f042-31e4-41e3-b22e-173c10b3394a",
+          "id": "uuid:030a717f-c3d7-46c9-8e04-4a90a2de6971",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960",
-              "uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041"
+              "uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8",
+              "uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29"
             ]
           },
           "properties": {
@@ -13232,14 +12008,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0ba80381-37c0-4aff-bad6-0381103675d9",
+          "id": "uuid:c0a27c02-e38f-4648-b296-3ba0372f0e50",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041",
-              "uuid:148a5543-ff12-4460-986c-449d5243d885"
+              "uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29",
+              "uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f"
             ]
           },
           "properties": {
@@ -13249,14 +12025,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f511f306-b61e-4ae5-82cb-bece777e3d84",
+          "id": "uuid:5698e261-6451-4ffe-90dd-05d5270c59a7",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960",
-              "uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340"
+              "uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8",
+              "uuid:9d786d21-169c-459e-a354-4eeee65bf8a3"
             ]
           },
           "properties": {
@@ -13266,14 +12042,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f293604e-b0f7-46d7-b087-3c86930da413",
+          "id": "uuid:eb0aaf70-bb65-4855-a35b-860b1c23c53f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340",
-              "uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf"
+              "uuid:9d786d21-169c-459e-a354-4eeee65bf8a3",
+              "uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b"
             ]
           },
           "properties": {
@@ -13283,14 +12059,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0372d1a6-a543-4a84-9870-af81aa08887f",
+          "id": "uuid:9e2b2cf4-db16-4c58-9cea-86b593995bdf",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:f8265e86-f991-4a36-befc-fef9f603e7dd",
-              "uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041"
+              "uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e",
+              "uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29"
             ]
           },
           "properties": {
@@ -13300,14 +12076,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357",
+          "id": "uuid:d302b67e-99d1-4033-84c8-bec14b1a3a29",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:2415b0ae-7d30-43c2-8757-82a577c694b5",
-              "uuid:571b14af-afc3-41ee-800e-b507fac82ae7"
+              "uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198",
+              "uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca"
             ]
           },
           "properties": {
@@ -13317,14 +12093,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5",
+          "id": "uuid:23375f61-8d9d-407c-bc86-ff0a4a1a3030",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:571b14af-afc3-41ee-800e-b507fac82ae7",
-              "uuid:28af1f47-ab41-493c-af53-3a490074fa52"
+              "uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca",
+              "uuid:9ccc8672-7244-42a9-8d65-1b40a637a603"
             ]
           },
           "properties": {
@@ -13334,14 +12110,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8",
+          "id": "uuid:dbed95c2-94f5-4c01-ac9e-a71441efd65a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:28af1f47-ab41-493c-af53-3a490074fa52",
-              "uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340"
+              "uuid:9ccc8672-7244-42a9-8d65-1b40a637a603",
+              "uuid:9d786d21-169c-459e-a354-4eeee65bf8a3"
             ]
           },
           "properties": {
@@ -13351,14 +12127,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488",
+          "id": "uuid:8e931595-7a01-4678-a20e-5607229a0d01",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:28af1f47-ab41-493c-af53-3a490074fa52",
-              "uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e"
+              "uuid:9ccc8672-7244-42a9-8d65-1b40a637a603",
+              "uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4"
             ]
           },
           "properties": {
@@ -13368,14 +12144,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:80a73235-bd0d-4255-b1c1-e213a7ce376b",
+          "id": "uuid:8a34c9fb-e3d6-45d3-817e-93d0c58be464",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464",
-              "uuid:571b14af-afc3-41ee-800e-b507fac82ae7"
+              "uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c",
+              "uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca"
             ]
           },
           "properties": {
@@ -13385,14 +12161,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75",
+          "id": "uuid:6ac9e1bc-3c5f-468b-8646-ac85e38d3013",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:74369382-b3b3-46b5-adb7-18fac4de68e0",
-              "uuid:10199cf3-665f-45a3-96d3-47043d749991"
+              "uuid:7e2ed802-251e-48b6-b140-013cad070d9f",
+              "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010"
             ]
           },
           "properties": {
@@ -13402,14 +12178,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0702cb55-bfdf-47a3-9e03-5a1101f375d3",
+          "id": "uuid:2413de82-7661-4536-8a05-58c4fadbd5fd",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5",
-              "uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d"
+              "uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a",
+              "uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4"
             ]
           },
           "properties": {
@@ -13419,14 +12195,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:caea09b7-5bb4-473a-bac8-559a8385e485",
+          "id": "uuid:28922e7d-7683-40da-916c-241f473ee3bd",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d",
-              "uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6"
+              "uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4",
+              "uuid:451e256a-6127-4e18-97f5-644093e9f9df"
             ]
           },
           "properties": {
@@ -13436,14 +12212,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:dc2293f6-d716-4fe0-a542-cfdf00bc9d07",
+          "id": "uuid:99e2aa85-d004-4eed-8533-1313133f0809",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6",
-              "uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954"
+              "uuid:451e256a-6127-4e18-97f5-644093e9f9df",
+              "uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd"
             ]
           },
           "properties": {
@@ -13453,14 +12229,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:f013fc74-d38d-4caa-9e9b-af749f4e86fd",
+          "id": "uuid:8103a475-c12f-4664-ac95-50afbd4c782d",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954",
-              "uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5"
+              "uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd",
+              "uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a"
             ]
           },
           "properties": {
@@ -13470,14 +12246,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:9cb950e8-e8dd-4323-9dc0-6f030f169a48",
+          "id": "uuid:3bc984fd-e2fa-48de-9397-635b28834926",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7",
-              "uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5"
+              "uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e",
+              "uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a"
             ]
           },
           "properties": {
@@ -13487,14 +12263,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:62b0df5f-e5c0-4e02-8f05-17469482d920",
+          "id": "uuid:ba83542a-054c-4671-ad1f-412f89783e0f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954",
-              "uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009"
+              "uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd",
+              "uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3"
             ]
           },
           "properties": {
@@ -13504,14 +12280,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e0c8c309-5568-4e9a-b22c-982f0bc9457d",
+          "id": "uuid:259ec3c3-5480-484c-8b6f-d081695a0a3f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7",
-              "uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009"
+              "uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e",
+              "uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3"
             ]
           },
           "properties": {
@@ -13521,14 +12297,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5e6c3ed6-4011-4407-a7a4-187d1ae6bc82",
+          "id": "uuid:e3c87c26-8a6a-4889-923c-d87562d2dde9",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340",
-              "uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7"
+              "uuid:9d786d21-169c-459e-a354-4eeee65bf8a3",
+              "uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e"
             ]
           },
           "properties": {
@@ -13538,14 +12314,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c6391658-8f77-4ea2-b8af-3484683133fc",
+          "id": "uuid:4a32db28-5b1a-4b4c-8fd4-e94cfca8c03a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009",
-              "uuid:56d1ab96-3795-4e26-aa31-858f2698d768"
+              "uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3",
+              "uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8"
             ]
           },
           "properties": {
@@ -13555,14 +12331,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0",
+          "id": "uuid:d2e6c025-8dc2-45b0-896a-8cfbb94fd4e4",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:28af1f47-ab41-493c-af53-3a490074fa52",
-              "uuid:686186b8-788e-454a-9d4b-581056f66141"
+              "uuid:9ccc8672-7244-42a9-8d65-1b40a637a603",
+              "uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d"
             ]
           },
           "properties": {
@@ -13572,14 +12348,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82",
+          "id": "uuid:2fe7500a-344c-43c9-8a4a-42a4dc381958",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:686186b8-788e-454a-9d4b-581056f66141",
-              "uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d"
+              "uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d",
+              "uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4"
             ]
           },
           "properties": {
@@ -13589,14 +12365,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:96ace84a-b09f-4624-b773-8e849bd7d7d1",
+          "id": "uuid:e4a49176-d47d-41f7-85c1-7d91bb836286",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:686186b8-788e-454a-9d4b-581056f66141",
-              "uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a"
+              "uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d",
+              "uuid:073f2f24-c85a-455d-9807-c24f75ea50f5"
             ]
           },
           "properties": {
@@ -13606,14 +12382,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1",
+          "id": "uuid:929d7ecd-8ff2-4be6-af3e-929b8a3bdd52",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9",
-              "uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6"
+              "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2",
+              "uuid:451e256a-6127-4e18-97f5-644093e9f9df"
             ]
           },
           "properties": {
@@ -13623,14 +12399,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:28d289ac-d197-4346-a5e1-a78b0fb408ae",
+          "id": "uuid:eb237aee-db71-4faf-8bb2-aeefc8515821",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d",
-              "uuid:2415b0ae-7d30-43c2-8757-82a577c694b5"
+              "uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4",
+              "uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198"
             ]
           },
           "properties": {
@@ -13640,14 +12416,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:79977e2b-0adf-4e7f-9c30-a7bca716df14",
+          "id": "uuid:05253350-3d88-4edc-b6cb-759a2234382f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:74369382-b3b3-46b5-adb7-18fac4de68e0",
-              "uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6"
+              "uuid:7e2ed802-251e-48b6-b140-013cad070d9f",
+              "uuid:451e256a-6127-4e18-97f5-644093e9f9df"
             ]
           },
           "properties": {
@@ -13657,14 +12433,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:77f25fdc-6684-4b9a-8cbd-18cfc7145e0a",
+          "id": "uuid:78d47480-6451-451e-b35c-afbc40f27f93",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9",
-              "uuid:10199cf3-665f-45a3-96d3-47043d749991"
+              "uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2",
+              "uuid:2f1070ed-9bae-47f5-a856-7f4db788c010"
             ]
           },
           "properties": {
@@ -13674,14 +12450,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:933a2bb5-9610-4c8b-b857-ebfa014c631b",
+          "id": "uuid:0c7efeba-1fb3-49a1-aafd-3e38affa4a9c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Edge",
             "references": [
-              "uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c",
-              "uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca"
+              "uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e",
+              "uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1"
             ]
           },
           "properties": {
@@ -13695,31 +12471,31 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   ],
   "rings": [
     {
-      "id": "uuid:fb7fe2d6-f507-41f6-a725-3fa5cb252068",
+      "id": "uuid:e473c559-9182-4bde-98af-669971f814d1",
       "type": "FeatureCollection",
       "featureType": "Ring",
       "features": [
         {
-          "id": "uuid:8aeb3333-b440-4655-afa4-9c6469240ec0",
+          "id": "uuid:bec0f9d8-0d77-46ba-8941-f884943ac3d8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:497de1cd-b8cb-4570-a0ad-f7303fd3655c",
+                "ref": "uuid:cc9ce047-61a1-4bf9-a366-bfc5b43092c2",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:77d328c1-9d6f-4c11-a390-de701a4cdec6",
+                "ref": "uuid:c795e6d9-0f44-4b1c-bc01-686d5e2acaa3",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:5a388390-6b1e-45ec-9f63-fc2878ba5866",
+                "ref": "uuid:f0aa8d02-1aa3-4f44-be28-d135c94de497",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb",
+                "ref": "uuid:06e882da-e914-4ff8-a279-13c1b16b7646",
                 "orientation": "+"
               }
             ]
@@ -13729,26 +12505,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:9b97b5f1-5acd-4cf2-9d5e-e7654a1a0fce",
+          "id": "uuid:6642ea7b-0b5e-474c-95ef-fe5a15be551b",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:0b2d959e-941c-4494-988a-d87b4b585041",
+                "ref": "uuid:5f1fd4be-c4ba-4387-9d7d-6e26b8299dc9",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:5a388390-6b1e-45ec-9f63-fc2878ba5866",
+                "ref": "uuid:f0aa8d02-1aa3-4f44-be28-d135c94de497",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e27b12a4-7d3a-482b-8f8e-5b49e8765881",
+                "ref": "uuid:d27bfb1b-ffd5-4fb3-9594-6f04ad66aa81",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b",
+                "ref": "uuid:9257083c-e11a-4914-a120-fbb11f0c10c8",
                 "orientation": "+"
               }
             ]
@@ -13758,26 +12534,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:3b789531-378b-428d-a286-f6f7f4eaf6b0",
+          "id": "uuid:10ebd12b-36b6-4db0-b43e-b742e05540ce",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:1f8835fd-8951-4bd6-a739-47ccf214c2d5",
+                "ref": "uuid:725ebfd6-7c75-44fa-b917-94381bddef5f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:497de1cd-b8cb-4570-a0ad-f7303fd3655c",
+                "ref": "uuid:cc9ce047-61a1-4bf9-a366-bfc5b43092c2",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a",
+                "ref": "uuid:b42f27c9-d0e6-4cfb-9ea3-7e2517426428",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5",
+                "ref": "uuid:5367fe8d-79c0-4161-a4ce-3b7f42afad3e",
                 "orientation": "+"
               }
             ]
@@ -13787,34 +12563,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:3b50bf6b-2d5c-45b8-ae19-2103ff36599d",
+          "id": "uuid:f8c1f3d2-aeb6-4b33-b6f8-7d01a5e8ae59",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e27b12a4-7d3a-482b-8f8e-5b49e8765881",
+                "ref": "uuid:d27bfb1b-ffd5-4fb3-9594-6f04ad66aa81",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:77d328c1-9d6f-4c11-a390-de701a4cdec6",
+                "ref": "uuid:c795e6d9-0f44-4b1c-bc01-686d5e2acaa3",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:1f8835fd-8951-4bd6-a739-47ccf214c2d5",
+                "ref": "uuid:725ebfd6-7c75-44fa-b917-94381bddef5f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:59e7006a-a17b-44d7-b02c-136d9730d241",
+                "ref": "uuid:9a5a3eef-7ddb-40bf-ae2a-111b4623fb08",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d",
+                "ref": "uuid:0795c157-5fcb-4d01-b0f0-fedf92b1d41f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:21687804-7ed3-4319-937b-654565f92b98",
+                "ref": "uuid:21935dcb-8634-4e57-abf4-4585eba35018",
                 "orientation": "+"
               }
             ]
@@ -13824,26 +12600,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:bed13d65-1e70-4b39-b729-f99f6cb37f47",
+          "id": "uuid:72d54df4-b018-4897-a96d-7d62cb9d8c4a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def",
+                "ref": "uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece",
+                "ref": "uuid:a51db565-6909-4151-ad98-9c7fbeb85c19",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:59e7006a-a17b-44d7-b02c-136d9730d241",
+                "ref": "uuid:9a5a3eef-7ddb-40bf-ae2a-111b4623fb08",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5",
+                "ref": "uuid:5367fe8d-79c0-4161-a4ce-3b7f42afad3e",
                 "orientation": "-"
               }
             ]
@@ -13853,26 +12629,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0a3d33b0-b98b-44f0-96a3-5b35fd133fb0",
+          "id": "uuid:d7b9eb80-93ca-4ee5-adcb-ab1cfda75d4f",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b",
+                "ref": "uuid:e8b25b9d-346c-4cdf-985b-c742fd7c3a34",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f4ab88fb-fed2-42d6-86c8-5d966fec7a25",
+                "ref": "uuid:aa458878-e72e-454e-9921-bfbf14315787",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d",
+                "ref": "uuid:0795c157-5fcb-4d01-b0f0-fedf92b1d41f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece",
+                "ref": "uuid:a51db565-6909-4151-ad98-9c7fbeb85c19",
                 "orientation": "-"
               }
             ]
@@ -13882,34 +12658,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:660aa943-0834-4d48-b32d-773808d37f09",
+          "id": "uuid:79e3d840-7da3-4380-8288-6c2db4ac8b06",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:0b2d959e-941c-4494-988a-d87b4b585041",
+                "ref": "uuid:5f1fd4be-c4ba-4387-9d7d-6e26b8299dc9",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f",
+                "ref": "uuid:791da2a3-ee19-44a1-b604-5f379ab00bb1",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b",
+                "ref": "uuid:e8b25b9d-346c-4cdf-985b-c742fd7c3a34",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def",
+                "ref": "uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a",
+                "ref": "uuid:b42f27c9-d0e6-4cfb-9ea3-7e2517426428",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb",
+                "ref": "uuid:06e882da-e914-4ff8-a279-13c1b16b7646",
                 "orientation": "-"
               }
             ]
@@ -13919,26 +12695,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c13a006a-907c-4c2a-bee7-820325ada29a",
+          "id": "uuid:7472a7e9-efcf-49a8-a19f-4a14c3e6f86e",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f",
+                "ref": "uuid:791da2a3-ee19-44a1-b604-5f379ab00bb1",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b",
+                "ref": "uuid:9257083c-e11a-4914-a120-fbb11f0c10c8",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:21687804-7ed3-4319-937b-654565f92b98",
+                "ref": "uuid:21935dcb-8634-4e57-abf4-4585eba35018",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f4ab88fb-fed2-42d6-86c8-5d966fec7a25",
+                "ref": "uuid:aa458878-e72e-454e-9921-bfbf14315787",
                 "orientation": "-"
               }
             ]
@@ -13948,26 +12724,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:9768053c-311f-4ad2-9da9-7627f42aeb88",
+          "id": "uuid:bba09dfa-33c6-4256-8f33-b802aec75bdb",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3",
+                "ref": "uuid:1b26a418-ddc1-4e7d-8ff0-811102c413b5",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:4543461b-48f1-4d8d-8e6b-cf5eac440240",
+                "ref": "uuid:1f8b2b5d-416a-4b6b-90da-9c672bc42d2c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e5e0b3e1-3cf0-4413-a8e9-899a40496a7c",
+                "ref": "uuid:f83f26bd-63dc-4a5e-959c-e90a7640d8a2",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5",
+                "ref": "uuid:5367fe8d-79c0-4161-a4ce-3b7f42afad3e",
                 "orientation": "-"
               }
             ]
@@ -13977,26 +12753,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1a18ec4e-93d2-4e21-931b-05ae1fd9d31e",
+          "id": "uuid:5b1af58d-21f4-4582-96f8-14d356205491",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:4543461b-48f1-4d8d-8e6b-cf5eac440240",
+                "ref": "uuid:1f8b2b5d-416a-4b6b-90da-9c672bc42d2c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9",
+                "ref": "uuid:6c6ddd1e-2780-4758-bbe7-a4c77bba6118",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:23863019-f8d1-4165-abca-8ce1f208b13f",
+                "ref": "uuid:a493ef53-2a0f-42f3-9523-23dea4dc19d6",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:b8e3ea88-ac1b-4694-abf7-731b3f6108b5",
+                "ref": "uuid:8eb102da-ae40-45c1-9a30-8ca97c69bdf6",
                 "orientation": "+"
               }
             ]
@@ -14006,26 +12782,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b01715b1-8ed7-47f2-9050-344a22a2847f",
+          "id": "uuid:8c5381e4-64ab-4b9d-bdd5-aea3de220330",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:23863019-f8d1-4165-abca-8ce1f208b13f",
+                "ref": "uuid:a493ef53-2a0f-42f3-9523-23dea4dc19d6",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a",
+                "ref": "uuid:615aed99-8ae9-4857-931c-90bdd126e8c8",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002",
+                "ref": "uuid:6968cfbb-265a-48a5-8fac-91fbc7fe1a16",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f7becfcc-f978-4188-bb49-d688434f4936",
+                "ref": "uuid:ab68b5c9-0626-4a27-b735-c591dfc47e0a",
                 "orientation": "+"
               }
             ]
@@ -14035,34 +12811,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:913979f7-aaab-4985-b5f6-f2286137641a",
+          "id": "uuid:73155e38-87b0-4ded-9af7-dd354d36a728",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:e5e0b3e1-3cf0-4413-a8e9-899a40496a7c",
+                "ref": "uuid:f83f26bd-63dc-4a5e-959c-e90a7640d8a2",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:b8e3ea88-ac1b-4694-abf7-731b3f6108b5",
+                "ref": "uuid:8eb102da-ae40-45c1-9a30-8ca97c69bdf6",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f7becfcc-f978-4188-bb49-d688434f4936",
+                "ref": "uuid:ab68b5c9-0626-4a27-b735-c591dfc47e0a",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:3df80dfa-8278-479b-887c-89599b90417f",
+                "ref": "uuid:4bbdae51-6837-4cbb-974d-ab8987d4a018",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8",
+                "ref": "uuid:580818ce-50f0-486c-85c9-91c35ab39509",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:59e7006a-a17b-44d7-b02c-136d9730d241",
+                "ref": "uuid:9a5a3eef-7ddb-40bf-ae2a-111b4623fb08",
                 "orientation": "-"
               }
             ]
@@ -14072,26 +12848,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6876e445-1eb6-4a91-9b18-c6eaf96f5bd8",
+          "id": "uuid:ce452f84-97f5-43ad-83f8-1758fba42a49",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b",
+                "ref": "uuid:b745f3b0-caff-4c6a-8839-9c709893e1c2",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece",
+                "ref": "uuid:a51db565-6909-4151-ad98-9c7fbeb85c19",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8",
+                "ref": "uuid:580818ce-50f0-486c-85c9-91c35ab39509",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:aede0d1a-6743-458f-83d0-83eb3cefc97d",
+                "ref": "uuid:17fa2c1e-5416-443b-b263-2f47cb514aa6",
                 "orientation": "+"
               }
             ]
@@ -14101,34 +12877,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:88550bf5-23af-44fd-a323-c043682481d7",
+          "id": "uuid:46d1879a-0f3f-42ef-b68d-d813f684e3f9",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5",
+                "ref": "uuid:f60637f4-cdf9-4bf7-b969-72eabb91eb79",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a",
+                "ref": "uuid:615aed99-8ae9-4857-931c-90bdd126e8c8",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9",
+                "ref": "uuid:6c6ddd1e-2780-4758-bbe7-a4c77bba6118",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3",
+                "ref": "uuid:1b26a418-ddc1-4e7d-8ff0-811102c413b5",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def",
+                "ref": "uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b",
+                "ref": "uuid:b745f3b0-caff-4c6a-8839-9c709893e1c2",
                 "orientation": "-"
               }
             ]
@@ -14138,26 +12914,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:44b86750-060a-4627-81cb-1d21e7ecf82b",
+          "id": "uuid:98685c3a-fc3b-4490-b99f-5a4f9ef3aae4",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5",
+                "ref": "uuid:f60637f4-cdf9-4bf7-b969-72eabb91eb79",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:aede0d1a-6743-458f-83d0-83eb3cefc97d",
+                "ref": "uuid:17fa2c1e-5416-443b-b263-2f47cb514aa6",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:3df80dfa-8278-479b-887c-89599b90417f",
+                "ref": "uuid:4bbdae51-6837-4cbb-974d-ab8987d4a018",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002",
+                "ref": "uuid:6968cfbb-265a-48a5-8fac-91fbc7fe1a16",
                 "orientation": "-"
               }
             ]
@@ -14167,26 +12943,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:910b7ace-52b3-4d2a-afef-9340c0af3f41",
+          "id": "uuid:8efc4bcc-0265-4aba-82f9-4e9c5f818018",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:c064e2ed-f6db-49d1-9e8d-39478e07c56c",
+                "ref": "uuid:e47e1b0a-ecee-4d50-987e-d10ad397f597",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f1fecfd8-3943-42b7-b719-15f17d6e18ec",
+                "ref": "uuid:0cc9dbeb-9ae4-429b-80d5-a637d54f9bc4",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:35940328-3e54-4538-8936-ef7ab97f698b",
+                "ref": "uuid:d6b33a71-4823-4c26-8ca1-ed929f278377",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:78fceb81-8a17-42be-a55b-57b328908f22",
+                "ref": "uuid:51c0f9c6-7c13-4460-8636-2ed5ee228a6c",
                 "orientation": "+"
               }
             ]
@@ -14196,26 +12972,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:69e604be-11d5-4fd2-981c-e5d2a93db493",
+          "id": "uuid:0bdb8d8a-3d53-4a97-bee6-56bf509e6b69",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:98628e3a-b2df-4627-9326-3b30e2d31630",
+                "ref": "uuid:7197ee0b-aa79-40dd-a8ec-9d4413777a19",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:d1d2f042-31e4-41e3-b22e-173c10b3394a",
+                "ref": "uuid:030a717f-c3d7-46c9-8e04-4a90a2de6971",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:0ba80381-37c0-4aff-bad6-0381103675d9",
+                "ref": "uuid:c0a27c02-e38f-4648-b296-3ba0372f0e50",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f1fecfd8-3943-42b7-b719-15f17d6e18ec",
+                "ref": "uuid:0cc9dbeb-9ae4-429b-80d5-a637d54f9bc4",
                 "orientation": "+"
               }
             ]
@@ -14225,30 +13001,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:58916334-ab3e-487a-ae20-5d1fe016af3e",
+          "id": "uuid:2d2a332b-7633-41ee-8f53-712fc6f2b877",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:f511f306-b61e-4ae5-82cb-bece777e3d84",
+                "ref": "uuid:5698e261-6451-4ffe-90dd-05d5270c59a7",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f293604e-b0f7-46d7-b087-3c86930da413",
+                "ref": "uuid:eb0aaf70-bb65-4855-a35b-860b1c23c53f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a",
+                "ref": "uuid:b42f27c9-d0e6-4cfb-9ea3-7e2517426428",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:0372d1a6-a543-4a84-9870-af81aa08887f",
+                "ref": "uuid:9e2b2cf4-db16-4c58-9cea-86b593995bdf",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:d1d2f042-31e4-41e3-b22e-173c10b3394a",
+                "ref": "uuid:030a717f-c3d7-46c9-8e04-4a90a2de6971",
                 "orientation": "-"
               }
             ]
@@ -14258,34 +13034,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:27504969-a1b2-4051-b522-a3453c07dcd0",
+          "id": "uuid:424281c5-646a-48c3-b0f2-ac703d3a8d10",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:c064e2ed-f6db-49d1-9e8d-39478e07c56c",
+                "ref": "uuid:e47e1b0a-ecee-4d50-987e-d10ad397f597",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357",
+                "ref": "uuid:d302b67e-99d1-4033-84c8-bec14b1a3a29",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5",
+                "ref": "uuid:23375f61-8d9d-407c-bc86-ff0a4a1a3030",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8",
+                "ref": "uuid:dbed95c2-94f5-4c01-ac9e-a71441efd65a",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f511f306-b61e-4ae5-82cb-bece777e3d84",
+                "ref": "uuid:5698e261-6451-4ffe-90dd-05d5270c59a7",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:98628e3a-b2df-4627-9326-3b30e2d31630",
+                "ref": "uuid:7197ee0b-aa79-40dd-a8ec-9d4413777a19",
                 "orientation": "-"
               }
             ]
@@ -14295,26 +13071,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:3d7b4f73-fc49-42eb-940a-801e16fce1f3",
+          "id": "uuid:d4e4f6d3-3603-4da5-9d20-661ff9a38015",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488",
+                "ref": "uuid:8e931595-7a01-4678-a20e-5607229a0d01",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def",
+                "ref": "uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f293604e-b0f7-46d7-b087-3c86930da413",
+                "ref": "uuid:eb0aaf70-bb65-4855-a35b-860b1c23c53f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8",
+                "ref": "uuid:dbed95c2-94f5-4c01-ac9e-a71441efd65a",
                 "orientation": "-"
               }
             ]
@@ -14324,30 +13100,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:ab77fa42-05de-4e0f-a1e5-57ed5dd871b5",
+          "id": "uuid:adb6be70-c29a-4dcc-9e4b-47970d9930dd",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:80a73235-bd0d-4255-b1c1-e213a7ce376b",
+                "ref": "uuid:8a34c9fb-e3d6-45d3-817e-93d0c58be464",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357",
+                "ref": "uuid:d302b67e-99d1-4033-84c8-bec14b1a3a29",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:78fceb81-8a17-42be-a55b-57b328908f22",
+                "ref": "uuid:51c0f9c6-7c13-4460-8636-2ed5ee228a6c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75",
+                "ref": "uuid:6ac9e1bc-3c5f-468b-8646-ac85e38d3013",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f",
+                "ref": "uuid:791da2a3-ee19-44a1-b604-5f379ab00bb1",
                 "orientation": "+"
               }
             ]
@@ -14357,26 +13133,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:489a82be-c45a-4b5c-8f46-dbe4efa2ac9c",
+          "id": "uuid:3ff8d8c4-90fe-4782-9717-1e3f4110f5a0",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:80a73235-bd0d-4255-b1c1-e213a7ce376b",
+                "ref": "uuid:8a34c9fb-e3d6-45d3-817e-93d0c58be464",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b",
+                "ref": "uuid:e8b25b9d-346c-4cdf-985b-c742fd7c3a34",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488",
+                "ref": "uuid:8e931595-7a01-4678-a20e-5607229a0d01",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5",
+                "ref": "uuid:23375f61-8d9d-407c-bc86-ff0a4a1a3030",
                 "orientation": "-"
               }
             ]
@@ -14386,34 +13162,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:a6e846dd-f611-4e3a-8c05-141c6b32fdcb",
+          "id": "uuid:2402e110-526c-49d6-82f2-5ecf689f64d3",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:0372d1a6-a543-4a84-9870-af81aa08887f",
+                "ref": "uuid:9e2b2cf4-db16-4c58-9cea-86b593995bdf",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb",
+                "ref": "uuid:06e882da-e914-4ff8-a279-13c1b16b7646",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:0b2d959e-941c-4494-988a-d87b4b585041",
+                "ref": "uuid:5f1fd4be-c4ba-4387-9d7d-6e26b8299dc9",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75",
+                "ref": "uuid:6ac9e1bc-3c5f-468b-8646-ac85e38d3013",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:35940328-3e54-4538-8936-ef7ab97f698b",
+                "ref": "uuid:d6b33a71-4823-4c26-8ca1-ed929f278377",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:0ba80381-37c0-4aff-bad6-0381103675d9",
+                "ref": "uuid:c0a27c02-e38f-4648-b296-3ba0372f0e50",
                 "orientation": "-"
               }
             ]
@@ -14423,26 +13199,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:77bc66ca-f5c1-4d25-8689-32d34d28f2ca",
+          "id": "uuid:64496114-d8c3-4643-9975-4ae0bb1af186",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:0702cb55-bfdf-47a3-9e03-5a1101f375d3",
+                "ref": "uuid:2413de82-7661-4536-8a05-58c4fadbd5fd",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:caea09b7-5bb4-473a-bac8-559a8385e485",
+                "ref": "uuid:28922e7d-7683-40da-916c-241f473ee3bd",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:dc2293f6-d716-4fe0-a542-cfdf00bc9d07",
+                "ref": "uuid:99e2aa85-d004-4eed-8533-1313133f0809",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f013fc74-d38d-4caa-9e9b-af749f4e86fd",
+                "ref": "uuid:8103a475-c12f-4664-ac95-50afbd4c782d",
                 "orientation": "+"
               }
             ]
@@ -14452,26 +13228,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:a13f36d3-6c2c-42be-a490-70fef723dfe9",
+          "id": "uuid:79e3d1de-56bc-47de-a18b-d29da6100eda",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:9cb950e8-e8dd-4323-9dc0-6f030f169a48",
+                "ref": "uuid:3bc984fd-e2fa-48de-9397-635b28834926",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:f013fc74-d38d-4caa-9e9b-af749f4e86fd",
+                "ref": "uuid:8103a475-c12f-4664-ac95-50afbd4c782d",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:62b0df5f-e5c0-4e02-8f05-17469482d920",
+                "ref": "uuid:ba83542a-054c-4671-ad1f-412f89783e0f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e0c8c309-5568-4e9a-b22c-982f0bc9457d",
+                "ref": "uuid:259ec3c3-5480-484c-8b6f-d081695a0a3f",
                 "orientation": "-"
               }
             ]
@@ -14481,30 +13257,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:28753fb2-e05d-420b-bd23-0ec28b276e51",
+          "id": "uuid:815b8458-d756-45cc-8385-00314271e297",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:5e6c3ed6-4011-4407-a7a4-187d1ae6bc82",
+                "ref": "uuid:e3c87c26-8a6a-4889-923c-d87562d2dde9",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e0c8c309-5568-4e9a-b22c-982f0bc9457d",
+                "ref": "uuid:259ec3c3-5480-484c-8b6f-d081695a0a3f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:c6391658-8f77-4ea2-b8af-3484683133fc",
+                "ref": "uuid:4a32db28-5b1a-4b4c-8fd4-e94cfca8c03a",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3",
+                "ref": "uuid:1b26a418-ddc1-4e7d-8ff0-811102c413b5",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:f293604e-b0f7-46d7-b087-3c86930da413",
+                "ref": "uuid:eb0aaf70-bb65-4855-a35b-860b1c23c53f",
                 "orientation": "-"
               }
             ]
@@ -14514,34 +13290,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:34283d3a-926c-4c21-a89a-2eb4974419f6",
+          "id": "uuid:1a7575a5-e039-4059-9fa8-b7e960c50c64",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:5e6c3ed6-4011-4407-a7a4-187d1ae6bc82",
+                "ref": "uuid:e3c87c26-8a6a-4889-923c-d87562d2dde9",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8",
+                "ref": "uuid:dbed95c2-94f5-4c01-ac9e-a71441efd65a",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0",
+                "ref": "uuid:d2e6c025-8dc2-45b0-896a-8cfbb94fd4e4",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82",
+                "ref": "uuid:2fe7500a-344c-43c9-8a4a-42a4dc381958",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:0702cb55-bfdf-47a3-9e03-5a1101f375d3",
+                "ref": "uuid:2413de82-7661-4536-8a05-58c4fadbd5fd",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:9cb950e8-e8dd-4323-9dc0-6f030f169a48",
+                "ref": "uuid:3bc984fd-e2fa-48de-9397-635b28834926",
                 "orientation": "-"
               }
             ]
@@ -14551,30 +13327,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:60717ebd-604c-423e-8b14-2740146445f5",
+          "id": "uuid:92f996ff-4259-4d40-96ec-65de71faa800",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:96ace84a-b09f-4624-b773-8e849bd7d7d1",
+                "ref": "uuid:e4a49176-d47d-41f7-85c1-7d91bb836286",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5",
+                "ref": "uuid:f60637f4-cdf9-4bf7-b969-72eabb91eb79",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1",
+                "ref": "uuid:929d7ecd-8ff2-4be6-af3e-929b8a3bdd52",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:caea09b7-5bb4-473a-bac8-559a8385e485",
+                "ref": "uuid:28922e7d-7683-40da-916c-241f473ee3bd",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82",
+                "ref": "uuid:2fe7500a-344c-43c9-8a4a-42a4dc381958",
                 "orientation": "-"
               }
             ]
@@ -14584,26 +13360,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:aaa596c1-245a-4a1d-b19d-ebe8cf5dbee1",
+          "id": "uuid:441f6a73-ea02-44a7-a04d-4fec5659d529",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488",
+                "ref": "uuid:8e931595-7a01-4678-a20e-5607229a0d01",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b",
+                "ref": "uuid:b745f3b0-caff-4c6a-8839-9c709893e1c2",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:96ace84a-b09f-4624-b773-8e849bd7d7d1",
+                "ref": "uuid:e4a49176-d47d-41f7-85c1-7d91bb836286",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0",
+                "ref": "uuid:d2e6c025-8dc2-45b0-896a-8cfbb94fd4e4",
                 "orientation": "-"
               }
             ]
@@ -14613,34 +13389,34 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5bc1cf2f-2aa7-4dcb-9f5d-d75d1cca76c0",
+          "id": "uuid:8ca4710e-2abd-4152-912d-55c25793b4b7",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1",
+                "ref": "uuid:929d7ecd-8ff2-4be6-af3e-929b8a3bdd52",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a",
+                "ref": "uuid:615aed99-8ae9-4857-931c-90bdd126e8c8",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9",
+                "ref": "uuid:6c6ddd1e-2780-4758-bbe7-a4c77bba6118",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:c6391658-8f77-4ea2-b8af-3484683133fc",
+                "ref": "uuid:4a32db28-5b1a-4b4c-8fd4-e94cfca8c03a",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:62b0df5f-e5c0-4e02-8f05-17469482d920",
+                "ref": "uuid:ba83542a-054c-4671-ad1f-412f89783e0f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:dc2293f6-d716-4fe0-a542-cfdf00bc9d07",
+                "ref": "uuid:99e2aa85-d004-4eed-8533-1313133f0809",
                 "orientation": "-"
               }
             ]
@@ -14650,30 +13426,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:92745bd3-f2b5-41ca-8c2e-97c11da03f28",
+          "id": "uuid:29f3aa93-c4e5-4961-9fd5-c2261a0b9f3b",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:28d289ac-d197-4346-a5e1-a78b0fb408ae",
+                "ref": "uuid:eb237aee-db71-4faf-8bb2-aeefc8515821",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82",
+                "ref": "uuid:2fe7500a-344c-43c9-8a4a-42a4dc381958",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0",
+                "ref": "uuid:d2e6c025-8dc2-45b0-896a-8cfbb94fd4e4",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5",
+                "ref": "uuid:23375f61-8d9d-407c-bc86-ff0a4a1a3030",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357",
+                "ref": "uuid:d302b67e-99d1-4033-84c8-bec14b1a3a29",
                 "orientation": "-"
               }
             ]
@@ -14683,26 +13459,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:d68df714-740d-404c-b8b1-f4c2b095cde4",
+          "id": "uuid:bac4ae02-1a53-4849-9e46-b3c0d67925b1",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:79977e2b-0adf-4e7f-9c30-a7bca716df14",
+                "ref": "uuid:05253350-3d88-4edc-b6cb-759a2234382f",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:caea09b7-5bb4-473a-bac8-559a8385e485",
+                "ref": "uuid:28922e7d-7683-40da-916c-241f473ee3bd",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:28d289ac-d197-4346-a5e1-a78b0fb408ae",
+                "ref": "uuid:eb237aee-db71-4faf-8bb2-aeefc8515821",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:78fceb81-8a17-42be-a55b-57b328908f22",
+                "ref": "uuid:51c0f9c6-7c13-4460-8636-2ed5ee228a6c",
                 "orientation": "-"
               }
             ]
@@ -14712,26 +13488,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:96467122-b48d-4f8a-b51f-fffa1901a761",
+          "id": "uuid:6a58d678-e9cf-4466-b01f-76e8e7f1f4a4",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:79977e2b-0adf-4e7f-9c30-a7bca716df14",
+                "ref": "uuid:05253350-3d88-4edc-b6cb-759a2234382f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75",
+                "ref": "uuid:6ac9e1bc-3c5f-468b-8646-ac85e38d3013",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:77f25fdc-6684-4b9a-8cbd-18cfc7145e0a",
+                "ref": "uuid:78d47480-6451-451e-b35c-afbc40f27f93",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1",
+                "ref": "uuid:929d7ecd-8ff2-4be6-af3e-929b8a3bdd52",
                 "orientation": "+"
               }
             ]
@@ -14741,30 +13517,30 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:98430308-2fc8-4265-9475-5f249dd408e3",
+          "id": "uuid:49b309d9-6d39-4c44-9a9e-ac2e73c3b58e",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:933a2bb5-9610-4c8b-b857-ebfa014c631b",
+                "ref": "uuid:0c7efeba-1fb3-49a1-aafd-3e38affa4a9c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:21687804-7ed3-4319-937b-654565f92b98",
+                "ref": "uuid:21935dcb-8634-4e57-abf4-4585eba35018",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d",
+                "ref": "uuid:0795c157-5fcb-4d01-b0f0-fedf92b1d41f",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8",
+                "ref": "uuid:580818ce-50f0-486c-85c9-91c35ab39509",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:3df80dfa-8278-479b-887c-89599b90417f",
+                "ref": "uuid:4bbdae51-6837-4cbb-974d-ab8987d4a018",
                 "orientation": "-"
               }
             ]
@@ -14774,26 +13550,26 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5d3314f0-3be8-49ba-a8db-720ab15c9138",
+          "id": "uuid:b17a9121-2cf2-427f-871d-78266deacddf",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Ring",
             "directed_references": [
               {
-                "ref": "uuid:77f25fdc-6684-4b9a-8cbd-18cfc7145e0a",
+                "ref": "uuid:78d47480-6451-451e-b35c-afbc40f27f93",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b",
+                "ref": "uuid:9257083c-e11a-4914-a120-fbb11f0c10c8",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:933a2bb5-9610-4c8b-b857-ebfa014c631b",
+                "ref": "uuid:0c7efeba-1fb3-49a1-aafd-3e38affa4a9c",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002",
+                "ref": "uuid:6968cfbb-265a-48a5-8fac-91fbc7fe1a16",
                 "orientation": "-"
               }
             ]
@@ -14807,19 +13583,19 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   ],
   "faces": [
     {
-      "id": "uuid:423f5a0c-8751-4e98-a2aa-db1d830c4778",
+      "id": "uuid:cc0799d5-a994-464b-8200-35566358138f",
       "type": "FeatureCollection",
       "featureType": "Face",
       "features": [
         {
-          "id": "uuid:93e9fcce-d973-41f1-a981-0019e8f2a7ee",
+          "id": "uuid:649a326e-bb1e-4492-943a-39aa35806c64",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:8aeb3333-b440-4655-afa4-9c6469240ec0",
+                "ref": "uuid:bec0f9d8-0d77-46ba-8941-f884943ac3d8",
                 "orientation": "+"
               }
             ]
@@ -14835,14 +13611,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1e6b1d36-7f8e-431b-bd0e-bf8fa2acfd74",
+          "id": "uuid:4fe850d8-d729-4851-b7d9-0f9e7ed39468",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:9b97b5f1-5acd-4cf2-9d5e-e7654a1a0fce",
+                "ref": "uuid:6642ea7b-0b5e-474c-95ef-fe5a15be551b",
                 "orientation": "+"
               }
             ]
@@ -14858,14 +13634,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:cf9f86b5-fd71-4c19-bcef-059d1a40d416",
+          "id": "uuid:0523e3be-6777-40f9-9e14-523e128647c0",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:3b789531-378b-428d-a286-f6f7f4eaf6b0",
+                "ref": "uuid:10ebd12b-36b6-4db0-b43e-b742e05540ce",
                 "orientation": "+"
               }
             ]
@@ -14881,14 +13657,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:d3f9206f-f221-4b1c-ac53-9669c8edf68f",
+          "id": "uuid:4def3698-95e1-486f-9588-a69a73640e5c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:3b50bf6b-2d5c-45b8-ae19-2103ff36599d",
+                "ref": "uuid:f8c1f3d2-aeb6-4b33-b6f8-7d01a5e8ae59",
                 "orientation": "+"
               }
             ]
@@ -14904,14 +13680,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6910e917-f057-4623-bf84-d9bda0b4f9b6",
+          "id": "uuid:fa7823a2-8ed7-43f0-9912-e7ade12c966a",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:bed13d65-1e70-4b39-b729-f99f6cb37f47",
+                "ref": "uuid:72d54df4-b018-4897-a96d-7d62cb9d8c4a",
                 "orientation": "+"
               }
             ]
@@ -14927,14 +13703,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:9a2ca728-847a-439c-97f1-b7bb52330599",
+          "id": "uuid:f45d1ba5-ecfe-4b0b-b315-2dc71cfe2b3b",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:0a3d33b0-b98b-44f0-96a3-5b35fd133fb0",
+                "ref": "uuid:d7b9eb80-93ca-4ee5-adcb-ab1cfda75d4f",
                 "orientation": "+"
               }
             ]
@@ -14950,14 +13726,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:08d4e20d-eb16-49cb-9cd4-8fcd60f095bd",
+          "id": "uuid:d0ddc512-0c81-43bb-a000-bf5017ff64a7",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:660aa943-0834-4d48-b32d-773808d37f09",
+                "ref": "uuid:79e3d840-7da3-4380-8288-6c2db4ac8b06",
                 "orientation": "+"
               }
             ]
@@ -14973,14 +13749,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:10d84152-aca0-449e-91cc-b8062eeec0f6",
+          "id": "uuid:fbe45af6-b334-4500-97e3-3c4cd177db90",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:c13a006a-907c-4c2a-bee7-820325ada29a",
+                "ref": "uuid:7472a7e9-efcf-49a8-a19f-4a14c3e6f86e",
                 "orientation": "+"
               }
             ]
@@ -14996,14 +13772,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c8069715-2f4a-46f5-bdfe-6d561a33cff5",
+          "id": "uuid:d8aca1d0-8d06-4520-9437-7479640802df",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:9768053c-311f-4ad2-9da9-7627f42aeb88",
+                "ref": "uuid:bba09dfa-33c6-4256-8f33-b802aec75bdb",
                 "orientation": "+"
               }
             ]
@@ -15019,14 +13795,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:02a5f63e-b3ad-46dd-a505-3f2746c8dc6c",
+          "id": "uuid:f4b518ed-e4d2-48cc-b2b9-997df7a49c29",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:1a18ec4e-93d2-4e21-931b-05ae1fd9d31e",
+                "ref": "uuid:5b1af58d-21f4-4582-96f8-14d356205491",
                 "orientation": "+"
               }
             ]
@@ -15042,14 +13818,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1eb4b472-9d32-4980-869a-70a9743e68a6",
+          "id": "uuid:83e6f887-a532-473f-8f09-536ef1943f33",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:b01715b1-8ed7-47f2-9050-344a22a2847f",
+                "ref": "uuid:8c5381e4-64ab-4b9d-bdd5-aea3de220330",
                 "orientation": "+"
               }
             ]
@@ -15065,14 +13841,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:980f168e-ed23-4e8b-a952-84278d4bf22a",
+          "id": "uuid:16b0e4ac-22b3-40f5-8510-7fefb1b1cc06",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:913979f7-aaab-4985-b5f6-f2286137641a",
+                "ref": "uuid:73155e38-87b0-4ded-9af7-dd354d36a728",
                 "orientation": "+"
               }
             ]
@@ -15088,14 +13864,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:5cd4de66-7799-4806-a981-39fb1400548d",
+          "id": "uuid:f3212f35-ba06-46b1-8822-fdfac0ec4bd1",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:6876e445-1eb6-4a91-9b18-c6eaf96f5bd8",
+                "ref": "uuid:ce452f84-97f5-43ad-83f8-1758fba42a49",
                 "orientation": "+"
               }
             ]
@@ -15111,14 +13887,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:91ab249a-af89-4447-aa69-ba6ea64cc469",
+          "id": "uuid:bda4a01e-afca-41dd-b296-81cd3df3c070",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:88550bf5-23af-44fd-a323-c043682481d7",
+                "ref": "uuid:46d1879a-0f3f-42ef-b68d-d813f684e3f9",
                 "orientation": "+"
               }
             ]
@@ -15134,14 +13910,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:4ec25580-07c5-4e00-b6c9-95a4d18a99de",
+          "id": "uuid:1713550e-1504-45f6-a00e-7eeb436306eb",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:44b86750-060a-4627-81cb-1d21e7ecf82b",
+                "ref": "uuid:98685c3a-fc3b-4490-b99f-5a4f9ef3aae4",
                 "orientation": "+"
               }
             ]
@@ -15157,14 +13933,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:30c110f9-5e95-49b1-a133-deb9ac707d98",
+          "id": "uuid:3f40fd91-3d85-404b-82cd-fd4bb7228ca5",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:910b7ace-52b3-4d2a-afef-9340c0af3f41",
+                "ref": "uuid:8efc4bcc-0265-4aba-82f9-4e9c5f818018",
                 "orientation": "+"
               }
             ]
@@ -15180,14 +13956,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:22b8152a-5086-40c6-9e5f-52ea7233a6c1",
+          "id": "uuid:0e50d98b-eed1-41b7-aec0-35970c4c03df",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:69e604be-11d5-4fd2-981c-e5d2a93db493",
+                "ref": "uuid:0bdb8d8a-3d53-4a97-bee6-56bf509e6b69",
                 "orientation": "+"
               }
             ]
@@ -15203,14 +13979,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:59c5803c-9e52-4b51-8cf6-8c3fadf646f4",
+          "id": "uuid:1d373111-f4b1-4627-92ab-14f0bbeb882b",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:58916334-ab3e-487a-ae20-5d1fe016af3e",
+                "ref": "uuid:2d2a332b-7633-41ee-8f53-712fc6f2b877",
                 "orientation": "+"
               }
             ]
@@ -15226,14 +14002,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:bcd5cbb9-92d8-45ab-8a57-709330d5079b",
+          "id": "uuid:6caff784-d847-4916-9360-03ab48f3a5df",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:27504969-a1b2-4051-b522-a3453c07dcd0",
+                "ref": "uuid:424281c5-646a-48c3-b0f2-ac703d3a8d10",
                 "orientation": "+"
               }
             ]
@@ -15249,14 +14025,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:19482d65-4c2b-4aff-8dac-c2d163d80f3d",
+          "id": "uuid:429a8b49-b82a-4521-9388-6b0b87bccb06",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:3d7b4f73-fc49-42eb-940a-801e16fce1f3",
+                "ref": "uuid:d4e4f6d3-3603-4da5-9d20-661ff9a38015",
                 "orientation": "+"
               }
             ]
@@ -15272,14 +14048,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e7a0f208-fa2e-4d5b-bf29-f1313cc7ce50",
+          "id": "uuid:48b5ada1-bbec-4aee-851d-6c1509e9d444",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:ab77fa42-05de-4e0f-a1e5-57ed5dd871b5",
+                "ref": "uuid:adb6be70-c29a-4dcc-9e4b-47970d9930dd",
                 "orientation": "+"
               }
             ]
@@ -15295,14 +14071,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:bcfd7996-2c5b-4976-ba97-6e5399ad8ea8",
+          "id": "uuid:a3e906eb-b583-4af2-a13b-fb6bb2d399a3",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:489a82be-c45a-4b5c-8f46-dbe4efa2ac9c",
+                "ref": "uuid:3ff8d8c4-90fe-4782-9717-1e3f4110f5a0",
                 "orientation": "+"
               }
             ]
@@ -15318,14 +14094,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:36a9805e-fb23-40bf-83c3-1c019b340443",
+          "id": "uuid:90f77d40-3e87-4627-993d-e0a9efef52d6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:a6e846dd-f611-4e3a-8c05-141c6b32fdcb",
+                "ref": "uuid:2402e110-526c-49d6-82f2-5ecf689f64d3",
                 "orientation": "+"
               }
             ]
@@ -15341,14 +14117,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:4042b94e-c39e-41ce-afcf-1046f5050975",
+          "id": "uuid:d9c6f295-4449-4e1d-bb3a-0c4ddf57e8f0",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:77bc66ca-f5c1-4d25-8689-32d34d28f2ca",
+                "ref": "uuid:64496114-d8c3-4643-9975-4ae0bb1af186",
                 "orientation": "+"
               }
             ]
@@ -15364,14 +14140,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:185adb6d-0a7a-427a-9c06-4a6095865432",
+          "id": "uuid:47967a8e-ab17-4db0-bbfa-7a6d797e6136",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:a13f36d3-6c2c-42be-a490-70fef723dfe9",
+                "ref": "uuid:79e3d1de-56bc-47de-a18b-d29da6100eda",
                 "orientation": "+"
               }
             ]
@@ -15387,14 +14163,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:57c388ed-780f-47a7-ae3b-e28a6b28c803",
+          "id": "uuid:538c874f-36f0-4fe5-9bb1-fc37f0b14f0e",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:28753fb2-e05d-420b-bd23-0ec28b276e51",
+                "ref": "uuid:815b8458-d756-45cc-8385-00314271e297",
                 "orientation": "+"
               }
             ]
@@ -15410,14 +14186,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c4c8f918-05c6-4b83-bac6-fcc63343667e",
+          "id": "uuid:c6d50260-a8fe-4fac-9279-2ac46d621e87",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:34283d3a-926c-4c21-a89a-2eb4974419f6",
+                "ref": "uuid:1a7575a5-e039-4059-9fa8-b7e960c50c64",
                 "orientation": "+"
               }
             ]
@@ -15433,14 +14209,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:fbfaf83d-7563-4b11-997d-bd3fb8c6f98b",
+          "id": "uuid:69183851-6fbc-495b-aa59-eba99d14bf68",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:60717ebd-604c-423e-8b14-2740146445f5",
+                "ref": "uuid:92f996ff-4259-4d40-96ec-65de71faa800",
                 "orientation": "+"
               }
             ]
@@ -15456,14 +14232,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:034d3912-3eba-418d-8819-8da27e5aa497",
+          "id": "uuid:6bb474bd-c5d6-4366-bc9e-d051dbf72a6e",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:aaa596c1-245a-4a1d-b19d-ebe8cf5dbee1",
+                "ref": "uuid:441f6a73-ea02-44a7-a04d-4fec5659d529",
                 "orientation": "+"
               }
             ]
@@ -15479,14 +14255,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:9566c1ae-4a84-4cf9-bba1-b37b75c86c4b",
+          "id": "uuid:ec0516e9-68b2-4d3d-8ed9-4a59f8e018c8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:5bc1cf2f-2aa7-4dcb-9f5d-d75d1cca76c0",
+                "ref": "uuid:8ca4710e-2abd-4152-912d-55c25793b4b7",
                 "orientation": "+"
               }
             ]
@@ -15502,14 +14278,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8873590f-688c-448f-8da3-8833140bacd8",
+          "id": "uuid:5381559d-4537-4041-81e1-a0978e7f3c64",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:92745bd3-f2b5-41ca-8c2e-97c11da03f28",
+                "ref": "uuid:29f3aa93-c4e5-4961-9fd5-c2261a0b9f3b",
                 "orientation": "+"
               }
             ]
@@ -15525,14 +14301,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:0aa9a5ab-109b-43d9-abe1-de1598bdeaad",
+          "id": "uuid:a63b48bc-c0d9-440d-9238-c093d3a6c40c",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:d68df714-740d-404c-b8b1-f4c2b095cde4",
+                "ref": "uuid:bac4ae02-1a53-4849-9e46-b3c0d67925b1",
                 "orientation": "+"
               }
             ]
@@ -15548,14 +14324,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:8fd1fd2b-7f4b-405c-98e9-cfc727fc15eb",
+          "id": "uuid:029e7e2d-a650-4510-b861-ee68b46a2fff",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:96467122-b48d-4f8a-b51f-fffa1901a761",
+                "ref": "uuid:6a58d678-e9cf-4466-b01f-76e8e7f1f4a4",
                 "orientation": "+"
               }
             ]
@@ -15571,14 +14347,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6877f8e3-90e5-4c95-8b9c-f8b164ecbcb2",
+          "id": "uuid:64860b38-d1bf-4728-8f0d-6ced9451ce37",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:98430308-2fc8-4265-9475-5f249dd408e3",
+                "ref": "uuid:49b309d9-6d39-4c44-9a9e-ac2e73c3b58e",
                 "orientation": "+"
               }
             ]
@@ -15594,14 +14370,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:bff93356-53c3-4b96-8cda-0a07656b48f5",
+          "id": "uuid:4bd327dc-316a-4e1c-9b35-b377652e89d6",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Face",
             "directed_references": [
               {
-                "ref": "uuid:5d3314f0-3be8-49ba-a8db-720ab15c9138",
+                "ref": "uuid:b17a9121-2cf2-427f-871d-78266deacddf",
                 "orientation": "+"
               }
             ]
@@ -15621,47 +14397,47 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   ],
   "shells": [
     {
-      "id": "uuid:357f1d28-405c-4086-83a8-9716876fe301",
+      "id": "uuid:c6ad4aa1-ed7a-4636-b80a-df7a673f74de",
       "type": "FeatureCollection",
       "featureType": "Shell",
       "features": [
         {
-          "id": "uuid:9da1d9ee-f32a-4ff0-8cdb-de5f9029b760",
+          "id": "uuid:31dcf84a-98c6-48b1-8ba6-14d7a5ff6749",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:93e9fcce-d973-41f1-a981-0019e8f2a7ee",
+                "ref": "uuid:649a326e-bb1e-4492-943a-39aa35806c64",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:1e6b1d36-7f8e-431b-bd0e-bf8fa2acfd74",
+                "ref": "uuid:4fe850d8-d729-4851-b7d9-0f9e7ed39468",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:cf9f86b5-fd71-4c19-bcef-059d1a40d416",
+                "ref": "uuid:0523e3be-6777-40f9-9e14-523e128647c0",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:d3f9206f-f221-4b1c-ac53-9669c8edf68f",
+                "ref": "uuid:4def3698-95e1-486f-9588-a69a73640e5c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6910e917-f057-4623-bf84-d9bda0b4f9b6",
+                "ref": "uuid:fa7823a2-8ed7-43f0-9912-e7ade12c966a",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:9a2ca728-847a-439c-97f1-b7bb52330599",
+                "ref": "uuid:f45d1ba5-ecfe-4b0b-b315-2dc71cfe2b3b",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:08d4e20d-eb16-49cb-9cd4-8fcd60f095bd",
+                "ref": "uuid:d0ddc512-0c81-43bb-a000-bf5017ff64a7",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:10d84152-aca0-449e-91cc-b8062eeec0f6",
+                "ref": "uuid:fbe45af6-b334-4500-97e3-3c4cd177db90",
                 "orientation": "+"
               }
             ]
@@ -15671,42 +14447,42 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:c907a592-3c99-4932-959b-ce97dc808426",
+          "id": "uuid:f44d98c1-fc4e-45da-a233-6e63e58bd560",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:c8069715-2f4a-46f5-bdfe-6d561a33cff5",
+                "ref": "uuid:d8aca1d0-8d06-4520-9437-7479640802df",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:02a5f63e-b3ad-46dd-a505-3f2746c8dc6c",
+                "ref": "uuid:f4b518ed-e4d2-48cc-b2b9-997df7a49c29",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:1eb4b472-9d32-4980-869a-70a9743e68a6",
+                "ref": "uuid:83e6f887-a532-473f-8f09-536ef1943f33",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:980f168e-ed23-4e8b-a952-84278d4bf22a",
+                "ref": "uuid:16b0e4ac-22b3-40f5-8510-7fefb1b1cc06",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6910e917-f057-4623-bf84-d9bda0b4f9b6",
+                "ref": "uuid:fa7823a2-8ed7-43f0-9912-e7ade12c966a",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:5cd4de66-7799-4806-a981-39fb1400548d",
+                "ref": "uuid:f3212f35-ba06-46b1-8822-fdfac0ec4bd1",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:91ab249a-af89-4447-aa69-ba6ea64cc469",
+                "ref": "uuid:bda4a01e-afca-41dd-b296-81cd3df3c070",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:4ec25580-07c5-4e00-b6c9-95a4d18a99de",
+                "ref": "uuid:1713550e-1504-45f6-a00e-7eeb436306eb",
                 "orientation": "+"
               }
             ]
@@ -15716,46 +14492,46 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b5928f37-850e-4f74-b68a-10932196d478",
+          "id": "uuid:26bd463c-0433-4510-8ba8-074f5cdd1e64",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:30c110f9-5e95-49b1-a133-deb9ac707d98",
+                "ref": "uuid:3f40fd91-3d85-404b-82cd-fd4bb7228ca5",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:22b8152a-5086-40c6-9e5f-52ea7233a6c1",
+                "ref": "uuid:0e50d98b-eed1-41b7-aec0-35970c4c03df",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:59c5803c-9e52-4b51-8cf6-8c3fadf646f4",
+                "ref": "uuid:1d373111-f4b1-4627-92ab-14f0bbeb882b",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:bcd5cbb9-92d8-45ab-8a57-709330d5079b",
+                "ref": "uuid:6caff784-d847-4916-9360-03ab48f3a5df",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:19482d65-4c2b-4aff-8dac-c2d163d80f3d",
+                "ref": "uuid:429a8b49-b82a-4521-9388-6b0b87bccb06",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:e7a0f208-fa2e-4d5b-bf29-f1313cc7ce50",
+                "ref": "uuid:48b5ada1-bbec-4aee-851d-6c1509e9d444",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:bcfd7996-2c5b-4976-ba97-6e5399ad8ea8",
+                "ref": "uuid:a3e906eb-b583-4af2-a13b-fb6bb2d399a3",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:08d4e20d-eb16-49cb-9cd4-8fcd60f095bd",
+                "ref": "uuid:d0ddc512-0c81-43bb-a000-bf5017ff64a7",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:36a9805e-fb23-40bf-83c3-1c019b340443",
+                "ref": "uuid:90f77d40-3e87-4627-993d-e0a9efef52d6",
                 "orientation": "+"
               }
             ]
@@ -15765,46 +14541,46 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:e9901d39-6375-4a90-a483-58f7f5f5f76c",
+          "id": "uuid:3e5f9429-9bfb-498b-9624-e667f2e7b281",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:4042b94e-c39e-41ce-afcf-1046f5050975",
+                "ref": "uuid:d9c6f295-4449-4e1d-bb3a-0c4ddf57e8f0",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:185adb6d-0a7a-427a-9c06-4a6095865432",
+                "ref": "uuid:47967a8e-ab17-4db0-bbfa-7a6d797e6136",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:57c388ed-780f-47a7-ae3b-e28a6b28c803",
+                "ref": "uuid:538c874f-36f0-4fe5-9bb1-fc37f0b14f0e",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:c4c8f918-05c6-4b83-bac6-fcc63343667e",
+                "ref": "uuid:c6d50260-a8fe-4fac-9279-2ac46d621e87",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:fbfaf83d-7563-4b11-997d-bd3fb8c6f98b",
+                "ref": "uuid:69183851-6fbc-495b-aa59-eba99d14bf68",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:034d3912-3eba-418d-8819-8da27e5aa497",
+                "ref": "uuid:6bb474bd-c5d6-4366-bc9e-d051dbf72a6e",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:19482d65-4c2b-4aff-8dac-c2d163d80f3d",
+                "ref": "uuid:429a8b49-b82a-4521-9388-6b0b87bccb06",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:9566c1ae-4a84-4cf9-bba1-b37b75c86c4b",
+                "ref": "uuid:ec0516e9-68b2-4d3d-8ed9-4a59f8e018c8",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:91ab249a-af89-4447-aa69-ba6ea64cc469",
+                "ref": "uuid:bda4a01e-afca-41dd-b296-81cd3df3c070",
                 "orientation": "-"
               }
             ]
@@ -15814,62 +14590,62 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:ec469bfd-9810-4258-9d7c-7c36b46d2478",
+          "id": "uuid:9d4e9985-3788-4e70-a2ec-a809aba7c7e8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Shell",
             "directed_references": [
               {
-                "ref": "uuid:8873590f-688c-448f-8da3-8833140bacd8",
+                "ref": "uuid:5381559d-4537-4041-81e1-a0978e7f3c64",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:0aa9a5ab-109b-43d9-abe1-de1598bdeaad",
+                "ref": "uuid:a63b48bc-c0d9-440d-9238-c093d3a6c40c",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:8fd1fd2b-7f4b-405c-98e9-cfc727fc15eb",
+                "ref": "uuid:029e7e2d-a650-4510-b861-ee68b46a2fff",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:6877f8e3-90e5-4c95-8b9c-f8b164ecbcb2",
+                "ref": "uuid:64860b38-d1bf-4728-8f0d-6ced9451ce37",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:bff93356-53c3-4b96-8cda-0a07656b48f5",
+                "ref": "uuid:4bd327dc-316a-4e1c-9b35-b377652e89d6",
                 "orientation": "+"
               },
               {
-                "ref": "uuid:10d84152-aca0-449e-91cc-b8062eeec0f6",
+                "ref": "uuid:fbe45af6-b334-4500-97e3-3c4cd177db90",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:4ec25580-07c5-4e00-b6c9-95a4d18a99de",
+                "ref": "uuid:1713550e-1504-45f6-a00e-7eeb436306eb",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:034d3912-3eba-418d-8819-8da27e5aa497",
+                "ref": "uuid:6bb474bd-c5d6-4366-bc9e-d051dbf72a6e",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:fbfaf83d-7563-4b11-997d-bd3fb8c6f98b",
+                "ref": "uuid:69183851-6fbc-495b-aa59-eba99d14bf68",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:e7a0f208-fa2e-4d5b-bf29-f1313cc7ce50",
+                "ref": "uuid:48b5ada1-bbec-4aee-851d-6c1509e9d444",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:9a2ca728-847a-439c-97f1-b7bb52330599",
+                "ref": "uuid:f45d1ba5-ecfe-4b0b-b315-2dc71cfe2b3b",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:bcfd7996-2c5b-4976-ba97-6e5399ad8ea8",
+                "ref": "uuid:a3e906eb-b583-4af2-a13b-fb6bb2d399a3",
                 "orientation": "-"
               },
               {
-                "ref": "uuid:5cd4de66-7799-4806-a981-39fb1400548d",
+                "ref": "uuid:f3212f35-ba06-46b1-8822-fdfac0ec4bd1",
                 "orientation": "-"
               }
             ]
@@ -15883,19 +14659,19 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
   ],
   "solids": [
     {
-      "id": "uuid:2d32ac86-f165-4f74-95e6-bab2a73776a6",
+      "id": "uuid:dca59cc5-b097-4aec-8fb3-e7c839e50f09",
       "type": "FeatureCollection",
       "featureType": "Solid",
       "features": [
         {
-          "id": "uuid:cca8a912-844b-4ac4-989c-64215acd3e34",
+          "id": "uuid:799663c8-0a92-4852-921c-7a0230e91398",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:9da1d9ee-f32a-4ff0-8cdb-de5f9029b760",
+                "ref": "uuid:31dcf84a-98c6-48b1-8ba6-14d7a5ff6749",
                 "orientation": "+"
               }
             ]
@@ -15909,14 +14685,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:1828e704-a264-4ebc-9bae-1dcf52fc7b41",
+          "id": "uuid:8b285c1f-d701-4a8e-ab33-499c70ddffc7",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:c907a592-3c99-4932-959b-ce97dc808426",
+                "ref": "uuid:f44d98c1-fc4e-45da-a233-6e63e58bd560",
                 "orientation": "+"
               }
             ]
@@ -15930,14 +14706,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b3e77f3e-8ae4-463b-b136-d331577a9876",
+          "id": "uuid:fd11dcb1-cdf6-43b6-b1de-92c296d21ffc",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:b5928f37-850e-4f74-b68a-10932196d478",
+                "ref": "uuid:26bd463c-0433-4510-8ba8-074f5cdd1e64",
                 "orientation": "+"
               }
             ]
@@ -15951,14 +14727,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:b85a797a-b837-48ad-a77d-72b8881d58a5",
+          "id": "uuid:cbda787e-1805-4c86-94b1-de73e1534766",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:e9901d39-6375-4a90-a483-58f7f5f5f76c",
+                "ref": "uuid:3e5f9429-9bfb-498b-9624-e667f2e7b281",
                 "orientation": "+"
               }
             ]
@@ -15972,14 +14748,14 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
           }
         },
         {
-          "id": "uuid:6061fb1f-e335-407d-894e-fdb45f4bc11d",
+          "id": "uuid:113658a0-e13f-4abd-8a2b-f02f215d70f8",
           "type": "Feature",
           "geometry": null,
           "topology": {
             "type": "Solid",
             "shells": [
               {
-                "ref": "uuid:ec469bfd-9810-4258-9d7c-7c36b46d2478",
+                "ref": "uuid:9d4e9985-3788-4e70-a2ec-a809aba7c7e8",
                 "orientation": "+"
               }
             ]
@@ -16011,1605 +14787,754 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
 
 #### ttl
 ```ttl
-@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
-@prefix container: <https://linked.data.gov.au/def/csdm/container/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix owlTime: <http://www.w3.org/2006/time#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
-@prefix wa-monument-condition: <https://linked.data.gov.au/def/csdm/wa-monument-condition/> .
-@prefix wa-monument-form: <https://linked.data.gov.au/def/csdm/wa-monument-form/> .
-@prefix wa-monument-state: <https://linked.data.gov.au/def/csdm/wa-monument-state/> .
-@prefix wa-survey-purpose: <https://linked.data.gov.au/def/csdm/wa-survey-purpose/> .
-@prefix wa-survey-type: <https://linked.data.gov.au/def/csdm/wa-survey-type/> .
-@prefix wa-surveypoint-purpose: <https://linked.data.gov.au/def/csdm/wa-surveypoint-purpose/> .
-@prefix wa-vector-purpose: <https://linked.data.gov.au/def/csdm/wa-vector-purpose/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<uuid:85927669-32a3-4d50-b8dc-2785c78df4bd> a geojson:FeatureCollection ;
-    rdfs:label "DP 12347" ;
-    dct:time [ owlTime:hasTime "2026-04-22"^^xsd:date ] ;
-    container:bearingRotation 0e+00 ;
-    container:horizontalCRS epsg:7850 ;
-    container:points <uuid:fb4abc7c-4533-4bbd-8907-9557ad54e94f> ;
-    container:purpose wa-survey-purpose:subdivision ;
-    container:surveyType wa-survey-type:SSA ;
-    topo:edges <uuid:21566231-4d84-4ee5-9812-6d730600f6c9> ;
-    topo:faces ( <uuid:423f5a0c-8751-4e98-a2aa-db1d830c4778> ) ;
-    topo:rings ( <uuid:fb7fe2d6-f507-41f6-a725-3fa5cb252068> ) ;
-    topo:shells ( <uuid:2d32ac86-f165-4f74-95e6-bab2a73776a6> ),
-        ( <uuid:357f1d28-405c-4086-83a8-9716876fe301> ) ;
-    geojson:collectionFeatureType "CSD" .
-
-<uuid:02a5f63e-b3ad-46dd-a505-3f2746c8dc6c> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:1a18ec4e-93d2-4e21-931b-05ae1fd9d31e" ] ) ] .
-
-<uuid:034d3912-3eba-418d-8819-8da27e5aa497> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:aaa596c1-245a-4a1d-b19d-ebe8cf5dbee1" ] ) ] .
-
-<uuid:0372d1a6-a543-4a84-9870-af81aa08887f> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:f8265e86-f991-4a36-befc-fef9f603e7dd> <uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041> ) ] .
-
-<uuid:0702cb55-bfdf-47a3-9e03-5a1101f375d3> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5> <uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d> ) ] .
-
-<uuid:08d4e20d-eb16-49cb-9cd4-8fcd60f095bd> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:660aa943-0834-4d48-b32d-773808d37f09" ] ) ] .
-
-<uuid:0a3d33b0-b98b-44f0-96a3-5b35fd133fb0> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:f4ab88fb-fed2-42d6-86c8-5d966fec7a25" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece" ] ) ] .
-
-<uuid:0aa9a5ab-109b-43d9-abe1-de1598bdeaad> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:d68df714-740d-404c-b8b1-f4c2b095cde4" ] ) ] .
-
-<uuid:0b2d959e-941c-4494-988a-d87b4b585041> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:10199cf3-665f-45a3-96d3-47043d749991> <uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952> ) ] .
-
-<uuid:0ba80381-37c0-4aff-bad6-0381103675d9> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041> <uuid:148a5543-ff12-4460-986c-449d5243d885> ) ] .
-
-<uuid:10d84152-aca0-449e-91cc-b8062eeec0f6> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:c13a006a-907c-4c2a-bee7-820325ada29a" ] ) ] .
-
-<uuid:1828e704-a264-4ebc-9bae-1dcf52fc7b41> a geojson:Feature ;
-    rdfs:label "Upper West" ;
-    geojson:topology [ a topo:Solid ;
-            topo:shells ( [ topo:orientation "+" ;
-                        topo:ref "uuid:c907a592-3c99-4932-959b-ce97dc808426" ] ) ] .
-
-<uuid:185adb6d-0a7a-427a-9c06-4a6095865432> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:a13f36d3-6c2c-42be-a490-70fef723dfe9" ] ) ] .
-
-<uuid:19482d65-4c2b-4aff-8dac-c2d163d80f3d> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:3d7b4f73-fc49-42eb-940a-801e16fce1f3" ] ) ] .
-
-<uuid:1a18ec4e-93d2-4e21-931b-05ae1fd9d31e> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:4543461b-48f1-4d8d-8e6b-cf5eac440240" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:23863019-f8d1-4165-abca-8ce1f208b13f" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:b8e3ea88-ac1b-4694-abf7-731b3f6108b5" ] ) ] .
-
-<uuid:1e6b1d36-7f8e-431b-bd0e-bf8fa2acfd74> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:9b97b5f1-5acd-4cf2-9d5e-e7654a1a0fce" ] ) ] .
-
-<uuid:1eb4b472-9d32-4980-869a-70a9743e68a6> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:b01715b1-8ed7-47f2-9050-344a22a2847f" ] ) ] .
-
-<uuid:1f8835fd-8951-4bd6-a739-47ccf214c2d5> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3> <uuid:27021be0-edb1-4235-acd9-b412e7a36d7d> ) ] .
-
-<uuid:21566231-4d84-4ee5-9812-6d730600f6c9> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "Edge" ;
-    geojson:features <uuid:0372d1a6-a543-4a84-9870-af81aa08887f>,
-        <uuid:0702cb55-bfdf-47a3-9e03-5a1101f375d3>,
-        <uuid:0b2d959e-941c-4494-988a-d87b4b585041>,
-        <uuid:0ba80381-37c0-4aff-bad6-0381103675d9>,
-        <uuid:1f8835fd-8951-4bd6-a739-47ccf214c2d5>,
-        <uuid:21687804-7ed3-4319-937b-654565f92b98>,
-        <uuid:23863019-f8d1-4165-abca-8ce1f208b13f>,
-        <uuid:28d289ac-d197-4346-a5e1-a78b0fb408ae>,
-        <uuid:35940328-3e54-4538-8936-ef7ab97f698b>,
-        <uuid:3df80dfa-8278-479b-887c-89599b90417f>,
-        <uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357>,
-        <uuid:4543461b-48f1-4d8d-8e6b-cf5eac440240>,
-        <uuid:497de1cd-b8cb-4570-a0ad-f7303fd3655c>,
-        <uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece>,
-        <uuid:587194a8-1470-4bf8-8bcf-45063694a1b5>,
-        <uuid:59e7006a-a17b-44d7-b02c-136d9730d241>,
-        <uuid:5a388390-6b1e-45ec-9f63-fc2878ba5866>,
-        <uuid:5e6c3ed6-4011-4407-a7a4-187d1ae6bc82>,
-        <uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b>,
-        <uuid:62b0df5f-e5c0-4e02-8f05-17469482d920>,
-        <uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b>,
-        <uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8>,
-        <uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb>,
-        <uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75>,
-        <uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a>,
-        <uuid:77d328c1-9d6f-4c11-a390-de701a4cdec6>,
-        <uuid:77f25fdc-6684-4b9a-8cbd-18cfc7145e0a>,
-        <uuid:78fceb81-8a17-42be-a55b-57b328908f22>,
-        <uuid:79977e2b-0adf-4e7f-9c30-a7bca716df14>,
-        <uuid:80a73235-bd0d-4255-b1c1-e213a7ce376b>,
-        <uuid:8100e1d1-9030-45cd-b07c-f2d923e85488>,
-        <uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9>,
-        <uuid:837a247a-6b42-4c95-ab39-f4285b9d7002>,
-        <uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8>,
-        <uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a>,
-        <uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5>,
-        <uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d>,
-        <uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5>,
-        <uuid:933a2bb5-9610-4c8b-b857-ebfa014c631b>,
-        <uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f>,
-        <uuid:96ace84a-b09f-4624-b773-8e849bd7d7d1>,
-        <uuid:98628e3a-b2df-4627-9326-3b30e2d31630>,
-        <uuid:9cb950e8-e8dd-4323-9dc0-6f030f169a48>,
-        <uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1>,
-        <uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82>,
-        <uuid:aede0d1a-6743-458f-83d0-83eb3cefc97d>,
-        <uuid:b8e3ea88-ac1b-4694-abf7-731b3f6108b5>,
-        <uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3>,
-        <uuid:c064e2ed-f6db-49d1-9e8d-39478e07c56c>,
-        <uuid:c6391658-8f77-4ea2-b8af-3484683133fc>,
-        <uuid:caea09b7-5bb4-473a-bac8-559a8385e485>,
-        <uuid:d1d2f042-31e4-41e3-b22e-173c10b3394a>,
-        <uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b>,
-        <uuid:dc2293f6-d716-4fe0-a542-cfdf00bc9d07>,
-        <uuid:e0c8c309-5568-4e9a-b22c-982f0bc9457d>,
-        <uuid:e27b12a4-7d3a-482b-8f8e-5b49e8765881>,
-        <uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0>,
-        <uuid:e5e0b3e1-3cf0-4413-a8e9-899a40496a7c>,
-        <uuid:f013fc74-d38d-4caa-9e9b-af749f4e86fd>,
-        <uuid:f1fecfd8-3943-42b7-b719-15f17d6e18ec>,
-        <uuid:f293604e-b0f7-46d7-b087-3c86930da413>,
-        <uuid:f4ab88fb-fed2-42d6-86c8-5d966fec7a25>,
-        <uuid:f511f306-b61e-4ae5-82cb-bece777e3d84>,
-        <uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def>,
-        <uuid:f7becfcc-f978-4188-bb49-d688434f4936> .
-
-<uuid:21687804-7ed3-4319-937b-654565f92b98> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1> <uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca> ) ] .
-
-<uuid:22b8152a-5086-40c6-9e5f-52ea7233a6c1> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:69e604be-11d5-4fd2-981c-e5d2a93db493" ] ) ] .
-
-<uuid:23863019-f8d1-4165-abca-8ce1f208b13f> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1> <uuid:b23fbe07-e549-428e-b539-ea66851ba6cd> ) ] .
-
-<uuid:27504969-a1b2-4051-b522-a3453c07dcd0> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:c064e2ed-f6db-49d1-9e8d-39478e07c56c" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:f511f306-b61e-4ae5-82cb-bece777e3d84" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:98628e3a-b2df-4627-9326-3b30e2d31630" ] ) ] .
-
-<uuid:28753fb2-e05d-420b-bd23-0ec28b276e51> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:5e6c3ed6-4011-4407-a7a4-187d1ae6bc82" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:e0c8c309-5568-4e9a-b22c-982f0bc9457d" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:c6391658-8f77-4ea2-b8af-3484683133fc" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:f293604e-b0f7-46d7-b087-3c86930da413" ] ) ] .
-
-<uuid:28d289ac-d197-4346-a5e1-a78b0fb408ae> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d> <uuid:2415b0ae-7d30-43c2-8757-82a577c694b5> ) ] .
-
-<uuid:2d32ac86-f165-4f74-95e6-bab2a73776a6> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "Solid" ;
-    geojson:features <uuid:1828e704-a264-4ebc-9bae-1dcf52fc7b41>,
-        <uuid:6061fb1f-e335-407d-894e-fdb45f4bc11d>,
-        <uuid:b3e77f3e-8ae4-463b-b136-d331577a9876>,
-        <uuid:b85a797a-b837-48ad-a77d-72b8881d58a5>,
-        <uuid:cca8a912-844b-4ac4-989c-64215acd3e34> .
-
-<uuid:30c110f9-5e95-49b1-a133-deb9ac707d98> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:910b7ace-52b3-4d2a-afef-9340c0af3f41" ] ) ] .
-
-<uuid:34283d3a-926c-4c21-a89a-2eb4974419f6> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:5e6c3ed6-4011-4407-a7a4-187d1ae6bc82" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:0702cb55-bfdf-47a3-9e03-5a1101f375d3" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:9cb950e8-e8dd-4323-9dc0-6f030f169a48" ] ) ] .
-
-<uuid:357f1d28-405c-4086-83a8-9716876fe301> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "Shell" ;
-    geojson:features <uuid:9da1d9ee-f32a-4ff0-8cdb-de5f9029b760>,
-        <uuid:b5928f37-850e-4f74-b68a-10932196d478>,
-        <uuid:c907a592-3c99-4932-959b-ce97dc808426>,
-        <uuid:e9901d39-6375-4a90-a483-58f7f5f5f76c>,
-        <uuid:ec469bfd-9810-4258-9d7c-7c36b46d2478> .
-
-<uuid:35940328-3e54-4538-8936-ef7ab97f698b> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:148a5543-ff12-4460-986c-449d5243d885> <uuid:74369382-b3b3-46b5-adb7-18fac4de68e0> ) ] .
-
-<uuid:36a9805e-fb23-40bf-83c3-1c019b340443> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:a6e846dd-f611-4e3a-8c05-141c6b32fdcb" ] ) ] .
-
-<uuid:3b50bf6b-2d5c-45b8-ae19-2103ff36599d> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:e27b12a4-7d3a-482b-8f8e-5b49e8765881" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:77d328c1-9d6f-4c11-a390-de701a4cdec6" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:1f8835fd-8951-4bd6-a739-47ccf214c2d5" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:59e7006a-a17b-44d7-b02c-136d9730d241" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:21687804-7ed3-4319-937b-654565f92b98" ] ) ] .
-
-<uuid:3b789531-378b-428d-a286-f6f7f4eaf6b0> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:1f8835fd-8951-4bd6-a739-47ccf214c2d5" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:497de1cd-b8cb-4570-a0ad-f7303fd3655c" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5" ] ) ] .
-
-<uuid:3d7b4f73-fc49-42eb-940a-801e16fce1f3> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:f293604e-b0f7-46d7-b087-3c86930da413" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8" ] ) ] .
-
-<uuid:3df80dfa-8278-479b-887c-89599b90417f> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c> <uuid:4c11a36b-5379-462c-90c0-d99d0557ea25> ) ] .
-
-<uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:2415b0ae-7d30-43c2-8757-82a577c694b5> <uuid:571b14af-afc3-41ee-800e-b507fac82ae7> ) ] .
-
-<uuid:4042b94e-c39e-41ce-afcf-1046f5050975> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:77bc66ca-f5c1-4d25-8689-32d34d28f2ca" ] ) ] .
-
-<uuid:423f5a0c-8751-4e98-a2aa-db1d830c4778> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "Face" ;
-    geojson:features <uuid:02a5f63e-b3ad-46dd-a505-3f2746c8dc6c>,
-        <uuid:034d3912-3eba-418d-8819-8da27e5aa497>,
-        <uuid:08d4e20d-eb16-49cb-9cd4-8fcd60f095bd>,
-        <uuid:0aa9a5ab-109b-43d9-abe1-de1598bdeaad>,
-        <uuid:10d84152-aca0-449e-91cc-b8062eeec0f6>,
-        <uuid:185adb6d-0a7a-427a-9c06-4a6095865432>,
-        <uuid:19482d65-4c2b-4aff-8dac-c2d163d80f3d>,
-        <uuid:1e6b1d36-7f8e-431b-bd0e-bf8fa2acfd74>,
-        <uuid:1eb4b472-9d32-4980-869a-70a9743e68a6>,
-        <uuid:22b8152a-5086-40c6-9e5f-52ea7233a6c1>,
-        <uuid:30c110f9-5e95-49b1-a133-deb9ac707d98>,
-        <uuid:36a9805e-fb23-40bf-83c3-1c019b340443>,
-        <uuid:4042b94e-c39e-41ce-afcf-1046f5050975>,
-        <uuid:4ec25580-07c5-4e00-b6c9-95a4d18a99de>,
-        <uuid:57c388ed-780f-47a7-ae3b-e28a6b28c803>,
-        <uuid:59c5803c-9e52-4b51-8cf6-8c3fadf646f4>,
-        <uuid:5cd4de66-7799-4806-a981-39fb1400548d>,
-        <uuid:6877f8e3-90e5-4c95-8b9c-f8b164ecbcb2>,
-        <uuid:6910e917-f057-4623-bf84-d9bda0b4f9b6>,
-        <uuid:8873590f-688c-448f-8da3-8833140bacd8>,
-        <uuid:8fd1fd2b-7f4b-405c-98e9-cfc727fc15eb>,
-        <uuid:91ab249a-af89-4447-aa69-ba6ea64cc469>,
-        <uuid:93e9fcce-d973-41f1-a981-0019e8f2a7ee>,
-        <uuid:9566c1ae-4a84-4cf9-bba1-b37b75c86c4b>,
-        <uuid:980f168e-ed23-4e8b-a952-84278d4bf22a>,
-        <uuid:9a2ca728-847a-439c-97f1-b7bb52330599>,
-        <uuid:bcd5cbb9-92d8-45ab-8a57-709330d5079b>,
-        <uuid:bcfd7996-2c5b-4976-ba97-6e5399ad8ea8>,
-        <uuid:bff93356-53c3-4b96-8cda-0a07656b48f5>,
-        <uuid:c4c8f918-05c6-4b83-bac6-fcc63343667e>,
-        <uuid:c8069715-2f4a-46f5-bdfe-6d561a33cff5>,
-        <uuid:cf9f86b5-fd71-4c19-bcef-059d1a40d416>,
-        <uuid:d3f9206f-f221-4b1c-ac53-9669c8edf68f>,
-        <uuid:e7a0f208-fa2e-4d5b-bf29-f1313cc7ce50>,
-        <uuid:fbfaf83d-7563-4b11-997d-bd3fb8c6f98b> .
-
-<uuid:44b86750-060a-4627-81cb-1d21e7ecf82b> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:aede0d1a-6743-458f-83d0-83eb3cefc97d" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:3df80dfa-8278-479b-887c-89599b90417f" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002" ] ) ] .
-
-<uuid:4543461b-48f1-4d8d-8e6b-cf5eac440240> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:56d1ab96-3795-4e26-aa31-858f2698d768> <uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4> ) ] .
-
-<uuid:489a82be-c45a-4b5c-8f46-dbe4efa2ac9c> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:80a73235-bd0d-4255-b1c1-e213a7ce376b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5" ] ) ] .
-
-<uuid:497de1cd-b8cb-4570-a0ad-f7303fd3655c> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:f8265e86-f991-4a36-befc-fef9f603e7dd> <uuid:27021be0-edb1-4235-acd9-b412e7a36d7d> ) ] .
-
-<uuid:4ec25580-07c5-4e00-b6c9-95a4d18a99de> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:44b86750-060a-4627-81cb-1d21e7ecf82b" ] ) ] .
-
-<uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e> <uuid:dfadb111-777d-406e-b511-1f0dc19409f0> ) ] .
-
-<uuid:57c388ed-780f-47a7-ae3b-e28a6b28c803> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:28753fb2-e05d-420b-bd23-0ec28b276e51" ] ) ] .
-
-<uuid:587194a8-1470-4bf8-8bcf-45063694a1b5> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a> <uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9> ) ] .
-
-<uuid:58916334-ab3e-487a-ae20-5d1fe016af3e> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:f511f306-b61e-4ae5-82cb-bece777e3d84" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:f293604e-b0f7-46d7-b087-3c86930da413" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:0372d1a6-a543-4a84-9870-af81aa08887f" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:d1d2f042-31e4-41e3-b22e-173c10b3394a" ] ) ] .
-
-<uuid:59c5803c-9e52-4b51-8cf6-8c3fadf646f4> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:58916334-ab3e-487a-ae20-5d1fe016af3e" ] ) ] .
-
-<uuid:59e7006a-a17b-44d7-b02c-136d9730d241> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3> <uuid:dfadb111-777d-406e-b511-1f0dc19409f0> ) ] .
-
-<uuid:5a388390-6b1e-45ec-9f63-fc2878ba5866> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2> <uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952> ) ] .
-
-<uuid:5bc1cf2f-2aa7-4dcb-9f5d-d75d1cca76c0> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:c6391658-8f77-4ea2-b8af-3484683133fc" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:62b0df5f-e5c0-4e02-8f05-17469482d920" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:dc2293f6-d716-4fe0-a542-cfdf00bc9d07" ] ) ] .
-
-<uuid:5cd4de66-7799-4806-a981-39fb1400548d> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:6876e445-1eb6-4a91-9b18-c6eaf96f5bd8" ] ) ] .
-
-<uuid:5d3314f0-3be8-49ba-a8db-720ab15c9138> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:77f25fdc-6684-4b9a-8cbd-18cfc7145e0a" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:933a2bb5-9610-4c8b-b857-ebfa014c631b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002" ] ) ] .
-
-<uuid:5e6c3ed6-4011-4407-a7a4-187d1ae6bc82> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340> <uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7> ) ] .
-
-<uuid:6061fb1f-e335-407d-894e-fdb45f4bc11d> a geojson:Feature ;
-    rdfs:label "Stairwell" ;
-    geojson:topology [ a topo:Solid ;
-            topo:shells ( [ topo:orientation "+" ;
-                        topo:ref "uuid:ec469bfd-9810-4258-9d7c-7c36b46d2478" ] ) ] .
-
-<uuid:60717ebd-604c-423e-8b14-2740146445f5> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:96ace84a-b09f-4624-b773-8e849bd7d7d1" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:caea09b7-5bb4-473a-bac8-559a8385e485" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82" ] ) ] .
-
-<uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca> <uuid:10199cf3-665f-45a3-96d3-47043d749991> ) ] .
-
-<uuid:62b0df5f-e5c0-4e02-8f05-17469482d920> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954> <uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009> ) ] .
-
-<uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a> <uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e> ) ] .
-
-<uuid:660aa943-0834-4d48-b32d-773808d37f09> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:0b2d959e-941c-4494-988a-d87b4b585041" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb" ] ) ] .
-
-<uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:4c11a36b-5379-462c-90c0-d99d0557ea25> <uuid:dfadb111-777d-406e-b511-1f0dc19409f0> ) ] .
-
-<uuid:6876e445-1eb6-4a91-9b18-c6eaf96f5bd8> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:aede0d1a-6743-458f-83d0-83eb3cefc97d" ] ) ] .
-
-<uuid:6877f8e3-90e5-4c95-8b9c-f8b164ecbcb2> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:98430308-2fc8-4265-9475-5f249dd408e3" ] ) ] .
-
-<uuid:6910e917-f057-4623-bf84-d9bda0b4f9b6> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:bed13d65-1e70-4b39-b729-f99f6cb37f47" ] ) ] .
-
-<uuid:69e604be-11d5-4fd2-981c-e5d2a93db493> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:98628e3a-b2df-4627-9326-3b30e2d31630" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:d1d2f042-31e4-41e3-b22e-173c10b3394a" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:0ba80381-37c0-4aff-bad6-0381103675d9" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:f1fecfd8-3943-42b7-b719-15f17d6e18ec" ] ) ] .
-
-<uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952> <uuid:f8265e86-f991-4a36-befc-fef9f603e7dd> ) ] .
-
-<uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:74369382-b3b3-46b5-adb7-18fac4de68e0> <uuid:10199cf3-665f-45a3-96d3-47043d749991> ) ] .
-
-<uuid:77bc66ca-f5c1-4d25-8689-32d34d28f2ca> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:0702cb55-bfdf-47a3-9e03-5a1101f375d3" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:caea09b7-5bb4-473a-bac8-559a8385e485" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:dc2293f6-d716-4fe0-a542-cfdf00bc9d07" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:f013fc74-d38d-4caa-9e9b-af749f4e86fd" ] ) ] .
-
-<uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:b23fbe07-e549-428e-b539-ea66851ba6cd> <uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9> ) ] .
-
-<uuid:77d328c1-9d6f-4c11-a390-de701a4cdec6> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:27021be0-edb1-4235-acd9-b412e7a36d7d> <uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2> ) ] .
-
-<uuid:77f25fdc-6684-4b9a-8cbd-18cfc7145e0a> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9> <uuid:10199cf3-665f-45a3-96d3-47043d749991> ) ] .
-
-<uuid:78fceb81-8a17-42be-a55b-57b328908f22> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:74369382-b3b3-46b5-adb7-18fac4de68e0> <uuid:2415b0ae-7d30-43c2-8757-82a577c694b5> ) ] .
-
-<uuid:79977e2b-0adf-4e7f-9c30-a7bca716df14> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:74369382-b3b3-46b5-adb7-18fac4de68e0> <uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6> ) ] .
-
-<uuid:80a73235-bd0d-4255-b1c1-e213a7ce376b> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464> <uuid:571b14af-afc3-41ee-800e-b507fac82ae7> ) ] .
-
-<uuid:8100e1d1-9030-45cd-b07c-f2d923e85488> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:28af1f47-ab41-493c-af53-3a490074fa52> <uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e> ) ] .
-
-<uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:56d1ab96-3795-4e26-aa31-858f2698d768> <uuid:b23fbe07-e549-428e-b539-ea66851ba6cd> ) ] .
-
-<uuid:837a247a-6b42-4c95-ab39-f4285b9d7002> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9> <uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c> ) ] .
-
-<uuid:852123d7-fef9-4a31-ab79-9069d2d9d6f8> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:28af1f47-ab41-493c-af53-3a490074fa52> <uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340> ) ] .
-
-<uuid:88550bf5-23af-44fd-a323-c043682481d7> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:587194a8-1470-4bf8-8bcf-45063694a1b5" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:82db37f8-7677-4113-b762-8bf56bc2e3e9" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b" ] ) ] .
-
-<uuid:8873590f-688c-448f-8da3-8833140bacd8> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:92745bd3-f2b5-41ca-8c2e-97c11da03f28" ] ) ] .
-
-<uuid:888f1ceb-5b53-46d6-a9bd-3f0d030a9b2a> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:f8265e86-f991-4a36-befc-fef9f603e7dd> <uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf> ) ] .
-
-<uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:571b14af-afc3-41ee-800e-b507fac82ae7> <uuid:28af1f47-ab41-493c-af53-3a490074fa52> ) ] .
-
-<uuid:8aeb3333-b440-4655-afa4-9c6469240ec0> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:497de1cd-b8cb-4570-a0ad-f7303fd3655c" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:77d328c1-9d6f-4c11-a390-de701a4cdec6" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:5a388390-6b1e-45ec-9f63-fc2878ba5866" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb" ] ) ] .
-
-<uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:dfadb111-777d-406e-b511-1f0dc19409f0> <uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1> ) ] .
-
-<uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf> <uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3> ) ] .
-
-<uuid:8fd1fd2b-7f4b-405c-98e9-cfc727fc15eb> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:96467122-b48d-4f8a-b51f-fffa1901a761" ] ) ] .
-
-<uuid:910b7ace-52b3-4d2a-afef-9340c0af3f41> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:c064e2ed-f6db-49d1-9e8d-39478e07c56c" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:f1fecfd8-3943-42b7-b719-15f17d6e18ec" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:35940328-3e54-4538-8936-ef7ab97f698b" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:78fceb81-8a17-42be-a55b-57b328908f22" ] ) ] .
-
-<uuid:913979f7-aaab-4985-b5f6-f2286137641a> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:e5e0b3e1-3cf0-4413-a8e9-899a40496a7c" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:b8e3ea88-ac1b-4694-abf7-731b3f6108b5" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:f7becfcc-f978-4188-bb49-d688434f4936" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:3df80dfa-8278-479b-887c-89599b90417f" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:59e7006a-a17b-44d7-b02c-136d9730d241" ] ) ] .
-
-<uuid:91ab249a-af89-4447-aa69-ba6ea64cc469> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:88550bf5-23af-44fd-a323-c043682481d7" ] ) ] .
-
-<uuid:92745bd3-f2b5-41ca-8c2e-97c11da03f28> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:28d289ac-d197-4346-a5e1-a78b0fb408ae" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:89d4eaa7-feed-4d41-ab91-e03468d765f5" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357" ] ) ] .
-
-<uuid:933a2bb5-9610-4c8b-b857-ebfa014c631b> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c> <uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca> ) ] .
-
-<uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:10199cf3-665f-45a3-96d3-47043d749991> <uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464> ) ] .
-
-<uuid:93e9fcce-d973-41f1-a981-0019e8f2a7ee> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:8aeb3333-b440-4655-afa4-9c6469240ec0" ] ) ] .
-
-<uuid:9566c1ae-4a84-4cf9-bba1-b37b75c86c4b> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:5bc1cf2f-2aa7-4dcb-9f5d-d75d1cca76c0" ] ) ] .
-
-<uuid:96467122-b48d-4f8a-b51f-fffa1901a761> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:79977e2b-0adf-4e7f-9c30-a7bca716df14" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:77f25fdc-6684-4b9a-8cbd-18cfc7145e0a" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1" ] ) ] .
-
-<uuid:96ace84a-b09f-4624-b773-8e849bd7d7d1> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:686186b8-788e-454a-9d4b-581056f66141> <uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a> ) ] .
-
-<uuid:9768053c-311f-4ad2-9da9-7627f42aeb88> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:4543461b-48f1-4d8d-8e6b-cf5eac440240" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:e5e0b3e1-3cf0-4413-a8e9-899a40496a7c" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5" ] ) ] .
-
-<uuid:980f168e-ed23-4e8b-a952-84278d4bf22a> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:913979f7-aaab-4985-b5f6-f2286137641a" ] ) ] .
-
-<uuid:98430308-2fc8-4265-9475-5f249dd408e3> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:933a2bb5-9610-4c8b-b857-ebfa014c631b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:21687804-7ed3-4319-937b-654565f92b98" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:8d3c3cf2-053c-43d2-a3b0-c2076e60ea1d" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:66ba7332-a20a-4cca-8b09-1d08bff53bc8" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:3df80dfa-8278-479b-887c-89599b90417f" ] ) ] .
-
-<uuid:98628e3a-b2df-4627-9326-3b30e2d31630> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd> <uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960> ) ] .
-
-<uuid:9a2ca728-847a-439c-97f1-b7bb52330599> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:0a3d33b0-b98b-44f0-96a3-5b35fd133fb0" ] ) ] .
-
-<uuid:9b97b5f1-5acd-4cf2-9d5e-e7654a1a0fce> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:0b2d959e-941c-4494-988a-d87b4b585041" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:5a388390-6b1e-45ec-9f63-fc2878ba5866" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:e27b12a4-7d3a-482b-8f8e-5b49e8765881" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b" ] ) ] .
-
-<uuid:9cb950e8-e8dd-4323-9dc0-6f030f169a48> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7> <uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5> ) ] .
-
-<uuid:9da1d9ee-f32a-4ff0-8cdb-de5f9029b760> a geojson:Feature ;
-    geojson:topology [ a topo:Shell ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:93e9fcce-d973-41f1-a981-0019e8f2a7ee" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:1e6b1d36-7f8e-431b-bd0e-bf8fa2acfd74" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:cf9f86b5-fd71-4c19-bcef-059d1a40d416" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:d3f9206f-f221-4b1c-ac53-9669c8edf68f" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:6910e917-f057-4623-bf84-d9bda0b4f9b6" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:9a2ca728-847a-439c-97f1-b7bb52330599" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:08d4e20d-eb16-49cb-9cd4-8fcd60f095bd" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:10d84152-aca0-449e-91cc-b8062eeec0f6" ] ) ] .
-
-<uuid:a13f36d3-6c2c-42be-a490-70fef723dfe9> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:9cb950e8-e8dd-4323-9dc0-6f030f169a48" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:f013fc74-d38d-4caa-9e9b-af749f4e86fd" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:62b0df5f-e5c0-4e02-8f05-17469482d920" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:e0c8c309-5568-4e9a-b22c-982f0bc9457d" ] ) ] .
-
-<uuid:a6e846dd-f611-4e3a-8c05-141c6b32fdcb> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:0372d1a6-a543-4a84-9870-af81aa08887f" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:6f0d1039-a766-488b-a5e9-3fcc86db49bb" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:0b2d959e-941c-4494-988a-d87b4b585041" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:35940328-3e54-4538-8936-ef7ab97f698b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:0ba80381-37c0-4aff-bad6-0381103675d9" ] ) ] .
-
-<uuid:aa8e3fd5-eec5-49d0-b5a1-8d85eab81eb1> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9> <uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6> ) ] .
-
-<uuid:aaa596c1-245a-4a1d-b19d-ebe8cf5dbee1> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:8100e1d1-9030-45cd-b07c-f2d923e85488" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:6411535d-7cdb-4ca6-86af-eac4a2baed3b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:96ace84a-b09f-4624-b773-8e849bd7d7d1" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0" ] ) ] .
-
-<uuid:ab77fa42-05de-4e0f-a1e5-57ed5dd871b5> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:80a73235-bd0d-4255-b1c1-e213a7ce376b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:3f303c07-4d8e-4131-9d54-ea7ca876a357" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:78fceb81-8a17-42be-a55b-57b328908f22" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:6f74e6b7-0a9f-4eef-a9ec-610e593b2c75" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f" ] ) ] .
-
-<uuid:ac310da1-3b91-4c88-b2bb-ff64ff0f5c82> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:686186b8-788e-454a-9d4b-581056f66141> <uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d> ) ] .
-
-<uuid:aede0d1a-6743-458f-83d0-83eb3cefc97d> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:4c11a36b-5379-462c-90c0-d99d0557ea25> <uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a> ) ] .
-
-<uuid:b01715b1-8ed7-47f2-9050-344a22a2847f> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:23863019-f8d1-4165-abca-8ce1f208b13f" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:77c3455f-afb2-48b9-bd08-a0daef921a9a" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:837a247a-6b42-4c95-ab39-f4285b9d7002" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:f7becfcc-f978-4188-bb49-d688434f4936" ] ) ] .
-
-<uuid:b3e77f3e-8ae4-463b-b136-d331577a9876> a geojson:Feature ;
-    rdfs:label "Lower East" ;
-    geojson:topology [ a topo:Solid ;
-            topo:shells ( [ topo:orientation "+" ;
-                        topo:ref "uuid:b5928f37-850e-4f74-b68a-10932196d478" ] ) ] .
-
-<uuid:b5928f37-850e-4f74-b68a-10932196d478> a geojson:Feature ;
-    geojson:topology [ a topo:Shell ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:30c110f9-5e95-49b1-a133-deb9ac707d98" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:22b8152a-5086-40c6-9e5f-52ea7233a6c1" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:59c5803c-9e52-4b51-8cf6-8c3fadf646f4" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:bcd5cbb9-92d8-45ab-8a57-709330d5079b" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:19482d65-4c2b-4aff-8dac-c2d163d80f3d" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:e7a0f208-fa2e-4d5b-bf29-f1313cc7ce50" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:bcfd7996-2c5b-4976-ba97-6e5399ad8ea8" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:08d4e20d-eb16-49cb-9cd4-8fcd60f095bd" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:36a9805e-fb23-40bf-83c3-1c019b340443" ] ) ] .
-
-<uuid:b85a797a-b837-48ad-a77d-72b8881d58a5> a geojson:Feature ;
-    rdfs:label "Lower West" ;
-    geojson:topology [ a topo:Solid ;
-            topo:shells ( [ topo:orientation "+" ;
-                        topo:ref "uuid:e9901d39-6375-4a90-a483-58f7f5f5f76c" ] ) ] .
-
-<uuid:b8e3ea88-ac1b-4694-abf7-731b3f6108b5> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1> <uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4> ) ] .
-
-<uuid:b9ff7dd5-4cbe-4d99-8d7a-42da0016fac3> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf> <uuid:56d1ab96-3795-4e26-aa31-858f2698d768> ) ] .
-
-<uuid:bcd5cbb9-92d8-45ab-8a57-709330d5079b> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:27504969-a1b2-4051-b522-a3453c07dcd0" ] ) ] .
-
-<uuid:bcfd7996-2c5b-4976-ba97-6e5399ad8ea8> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:489a82be-c45a-4b5c-8f46-dbe4efa2ac9c" ] ) ] .
-
-<uuid:bed13d65-1e70-4b39-b729-f99f6cb37f47> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:51dedaf7-4bf0-45de-8c9f-57fe4692eece" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:59e7006a-a17b-44d7-b02c-136d9730d241" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:8e88964f-9902-4ebd-92e1-9563cd5c36c5" ] ) ] .
-
-<uuid:bff93356-53c3-4b96-8cda-0a07656b48f5> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:5d3314f0-3be8-49ba-a8db-720ab15c9138" ] ) ] .
-
-<uuid:c064e2ed-f6db-49d1-9e8d-39478e07c56c> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:2415b0ae-7d30-43c2-8757-82a577c694b5> <uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd> ) ] .
-
-<uuid:c13a006a-907c-4c2a-bee7-820325ada29a> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "-" ;
-                        topo:ref "uuid:93c71574-3492-45e6-a1aa-27b829bb4b9f" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:60b6e57d-765e-4d87-8ce9-be3e373ac33b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:21687804-7ed3-4319-937b-654565f92b98" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:f4ab88fb-fed2-42d6-86c8-5d966fec7a25" ] ) ] .
-
-<uuid:c4c8f918-05c6-4b83-bac6-fcc63343667e> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:34283d3a-926c-4c21-a89a-2eb4974419f6" ] ) ] .
-
-<uuid:c6391658-8f77-4ea2-b8af-3484683133fc> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009> <uuid:56d1ab96-3795-4e26-aa31-858f2698d768> ) ] .
-
-<uuid:c8069715-2f4a-46f5-bdfe-6d561a33cff5> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:9768053c-311f-4ad2-9da9-7627f42aeb88" ] ) ] .
-
-<uuid:c907a592-3c99-4932-959b-ce97dc808426> a geojson:Feature ;
-    geojson:topology [ a topo:Shell ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:c8069715-2f4a-46f5-bdfe-6d561a33cff5" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:02a5f63e-b3ad-46dd-a505-3f2746c8dc6c" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:1eb4b472-9d32-4980-869a-70a9743e68a6" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:980f168e-ed23-4e8b-a952-84278d4bf22a" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:6910e917-f057-4623-bf84-d9bda0b4f9b6" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:5cd4de66-7799-4806-a981-39fb1400548d" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:91ab249a-af89-4447-aa69-ba6ea64cc469" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:4ec25580-07c5-4e00-b6c9-95a4d18a99de" ] ) ] .
-
-<uuid:caea09b7-5bb4-473a-bac8-559a8385e485> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d> <uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6> ) ] .
-
-<uuid:cca8a912-844b-4ac4-989c-64215acd3e34> a geojson:Feature ;
-    rdfs:label "Upper East" ;
-    geojson:topology [ a topo:Solid ;
-            topo:shells ( [ topo:orientation "+" ;
-                        topo:ref "uuid:9da1d9ee-f32a-4ff0-8cdb-de5f9029b760" ] ) ] .
-
-<uuid:cf9f86b5-fd71-4c19-bcef-059d1a40d416> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:3b789531-378b-428d-a286-f6f7f4eaf6b0" ] ) ] .
-
-<uuid:d1d2f042-31e4-41e3-b22e-173c10b3394a> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960> <uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041> ) ] .
-
-<uuid:d3f9206f-f221-4b1c-ac53-9669c8edf68f> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:3b50bf6b-2d5c-45b8-ae19-2103ff36599d" ] ) ] .
-
-<uuid:d4886d82-d1bc-4e0f-aeb9-8f374db8534b> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e> <uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464> ) ] .
-
-<uuid:d68df714-740d-404c-b8b1-f4c2b095cde4> a geojson:Feature ;
-    geojson:topology [ a topo:Ring ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:79977e2b-0adf-4e7f-9c30-a7bca716df14" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:caea09b7-5bb4-473a-bac8-559a8385e485" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:28d289ac-d197-4346-a5e1-a78b0fb408ae" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:78fceb81-8a17-42be-a55b-57b328908f22" ] ) ] .
-
-<uuid:dc2293f6-d716-4fe0-a542-cfdf00bc9d07> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6> <uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954> ) ] .
-
-<uuid:e0c8c309-5568-4e9a-b22c-982f0bc9457d> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7> <uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009> ) ] .
-
-<uuid:e27b12a4-7d3a-482b-8f8e-5b49e8765881> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2> <uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca> ) ] .
-
-<uuid:e454ad32-2dd4-4761-ba9f-19502d5af9b0> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:28af1f47-ab41-493c-af53-3a490074fa52> <uuid:686186b8-788e-454a-9d4b-581056f66141> ) ] .
-
-<uuid:e5e0b3e1-3cf0-4413-a8e9-899a40496a7c> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4> <uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3> ) ] .
-
-<uuid:e7a0f208-fa2e-4d5b-bf29-f1313cc7ce50> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:ab77fa42-05de-4e0f-a1e5-57ed5dd871b5" ] ) ] .
-
-<uuid:e9901d39-6375-4a90-a483-58f7f5f5f76c> a geojson:Feature ;
-    geojson:topology [ a topo:Shell ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:4042b94e-c39e-41ce-afcf-1046f5050975" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:185adb6d-0a7a-427a-9c06-4a6095865432" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:57c388ed-780f-47a7-ae3b-e28a6b28c803" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:c4c8f918-05c6-4b83-bac6-fcc63343667e" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:fbfaf83d-7563-4b11-997d-bd3fb8c6f98b" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:034d3912-3eba-418d-8819-8da27e5aa497" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:19482d65-4c2b-4aff-8dac-c2d163d80f3d" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:9566c1ae-4a84-4cf9-bba1-b37b75c86c4b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:91ab249a-af89-4447-aa69-ba6ea64cc469" ] ) ] .
-
-<uuid:ec469bfd-9810-4258-9d7c-7c36b46d2478> a geojson:Feature ;
-    geojson:topology [ a topo:Shell ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:8873590f-688c-448f-8da3-8833140bacd8" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:0aa9a5ab-109b-43d9-abe1-de1598bdeaad" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:8fd1fd2b-7f4b-405c-98e9-cfc727fc15eb" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:6877f8e3-90e5-4c95-8b9c-f8b164ecbcb2" ] [ topo:orientation "+" ;
-                        topo:ref "uuid:bff93356-53c3-4b96-8cda-0a07656b48f5" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:10d84152-aca0-449e-91cc-b8062eeec0f6" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:4ec25580-07c5-4e00-b6c9-95a4d18a99de" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:034d3912-3eba-418d-8819-8da27e5aa497" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:fbfaf83d-7563-4b11-997d-bd3fb8c6f98b" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:e7a0f208-fa2e-4d5b-bf29-f1313cc7ce50" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:9a2ca728-847a-439c-97f1-b7bb52330599" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:bcfd7996-2c5b-4976-ba97-6e5399ad8ea8" ] [ topo:orientation "-" ;
-                        topo:ref "uuid:5cd4de66-7799-4806-a981-39fb1400548d" ] ) ] .
-
-<uuid:f013fc74-d38d-4caa-9e9b-af749f4e86fd> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954> <uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5> ) ] .
-
-<uuid:f1fecfd8-3943-42b7-b719-15f17d6e18ec> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:148a5543-ff12-4460-986c-449d5243d885> <uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd> ) ] .
-
-<uuid:f293604e-b0f7-46d7-b087-3c86930da413> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340> <uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf> ) ] .
-
-<uuid:f4ab88fb-fed2-42d6-86c8-5d966fec7a25> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464> <uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1> ) ] .
-
-<uuid:f511f306-b61e-4ae5-82cb-bece777e3d84> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960> <uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340> ) ] .
-
-<uuid:f51cd323-cb73-46d4-ac59-4d8041fc9def> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf> <uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e> ) ] .
-
-<uuid:f7becfcc-f978-4188-bb49-d688434f4936> a geojson:Feature ;
-    surv:vectorPurpose wa-vector-purpose:3D-Construct ;
-    geojson:topology [ a topo:Edge ;
-            topo:relatedFeatures ( <uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c> <uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1> ) ] .
-
-<uuid:fb4abc7c-4533-4bbd-8907-9557ad54e94f> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "CadastralMark" ;
-    geojson:features <uuid:10199cf3-665f-45a3-96d3-47043d749991>,
-        <uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a>,
-        <uuid:148a5543-ff12-4460-986c-449d5243d885>,
-        <uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009>,
-        <uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340>,
-        <uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952>,
-        <uuid:2415b0ae-7d30-43c2-8757-82a577c694b5>,
-        <uuid:27021be0-edb1-4235-acd9-b412e7a36d7d>,
-        <uuid:28af1f47-ab41-493c-af53-3a490074fa52>,
-        <uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca>,
-        <uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9>,
-        <uuid:4c11a36b-5379-462c-90c0-d99d0557ea25>,
-        <uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1>,
-        <uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e>,
-        <uuid:56d1ab96-3795-4e26-aa31-858f2698d768>,
-        <uuid:571b14af-afc3-41ee-800e-b507fac82ae7>,
-        <uuid:686186b8-788e-454a-9d4b-581056f66141>,
-        <uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd>,
-        <uuid:74369382-b3b3-46b5-adb7-18fac4de68e0>,
-        <uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf>,
-        <uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c>,
-        <uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5>,
-        <uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6>,
-        <uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4>,
-        <uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2>,
-        <uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3>,
-        <uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1>,
-        <uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7>,
-        <uuid:b23fbe07-e549-428e-b539-ea66851ba6cd>,
-        <uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041>,
-        <uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954>,
-        <uuid:dfadb111-777d-406e-b511-1f0dc19409f0>,
-        <uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d>,
-        <uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464>,
-        <uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960>,
-        <uuid:f8265e86-f991-4a36-befc-fef9f603e7dd> .
-
-<uuid:fb7fe2d6-f507-41f6-a725-3fa5cb252068> a geojson:FeatureCollection ;
-    geojson:collectionFeatureType "Ring" ;
-    geojson:features <uuid:0a3d33b0-b98b-44f0-96a3-5b35fd133fb0>,
-        <uuid:1a18ec4e-93d2-4e21-931b-05ae1fd9d31e>,
-        <uuid:27504969-a1b2-4051-b522-a3453c07dcd0>,
-        <uuid:28753fb2-e05d-420b-bd23-0ec28b276e51>,
-        <uuid:34283d3a-926c-4c21-a89a-2eb4974419f6>,
-        <uuid:3b50bf6b-2d5c-45b8-ae19-2103ff36599d>,
-        <uuid:3b789531-378b-428d-a286-f6f7f4eaf6b0>,
-        <uuid:3d7b4f73-fc49-42eb-940a-801e16fce1f3>,
-        <uuid:44b86750-060a-4627-81cb-1d21e7ecf82b>,
-        <uuid:489a82be-c45a-4b5c-8f46-dbe4efa2ac9c>,
-        <uuid:58916334-ab3e-487a-ae20-5d1fe016af3e>,
-        <uuid:5bc1cf2f-2aa7-4dcb-9f5d-d75d1cca76c0>,
-        <uuid:5d3314f0-3be8-49ba-a8db-720ab15c9138>,
-        <uuid:60717ebd-604c-423e-8b14-2740146445f5>,
-        <uuid:660aa943-0834-4d48-b32d-773808d37f09>,
-        <uuid:6876e445-1eb6-4a91-9b18-c6eaf96f5bd8>,
-        <uuid:69e604be-11d5-4fd2-981c-e5d2a93db493>,
-        <uuid:77bc66ca-f5c1-4d25-8689-32d34d28f2ca>,
-        <uuid:88550bf5-23af-44fd-a323-c043682481d7>,
-        <uuid:8aeb3333-b440-4655-afa4-9c6469240ec0>,
-        <uuid:910b7ace-52b3-4d2a-afef-9340c0af3f41>,
-        <uuid:913979f7-aaab-4985-b5f6-f2286137641a>,
-        <uuid:92745bd3-f2b5-41ca-8c2e-97c11da03f28>,
-        <uuid:96467122-b48d-4f8a-b51f-fffa1901a761>,
-        <uuid:9768053c-311f-4ad2-9da9-7627f42aeb88>,
-        <uuid:98430308-2fc8-4265-9475-5f249dd408e3>,
-        <uuid:9b97b5f1-5acd-4cf2-9d5e-e7654a1a0fce>,
-        <uuid:a13f36d3-6c2c-42be-a490-70fef723dfe9>,
-        <uuid:a6e846dd-f611-4e3a-8c05-141c6b32fdcb>,
-        <uuid:aaa596c1-245a-4a1d-b19d-ebe8cf5dbee1>,
-        <uuid:ab77fa42-05de-4e0f-a1e5-57ed5dd871b5>,
-        <uuid:b01715b1-8ed7-47f2-9050-344a22a2847f>,
-        <uuid:bed13d65-1e70-4b39-b729-f99f6cb37f47>,
-        <uuid:c13a006a-907c-4c2a-bee7-820325ada29a>,
-        <uuid:d68df714-740d-404c-b8b1-f4c2b095cde4> .
-
-<uuid:fbfaf83d-7563-4b11-997d-bd3fb8c6f98b> a geojson:Feature ;
-    geojson:topology [ a topo:Face ;
-            topo:directedReferences ( [ topo:orientation "+" ;
-                        topo:ref "uuid:60717ebd-604c-423e-8b14-2740146445f5" ] ) ] .
-
-<uuid:148a5543-ff12-4460-986c-449d5243d885> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061664e+05 6.471646e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160078e+02 -3.188713e+01 2.3e+01 ) ] .
-
-<uuid:1a78fbcf-72ea-42a4-87bb-1524911d0009> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061464e+05 6.471656e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160076e+02 -3.188703e+01 2.3e+01 ) ] .
-
-<uuid:239337ae-72a5-4b0f-bb4e-4f6d6bd90952> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061644e+05 6.471648e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160078e+02 -3.188711e+01 2.3e+01 ) ] .
-
-<uuid:27021be0-edb1-4235-acd9-b412e7a36d7d> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061644e+05 6.471656e+06 2.6e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160078e+02 -3.188704e+01 2.6e+01 ) ] .
-
-<uuid:4c11a36b-5379-462c-90c0-d99d0557ea25> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061544e+05 6.471652e+06 2.6e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.6e+01 ) ] .
-
-<uuid:4ddfb16b-9a33-46c4-85cd-2f2f97521ae1> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061484e+05 6.471648e+06 2.6e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160076e+02 -3.188711e+01 2.6e+01 ) ] .
-
-<uuid:571b14af-afc3-41ee-800e-b507fac82ae7> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061584e+05 6.471652e+06 2e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2e+01 ) ] .
-
-<uuid:686186b8-788e-454a-9d4b-581056f66141> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061544e+05 6.471652e+06 2e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2e+01 ) ] .
-
-<uuid:69a8a25d-87ac-4f8f-9a74-d7f6d50532fd> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061664e+05 6.471646e+06 2e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160078e+02 -3.188713e+01 2e+01 ) ] .
-
-<uuid:84504c6e-7fdb-405e-ad86-e9d2eab7f6a5> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061464e+05 6.471646e+06 2e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160076e+02 -3.188712e+01 2e+01 ) ] .
-
-<uuid:903bb0ed-6c5c-44d8-aaf9-6cfd888444c4> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061484e+05 6.471656e+06 2.6e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160076e+02 -3.188703e+01 2.6e+01 ) ] .
-
-<uuid:a64c1668-5b7c-47ee-9c7e-4f50513b2da2> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061644e+05 6.471648e+06 2.6e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160078e+02 -3.188711e+01 2.6e+01 ) ] .
-
-<uuid:acaa6c5c-b958-4a1b-93e5-1dd9790fd5e1> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061584e+05 6.471652e+06 2.6e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.6e+01 ) ] .
-
-<uuid:b0693b65-5eb1-4b57-ad53-a1ee841fd2a7> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061464e+05 6.471656e+06 2e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160076e+02 -3.188703e+01 2e+01 ) ] .
-
-<uuid:b23fbe07-e549-428e-b539-ea66851ba6cd> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061484e+05 6.471648e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160076e+02 -3.188711e+01 2.3e+01 ) ] .
-
-<uuid:b91ceae5-16ff-4ec6-a224-e08c794e6041> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061664e+05 6.471656e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160078e+02 -3.188704e+01 2.3e+01 ) ] .
-
-<uuid:cd341d18-d4b3-473a-9ab6-dc13a8f95954> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061464e+05 6.471646e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160076e+02 -3.188712e+01 2.3e+01 ) ] .
-
-<uuid:f2f7f70f-d8b2-43f3-abf5-b686e0e92960> a surv:BoundaryMark,
+<uuid:030a717f-c3d7-46c9-8e04-4a90a2de6971> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8> <uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29> ) ] .
+
+<uuid:05253350-3d88-4edc-b6cb-759a2234382f> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:7e2ed802-251e-48b6-b140-013cad070d9f> <uuid:451e256a-6127-4e18-97f5-644093e9f9df> ) ] .
+
+<uuid:06e882da-e914-4ff8-a279-13c1b16b7646> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d> <uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e> ) ] .
+
+<uuid:0795c157-5fcb-4d01-b0f0-fedf92b1d41f> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:e0d36194-78e8-4255-b6b7-4f59b79544db> <uuid:5228ad62-0730-416f-89b0-5042da216efb> ) ] .
+
+<uuid:0c7efeba-1fb3-49a1-aafd-3e38affa4a9c> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e> <uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1> ) ] .
+
+<uuid:0cc9dbeb-9ae4-429b-80d5-a637d54f9bc4> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f> <uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd> ) ] .
+
+<uuid:17fa2c1e-5416-443b-b263-2f47cb514aa6> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6> <uuid:073f2f24-c85a-455d-9807-c24f75ea50f5> ) ] .
+
+<uuid:1b26a418-ddc1-4e7d-8ff0-811102c413b5> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b> <uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8> ) ] .
+
+<uuid:1f8b2b5d-416a-4b6b-90da-9c672bc42d2c> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8> <uuid:48b7ec92-e7ff-468f-8dff-d03483468e97> ) ] .
+
+<uuid:21935dcb-8634-4e57-abf4-4585eba35018> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:5228ad62-0730-416f-89b0-5042da216efb> <uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1> ) ] .
+
+<uuid:23375f61-8d9d-407c-bc86-ff0a4a1a3030> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca> <uuid:9ccc8672-7244-42a9-8d65-1b40a637a603> ) ] .
+
+<uuid:2413de82-7661-4536-8a05-58c4fadbd5fd> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a> <uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4> ) ] .
+
+<uuid:259ec3c3-5480-484c-8b6f-d081695a0a3f> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e> <uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3> ) ] .
+
+<uuid:28922e7d-7683-40da-916c-241f473ee3bd> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4> <uuid:451e256a-6127-4e18-97f5-644093e9f9df> ) ] .
+
+<uuid:2fe7500a-344c-43c9-8a4a-42a4dc381958> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d> <uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4> ) ] .
+
+<uuid:3bc984fd-e2fa-48de-9397-635b28834926> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e> <uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a> ) ] .
+
+<uuid:4a32db28-5b1a-4b4c-8fd4-e94cfca8c03a> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3> <uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8> ) ] .
+
+<uuid:4bbdae51-6837-4cbb-974d-ab8987d4a018> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e> <uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6> ) ] .
+
+<uuid:51c0f9c6-7c13-4460-8636-2ed5ee228a6c> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:7e2ed802-251e-48b6-b140-013cad070d9f> <uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198> ) ] .
+
+<uuid:5367fe8d-79c0-4161-a4ce-3b7f42afad3e> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b> <uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96> ) ] .
+
+<uuid:5698e261-6451-4ffe-90dd-05d5270c59a7> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8> <uuid:9d786d21-169c-459e-a354-4eeee65bf8a3> ) ] .
+
+<uuid:580818ce-50f0-486c-85c9-91c35ab39509> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6> <uuid:e0d36194-78e8-4255-b6b7-4f59b79544db> ) ] .
+
+<uuid:5f1fd4be-c4ba-4387-9d7d-6e26b8299dc9> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:2f1070ed-9bae-47f5-a856-7f4db788c010> <uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d> ) ] .
+
+<uuid:615aed99-8ae9-4857-931c-90bdd126e8c8> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:754fd788-08c8-45b0-a591-e608a27f0948> <uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2> ) ] .
+
+<uuid:6968cfbb-265a-48a5-8fac-91fbc7fe1a16> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2> <uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e> ) ] .
+
+<uuid:6ac9e1bc-3c5f-468b-8646-ac85e38d3013> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:7e2ed802-251e-48b6-b140-013cad070d9f> <uuid:2f1070ed-9bae-47f5-a856-7f4db788c010> ) ] .
+
+<uuid:6c6ddd1e-2780-4758-bbe7-a4c77bba6118> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8> <uuid:754fd788-08c8-45b0-a591-e608a27f0948> ) ] .
+
+<uuid:7197ee0b-aa79-40dd-a8ec-9d4413777a19> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd> <uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8> ) ] .
+
+<uuid:725ebfd6-7c75-44fa-b917-94381bddef5f> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96> <uuid:fa551002-6466-46f1-a2f3-f433334447e6> ) ] .
+
+<uuid:78d47480-6451-451e-b35c-afbc40f27f93> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2> <uuid:2f1070ed-9bae-47f5-a856-7f4db788c010> ) ] .
+
+<uuid:791da2a3-ee19-44a1-b604-5f379ab00bb1> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:2f1070ed-9bae-47f5-a856-7f4db788c010> <uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c> ) ] .
+
+<uuid:8103a475-c12f-4664-ac95-50afbd4c782d> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd> <uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a> ) ] .
+
+<uuid:8a34c9fb-e3d6-45d3-817e-93d0c58be464> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c> <uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca> ) ] .
+
+<uuid:8e931595-7a01-4678-a20e-5607229a0d01> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:9ccc8672-7244-42a9-8d65-1b40a637a603> <uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4> ) ] .
+
+<uuid:8eb102da-ae40-45c1-9a30-8ca97c69bdf6> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa> <uuid:48b7ec92-e7ff-468f-8dff-d03483468e97> ) ] .
+
+<uuid:9257083c-e11a-4914-a120-fbb11f0c10c8> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1> <uuid:2f1070ed-9bae-47f5-a856-7f4db788c010> ) ] .
+
+<uuid:929d7ecd-8ff2-4be6-af3e-929b8a3bdd52> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2> <uuid:451e256a-6127-4e18-97f5-644093e9f9df> ) ] .
+
+<uuid:99e2aa85-d004-4eed-8533-1313133f0809> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:451e256a-6127-4e18-97f5-644093e9f9df> <uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd> ) ] .
+
+<uuid:9a5a3eef-7ddb-40bf-ae2a-111b4623fb08> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96> <uuid:e0d36194-78e8-4255-b6b7-4f59b79544db> ) ] .
+
+<uuid:9e2b2cf4-db16-4c58-9cea-86b593995bdf> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e> <uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29> ) ] .
+
+<uuid:a493ef53-2a0f-42f3-9523-23dea4dc19d6> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa> <uuid:754fd788-08c8-45b0-a591-e608a27f0948> ) ] .
+
+<uuid:a51db565-6909-4151-ad98-9c7fbeb85c19> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4> <uuid:e0d36194-78e8-4255-b6b7-4f59b79544db> ) ] .
+
+<uuid:aa458878-e72e-454e-9921-bfbf14315787> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c> <uuid:5228ad62-0730-416f-89b0-5042da216efb> ) ] .
+
+<uuid:ab68b5c9-0626-4a27-b735-c591dfc47e0a> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e> <uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa> ) ] .
+
+<uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b> <uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4> ) ] .
+
+<uuid:b42f27c9-d0e6-4cfb-9ea3-7e2517426428> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e> <uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b> ) ] .
+
+<uuid:b745f3b0-caff-4c6a-8839-9c709893e1c2> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:073f2f24-c85a-455d-9807-c24f75ea50f5> <uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4> ) ] .
+
+<uuid:ba83542a-054c-4671-ad1f-412f89783e0f> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd> <uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3> ) ] .
+
+<uuid:c0a27c02-e38f-4648-b296-3ba0372f0e50> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29> <uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f> ) ] .
+
+<uuid:c795e6d9-0f44-4b1c-bc01-686d5e2acaa3> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:fa551002-6466-46f1-a2f3-f433334447e6> <uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9> ) ] .
+
+<uuid:cc9ce047-61a1-4bf9-a366-bfc5b43092c2> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e> <uuid:fa551002-6466-46f1-a2f3-f433334447e6> ) ] .
+
+<uuid:d1d9c298-e00e-47e4-94b8-d9aa5ab0b854> a topo:Edge,
+        geojson:FeatureCollection ;
+    geojson:features <uuid:030a717f-c3d7-46c9-8e04-4a90a2de6971>,
+        <uuid:05253350-3d88-4edc-b6cb-759a2234382f>,
+        <uuid:06e882da-e914-4ff8-a279-13c1b16b7646>,
+        <uuid:0795c157-5fcb-4d01-b0f0-fedf92b1d41f>,
+        <uuid:0c7efeba-1fb3-49a1-aafd-3e38affa4a9c>,
+        <uuid:0cc9dbeb-9ae4-429b-80d5-a637d54f9bc4>,
+        <uuid:17fa2c1e-5416-443b-b263-2f47cb514aa6>,
+        <uuid:1b26a418-ddc1-4e7d-8ff0-811102c413b5>,
+        <uuid:1f8b2b5d-416a-4b6b-90da-9c672bc42d2c>,
+        <uuid:21935dcb-8634-4e57-abf4-4585eba35018>,
+        <uuid:23375f61-8d9d-407c-bc86-ff0a4a1a3030>,
+        <uuid:2413de82-7661-4536-8a05-58c4fadbd5fd>,
+        <uuid:259ec3c3-5480-484c-8b6f-d081695a0a3f>,
+        <uuid:28922e7d-7683-40da-916c-241f473ee3bd>,
+        <uuid:2fe7500a-344c-43c9-8a4a-42a4dc381958>,
+        <uuid:3bc984fd-e2fa-48de-9397-635b28834926>,
+        <uuid:4a32db28-5b1a-4b4c-8fd4-e94cfca8c03a>,
+        <uuid:4bbdae51-6837-4cbb-974d-ab8987d4a018>,
+        <uuid:51c0f9c6-7c13-4460-8636-2ed5ee228a6c>,
+        <uuid:5367fe8d-79c0-4161-a4ce-3b7f42afad3e>,
+        <uuid:5698e261-6451-4ffe-90dd-05d5270c59a7>,
+        <uuid:580818ce-50f0-486c-85c9-91c35ab39509>,
+        <uuid:5f1fd4be-c4ba-4387-9d7d-6e26b8299dc9>,
+        <uuid:615aed99-8ae9-4857-931c-90bdd126e8c8>,
+        <uuid:6968cfbb-265a-48a5-8fac-91fbc7fe1a16>,
+        <uuid:6ac9e1bc-3c5f-468b-8646-ac85e38d3013>,
+        <uuid:6c6ddd1e-2780-4758-bbe7-a4c77bba6118>,
+        <uuid:7197ee0b-aa79-40dd-a8ec-9d4413777a19>,
+        <uuid:725ebfd6-7c75-44fa-b917-94381bddef5f>,
+        <uuid:78d47480-6451-451e-b35c-afbc40f27f93>,
+        <uuid:791da2a3-ee19-44a1-b604-5f379ab00bb1>,
+        <uuid:8103a475-c12f-4664-ac95-50afbd4c782d>,
+        <uuid:8a34c9fb-e3d6-45d3-817e-93d0c58be464>,
+        <uuid:8e931595-7a01-4678-a20e-5607229a0d01>,
+        <uuid:8eb102da-ae40-45c1-9a30-8ca97c69bdf6>,
+        <uuid:9257083c-e11a-4914-a120-fbb11f0c10c8>,
+        <uuid:929d7ecd-8ff2-4be6-af3e-929b8a3bdd52>,
+        <uuid:99e2aa85-d004-4eed-8533-1313133f0809>,
+        <uuid:9a5a3eef-7ddb-40bf-ae2a-111b4623fb08>,
+        <uuid:9e2b2cf4-db16-4c58-9cea-86b593995bdf>,
+        <uuid:a493ef53-2a0f-42f3-9523-23dea4dc19d6>,
+        <uuid:a51db565-6909-4151-ad98-9c7fbeb85c19>,
+        <uuid:aa458878-e72e-454e-9921-bfbf14315787>,
+        <uuid:ab68b5c9-0626-4a27-b735-c591dfc47e0a>,
+        <uuid:b179ed08-b3a8-492c-8642-b76fb67bdd64>,
+        <uuid:b42f27c9-d0e6-4cfb-9ea3-7e2517426428>,
+        <uuid:b745f3b0-caff-4c6a-8839-9c709893e1c2>,
+        <uuid:ba83542a-054c-4671-ad1f-412f89783e0f>,
+        <uuid:c0a27c02-e38f-4648-b296-3ba0372f0e50>,
+        <uuid:c795e6d9-0f44-4b1c-bc01-686d5e2acaa3>,
+        <uuid:cc9ce047-61a1-4bf9-a366-bfc5b43092c2>,
+        <uuid:d27bfb1b-ffd5-4fb3-9594-6f04ad66aa81>,
+        <uuid:d2e6c025-8dc2-45b0-896a-8cfbb94fd4e4>,
+        <uuid:d302b67e-99d1-4033-84c8-bec14b1a3a29>,
+        <uuid:d6b33a71-4823-4c26-8ca1-ed929f278377>,
+        <uuid:dbed95c2-94f5-4c01-ac9e-a71441efd65a>,
+        <uuid:e3c87c26-8a6a-4889-923c-d87562d2dde9>,
+        <uuid:e47e1b0a-ecee-4d50-987e-d10ad397f597>,
+        <uuid:e4a49176-d47d-41f7-85c1-7d91bb836286>,
+        <uuid:e8b25b9d-346c-4cdf-985b-c742fd7c3a34>,
+        <uuid:eb0aaf70-bb65-4855-a35b-860b1c23c53f>,
+        <uuid:eb237aee-db71-4faf-8bb2-aeefc8515821>,
+        <uuid:f0aa8d02-1aa3-4f44-be28-d135c94de497>,
+        <uuid:f60637f4-cdf9-4bf7-b969-72eabb91eb79>,
+        <uuid:f83f26bd-63dc-4a5e-959c-e90a7640d8a2> .
+
+<uuid:d27bfb1b-ffd5-4fb3-9594-6f04ad66aa81> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9> <uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1> ) ] .
+
+<uuid:d2e6c025-8dc2-45b0-896a-8cfbb94fd4e4> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:9ccc8672-7244-42a9-8d65-1b40a637a603> <uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d> ) ] .
+
+<uuid:d302b67e-99d1-4033-84c8-bec14b1a3a29> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198> <uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca> ) ] .
+
+<uuid:d6b33a71-4823-4c26-8ca1-ed929f278377> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f> <uuid:7e2ed802-251e-48b6-b140-013cad070d9f> ) ] .
+
+<uuid:dbed95c2-94f5-4c01-ac9e-a71441efd65a> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:9ccc8672-7244-42a9-8d65-1b40a637a603> <uuid:9d786d21-169c-459e-a354-4eeee65bf8a3> ) ] .
+
+<uuid:e3c87c26-8a6a-4889-923c-d87562d2dde9> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:9d786d21-169c-459e-a354-4eeee65bf8a3> <uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e> ) ] .
+
+<uuid:e47e1b0a-ecee-4d50-987e-d10ad397f597> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198> <uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd> ) ] .
+
+<uuid:e4a49176-d47d-41f7-85c1-7d91bb836286> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d> <uuid:073f2f24-c85a-455d-9807-c24f75ea50f5> ) ] .
+
+<uuid:e8b25b9d-346c-4cdf-985b-c742fd7c3a34> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4> <uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c> ) ] .
+
+<uuid:eb0aaf70-bb65-4855-a35b-860b1c23c53f> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:9d786d21-169c-459e-a354-4eeee65bf8a3> <uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b> ) ] .
+
+<uuid:eb237aee-db71-4faf-8bb2-aeefc8515821> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4> <uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198> ) ] .
+
+<uuid:f0aa8d02-1aa3-4f44-be28-d135c94de497> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9> <uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d> ) ] .
+
+<uuid:f60637f4-cdf9-4bf7-b969-72eabb91eb79> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:073f2f24-c85a-455d-9807-c24f75ea50f5> <uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2> ) ] .
+
+<uuid:f83f26bd-63dc-4a5e-959c-e90a7640d8a2> a geojson:Feature ;
+    geojson:topology [ a topo:Edge ;
+            topo:relatedFeatures ( <uuid:48b7ec92-e7ff-468f-8dff-d03483468e97> <uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96> ) ] .
+
+<uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061664e+05 6.471656e+06 2e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
     geojson:geometry [ a geojson:Point ;
             geojson:coordinates ( 1.160078e+02 -3.188704e+01 2e+01 ) ] .
 
-<uuid:131e536a-07b9-4e2d-9a13-d00ef033a76a> a surv:BoundaryMark,
+<uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061544e+05 6.471652e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
+            geojson:coordinates ( 4.061464e+05 6.471646e+06 2e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
     geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.3e+01 ) ] .
+            geojson:coordinates ( 1.160076e+02 -3.188712e+01 2e+01 ) ] .
 
-<uuid:21e47ec9-7e75-4fbd-97ff-5f685f12b340> a surv:BoundaryMark,
+<uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061564e+05 6.471656e+06 2e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
+            geojson:coordinates ( 4.061484e+05 6.471648e+06 2.6e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
     geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188703e+01 2e+01 ) ] .
+            geojson:coordinates ( 1.160076e+02 -3.188711e+01 2.6e+01 ) ] .
 
-<uuid:2415b0ae-7d30-43c2-8757-82a577c694b5> a surv:BoundaryMark,
+<uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061584e+05 6.471646e+06 2e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
+            geojson:coordinates ( 4.061464e+05 6.471646e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
     geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188713e+01 2e+01 ) ] .
+            geojson:coordinates ( 1.160076e+02 -3.188712e+01 2.3e+01 ) ] .
 
-<uuid:28af1f47-ab41-493c-af53-3a490074fa52> a surv:BoundaryMark,
+<uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061564e+05 6.471652e+06 2e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2e+01 ) ] .
-
-<uuid:29973593-27be-4cfc-a5f3-0a5ccb1a02ca> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061584e+05 6.471648e+06 2.6e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188711e+01 2.6e+01 ) ] .
-
-<uuid:56d1ab96-3795-4e26-aa31-858f2698d768> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061484e+05 6.471656e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160076e+02 -3.188703e+01 2.3e+01 ) ] .
-
-<uuid:74369382-b3b3-46b5-adb7-18fac4de68e0> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061584e+05 6.471646e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188713e+01 2.3e+01 ) ] .
-
-<uuid:7fb371af-84b1-49fe-8c67-ebc329eb404c> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061544e+05 6.471648e+06 2.6e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188711e+01 2.6e+01 ) ] .
-
-<uuid:8a87f989-d8d9-4aa0-b1f4-20b3e36c9ab6> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061544e+05 6.471646e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188712e+01 2.3e+01 ) ] .
-
-<uuid:aacbcce8-d32f-4460-a070-775ae90e5dd3> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061564e+05 6.471656e+06 2.6e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188703e+01 2.6e+01 ) ] .
-
-<uuid:dfadb111-777d-406e-b511-1f0dc19409f0> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061564e+05 6.471652e+06 2.6e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.6e+01 ) ] .
-
-<uuid:e6dee9e7-b8dc-4f94-9667-269e8ab9c70d> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061544e+05 6.471646e+06 2e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188712e+01 2e+01 ) ] .
-
-<uuid:ee6a51d1-3a3f-4385-b96f-df98f05f7464> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061584e+05 6.471652e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
-    geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.3e+01 ) ] .
-
-<uuid:f8265e86-f991-4a36-befc-fef9f603e7dd> a surv:BoundaryMark,
-        geojson:Feature ;
-    dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061644e+05 6.471656e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
+            geojson:coordinates ( 4.061664e+05 6.471656e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
     geojson:geometry [ a geojson:Point ;
             geojson:coordinates ( 1.160078e+02 -3.188704e+01 2.3e+01 ) ] .
 
-<uuid:10199cf3-665f-45a3-96d3-47043d749991> a surv:BoundaryMark,
+<uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061584e+05 6.471648e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
+            geojson:coordinates ( 4.061544e+05 6.471652e+06 2e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
     geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188711e+01 2.3e+01 ) ] .
+            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2e+01 ) ] .
 
-<uuid:31661fba-6d05-4804-aa30-5d3bbc5043d9> a surv:BoundaryMark,
+<uuid:48b7ec92-e7ff-468f-8dff-d03483468e97> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061544e+05 6.471648e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
+            geojson:coordinates ( 4.061484e+05 6.471656e+06 2.6e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
     geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 1.160077e+02 -3.188711e+01 2.3e+01 ) ] .
+            geojson:coordinates ( 1.160076e+02 -3.188703e+01 2.6e+01 ) ] .
 
-<uuid:5196ee30-f085-48d3-b7a2-5b2bdff1506e> a surv:BoundaryMark,
+<uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
-            geojson:coordinates ( 4.061564e+05 6.471652e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
+            geojson:coordinates ( 4.061584e+05 6.471652e+06 2e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2e+01 ) ] .
+
+<uuid:5228ad62-0730-416f-89b0-5042da216efb> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061584e+05 6.471652e+06 2.6e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.6e+01 ) ] .
+
+<uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061464e+05 6.471656e+06 2e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160076e+02 -3.188703e+01 2e+01 ) ] .
+
+<uuid:754fd788-08c8-45b0-a591-e608a27f0948> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061484e+05 6.471648e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160076e+02 -3.188711e+01 2.3e+01 ) ] .
+
+<uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061544e+05 6.471652e+06 2.6e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.6e+01 ) ] .
+
+<uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061644e+05 6.471648e+06 2.6e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160078e+02 -3.188711e+01 2.6e+01 ) ] .
+
+<uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061664e+05 6.471646e+06 2e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160078e+02 -3.188713e+01 2e+01 ) ] .
+
+<uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061664e+05 6.471646e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160078e+02 -3.188713e+01 2.3e+01 ) ] .
+
+<uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061464e+05 6.471656e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160076e+02 -3.188703e+01 2.3e+01 ) ] .
+
+<uuid:fa551002-6466-46f1-a2f3-f433334447e6> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061644e+05 6.471656e+06 2.6e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160078e+02 -3.188704e+01 2.6e+01 ) ] .
+
+<uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061644e+05 6.471648e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160078e+02 -3.188711e+01 2.3e+01 ) ] .
+
+<uuid:073f2f24-c85a-455d-9807-c24f75ea50f5> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061544e+05 6.471652e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
     geojson:geometry [ a geojson:Point ;
             geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.3e+01 ) ] .
 
-<uuid:7b5e4c77-91df-4fb9-b77f-5295f2e195cf> a surv:BoundaryMark,
+<uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061584e+05 6.471646e+06 2e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188713e+01 2e+01 ) ] .
+
+<uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061644e+05 6.471656e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160078e+02 -3.188704e+01 2.3e+01 ) ] .
+
+<uuid:451e256a-6127-4e18-97f5-644093e9f9df> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061544e+05 6.471646e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188712e+01 2.3e+01 ) ] .
+
+<uuid:7e2ed802-251e-48b6-b140-013cad070d9f> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061584e+05 6.471646e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188713e+01 2.3e+01 ) ] .
+
+<uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061544e+05 6.471648e+06 2.6e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188711e+01 2.6e+01 ) ] .
+
+<uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061484e+05 6.471656e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160076e+02 -3.188703e+01 2.3e+01 ) ] .
+
+<uuid:9ccc8672-7244-42a9-8d65-1b40a637a603> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061564e+05 6.471652e+06 2e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2e+01 ) ] .
+
+<uuid:9d786d21-169c-459e-a354-4eeee65bf8a3> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061564e+05 6.471656e+06 2e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188703e+01 2e+01 ) ] .
+
+<uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061584e+05 6.471648e+06 2.6e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188711e+01 2.6e+01 ) ] .
+
+<uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061544e+05 6.471646e+06 2e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188712e+01 2e+01 ) ] .
+
+<uuid:e0d36194-78e8-4255-b6b7-4f59b79544db> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061564e+05 6.471652e+06 2.6e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.6e+01 ) ] .
+
+<uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061564e+05 6.471656e+06 2.6e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188703e+01 2.6e+01 ) ] .
+
+<uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061584e+05 6.471652e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.3e+01 ) ] .
+
+<uuid:2f1070ed-9bae-47f5-a856-7f4db788c010> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061584e+05 6.471648e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188711e+01 2.3e+01 ) ] .
+
+<uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b> a <file:///github/workspace/BoundaryMark>,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061564e+05 6.471656e+06 2.3e+01 ) ] ;
-    dct:time "2026-05-21T05:15:56.511820+00:00" ;
-    commonpatterns:qualityMeasure 1e-01 ;
-    surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
-            surv:form wa-monument-form:cadastral-point-unmarked ;
-            surv:state wa-monument-state:unmarked ] ;
-    surv:purpose wa-surveypoint-purpose:boundary ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
     geojson:geometry [ a geojson:Point ;
             geojson:coordinates ( 1.160077e+02 -3.188703e+01 2.3e+01 ) ] .
+
+<uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061544e+05 6.471648e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188711e+01 2.3e+01 ) ] .
+
+<uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4> a <file:///github/workspace/BoundaryMark>,
+        geojson:Feature ;
+    dct:spatial [ a geojson:Point ;
+            geojson:coordinates ( 4.061564e+05 6.471652e+06 2.3e+01 ) ] ;
+    dct:time "2026-05-27T05:58:56.914093+00:00" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.160077e+02 -3.188707e+01 2.3e+01 ) ] .
+
+[] a geojson:FeatureCollection ;
+    time: [ ] ;
+    topo:edges ( <uuid:d1d9c298-e00e-47e4-94b8-d9aa5ab0b854> ) ;
+    topo:faces ( [ a geojson:FeatureCollection ;
+                geojson:features [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ] ] ) ;
+    topo:points ( [ a geojson:FeatureCollection ;
+                geojson:collectionFeatureType "CadastralMark" ;
+                geojson:features <uuid:016ea44a-df91-462a-9a7e-5b8e2e950fd8>,
+                    <uuid:06bd85c9-c7ae-42b1-9cde-efd91489c35a>,
+                    <uuid:073f2f24-c85a-455d-9807-c24f75ea50f5>,
+                    <uuid:0efa4062-5cc0-42d0-a69c-6472b91bffaa>,
+                    <uuid:1ae0c24d-f346-4314-9bf2-8c74d0007198>,
+                    <uuid:1bb5fd50-9be1-4456-8ce6-ddc6f8d0a1cd>,
+                    <uuid:2f1070ed-9bae-47f5-a856-7f4db788c010>,
+                    <uuid:2f487e99-6ee5-422b-8f39-81f1365a4b29>,
+                    <uuid:318227cb-4e3d-4ce1-b480-9cf4b709e28d>,
+                    <uuid:32acfb36-f3d3-47fe-9400-eec9b06d781e>,
+                    <uuid:3e40bf74-9619-426b-8b5e-58ebe480a92b>,
+                    <uuid:451e256a-6127-4e18-97f5-644093e9f9df>,
+                    <uuid:48b7ec92-e7ff-468f-8dff-d03483468e97>,
+                    <uuid:4a09ba87-445c-4146-b687-97ab6e9f4bca>,
+                    <uuid:5228ad62-0730-416f-89b0-5042da216efb>,
+                    <uuid:52e158fb-6ec0-489c-8592-db1d6e180c8e>,
+                    <uuid:754fd788-08c8-45b0-a591-e608a27f0948>,
+                    <uuid:77b273d5-f113-41f4-867a-1d3f93c67ef6>,
+                    <uuid:7e2ed802-251e-48b6-b140-013cad070d9f>,
+                    <uuid:83d45b42-d9bb-48cb-9777-fbb2525083f9>,
+                    <uuid:987e2a90-2ce3-4836-9a36-04d08031c7bd>,
+                    <uuid:9943c35d-49e3-47b5-b8b5-020d2cc70b0e>,
+                    <uuid:9c9dcda2-4713-4ea4-9a1c-8cc1bb05f7c8>,
+                    <uuid:9ccc8672-7244-42a9-8d65-1b40a637a603>,
+                    <uuid:9d786d21-169c-459e-a354-4eeee65bf8a3>,
+                    <uuid:b25fa8ee-bbe6-4fad-a662-4fea8a7b5e7f>,
+                    <uuid:b6352026-0d61-48d5-ab7d-e62eb34139e2>,
+                    <uuid:bce88da3-5cda-4af9-a494-4d4b319ed2c1>,
+                    <uuid:c92366e3-4649-413d-a9f1-04ccfc2377d4>,
+                    <uuid:d75d9704-aeb3-4dc7-b2f0-a3fb62f44dd4>,
+                    <uuid:d7c2a2a6-8580-4bcf-bfeb-b5c08f7d3bc3>,
+                    <uuid:e0d36194-78e8-4255-b6b7-4f59b79544db>,
+                    <uuid:e7478b99-0d1e-4a1f-b958-c6a4b1719e96>,
+                    <uuid:f84d09ba-e7af-48a7-bd47-30ca9265214c>,
+                    <uuid:fa551002-6466-46f1-a2f3-f433334447e6>,
+                    <uuid:fa94e00a-24f0-4133-bd78-8a6d28be410d> ] ) ;
+    topo:rings ( [ a geojson:FeatureCollection ;
+                geojson:features [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ] ] ) ;
+    topo:shells ( [ a geojson:FeatureCollection ;
+                geojson:features [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ] ] ),
+        ( [ a geojson:FeatureCollection ;
+                geojson:features [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ],
+                    [ a geojson:Feature ] ] ) .
 
 
 ```
@@ -23073,8 +20998,8 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6","type": "within",
+
                 "targetRole": "containingPrimaryParcel",
                 "targetFeatureType": "PrimaryParcel"
               }
@@ -23102,10 +21027,10 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -23131,10 +21056,10 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -23160,10 +21085,10 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -23189,10 +21114,10 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -28677,8 +26602,8 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             ],
             "relationships": [
               {
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
                 "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
                 "targetRole": "containingPrimaryParcel",
                 "targetFeatureType": "PrimaryParcel"
               }
@@ -28706,10 +26631,10 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -28735,10 +26660,10 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -28764,10 +26689,10 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -28793,10 +26718,10 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -28832,8 +26757,11 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owlTime: <http://www.w3.org/2006/time#> .
 @prefix parcel: <https://linked.data.gov.au/def/csdm/parcels/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
@@ -28962,7 +26890,9 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 <uuid:1c7bd760-43d5-46ad-9a6b-3b8f3e558b11> a geojson:Feature ;
     rdfs:label "Upper West" ;
     geojson:topology [ a topo:Solid ;
-            topo:relatedFeatures ( [ dct:type "within" ] ) ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+                        prof:hasRole <file:///github/workspace/containingPrimaryParcel> ;
+                        oa:hasTarget <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> ] ) ;
             topo:shells ( [ topo:orientation "+" ;
                         topo:ref "uuid:89957e86-89d5-459d-a170-0c7c916f2382" ] ) ] .
 
@@ -29142,19 +27072,6 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     geojson:topology [ a topo:Edge ;
             topo:relatedFeatures ( <uuid:da0715e3-0429-44a0-896e-9afef8b3c5a1> <uuid:359c2049-41e8-4f00-ab35-458acc23f4bd> ) ] .
 
-<uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> a geojson:Feature ;
-    parcel:appellation [ rdfs:label "Lot 1" ;
-            dct:hasPart [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType <https://linked.data.gov.au/def/csdm/names/localPartType/ParcelType> ],
-                [ rdfs:label "1" ;
-                    commonpatterns:namePartType <https://linked.data.gov.au/def/csdm/names/localPartType/ParcelIdentifier> ] ] ;
-    parcel:purpose wa-parcel-purpose:lot ;
-    parcel:state wa-parcel-state:created ;
-    parcel:surfaceArea 2829 ;
-    parcel:type wa-parcel-type:freehold ;
-    geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <uuid:13b59b93-6f0f-4773-a8b7-88401c9c1fae> <uuid:ff22d8d8-5d2e-4fdd-97ce-d80e2b48b5de> <uuid:5a34b8a2-dac0-4ad4-8a59-cbee38b407c8> <uuid:2fbdbc42-6443-4bc2-bd42-0c77a3e9c9fc> <uuid:54943d43-ea1a-4a8c-8cbb-c6d89187e842> <uuid:cf0f9b8d-c8d2-4691-8c41-086e18375574> <uuid:ed1e393e-d7f5-4a85-93b1-f08812b85014> <uuid:d2ebb167-17a2-4bd0-8411-97f83c92d9e6> <uuid:d75b510f-9b88-4a82-bac4-4de995f4a1b9> <uuid:7914b52a-e13d-4d79-9f76-43e040fa939f> <uuid:b4b815fe-eb25-401b-b65f-f7a020da8944> <uuid:41e63da1-bee7-48da-be90-527c99fa38d8> <uuid:e9b94664-2b7a-4e97-a565-4bcce3896392> <uuid:1ce937ba-14a1-48dc-b65c-3b50e98ceb37> <uuid:6e614af5-e74d-4c6d-b841-85ac4dd93250> <uuid:379f8fe1-7311-4db2-a5b3-8b7cf5dd0882> <uuid:780d3b13-0263-4449-ad1e-1627fd0042aa> <uuid:fd23e6be-fb9a-44fd-8ad1-55df298d506a> <uuid:f7fb3296-07ab-42f6-937f-0ebbe0ee98ea> ) ) ] .
-
 <uuid:4d4b7e04-ac90-4447-9d86-28db1ad4ac41> a geojson:Feature ;
     geojson:topology [ a topo:Ring ;
             topo:directedReferences ( [ topo:orientation "+" ;
@@ -29212,7 +27129,8 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 <uuid:59df3615-f39c-4cbb-a911-5f7d80b9034b> a geojson:Feature ;
     rdfs:label "Upper East" ;
     geojson:topology [ a topo:Solid ;
-            topo:relatedFeatures ( [ dct:type "within" ] ) ;
+            topo:relatedFeatures ( [ dct:type "within" ;
+                        oa:hasTarget <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> ] ) ;
             topo:shells ( [ topo:orientation "+" ;
                         topo:ref "uuid:26924195-da93-43af-946d-237910710449" ] ) ] .
 
@@ -29584,7 +27502,9 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 <uuid:950966fc-0c0e-4546-b5c6-41f73fa57be1> a geojson:Feature ;
     rdfs:label "Lower West" ;
     geojson:topology [ a topo:Solid ;
-            topo:relatedFeatures ( [ dct:type "within" ] ) ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+                        prof:hasRole <file:///github/workspace/containingPrimaryParcel> ;
+                        oa:hasTarget <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> ] ) ;
             topo:shells ( [ topo:orientation "+" ;
                         topo:ref "uuid:ddbbed6c-5a7d-4405-9d41-59677b9484ee" ] ) ] .
 
@@ -29792,7 +27712,9 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 <uuid:b9b03d9f-fe75-4ec5-8696-294aefafe145> a geojson:Feature ;
     rdfs:label "Stairwell" ;
     geojson:topology [ a topo:Solid ;
-            topo:relatedFeatures ( [ dct:type "within" ] ) ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+                        prof:hasRole <file:///github/workspace/containingPrimaryParcel> ;
+                        oa:hasTarget <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> ] ) ;
             topo:shells ( [ topo:orientation "+" ;
                         topo:ref "uuid:1e877d2e-b9b0-4152-b693-fc4d76843142" ] ) ] .
 
@@ -29925,7 +27847,9 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 <uuid:dc91b809-03bf-49f2-849f-1e8071fad1d9> a geojson:Feature ;
     rdfs:label "Lower East" ;
     geojson:topology [ a topo:Solid ;
-            topo:relatedFeatures ( [ dct:type "within" ] ) ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+                        prof:hasRole <file:///github/workspace/containingPrimaryParcel> ;
+                        oa:hasTarget <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> ] ) ;
             topo:shells ( [ topo:orientation "+" ;
                         topo:ref "uuid:9a31a4bf-8d83-4876-8bc3-df640512418a" ] ) ] .
 
@@ -30798,6 +28722,19 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     surv:purpose wa-surveypoint-purpose:boundary ;
     geojson:geometry [ a geojson:Point ;
             geojson:coordinates ( 1.160077e+02 -3.188711e+01 2.3e+01 ) ] .
+
+<uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> a geojson:Feature ;
+    parcel:appellation [ rdfs:label "Lot 1" ;
+            dct:hasPart [ rdfs:label "1" ;
+                    commonpatterns:namePartType <https://linked.data.gov.au/def/csdm/names/localPartType/ParcelIdentifier> ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType <https://linked.data.gov.au/def/csdm/names/localPartType/ParcelType> ] ] ;
+    parcel:purpose wa-parcel-purpose:lot ;
+    parcel:state wa-parcel-state:created ;
+    parcel:surfaceArea 2829 ;
+    parcel:type wa-parcel-type:freehold ;
+    geojson:topology [ a geojson:Polygon ;
+            topo:relatedFeatures ( ( <uuid:13b59b93-6f0f-4773-a8b7-88401c9c1fae> <uuid:ff22d8d8-5d2e-4fdd-97ce-d80e2b48b5de> <uuid:5a34b8a2-dac0-4ad4-8a59-cbee38b407c8> <uuid:2fbdbc42-6443-4bc2-bd42-0c77a3e9c9fc> <uuid:54943d43-ea1a-4a8c-8cbb-c6d89187e842> <uuid:cf0f9b8d-c8d2-4691-8c41-086e18375574> <uuid:ed1e393e-d7f5-4a85-93b1-f08812b85014> <uuid:d2ebb167-17a2-4bd0-8411-97f83c92d9e6> <uuid:d75b510f-9b88-4a82-bac4-4de995f4a1b9> <uuid:7914b52a-e13d-4d79-9f76-43e040fa939f> <uuid:b4b815fe-eb25-401b-b65f-f7a020da8944> <uuid:41e63da1-bee7-48da-be90-527c99fa38d8> <uuid:e9b94664-2b7a-4e97-a565-4bcce3896392> <uuid:1ce937ba-14a1-48dc-b65c-3b50e98ceb37> <uuid:6e614af5-e74d-4c6d-b841-85ac4dd93250> <uuid:379f8fe1-7311-4db2-a5b3-8b7cf5dd0882> <uuid:780d3b13-0263-4449-ad1e-1627fd0042aa> <uuid:fd23e6be-fb9a-44fd-8ad1-55df298d506a> <uuid:f7fb3296-07ab-42f6-937f-0ebbe0ee98ea> ) ) ] .
 
 <uuid:7970f2e9-9893-4e54-b249-187db718bd31> a surv:BoundaryMark,
         geojson:Feature ;
@@ -43690,1822 +41627,1812 @@ All supporting points, edges, and faces are included to make the example self-co
   ],
   "edges": [
     {
-      "type": "FeatureCollection",
-      "features": [
-        {
-          "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
-              "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
-              "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
-              "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
-              "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
-              "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:8582d9c2-6053-495a-8413-f5493691c0de",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
-              "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
-              "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
-              "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
-              "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
-              "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
-              "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
-              "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
-              "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
-              "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
-              "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:7da1c2fe-f798-43cc-af44-ac63f968139c",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
-              "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
-              "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
-              "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
-              "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:745aa367-94b6-4949-a856-5271ec6672e9",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
-              "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:f921656a-58e3-4375-bdff-ac8019f524cf",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
-              "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
-              "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
-              "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
-              "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
-              "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:fb03276b-4250-4d52-81e1-035a0bd92895",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
-              "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
-              "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:af347f25-a547-477c-b246-cb810756d4dc",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
-              "uuid:caa6045e-4189-4571-8914-1189e51ac71e"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
-              "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
-              "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
-              "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:242a8400-a076-4817-86c6-acd56087cec6",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
-              "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:4ad210b7-5de5-4732-af7c-978de28f988b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
-              "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
-              "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:4406e3f5-89dc-463b-84e4-487490f71f1a",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
-              "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:511c6e7d-728b-4f1f-9763-9461eb628586",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
-              "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
-              "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:06babc8d-f0d6-43eb-bfad-931055bae084",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
-              "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:fc877bbe-72a8-4e59-b959-010e6660984a",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
-              "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:aafd209b-cd13-401a-83f5-26751a02cffe",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
-              "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
-              "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:9238cbda-d019-4b57-8319-0cc355656802",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
-              "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:91cdc345-f745-4643-bc88-a24f8e2216b0",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
-              "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
-              "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
-              "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:61f99921-a94d-4e0d-8353-f027d76227c5",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
-              "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:474fef44-eb6e-4e19-a871-433f9bac5650",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
-              "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
-              "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
-              "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
-              "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:71af0dde-7fc9-4290-9624-119e91f422ea",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
-              "uuid:8e503e04-ad51-423b-8102-708a845189b6"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:ad13a84c-df97-4b75-9dc1-1ce452249964",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:8e503e04-ad51-423b-8102-708a845189b6",
-              "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:c2a00070-f12b-42f9-b78c-b33daa500873",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
-              "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:13dd8184-f73e-4d9f-9977-3e573274fccc",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:8e503e04-ad51-423b-8102-708a845189b6",
-              "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
-              "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:ed666061-98c5-439d-ab0d-5a792437a873",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
-              "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:5a36c75b-053b-4d7b-b512-6777786d6180",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
-              "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
-              "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
-              "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
-              "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
-              "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:a604828d-a36b-4fac-ba6f-6160ade95301",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
-              "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
-              "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:38499704-81f7-4d47-965f-435e0b7b0850",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
-              "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:b6e30631-9768-4020-8947-c32137328216",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
-              "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
-              "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        }
-      ]
+      "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
+          "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
+          "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
+          "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
+          "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
+          "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:8582d9c2-6053-495a-8413-f5493691c0de",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
+          "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
+          "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
+          "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
+          "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
+          "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
+          "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
+          "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
+          "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
+          "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
+          "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:7da1c2fe-f798-43cc-af44-ac63f968139c",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
+          "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
+          "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
+          "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
+          "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:745aa367-94b6-4949-a856-5271ec6672e9",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
+          "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:f921656a-58e3-4375-bdff-ac8019f524cf",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
+          "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
+          "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
+          "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
+          "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
+          "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:fb03276b-4250-4d52-81e1-035a0bd92895",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
+          "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
+          "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:af347f25-a547-477c-b246-cb810756d4dc",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
+          "uuid:caa6045e-4189-4571-8914-1189e51ac71e"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
+          "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
+          "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
+          "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:242a8400-a076-4817-86c6-acd56087cec6",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
+          "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:4ad210b7-5de5-4732-af7c-978de28f988b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
+          "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
+          "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:4406e3f5-89dc-463b-84e4-487490f71f1a",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
+          "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:511c6e7d-728b-4f1f-9763-9461eb628586",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
+          "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
+          "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:06babc8d-f0d6-43eb-bfad-931055bae084",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
+          "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:fc877bbe-72a8-4e59-b959-010e6660984a",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
+          "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:aafd209b-cd13-401a-83f5-26751a02cffe",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
+          "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
+          "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:9238cbda-d019-4b57-8319-0cc355656802",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
+          "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:91cdc345-f745-4643-bc88-a24f8e2216b0",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
+          "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
+          "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
+          "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:61f99921-a94d-4e0d-8353-f027d76227c5",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
+          "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:474fef44-eb6e-4e19-a871-433f9bac5650",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
+          "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
+          "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
+          "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
+          "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:71af0dde-7fc9-4290-9624-119e91f422ea",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
+          "uuid:8e503e04-ad51-423b-8102-708a845189b6"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:ad13a84c-df97-4b75-9dc1-1ce452249964",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:8e503e04-ad51-423b-8102-708a845189b6",
+          "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:c2a00070-f12b-42f9-b78c-b33daa500873",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
+          "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:13dd8184-f73e-4d9f-9977-3e573274fccc",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:8e503e04-ad51-423b-8102-708a845189b6",
+          "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
+          "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:ed666061-98c5-439d-ab0d-5a792437a873",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
+          "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:5a36c75b-053b-4d7b-b512-6777786d6180",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
+          "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
+          "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
+          "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
+          "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
+          "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:a604828d-a36b-4fac-ba6f-6160ade95301",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
+          "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
+          "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:38499704-81f7-4d47-965f-435e0b7b0850",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
+          "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:b6e30631-9768-4020-8947-c32137328216",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
+          "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
+          "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
     }
   ],
-  "faces": [{
-    "type": "FeatureCollection",
-    "features": [
-      [
-        {
-          "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:d26ea551-e131-42f2-a31c-7f9008ece237",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              1.0,
-              0.0,
-              -0.0
-            ],
-            "area": 24.0
+  "faces": [
+    {
+      "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:d26ea551-e131-42f2-a31c-7f9008ece237",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:0315dfe1-1197-4a4b-8c86-f3966f8d8cd8",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              -1.0,
-              3.007964248051e-16
-            ],
-            "area": 18.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:0315dfe1-1197-4a4b-8c86-f3966f8d8cd8",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:9d2f2bc0-c1fd-424b-b3e2-3f306c26f7a4",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              1.0,
-              0.0
-            ],
-            "area": 24.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          3.007964248051e-16
+        ],
+        "area": 18.0
+      }
+    },
+    {
+      "id": "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:9d2f2bc0-c1fd-424b-b3e2-3f306c26f7a4",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:e21de394-483b-4817-a25c-8a564554baa0",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              0.0,
-              1.0
-            ],
-            "area": 56.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:e21de394-483b-4817-a25c-8a564554baa0",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:4979dfe4-7908-4086-b2e2-008efab16103",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -1.0,
-              -0.0,
-              -0.0
-            ],
-            "area": 12.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 56.0
+      }
+    },
+    {
+      "id": "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:4979dfe4-7908-4086-b2e2-008efab16103",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:2a53b88c-67cc-49e5-a186-df4d49283966",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              -1.0,
-              0.0
-            ],
-            "area": 6.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:2a53b88c-67cc-49e5-a186-df4d49283966",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:2387ae98-9236-42fe-9414-c45b99954c41",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:b2f47b75-8f72-4afe-a3e0-d669fe55949c",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              0.0,
-              -1.0
-            ],
-            "area": 56.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 6.0
+      }
+    },
+    {
+      "id": "uuid:2387ae98-9236-42fe-9414-c45b99954c41",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:b2f47b75-8f72-4afe-a3e0-d669fe55949c",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:5bb3773a-7cc8-433c-bac3-18552cca99e2",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -1.0,
-              -0.0,
-              -0.0
-            ],
-            "area": 12.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "area": 56.0
+      }
+    },
+    {
+      "id": "uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:5bb3773a-7cc8-433c-bac3-18552cca99e2",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:c55c88db-d187-4d7e-9aaa-b9d3dce52663",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:3b8f33e6-00d2-437e-95c6-cd3dd88b49e9",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              1.0,
-              0.0
-            ],
-            "area": 24.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:c55c88db-d187-4d7e-9aaa-b9d3dce52663",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:3b8f33e6-00d2-437e-95c6-cd3dd88b49e9",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:dbd99467-ea83-4dff-b03f-eef2aad2687c",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:2eac211d-adf0-44f6-b2ba-e827c1d6471d",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -1.0,
-              -0.0,
-              -3.007964248051e-16
-            ],
-            "area": 24.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:dbd99467-ea83-4dff-b03f-eef2aad2687c",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:2eac211d-adf0-44f6-b2ba-e827c1d6471d",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:0e55e87d-8475-4c92-89e7-d62f97ce9ec2",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:e400ddf6-74e1-4b38-962d-4e8451cb4c44",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              -1.0,
-              0.0
-            ],
-            "area": 18.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          -3.007964248051e-16
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:0e55e87d-8475-4c92-89e7-d62f97ce9ec2",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:e400ddf6-74e1-4b38-962d-4e8451cb4c44",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:6a5ff199-56a7-4e65-94b5-bfdf2ae3449d",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:5dc4a183-3c29-4c3b-8a87-624b171b3a1a",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              0.0,
-              1.0
-            ],
-            "area": 56.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 18.0
+      }
+    },
+    {
+      "id": "uuid:6a5ff199-56a7-4e65-94b5-bfdf2ae3449d",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:5dc4a183-3c29-4c3b-8a87-624b171b3a1a",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:e499fea3-19f7-4863-8a58-751caff7d884",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:a5d3483c-2154-47fd-b250-908a9005bf66",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              -1.0,
-              0.0
-            ],
-            "area": 6.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 56.0
+      }
+    },
+    {
+      "id": "uuid:e499fea3-19f7-4863-8a58-751caff7d884",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:a5d3483c-2154-47fd-b250-908a9005bf66",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:9e4c0c0e-6acf-401b-b35e-0e917ce3a5fc",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:29359b59-ea6c-4b6c-b73a-1e2afa00aa30",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              0.0,
-              -1.0
-            ],
-            "area": 56.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 6.0
+      }
+    },
+    {
+      "id": "uuid:9e4c0c0e-6acf-401b-b35e-0e917ce3a5fc",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:29359b59-ea6c-4b6c-b73a-1e2afa00aa30",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:3f5c452f-9815-4b21-9b2d-0127ae80c385",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:ba076e4e-ab93-472b-a529-ffbe2958262f",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              1.0,
-              0.0,
-              -0.0
-            ],
-            "area": 12.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "area": 56.0
+      }
+    },
+    {
+      "id": "uuid:3f5c452f-9815-4b21-9b2d-0127ae80c385",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:ba076e4e-ab93-472b-a529-ffbe2958262f",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:66a430c0-123f-42df-9d11-64347362bcb3",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:faed8efd-3a5c-43f9-9deb-25d4587d9226",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              -1.0,
-              0.0
-            ],
-            "area": 24.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:66a430c0-123f-42df-9d11-64347362bcb3",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:faed8efd-3a5c-43f9-9deb-25d4587d9226",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:31d8f2b5-cc74-4f72-b230-d27dad0fd589",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:b97ca113-1b38-4509-95c5-a495f6ac6cd4",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              1.0,
-              0.0,
-              -0.0
-            ],
-            "area": 30.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:31d8f2b5-cc74-4f72-b230-d27dad0fd589",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:b97ca113-1b38-4509-95c5-a495f6ac6cd4",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:65959e29-11cb-4568-904d-61c4a7c17b98",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:5dc04bbd-024e-42a4-a230-19732791fa9b",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              1.0,
-              0.0
-            ],
-            "area": 30.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "area": 30.0
+      }
+    },
+    {
+      "id": "uuid:65959e29-11cb-4568-904d-61c4a7c17b98",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:5dc04bbd-024e-42a4-a230-19732791fa9b",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:e2efe498-c6d5-4f9c-ac07-4c1c9e406675",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:835bb2d1-a09e-4862-9ea9-859ef35b5dfa",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              0.0,
-              1.0
-            ],
-            "area": 32.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 30.0
+      }
+    },
+    {
+      "id": "uuid:e2efe498-c6d5-4f9c-ac07-4c1c9e406675",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:835bb2d1-a09e-4862-9ea9-859ef35b5dfa",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:5bcee2b5-be9b-47d6-9a8b-35dac021f661",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:bb01ff58-81e7-450c-9294-2474f8ce37eb",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -0.0,
-              -0.0,
-              -1.0
-            ],
-            "area": 88.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 32.0
+      }
+    },
+    {
+      "id": "uuid:5bcee2b5-be9b-47d6-9a8b-35dac021f661",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:bb01ff58-81e7-450c-9294-2474f8ce37eb",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:91ce0c52-11c3-4e32-8bcc-dea958a3969e",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:da8e5cfc-fd2b-41e8-a1b9-5052ba79978b",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -1.0,
-              -0.0,
-              0.0
-            ],
-            "area": 12.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "area": 88.0
+      }
+    },
+    {
+      "id": "uuid:91ce0c52-11c3-4e32-8bcc-dea958a3969e",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:da8e5cfc-fd2b-41e8-a1b9-5052ba79978b",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:56283886-1f4c-448c-b785-80fb9740a9cc",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:a3102216-113d-4372-9b38-76a5ca949ab2",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -1.0,
-              -0.0,
-              -0.0
-            ],
-            "area": 18.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:56283886-1f4c-448c-b785-80fb9740a9cc",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:a3102216-113d-4372-9b38-76a5ca949ab2",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:f3338301-b0e3-401c-af23-41ac2ae8e969",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:3c45d301-0747-43b6-849c-b45a6a65e37c",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              -1.0,
-              0.0
-            ],
-            "area": 6.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "area": 18.0
+      }
+    },
+    {
+      "id": "uuid:f3338301-b0e3-401c-af23-41ac2ae8e969",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:3c45d301-0747-43b6-849c-b45a6a65e37c",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:a2117d6b-4621-4a6b-9809-9fab3dfc4ff0",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:681dfcee-5531-43c0-b17f-b104d6b7b15c",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              -1.0,
-              0.0
-            ],
-            "area": 24.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 6.0
+      }
+    },
+    {
+      "id": "uuid:a2117d6b-4621-4a6b-9809-9fab3dfc4ff0",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:681dfcee-5531-43c0-b17f-b104d6b7b15c",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:9d67557a-e130-4a47-b63d-c6a2bdf21fa2",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:5476879f-9a33-4d39-8dd7-e551ec1eedf1",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -1.0,
-              -0.0,
-              -0.0
-            ],
-            "area": 30.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:9d67557a-e130-4a47-b63d-c6a2bdf21fa2",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:5476879f-9a33-4d39-8dd7-e551ec1eedf1",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:d45fca44-8685-4146-92a5-b84d82fdc838",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:634dc7cd-1c52-465b-9973-d319b1cd59a8",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              1.0,
-              0.0
-            ],
-            "area": 30.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "area": 30.0
+      }
+    },
+    {
+      "id": "uuid:d45fca44-8685-4146-92a5-b84d82fdc838",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:634dc7cd-1c52-465b-9973-d319b1cd59a8",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:2497a842-0932-4fe5-ac1a-2f773473f338",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:1598541e-ab5b-4ca0-a18b-963f148a776e",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              0.0,
-              1.0
-            ],
-            "area": 32.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 30.0
+      }
+    },
+    {
+      "id": "uuid:2497a842-0932-4fe5-ac1a-2f773473f338",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:1598541e-ab5b-4ca0-a18b-963f148a776e",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:04ea47e9-b4dd-4bed-a8f4-4802d1735c74",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:1d761893-d76f-4383-9c76-5a5a5dd08477",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -0.0,
-              -0.0,
-              -1.0
-            ],
-            "area": 88.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 32.0
+      }
+    },
+    {
+      "id": "uuid:04ea47e9-b4dd-4bed-a8f4-4802d1735c74",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:1d761893-d76f-4383-9c76-5a5a5dd08477",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:b5fd960f-0d14-4257-9182-40de738a7e50",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:db3693ed-30fe-467e-b562-3ad75185c053",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              1.0,
-              0.0,
-              -0.0
-            ],
-            "area": 18.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "area": 88.0
+      }
+    },
+    {
+      "id": "uuid:b5fd960f-0d14-4257-9182-40de738a7e50",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:db3693ed-30fe-467e-b562-3ad75185c053",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:e119b096-e589-49bd-b1db-a1182dc2dade",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:d1c36dfa-690b-4421-893a-ddb575f33b09",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              -1.0,
-              0.0
-            ],
-            "area": 6.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "area": 18.0
+      }
+    },
+    {
+      "id": "uuid:e119b096-e589-49bd-b1db-a1182dc2dade",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:d1c36dfa-690b-4421-893a-ddb575f33b09",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:67842d3a-7c79-4f2a-8630-744711071e93",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:bae547df-793b-4936-b2f6-bd6e120dbcf9",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              -0.0,
-              -0.0,
-              -1.0
-            ],
-            "area": 24.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 6.0
+      }
+    },
+    {
+      "id": "uuid:67842d3a-7c79-4f2a-8630-744711071e93",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:bae547df-793b-4936-b2f6-bd6e120dbcf9",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:f1c1a636-d6ab-414c-a0aa-855fc7e85e1f",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:432b0bb7-a5ba-470b-b93d-e5ae1c8755b8",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              -1.0,
-              0.0
-            ],
-            "area": 12.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:f1c1a636-d6ab-414c-a0aa-855fc7e85e1f",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:432b0bb7-a5ba-470b-b93d-e5ae1c8755b8",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:a22a6c54-306e-44bc-9b94-6c32c705e63e",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:00678d2d-3234-4654-b065-545b032817b4",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              0.0,
-              1.0
-            ],
-            "area": 8.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:a22a6c54-306e-44bc-9b94-6c32c705e63e",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:00678d2d-3234-4654-b065-545b032817b4",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:9ed21e0a-b062-4000-88e2-50bd9153e417",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:5fa31cbe-f093-44d2-a9c2-f5809c62bb4e",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              0.0,
-              1.0
-            ],
-            "area": 16.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 8.0
+      }
+    },
+    {
+      "id": "uuid:9ed21e0a-b062-4000-88e2-50bd9153e417",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:5fa31cbe-f093-44d2-a9c2-f5809c62bb4e",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:802ff3d8-b8da-423f-8a02-7b2288485edd",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:75413bc4-39ee-4b21-9cec-c2a13b9fa2e2",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              3.609557097661e-16,
-              -1.0,
-              0.0
-            ],
-            "area": 12.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 16.0
+      }
+    },
+    {
+      "id": "uuid:802ff3d8-b8da-423f-8a02-7b2288485edd",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:75413bc4-39ee-4b21-9cec-c2a13b9fa2e2",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:16c13b7b-aeda-4130-a793-d63f62bcc75b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:37ec9a7f-d053-422c-be88-4e0102b7a6be",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              1.0,
-              0.0
-            ],
-            "area": 12.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          3.609557097661e-16,
+          -1.0,
+          0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:16c13b7b-aeda-4130-a793-d63f62bcc75b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:37ec9a7f-d053-422c-be88-4e0102b7a6be",
+            "orientation": "+"
           }
-        },
-        {
-          "id": "uuid:786e8738-1690-426d-8e2f-f5e734336a67",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Face",
-            "directed_references": [
-              {
-                "ref": "uuid:f1ef09ce-c438-45bf-a92a-92604bc9702b",
-                "orientation": "+"
-              }
-            ]
-          },
-          "properties": {
-            "normal": [
-              0.0,
-              1.0,
-              0.0
-            ],
-            "area": 12.0
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:786e8738-1690-426d-8e2f-f5e734336a67",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:f1ef09ce-c438-45bf-a92a-92604bc9702b",
+            "orientation": "+"
           }
-        }
-      ]
-    ]
-  }],
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 12.0
+      }
+    }
+  ],
   "solids": [
     {
       "id": "uuid:758590d2-8cc6-4ff7-8fcc-d7ecd01b3498",
@@ -46626,56 +44553,51 @@ All supporting points, edges, and faces are included to make the example self-co
       "properties": {}
     }
   ],
-  "shells": {
-    "type": "FeatureCollection",
-    "features": [
-      [
-        {
-          "id": "uuid:0669e377-8200-4405-8e0a-151451189d9d",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Shell",
-            "directed_references": [
-              {
-                "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:2387ae98-9236-42fe-9414-c45b99954c41",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed",
-                "orientation": "+"
-              }
-            ]
+  "shells": [
+    {
+      "id": "uuid:0669e377-8200-4405-8e0a-151451189d9d",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Shell",
+        "directed_references": [
+          {
+            "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+            "orientation": "+"
           },
-          "properties": {}
-        }
-      ]
-    ]
-  }
+          {
+            "ref": "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:2387ae98-9236-42fe-9414-c45b99954c41",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {}
+    }
+  ]
 }
 ```
 
@@ -47167,1822 +45089,1810 @@ All supporting points, edges, and faces are included to make the example self-co
   ],
   "edges": [
     {
-      "type": "FeatureCollection",
-      "features": [
-        {
-          "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
-              "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
-              "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
-              "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
-              "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
-              "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:8582d9c2-6053-495a-8413-f5493691c0de",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
-              "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
-              "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
-              "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
-              "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
-              "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
-              "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
-              "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
-              "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
-              "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
-              "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:7da1c2fe-f798-43cc-af44-ac63f968139c",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
-              "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
-              "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
-              "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
-              "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:745aa367-94b6-4949-a856-5271ec6672e9",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
-              "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:f921656a-58e3-4375-bdff-ac8019f524cf",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
-              "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
-              "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
-              "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
-              "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
-              "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:fb03276b-4250-4d52-81e1-035a0bd92895",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
-              "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
-              "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:af347f25-a547-477c-b246-cb810756d4dc",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
-              "uuid:caa6045e-4189-4571-8914-1189e51ac71e"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
-              "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
-              "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
-              "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:242a8400-a076-4817-86c6-acd56087cec6",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
-              "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:4ad210b7-5de5-4732-af7c-978de28f988b",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
-              "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
-              "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:4406e3f5-89dc-463b-84e4-487490f71f1a",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
-              "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:511c6e7d-728b-4f1f-9763-9461eb628586",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
-              "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
-              "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:06babc8d-f0d6-43eb-bfad-931055bae084",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
-              "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:fc877bbe-72a8-4e59-b959-010e6660984a",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
-              "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:aafd209b-cd13-401a-83f5-26751a02cffe",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
-              "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
-              "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:9238cbda-d019-4b57-8319-0cc355656802",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
-              "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:91cdc345-f745-4643-bc88-a24f8e2216b0",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
-              "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
-              "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
-              "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:61f99921-a94d-4e0d-8353-f027d76227c5",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
-              "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:474fef44-eb6e-4e19-a871-433f9bac5650",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
-              "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
-              "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
-              "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
-              "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:71af0dde-7fc9-4290-9624-119e91f422ea",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
-              "uuid:8e503e04-ad51-423b-8102-708a845189b6"
-            ]
-          },
-          "properties": {
-            "length": 8.0
-          }
-        },
-        {
-          "id": "uuid:ad13a84c-df97-4b75-9dc1-1ce452249964",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:8e503e04-ad51-423b-8102-708a845189b6",
-              "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:c2a00070-f12b-42f9-b78c-b33daa500873",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
-              "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:13dd8184-f73e-4d9f-9977-3e573274fccc",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:8e503e04-ad51-423b-8102-708a845189b6",
-              "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
-              "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:ed666061-98c5-439d-ab0d-5a792437a873",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
-              "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606"
-            ]
-          },
-          "properties": {
-            "length": 10.0
-          }
-        },
-        {
-          "id": "uuid:5a36c75b-053b-4d7b-b512-6777786d6180",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
-              "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
-              "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
-              "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
-            ]
-          },
-          "properties": {
-            "length": 2.0
-          }
-        },
-        {
-          "id": "uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
-              "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0"
-            ]
-          },
-          "properties": {
-            "length": 6.0
-          }
-        },
-        {
-          "id": "uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
-              "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
-            ]
-          },
-          "properties": {
-            "length": 3.0
-          }
-        },
-        {
-          "id": "uuid:a604828d-a36b-4fac-ba6f-6160ade95301",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
-              "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
-              "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:38499704-81f7-4d47-965f-435e0b7b0850",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
-              "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:b6e30631-9768-4020-8947-c32137328216",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
-              "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        },
-        {
-          "id": "uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Edge",
-            "references": [
-              "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
-              "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
-            ]
-          },
-          "properties": {
-            "length": 4.0
-          }
-        }
-      ]
+      "id": "uuid:c60507ba-226b-4e49-a702-e9afef899b23",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
+          "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0",
+          "uuid:c611f840-2829-44b2-b367-3915ca7875a4"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
+          "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:fad324b9-801f-40f4-b65b-91f8753e9698",
+          "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
+          "uuid:fad324b9-801f-40f4-b65b-91f8753e9698"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:8582d9c2-6053-495a-8413-f5493691c0de",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:c611f840-2829-44b2-b367-3915ca7875a4",
+          "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071",
+          "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
+          "uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
+          "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
+          "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3",
+          "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70",
+          "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8",
+          "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
+          "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
+          "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:7da1c2fe-f798-43cc-af44-ac63f968139c",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
+          "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
+          "uuid:8087116e-84cc-44d1-8047-78dc3837d7e8"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
+          "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b",
+          "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:745aa367-94b6-4949-a856-5271ec6672e9",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
+          "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:f921656a-58e3-4375-bdff-ac8019f524cf",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd",
+          "uuid:5e08b82a-8efb-447c-b5c2-54f8ff5788b3"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:e7300a01-f8c1-4351-9511-02790a5376b0",
+          "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
+          "uuid:307b7db6-8014-4628-b80e-ff925bf71168"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6",
+          "uuid:1e20237c-9dfa-4251-9f3f-cc5e56a5becd"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:307b7db6-8014-4628-b80e-ff925bf71168",
+          "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:fb03276b-4250-4d52-81e1-035a0bd92895",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
+          "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
+          "uuid:3c08ae4e-7b27-4e95-8bfb-6b42451be8f6"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:af347f25-a547-477c-b246-cb810756d4dc",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
+          "uuid:caa6045e-4189-4571-8914-1189e51ac71e"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
+          "uuid:62a26df3-3e19-49bf-9ee4-24dbeb814a70"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
+          "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:caa6045e-4189-4571-8914-1189e51ac71e",
+          "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:242a8400-a076-4817-86c6-acd56087cec6",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
+          "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:4ad210b7-5de5-4732-af7c-978de28f988b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6",
+          "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
+          "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:4406e3f5-89dc-463b-84e4-487490f71f1a",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d",
+          "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:511c6e7d-728b-4f1f-9763-9461eb628586",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
+          "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:92bd9ed9-c138-45c3-b72c-a9ecb7f7cfe9",
+          "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:06babc8d-f0d6-43eb-bfad-931055bae084",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
+          "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:fc877bbe-72a8-4e59-b959-010e6660984a",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09",
+          "uuid:c060c1dc-6544-4595-b583-72ecf603fd6d"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:aafd209b-cd13-401a-83f5-26751a02cffe",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:20d3c864-4a8c-4440-b600-a1d424e92f51",
+          "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
+          "uuid:22138e52-65ef-4773-b69d-5ea2628fad7b"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:9238cbda-d019-4b57-8319-0cc355656802",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38",
+          "uuid:2b34e214-cba7-4a66-8443-ceb932c5ef09"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:91cdc345-f745-4643-bc88-a24f8e2216b0",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d",
+          "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:206806a4-a2f8-4c04-858e-99d289858a40",
+          "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a",
+          "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:61f99921-a94d-4e0d-8353-f027d76227c5",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
+          "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:474fef44-eb6e-4e19-a871-433f9bac5650",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:f34d9f2e-4180-41de-a613-46f78f4c178f",
+          "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3",
+          "uuid:206806a4-a2f8-4c04-858e-99d289858a40"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717",
+          "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
+          "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:71af0dde-7fc9-4290-9624-119e91f422ea",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
+          "uuid:8e503e04-ad51-423b-8102-708a845189b6"
+        ]
+      },
+      "properties": {
+        "length": 8.0
+      }
+    },
+    {
+      "id": "uuid:ad13a84c-df97-4b75-9dc1-1ce452249964",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:8e503e04-ad51-423b-8102-708a845189b6",
+          "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:c2a00070-f12b-42f9-b78c-b33daa500873",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
+          "uuid:b6d10150-f9d4-4f7e-b028-c4bbee8e7717"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:13dd8184-f73e-4d9f-9977-3e573274fccc",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:8e503e04-ad51-423b-8102-708a845189b6",
+          "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606",
+          "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:ed666061-98c5-439d-ab0d-5a792437a873",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e",
+          "uuid:ca62577e-8e24-4af2-88bf-33b34e25e606"
+        ]
+      },
+      "properties": {
+        "length": 10.0
+      }
+    },
+    {
+      "id": "uuid:5a36c75b-053b-4d7b-b512-6777786d6180",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:8cda5c68-9c82-43b4-84d7-979efa36dfe1",
+          "uuid:e7300a01-f8c1-4351-9511-02790a5376b0"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:793997c5-bcc4-4610-984b-6cf2c2997348",
+          "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
+          "uuid:d8d136c6-604c-4ad3-adf7-b0a7e04d034a"
+        ]
+      },
+      "properties": {
+        "length": 2.0
+      }
+    },
+    {
+      "id": "uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
+          "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0"
+        ]
+      },
+      "properties": {
+        "length": 6.0
+      }
+    },
+    {
+      "id": "uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:9ef3d2ea-acea-4365-8bd5-2f8ef3036ed0",
+          "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e"
+        ]
+      },
+      "properties": {
+        "length": 3.0
+      }
+    },
+    {
+      "id": "uuid:a604828d-a36b-4fac-ba6f-6160ade95301",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:a3b19f96-9bca-4c31-ac7e-4cb1615878df",
+          "uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:7fe8cb9b-976e-4344-bf72-f3721d878ba4",
+          "uuid:793997c5-bcc4-4610-984b-6cf2c2997348"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:38499704-81f7-4d47-965f-435e0b7b0850",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:b8412dad-b40a-4e35-9f42-f983e0fce39d",
+          "uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:b6e30631-9768-4020-8947-c32137328216",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:9a1d8124-ca37-4abd-b07e-bff4c8eaa2f9",
+          "uuid:11caaac5-b631-4bd8-a6af-f82cb6371071"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
+    },
+    {
+      "id": "uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Edge",
+        "references": [
+          "uuid:1d2a5d01-8547-4de6-abea-8f9ab994d35e",
+          "uuid:87373f95-ee4b-4471-9980-f4a8258ee1e3"
+        ]
+      },
+      "properties": {
+        "length": 4.0
+      }
     }
   ],
   "faces": [
     {
-      "type": "FeatureCollection",
-      "features": [
-        [
+      "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
           {
-            "id": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:d26ea551-e131-42f2-a31c-7f9008ece237",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                1.0,
-                0.0,
-                -0.0
-              ],
-              "area": 24.0
-            }
-          },
-          {
-            "id": "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:0315dfe1-1197-4a4b-8c86-f3966f8d8cd8",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                -1.0,
-                3.007964248051e-16
-              ],
-              "area": 18.0
-            }
-          },
-          {
-            "id": "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:9d2f2bc0-c1fd-424b-b3e2-3f306c26f7a4",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                1.0,
-                0.0
-              ],
-              "area": 24.0
-            }
-          },
-          {
-            "id": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:e21de394-483b-4817-a25c-8a564554baa0",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                0.0,
-                1.0
-              ],
-              "area": 56.0
-            }
-          },
-          {
-            "id": "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:4979dfe4-7908-4086-b2e2-008efab16103",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                -1.0,
-                -0.0,
-                -0.0
-              ],
-              "area": 12.0
-            }
-          },
-          {
-            "id": "uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:2a53b88c-67cc-49e5-a186-df4d49283966",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                -1.0,
-                0.0
-              ],
-              "area": 6.0
-            }
-          },
-          {
-            "id": "uuid:2387ae98-9236-42fe-9414-c45b99954c41",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:b2f47b75-8f72-4afe-a3e0-d669fe55949c",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                0.0,
-                -1.0
-              ],
-              "area": 56.0
-            }
-          },
-          {
-            "id": "uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:5bb3773a-7cc8-433c-bac3-18552cca99e2",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                -1.0,
-                -0.0,
-                -0.0
-              ],
-              "area": 12.0
-            }
-          },
-          {
-            "id": "uuid:c55c88db-d187-4d7e-9aaa-b9d3dce52663",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:3b8f33e6-00d2-437e-95c6-cd3dd88b49e9",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                1.0,
-                0.0
-              ],
-              "area": 24.0
-            }
-          },
-          {
-            "id": "uuid:dbd99467-ea83-4dff-b03f-eef2aad2687c",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:2eac211d-adf0-44f6-b2ba-e827c1d6471d",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                -1.0,
-                -0.0,
-                -3.007964248051e-16
-              ],
-              "area": 24.0
-            }
-          },
-          {
-            "id": "uuid:0e55e87d-8475-4c92-89e7-d62f97ce9ec2",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:e400ddf6-74e1-4b38-962d-4e8451cb4c44",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                -1.0,
-                0.0
-              ],
-              "area": 18.0
-            }
-          },
-          {
-            "id": "uuid:6a5ff199-56a7-4e65-94b5-bfdf2ae3449d",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:5dc4a183-3c29-4c3b-8a87-624b171b3a1a",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                0.0,
-                1.0
-              ],
-              "area": 56.0
-            }
-          },
-          {
-            "id": "uuid:e499fea3-19f7-4863-8a58-751caff7d884",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:a5d3483c-2154-47fd-b250-908a9005bf66",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                -1.0,
-                0.0
-              ],
-              "area": 6.0
-            }
-          },
-          {
-            "id": "uuid:9e4c0c0e-6acf-401b-b35e-0e917ce3a5fc",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:29359b59-ea6c-4b6c-b73a-1e2afa00aa30",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                0.0,
-                -1.0
-              ],
-              "area": 56.0
-            }
-          },
-          {
-            "id": "uuid:3f5c452f-9815-4b21-9b2d-0127ae80c385",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:ba076e4e-ab93-472b-a529-ffbe2958262f",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                1.0,
-                0.0,
-                -0.0
-              ],
-              "area": 12.0
-            }
-          },
-          {
-            "id": "uuid:66a430c0-123f-42df-9d11-64347362bcb3",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:faed8efd-3a5c-43f9-9deb-25d4587d9226",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                -1.0,
-                0.0
-              ],
-              "area": 24.0
-            }
-          },
-          {
-            "id": "uuid:31d8f2b5-cc74-4f72-b230-d27dad0fd589",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:b97ca113-1b38-4509-95c5-a495f6ac6cd4",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                1.0,
-                0.0,
-                -0.0
-              ],
-              "area": 30.0
-            }
-          },
-          {
-            "id": "uuid:65959e29-11cb-4568-904d-61c4a7c17b98",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:5dc04bbd-024e-42a4-a230-19732791fa9b",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                1.0,
-                0.0
-              ],
-              "area": 30.0
-            }
-          },
-          {
-            "id": "uuid:e2efe498-c6d5-4f9c-ac07-4c1c9e406675",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:835bb2d1-a09e-4862-9ea9-859ef35b5dfa",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                0.0,
-                1.0
-              ],
-              "area": 32.0
-            }
-          },
-          {
-            "id": "uuid:5bcee2b5-be9b-47d6-9a8b-35dac021f661",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:bb01ff58-81e7-450c-9294-2474f8ce37eb",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                -0.0,
-                -0.0,
-                -1.0
-              ],
-              "area": 88.0
-            }
-          },
-          {
-            "id": "uuid:91ce0c52-11c3-4e32-8bcc-dea958a3969e",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:da8e5cfc-fd2b-41e8-a1b9-5052ba79978b",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                -1.0,
-                -0.0,
-                0.0
-              ],
-              "area": 12.0
-            }
-          },
-          {
-            "id": "uuid:56283886-1f4c-448c-b785-80fb9740a9cc",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:a3102216-113d-4372-9b38-76a5ca949ab2",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                -1.0,
-                -0.0,
-                -0.0
-              ],
-              "area": 18.0
-            }
-          },
-          {
-            "id": "uuid:f3338301-b0e3-401c-af23-41ac2ae8e969",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:3c45d301-0747-43b6-849c-b45a6a65e37c",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                -1.0,
-                0.0
-              ],
-              "area": 6.0
-            }
-          },
-          {
-            "id": "uuid:a2117d6b-4621-4a6b-9809-9fab3dfc4ff0",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:681dfcee-5531-43c0-b17f-b104d6b7b15c",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                -1.0,
-                0.0
-              ],
-              "area": 24.0
-            }
-          },
-          {
-            "id": "uuid:9d67557a-e130-4a47-b63d-c6a2bdf21fa2",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:5476879f-9a33-4d39-8dd7-e551ec1eedf1",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                -1.0,
-                -0.0,
-                -0.0
-              ],
-              "area": 30.0
-            }
-          },
-          {
-            "id": "uuid:d45fca44-8685-4146-92a5-b84d82fdc838",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:634dc7cd-1c52-465b-9973-d319b1cd59a8",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                1.0,
-                0.0
-              ],
-              "area": 30.0
-            }
-          },
-          {
-            "id": "uuid:2497a842-0932-4fe5-ac1a-2f773473f338",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:1598541e-ab5b-4ca0-a18b-963f148a776e",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                0.0,
-                1.0
-              ],
-              "area": 32.0
-            }
-          },
-          {
-            "id": "uuid:04ea47e9-b4dd-4bed-a8f4-4802d1735c74",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:1d761893-d76f-4383-9c76-5a5a5dd08477",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                -0.0,
-                -0.0,
-                -1.0
-              ],
-              "area": 88.0
-            }
-          },
-          {
-            "id": "uuid:b5fd960f-0d14-4257-9182-40de738a7e50",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:db3693ed-30fe-467e-b562-3ad75185c053",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                1.0,
-                0.0,
-                -0.0
-              ],
-              "area": 18.0
-            }
-          },
-          {
-            "id": "uuid:e119b096-e589-49bd-b1db-a1182dc2dade",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:d1c36dfa-690b-4421-893a-ddb575f33b09",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                -1.0,
-                0.0
-              ],
-              "area": 6.0
-            }
-          },
-          {
-            "id": "uuid:67842d3a-7c79-4f2a-8630-744711071e93",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:bae547df-793b-4936-b2f6-bd6e120dbcf9",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                -0.0,
-                -0.0,
-                -1.0
-              ],
-              "area": 24.0
-            }
-          },
-          {
-            "id": "uuid:f1c1a636-d6ab-414c-a0aa-855fc7e85e1f",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:432b0bb7-a5ba-470b-b93d-e5ae1c8755b8",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                -1.0,
-                0.0
-              ],
-              "area": 12.0
-            }
-          },
-          {
-            "id": "uuid:a22a6c54-306e-44bc-9b94-6c32c705e63e",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:00678d2d-3234-4654-b065-545b032817b4",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                0.0,
-                1.0
-              ],
-              "area": 8.0
-            }
-          },
-          {
-            "id": "uuid:9ed21e0a-b062-4000-88e2-50bd9153e417",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:5fa31cbe-f093-44d2-a9c2-f5809c62bb4e",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                0.0,
-                1.0
-              ],
-              "area": 16.0
-            }
-          },
-          {
-            "id": "uuid:802ff3d8-b8da-423f-8a02-7b2288485edd",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:75413bc4-39ee-4b21-9cec-c2a13b9fa2e2",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                3.609557097661e-16,
-                -1.0,
-                0.0
-              ],
-              "area": 12.0
-            }
-          },
-          {
-            "id": "uuid:16c13b7b-aeda-4130-a793-d63f62bcc75b",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:37ec9a7f-d053-422c-be88-4e0102b7a6be",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                1.0,
-                0.0
-              ],
-              "area": 12.0
-            }
-          },
-          {
-            "id": "uuid:786e8738-1690-426d-8e2f-f5e734336a67",
-            "type": "Feature",
-            "geometry": null,
-            "topology": {
-              "type": "Face",
-              "directed_references": [
-                {
-                  "ref": "uuid:f1ef09ce-c438-45bf-a92a-92604bc9702b",
-                  "orientation": "+"
-                }
-              ]
-            },
-            "properties": {
-              "normal": [
-                0.0,
-                1.0,
-                0.0
-              ],
-              "area": 12.0
-            }
+            "ref": "uuid:d26ea551-e131-42f2-a31c-7f9008ece237",
+            "orientation": "+"
           }
         ]
-      ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:0315dfe1-1197-4a4b-8c86-f3966f8d8cd8",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          3.007964248051e-16
+        ],
+        "area": 18.0
+      }
+    },
+    {
+      "id": "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:9d2f2bc0-c1fd-424b-b3e2-3f306c26f7a4",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:e21de394-483b-4817-a25c-8a564554baa0",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 56.0
+      }
+    },
+    {
+      "id": "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:4979dfe4-7908-4086-b2e2-008efab16103",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:2a53b88c-67cc-49e5-a186-df4d49283966",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 6.0
+      }
+    },
+    {
+      "id": "uuid:2387ae98-9236-42fe-9414-c45b99954c41",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:b2f47b75-8f72-4afe-a3e0-d669fe55949c",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "area": 56.0
+      }
+    },
+    {
+      "id": "uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:5bb3773a-7cc8-433c-bac3-18552cca99e2",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:c55c88db-d187-4d7e-9aaa-b9d3dce52663",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:3b8f33e6-00d2-437e-95c6-cd3dd88b49e9",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:dbd99467-ea83-4dff-b03f-eef2aad2687c",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:2eac211d-adf0-44f6-b2ba-e827c1d6471d",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          -3.007964248051e-16
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:0e55e87d-8475-4c92-89e7-d62f97ce9ec2",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:e400ddf6-74e1-4b38-962d-4e8451cb4c44",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 18.0
+      }
+    },
+    {
+      "id": "uuid:6a5ff199-56a7-4e65-94b5-bfdf2ae3449d",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:5dc4a183-3c29-4c3b-8a87-624b171b3a1a",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 56.0
+      }
+    },
+    {
+      "id": "uuid:e499fea3-19f7-4863-8a58-751caff7d884",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:a5d3483c-2154-47fd-b250-908a9005bf66",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 6.0
+      }
+    },
+    {
+      "id": "uuid:9e4c0c0e-6acf-401b-b35e-0e917ce3a5fc",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:29359b59-ea6c-4b6c-b73a-1e2afa00aa30",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "area": 56.0
+      }
+    },
+    {
+      "id": "uuid:3f5c452f-9815-4b21-9b2d-0127ae80c385",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:ba076e4e-ab93-472b-a529-ffbe2958262f",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:66a430c0-123f-42df-9d11-64347362bcb3",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:faed8efd-3a5c-43f9-9deb-25d4587d9226",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:31d8f2b5-cc74-4f72-b230-d27dad0fd589",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:b97ca113-1b38-4509-95c5-a495f6ac6cd4",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "area": 30.0
+      }
+    },
+    {
+      "id": "uuid:65959e29-11cb-4568-904d-61c4a7c17b98",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:5dc04bbd-024e-42a4-a230-19732791fa9b",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 30.0
+      }
+    },
+    {
+      "id": "uuid:e2efe498-c6d5-4f9c-ac07-4c1c9e406675",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:835bb2d1-a09e-4862-9ea9-859ef35b5dfa",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 32.0
+      }
+    },
+    {
+      "id": "uuid:5bcee2b5-be9b-47d6-9a8b-35dac021f661",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:bb01ff58-81e7-450c-9294-2474f8ce37eb",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "area": 88.0
+      }
+    },
+    {
+      "id": "uuid:91ce0c52-11c3-4e32-8bcc-dea958a3969e",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:da8e5cfc-fd2b-41e8-a1b9-5052ba79978b",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:56283886-1f4c-448c-b785-80fb9740a9cc",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:a3102216-113d-4372-9b38-76a5ca949ab2",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "area": 18.0
+      }
+    },
+    {
+      "id": "uuid:f3338301-b0e3-401c-af23-41ac2ae8e969",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:3c45d301-0747-43b6-849c-b45a6a65e37c",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 6.0
+      }
+    },
+    {
+      "id": "uuid:a2117d6b-4621-4a6b-9809-9fab3dfc4ff0",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:681dfcee-5531-43c0-b17f-b104d6b7b15c",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:9d67557a-e130-4a47-b63d-c6a2bdf21fa2",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:5476879f-9a33-4d39-8dd7-e551ec1eedf1",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "area": 30.0
+      }
+    },
+    {
+      "id": "uuid:d45fca44-8685-4146-92a5-b84d82fdc838",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:634dc7cd-1c52-465b-9973-d319b1cd59a8",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 30.0
+      }
+    },
+    {
+      "id": "uuid:2497a842-0932-4fe5-ac1a-2f773473f338",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:1598541e-ab5b-4ca0-a18b-963f148a776e",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 32.0
+      }
+    },
+    {
+      "id": "uuid:04ea47e9-b4dd-4bed-a8f4-4802d1735c74",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:1d761893-d76f-4383-9c76-5a5a5dd08477",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "area": 88.0
+      }
+    },
+    {
+      "id": "uuid:b5fd960f-0d14-4257-9182-40de738a7e50",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:db3693ed-30fe-467e-b562-3ad75185c053",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "area": 18.0
+      }
+    },
+    {
+      "id": "uuid:e119b096-e589-49bd-b1db-a1182dc2dade",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:d1c36dfa-690b-4421-893a-ddb575f33b09",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 6.0
+      }
+    },
+    {
+      "id": "uuid:67842d3a-7c79-4f2a-8630-744711071e93",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:bae547df-793b-4936-b2f6-bd6e120dbcf9",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "area": 24.0
+      }
+    },
+    {
+      "id": "uuid:f1c1a636-d6ab-414c-a0aa-855fc7e85e1f",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:432b0bb7-a5ba-470b-b93d-e5ae1c8755b8",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:a22a6c54-306e-44bc-9b94-6c32c705e63e",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:00678d2d-3234-4654-b065-545b032817b4",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 8.0
+      }
+    },
+    {
+      "id": "uuid:9ed21e0a-b062-4000-88e2-50bd9153e417",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:5fa31cbe-f093-44d2-a9c2-f5809c62bb4e",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "area": 16.0
+      }
+    },
+    {
+      "id": "uuid:802ff3d8-b8da-423f-8a02-7b2288485edd",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:75413bc4-39ee-4b21-9cec-c2a13b9fa2e2",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          3.609557097661e-16,
+          -1.0,
+          0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:16c13b7b-aeda-4130-a793-d63f62bcc75b",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:37ec9a7f-d053-422c-be88-4e0102b7a6be",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 12.0
+      }
+    },
+    {
+      "id": "uuid:786e8738-1690-426d-8e2f-f5e734336a67",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Face",
+        "directed_references": [
+          {
+            "ref": "uuid:f1ef09ce-c438-45bf-a92a-92604bc9702b",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "area": 12.0
+      }
     }
   ],
   "solids": [
@@ -50105,56 +48015,51 @@ All supporting points, edges, and faces are included to make the example self-co
       "properties": {}
     }
   ],
-  "shells": {
-    "type": "FeatureCollection",
-    "features": [
-      [
-        {
-          "id": "uuid:0669e377-8200-4405-8e0a-151451189d9d",
-          "type": "Feature",
-          "geometry": null,
-          "topology": {
-            "type": "Shell",
-            "directed_references": [
-              {
-                "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:2387ae98-9236-42fe-9414-c45b99954c41",
-                "orientation": "+"
-              },
-              {
-                "ref": "uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed",
-                "orientation": "+"
-              }
-            ]
+  "shells": [
+    {
+      "id": "uuid:0669e377-8200-4405-8e0a-151451189d9d",
+      "type": "Feature",
+      "geometry": null,
+      "topology": {
+        "type": "Shell",
+        "directed_references": [
+          {
+            "ref": "uuid:4ac3b91b-eeb7-428c-b5e9-7e8a3f0998ae",
+            "orientation": "+"
           },
-          "properties": {}
-        }
-      ]
-    ]
-  }
+          {
+            "ref": "uuid:4a294022-4864-49c7-8cee-f9e43360bc4e",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:01947f47-ee13-44a9-85a4-2bcb4881982a",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:607a3363-3eb7-4ce6-a633-86d2e565692b",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:3c1f5c4b-d842-40b6-a332-99d50015fa8f",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:fe522919-1421-4fd1-9930-8c6551e3f2a5",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:2387ae98-9236-42fe-9414-c45b99954c41",
+            "orientation": "+"
+          },
+          {
+            "ref": "uuid:4ba85faa-3935-4e89-a9f8-dcd647a5dbed",
+            "orientation": "+"
+          }
+        ]
+      },
+      "properties": {}
+    }
+  ]
 }
 ```
 
@@ -50574,111 +48479,8 @@ All supporting points, edges, and faces are included to make the example self-co
             geojson:coordinates ( 1e+01 6e+00 3e+00 ) ] .
 
 [] a geojson:FeatureCollection ;
-    topo:edges ( [ a geojson:FeatureCollection ;
-                geojson:features <uuid:06babc8d-f0d6-43eb-bfad-931055bae084>,
-                    <uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78>,
-                    <uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add>,
-                    <uuid:13dd8184-f73e-4d9f-9977-3e573274fccc>,
-                    <uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b>,
-                    <uuid:242a8400-a076-4817-86c6-acd56087cec6>,
-                    <uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03>,
-                    <uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b>,
-                    <uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17>,
-                    <uuid:38499704-81f7-4d47-965f-435e0b7b0850>,
-                    <uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03>,
-                    <uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0>,
-                    <uuid:4406e3f5-89dc-463b-84e4-487490f71f1a>,
-                    <uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1>,
-                    <uuid:474fef44-eb6e-4e19-a871-433f9bac5650>,
-                    <uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985>,
-                    <uuid:4ad210b7-5de5-4732-af7c-978de28f988b>,
-                    <uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555>,
-                    <uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280>,
-                    <uuid:511c6e7d-728b-4f1f-9763-9461eb628586>,
-                    <uuid:5a36c75b-053b-4d7b-b512-6777786d6180>,
-                    <uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5>,
-                    <uuid:61f99921-a94d-4e0d-8353-f027d76227c5>,
-                    <uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94>,
-                    <uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24>,
-                    <uuid:71af0dde-7fc9-4290-9624-119e91f422ea>,
-                    <uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f>,
-                    <uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda>,
-                    <uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d>,
-                    <uuid:745aa367-94b6-4949-a856-5271ec6672e9>,
-                    <uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc>,
-                    <uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5>,
-                    <uuid:7da1c2fe-f798-43cc-af44-ac63f968139c>,
-                    <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac>,
-                    <uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81>,
-                    <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569>,
-                    <uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6>,
-                    <uuid:8582d9c2-6053-495a-8413-f5493691c0de>,
-                    <uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724>,
-                    <uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa>,
-                    <uuid:91cdc345-f745-4643-bc88-a24f8e2216b0>,
-                    <uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0>,
-                    <uuid:9238cbda-d019-4b57-8319-0cc355656802>,
-                    <uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d>,
-                    <uuid:a604828d-a36b-4fac-ba6f-6160ade95301>,
-                    <uuid:aafd209b-cd13-401a-83f5-26751a02cffe>,
-                    <uuid:ad13a84c-df97-4b75-9dc1-1ce452249964>,
-                    <uuid:af347f25-a547-477c-b246-cb810756d4dc>,
-                    <uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0>,
-                    <uuid:b6e30631-9768-4020-8947-c32137328216>,
-                    <uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e>,
-                    <uuid:c2a00070-f12b-42f9-b78c-b33daa500873>,
-                    <uuid:c60507ba-226b-4e49-a702-e9afef899b23>,
-                    <uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf>,
-                    <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8>,
-                    <uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05>,
-                    <uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635>,
-                    <uuid:ed666061-98c5-439d-ab0d-5a792437a873>,
-                    <uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7>,
-                    <uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4>,
-                    <uuid:f921656a-58e3-4375-bdff-ac8019f524cf>,
-                    <uuid:fb03276b-4250-4d52-81e1-035a0bd92895>,
-                    <uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3>,
-                    <uuid:fc877bbe-72a8-4e59-b959-010e6660984a>,
-                    <uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3>,
-                    <uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4> ] ) ;
-    topo:faces ( [ a geojson:FeatureCollection ;
-                geojson:features [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ],
-                    [ a geojson:Feature ] ] ) ;
+    topo:edges ( <uuid:c60507ba-226b-4e49-a702-e9afef899b23> <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac> <uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569> <uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8> <uuid:32e82eb1-93a4-4387-8cd0-9616ebf1e39b> <uuid:8582d9c2-6053-495a-8413-f5493691c0de> <uuid:120defbd-2e05-4ec3-ba3c-ffee086d2add> <uuid:4c2a6434-03b0-4aa2-85ea-a9fcaea41555> <uuid:830b9098-d914-4e8b-869d-4d20f1eb5c81> <uuid:3b72e45d-d351-46e4-a5b7-9ac9bc339d03> <uuid:921e2351-efbf-48be-85d3-eedc0dc2ddc0> <uuid:73f88b47-78ab-474d-9c62-73dfefd0dd5d> <uuid:7aa2a76d-9d5c-4540-9f2e-d8bcf36fadb5> <uuid:ed6b8b1c-7030-4d70-ab61-94cb3aa904a7> <uuid:5f17e211-e8b5-4a7c-85e4-798787fd82a5> <uuid:7da1c2fe-f798-43cc-af44-ac63f968139c> <uuid:46fd1def-a93e-4c99-9868-172cf1b40ff1> <uuid:856e43bc-ee35-44d0-b25e-ea94a53e1db6> <uuid:a5ed4867-4011-4db7-8425-cbe61a6d3a2d> <uuid:745aa367-94b6-4949-a856-5271ec6672e9> <uuid:f921656a-58e3-4375-bdff-ac8019f524cf> <uuid:6aab9ba2-327e-40df-96c2-0ea43c538c24> <uuid:fb28f3f2-8ea7-4c03-bff5-7352addba8b3> <uuid:e0416983-f0db-4c99-8a72-3f8b4615ab05> <uuid:07093c51-5d4e-42ad-941f-8eeb89e5ae78> <uuid:fb03276b-4250-4d52-81e1-035a0bd92895> <uuid:c97ac36d-9cf3-48ca-bb8f-c36cb335bebf> <uuid:af347f25-a547-477c-b246-cb810756d4dc> <uuid:21388b1b-dcba-46c0-8166-8ffc9c07e50b> <uuid:fc8ba01d-faa7-4407-ae92-32b584c8a6a3> <uuid:8601e9ea-c48f-4c00-a066-f950ed6b0724> <uuid:242a8400-a076-4817-86c6-acd56087cec6> <uuid:4ad210b7-5de5-4732-af7c-978de28f988b> <uuid:c12882ea-089f-4616-942c-ceb8fb4ac05e> <uuid:4406e3f5-89dc-463b-84e4-487490f71f1a> <uuid:511c6e7d-728b-4f1f-9763-9461eb628586> <uuid:79205d80-72e5-4bd8-9c03-9503e4e690cc> <uuid:06babc8d-f0d6-43eb-bfad-931055bae084> <uuid:fc877bbe-72a8-4e59-b959-010e6660984a> <uuid:aafd209b-cd13-401a-83f5-26751a02cffe> <uuid:2f3bbe39-01e3-4c96-8dea-377e38729a03> <uuid:9238cbda-d019-4b57-8319-0cc355656802> <uuid:91cdc345-f745-4643-bc88-a24f8e2216b0> <uuid:fe0704c2-5d2a-49a8-b507-e98c4047d8c4> <uuid:651bb558-f6d6-439f-a8e0-dd5c3385dc94> <uuid:61f99921-a94d-4e0d-8353-f027d76227c5> <uuid:474fef44-eb6e-4e19-a871-433f9bac5650> <uuid:736411fb-67f0-47c0-bf77-bf4f9048bcda> <uuid:3fef75ce-8c4c-4d89-a47f-65977debaee0> <uuid:48b52144-aaa0-42a1-8e7a-40bebfcf9985> <uuid:71af0dde-7fc9-4290-9624-119e91f422ea> <uuid:ad13a84c-df97-4b75-9dc1-1ce452249964> <uuid:c2a00070-f12b-42f9-b78c-b33daa500873> <uuid:13dd8184-f73e-4d9f-9977-3e573274fccc> <uuid:7355081e-9fa3-4fb5-ab10-c4efaa41d61f> <uuid:ed666061-98c5-439d-ab0d-5a792437a873> <uuid:5a36c75b-053b-4d7b-b512-6777786d6180> <uuid:b4c7d3ff-cf1f-40c1-8ea0-2cd2c09cc0e0> <uuid:36b10bf3-9e3a-49cb-9dc5-7e31ade26d17> <uuid:ec374b67-eb42-4c53-b5cc-0f919edb2635> <uuid:f0249395-1d12-42d1-bdaf-08c5cc29b2d4> <uuid:a604828d-a36b-4fac-ba6f-6160ade95301> <uuid:508f66b5-e0cb-489c-ae24-21bfb7c09280> <uuid:38499704-81f7-4d47-965f-435e0b7b0850> <uuid:b6e30631-9768-4020-8947-c32137328216> <uuid:90e3950e-40b2-4d9d-a135-1a4b708305aa> ) ;
+    topo:faces ( [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] ) ;
     topo:points ( [ a geojson:FeatureCollection ;
                 geojson:features <uuid:11caaac5-b631-4bd8-a6af-f82cb6371071>,
                     <uuid:16c35df5-bc63-4edd-8da5-dbcc5548a61e>,
@@ -50718,8 +48520,7 @@ All supporting points, edges, and faces are included to make the example self-co
                     <uuid:ff685e16-64f8-4f41-8a9e-7d8e83312fd6> ] ) ;
     topo:rings ( [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] [ a geojson:Feature ] ) ;
     topo:shells ( [ a geojson:Feature ] ),
-        ( [ a geojson:FeatureCollection ;
-                geojson:features [ a geojson:Feature ] ] ) .
+        ( [ a geojson:Feature ] ) .
 
 
 ```

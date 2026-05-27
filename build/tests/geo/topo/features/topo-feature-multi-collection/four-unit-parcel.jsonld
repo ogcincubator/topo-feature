@@ -5452,8 +5452,8 @@
             ],
             "relationships": [
               {
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
                 "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
                 "targetRole": "containingPrimaryParcel",
                 "targetFeatureType": "PrimaryParcel"
               }
@@ -5481,10 +5481,10 @@
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -5510,10 +5510,10 @@
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -5539,10 +5539,10 @@
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
@@ -5568,10 +5568,10 @@
             ],
             "relationships": [
               {
-                "type": "within",
-                "target": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
-                "targetRole": "containingPrimaryParcel",
-                "targetFeatureType": "PrimaryParcel"
+                "href": "uuid:458ba315-9601-4e0c-9385-f54c1e2372f6",
+                "rel": "topology",
+                "role": "containingPrimaryParcel",
+                "targetFeatureType": "surv:PrimaryParcel"
               }
             ]
           },
