@@ -22,9 +22,15 @@ def walk_features(data: list) -> Generator[dict, None, None]:
         elif isinstance(item, dict):
             match item.get("type"):
                 case "Feature":
-                    yield item
+                    if "points" in item:
+                        yield from walk_features(item.get("points", []))
+                    else:
+                        yield item
                 case "FeatureCollection":
-                    yield from walk_features(item.get("features", []))
+                    if "points" in item:
+                        yield from walk_features(item.get("points", []))
+                    else:
+                        yield from walk_features(item.get("features", []))
                 case _:
                     raise ValueError(f"Unexpected GeoJSON type: {item.get('type')!r}")
         else:
@@ -81,7 +87,7 @@ def process(input_data,mode,number):
         pfeatures = []
         for feature in walk_features(data["features"]):
             if feature["type"] != "Point":
-                pfeatures.add(feature)
+                pfeatures.append(feature)
         if len(pfeatures) > 0:
             if "points" in mode:
                 data["features"] = list(pfeatures)
