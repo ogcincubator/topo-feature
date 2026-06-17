@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature-multi-collection - Topo Feature Multi-Collection
-Generated 2026-05-26T10:39:30.428521+00:00
+Generated 2026-06-17T09:22:26.297376+00:00
 === Files ===
 Using examples/edges-example.json from examples
 JSON-LD context is present - uplifting
@@ -17,8 +17,8 @@ Validation result for _sources/features/topo-feature/tests/geometry-coordinates.
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n59d6d82ae3644f00a527194a1d80b66ab1: <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38>/geojson:geometry,<uuid:c611f840-2829-44b2-b367-3915ca7875a4>/geojson:geometry,<uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d>/geojson:geometry,<uuid:fad324b9-801f-40f4-b65b-91f8753e9698>/geojson:geometry,<uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0>/geojson:geometry
- - Shape _:n59d6d82ae3644f00a527194a1d80b66ab3: <uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38>/geojson:geometry,<uuid:c611f840-2829-44b2-b367-3915ca7875a4>/geojson:geometry,<uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d>/geojson:geometry,<uuid:fad324b9-801f-40f4-b65b-91f8753e9698>/geojson:geometry,<uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0>/geojson:geometry
+ - Shape _:n36df90656e3048ad8e06b13412c2bd3ab1: <uuid:c611f840-2829-44b2-b367-3915ca7875a4>/geojson:geometry,<uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d>/geojson:geometry,<uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38>/geojson:geometry,<uuid:fad324b9-801f-40f4-b65b-91f8753e9698>/geojson:geometry,<uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0>/geojson:geometry
+ - Shape _:n36df90656e3048ad8e06b13412c2bd3ab3: <uuid:c611f840-2829-44b2-b367-3915ca7875a4>/geojson:geometry,<uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d>/geojson:geometry,<uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38>/geojson:geometry,<uuid:fad324b9-801f-40f4-b65b-91f8753e9698>/geojson:geometry,<uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0>/geojson:geometry
 
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
@@ -26,8 +26,8 @@ Validation result for _sources/features/topo-feature-collection/tests/topo-refs-
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape toporules:testTopoLinesReferencePoints: *none*
+ - Shape toporules:testTopoReferencesExist: <uuid:c60507ba-226b-4e49-a702-e9afef899b23>/geojson:topology,<uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569>/geojson:topology,<uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac>/geojson:topology,<uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8>/geojson:topology
  - Shape toporules:testTopoDirectedReferencesExist: *none*
- - Shape toporules:testTopoReferencesExist: <uuid:c60507ba-226b-4e49-a702-e9afef899b23>/geojson:topology,<uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8>/geojson:topology,<uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac>/geojson:topology,<uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569>/geojson:topology
  - Shape toporules:testTopoEdgesReferencePoints: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -35,11 +35,11 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: <uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d>,<uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac>,<uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8>,<uuid:fad324b9-801f-40f4-b65b-91f8753e9698>,<uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569>,<uuid:c611f840-2829-44b2-b367-3915ca7875a4>,<uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38>,<uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0>,<uuid:c60507ba-226b-4e49-a702-e9afef899b23>
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: <uuid:7dc1cc1c-8e7f-4666-9f52-4e6c2e6f57ac>,<uuid:8d2be28b-8f31-46de-99cb-4d8709502cd0>,<uuid:a0ec1bfd-0f7a-4c42-bc71-bacdcd44071d>,<uuid:d69c596c-134e-4216-9bf6-d0f10e6886d8>,<uuid:83ff2cdf-6c58-4e7b-ba55-e084eff8c569>,<uuid:c611f840-2829-44b2-b367-3915ca7875a4>,<uuid:c60507ba-226b-4e49-a702-e9afef899b23>,<uuid:fad324b9-801f-40f4-b65b-91f8753e9698>,<uuid:ad6d8fcc-402c-482e-8f1a-7492ccaead38>
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
@@ -47,11 +47,11 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureCollectionShape: _:Nd0bf7e7f841949628eeb1e626bd4d462
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureCollectionShape: _:N68eac86bc88d4668a36141a0610d28e9
 
 === End SHACL ===
 
