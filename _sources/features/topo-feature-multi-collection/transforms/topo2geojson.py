@@ -391,10 +391,23 @@ try:
 except:
     mode = "points,edges,faces"
 
+_ttl_geoms_tm: dict = {}
+_ttl_coords_tm: dict = {}
+try:
+    _ttl_val = transform_metadata.metadata.get("ttl")
+    if _ttl_val:
+        _ttl_paths = _ttl_val if isinstance(_ttl_val, list) else [_ttl_val]
+        _expanded = []
+        for _p in _ttl_paths:
+            _expanded.extend(sorted(glob_module.glob(_p)) or [_p])
+        _ttl_geoms_tm, _ttl_coords_tm = load_ttl_geoms(_expanded)
+except:
+    pass
+
 try:
     if input_data:
         print("running in transformer mode")
-    output_data = process(input_data, mode, None)
+    output_data = process(input_data, mode, None, _ttl_geoms_tm, _ttl_coords_tm)
     testmode = False
 except:
     mode = "points,edges,faces"
