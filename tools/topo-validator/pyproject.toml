@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topo-validator"
+version = "0.1.0"
+description = "Topology validator for Topo Feature and 3D CSDM Building Block fixtures"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "OGC Topo Feature contributors" }
+]
+dependencies = [
+  "jsonschema>=4.0",
+  "pyyaml>=6.0",
+  "pytest>=8.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.5",
+  "mypy>=1.10"
+]
+
+[project.scripts]
+topo-validate = "topo_validator.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["topo_validator*"]
+
+[tool.pytest.ini_options]
+testpaths = ["../../_sources/features/topology-validator/tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100

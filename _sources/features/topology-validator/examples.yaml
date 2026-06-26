@@ -1,0 +1,23 @@
+- title: Cube topology validation example
+  content: |
+    Validates a self-contained cube topology dataset.
+  base-output-filename: cube-validation
+  snippets:
+    - language: json
+      ref: examples/cube.json
+
+- title: Tetrahedron topology validation example
+  content: |
+    Validates a self-contained tetrahedron topology dataset.
+  base-output-filename: tetrahedron-validation
+  snippets:
+    - language: json
+      ref: examples/tetrahedron.json
+
+- title: Four Unit Up/Down topology validation example
+  content: |
+    Validates a larger multi-solid topology dataset.
+  base-output-filename: four-unit-validation
+  snippets:
+    - language: json
+      ref: examples/4-unit-up-down.json
