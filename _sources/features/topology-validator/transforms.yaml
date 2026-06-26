@@ -1,6 +1,6 @@
 transforms:
   - id: Validate-Topology
-    description: Validate a Topo Feature dataset and produce a validation report.
+    description: Validate a Topo Feature dataset and produce a JSON validation report.
     type: python
     inputs:
       mediaTypes:
@@ -13,6 +13,24 @@ transforms:
       dependencies:
         pip: typing_extensions>=4.0.0
         python: ">=3.10"
-      mode: report
+      output_format: json
+      fail_on_error: true
+    ref: transforms/validate_topology.py
+
+  - id: Validate-Topology-HTML
+    description: Validate a Topo Feature dataset and produce an HTML validation report.
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+        - application/geo+json
+    outputs:
+      mediaTypes:
+        - text/html
+    metadata:
+      dependencies:
+        pip: typing_extensions>=4.0.0
+        python: ">=3.10"
+      output_format: html
       fail_on_error: true
     ref: transforms/validate_topology.py

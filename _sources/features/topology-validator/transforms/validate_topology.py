@@ -57,6 +57,7 @@ def _ensure_validator_on_path() -> None:
 _ensure_validator_on_path()
 
 from topo_validator.loader import from_csdm_json  # noqa: E402
+from topo_validator.report import to_html_report  # noqa: E402
 from topo_validator.validator import validate_topology  # noqa: E402
 
 
@@ -115,13 +116,13 @@ def get_transform_metadata() -> dict[str, Any]:
 
     return {}
 
-def validate_document(
+def run_validation(
     data: dict[str, Any],
     *,
     source: str | None = None,
     conformance_classes: list[str] | None = None,
-) -> dict[str, Any]:
-    """Validate one topology document and return a JSON report."""
+) -> tuple[dict[str, Any], list[Any]]:
+    """Validate one topology document and return the JSON report plus raw issues."""
     topology_data = from_csdm_json(data)
     issues = validate_topology(
         topology_data,
@@ -141,7 +142,7 @@ def validate_document(
         if issue.get("severity") == "warning"
     ]
 
-    return {
+    report = {
         "source": source,
         "valid": len(errors) == 0,
         "summary": {
@@ -151,6 +152,23 @@ def validate_document(
         },
         "issues": normalized_issues,
     }
+
+    return report, issues
+
+
+def validate_document(
+    data: dict[str, Any],
+    *,
+    source: str | None = None,
+    conformance_classes: list[str] | None = None,
+) -> dict[str, Any]:
+    """Validate one topology document and return a JSON report."""
+    report, _issues = run_validation(
+        data,
+        source=source,
+        conformance_classes=conformance_classes,
+    )
+    return report
 
 
 def expected_to_fail(path: Path) -> bool:
@@ -205,16 +223,25 @@ def process(
     *,
     conformance_classes: list[str] | None = None,
     fail_on_error: bool = False,
+    output_format: str = "json",
+    source: str | None = None,
 ) -> str:
-    """Process one transform input and return a JSON validation report string."""
+    """Process one transform input and return a validation report string."""
     data = load_json_document(input_value)
-    report = validate_document(data, conformance_classes=conformance_classes)
+    report, issues = run_validation(
+        data,
+        source=source,
+        conformance_classes=conformance_classes,
+    )
 
     if fail_on_error and not report["valid"]:
         raise ValueError(
             "Topology validation failed with "
             f"{report['summary']['errors']} error(s)."
         )
+
+    if output_format == "html":
+        return to_html_report(issues, source_name=source)
 
     return json.dumps(report, indent=2)
 
@@ -277,6 +304,7 @@ if _transform_input_data is not None:
     output_data = process(
         _transform_input_data,
         fail_on_error=bool(_metadata.get("fail_on_error", False)),
+        output_format=str(_metadata.get("output_format", "json")),
     )
 elif __name__ == "__main__":
     raise SystemExit(main())
