@@ -4,7 +4,7 @@
 
 from __future__ import annotations
 
-from collections.abc import Mapping
+from collections.abc import Callable, Mapping
 from typing import Any, cast
 
 from .model import (
@@ -664,6 +664,7 @@ def validate_topology(
     data: Mapping[str, Any],
     tol: dict[str, float] | Tolerances | None = None,
     conformance_classes: list[str] | None = None,
+    progress: Callable[[str], None] | None = None,
 ) -> list[Issue]:
     """Run all topology validation rules.
 
@@ -674,6 +675,7 @@ def validate_topology(
         conformance_classes: Optional list of conformance class ids to run. When
             omitted or None, all registered conformance classes are run. Example
             values include "CC-01", "CC-02", "CC-03" to "CC-07".
+        progress: Optional callback for validation progress messages.
 
     Returns:
         Combined list of structural and topology validation issues.
@@ -691,8 +693,22 @@ def validate_topology(
         t = tol
 
     issues: list[Issue] = []
-    issues.extend(validate_structure(data))
+
+    if progress is not None:
+        progress("Running Structure validation")
+
+    structure_issues = validate_structure(data)
+    issues.extend(structure_issues)
+
+    if progress is not None:
+        progress(
+            "Completed Structure validation "
+            f"({len(structure_issues)} issue(s))"
+        )
+
     if errors_only(issues):
+        if progress is not None:
+            progress("Skipping topology conformance checks because structure errors were found")
         return issues
 
     from .conformance import CONFORMANCE_CLASSES
@@ -703,6 +719,19 @@ def validate_topology(
     for cc in CONFORMANCE_CLASSES:
         if selected and cc.CONFORMANCE_CLASS_ID not in selected:
             continue
-        issues.extend(cc.validate(topology, tolerances=t))
+
+        class_label = (
+            f"{cc.CONFORMANCE_CLASS_ID} "
+            f"{getattr(cc, 'CONFORMANCE_CLASS_NAME', cc.__name__)}"
+        )
+
+        if progress is not None:
+            progress(f"Running {class_label}")
+
+        class_issues = cc.validate(topology, tolerances=t)
+        issues.extend(class_issues)
+
+        if progress is not None:
+            progress(f"Completed {class_label} ({len(class_issues)} issue(s))")
 
     return issues

@@ -8,13 +8,15 @@ transforms:
         - application/geo+json
     outputs:
       mediaTypes:
-        - application/json
+        - mimeType: application/json
+          defaultExtension: json
     metadata:
       dependencies:
         pip: typing_extensions>=4.0.0
         python: ">=3.10"
       output_format: json
       fail_on_error: true
+      verbose: true
     ref: transforms/validate_topology.py
 
   - id: Validate-Topology-HTML
@@ -26,11 +28,13 @@ transforms:
         - application/geo+json
     outputs:
       mediaTypes:
-        - text/html
+        - mimeType: text/html
+          defaultExtension: html
     metadata:
       dependencies:
         pip: typing_extensions>=4.0.0
         python: ">=3.10"
       output_format: html
       fail_on_error: true
-    ref: transforms/validate_topology.py
+      verbose: true
+    ref: transforms/validate_topology_html.py

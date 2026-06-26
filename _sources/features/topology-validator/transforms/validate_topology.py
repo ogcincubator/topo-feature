@@ -3,7 +3,7 @@
 """Topology validation transform and fixture runner.
 
 In Building Blocks transform mode, this script validates one input JSON document
-and returns a JSON validation report.
+and returns the configured validation report format.
 
 When run directly, it can validate one file or a glob of fixture files. In fixture
 mode, files ending with "-fail.json" are expected to produce validation errors;
@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import glob
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any, Protocol, runtime_checkable
@@ -57,7 +58,8 @@ def _ensure_validator_on_path() -> None:
 _ensure_validator_on_path()
 
 from topo_validator.loader import from_csdm_json  # noqa: E402
-from topo_validator.report import to_html_report  # noqa: E402
+from topo_validator.model import Issue, Severity  # noqa: E402
+from topo_validator.report import to_html_report, to_json_report, to_text_report  # noqa: E402
 from topo_validator.validator import validate_topology  # noqa: E402
 
 
@@ -84,49 +86,155 @@ def load_json_document(source: str | Path | SupportsRead) -> dict[str, Any]:
     return data
 
 
-def issue_to_json(issue: Any) -> dict[str, Any]:
+def _string_or_none(value: Any) -> str | None:
+    """Return a string value or None."""
+    return value if isinstance(value, str) else None
+
+
+def _issue_severity(value: Any) -> Severity:
+    """Return valid issue severity."""
+    return "warning" if value == "warning" else "error"
+
+
+def _issue_extra(value: Any) -> dict[str, Any]:
+    """Return issue extra data when it is a dictionary."""
+    if not isinstance(value, dict):
+        return {}
+
+    return {str(key): extra_value for key, extra_value in value.items()}
+
+
+def issue_to_json(issue: Any) -> Issue:
     """Convert a validator issue into a JSON-serializable dictionary."""
     if isinstance(issue, dict):
         return {
-            "code": issue.get("code"),
-            "severity": issue.get("severity"),
-            "message": issue.get("message"),
-            "object_id": issue.get("object_id"),
-            "path": issue.get("path"),
-            "extra": issue.get("extra", {}),
+            "code": str(issue.get("code", "")),
+            "severity": _issue_severity(issue.get("severity")),
+            "message": str(issue.get("message", "")),
+            "object_id": _string_or_none(issue.get("object_id")),
+            "path": _string_or_none(issue.get("path")),
+            "extra": _issue_extra(issue.get("extra")),
         }
 
     return {
-        "code": getattr(issue, "code", None),
-        "severity": getattr(issue, "severity", None),
-        "message": getattr(issue, "message", str(issue)),
-        "object_id": getattr(issue, "object_id", None),
-        "path": getattr(issue, "path", None),
-        "extra": getattr(issue, "extra", {}),
+        "code": str(getattr(issue, "code", "")),
+        "severity": _issue_severity(getattr(issue, "severity", None)),
+        "message": str(getattr(issue, "message", str(issue))),
+        "object_id": _string_or_none(getattr(issue, "object_id", None)),
+        "path": _string_or_none(getattr(issue, "path", None)),
+        "extra": _issue_extra(getattr(issue, "extra", {})),
     }
 
 
 def get_transform_metadata() -> dict[str, Any]:
     """Return Building Blocks transform metadata when available."""
-    metadata_object = globals().get("transform_metadata")
-    metadata = getattr(metadata_object, "metadata", None)
+    for metadata_object in (
+        globals().get("transform_metadata"),
+        globals().get("metadata"),
+    ):
+        if isinstance(metadata_object, dict):
+            nested_metadata = metadata_object.get("metadata")
+            if isinstance(nested_metadata, dict):
+                return nested_metadata
+            return metadata_object
 
-    if isinstance(metadata, dict):
-        return metadata
+        metadata = getattr(metadata_object, "metadata", None)
+
+        if isinstance(metadata, dict):
+            return metadata
 
     return {}
+
+
+def get_transform_source_name(metadata: dict[str, Any]) -> str | None:
+    """Return the transform input source name when the runner provides one."""
+    for key in (
+        "source",
+        "source_name",
+        "input_source",
+        "input_filename",
+        "filename",
+        "file_name",
+        "path",
+    ):
+        value = metadata.get(key)
+        if isinstance(value, str) and value:
+            return Path(value).name
+
+    return None
+
+
+def title_to_json_filename(title: str) -> str | None:
+    """Return a safe JSON filename derived from a human-readable title."""
+    normalised = re.sub(r"[^0-9A-Za-z]+", "-", title).strip("_").lower()
+
+    if not normalised:
+        return None
+
+    return f"{normalised}.json"
+
+
+def get_document_source_name(data: dict[str, Any]) -> str | None:
+    """Return a source name declared or derived from the input document."""
+    metadata = data.get("metadata")
+
+    if isinstance(metadata, dict):
+        for key in (
+            "source",
+            "source_name",
+            "input_source",
+            "input_filename",
+            "filename",
+            "file_name",
+            "path",
+        ):
+            value = metadata.get(key)
+            if isinstance(value, str) and value:
+                return Path(value).name
+
+    for key in ("surveyTitle", "name"):
+        value = data.get(key)
+        if isinstance(value, str) and value:
+            source_name = title_to_json_filename(value)
+            if source_name is not None:
+                return source_name
+
+    return None
+
+
+def format_validation_report(
+    issues: list[Any],
+    output_format: str,
+    *,
+    source: str | None = None,
+) -> str:
+    """Return validation issues formatted as JSON, HTML, or text."""
+    report_format = output_format.lower()
+    normalized_issues = [issue_to_json(issue) for issue in issues]
+
+    if report_format == "html":
+        return to_html_report(normalized_issues, source_name=source)
+    if report_format == "json":
+        return to_json_report(normalized_issues)
+    if report_format == "text":
+        return to_text_report(normalized_issues)
+
+    raise ValueError(f"Unsupported output format: {output_format!r}")
+
 
 def run_validation(
     data: dict[str, Any],
     *,
     source: str | None = None,
     conformance_classes: list[str] | None = None,
-) -> tuple[dict[str, Any], list[Any]]:
+    progress: Any | None = None,
+) -> tuple[dict[str, Any], list[Issue]]:
     """Validate one topology document and return the JSON report plus raw issues."""
     topology_data = from_csdm_json(data)
     issues = validate_topology(
         topology_data,
         conformance_classes=conformance_classes,
+        progress=progress,
     )
     normalized_issues = [issue_to_json(issue) for issue in issues]
 
@@ -225,13 +333,22 @@ def process(
     fail_on_error: bool = False,
     output_format: str = "json",
     source: str | None = None,
+    progress: Any | None = None,
 ) -> str:
     """Process one transform input and return a validation report string."""
+    if source is None and isinstance(input_value, Path):
+        source = input_value.name
+
     data = load_json_document(input_value)
+
+    if source is None:
+        source = get_document_source_name(data)
+
     report, issues = run_validation(
         data,
         source=source,
         conformance_classes=conformance_classes,
+        progress=progress,
     )
 
     if fail_on_error and not report["valid"]:
@@ -240,10 +357,11 @@ def process(
             f"{report['summary']['errors']} error(s)."
         )
 
-    if output_format == "html":
-        return to_html_report(issues, source_name=source)
-
-    return json.dumps(report, indent=2)
+    return format_validation_report(
+        issues,
+        output_format,
+        source=source,
+    )
 
 
 def main() -> int:
@@ -257,7 +375,13 @@ def main() -> int:
     parser.add_argument(
         "-o",
         "--output",
-        help="Write JSON report to this file instead of stdout.",
+        help="Write report to this file instead of stdout.",
+    )
+    parser.add_argument(
+        "--format",
+        choices=["json", "html", "text"],
+        default="json",
+        help="Report format for single-file validation.",
     )
     parser.add_argument(
         "--fixtures",
@@ -277,17 +401,24 @@ def main() -> int:
         parser.error("An input file or fixture glob is required.")
 
     if args.fixtures:
+        if args.format != "json":
+            parser.error("--fixtures only supports the JSON aggregate report.")
         report = validate_fixtures(args.input)
+        report_text = json.dumps(report, indent=2)
         exit_code = 0 if report["passed"] else 1
     else:
-        report = validate_document(
-            load_json_document(Path(args.input)),
+        data = load_json_document(Path(args.input))
+        report, issues = run_validation(
+            data,
             source=args.input,
             conformance_classes=args.conformance_classes,
         )
+        report_text = format_validation_report(
+            issues,
+            args.format,
+            source=args.input,
+        )
         exit_code = 0 if report["valid"] else 1
-
-    report_text = json.dumps(report, indent=2)
 
     if args.output:
         Path(args.output).write_text(report_text + "\n", encoding="utf-8")
@@ -297,14 +428,25 @@ def main() -> int:
     return exit_code
 
 
-_transform_input_data = globals().get("input_data")
+def run_transform_from_globals(default_output_format: str = "json") -> None:
+    """Run the Building Blocks transform when input_data is available."""
+    transform_input_data = globals().get("input_data")
 
-if _transform_input_data is not None:
-    _metadata = get_transform_metadata()
-    output_data = process(
-        _transform_input_data,
-        fail_on_error=bool(_metadata.get("fail_on_error", False)),
-        output_format=str(_metadata.get("output_format", "json")),
+    if transform_input_data is None:
+        return
+
+    metadata = get_transform_metadata()
+    verbose = bool(metadata.get("verbose", False))
+    globals()["output_data"] = process(
+        transform_input_data,
+        fail_on_error=bool(metadata.get("fail_on_error", False)),
+        output_format=str(metadata.get("output_format", default_output_format)),
+        source=get_transform_source_name(metadata),
+        progress=print if verbose else None,
     )
-elif __name__ == "__main__":
+
+
+run_transform_from_globals()
+
+if __name__ == "__main__":
     raise SystemExit(main())

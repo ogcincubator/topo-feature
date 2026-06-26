@@ -1,6 +1,8 @@
 - title: Cube topology validation example
   content: |
     Validates a self-contained cube topology dataset.
+     
+    [Open topology validation report](../../../tests/geo/topo/features/topology-validator/transforms/cube-validation.Validate-Topology-HTML.html)
   base-output-filename: cube-validation
   snippets:
     - language: json

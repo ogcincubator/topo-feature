@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import html
 import json
+from datetime import datetime, timezone
 from typing import Literal, TypedDict
 
 from .model import Issue, errors_only
@@ -167,7 +168,6 @@ def rule_check(
     }
 
 
-# Known structure and topology rule checks, grouped by report row.
 # Known structure and topology rule checks, grouped by report row.
 RULE_CHECKS: tuple[RuleCheck, ...] = (
     rule_check(
@@ -527,12 +527,17 @@ def _html_issue_details(issues: list[Issue]) -> str:
         """
 
 
-def to_html_report(issues: list[Issue], source_name: str | None = None) -> str:
+def to_html_report(
+    issues: list[Issue],
+    source_name: str | None = None,
+    executed_at: str | None = None,
+) -> str:
     """Return a human-readable HTML report for validation issues.
 
     Args:
         issues: Validation issues returned by the validator.
         source_name: Optional name of the validated input file to display in the report.
+        executed_at: DateTime that the report is executed
 
     Returns:
         Complete standalone HTML report string.
@@ -541,11 +546,17 @@ def to_html_report(issues: list[Issue], source_name: str | None = None) -> str:
     error_count = len(errors_only(issues))
     valid = error_count == 0
     validation_status = _validation_status(issue_count, error_count)
+    report_executed_at = (
+            executed_at or datetime.now(timezone.utc).isoformat(timespec="seconds"))
     source_heading = (
         f'\n    <p class="source-file">Test file: '
         f"<strong>{html.escape(source_name)}</strong></p>"
         if source_name
         else ""
+    )
+    execution_heading = (
+        f'\n    <p class="executed-at">Executed at: '
+        f"<strong>{html.escape(report_executed_at)}</strong></p>"
     )
 
     return f"""<!doctype html>
@@ -559,7 +570,7 @@ def to_html_report(issues: list[Issue], source_name: str | None = None) -> str:
 </head>
 <body>
   <main>
-    <h1>Topology Validation Report</h1>{source_heading}
+    <h1>Topology Validation Report</h1>{source_heading}{execution_heading}
 
     <section class="summary">
       <div class="card">

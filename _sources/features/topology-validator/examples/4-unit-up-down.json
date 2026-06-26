@@ -42,7 +42,7 @@
   "horizontalCRS": "epsg:7850",
   "verticalCRS": "epsg:5711",
   "bearingRotation": 0.0,
-  "surveyTitle": "4 Unit Up/Down with Stairwell",
+  "surveyTitle": "4 Unit Up/Down",
   "adminUnit": [],
   "hasProvenance": [],
   "wasGeneratedBy": {
