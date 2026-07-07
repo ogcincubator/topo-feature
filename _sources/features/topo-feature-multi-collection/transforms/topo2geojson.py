@@ -1,195 +1,413 @@
-import json, geopandas as gpd
+"""
+topo2geojson-ttl.py
+===================
+Like topo2geojson-orig.py but resolves topology references to features
+not present in the input JSON by loading them from TTL files via topo_geojson.
+
+Usage example:
+    python topo2geojson-ttl.py -i parcel1.json -t topoobjects.ttl -o test.json
+"""
+
+import json
+import os
 import sys
 import glob as glob_module
-
 from typing import Generator, List
 
+import geojson
+from topo_rdf_geojson import load_topo
+
+import geopandas as gpd
+
+
+# ---------------------------------------------------------------------------
+# Shared helpers (from topo2geojson-orig.py)
+# ---------------------------------------------------------------------------
 
 def walk_features(data: list) -> Generator[dict, None, None]:
-    """
-    Walk features from a list of GeoJSON Features or FeatureCollections.
-
-    Args:
-        data: A list containing GeoJSON Feature or FeatureCollection objects
-
-    Yields:
-        Individual GeoJSON Feature dictionaries
-    """
     for item in data:
         if isinstance(item, List):
-            yield from  walk_features(item)
+            yield from walk_features(item)
             continue
         elif isinstance(item, dict):
             match item.get("type"):
                 case "Feature":
-                    if "points" in item:
-                        yield from walk_features(item.get("points", []))
-                    else:
-                        yield item
+                    yield item
                 case "FeatureCollection":
-                    if "points" in item:
-                        yield from walk_features(item.get("points", []))
-                    else:
-                        yield from walk_features(item.get("features", []))
+                    yield from walk_features(item.get("features", []))
                 case _:
                     raise ValueError(f"Unexpected GeoJSON type: {item.get('type')!r}")
         else:
             yield item
 
+
 def extract_feature_coordinates(data: list) -> dict[str, object]:
-    """
-    Extract a mapping of feature IDs to their coordinates as JSON strings.
-
-    Args:
-        data: A list containing GeoJSON Feature or FeatureCollection objects
-
-    Returns:
-        A dictionary mapping feature ID -> JSON-encoded coordinates
-    """
     return {
         feature["id"]: feature["geometry"]["coordinates"]
         for feature in walk_features(data)
     }
 
-def process(input_data,mode,number):
-    if type(input_data) == str:
+
+# ---------------------------------------------------------------------------
+# TTL helpers
+# ---------------------------------------------------------------------------
+
+def _local_name(uri_or_qname: str) -> str:
+    """Return the local fragment/path-tail/suffix of a URI or qname."""
+    key = str(uri_or_qname)
+    if key.startswith("http://") or key.startswith("https://"):
+        if "#" in key:
+            return key.rsplit("#", 1)[1]
+        return key.rsplit("/", 1)[-1]
+    if ":" in key:
+        return key.split(":", 1)[1]
+    return key
+
+
+def load_ttl_geoms(ttl_files: list[str]):
+    """
+    Parse TTL files with topo_geojson.load_topo() and return two dicts:
+      geoms:  local_name / full_key / qname → {"type": ..., "coordinates": ...}
+      coords: local_name / full_key / qname → coordinates only (for geomsmap fallback)
+    """
+    geoms = {}
+    coords = {}
+    for path in ttl_files:
+        print(f"Loading TTL: {path}")
+        resolved = load_topo(path)
+        for key, geom in resolved.items():
+            geoms[key] = geom
+            local = _local_name(key)
+            if local not in geoms:
+                geoms[local] = geom
+            if "coordinates" in geom:
+                coords[key] = geom["coordinates"]
+                if local not in coords:
+                    coords[local] = geom["coordinates"]
+    unique = len({id(v) for v in geoms.values()})
+    print(f"  -> {unique} unique TTL geometries indexed")
+    return geoms, coords
+
+
+# ---------------------------------------------------------------------------
+# Topology resolution helpers
+# ---------------------------------------------------------------------------
+
+def _chain_edges(edge_coord_lists: list) -> list:
+    """
+    Chain a list of edge LineString coordinate sequences into a closed ring.
+    Direction of each edge is auto-detected by adjacency with the previous end-point.
+    """
+    chain: list = []
+    for seg in edge_coord_lists:
+        if not seg:
+            continue
+        if not chain:
+            chain.extend(seg)
+        else:
+            last = chain[-1]
+            if seg[0] == last:
+                chain.extend(seg[1:])
+            elif seg[-1] == last:
+                chain.extend(list(reversed(seg))[1:])
+            else:
+                # Non-adjacent — append without first point (best-effort)
+                chain.extend(seg[1:])
+    if chain and chain[0] != chain[-1]:
+        chain.append(chain[0])
+    return chain
+
+
+def _resolve_inline_topology(topo: dict, geomsmap: dict,
+                             ttl_coords: dict, ttl_geoms: dict) -> dict | None:
+    """
+    Resolve a feature's inline topology dict to a GeoJSON geometry dict.
+
+    Handles:
+      topology.type = "Polygon",    references = [[edge_ids…], …]
+      topology.type = "LineString", references = [point_ids…]
+      topology.directed_references  = [{"ref": id, "orientation": "+"/"-"}, …]
+    """
+    topo_type = topo.get("type", "").lower()
+
+    def lookup_coords(ref_id):
+        return geomsmap.get(ref_id) or ttl_coords.get(ref_id)
+
+    def lookup_geom(ref_id):
+        return ttl_geoms.get(ref_id)
+
+    if "references" in topo:
+        refs = topo["references"]
+
+        if topo_type == "polygon":
+            rings = []
+            for ring_item in refs:
+                if isinstance(ring_item, list):
+                    # ring_item is a list of edge IDs; resolve each to LineString coords
+                    edge_segs = []
+                    for edge_id in ring_item:
+                        geom = lookup_geom(edge_id)
+                        if geom and geom.get("type") == "LineString":
+                            edge_segs.append(geom["coordinates"])
+                        else:
+                            c = lookup_coords(edge_id)
+                            if c is not None:
+                                edge_segs.append(c if isinstance(c[0], list) else [c])
+                    if edge_segs:
+                        ring = _chain_edges(edge_segs)
+                        if ring:
+                            rings.append(ring)
+                else:
+                    geom = lookup_geom(ring_item)
+                    if geom:
+                        rings.append(geom.get("coordinates", []))
+            return {"type": "Polygon", "coordinates": rings} if rings else None
+
+        elif topo_type == "linestring":
+            pts = [c for r in refs if (c := lookup_coords(r)) is not None]
+            return {"type": "LineString", "coordinates": pts} if len(pts) >= 2 else None
+
+        else:
+            pts = [c for r in refs if (c := lookup_coords(r)) is not None]
+            return {"type": topo.get("type", "Unknown"), "coordinates": pts} if pts else None
+
+    elif "directed_references" in topo:
+        drs = topo["directed_references"]
+        chain: list = []
+        startindex = 0
+        for node in drs:
+            ref_id = node.get("ref")
+            c = lookup_coords(ref_id)
+            if c is None:
+                continue
+            seg = list(c) if isinstance(c[0], list) else [c]
+            seg = seg[:]
+            if node.get("orientation") == "-":
+                chain += list(reversed(seg))[startindex:]
+            else:
+                chain += seg[startindex:]
+            startindex = 1
+        return {"type": "Polygon", "coordinates": [chain]} if chain else None
+
+    return None
+
+
+# ---------------------------------------------------------------------------
+# Main processing
+# ---------------------------------------------------------------------------
+
+_GEOM_TO_MODE = {
+    "point":           "points",
+    "linestring":      "edges",
+    "multilinestring": "rings",
+    "polygon":         "faces",
+    "multipolygon":    "faces",
+}
+
+
+def process(input_data, mode: str, number, ttl_geoms=None, ttl_coords=None) -> str:
+    if ttl_geoms is None:
+        ttl_geoms = {}
+    if ttl_coords is None:
+        ttl_coords = {}
+
+    if isinstance(input_data, str):
         data = json.loads(input_data)
     else:
         data = json.load(input_data)
 
-    count = 0 # compare to number
-    # Normalize: wrap a single Feature into a FeatureCollection
+    count = 0
     is_feature = data.get("type") == "Feature"
     if is_feature:
         data = {"type": "FeatureCollection", "features": [data], "crs": data.get("crs")}
 
-    # Extract CRS
     crs_name = ((data.get("crs") or {}).get("properties") or {}).get("name")
     epsg_code = crs_name.split(":")[-1] if crs_name else "4326"
 
-    geomsmap = {}
+    geomsmap: dict = {}
+    all_input_features = list(walk_features(data.get("features", [])))
 
-    # transfer coordinates to features
-
+    # Build geomsmap from inline point features
     if "points" in data:
-        # assume we nuke any features if points are explicit.
         data["features"] = []
         for pc in data["points"]:
-            for feature in pc['features']:
-                if 'id' in feature:
-                    feature['properties']['feature_id'] = feature['id']
+            for feature in pc.get("features", []):
+                if "id" in feature:
+                    feature.setdefault("properties", {})["feature_id"] = feature["id"]
             if "points" in mode:
-                data["features"].extend(pc["features"])
-            geomsmap = extract_feature_coordinates(data["points"])
-        # push ids to properties so geopandas doesnt nuke them
-    elif "features" in data:
-        # need to find points in features[] else cannot generate geometries
-        pfeatures = []
-        for feature in walk_features(data["features"]):
-            if feature["type"] != "Point":
-                pfeatures.append(feature)
-        if len(pfeatures) > 0:
+                data["features"].extend(pc.get("features", []))
+        geomsmap = extract_feature_coordinates(data["points"])
+    elif all_input_features:
+        point_feats = [f for f in all_input_features
+                       if (f.get("geometry") or {}).get("type") == "Point"]
+        if point_feats:
             if "points" in mode:
-                data["features"] = list(pfeatures)
+                data["features"] = point_feats
             else:
                 data["features"] = []
-            geomsmap = extract_feature_coordinates(pfeatures)
+            geomsmap = {f["id"]: f["geometry"]["coordinates"]
+                        for f in point_feats if "id" in f}
+        else:
+            data["features"] = []
 
-    if geomsmap == {}:
-        raise ValueError("No point geometries found")
+    if not geomsmap and not ttl_coords:
+        raise ValueError("No point geometries found in input or TTL files")
 
-    geomtype = {"edges": "LineString", "solids": "Solid", "rings": "MultiLineString", "faces": "MultiPolygon" , "shells": "Solid"}
-    for feat_type in [ "edges",  "rings" , "faces" ] :
-        if not feat_type in data :
+    # Process collection-level topology (data["edges"], data["rings"], data["faces"])
+    geomtype = {
+        "edges": "LineString",
+        "rings":  "MultiLineString",
+        "faces":  "MultiPolygon",
+        "shells": "Solid",
+        "solids": "Solid",
+    }
+    for feat_type in ["edges", "rings", "faces"]:
+        if feat_type not in data:
             continue
-        for feat in walk_features ( data[feat_type] ):
-            if "topology" in feat:
-                # check type matches expected
-                if feat["topology"]["type"].lower()+'s' != feat_type:
-                    print("Warning expected type{} does not match {}".format(feat["topology"]["type"].lower(),feat_type))
-                if "references" in feat["topology"] :
-                    coords =  [ geomsmap[node] for node in feat["topology"]["references"] ]
+        for feat in walk_features(data[feat_type]):
+            if "topology" not in feat:
+                continue
+            topo = feat["topology"]
+            expected = topo["type"].lower() + "s"
+            if expected != feat_type:
+                print(f"Warning: expected type {topo['type'].lower()} does not match {feat_type}")
 
-                elif "directed_references" in feat["topology"] :
-                    drs = feat["topology"]["directed_references"]
-                    coords = [[]]
-                    startindex = 0
-                    for node in drs:
-                        coordSet = geomsmap[node["ref"]][:]
-                        if node["orientation"] == '-':
-                            coords[0] += coordSet[::-1][startindex:]
-                        else:
-                            coords[0] += coordSet[startindex:]
-                        if feat_type == 'edges':
-                            # for lines skip starting point to join them up with duplicating end point
-                            startindex = 1
-                else:
-                    print("No references found")
-                    continue
+            if "references" in topo:
+                coords = [
+                    geomsmap.get(node) or ttl_coords.get(node)
+                    for node in topo["references"]
+                ]
+                coords = [c for c in coords if c is not None]
+            elif "directed_references" in topo:
+                drs = topo["directed_references"]
+                coords = [[]]
+                startindex = 0
+                for node in drs:
+                    c = geomsmap.get(node["ref"]) or ttl_coords.get(node["ref"])
+                    if c is None:
+                        continue
+                    seg = list(c)[:]
+                    if node["orientation"] == "-":
+                        coords[0] += list(reversed(seg))[startindex:]
+                    else:
+                        coords[0] += seg[startindex:]
+                    if feat_type == "edges":
+                        startindex = 1
+            else:
+                print("No references found")
+                continue
 
-                feat["geometry"] = {"type": geomtype[feat_type], "coordinates": coords, "properties": feat["properties"]}
+            feat["geometry"] = {
+                "type": geomtype[feat_type],
+                "coordinates": coords,
+                "properties": feat.get("properties", {}),
+            }
+            if "id" in feat:
                 geomsmap[feat["id"]] = coords
-                if feat_type in mode :
-                    if number:
-                        if count >= int(number):
-                            continue
-                    count +=1
-                    data["features"].append(feat)
+            if feat_type in mode:
+                if number and count >= int(number):
+                    continue
+                count += 1
+                data["features"].append(feat)
+
+    # Process individual features with inline topology, resolved via TTL
+    for feature in all_input_features:
+        topo = feature.get("topology")
+        if not topo:
+            continue
+
+        feat_id = feature.get("id")
+        resolved_geom = None
 
 
+        # Option 1: resolve inline topology references using TTL edge/point coords if required
+        if resolved_geom is None:
+            resolved_geom = _resolve_inline_topology(topo, geomsmap, ttl_coords, ttl_geoms)
+            if resolved_geom:
+                print(f"Feature {feat_id!r}: geometry resolved by chaining TTL topology references")
 
-    # Create GeoDataFrame from GeoJSON-like dict
-    if data["features"] == []:
+        # Option 2: TTL has already fully resolved this feature's geometry by ID
+        if feat_id:
+            ttl_geom = ttl_geoms.get(feat_id)
+            if ttl_geom:
+                resolved_geom = ttl_geom
+                print(f"Feature {feat_id!r}: geometry resolved directly from TTL index")
+
+        if resolved_geom is None:
+            print(f"Warning: could not resolve topology for feature {feat_id!r}")
+            continue
+
+        resolved_feature = {**feature, "geometry": resolved_geom}
+
+        geom_type_str = resolved_geom.get("type", "").lower()
+        feat_mode = _GEOM_TO_MODE.get(geom_type_str, "faces")
+        if feat_mode in mode:
+            if number and count >= int(number):
+                continue
+            count += 1
+            data["features"].append(resolved_feature)
+
+    if not data["features"]:
         print("No feature geometries generated")
         return "{}"
-    else:
-        gdf = gpd.GeoDataFrame.from_features(data["features"])
-    # Set CRS dynamically
+
+    gdf = gpd.GeoDataFrame.from_features(data["features"])
+
     if epsg_code:
         gdf.set_crs(epsg=int(epsg_code), inplace=True)
-
-    # Print current CRS
     print("Transform from CRS" + str(gdf.crs))
 
-    # Transform to another CRS (example: ETRS89)
     if epsg_code != "4326":
         gdf = gdf.to_crs(epsg=4326)
-        # Print current CRS
         print("            to CRS" + str(gdf.crs))
 
-    # Convert back to GeoJSON — unwrap back to a single Feature if input was one
     result = json.loads(gdf.to_json())
-    if is_feature == 1:
+    if is_feature:
         outputstr = json.dumps(result["features"][0], indent=2)
     else:
         outputstr = gdf.to_json(indent=2)
-    # JSON-LD enablement for viewer
+
     output_data = json.loads(outputstr)
     output_data["@context"] = [
         "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld"
     ]
     if "@context" in data:
         context = data["@context"]
-        if isinstance(context, List):
-            iterable_data = context
-        else:
-            iterable_data = [context]
-        for c in iterable_data:
+        iterable = context if isinstance(context, List) else [context]
+        for c in iterable:
             output_data["@context"].append(c)
+
     return json.dumps(output_data, indent=2)
+
+
+# ---------------------------------------------------------------------------
+# Transformer-mode compatibility (same pattern as topo2geojson-orig.py)
+# ---------------------------------------------------------------------------
 
 testmode = True
 try:
-    if 'mode' in transform_metadata.metadata:
+    if "mode" in transform_metadata.metadata:
         mode = transform_metadata.metadata["mode"]
 except:
     mode = "points,edges,faces"
 
+_ttl_geoms_tm: dict = {}
+_ttl_coords_tm: dict = {}
+try:
+    _ttl_val = transform_metadata.metadata.get("ttl")
+    if _ttl_val:
+        _ttl_paths = _ttl_val if isinstance(_ttl_val, list) else [_ttl_val]
+        _expanded = []
+        for _p in _ttl_paths:
+            _expanded.extend(sorted(glob_module.glob(_p)) or [_p])
+        _ttl_geoms_tm, _ttl_coords_tm = load_ttl_geoms(_expanded)
+except:
+    pass
 
 try:
     if input_data:
         print("running in transformer mode")
-    output_data = process(input_data,mode,None)
+    output_data = process(input_data, mode, None, _ttl_geoms_tm, _ttl_coords_tm)
     testmode = False
 except:
     mode = "points,edges,faces"
@@ -198,22 +416,40 @@ except:
 if __name__ == "__main__" and testmode:
     import argparse
 
-    argparser = argparse.ArgumentParser()
-    argparser.add_argument('-i', '--input_data', help="input file")
-    argparser.add_argument('-o', '--output_file', help="output file")
-    argparser.add_argument('-p', '--print', action='store_true', help="Print output of each file")
-    argparser.add_argument('-n', '--number', default=None, help="Count of features to process")
-    argparser.add_argument('-m', '--mode', default="points,edges,faces", help="points,edges,faces (comma separated list)")
+    argparser = argparse.ArgumentParser(
+        description="Convert topo-feature JSON to GeoJSON, resolving missing topology from TTL files."
+    )
+    argparser.add_argument("-i", "--input_data", help="Input JSON file (supports glob)")
+    argparser.add_argument("-o", "--output_file", help="Output GeoJSON file")
+    argparser.add_argument("-t", "--ttl", action="append", default=[],
+                           metavar="TTL_FILE",
+                           help="TTL file(s) providing topology for referenced features (repeatable, supports glob)")
+    argparser.add_argument("-p", "--print", action="store_true", help="Print output to stdout")
+    argparser.add_argument("-n", "--number", default=None, help="Max number of features to include")
+    argparser.add_argument("-m", "--mode", default="points,edges,faces",
+                           help="Feature types to include (default: points,edges,faces)")
     args = argparser.parse_args()
+
+    # Expand TTL globs
+    ttl_files = []
+    for pattern in args.ttl:
+        ttl_files.extend(sorted(glob_module.glob(pattern)))
+
+    ttl_geoms_map: dict = {}
+    ttl_coords_map: dict = {}
+    if ttl_files:
+        ttl_geoms_map, ttl_coords_map = load_ttl_geoms(ttl_files)
+
     if args.input_data:
         for f in sorted(glob_module.glob(args.input_data)):
-            print("Processing {}".format(f))
-            input_data = open(f, "r").read()
-            output_data = process(input_data, args.mode, args.number)
+            print(f"Processing {f}")
+            with open(f) as fh:
+                output = process(fh, args.mode, args.number, ttl_geoms_map, ttl_coords_map)
             if args.print:
-                print(output_data)
+                print(output)
+            if args.output_file:
+                with open(args.output_file, "w") as out:
+                    out.write(output)
+                print(f"Written to {args.output_file}")
     else:
-        print("No input file")
-
-
-
+        print("No input file specified. Use -i <file> -t <ttl> [-o <output>]")

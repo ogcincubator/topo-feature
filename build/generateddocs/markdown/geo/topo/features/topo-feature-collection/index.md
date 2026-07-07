@@ -527,6 +527,8 @@ properties:
       anyOf:
       - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
       - $ref: '#/$defs/PointOptions'
+x-jsonld-extra-terms:
+  properties: '@nest'
 
 ```
 
