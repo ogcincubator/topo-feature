@@ -9,10 +9,12 @@ transforms:
       mediaTypes: [ application/geo+json ]
     metadata:
       dependencies:
-        pip: [ geopandas>=1.1.3, geojson, git+https://github.com/ogcincubator/topo-functions.git ]
+        pip: [ git+https://github.com/ogcincubator/topo-functions.git ]
         python: ">=3.10"   # optional; skipped if not met
-      mode: edges,points
-    ref: transforms/topo2geojson.py
+      ttl: test.ttl
+    code: |
+      from topo2geojson import process
+      output_data = process(input_data, mode="edges,points", number=None )
 
   - id: Faces-as-Polygons
     description: GeoJSON Polygons for faces
@@ -23,8 +25,9 @@ transforms:
       mediaTypes: [ application/geo+json ]
     metadata:
       dependencies:
-        pip: [geopandas>=1.1.3, geojson, git+https://github.com/ogcincubator/topo-functions.git ]
+        pip: [git+https://github.com/ogcincubator/topo-functions.git ]
         python: ">=3.10"   # optional; skipped if not met
-      mode: faces
       ttl: test.ttl
-    ref: transforms/topo2geojson.py
+    code: |
+      from topo2geojson import process
+      output_data = process(input_data, mode="faces", number=None )
