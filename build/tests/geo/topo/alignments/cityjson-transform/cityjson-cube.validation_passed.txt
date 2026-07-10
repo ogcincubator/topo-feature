@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.alignments.cityjson-transform - CityJSON to TopoFeature transform
-Generated 2026-07-07T22:47:04.948933+00:00
+Generated 2026-07-10T08:22:47.005771+00:00
 === Files ===
 Using examples/cube.city.json from examples
 === End Files ===

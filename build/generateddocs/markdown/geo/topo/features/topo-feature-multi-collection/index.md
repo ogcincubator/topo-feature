@@ -1978,8 +1978,8 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     topo:edges <uuid:f4aafb64-0512-46e6-aad9-d39ef1255674> ;
     topo:faces ( <uuid:b197eb9f-d623-4276-ab90-56deed4d70ee> ) ;
     topo:rings ( <uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54> ) ;
-    topo:shells ( <uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30> ),
-        ( <uuid:22177114-a434-4a3e-bc39-b204a4c5b79a> ) ;
+    topo:shells ( <uuid:22177114-a434-4a3e-bc39-b204a4c5b79a> ),
+        ( <uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54> a geojson:FeatureCollection ;
@@ -3487,8 +3487,8 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
     topo:edges <uuid:dbe9315f-41ea-48b3-9307-a636d71be4a5> ;
     topo:faces ( <uuid:f6081e8b-46f0-4cfa-a97a-ebc3d9f45756> ) ;
     topo:rings ( <uuid:7ee1cf56-6075-480a-a5bc-d877b9fae2c7> ) ;
-    topo:shells ( <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> ),
-        ( <uuid:51326c6a-b938-4c83-8b6a-e2ffe6afd839> ) ;
+    topo:shells ( <uuid:51326c6a-b938-4c83-8b6a-e2ffe6afd839> ),
+        ( <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> a geojson:FeatureCollection ;
@@ -6300,8 +6300,8 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     topo:edges <uuid:0e096965-f363-4b3e-9e04-643b5fb0d042> ;
     topo:faces ( <uuid:5ea35606-e9fc-4db3-8935-35be81feaade> ) ;
     topo:rings ( <uuid:e1be1058-cea4-4bd7-a9a7-ce1e4a1ddc51> ) ;
-    topo:shells ( <uuid:ca3c28b2-7bfa-44b5-8129-da1e3f1723c3> ),
-        ( <uuid:4dea63f9-8deb-4736-8c4b-7d2534a5b40e> ) ;
+    topo:shells ( <uuid:4dea63f9-8deb-4736-8c4b-7d2534a5b40e> ),
+        ( <uuid:ca3c28b2-7bfa-44b5-8129-da1e3f1723c3> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:0e096965-f363-4b3e-9e04-643b5fb0d042> a geojson:FeatureCollection ;
@@ -30003,10 +30003,10 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> a geojson:Feature ;
     parcel:appellation [ rdfs:label "Lot 1" ;
-            dct:hasPart [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType <https://linked.data.gov.au/def/csdm/names/localPartType/ParcelType> ],
-                [ rdfs:label "1" ;
-                    commonpatterns:namePartType <https://linked.data.gov.au/def/csdm/names/localPartType/ParcelIdentifier> ] ] ;
+            dct:hasPart [ rdfs:label "1" ;
+                    commonpatterns:namePartType <https://linked.data.gov.au/def/csdm/names/localPartType/ParcelIdentifier> ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType <https://linked.data.gov.au/def/csdm/names/localPartType/ParcelType> ] ] ;
     parcel:purpose wa-parcel-purpose:lot ;
     parcel:state wa-parcel-state:created ;
     parcel:surfaceArea 2829 ;
@@ -33590,8 +33590,8 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     topo:edges <uuid:696ce04d-ecba-46ed-8d11-95a17f490933> ;
     topo:faces ( <uuid:66682266-e880-42c1-a61f-d92a48267c90> ) ;
     topo:rings ( <uuid:ec6d63b8-c842-4560-8e08-1c6d5d041ae9> ) ;
-    topo:shells ( <uuid:bff4a861-5f47-4bcb-a803-5441d2dc7e92> ),
-        ( <uuid:dcf03c4e-dd72-4d79-89e0-6a254806b438> ) ;
+    topo:shells ( <uuid:dcf03c4e-dd72-4d79-89e0-6a254806b438> ),
+        ( <uuid:bff4a861-5f47-4bcb-a803-5441d2dc7e92> ) ;
     geojson:collectionFeatureType "CSD" .
 
 <uuid:349c28e4-021d-492e-b9fb-e120f614bc04> a geojson:FeatureCollection ;
