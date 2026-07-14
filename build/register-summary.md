@@ -1,20 +1,14 @@
 # Topo-Feature
 
-Features with geometry defined via  generalised topology between identified objects (Features).
+Features with 2 or 3D geometry defined via generalised topology between identified objects (Features).
 
-Defines Feature (object) topology using a _topology_ property to reference an ordered list of references to other features. 
+Defines Feature (object) topology using a _topology_ property containing an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.\n\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \n\nTopo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. \n\nTopo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.\n\nNote: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features..
 
-Other features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.
+Using JSON-FG allows for explicit CRS.
 
-Topo-Feature defined objects can be solids, swept volumes or any other concept. 
+Supports transformation "smoke tests" from 2 and 3D topology to simple geojson views.
 
-Topo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. 
-
-Topo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.
-
-Note: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features.. 
-
-_Topo-Feature allows for explicit CRS. If desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._
+If desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._
 
 
 ## Building Blocks

@@ -10,13 +10,13 @@
   "itemClass": "schema",
   "register": "ogcincubator",
   "version": "0.1",
-  "dateOfLastChange": "2026-07-10",
+  "dateOfLastChange": "2026-07-14",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.topo.datatypes.oriented-ref",
     "ogc.geo.topo.datatypes.topology",
+    "ogc.geo.topo.datatypes.oriented-ref",
     "ogc.geo.topo.features.topo-feature"
   ],
   "tags": [

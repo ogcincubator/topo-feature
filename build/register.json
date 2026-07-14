@@ -1,8 +1,8 @@
 {
   "name": "Topo-Feature",
-  "abstract": "Features with geometry defined via  generalised topology between identified objects (Features).",
-  "description": "Defines Feature (object) topology using a _topology_ property to reference an ordered list of references to other features. \n\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.\n\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \n\nTopo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. \n\nTopo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.\n\nNote: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features.. \n\n_Topo-Feature allows for explicit CRS. If desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._\n",
-  "modified": "2026-07-10T08:22:40.978453",
+  "abstract": "Features with 2 or 3D geometry defined via generalised topology between identified objects (Features).",
+  "description": "Defines Feature (object) topology using a _topology_ property containing an ordered list of references to other features. \\n\\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.\\n\\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \\n\\nTopo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. \\n\\nTopo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.\\n\\nNote: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features..\n\nUsing JSON-FG allows for explicit CRS.\n\nSupports transformation \"smoke tests\" from 2 and 3D topology to simple geojson views.\n\nIf desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._\n",
+  "modified": "2026-07-14T07:49:43.937691",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"782e6be7338edb48ec5ec9a0c1d7f8df22df5ca0",
@@ -30,7 +30,7 @@
       "itemClass": "schema",
       "register": "ogc",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "tags": [
         "3D",
         "geometry",
@@ -149,7 +149,7 @@
       "itemClass": "datatype",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -199,7 +199,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "maturity": "development",
@@ -211,9 +211,9 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
+        "bblocks://ogc.ogc-utils.iri-or-curie",
         "bblocks://ogc.geo.topo.datatypes.oriented-ref",
-        "bblocks://ogc.geo.json-fg.link-role",
-        "bblocks://ogc.ogc-utils.iri-or-curie"
+        "bblocks://ogc.geo.json-fg.link-role"
       ],
       "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
       "schema": {
@@ -251,7 +251,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -291,6 +291,72 @@
       "sourceFiles": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/",
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/topo-feature/blob/master/build/tests/geo/topo/features/topo-feature/",
+      "transforms": [
+        {
+          "id": "Points-n-Edges",
+          "description": "GeoJSON points and Edges",
+          "type": "topo2geojson",
+          "metadata": {
+            "ttl": [
+              "_sources/features/topo-feature/examples/lines.ttl",
+              "_sources/features/topo-feature/examples/points.ttl",
+              "_sources/features/topo-feature/examples/points2.ttl"
+            ],
+            "mode": "points,edges"
+          },
+          "code": "is this required",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/geo+json",
+                "label": "GeoJSON",
+                "defaultExtension": "geojson"
+              }
+            ]
+          }
+        },
+        {
+          "id": "Faces-as-Polygons",
+          "description": "GeoJSON Polygons for faces",
+          "type": "topo2geojson",
+          "metadata": {
+            "ttl": [
+              "_sources/features/topo-feature/examples/lines.ttl",
+              "_sources/features/topo-feature/examples/points.ttl",
+              "_sources/features/topo-feature/examples/points2.ttl"
+            ],
+            "mode": "faces"
+          },
+          "code": "is this required",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/geo+json",
+                "label": "GeoJSON",
+                "defaultExtension": "geojson"
+              }
+            ]
+          }
+        }
+      ],
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
@@ -316,7 +382,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -328,8 +394,8 @@
       "shaclClosures": [],
       "shaclShapes": {
         "ogc.geo.topo.features.topo-arc": [
-          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
           "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
@@ -386,18 +452,18 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "bblocks://ogc.geo.json-fg.feature",
+        "bblocks://ogc.geo.features.featureCollection",
+        "bblocks://ogc.geo.json-fg.featureCollection-lenient",
+        "bblocks://ogc.geo.json-fg.feature-lenient",
         "bblocks://ogc.geo.json-fg.featureCollection",
         "bblocks://ogc.geo.features.feature",
-        "bblocks://ogc.geo.topo.features.topo-feature",
-        "bblocks://ogc.geo.json-fg.feature",
-        "bblocks://ogc.geo.json-fg.featureCollection-lenient",
-        "bblocks://ogc.geo.features.featureCollection",
-        "bblocks://ogc.geo.json-fg.feature-lenient"
+        "bblocks://ogc.geo.topo.features.topo-feature"
       ],
       "tags": [
         "topology",
@@ -456,7 +522,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "shaclClosures": [],
@@ -523,13 +589,13 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.topo.datatypes.oriented-ref",
         "bblocks://ogc.geo.topo.datatypes.topology",
+        "bblocks://ogc.geo.topo.datatypes.oriented-ref",
         "bblocks://ogc.geo.topo.features.topo-feature"
       ],
       "tags": [
@@ -591,7 +657,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -659,7 +725,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -726,15 +792,15 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.topo.datatypes.oriented-ref",
         "bblocks://ogc.geo.topo.datatypes.topology",
         "bblocks://ogc.geo.topo.features.topo-feature-collection",
-        "bblocks://ogc.geo.topo.features.topo-feature"
+        "bblocks://ogc.geo.topo.features.topo-feature",
+        "bblocks://ogc.geo.topo.datatypes.oriented-ref"
       ],
       "tags": [
         "topology",
@@ -795,17 +861,17 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-10",
+      "dateOfLastChange": "2026-07-14",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.topo.features.topo-feature",
-        "bblocks://ogc.geo.topo.features.topo-line",
-        "bblocks://ogc.geo.topo.features.topo-shell",
         "bblocks://ogc.geo.topo.features.topo-face",
+        "bblocks://ogc.geo.topo.features.topo-ring",
         "bblocks://ogc.geo.topo.features.topo-feature-collection",
-        "bblocks://ogc.geo.topo.features.topo-ring"
+        "bblocks://ogc.geo.topo.features.topo-feature",
+        "bblocks://ogc.geo.topo.features.topo-shell",
+        "bblocks://ogc.geo.topo.features.topo-line"
       ],
       "tags": [
         "topology",
@@ -815,10 +881,6 @@
       ],
       "group": "OGC",
       "shaclShapes": {
-        "ogc.geo.topo.features.topo-feature": [
-          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
-        ],
         "ogc.geo.topo.features.topo-feature-collection": [
           "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
           "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
@@ -828,6 +890,10 @@
         ],
         "ogc.geo.features.featureCollection": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature": [
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "ldContext": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
@@ -845,7 +911,11 @@
         {
           "id": "Points-n-Edges",
           "description": "GeoJSON points and Edges",
-          "type": "python",
+          "type": "topo2geojson",
+          "metadata": {
+            "mode": "points,edges"
+          },
+          "code": "is this required",
           "inputs": {
             "mediaTypes": [
               {
@@ -863,22 +933,16 @@
                 "defaultExtension": "geojson"
               }
             ]
-          },
-          "metadata": {
-            "dependencies": {
-              "pip": [
-                "git+https://github.com/ogcincubator/topo-functions.git"
-              ],
-              "python": ">=3.10"
-            },
-            "ttl": "test.ttl"
-          },
-          "code": "from topo2geojson import process\noutput_data = process(input_data, mode=\"edges,points\", number=None )\n"
+          }
         },
         {
           "id": "Faces-as-Polygons",
           "description": "GeoJSON Polygons for faces",
-          "type": "python",
+          "type": "topo2geojson",
+          "metadata": {
+            "mode": "faces"
+          },
+          "code": "is this required",
           "inputs": {
             "mediaTypes": [
               {
@@ -896,17 +960,7 @@
                 "defaultExtension": "geojson"
               }
             ]
-          },
-          "metadata": {
-            "dependencies": {
-              "pip": [
-                "git+https://github.com/ogcincubator/topo-functions.git"
-              ],
-              "python": ">=3.10"
-            },
-            "ttl": "test.ttl"
-          },
-          "code": "from topo2geojson import process\noutput_data = process(input_data, mode=\"faces\", number=None )"
+          }
         }
       ],
       "documentation": {
@@ -923,6 +977,33 @@
           "url": "https://surroundaustralia.github.io/topo-feature/bblock/ogc.geo.topo.features.topo-feature-multi-collection"
         }
       }
+    }
+  ],
+  "transformPlugins": [
+    {
+      "modules": [
+        {
+          "module": "topo2geojson",
+          "transformers": [
+            {
+              "class": "Topo2GeoJsonTransform",
+              "types": [
+                "topo2geojson"
+              ],
+              "defaultInputs": [
+                "application/json"
+              ],
+              "defaultOutputs": [
+                "application/geo+json"
+              ]
+            }
+          ]
+        }
+      ],
+      "pip": "git+https://github.com/ogcincubator/topo-functions.git",
+      "urls": [
+        "https://github.com/ogcincubator/topo-functions"
+      ]
     }
   ],
   "remoteCacheDir": "https://surroundaustralia.github.io/topo-feature/build/annotated/_cache",
