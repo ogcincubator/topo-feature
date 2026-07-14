@@ -1,0 +1,17 @@
+transforms:
+
+  - id: Points-n-Edges
+    description: GeoJSON points and Edges
+    type: topo2geojson
+    metadata:
+      ttl: [ _sources/features/topo-feature/examples/lines.ttl, _sources/features/topo-feature/examples/points.ttl, _sources/features/topo-feature/examples/points2.ttl ]
+      mode: points,edges
+    code: is this required
+
+  - id: Faces-as-Polygons
+    description: GeoJSON Polygons for faces
+    type: topo2geojson
+    metadata:
+      ttl: [ _sources/features/topo-feature/examples/lines.ttl, _sources/features/topo-feature/examples/points.ttl, _sources/features/topo-feature/examples/points2.ttl ]
+      mode: faces
+    code: is this required

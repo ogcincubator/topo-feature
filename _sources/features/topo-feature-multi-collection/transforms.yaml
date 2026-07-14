@@ -2,32 +2,14 @@ transforms:
 
   - id: Points-n-Edges
     description: GeoJSON points and Edges
-    type: python
-    inputs:
-      mediaTypes: [ application/json ]
-    outputs:
-      mediaTypes: [ application/geo+json ]
+    type: topo2geojson
     metadata:
-      dependencies:
-        pip: [ git+https://github.com/ogcincubator/topo-functions.git ]
-        python: ">=3.10"   # optional; skipped if not met
-      ttl: test.ttl
-    code: |
-      from topo2geojson import process
-      output_data = process(input_data, mode="edges,points", number=None )
+      mode: "points,edges"
+    code: is this required
 
   - id: Faces-as-Polygons
     description: GeoJSON Polygons for faces
-    type: python
-    inputs:
-      mediaTypes: [ application/json ]
-    outputs:
-      mediaTypes: [ application/geo+json ]
+    type: topo2geojson
     metadata:
-      dependencies:
-        pip: [git+https://github.com/ogcincubator/topo-functions.git ]
-        python: ">=3.10"   # optional; skipped if not met
-      ttl: test.ttl
-    code: |
-      from topo2geojson import process
-      output_data = process(input_data, mode="faces", number=None )
+      mode: "faces"
+    code: is this required
