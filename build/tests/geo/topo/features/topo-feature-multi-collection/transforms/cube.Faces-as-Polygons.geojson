@@ -2,8 +2,56 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "id": "0",
       "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                115.99419160999591,
+                -31.88795465588693,
+                2.5
+              ],
+              [
+                115.99419062965137,
+                -31.888044843628364,
+                2.5
+              ],
+              [
+                115.99419062965137,
+                -31.888044843628364,
+                2.5
+              ],
+              [
+                115.99408493587124,
+                -31.88804400722897,
+                2.5
+              ],
+              [
+                115.99408493587124,
+                -31.88804400722897,
+                2.5
+              ],
+              [
+                115.99408591631878,
+                -31.887953819490452,
+                2.5
+              ],
+              [
+                115.99408591631878,
+                -31.887953819490452,
+                2.5
+              ],
+              [
+                115.99419160999591,
+                -31.88795465588693,
+                2.5
+              ]
+            ]
+          ]
+        ]
+      },
       "properties": {
         "normal": [
           1.491151358216829e-06,
@@ -13,59 +61,59 @@
         "area": 99.95,
         "description": "Bottom boundary face, [Cube]"
       },
+      "id": "uuid:da2e85b6-5670-4759-a076-00a9225c7ca8"
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
             [
               [
-                115.99419160999591,
-                -31.88795465588693,
-                2.5
-              ],
-              [
                 115.99419062965137,
                 -31.888044843628364,
                 2.5
               ],
               [
-                115.99419062965137,
-                -31.888044843628364,
-                2.5
-              ],
-              [
-                115.99408493587124,
-                -31.88804400722897,
-                2.5
-              ],
-              [
-                115.99408493587124,
-                -31.88804400722897,
-                2.5
-              ],
-              [
-                115.99408591631878,
-                -31.887953819490452,
-                2.5
-              ],
-              [
-                115.99408591631878,
-                -31.887953819490452,
+                115.99419160999591,
+                -31.88795465588693,
                 2.5
               ],
               [
                 115.99419160999591,
                 -31.88795465588693,
+                2.5
+              ],
+              [
+                115.99419160999591,
+                -31.88795465588693,
+                12.5
+              ],
+              [
+                115.99419160999591,
+                -31.88795465588693,
+                12.5
+              ],
+              [
+                115.99419062965137,
+                -31.888044843628364,
+                12.5
+              ],
+              [
+                115.99419062965137,
+                -31.888044843628364,
+                12.5
+              ],
+              [
+                115.99419062965137,
+                -31.888044843628364,
                 2.5
               ]
             ]
           ]
         ]
-      }
-    },
-    {
-      "id": "1",
-      "type": "Feature",
+      },
       "properties": {
         "normal": [
           0.9999999999950753,
@@ -75,6 +123,10 @@
         "area": 99.98,
         "description": "East-facing boundary face, [Cube]"
       },
+      "id": "uuid:dc1da294-ce0e-4c6e-9819-98e040e74fe9"
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -83,17 +135,7 @@
               [
                 115.99419062965137,
                 -31.888044843628364,
-                2.5
-              ],
-              [
-                115.99419160999591,
-                -31.88795465588693,
-                2.5
-              ],
-              [
-                115.99419160999591,
-                -31.88795465588693,
-                2.5
+                12.5
               ],
               [
                 115.99419160999591,
@@ -103,31 +145,37 @@
               [
                 115.99419160999591,
                 -31.88795465588693,
+                12.5
+              ],
+              [
+                115.99408591631878,
+                -31.887953819490452,
+                12.5
+              ],
+              [
+                115.99408591631878,
+                -31.887953819490452,
+                12.5
+              ],
+              [
+                115.99408493587124,
+                -31.88804400722897,
+                12.5
+              ],
+              [
+                115.99408493587124,
+                -31.88804400722897,
                 12.5
               ],
               [
                 115.99419062965137,
                 -31.888044843628364,
                 12.5
-              ],
-              [
-                115.99419062965137,
-                -31.888044843628364,
-                12.5
-              ],
-              [
-                115.99419062965137,
-                -31.888044843628364,
-                2.5
               ]
             ]
           ]
         ]
-      }
-    },
-    {
-      "id": "2",
-      "type": "Feature",
+      },
       "properties": {
         "normal": [
           -1.4886383938598346e-06,
@@ -137,14 +185,38 @@
         "area": 99.95,
         "description": "Top boundary face, [Cube]"
       },
+      "id": "uuid:bfd7bbd1-94f1-4556-9336-2cd28f3b7bc8"
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
             [
               [
-                115.99419062965137,
-                -31.888044843628364,
+                115.99419160999591,
+                -31.88795465588693,
+                2.5
+              ],
+              [
+                115.99408591631878,
+                -31.887953819490452,
+                2.5
+              ],
+              [
+                115.99408591631878,
+                -31.887953819490452,
+                2.5
+              ],
+              [
+                115.99408591631878,
+                -31.887953819490452,
+                12.5
+              ],
+              [
+                115.99408591631878,
+                -31.887953819490452,
                 12.5
               ],
               [
@@ -158,38 +230,14 @@
                 12.5
               ],
               [
-                115.99408591631878,
-                -31.887953819490452,
-                12.5
-              ],
-              [
-                115.99408591631878,
-                -31.887953819490452,
-                12.5
-              ],
-              [
-                115.99408493587124,
-                -31.88804400722897,
-                12.5
-              ],
-              [
-                115.99408493587124,
-                -31.88804400722897,
-                12.5
-              ],
-              [
-                115.99419062965137,
-                -31.888044843628364,
-                12.5
+                115.99419160999591,
+                -31.88795465588693,
+                2.5
               ]
             ]
           ]
         ]
-      }
-    },
-    {
-      "id": "3",
-      "type": "Feature",
+      },
       "properties": {
         "normal": [
           -2.1532830796335323e-06,
@@ -199,29 +247,38 @@
         "area": 99.97,
         "description": "North-facing boundary face, [Cube]"
       },
+      "id": "uuid:4d1ae25a-0d3b-48f2-8169-b4c2451e95b3"
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
             [
               [
-                115.99419160999591,
-                -31.88795465588693,
-                2.5
-              ],
-              [
                 115.99408591631878,
                 -31.887953819490452,
                 2.5
               ],
               [
-                115.99408591631878,
-                -31.887953819490452,
+                115.99408493587124,
+                -31.88804400722897,
                 2.5
               ],
               [
-                115.99408591631878,
-                -31.887953819490452,
+                115.99408493587124,
+                -31.88804400722897,
+                2.5
+              ],
+              [
+                115.99408493587124,
+                -31.88804400722897,
+                12.5
+              ],
+              [
+                115.99408493587124,
+                -31.88804400722897,
                 12.5
               ],
               [
@@ -230,28 +287,19 @@
                 12.5
               ],
               [
-                115.99419160999591,
-                -31.88795465588693,
+                115.99408591631878,
+                -31.887953819490452,
                 12.5
               ],
               [
-                115.99419160999591,
-                -31.88795465588693,
-                12.5
-              ],
-              [
-                115.99419160999591,
-                -31.88795465588693,
+                115.99408591631878,
+                -31.887953819490452,
                 2.5
               ]
             ]
           ]
         ]
-      }
-    },
-    {
-      "id": "4",
-      "type": "Feature",
+      },
       "properties": {
         "normal": [
           -0.9999999999974037,
@@ -261,29 +309,38 @@
         "area": 99.98,
         "description": "West-facing boundary face, [Cube]"
       },
+      "id": "uuid:4588ddd8-9939-44f0-8b20-cfd4b2c4afcf"
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
             [
               [
-                115.99408591631878,
-                -31.887953819490452,
-                2.5
-              ],
-              [
                 115.99408493587124,
                 -31.88804400722897,
                 2.5
               ],
               [
-                115.99408493587124,
-                -31.88804400722897,
+                115.99419062965137,
+                -31.888044843628364,
                 2.5
               ],
               [
-                115.99408493587124,
-                -31.88804400722897,
+                115.99419062965137,
+                -31.888044843628364,
+                2.5
+              ],
+              [
+                115.99419062965137,
+                -31.888044843628364,
+                12.5
+              ],
+              [
+                115.99419062965137,
+                -31.888044843628364,
                 12.5
               ],
               [
@@ -292,28 +349,19 @@
                 12.5
               ],
               [
-                115.99408591631878,
-                -31.887953819490452,
+                115.99408493587124,
+                -31.88804400722897,
                 12.5
               ],
               [
-                115.99408591631878,
-                -31.887953819490452,
-                12.5
-              ],
-              [
-                115.99408591631878,
-                -31.887953819490452,
+                115.99408493587124,
+                -31.88804400722897,
                 2.5
               ]
             ]
           ]
         ]
-      }
-    },
-    {
-      "id": "5",
-      "type": "Feature",
+      },
       "properties": {
         "normal": [
           2.176710274047926e-06,
@@ -323,86 +371,11 @@
         "area": 99.97,
         "description": "South-facing boundary face, [Cube]"
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                115.99408493587124,
-                -31.88804400722897,
-                2.5
-              ],
-              [
-                115.99419062965137,
-                -31.888044843628364,
-                2.5
-              ],
-              [
-                115.99419062965137,
-                -31.888044843628364,
-                2.5
-              ],
-              [
-                115.99419062965137,
-                -31.888044843628364,
-                12.5
-              ],
-              [
-                115.99419062965137,
-                -31.888044843628364,
-                12.5
-              ],
-              [
-                115.99408493587124,
-                -31.88804400722897,
-                12.5
-              ],
-              [
-                115.99408493587124,
-                -31.88804400722897,
-                12.5
-              ],
-              [
-                115.99408493587124,
-                -31.88804400722897,
-                2.5
-              ]
-            ]
-          ]
-        ]
-      }
+      "id": "uuid:bf405007-c6dd-4c9c-b4ff-29af5fd3edf7"
     }
   ],
   "@context": [
     "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld",
-    {
-      "vocabs": "https://linked.data.gov.au/def/csdm/",
-      "wa-surveypoint-purpose": "https://linked.data.gov.au/def/csdm/wa-surveypoint-purpose/",
-      "wa-survey-purpose": "https://linked.data.gov.au/def/csdm/wa-survey-purpose/",
-      "wa-survey-type": "https://linked.data.gov.au/def/csdm/wa-survey-type/",
-      "wa-procedure-used": "https://linked.data.gov.au/def/csdm/wa-procedure-used/",
-      "wa-survey-documentation-type": "https://linked.data.gov.au/def/csdm/wa-survey-documentation-type/",
-      "wa-annotation-role": "https://linked.data.gov.au/def/csdm/wa-annotation/",
-      "wa-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-parcel-purpose/",
-      "wa-parcel-type": "https://linked.data.gov.au/def/csdm/wa-parcel-type/",
-      "wa-parcel-state": "https://linked.data.gov.au/def/csdm/wa-parcel-state/",
-      "wa-nonprimary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
-      "wa-monument-form": "https://linked.data.gov.au/def/csdm/wa-monument-form/",
-      "wa-monument-condition": "https://linked.data.gov.au/def/csdm/wa-monument-condition/",
-      "wa-monument-state": "https://linked.data.gov.au/def/csdm/wa-monument-state/",
-      "wa-vector-purpose": "https://linked.data.gov.au/def/csdm/wa-vector-purpose/",
-      "wa-vector-type": "https://linked.data.gov.au/def/csdm/wa-vector-type/",
-      "wa-secondary-parcel-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-purpose/",
-      "wa-secondary-parcel-type": "https://linked.data.gov.au/def/csdm/wa-secondary-parcel-type/",
-      "wa-secondary-purpose": "https://linked.data.gov.au/def/csdm/wa-secondary-purpose/",
-      "wa-interest-type": "https://linked.data.gov.au/def/csdm/wa-interest-type/",
-      "wa-interest": "https://linked.data.gov.au/def/csdm/wa-interest/",
-      "wa-locality": "https://linked.data.gov.au/def/csdm/wa-locality/",
-      "wa-local-government": "https://linked.data.gov.au/def/csdm/wa-local-government/",
-      "registered-surveyors": "https://wa.gov.au/surveyors/",
-      "foaf": "https://xmlns.com/foaf/0.1/",
-      "activityType": "@type"
-    }
+    "https://surroundaustralia.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/wa-core/context.jsonld"
   ]
 }
