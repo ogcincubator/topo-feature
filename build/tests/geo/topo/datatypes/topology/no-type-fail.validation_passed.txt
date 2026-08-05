@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.datatypes.topology - Geometry using references
-Generated 2026-07-30T14:23:40.106177+00:00
+Generated 2026-08-04T23:59:28.611254+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
