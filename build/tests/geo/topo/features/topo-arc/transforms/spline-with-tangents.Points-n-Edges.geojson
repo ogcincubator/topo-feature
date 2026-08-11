@@ -1,20 +1,127 @@
 {
-  "type": "Feature",
-  "geometry": {
-    "type": "LineString",
-    "coordinates": [
-      [
-        10.0,
-        10.0
-      ],
-      [
-        20.0,
-        20.0
-      ]
-    ]
-  },
-  "properties": null,
-  "id": "1853004",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            10.0,
+            10.0
+          ],
+          [
+            10.525390625,
+            10.416015625
+          ],
+          [
+            11.703125,
+            11.515625
+          ],
+          [
+            15.125,
+            14.875
+          ],
+          [
+            18.484375,
+            18.296875
+          ],
+          [
+            19.583984375,
+            19.474609375
+          ],
+          [
+            20.0,
+            20.0
+          ]
+        ]
+      },
+      "properties": null,
+      "id": "1853004"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0,
+          10.0
+        ]
+      },
+      "properties": {
+        "role": "spline-control-point",
+        "spline": "1853004"
+      },
+      "id": "P1"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0,
+          20.0
+        ]
+      },
+      "properties": {
+        "role": "spline-control-point",
+        "spline": "1853004"
+      },
+      "id": "P2"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.0,
+            10.0
+          ],
+          [
+            10.0,
+            10.0
+          ]
+        ]
+      },
+      "properties": {
+        "role": "spline-tangent",
+        "position": "start",
+        "spline": "1853004",
+        "stroke": "#d62728",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "stroke-dasharray": "6 4"
+      },
+      "id": "1853004-start-tangent"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            20.0,
+            20.0
+          ],
+          [
+            20.0,
+            21.0
+          ]
+        ]
+      },
+      "properties": {
+        "role": "spline-tangent",
+        "position": "end",
+        "spline": "1853004",
+        "stroke": "#d62728",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "stroke-dasharray": "6 4"
+      },
+      "id": "1853004-end-tangent"
+    }
+  ],
   "@context": [
     "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld"
   ]
