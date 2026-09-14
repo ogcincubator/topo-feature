@@ -2,12 +2,12 @@
   "name": "Topo-Feature",
   "abstract": "Features with 2 or 3D geometry defined via generalised topology between identified objects (Features).",
   "description": "Defines Feature (object) topology using a _topology_ property containing an ordered list of references to other features. \\n\\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.\\n\\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \\n\\nTopo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. \\n\\nTopo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.\\n\\nNote: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features..\n\nUsing JSON-FG allows for explicit CRS.\n\nSupports transformation \"smoke tests\" from 2 and 3D topology to simple geojson views.\n\nIf desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._\n",
-  "modified": "2026-08-11T07:24:17.134947",
+  "modified": "2026-09-14T22:46:02.902510",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"989dc6251d43604afdfd4b503bdbd417e88a5876",
-      "shortCommitId": "\"989dc6",
-      "date": "2026-08-06T10:55:48+00:00\""
+      "commitId": "\"e9e9cb5c905d4e569b44b4816a663ec450322f6f",
+      "shortCommitId": "\"e9e9cb",
+      "date": "2026-09-14T10:12:51+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/topo-feature",
@@ -126,13 +126,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/alignments/cityjson-transform/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/alignments/cityjson-transform/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/alignments/cityjson-transform/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -175,13 +175,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/datatypes/oriented-ref/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/datatypes/oriented-ref/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/datatypes/oriented-ref/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/datatypes/oriented-ref/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -227,13 +227,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/datatypes/topology/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/datatypes/topology/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/datatypes/topology/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/datatypes/topology/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -266,12 +266,12 @@
       "group": "OGC",
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -354,13 +354,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -390,16 +390,16 @@
       "shaclClosures": [],
       "shaclShapes": {
         "ogc.geo.topo.features.topo-arc": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -409,8 +409,8 @@
         ]
       },
       "dependsOn": [
-        "bblocks://ogc.geo.topo.datatypes.topology",
-        "bblocks://ogc.geo.topo.features.topo-feature"
+        "bblocks://ogc.geo.topo.features.topo-feature",
+        "bblocks://ogc.geo.topo.datatypes.topology"
       ],
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
       "schema": {
@@ -456,13 +456,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-arc/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-arc/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-arc/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -486,12 +486,12 @@
       "scope": "unstable",
       "dependsOn": [
         "bblocks://ogc.geo.json-fg.feature-lenient",
-        "bblocks://ogc.geo.json-fg.feature",
         "bblocks://ogc.geo.features.featureCollection",
-        "bblocks://ogc.geo.json-fg.featureCollection",
+        "bblocks://ogc.geo.json-fg.feature",
         "bblocks://ogc.geo.topo.features.topo-feature",
         "bblocks://ogc.geo.json-fg.featureCollection-lenient",
-        "bblocks://ogc.geo.features.feature"
+        "bblocks://ogc.geo.features.feature",
+        "bblocks://ogc.geo.json-fg.featureCollection"
       ],
       "tags": [
         "topology",
@@ -500,8 +500,8 @@
       "group": "OGC",
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -510,8 +510,8 @@
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
@@ -588,13 +588,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature-collection/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature-collection/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature-collection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -625,12 +625,12 @@
       ],
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -687,13 +687,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-line/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-line/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-line/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -716,9 +716,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.topo.datatypes.oriented-ref",
+        "bblocks://ogc.geo.topo.datatypes.topology",
         "bblocks://ogc.geo.topo.features.topo-feature",
-        "bblocks://ogc.geo.topo.datatypes.topology"
+        "bblocks://ogc.geo.topo.datatypes.oriented-ref"
       ],
       "tags": [
         "topology",
@@ -729,12 +729,12 @@
       "group": "OGC",
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -817,13 +817,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-ring/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-ring/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-ring/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -846,9 +846,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "bblocks://ogc.geo.topo.datatypes.topology",
         "bblocks://ogc.geo.topo.features.topo-feature-collection",
-        "bblocks://ogc.geo.topo.features.topo-feature",
-        "bblocks://ogc.geo.topo.datatypes.topology"
+        "bblocks://ogc.geo.topo.features.topo-feature"
       ],
       "tags": [
         "topology",
@@ -859,8 +859,8 @@
       "group": "OGC",
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -869,8 +869,8 @@
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/context.jsonld",
@@ -947,13 +947,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-face/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-face/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-face/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -983,25 +983,25 @@
       "shaclRules": [],
       "shaclClosures": [],
       "shaclShapes": {
+        "ogc.geo.topo.features.topo-feature": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
         ],
         "ogc.geo.features.featureCollection": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
-        ],
-        "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
         ]
       },
       "dependsOn": [
+        "bblocks://ogc.geo.topo.features.topo-feature",
         "bblocks://ogc.geo.topo.features.topo-feature-collection",
-        "bblocks://ogc.geo.topo.datatypes.topology",
-        "bblocks://ogc.geo.topo.features.topo-feature"
+        "bblocks://ogc.geo.topo.datatypes.topology"
       ],
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-polyhedron/context.jsonld",
       "schema": {
@@ -1077,13 +1077,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-polyhedron/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-polyhedron/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-polyhedron/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1105,10 +1105,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "bblocks://ogc.geo.topo.datatypes.topology",
         "bblocks://ogc.geo.topo.features.topo-feature-collection",
-        "bblocks://ogc.geo.topo.datatypes.oriented-ref",
         "bblocks://ogc.geo.topo.features.topo-feature",
-        "bblocks://ogc.geo.topo.datatypes.topology"
+        "bblocks://ogc.geo.topo.datatypes.oriented-ref"
       ],
       "tags": [
         "topology",
@@ -1119,8 +1119,8 @@
       "group": "OGC",
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -1129,8 +1129,8 @@
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-shell/context.jsonld",
@@ -1207,13 +1207,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-shell/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-shell/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-shell/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1243,8 +1243,8 @@
       "group": "OGC",
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -1253,14 +1253,14 @@
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "dependsOn": [
         "bblocks://ogc.geo.topo.features.topo-feature-collection",
-        "bblocks://ogc.geo.topo.datatypes.oriented-ref",
-        "bblocks://ogc.geo.topo.features.topo-feature"
+        "bblocks://ogc.geo.topo.features.topo-feature",
+        "bblocks://ogc.geo.topo.datatypes.oriented-ref"
       ],
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-solid/context.jsonld",
       "schema": {
@@ -1336,13 +1336,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-solid/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-solid/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-solid/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1373,8 +1373,8 @@
       "group": "OGC",
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -1383,17 +1383,17 @@
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "dependsOn": [
-        "bblocks://ogc.geo.topo.features.topo-solid",
-        "bblocks://ogc.geo.topo.features.topo-line",
-        "bblocks://ogc.geo.topo.features.topo-feature-collection",
         "bblocks://ogc.geo.topo.features.topo-shell",
         "bblocks://ogc.geo.topo.features.topo-face",
-        "bblocks://ogc.geo.topo.features.topo-ring"
+        "bblocks://ogc.geo.topo.features.topo-line",
+        "bblocks://ogc.geo.topo.features.topo-feature-collection",
+        "bblocks://ogc.geo.topo.features.topo-ring",
+        "bblocks://ogc.geo.topo.features.topo-solid"
       ],
       "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
       "schema": {
@@ -1500,13 +1500,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature-multi-collection/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/markdown/geo/topo/features/topo-feature-multi-collection/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/topo-feature/build/generateddocs/json-full/geo/topo/features/topo-feature-multi-collection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",

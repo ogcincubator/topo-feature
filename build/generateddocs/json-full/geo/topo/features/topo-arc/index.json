@@ -22,16 +22,16 @@
   "shaclClosures": [],
   "shaclShapes": {
     "ogc.geo.topo.features.topo-arc": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ],
     "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ],
     "ogc.geo.topo.features.topo-feature-collection": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ],
     "ogc.geo.features.feature": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -41,8 +41,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.geo.topo.datatypes.topology",
-    "ogc.geo.topo.features.topo-feature"
+    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.topo.datatypes.topology"
   ],
   "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/context.jsonld",
   "schema": {
@@ -257,7 +257,7 @@
           "transformResults": {
             "Points-n-Edges": {
               "success": true,
-              "sizeBytes": 3152,
+              "sizeBytes": 3371,
               "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/transforms/spline.Points-n-Edges.geojson"
             }
           },
@@ -294,7 +294,7 @@
           "transformResults": {
             "Points-n-Edges": {
               "success": true,
-              "sizeBytes": 2441,
+              "sizeBytes": 3046,
               "url": "https://ogcincubator.github.io/topo-feature/build/tests/geo/topo/features/topo-arc/transforms/spline-with-tangents.Points-n-Edges.geojson"
             }
           },
