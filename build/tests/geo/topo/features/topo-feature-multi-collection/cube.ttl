@@ -1,8 +1,8 @@
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix container: <https://linked.data.gov.au/def/csdm/container/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix owlTime: <http://www.w3.org/2006/time#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -28,8 +28,13 @@
     topo:edges <uuid:f4aafb64-0512-46e6-aad9-d39ef1255674> ;
     topo:faces ( <uuid:b197eb9f-d623-4276-ab90-56deed4d70ee> ) ;
     topo:rings ( <uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54> ) ;
+<<<<<<< HEAD
     topo:shells ( <uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30> ) ;
     topo:solids ( <uuid:22177114-a434-4a3e-bc39-b204a4c5b79a> ) ;
+=======
+    topo:shells ( <uuid:22177114-a434-4a3e-bc39-b204a4c5b79a> ),
+        ( <uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30> ) ;
+>>>>>>> upstream/master
     geojson:collectionFeatureType "CSD" .
 
 <uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54> a geojson:FeatureCollection ;
@@ -243,7 +248,7 @@
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048685e+05 6.471533e+06 2.5e+00 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -256,7 +261,7 @@
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048785e+05 6.471542e+06 2.5e+00 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -269,7 +274,7 @@
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048785e+05 6.471533e+06 1.25e+01 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -282,7 +287,7 @@
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048685e+05 6.471542e+06 2.5e+00 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -295,7 +300,7 @@
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048685e+05 6.471533e+06 1.25e+01 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -308,7 +313,7 @@
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048785e+05 6.471533e+06 2.5e+00 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -321,7 +326,7 @@
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048785e+05 6.471542e+06 1.25e+01 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -334,7 +339,7 @@
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048685e+05 6.471542e+06 1.25e+01 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;

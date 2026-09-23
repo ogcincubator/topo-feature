@@ -1021,7 +1021,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
 ```jsonld
 {
   "@context": [
-    "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+    "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
     "https://surroundaustralia.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/wa-core/context.jsonld"
   ],
   "id": "uuid:2c3dbfad-aa78-4ff1-8ef3-4022e7d5eeec",
@@ -1948,11 +1948,11 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
 
 #### ttl
 ```ttl
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix container: <https://linked.data.gov.au/def/csdm/container/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix owlTime: <http://www.w3.org/2006/time#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1978,8 +1978,13 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     topo:edges <uuid:f4aafb64-0512-46e6-aad9-d39ef1255674> ;
     topo:faces ( <uuid:b197eb9f-d623-4276-ab90-56deed4d70ee> ) ;
     topo:rings ( <uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54> ) ;
+<<<<<<< HEAD
     topo:shells ( <uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30> ) ;
     topo:solids ( <uuid:22177114-a434-4a3e-bc39-b204a4c5b79a> ) ;
+=======
+    topo:shells ( <uuid:22177114-a434-4a3e-bc39-b204a4c5b79a> ),
+        ( <uuid:2e3d3190-6b0f-48db-83e9-b8a47007bd30> ) ;
+>>>>>>> upstream/master
     geojson:collectionFeatureType "CSD" .
 
 <uuid:0a7715d1-4087-447f-a83d-6bc4be1fea54> a geojson:FeatureCollection ;
@@ -2193,7 +2198,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048685e+05 6.471533e+06 2.5e+00 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -2206,7 +2211,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048785e+05 6.471542e+06 2.5e+00 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -2219,7 +2224,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048785e+05 6.471533e+06 1.25e+01 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -2232,7 +2237,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048685e+05 6.471542e+06 2.5e+00 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -2245,7 +2250,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048685e+05 6.471533e+06 1.25e+01 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -2258,7 +2263,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048785e+05 6.471533e+06 2.5e+00 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -2271,7 +2276,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048785e+05 6.471542e+06 1.25e+01 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -2284,7 +2289,7 @@ Dataset consists of eight points, 12 edges, six rings, six faces, one shell, and
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.048685e+05 6.471542e+06 1.25e+01 ) ] ;
     dct:time "2026-05-08T04:57:21.731215+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -2886,7 +2891,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
 ```jsonld
 {
   "@context": [
-    "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+    "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
     "https://surroundaustralia.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/wa-core/context.jsonld"
   ],
   "id": "uuid:6d5cf3b8-c759-4c16-b957-d352cf8ba11f",
@@ -3457,11 +3462,11 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
 
 #### ttl
 ```ttl
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix container: <https://linked.data.gov.au/def/csdm/container/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix owlTime: <http://www.w3.org/2006/time#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -3487,8 +3492,13 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
     topo:edges <uuid:dbe9315f-41ea-48b3-9307-a636d71be4a5> ;
     topo:faces ( <uuid:f6081e8b-46f0-4cfa-a97a-ebc3d9f45756> ) ;
     topo:rings ( <uuid:7ee1cf56-6075-480a-a5bc-d877b9fae2c7> ) ;
+<<<<<<< HEAD
     topo:shells ( <uuid:51326c6a-b938-4c83-8b6a-e2ffe6afd839> ) ;
     topo:solids ( <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> ) ;
+=======
+    topo:shells ( <uuid:51326c6a-b938-4c83-8b6a-e2ffe6afd839> ),
+        ( <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> ) ;
+>>>>>>> upstream/master
     geojson:collectionFeatureType "CSD" .
 
 <uuid:09532c2c-5144-4c58-b8ee-0b8082b479a1> a topo:Solid,
@@ -3626,7 +3636,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.04864e+05 6.471882e+06 7e+00 ) ] ;
     dct:time "2026-05-08T04:57:24.252469+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -3639,7 +3649,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.04859e+05 6.471885e+06 1.5165e+01 ) ] ;
     dct:time "2026-05-08T04:57:24.252469+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -3652,7 +3662,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.04854e+05 6.471882e+06 7e+00 ) ] ;
     dct:time "2026-05-08T04:57:24.252469+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -3665,7 +3675,7 @@ Dataset consists of four points, six edges, four rings, four faces, one shell, a
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.04859e+05 6.471891e+06 7e+00 ) ] ;
     dct:time "2026-05-08T04:57:24.252469+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -4983,7 +4993,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
 ```jsonld
 {
   "@context": [
-    "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+    "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
     "https://surroundaustralia.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/wa-core/context.jsonld"
   ],
   "id": "uuid:aa3cb916-cd7f-4651-935b-b9cd319f154c",
@@ -6270,11 +6280,11 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
 
 #### ttl
 ```ttl
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix container: <https://linked.data.gov.au/def/csdm/container/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix owlTime: <http://www.w3.org/2006/time#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -6591,7 +6601,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060636e+05 6.471411e+06 2.1e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6604,7 +6614,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060736e+05 6.471421e+06 1.0971e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6617,7 +6627,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060537e+05 6.471421e+06 1.0971e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6630,7 +6640,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060537e+05 6.471421e+06 3.097e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6643,7 +6653,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060736e+05 6.471411e+06 2.1e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6656,7 +6666,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060736e+05 6.471411e+06 1.1e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6669,7 +6679,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060537e+05 6.471411e+06 3.1e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6682,7 +6692,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060636e+05 6.471411e+06 3.1e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6695,7 +6705,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060736e+05 6.471421e+06 2.0971e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6708,7 +6718,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060537e+05 6.471411e+06 1.1e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6721,7 +6731,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060636e+05 6.471421e+06 2.0971e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -6734,7 +6744,7 @@ Dataset consists of 12 points, 18 edges, eight rings, eight faces, one shell, an
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.060636e+05 6.471421e+06 3.097e+01 ) ] ;
     dct:time "2026-05-08T04:57:26.783878+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -11415,7 +11425,7 @@ Dataset consists of 36 points, 65 edges, 35 rings, 35 faces, five shells, and fi
 ```jsonld
 {
   "@context": [
-    "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+    "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
     {
       "vocabs": "https://linked.data.gov.au/def/csdm/",
       "wa-surveypoint-purpose": "https://linked.data.gov.au/def/csdm/wa-surveypoint-purpose/",
@@ -22458,7 +22468,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 ```jsonld
 {
   "@context": [
-    "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+    "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
     "https://surroundaustralia.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/wa-core/context.jsonld"
   ],
   "id": "uuid:e9901182-59a5-4f67-8093-942fef888bf2",
@@ -28061,16 +28071,15 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
 
 #### ttl
 ```ttl
-@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix container: <https://linked.data.gov.au/def/csdm/container/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
-@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owlTime: <http://www.w3.org/2006/time#> .
-@prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .
+@prefix parcel: <https://linked.data.gov.au/def/csdm/parcels/> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -28118,7 +28127,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     geojson:topology [ a topo:Solid ;
             topo:directedReferences ( [ topo:orientation "+" ;
                         topo:ref <uuid:89957e86-89d5-459d-a170-0c7c916f2382> ] ) ;
-            topo:relatedFeatures ( [ ns2:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole <file:///github/workspace/containingPrimaryParcel> ;
                         oa:hasTarget <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> ] ) ] .
 
@@ -28157,7 +28166,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     geojson:topology [ a topo:Solid ;
             topo:directedReferences ( [ topo:orientation "+" ;
                         topo:ref <uuid:26924195-da93-43af-946d-237910710449> ] ) ;
-            topo:relatedFeatures ( [ ns2:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole <file:///github/workspace/within> ;
                         oa:hasTarget <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> ] ) ] .
 
@@ -28292,7 +28301,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     geojson:topology [ a topo:Solid ;
             topo:directedReferences ( [ topo:orientation "+" ;
                         topo:ref <uuid:ddbbed6c-5a7d-4405-9d41-59677b9484ee> ] ) ;
-            topo:relatedFeatures ( [ ns2:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole <file:///github/workspace/containingPrimaryParcel> ;
                         oa:hasTarget <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> ] ) ] .
 
@@ -28377,7 +28386,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     geojson:topology [ a topo:Solid ;
             topo:directedReferences ( [ topo:orientation "+" ;
                         topo:ref <uuid:1e877d2e-b9b0-4152-b693-fc4d76843142> ] ) ;
-            topo:relatedFeatures ( [ ns2:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole <file:///github/workspace/containingPrimaryParcel> ;
                         oa:hasTarget <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> ] ) ] .
 
@@ -28386,12 +28395,12 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     geojson:topology [ a topo:Solid ;
             topo:directedReferences ( [ topo:orientation "+" ;
                         topo:ref <uuid:9a31a4bf-8d83-4876-8bc3-df640512418a> ] ) ;
-            topo:relatedFeatures ( [ ns2:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole <file:///github/workspace/containingPrimaryParcel> ;
                         oa:hasTarget <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> ] ) ] .
 
-<uuid:f6235c7a-8ada-499d-9574-067ccd370949> a geojson:FeatureCollection,
-        parcel:PrimaryParcel ;
+<uuid:f6235c7a-8ada-499d-9574-067ccd370949> a parcel:PrimaryParcel,
+        geojson:FeatureCollection ;
     geojson:features <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> .
 
 <uuid:05d0ee6b-baed-4a58-8c57-14c12cfe9fe0> a geojson:Feature ;
@@ -28998,7 +29007,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061678e+05 6.471679e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29026,7 +29035,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061316e+05 6.47166e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29054,7 +29063,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061889e+05 6.471667e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29067,7 +29076,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061925e+05 6.471653e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29080,7 +29089,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061303e+05 6.471637e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29098,7 +29107,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061509e+05 6.471677e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29111,7 +29120,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.06149e+05 6.471622e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29124,7 +29133,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061764e+05 6.471677e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29167,7 +29176,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061915e+05 6.471662e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29195,7 +29204,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061739e+05 6.471626e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29258,7 +29267,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.06184e+05 6.471673e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29281,7 +29290,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.06191e+05 6.471645e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29314,7 +29323,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061613e+05 6.471622e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29332,7 +29341,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.06159e+05 6.471679e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29345,7 +29354,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061287e+05 6.471648e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29373,7 +29382,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061869e+05 6.471637e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29396,7 +29405,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061375e+05 6.471628e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29409,7 +29418,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061413e+05 6.471671e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29437,7 +29446,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061811e+05 6.471631e+06 ) ] ;
     dct:time "2026-05-05T00:14:08.163770+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29470,7 +29479,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061484e+05 6.471648e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29488,7 +29497,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061664e+05 6.471646e+06 2e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29501,7 +29510,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061664e+05 6.471656e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29524,7 +29533,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061464e+05 6.471646e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29547,7 +29556,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061644e+05 6.471648e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29560,7 +29569,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061464e+05 6.471656e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29578,7 +29587,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061484e+05 6.471648e+06 2.6e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29626,7 +29635,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061664e+05 6.471656e+06 2e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29644,7 +29653,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061544e+05 6.471652e+06 2.6e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29662,7 +29671,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061484e+05 6.471656e+06 2.6e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29680,7 +29689,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061644e+05 6.471648e+06 2.6e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29703,7 +29712,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061464e+05 6.471646e+06 2e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29726,7 +29735,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061464e+05 6.471656e+06 2e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29744,7 +29753,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061584e+05 6.471652e+06 2e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29767,7 +29776,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061584e+05 6.471652e+06 2.6e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29780,7 +29789,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061544e+05 6.471652e+06 2e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29808,7 +29817,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061664e+05 6.471646e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29821,7 +29830,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061644e+05 6.471656e+06 2.6e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29839,7 +29848,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061584e+05 6.471652e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29852,7 +29861,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061584e+05 6.471646e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29865,7 +29874,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061644e+05 6.471656e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29878,7 +29887,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061544e+05 6.471648e+06 2.6e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29891,7 +29900,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061544e+05 6.471646e+06 2e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29904,7 +29913,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061484e+05 6.471656e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29917,7 +29926,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061584e+05 6.471648e+06 2.6e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29930,7 +29939,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061564e+05 6.471656e+06 2e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29943,7 +29952,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061544e+05 6.471652e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29961,7 +29970,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061564e+05 6.471652e+06 2.6e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29974,7 +29983,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061584e+05 6.471646e+06 2e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -29987,7 +29996,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061564e+05 6.471656e+06 2.6e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -30000,7 +30009,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061544e+05 6.471646e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -30013,7 +30022,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061564e+05 6.471652e+06 2e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -30026,7 +30035,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061584e+05 6.471648e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -30035,24 +30044,24 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
             geojson:coordinates ( 1.160077e+02 -3.188711e+01 2.3e+01 ) ] .
 
 <uuid:458ba315-9601-4e0c-9385-f54c1e2372f6> a geojson:Feature ;
-    geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <uuid:13b59b93-6f0f-4773-a8b7-88401c9c1fae> <uuid:ff22d8d8-5d2e-4fdd-97ce-d80e2b48b5de> <uuid:5a34b8a2-dac0-4ad4-8a59-cbee38b407c8> <uuid:2fbdbc42-6443-4bc2-bd42-0c77a3e9c9fc> <uuid:54943d43-ea1a-4a8c-8cbb-c6d89187e842> <uuid:cf0f9b8d-c8d2-4691-8c41-086e18375574> <uuid:ed1e393e-d7f5-4a85-93b1-f08812b85014> <uuid:d2ebb167-17a2-4bd0-8411-97f83c92d9e6> <uuid:d75b510f-9b88-4a82-bac4-4de995f4a1b9> <uuid:7914b52a-e13d-4d79-9f76-43e040fa939f> <uuid:b4b815fe-eb25-401b-b65f-f7a020da8944> <uuid:41e63da1-bee7-48da-be90-527c99fa38d8> <uuid:e9b94664-2b7a-4e97-a565-4bcce3896392> <uuid:1ce937ba-14a1-48dc-b65c-3b50e98ceb37> <uuid:6e614af5-e74d-4c6d-b841-85ac4dd93250> <uuid:379f8fe1-7311-4db2-a5b3-8b7cf5dd0882> <uuid:780d3b13-0263-4449-ad1e-1627fd0042aa> <uuid:fd23e6be-fb9a-44fd-8ad1-55df298d506a> <uuid:f7fb3296-07ab-42f6-937f-0ebbe0ee98ea> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1" ;
-            dct:hasPart [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType <file:///github/workspace/ParcelType> ],
-                [ rdfs:label "1" ;
-                    commonpatterns:namePartType <file:///github/workspace/ParcelIdentifier> ] ] ;
+            dct:hasPart [ rdfs:label "1" ;
+                    commonpatterns:namePartType <https://linked.data.gov.au/def/csdm/names/localPartType/ParcelIdentifier> ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType <https://linked.data.gov.au/def/csdm/names/localPartType/ParcelType> ] ] ;
     parcel:purpose wa-parcel-purpose:lot ;
     parcel:state wa-parcel-state:created ;
     parcel:surfaceArea 2829 ;
-    parcel:type wa-parcel-type:freehold .
+    parcel:type wa-parcel-type:freehold ;
+    geojson:topology [ a geojson:Polygon ;
+            topo:relatedFeatures ( ( <uuid:13b59b93-6f0f-4773-a8b7-88401c9c1fae> <uuid:ff22d8d8-5d2e-4fdd-97ce-d80e2b48b5de> <uuid:5a34b8a2-dac0-4ad4-8a59-cbee38b407c8> <uuid:2fbdbc42-6443-4bc2-bd42-0c77a3e9c9fc> <uuid:54943d43-ea1a-4a8c-8cbb-c6d89187e842> <uuid:cf0f9b8d-c8d2-4691-8c41-086e18375574> <uuid:ed1e393e-d7f5-4a85-93b1-f08812b85014> <uuid:d2ebb167-17a2-4bd0-8411-97f83c92d9e6> <uuid:d75b510f-9b88-4a82-bac4-4de995f4a1b9> <uuid:7914b52a-e13d-4d79-9f76-43e040fa939f> <uuid:b4b815fe-eb25-401b-b65f-f7a020da8944> <uuid:41e63da1-bee7-48da-be90-527c99fa38d8> <uuid:e9b94664-2b7a-4e97-a565-4bcce3896392> <uuid:1ce937ba-14a1-48dc-b65c-3b50e98ceb37> <uuid:6e614af5-e74d-4c6d-b841-85ac4dd93250> <uuid:379f8fe1-7311-4db2-a5b3-8b7cf5dd0882> <uuid:780d3b13-0263-4449-ad1e-1627fd0042aa> <uuid:fd23e6be-fb9a-44fd-8ad1-55df298d506a> <uuid:f7fb3296-07ab-42f6-937f-0ebbe0ee98ea> ) ) ] .
 
 <uuid:7970f2e9-9893-4e54-b249-187db718bd31> a surv:BoundaryMark,
         geojson:Feature ;
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061564e+05 6.471656e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -30065,7 +30074,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061544e+05 6.471648e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -30078,7 +30087,7 @@ Dataset consists of 57 points, 19 vectorObservations, one Polygon, 65 edges, 35 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.061564e+05 6.471652e+06 2.3e+01 ) ] ;
     dct:time "2026-05-04T02:39:38.184691+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -31851,7 +31860,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
 ```jsonld
 {
   "@context": [
-    "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+    "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
     "https://surroundaustralia.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/wa-core/context.jsonld"
   ],
   "id": "uuid:6b542695-5bb2-41ea-9316-90cf411a77fd",
@@ -33593,11 +33602,11 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
 
 #### ttl
 ```ttl
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix container: <https://linked.data.gov.au/def/csdm/container/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix owlTime: <http://www.w3.org/2006/time#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -34020,7 +34029,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046767e+05 6.471517e+06 7e+00 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34033,7 +34042,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046767e+05 6.471509e+06 7e+00 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34046,7 +34055,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046857e+05 6.471508e+06 6e+00 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34059,7 +34068,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046857e+05 6.471508e+06 1.6e+01 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34072,7 +34081,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046847e+05 6.471509e+06 7e+00 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34085,7 +34094,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046847e+05 6.471517e+06 7e+00 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34098,7 +34107,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046847e+05 6.471509e+06 1.5e+01 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34111,7 +34120,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046767e+05 6.471517e+06 1.5e+01 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34124,7 +34133,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046857e+05 6.471518e+06 6e+00 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34137,7 +34146,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046757e+05 6.471508e+06 6e+00 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34150,7 +34159,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046847e+05 6.471517e+06 1.5e+01 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34163,7 +34172,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046857e+05 6.471518e+06 1.6e+01 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34176,7 +34185,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046757e+05 6.471518e+06 6e+00 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34189,7 +34198,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046757e+05 6.471518e+06 1.6e+01 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34202,7 +34211,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046767e+05 6.471509e+06 1.5e+01 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -34215,7 +34224,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 12 faces, two shells, and one
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.046757e+05 6.471508e+06 1.6e+01 ) ] ;
     dct:time "2026-05-18T00:57:08.413256+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -35948,7 +35957,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
 ```jsonld
 {
   "@context": [
-    "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+    "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
     "https://surroundaustralia.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/wa-core/context.jsonld"
   ],
   "id": "uuid:85702346-7889-4c90-88a8-81c0dde911ba",
@@ -37650,11 +37659,11 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
 
 #### ttl
 ```ttl
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix container: <https://linked.data.gov.au/def/csdm/container/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
 @prefix owlTime: <http://www.w3.org/2006/time#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -38065,7 +38074,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044506e+05 6.471242e+06 1.05e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38078,7 +38087,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044506e+05 6.47124e+06 1.85e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38091,7 +38100,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044407e+05 6.471242e+06 1.05e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38104,7 +38113,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044407e+05 6.471242e+06 2.05e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38117,7 +38126,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044426e+05 6.471234e+06 1.85e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38130,7 +38139,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044506e+05 6.471234e+06 1.25e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38143,7 +38152,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044506e+05 6.471234e+06 1.85e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38156,7 +38165,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044506e+05 6.471242e+06 2.05e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38169,7 +38178,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044426e+05 6.47124e+06 1.25e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38182,7 +38191,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044506e+05 6.471232e+06 1.05e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38195,7 +38204,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044407e+05 6.471232e+06 2.05e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38208,7 +38217,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044506e+05 6.47124e+06 1.25e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38221,7 +38230,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044426e+05 6.471234e+06 1.25e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38234,7 +38243,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044407e+05 6.471232e+06 1.05e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38247,7 +38256,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044506e+05 6.471232e+06 2.05e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38260,7 +38269,7 @@ Dataset consists of 16 points, 24 edges, 12 rings, 11 faces, one shell, and one 
     dct:spatial [ a geojson:Point ;
             geojson:coordinates ( 4.044426e+05 6.47124e+06 1.85e+01 ) ] ;
     dct:time "2026-05-19T03:52:52.187308+00:00" ;
-    ns1:qualityMeasure 1e-01 ;
+    commonpatterns:qualityMeasure 1e-01 ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:cadastral-point-unmarked ;
             surv:state wa-monument-state:unmarked ] ;
@@ -38360,7 +38369,7 @@ All other feature types reference these points (directly or transitively) to res
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
   "type": "FeatureCollection",
   "features": [],
   "points": [
@@ -38627,7 +38636,7 @@ geometry is null; actual coordinates are resolved from the referenced points.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
   "type": "FeatureCollection",
   "features": [],
   "points": [
@@ -40410,7 +40419,7 @@ are derived from the topological reference chain.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
   "type": "FeatureCollection",
   "features": [],
   "points": [
@@ -42448,8 +42457,7 @@ are derived from the topological reference chain.
 
 ### Solid (Polyhedron) referencing faces via Shell directed_references
 A Solid feature referencing faces via a Shell topology. The solid's topology contains
-a directed_references array of oriented Shell references; each Shell in turn has a
-directed_references array of oriented Face references.
+a 'shells' array; each Shell has a directed_references array of oriented Face references.
 All supporting points, edges, and faces are included to make the example self-contained.
 
 #### json
@@ -45916,7 +45924,7 @@ All supporting points, edges, and faces are included to make the example self-co
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
+  "@context": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
   "type": "FeatureCollection",
   "features": [],
   "metadata": {
@@ -49876,7 +49884,7 @@ $defs:
     type: array
     items:
       allOf:
-      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml
+      - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml
       - properties:
           topology:
             properties:
@@ -49902,7 +49910,7 @@ properties:
       oneOf:
       - $ref: '#PointFeatures'
       - allOf:
-        - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
+        - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
         - properties:
             features:
               $ref: '#PointFeatures'
@@ -49915,7 +49923,7 @@ properties:
       description: Edge (LineString) features referencing two point nodes via topology.references.
       items:
         allOf:
-        - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
+        - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
         - properties:
             features:
               $ref: '#EdgeFeatures'
@@ -49927,56 +49935,56 @@ properties:
       geometry is null.
     items:
       oneOf:
-      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-ring/schema.yaml
+      - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-ring/schema.yaml
       - allOf:
-        - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
+        - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
         - properties:
             features:
               type: array
               items:
-                $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-ring/schema.yaml
+                $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-ring/schema.yaml
   faces:
     type: array
     description: Face features whose boundary rings reference edges via directed_references.
       geometry is null.
     items:
       oneOf:
-      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/schema.yaml
+      - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/schema.yaml
       - allOf:
-        - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
+        - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
         - properties:
             features:
               type: array
               items:
-                $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/schema.yaml
+                $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/schema.yaml
   shells:
     type: array
     description: Shell features referencing faces via directed_references. geometry
       is null.
     items:
       oneOf:
-      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-shell/schema.yaml
+      - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-shell/schema.yaml
       - allOf:
-        - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
+        - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
         - properties:
             features:
               type: array
               items:
-                $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-shell/schema.yaml
+                $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-shell/schema.yaml
   solids:
     type: array
     description: Solid features whose shells reference faces via directed_references.
       geometry is null.
     items:
       oneOf:
-      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-solid/schema.yaml
+      - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-solid/schema.yaml
       - allOf:
-        - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
+        - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
         - properties:
             features:
               type: array
               items:
-                $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-solid/schema.yaml
+                $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-solid/schema.yaml
     x-jsonld-id: https://purl.org/geojson/topo#solids
     x-jsonld-container: '@list'
 x-jsonld-prefixes:
@@ -49986,8 +49994,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml)
+* YAML version: [schema.yaml](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.json)
+* JSON version: [schema.json](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml)
 
 
 # JSON-LD Context
@@ -50358,13 +50366,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld)
+[context.jsonld](https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/topo-feature](https://github.com/ogcincubator/topo-feature)
+* URL: [https://github.com/surroundaustralia/topo-feature](https://github.com/surroundaustralia/topo-feature)
 * Path: `_sources/features/topo-feature-multi-collection`
 

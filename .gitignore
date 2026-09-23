@@ -1,3 +1,6 @@
+_sources/**/test*.geojson
 build-local/
 **/.claude
 .idea
+*.py
+__pycache__

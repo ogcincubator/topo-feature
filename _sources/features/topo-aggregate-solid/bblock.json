@@ -1,0 +1,26 @@
+{
+  "name": "Aggregate Solid Topology Feature",
+  "abstract": "A feature representing an aggregation of Solid features into a single combined volumetric object, referencing its member Solids by id. Analogous to AggregatePolygon for Faces/Rings, but one dimension up.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogcincubator",
+  "version": "0.1",
+  "dateOfLastChange": "2024-01-01",
+  "sources": [],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.topo.datatypes.topology",
+    "ogc.geo.topo.features.topo-solid"
+  ],
+  "tags": [
+    "topology",
+    "solid",
+    "aggregate",
+    "feature",
+    "3D"
+  ],
+  "group": "Aggregate Features"
+}
