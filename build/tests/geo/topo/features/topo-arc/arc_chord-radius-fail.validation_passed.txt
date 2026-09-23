@@ -1,9 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-arc - Non-linear Arc and Spline Descriptions using Point topology
-<<<<<<< HEAD
-Generated 2026-07-29T11:42:17.155205+00:00
-=======
-Generated 2026-07-29T15:53:28.568923+00:00
->>>>>>> upstream/master
+Generated 2026-09-23T03:40:58.899862+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -18,7 +14,7 @@ Output Turtle arc_chord-radius-fail.ttl created
 === JSON Schema ===
 
 ** Validation error **
-ValidationError: {'type': 'ArcByChord', 'x-description': 'References is an ordered list of features with for an Arc Chord, radius and length determine geometry', 'references': ['P1', 'P2'], 'orientation': 'widdershins'} is not valid under any of the given schemas
+ValidationError: {'type': 'ArcByChord', 'x-description': 'References is an ordered list of features with for an Arc Chord, radius and length determine geometry', 'references': ['arcP1', 'arcP2'], 'orientation': 'widdershins'} is not valid under any of the given schemas
 
 Failed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf'][1]:
     {'oneOf': [{'properties': {'references': {'maxItems': 3, 'minItems': 3},
@@ -55,123 +51,55 @@ Failed validating 'oneOf' in schema['allOf'][1]['properties']['topology']['allOf
 
 On instance['topology']:
     {'orientation': 'widdershins',
-     'references': ['P1', 'P2'],
+     'references': ['arcP1', 'arcP2'],
      'type': 'ArcByChord',
      'x-description': 'References is an ordered list of features with for '
                       'an Arc Chord, radius and length determine geometry'}
 === End JSON Schema ===
 
 === SHACL ===
-Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nb1596e7ebffc4e389f4e8acbc369559cb1: *none*
- - Shape _:nb1596e7ebffc4e389f4e8acbc369559cb3: *none*
-
-
-** Validation error **
+Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/features/topo-feature/../../examples/referenced-objects-closure.ttl
 Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
-  Conforms: False
-  Results (2):
-  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: toporules:testTopoReferencesExist
-  	Focus Node: [ rdf:type geojson:ArcByChord ; topo:orientation Literal("widdershins") ; topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ]
-  	Value Node: <http://www.example.com/features/P1>
-  	Result Path: topo:relatedFeatures
-  	Source Constraint: [ sh:message Literal("Referenced features must be present within current graph closure for  topological feature.") ; sh:select Literal("
-          prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-          PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-          prefix geojson: <https://purl.org/geojson/vocab#>
-          prefix topo: <https://purl.org/geojson/topo#>
-          SELECT $this (topo:relatedFeatures as ?path) (?ref as ?value)
-          WHERE {
-           $this topo:relatedFeatures/rdf:rest*/rdf:first ?ref .
-           $this a ?geomtype .
-           FILTER ( ?geomtype != geojson:Polygon)
-           FILTER NOT EXISTS { ?ref ?p ?o }
-          }
-  ") ]
-  	Message: Referenced features must be present within current graph closure for  topological feature.
-  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: toporules:testTopoReferencesExist
-  	Focus Node: [ rdf:type geojson:ArcByChord ; topo:orientation Literal("widdershins") ; topo:relatedFeatures ( <http://www.example.com/features/P1> <http://www.example.com/features/P2> ) ]
-  	Value Node: <http://www.example.com/features/P2>
-  	Result Path: topo:relatedFeatures
-  	Source Constraint: [ sh:message Literal("Referenced features must be present within current graph closure for  topological feature.") ; sh:select Literal("
-          prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-          PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-          prefix geojson: <https://purl.org/geojson/vocab#>
-          prefix topo: <https://purl.org/geojson/topo#>
-          SELECT $this (topo:relatedFeatures as ?path) (?ref as ?value)
-          WHERE {
-           $this topo:relatedFeatures/rdf:rest*/rdf:first ?ref .
-           $this a ?geomtype .
-           FILTER ( ?geomtype != geojson:Polygon)
-           FILTER NOT EXISTS { ?ref ?p ?o }
-          }
-  ") ]
-  	Message: Referenced features must be present within current graph closure for  topological feature.
+  Conforms: True
   
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape toporules:testTopoLinesReferencePoints: *none*
+ - Shape toporules:testTopoEdgesReferencePoints: *none*
  - Shape toporules:testTopoDirectedReferencesExist: *none*
-<<<<<<< HEAD
- - Shape toporules:testTopoEdgesReferencePoints: *none*
  - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology
-=======
- - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/chord1>/geojson:topology
- - Shape toporules:testTopoEdgesReferencePoints: *none*
 
 Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n0a4b3fca9e8646da81858b4301b2a7d3b1: *none*
- - Shape _:n0a4b3fca9e8646da81858b4301b2a7d3b3: *none*
->>>>>>> upstream/master
+ - Shape _:n1136a14f43eb4085b20a80da5d19c575b3: *none*
+ - Shape _:n1136a14f43eb4085b20a80da5d19c575b1: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-<<<<<<< HEAD
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: <http://www.example.com/features/chord1>
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
-=======
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
->>>>>>> upstream/master
+ - Shape geojson:FeatureShape: <http://www.example.com/features/chord1>
  - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: <http://www.example.com/features/chord1>
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
-<<<<<<< HEAD
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: *none*
  - Shape geojson:GeometryShape: *none*
-=======
->>>>>>> upstream/master
- - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
 
 === End SHACL ===
 
