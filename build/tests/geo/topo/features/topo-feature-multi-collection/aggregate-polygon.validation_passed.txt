@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-feature-multi-collection - Topo Feature Multi-Collection
-Generated 2026-11-02T00:05:16.901588+00:00
+Generated 2026-11-24T22:43:39.961249+00:00
 === Files ===
 Using examples/aggregate-polygon.json from examples
 JSON-LD context is present - uplifting
@@ -13,58 +13,43 @@ Validation passed
 
 === SHACL ===
 Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
- - /github/workspace/_sources/features/topo-feature/../../examples/referenced-objects-closure.ttl
  - /github/workspace/_sources/ontology/topo.ttl
-Validation result for _sources/ontology/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
+ - /github/workspace/_sources/features/topo-feature/../../examples/referenced-objects-closure.ttl
+Validation result for _sources/ontology/shapes.shacl: no results
 Focus nodes for _sources/ontology/shapes.shacl:
- - Shape :DirectedReferencesShape: *none*
- - Shape :OrientedArcShape: *none*
- - Shape :RadiusRequiredShape: *none*
  - Shape :OrientedReferenceShape: *none*
+ - Shape :RadiusRequiredShape: *none*
+ - Shape :OrientedArcShape: *none*
+ - Shape :DirectedReferencesShape: *none*
 
-Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n34d90385fdb646aea3c5647623ebe7b3b1: <file:///github/workspace/AP2>/geojson:geometry,<file:///github/workspace/AP4>/geojson:geometry,<file:///github/workspace/AP3>/geojson:geometry,<file:///github/workspace/AP1>/geojson:geometry
- - Shape _:n34d90385fdb646aea3c5647623ebe7b3b3: <file:///github/workspace/AP2>/geojson:geometry,<file:///github/workspace/AP4>/geojson:geometry,<file:///github/workspace/AP3>/geojson:geometry,<file:///github/workspace/AP1>/geojson:geometry
-
-Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
-  Validation Report
-  Conforms: True
-  
+Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl: no results
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoDirectedReferencesExist: *none*
- - Shape toporules:testTopoReferencesExist: <file:///github/workspace/AE1>/geojson:topology,<file:///github/workspace/AE4>/geojson:topology,<file:///github/workspace/AE3>/geojson:topology,<file:///github/workspace/AE2>/geojson:topology,<file:///github/workspace/AE5>/geojson:topology
+ - Shape toporules:testTopoReferencesExist: <file:///github/workspace/AE4>/geojson:topology,<file:///github/workspace/AE1>/geojson:topology,<file:///github/workspace/AE3>/geojson:topology,<file:///github/workspace/AE2>/geojson:topology,<file:///github/workspace/AE5>/geojson:topology
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
 
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
+Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl: no results
+Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n8053786ac9b44d5f92220b11d3992c55b3: <file:///github/workspace/AP2>/geojson:geometry,<file:///github/workspace/AP4>/geojson:geometry,<file:///github/workspace/AP1>/geojson:geometry,<file:///github/workspace/AP3>/geojson:geometry
+ - Shape _:n8053786ac9b44d5f92220b11d3992c55b1: <file:///github/workspace/AP2>/geojson:geometry,<file:///github/workspace/AP4>/geojson:geometry,<file:///github/workspace/AP1>/geojson:geometry,<file:///github/workspace/AP3>/geojson:geometry
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl: no results
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: <file:///github/workspace/AP1>,<file:///github/workspace/AE1>,<file:///github/workspace/AE4>,<file:///github/workspace/AE2>,<file:///github/workspace/AP4>,<file:///github/workspace/AE3>,<file:///github/workspace/AP3>,<file:///github/workspace/AE5>,<file:///github/workspace/AP2>
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: <file:///github/workspace/AP3>,<file:///github/workspace/AP4>,<file:///github/workspace/AE5>,<file:///github/workspace/AP1>,<file:///github/workspace/AE2>,<file:///github/workspace/AE1>,<file:///github/workspace/AE4>,<file:///github/workspace/AP2>,<file:///github/workspace/AE3>
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl: no results
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureCollectionShape: _:N10e800c05e1948d7841c15e6481355ca,_:Ndb73ea6c0729440da7b6644f9db431e7
+ - Shape geojson:FeatureShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureCollectionShape: _:N1a431edbd2524ab4b490b188d6f44c3f,_:N967a14e9346d46f08c8bae1189bb99db
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: *none*
- - Shape geojson:LinkShape: *none*
 
 === End SHACL ===
 

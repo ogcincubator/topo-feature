@@ -11,7 +11,7 @@
   "itemClass": "schema",
   "register": "ogc",
   "version": "0.1",
-  "dateOfLastChange": "2026-11-02",
+  "dateOfLastChange": "2026-11-24",
   "tags": [
     "3D",
     "geometry",
@@ -19,6 +19,10 @@
     "cityjson"
   ],
   "shaclShapes": {},
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/alignments/cityjson-transform/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/alignments/cityjson-transform/",

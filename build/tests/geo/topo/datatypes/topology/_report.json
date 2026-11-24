@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.datatypes.topology - Geometry using references",
   "bblockName": "Geometry using references",
   "bblockId": "ogc.geo.topo.datatypes.topology",
-  "generated": "2026-11-02T00:04:18.797640+00:00",
+  "generated": "2026-11-24T22:42:47.762183+00:00",
   "result": true,
   "items": [
     {
@@ -14,6 +14,7 @@
         "language": "json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -65,7 +66,7 @@
               "exception": "ValidationError",
               "errorMessage": "'type' is a required property",
               "isError": true,
-              "message": "ValidationError: 'type' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'relationships': {'items': {'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.yaml'},\n                                                          {'properties': {'rel': {'const': 'topology'}},\n                                                           'required': ['rel']}]},\n                                      'type': 'array',\n                                      'x-jsonld-container': '@list',\n                                      'x-jsonld-id': 'https://purl.org/geojson/topo#relatedFeatures',\n                                      'x-jsonld-type': '@id'},\n                    'type': {'type': 'string', 'x-jsonld-id': '@type'}},\n     'required': ['type']}\n\nOn instance:\n    {'references': ['P1', 'P2']}"
+              "message": "ValidationError: 'type' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'type': {'type': 'string', 'x-jsonld-id': '@type'},\n                    'relationships': {'type': 'array',\n                                      'items': {'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.yaml'},\n                                                          {'properties': {'rel': {'const': 'topology'}},\n                                                           'required': ['rel']}]},\n                                      'x-jsonld-id': 'https://purl.org/geojson/topo#relatedFeatures',\n                                      'x-jsonld-type': '@id',\n                                      'x-jsonld-container': '@list'}},\n     'required': ['type']}\n\nOn instance:\n    {'references': ['P1', 'P2']}"
             }
           ]
         },
@@ -82,26 +83,26 @@
               "shaclFile": "_sources/ontology/shapes.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/ontology/shapes.shacl: no results"
             },
             {
               "shaclFile": "_sources/ontology/shapes.shacl",
               "focusNodes": {
-                ":DirectedReferencesShape": {
-                  "nodes": []
-                },
-                ":OrientedArcShape": {
+                ":OrientedReferenceShape": {
                   "nodes": []
                 },
                 ":RadiusRequiredShape": {
                   "nodes": []
                 },
-                ":OrientedReferenceShape": {
+                ":OrientedArcShape": {
+                  "nodes": []
+                },
+                ":DirectedReferencesShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :DirectedReferencesShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedReferenceShape: *none*\n"
+              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :OrientedReferenceShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :DirectedReferencesShape: *none*\n"
             }
           ]
         }
@@ -116,6 +117,7 @@
         "language": "json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -167,7 +169,7 @@
               "exception": "ValidationError",
               "errorMessage": "{'type': 'Edge', 'nodes': ['P1', 'P2']} is not valid under any of the given schemas",
               "isError": true,
-              "message": "ValidationError: {'type': 'Edge', 'nodes': ['P1', 'P2']} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][0]:\n    {'oneOf': [{'$ref': '#/$defs/simpleRefs'},\n               {'$ref': '#/$defs/nestedRefs'},\n               {'$ref': '#/$defs/directedRefs'}]}\n\nOn instance:\n    {'nodes': ['P1', 'P2'], 'type': 'Edge'}"
+              "message": "ValidationError: {'type': 'Edge', 'nodes': ['P1', 'P2']} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][0]:\n    {'oneOf': [{'$ref': '#/$defs/simpleRefs'},\n               {'$ref': '#/$defs/nestedRefs'},\n               {'$ref': '#/$defs/directedRefs'}]}\n\nOn instance:\n    {'type': 'Edge', 'nodes': ['P1', 'P2']}"
             }
           ]
         },
@@ -184,26 +186,26 @@
               "shaclFile": "_sources/ontology/shapes.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/ontology/shapes.shacl: no results"
             },
             {
               "shaclFile": "_sources/ontology/shapes.shacl",
               "focusNodes": {
-                ":DirectedReferencesShape": {
-                  "nodes": []
-                },
-                ":OrientedArcShape": {
+                ":OrientedReferenceShape": {
                   "nodes": []
                 },
                 ":RadiusRequiredShape": {
                   "nodes": []
                 },
-                ":OrientedReferenceShape": {
+                ":OrientedArcShape": {
+                  "nodes": []
+                },
+                ":DirectedReferencesShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :DirectedReferencesShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedReferenceShape: *none*\n"
+              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :OrientedReferenceShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :DirectedReferencesShape: *none*\n"
             }
           ]
         }
@@ -218,6 +220,7 @@
         "language": "json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -267,9 +270,9 @@
               "op": "validation",
               "result": false,
               "exception": "ValidationError",
-              "errorMessage": "{'type': 'Face', 'references': ['P1', 'P2']} is not valid under any of the given schemas",
+              "errorMessage": "'P1' is not of type 'array'",
               "isError": true,
-              "message": "ValidationError: {'type': 'Face', 'references': ['P1', 'P2']} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['allOf'][0]:\n    {'oneOf': [{'$ref': '#/$defs/simpleRefs'},\n               {'$ref': '#/$defs/nestedRefs'},\n               {'$ref': '#/$defs/directedRefs'}]}\n\nOn instance:\n    {'references': ['P1', 'P2'], 'type': 'Face'}"
+              "message": "ValidationError: 'P1' is not of type 'array'\n\nFailed validating 'type' in schema[1]['properties']['references']['items']:\n    {'type': 'array',\n     'items': {'oneOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml'},\n                         {'description': 'wont check contents deeper',\n                          'type': 'array'}]}}\n\nOn instance['references'][0]:\n    'P1'"
             }
           ]
         },
@@ -286,26 +289,26 @@
               "shaclFile": "_sources/ontology/shapes.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/ontology/shapes.shacl: no results"
             },
             {
               "shaclFile": "_sources/ontology/shapes.shacl",
               "focusNodes": {
-                ":DirectedReferencesShape": {
-                  "nodes": []
-                },
-                ":OrientedArcShape": {
+                ":OrientedReferenceShape": {
                   "nodes": []
                 },
                 ":RadiusRequiredShape": {
                   "nodes": []
                 },
-                ":OrientedReferenceShape": {
+                ":OrientedArcShape": {
+                  "nodes": []
+                },
+                ":DirectedReferencesShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :DirectedReferencesShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedReferenceShape: *none*\n"
+              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :OrientedReferenceShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :DirectedReferencesShape: *none*\n"
             }
           ]
         }
@@ -322,6 +325,7 @@
         "language": "application/json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "FILES",
@@ -377,26 +381,26 @@
               "shaclFile": "_sources/ontology/shapes.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/ontology/shapes.shacl: no results"
             },
             {
               "shaclFile": "_sources/ontology/shapes.shacl",
               "focusNodes": {
-                ":DirectedReferencesShape": {
-                  "nodes": []
-                },
-                ":OrientedArcShape": {
+                ":OrientedReferenceShape": {
                   "nodes": []
                 },
                 ":RadiusRequiredShape": {
                   "nodes": []
                 },
-                ":OrientedReferenceShape": {
+                ":OrientedArcShape": {
+                  "nodes": []
+                },
+                ":DirectedReferencesShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :DirectedReferencesShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedReferenceShape: *none*\n"
+              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :OrientedReferenceShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :DirectedReferencesShape: *none*\n"
             }
           ]
         }
@@ -413,6 +417,7 @@
         "language": "application/json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "FILES",
@@ -468,26 +473,26 @@
               "shaclFile": "_sources/ontology/shapes.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/ontology/shapes.shacl: no results"
             },
             {
               "shaclFile": "_sources/ontology/shapes.shacl",
               "focusNodes": {
-                ":DirectedReferencesShape": {
-                  "nodes": []
-                },
-                ":OrientedArcShape": {
+                ":OrientedReferenceShape": {
                   "nodes": []
                 },
                 ":RadiusRequiredShape": {
                   "nodes": []
                 },
-                ":OrientedReferenceShape": {
+                ":OrientedArcShape": {
+                  "nodes": []
+                },
+                ":DirectedReferencesShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :DirectedReferencesShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedReferenceShape: *none*\n"
+              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :OrientedReferenceShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :DirectedReferencesShape: *none*\n"
             }
           ]
         }
@@ -504,6 +509,7 @@
         "language": "application/json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "FILES",
@@ -559,33 +565,33 @@
               "shaclFile": "_sources/ontology/shapes.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/ontology/shapes.shacl: no results"
             },
             {
               "shaclFile": "_sources/ontology/shapes.shacl",
               "focusNodes": {
-                ":DirectedReferencesShape": {
+                ":OrientedReferenceShape": {
                   "nodes": [
-                    "_:N9e3090652568441096531846bbdd5cd8"
+                    "_:N655ffe3ea5e148b2bdb3b36d4b8ca334",
+                    "_:Nf910e7f083184530bd80ca4b75d6e3d1",
+                    "_:N112692d0ca9342fb9e3637a1564807d2",
+                    "_:N40537cb9a177474c9f97ab627d12f551"
                   ]
-                },
-                ":OrientedArcShape": {
-                  "nodes": []
                 },
                 ":RadiusRequiredShape": {
                   "nodes": []
                 },
-                ":OrientedReferenceShape": {
+                ":OrientedArcShape": {
+                  "nodes": []
+                },
+                ":DirectedReferencesShape": {
                   "nodes": [
-                    "_:Nad49c49a470f4401b23add48ea7ef195",
-                    "_:Ndac27e987f95418283cb8449eb826cc5",
-                    "_:N55430a93933f456e9691a3abd0d0edeb",
-                    "_:Na1347eff696943dfa3be3cbd63f3b7a8"
+                    "_:N1c7428a8993e46f89c99eabddd468a07"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :DirectedReferencesShape: _:N9e3090652568441096531846bbdd5cd8\n - Shape :OrientedArcShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedReferenceShape: _:Nad49c49a470f4401b23add48ea7ef195,_:Ndac27e987f95418283cb8449eb826cc5,_:N55430a93933f456e9691a3abd0d0edeb,_:Na1347eff696943dfa3be3cbd63f3b7a8\n"
+              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :OrientedReferenceShape: _:N655ffe3ea5e148b2bdb3b36d4b8ca334,_:Nf910e7f083184530bd80ca4b75d6e3d1,_:N112692d0ca9342fb9e3637a1564807d2,_:N40537cb9a177474c9f97ab627d12f551\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :DirectedReferencesShape: _:N1c7428a8993e46f89c99eabddd468a07\n"
             }
           ]
         }
@@ -602,6 +608,7 @@
         "language": "application/json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "FILES",
@@ -657,30 +664,30 @@
               "shaclFile": "_sources/ontology/shapes.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/ontology/shapes.shacl: no results"
             },
             {
               "shaclFile": "_sources/ontology/shapes.shacl",
               "focusNodes": {
-                ":DirectedReferencesShape": {
+                ":OrientedReferenceShape": {
                   "nodes": [
-                    "_:Nefe2489254274def876a04fec8c30453"
+                    "_:N24d8072ae83b4bd994c6812ca86a31d4"
                   ]
-                },
-                ":OrientedArcShape": {
-                  "nodes": []
                 },
                 ":RadiusRequiredShape": {
                   "nodes": []
                 },
-                ":OrientedReferenceShape": {
+                ":OrientedArcShape": {
+                  "nodes": []
+                },
+                ":DirectedReferencesShape": {
                   "nodes": [
-                    "_:N0c03c0dc47ab4904a0dfd03e69195835"
+                    "_:N5552f4f700ac4d8d8591b8e8ae6cebc1"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :DirectedReferencesShape: _:Nefe2489254274def876a04fec8c30453\n - Shape :OrientedArcShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedReferenceShape: _:N0c03c0dc47ab4904a0dfd03e69195835\n"
+              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :OrientedReferenceShape: _:N24d8072ae83b4bd994c6812ca86a31d4\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :DirectedReferencesShape: _:N5552f4f700ac4d8d8591b8e8ae6cebc1\n"
             }
           ]
         }
@@ -697,6 +704,7 @@
         "language": "application/json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "FILES",
@@ -752,33 +760,33 @@
               "shaclFile": "_sources/ontology/shapes.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/ontology/shapes.shacl: no results"
             },
             {
               "shaclFile": "_sources/ontology/shapes.shacl",
               "focusNodes": {
-                ":DirectedReferencesShape": {
+                ":OrientedReferenceShape": {
                   "nodes": [
-                    "_:N9f20e0b6a697465c9901f689e2456b76"
+                    "_:N823c5d74565b41688c98e765d22c0b5c",
+                    "_:Ndb5ed71158d94f188d9a804f2619f658",
+                    "_:Nd84655b10df2411f8a95992d56ce366b",
+                    "_:N29eb5016024b4f87b640a591974dd3cc"
                   ]
-                },
-                ":OrientedArcShape": {
-                  "nodes": []
                 },
                 ":RadiusRequiredShape": {
                   "nodes": []
                 },
-                ":OrientedReferenceShape": {
+                ":OrientedArcShape": {
+                  "nodes": []
+                },
+                ":DirectedReferencesShape": {
                   "nodes": [
-                    "_:Ndc80d95314b04bacb3159686d12d81bb",
-                    "_:N15f36c1e824a491dad48c40f4e618c22",
-                    "_:N72b6eb8d45a04804b2f5ebba6ff34068",
-                    "_:N280d4cfe36214bd781791c03f3868158"
+                    "_:N39efbdc99c164587a4aff8ae95d05497"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :DirectedReferencesShape: _:N9f20e0b6a697465c9901f689e2456b76\n - Shape :OrientedArcShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedReferenceShape: _:Ndc80d95314b04bacb3159686d12d81bb,_:N15f36c1e824a491dad48c40f4e618c22,_:N72b6eb8d45a04804b2f5ebba6ff34068,_:N280d4cfe36214bd781791c03f3868158\n"
+              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :OrientedReferenceShape: _:N823c5d74565b41688c98e765d22c0b5c,_:Ndb5ed71158d94f188d9a804f2619f658,_:Nd84655b10df2411f8a95992d56ce366b,_:N29eb5016024b4f87b640a591974dd3cc\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :DirectedReferencesShape: _:N39efbdc99c164587a4aff8ae95d05497\n"
             }
           ]
         }
@@ -795,6 +803,7 @@
         "language": "application/json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "FILES",
@@ -850,30 +859,30 @@
               "shaclFile": "_sources/ontology/shapes.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/ontology/shapes.shacl: no results"
             },
             {
               "shaclFile": "_sources/ontology/shapes.shacl",
               "focusNodes": {
-                ":DirectedReferencesShape": {
+                ":OrientedReferenceShape": {
                   "nodes": [
-                    "_:Nab887a191e324301b983980d002a7c04"
+                    "_:N1216c8e1039143e18eb60e0c294a98a0"
                   ]
-                },
-                ":OrientedArcShape": {
-                  "nodes": []
                 },
                 ":RadiusRequiredShape": {
                   "nodes": []
                 },
-                ":OrientedReferenceShape": {
+                ":OrientedArcShape": {
+                  "nodes": []
+                },
+                ":DirectedReferencesShape": {
                   "nodes": [
-                    "_:Ndcbf2d5e361b424495276b5461f3a671"
+                    "_:N6a318e9f42dc4561a61db3c940ac628f"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :DirectedReferencesShape: _:Nab887a191e324301b983980d002a7c04\n - Shape :OrientedArcShape: *none*\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedReferenceShape: _:Ndcbf2d5e361b424495276b5461f3a671\n"
+              "message": "Focus nodes for _sources/ontology/shapes.shacl:\n - Shape :OrientedReferenceShape: _:N1216c8e1039143e18eb60e0c294a98a0\n - Shape :RadiusRequiredShape: *none*\n - Shape :OrientedArcShape: *none*\n - Shape :DirectedReferencesShape: _:N6a318e9f42dc4561a61db3c940ac628f\n"
             }
           ]
         }
@@ -881,6 +890,7 @@
     }
   ],
   "globalErrors": {},
+  "hasWarnings": false,
   "counts": {
     "total": 9,
     "passed": 9,

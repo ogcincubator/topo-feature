@@ -110,6 +110,10 @@
         "@id": "prof:isProfileOf",
         "@type": "@id"
       },
+      "isDescribedBy": {
+        "@id": "http://www.iana.org/assignments/relation/describedby",
+        "@type": "@id"
+      },
       "hasFormat": {
         "@id": "dct:hasFormat",
         "@type": "@id"
@@ -164,10 +168,6 @@
         "@id": "prof:hasResource",
         "@type": "@id"
       },
-      "rdfData": {
-        "@id": "prof:hasResource",
-        "@type": "@id"
-      },
       "links": {
         "@id": "prof:hasResource",
         "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld"
@@ -196,6 +196,9 @@
           "validation": "role:validation",
           "vocabulary": "role:vocabulary",
           "data": "role:data",
+          "requirements": "role:requirements",
+          "terms": "role:terms",
+          "references": "role:references",
           "ref": {
             "@id": "prof:hasArtifact",
             "@type": "@id"
@@ -213,18 +216,22 @@
   "name": "Building Blocks - Topo-Feature",
   "abstract": "Features with 2 or 3D geometry defined via generalised topology between identified objects (Features).",
   "description": "Defines Feature (object) topology using a _topology_ property containing an ordered list of references to other features. \\n\\nOther features may be either features with topology properties or GeoJSON (or FG-JSON) geometry properties.\\n\\nTopo-Feature defined objects can be solids, swept volumes or any other concept. \\n\\nTopo-Feature allows for general topology to be described between independent features (objects) with any geometry dimensions. \\n\\nTopo-Feature-Collections define a self-contained set of such objects with referential integrity (all elements are present to fully define geometry coordinates.\\n\\nNote: This is a generalisation of the TopoJSON concept using inline, nested arrays of coordinates - but not limited to self-contained geometries per feature, duplicated between topologically related features..\n\nUsing JSON-FG allows for explicit CRS.\n\nSupports transformation \"smoke tests\" from 2 and 3D topology to simple geojson views.\n\nIf desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._\n",
-  "modified": "2026-11-02T00:04:03.069524",
+  "modified": "2026-11-24T22:42:31.690524",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"862052921203373f8136e6f464e0dfdd693e79f5",
-      "shortCommitId": "\"862052",
-      "date": "2026-10-26T21:53:11+00:00\""
+      "commitId": "\"009466f93d27bf23cb4832f43883f4f524ab5d30",
+      "shortCommitId": "\"009466",
+      "date": "2026-11-24T22:38:04+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/topo-feature",
   "gitHubRepository": "https://github.com/ogcincubator/topo-feature/blob/master/",
   "baseURL": "https://ogcincubator.github.io/topo-feature/",
   "viewerURL": "https://ogcincubator.github.io/topo-feature/",
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
   "validationReport": "https://ogcincubator.github.io/topo-feature/build/tests/report.html",
   "validationReportJson": "https://ogcincubator.github.io/topo-feature/build/tests/report.json",
   "imports": [
@@ -330,7 +337,7 @@
       "itemClass": "schema",
       "register": "ogc",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "tags": [
         "3D",
         "geometry",
@@ -338,6 +345,10 @@
         "cityjson"
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/alignments/cityjson-transform/",
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/topo-feature/blob/master/build/tests/geo/topo/alignments/cityjson-transform/",
@@ -451,9 +462,9 @@
       "schema": null,
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -468,7 +479,7 @@
       "itemClass": "model",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "shaclShapes": [
         {
           "prof:hasArtifact": [
@@ -497,6 +508,10 @@
         "3D"
       ],
       "group": "Topology Ontology",
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "ontology": {
         "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/ontology/ontology.ttl",
         "prof:hasRole": "role:specification",
@@ -531,9 +546,9 @@
       "ldContext": null,
       "schema": null,
       "openAPIDocument": null,
-      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -547,7 +562,7 @@
       "itemClass": "datatype",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -572,6 +587,10 @@
           "dct:conformsTo": "shacl:"
         }
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/context.jsonld",
         "prof:hasRole": "role:mapping",
@@ -622,8 +641,8 @@
       "skos:prefLabel": "Oriented Object Reference",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -645,7 +664,7 @@
         "bblocks://ogc.geo.topo.ontology",
         "bblocks://ogc.ogc-utils.iri-or-curie"
       ],
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "maturity": "development",
@@ -666,6 +685,10 @@
           "dct:conformsTo": "shacl:"
         }
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/context.jsonld",
         "prof:hasRole": "role:mapping",
@@ -716,8 +739,8 @@
       "skos:prefLabel": "Geometry using references",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -732,7 +755,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -799,6 +822,10 @@
           "dct:conformsTo": "shacl:"
         }
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/context.jsonld",
         "prof:hasRole": "role:mapping",
@@ -911,8 +938,8 @@
       "skos:prefLabel": "TopoFeatureCollection",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -927,7 +954,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -993,6 +1020,10 @@
           "dct:conformsTo": "shacl:"
         }
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld",
         "prof:hasRole": "role:mapping",
@@ -1105,8 +1136,8 @@
       "skos:prefLabel": "Feature with topology",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -1122,7 +1153,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -1194,6 +1225,10 @@
         "bblocks://ogc.geo.topo.datatypes.topology",
         "bblocks://ogc.geo.topo.features.topo-feature"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "schema": [
         {
           "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-arc/schema.yaml",
@@ -1307,8 +1342,8 @@
       "skos:prefLabel": "Non-linear Arc and Spline Descriptions using Point topology",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -1323,7 +1358,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -1389,6 +1424,10 @@
           "dct:conformsTo": "shacl:"
         }
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-face/context.jsonld",
         "prof:hasRole": "role:mapping",
@@ -1501,8 +1540,8 @@
       "skos:prefLabel": "Face Topology Feature",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -1518,7 +1557,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "maturity": "development",
@@ -1581,6 +1620,10 @@
         "bblocks://ogc.geo.topo.datatypes.topology",
         "bblocks://ogc.geo.topo.features.topo-feature"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "schema": [
         {
           "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml",
@@ -1662,8 +1705,8 @@
       "skos:prefLabel": "Line using Point References",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -1678,7 +1721,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -1744,6 +1787,10 @@
           "dct:conformsTo": "shacl:"
         }
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-ring/context.jsonld",
         "prof:hasRole": "role:mapping",
@@ -1856,8 +1903,8 @@
       "skos:prefLabel": "Ring Topology Feature",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -1871,7 +1918,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -1938,6 +1985,10 @@
           "dct:conformsTo": "shacl:"
         }
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-shell/context.jsonld",
         "prof:hasRole": "role:mapping",
@@ -2050,8 +2101,8 @@
       "skos:prefLabel": "Shell Topology Feature",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -2065,7 +2116,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -2130,6 +2181,10 @@
         "bblocks://ogc.geo.topo.features.topo-feature",
         "bblocks://ogc.geo.topo.features.topo-feature-collection"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "schema": [
         {
           "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-solid/schema.yaml",
@@ -2241,8 +2296,8 @@
       "skos:prefLabel": "Solid Topology Feature",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -2256,7 +2311,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -2324,6 +2379,10 @@
           "dct:conformsTo": "shacl:"
         }
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "schema": [
         {
           "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-aggregate-solid/schema.yaml",
@@ -2373,8 +2432,8 @@
       "skos:prefLabel": "Aggregate Solid Topology Feature",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }
@@ -2399,7 +2458,7 @@
         "bblocks://ogc.geo.topo.features.topo-solid",
         "bblocks://ogc.geo.topo.ontology"
       ],
-      "dateOfLastChange": "2026-11-02",
+      "dateOfLastChange": "2026-11-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -2459,6 +2518,10 @@
           "dct:conformsTo": "shacl:"
         }
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/context.jsonld",
         "prof:hasRole": "role:mapping",
@@ -2602,8 +2665,8 @@
       "skos:prefLabel": "Topo Feature Multi-Collection",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
+      "isDescribedBy": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/topo-feature/"
       }

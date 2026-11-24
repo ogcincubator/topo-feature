@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.topo.alignments.cityjson-transform - CityJSON to TopoFeature transform",
   "bblockName": "CityJSON to TopoFeature transform",
   "bblockId": "ogc.geo.topo.alignments.cityjson-transform",
-  "generated": "2026-11-02T00:04:17.139444+00:00",
+  "generated": "2026-11-24T22:42:45.879651+00:00",
   "result": true,
   "items": [
     {
@@ -16,6 +16,7 @@
         "language": "application/json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "FILES",
@@ -40,6 +41,7 @@
         "language": "application/json"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "FILES",
@@ -55,6 +57,7 @@
     }
   ],
   "globalErrors": {},
+  "hasWarnings": false,
   "counts": {
     "total": 2,
     "passed": 2,

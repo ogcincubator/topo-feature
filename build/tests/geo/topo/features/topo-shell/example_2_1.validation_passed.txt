@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.features.topo-shell - Shell Topology Feature
-Generated 2026-11-02T00:04:49.568316+00:00
+Generated 2026-11-24T22:43:11.461467+00:00
 === Files ===
 Using examples/shell-simple.json from examples
 JSON-LD context is present - uplifting
@@ -13,58 +13,43 @@ Validation passed
 
 === SHACL ===
 Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
- - /github/workspace/_sources/features/topo-feature/../../examples/referenced-objects-closure.ttl
  - /github/workspace/_sources/ontology/topo.ttl
-Validation result for _sources/ontology/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
+ - /github/workspace/_sources/features/topo-feature/../../examples/referenced-objects-closure.ttl
+Validation result for _sources/ontology/shapes.shacl: no results
 Focus nodes for _sources/ontology/shapes.shacl:
- - Shape :DirectedReferencesShape: <uuid:shell-upper-east>/geojson:topology
- - Shape :OrientedArcShape: *none*
+ - Shape :OrientedReferenceShape: _:Nc154db232ccf42299e7d20e295a08a94,_:Nba0a030e8165432385a70130ed240209,_:Nf01354ae856b4b069b85763329e7e818,_:N1984a4e5a45b4499b79384abb10108cd,_:Ncf3c5d6dab954cebb994dd8c4c7334a8,_:N3dc58cbfd82349ee893614d59cbb486c,_:Nfcfd4aa4a99c4792a44892c99a940ceb,<uuid:shell-upper-east>/geojson:topology/topo:directedReferences/rdf:first
  - Shape :RadiusRequiredShape: *none*
- - Shape :OrientedReferenceShape: _:N4e9d3ac17a9b4375b4b1b009c87f8c35,<uuid:shell-upper-east>/geojson:topology/topo:directedReferences/rdf:first,_:Nb3da1ffab8c44658b8fd1d76d4ac855f,_:N0530ba54bfa249e09c1bff7b924059c2,_:N89e7761128504c1288d38a78becbc0de,_:N02ec70f0c6734ade89bb750ac20f5337,_:N24afdaae40554637ad28422ba6fac33d,_:Nd8da07f0248c40e4a0892514d3107126
+ - Shape :OrientedArcShape: *none*
+ - Shape :DirectedReferencesShape: <uuid:shell-upper-east>/geojson:topology
 
-Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nb7f5f0e250ac42e48ffb08ebd657cffdb3: *none*
- - Shape _:nb7f5f0e250ac42e48ffb08ebd657cffdb1: *none*
-
-Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
-  Validation Report
-  Conforms: True
-  
+Validation result for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl: no results
 Focus nodes for _sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoDirectedReferencesExist: <uuid:shell-upper-east>/geojson:topology
  - Shape toporules:testTopoReferencesExist: *none*
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: <uuid:shell-upper-east>/geojson:topology
 
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
+Validation result for _sources/features/topo-feature/tests/geometry-coordinates.shacl: no results
+Focus nodes for _sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n08d8a5c25d264a6e8dee5f4d72fac48eb3: *none*
+ - Shape _:n08d8a5c25d264a6e8dee5f4d72fac48eb1: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl: no results
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureShape: <uuid:shell-upper-east>
  - Shape geojson:LinkShape: *none*
-
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: <uuid:shell-upper-east>
  - Shape geojson:GeometryShape: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl: no results
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:FeatureShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 
 === End SHACL ===
 

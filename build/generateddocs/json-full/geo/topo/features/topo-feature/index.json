@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2026-11-02",
+  "dateOfLastChange": "2026-11-24",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -45,6 +45,10 @@
     "ogc.geo.features.featureCollection": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
     ]
+  },
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
   },
   "ldContext": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/context.jsonld",
   "schema": {
@@ -285,7 +289,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Feature with defined topology for bounding elements. When topology is\n  used to define geometry, the 'geometry' property should be null (coordinates are\n  derived from referenced features). The 'topology' property uses either 'references'\n  (plain string IDs) or 'directed_references' (oriented refs with '+'/'-'), but not\n  both.\nallOf:\n- $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureOptions\n- type: object\n  properties:\n    id:\n      type: string\n    geometry:\n      description: Null when geometry is fully defined by topology references; a GeoJSON\n        geometry object otherwise\n      oneOf:\n      - type: 'null'\n      - type: object\n        required:\n        - type\n        properties:\n          type:\n            type: string\n    topology:\n      $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml\n      x-jsonld-type: '@id'\n      x-jsonld-id: https://purl.org/geojson/vocab#topology\n  required:\n  - topology\nx-jsonld-prefixes:\n  geojson: https://purl.org/geojson/vocab#\nx-bblocks-metadata:\n  itemIdentifier: ogc.geo.topo.features.topo-feature\n  register: https://ogcincubator.github.io/topo-feature/build/register.json\n  version: '0.1'\n  dateOfLastChange: '2026-11-02'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Feature with defined topology for bounding elements. When topology is\n  used to define geometry, the 'geometry' property should be null (coordinates are\n  derived from referenced features). The 'topology' property uses either 'references'\n  (plain string IDs) or 'directed_references' (oriented refs with '+'/'-'), but not\n  both.\nallOf:\n- $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureOptions\n- type: object\n  properties:\n    id:\n      type: string\n    geometry:\n      description: Null when geometry is fully defined by topology references; a GeoJSON\n        geometry object otherwise\n      oneOf:\n      - type: 'null'\n      - type: object\n        required:\n        - type\n        properties:\n          type:\n            type: string\n    topology:\n      $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml\n      x-jsonld-type: '@id'\n      x-jsonld-id: https://purl.org/geojson/vocab#topology\n  required:\n  - topology\nx-jsonld-prefixes:\n  geojson: https://purl.org/geojson/vocab#\nx-bblocks-metadata:\n  itemIdentifier: ogc.geo.topo.features.topo-feature\n  register: https://ogcincubator.github.io/topo-feature/build/register.json\n  version: '0.1'\n  dateOfLastChange: '2026-11-24'\n",
   "gitRepository": "https://github.com/ogcincubator/topo-feature",
   "gitPath": "_sources/features/topo-feature"
 }

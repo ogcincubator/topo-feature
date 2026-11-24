@@ -508,7 +508,7 @@ x-bblocks-metadata:
   itemIdentifier: ogc.geo.topo.datatypes.topology
   register: https://ogcincubator.github.io/topo-feature/build/register.json
   version: '0.1'
-  dateOfLastChange: '2026-11-02'
+  dateOfLastChange: '2026-11-24'
 
 ```
 

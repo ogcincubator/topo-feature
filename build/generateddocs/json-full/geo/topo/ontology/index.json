@@ -10,7 +10,7 @@
   "itemClass": "model",
   "register": "ogcincubator",
   "version": "0.1",
-  "dateOfLastChange": "2026-11-02",
+  "dateOfLastChange": "2026-11-24",
   "shaclShapes": {
     "ogc.geo.topo.ontology": [
       "https://ogcincubator.github.io/topo-feature/_sources/ontology/shapes.shacl"
@@ -33,6 +33,10 @@
     "3D"
   ],
   "group": "Topology Ontology",
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
   "ontology": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/ontology/ontology.ttl",
   "sourceFiles": "https://ogcincubator.github.io/topo-feature/_sources/ontology/",
   "validationPassed": true,

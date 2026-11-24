@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.datatypes.topology - Geometry using references
-Generated 2026-11-02T00:04:18.589696+00:00
+Generated 2026-11-24T22:42:47.491089+00:00
 === Files ===
 Using face-topology.json (example_4_1) from examples
 JSON-LD context is present - uplifting
@@ -14,15 +14,12 @@ Validation passed
 === SHACL ===
 Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
  - /github/workspace/_sources/ontology/topo.ttl
-Validation result for _sources/ontology/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
+Validation result for _sources/ontology/shapes.shacl: no results
 Focus nodes for _sources/ontology/shapes.shacl:
- - Shape :DirectedReferencesShape: _:Nefe2489254274def876a04fec8c30453
- - Shape :OrientedArcShape: *none*
+ - Shape :OrientedReferenceShape: _:N24d8072ae83b4bd994c6812ca86a31d4
  - Shape :RadiusRequiredShape: *none*
- - Shape :OrientedReferenceShape: _:N0c03c0dc47ab4904a0dfd03e69195835
+ - Shape :OrientedArcShape: *none*
+ - Shape :DirectedReferencesShape: _:N5552f4f700ac4d8d8591b8e8ae6cebc1
 
 === End SHACL ===
 

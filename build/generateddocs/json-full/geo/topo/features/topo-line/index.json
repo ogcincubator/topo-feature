@@ -11,7 +11,7 @@
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2026-11-02",
+  "dateOfLastChange": "2026-11-24",
   "link": "https://github.com/icsm-au/3d-csdm-schema",
   "sources": [],
   "maturity": "development",
@@ -44,6 +44,10 @@
     "ogc.geo.topo.datatypes.topology",
     "ogc.geo.topo.features.topo-feature"
   ],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml",
     "application/json": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.json"
@@ -159,7 +163,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Line Feature with geometry by reference\nallOf:\n- $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml\n- properties:\n    topology:\n      allOf:\n      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml\n      - properties:\n          type:\n            type: string\n            enum:\n            - Edge\n            - LineString\n            - MultiLineString\n  required:\n  - topology\nx-bblocks-metadata:\n  itemIdentifier: ogc.geo.topo.features.topo-line\n  register: https://ogcincubator.github.io/topo-feature/build/register.json\n  version: '0.1'\n  dateOfLastChange: '2026-11-02'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Line Feature with geometry by reference\nallOf:\n- $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml\n- properties:\n    topology:\n      allOf:\n      - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml\n      - properties:\n          type:\n            type: string\n            enum:\n            - Edge\n            - LineString\n            - MultiLineString\n  required:\n  - topology\nx-bblocks-metadata:\n  itemIdentifier: ogc.geo.topo.features.topo-line\n  register: https://ogcincubator.github.io/topo-feature/build/register.json\n  version: '0.1'\n  dateOfLastChange: '2026-11-24'\n",
   "gitRepository": "https://github.com/ogcincubator/topo-feature",
   "gitPath": "_sources/features/topo-line"
 }

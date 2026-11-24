@@ -1,5 +1,5 @@
 Validation report for ogc.geo.topo.datatypes.topology - Geometry using references
-Generated 2026-11-02T00:04:18.695295+00:00
+Generated 2026-11-24T22:42:47.618400+00:00
 === Files ===
 Using shell-topology.json (example_5_1) from examples
 JSON-LD context is present - uplifting
@@ -14,15 +14,12 @@ Validation passed
 === SHACL ===
 Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
  - /github/workspace/_sources/ontology/topo.ttl
-Validation result for _sources/ontology/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
+Validation result for _sources/ontology/shapes.shacl: no results
 Focus nodes for _sources/ontology/shapes.shacl:
- - Shape :DirectedReferencesShape: _:N9f20e0b6a697465c9901f689e2456b76
- - Shape :OrientedArcShape: *none*
+ - Shape :OrientedReferenceShape: _:N823c5d74565b41688c98e765d22c0b5c,_:Ndb5ed71158d94f188d9a804f2619f658,_:Nd84655b10df2411f8a95992d56ce366b,_:N29eb5016024b4f87b640a591974dd3cc
  - Shape :RadiusRequiredShape: *none*
- - Shape :OrientedReferenceShape: _:Ndc80d95314b04bacb3159686d12d81bb,_:N15f36c1e824a491dad48c40f4e618c22,_:N72b6eb8d45a04804b2f5ebba6ff34068,_:N280d4cfe36214bd781791c03f3868158
+ - Shape :OrientedArcShape: *none*
+ - Shape :DirectedReferencesShape: _:N39efbdc99c164587a4aff8ae95d05497
 
 === End SHACL ===
 
