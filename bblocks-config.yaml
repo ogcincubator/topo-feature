@@ -10,6 +10,10 @@ description: |
   
   If desired coordinate compaction transformations could be defined as per TopoJSON functionality, using specialised CRS definition._
 
+license:
+  name: Apache-2.0
+  url: https://www.apache.org/licenses/LICENSE-2.0
+
 imports:
   - default
 
